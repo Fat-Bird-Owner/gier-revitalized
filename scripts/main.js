@@ -6,8 +6,8 @@ Planets.gier.accessible = true;
 });
 
 Events.on(WorldLoadEvent, e => {
-
-    if (Planets.gier == null) return;
+    
+    if (Planets.gier.techTree == null) return;
     
     Planets.gier.techTree.each(node => {
         if(node.content.unlocked){
