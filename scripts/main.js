@@ -10,20 +10,15 @@ Events.on(SectorLaunchEvent, event => {
     if(!event.sector) return;
 
     // make sure we have a preset (null if not a numbered campaign sector)
-    let preset = event.sector.preset;
-    if(!preset) return;
+    if(!event.sector.preset) return;
 
     // make sure planet exists
-    let planet = preset.planet;
-    if(!planet) return;
+    if(!preset.planet) return;
 
     // check planet name
     if(planet.name !== "gier") return;
 
-    Vars.ui.showInfoText(
-        "[lightgrey]Gier: The Asteroid Belt[]",
-        "[grey]...[]"
-    );
+    Vars.ui.showInfoText("[lightgrey]Gier: The Asteroid Belt[]","[grey]...[]");
 });
 
 /*
