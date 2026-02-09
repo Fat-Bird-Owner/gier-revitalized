@@ -4,6 +4,7 @@ launchBlock: core-shard
 
 consumes:{
 remove: all
+power: 0
 }
 
 research: core-shard
@@ -14,3 +15,4 @@ silicon/450
 graphite/300
 metaglass/125
 ]
+powerBufferRequirement: 0
