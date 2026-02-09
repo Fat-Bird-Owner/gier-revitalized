@@ -5,6 +5,7 @@ Planets.gier.accessible = true;
 
 });
 
+/*
 Events.on(SectorLaunchEvent, e => {
 
     var info = e.sector.info;
@@ -17,6 +18,7 @@ Events.on(SectorLaunchEvent, e => {
     }
 
 });
+*/
 /*
 Events.on(WorldLoadEvent, event => {
 
@@ -24,3 +26,24 @@ Events.on(WorldLoadEvent, event => {
   
 })
 */
+Events.on(WorldLoadEvent, e => {
+
+    let sector = Vars.state.getSector();
+    if(!sector) return;
+
+    let info = sector.info;
+
+    if(!info){
+        Vars.ui.showInfoText(
+            "[lightgrey]Gier: The Asteroid Belt[]",
+            "The first of ever."
+        );
+        return;
+    }
+
+    Vars.ui.showInfoText(
+        "[lightgrey]Gier: The Asteroid Belt[]",
+        "Your current attempt count is " + info.attempts
+    );
+
+});
