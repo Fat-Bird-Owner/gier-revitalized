@@ -1,0 +1,12 @@
+
+launchCandidates:[gier]
+launchBlock: core-shard
+
+research: core-shard
+requirements:[
+copper/850
+lead/600
+silicon/450
+grahpite/300
+metaglass/125
+]
