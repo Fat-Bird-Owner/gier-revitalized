@@ -7,15 +7,10 @@ Planets.gier.accessible = true;
 
 Events.on(WorldLoadEvent, e => {
 
-    TechTree.all.each(node => {
-
-        if(node.content != null &&
-           node.content.planet == Planets.gier &&
-           node.unlocked()){
-
+    Planets.gier.techTree.each(node => {
+        if(node.unlocked()){
             node.clearUnlock();
         }
-
     });
 
-});
+});;
