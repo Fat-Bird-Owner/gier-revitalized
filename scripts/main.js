@@ -6,10 +6,10 @@ Planets.gier.accessible = true;
 });
 
 Events.on(WorldLoadEvent, e => {
+
+    var parent = TechTree.all.find(u => u.content == StatusEffects.vow-gier);
     
-    if (Planets.gier.techTree == null) return;
-    
-    Planets.gier.techTree.each(node => {
+    parent.each(node => {
         if(node.content.unlocked){
             node.content.clearUnlock();
         }
