@@ -5,11 +5,12 @@ Planets.gier.accessible = true;
 
 });
 
-Events.on(SectorLaunchEvent, e => {
-
-    var info = e.sector.preset
-    if (info == null) return;
-    if (info.name != "gr-gier") return;
+Events.on(SectorLaunchEvent, event => {
+    // Read is there a preset most likely a numbered sector is is null
+    if (event.sector.preset == null) return;
+    // if it is a preset find the planet's name
+    
+    if (event.sector.preset.planet.name != "gier") return;
     Vars.ui.showInfoText("[lightgrey]Gier: The Asteroid Belt[]", "[grey]...[]");
 
 });
