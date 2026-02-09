@@ -5,7 +5,7 @@ Planets.gier.accessible = true;
 
 });
 
-Events.on(SectorLaunchEvent, e => { 
+Events.on(WorldLoadEvent, e => { 
 
 TechTree.all.each(node => {
     if(node.content != null &&
