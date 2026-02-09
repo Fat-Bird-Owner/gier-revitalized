@@ -5,20 +5,15 @@ Planets.gier.accessible = true;
 
 });
 
-/*
 Events.on(SectorLaunchEvent, e => {
 
-    var info = e.sector.info;
+    var info = e.preset.name
+    if (info != "gr-gier") return;
 
-    if(info == null){
-        Vars.ui.showInfoText("[lightgrey]Gier: The Asteroid Belt[]", "The first of ever.");
-    }else{
-        Vars.ui.showInfoText("[lightgrey]Gier: The Asteroid Belt[]",
-            "Your current attempt count is " + info.attempts);
-    }
+    Vars.ui.showInfoText("[lightgrey]Gier: The Asteroid Belt[]", "[grey]...[]");
 
 });
-*/
+
 /*
 Events.on(WorldLoadEvent, event => {
 
@@ -53,24 +48,4 @@ Events.on(WorldLoadEvent, event => {
   Vars.ui.showInfoText("[lightgrey]Gier: The Asteroid Belt[]","Your current attempt count is 0");
   
 })
-*/Events.on(WorldLoadEvent, e => {
-
-    let sector = Vars.state.rules.sector;
-    if(!sector) return;
-
-    let info = sector.info;
-
-    if(!info){
-        Vars.ui.showInfoText(
-            "[lightgrey]Gier: The Asteroid Belt[]",
-            "The first of ever."
-        );
-        return;
-    }
-
-    Vars.ui.showInfoText(
-        "[lightgrey]Gier: The Asteroid Belt[]",
-        "Your current attempt count is " + info.attempts
-    );
-
-});
+*/
