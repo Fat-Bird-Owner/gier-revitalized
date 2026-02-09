@@ -7,6 +7,9 @@ Planets.gier.accessible = true;
 
 Events.on(SectorLaunchEvent, e => { 
 var attempt = e.info.attempts;
+e.generateEnemyBase = true,
+if (attempt == null) return;
+  
 Vars.ui.showInfoText("[lightgrey]Gier: The Asteroid Belt[]","Your current attempt count is " + attempt);
 });
 
