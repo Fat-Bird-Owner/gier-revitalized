@@ -15,6 +15,7 @@ range: 300
 
 weapons:[
 {
+shootCone: 180
 x: 3.15
 y: 0.5
 reload: 90
