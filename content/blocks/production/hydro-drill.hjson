@@ -1,11 +1,13 @@
 type: Drill
 size: 2
-
+name: Hydro Drill
+description: "Drills the ground for any possible extract."
 requirements:[copper/15,lead/10]
 
+tier: 2
 drawRim: false
-drawSpinSprite: false
-drawMineItem: false
+drawSpinSprite: true
+drawMineItem: true
 
 category: production
 research: gier
