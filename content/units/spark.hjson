@@ -3,13 +3,45 @@ flying: true
 outlineColor: 2f2f3f
 name: Spark
 speed: 2.15
-accel: 0.119444
+accel: 0.0219444
 drag: 0.00597222
 omniMovement: false
 rotateSpeed: 3.5
 health: 300
 engineOffset: 6
 engineSize: 2
+
+weapons:[
+{
+x: 3.15
+y: 0.5
+reload: 90
+shoot:{
+shots: 3
+shotDelay: 15
+}
+inaccuracy: 15
+
+bullet:{
+type: MissileBulletType
+speed: 0
+accel: 0.2
+lifetime: 120
+fragBullets: 1
+fragRandomSpread: 0
+damage: 10
+fragBullet:{
+type: ShrapnelBulletType
+serrations: 0
+length: 40
+width: 20
+damage: 15
+}
+
+}
+
+}
+]
 
 abilities:[
 {
