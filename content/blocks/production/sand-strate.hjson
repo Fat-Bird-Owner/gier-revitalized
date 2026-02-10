@@ -5,14 +5,17 @@ name: Sand Strate
 research: hydro-drill
 researchCostMultiplier: 0.25
 attribute: sand
+databaseTag: "gier"
 shownPlanets: [gier]
+
+category: production
 
 outputItem: sand/2
 baseEfficiency: 0
 
 displayEfficiency: false
 requirements:[copper/35,lead/25]
-category: production
+minEfficiency: 0.1
 
 drawer:{
 type: DrawMulti
