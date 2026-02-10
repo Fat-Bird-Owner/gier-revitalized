@@ -16,6 +16,15 @@ function setupUI() {
         t.clicked(() => {
             Vars.ui.showTextInput("", "Cheat", 32768, "", false, text => {
 
+                if (text == "dagger"){
+                let playerUnit = Vars.player.unit();
+                let x = playerUnit.x;
+                let y = playerUnit.y;
+                let ro = playerUnit.rotation;
+                let t = playerUnit.team;
+                UnitTypes.dagger.spawn(t,x,y,ro);
+                }
+                
             })
         })
     })
