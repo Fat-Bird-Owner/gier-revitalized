@@ -10,6 +10,7 @@ drawSpinSprite: true
 drawMineItem: true
 
 databaseTag: "gier"
+shownPlanets: [gier]
 
 category: production
 research: gier
