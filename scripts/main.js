@@ -1,5 +1,8 @@
 Events.on(ContentInitEvent, e => { 
 
+Team.get(5).setPalette(Color.valueOf("8ecff5"));
+Team.get(5).emoji = "[#8ecff5][]"; 
+    
 Planets.gier.visible = true;
 Planets.gier.accessible = true;
 Planets.gier.ruleSetter = rules => {
