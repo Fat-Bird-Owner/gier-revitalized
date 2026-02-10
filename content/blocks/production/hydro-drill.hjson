@@ -7,6 +7,6 @@ drawRim: false
 drawSpinSprite: false
 drawMineItem: false
 
-category: productions
+category: production
 research: gier
 researchCostMultiplier: 0.25
