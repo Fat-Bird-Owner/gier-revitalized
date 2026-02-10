@@ -5,6 +5,7 @@ name: Sand Strate
 research: hydro-drill
 researchCostMultiplier: 0.25
 attribute: sand
+shownPlanets: [gier]
 
 outputItem: sand/2
 baseEfficiency: 0
