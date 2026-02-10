@@ -10,6 +10,7 @@ rotateSpeed: 3.5
 health: 300
 engineOffset: 6
 engineSize: 2
+circleTarget: true
 
 weapons:[
 {
@@ -27,8 +28,12 @@ type: BasicBulletType
 trailLength: 20
 trailWidth: 1
 homingPower: 0.095
-speed: 0
-accel: 0.05
+speed: 0.2
+trailColor: ffffff
+backColor: ffffff
+frontColor: 92c5d4
+
+accel: 0.1
 lifetime: 120
 fragBullets: 1
 fragRandomSpread: 0
