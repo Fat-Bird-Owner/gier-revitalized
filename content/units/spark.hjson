@@ -23,9 +23,12 @@ shotDelay: 15
 inaccuracy: 15
 
 bullet:{
-type: MissileBulletType
+type: BasicBulletType
+trailLength: 20
+trailWidth: 1
+homingPower: 0.095
 speed: 0
-accel: 0.2
+accel: 0.05
 lifetime: 120
 fragBullets: 1
 fragRandomSpread: 0
@@ -33,8 +36,8 @@ damage: 10
 fragBullet:{
 type: ShrapnelBulletType
 serrations: 0
-length: 40
-width: 20
+length: 20
+width: 10
 damage: 15
 }
 
