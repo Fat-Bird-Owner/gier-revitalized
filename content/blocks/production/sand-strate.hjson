@@ -1,8 +1,9 @@
 type: AttributeCrafter
 size: 2
 name: Sand Strate
+description: "Scrapes sand particles from the ground, if there is any."
 
-research: gier
+research: hydro-drill
 researchCostMultiplier: 0.25
 attribute: sand
 databaseTag: "gier"
@@ -13,7 +14,7 @@ category: production
 outputItem: sand/2
 baseEfficiency: 0
 
-displayEfficiency: true
+displayEfficiency: false
 requirements:[copper/35,lead/25]
 minEfficiency: 0.1
 
