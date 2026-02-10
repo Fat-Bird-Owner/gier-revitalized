@@ -5,7 +5,11 @@ name: Sand Strate
 research: hydro-drill
 researchCostMultiplier: 0.25
 attribute: sand
-  
+
+outputItem: sand/2
+baseEfficiency: 0
+
+displayEfficiency: false
 requirements:[copper/35,lead/25]
 category: production
 
@@ -15,14 +19,16 @@ drawers:[
 {
 type: DrawBlurSpin
 suffix: "-rotator1"
-x: 5
-y: 5
+x: 3.75
+y: 3.75
+blurThresh: 0
 }
 {
 type: DrawBlurSpin
 suffix: "-rotator2"
-x: 2.6667
-y: -4
+blurThresh: 0
+x: 2
+y: -3
 }
 {
 type: DrawDefault
