@@ -9,10 +9,6 @@ Planets.gier.ruleSetter = rules => {
 rules.waveTeam = Team.blue;
 rules.placeRangeCheck = false;
 rules.showSpawns = true;
-rules.fog = false;
-rules.staticFog = true;
-rules.lighting = true;
-rules.coreDestroyClear = true;
 rules.onlyDepositCore = true;
 rules.cleanupDeadTeams = true;
 }
