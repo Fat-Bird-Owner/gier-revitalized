@@ -1,4 +1,4 @@
-require("gr/block")
+require("gr/block");
 
 Events.on(ContentInitEvent, e => { 
 
