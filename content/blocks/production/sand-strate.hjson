@@ -8,6 +8,7 @@ researchCostMultiplier: 0.25
 attribute: sand
 databaseTag: "gier"
 #shownPlanets: [gier]
+buildVisibility: shown
 
 category: production
 
