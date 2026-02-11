@@ -9,6 +9,7 @@ attribute: sand
 databaseTag: "gier"
 shownPlanets: [gier]
 buildVisibility: shown
+envEnabled: 1
 
 category: production
 
