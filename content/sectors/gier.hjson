@@ -1,4 +1,4 @@
 planet: gier
 name: "Gier [grey]0[]"
 sector: 0
-name: "Gier [grey]<Asteroid Belt>[]"
+localizedName: "Gier [grey]<Asteroid Belt>[]"
