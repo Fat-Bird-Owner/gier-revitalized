@@ -1,5 +1,7 @@
 block.duct:{
 requirements:[copper/2]
+shownPlanets: [gier, erekir]
+
 }
 
-block.stone.dropItem: sand
+block.stone.itemDrop: sand
