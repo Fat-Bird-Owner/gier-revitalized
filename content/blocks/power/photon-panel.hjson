@@ -1,0 +1,16 @@
+type: SolarGenerator
+name: Photon Panel
+size: 2
+customShadow: true
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawGlowRegion
+}
+{
+type: DrawDefault
+}
+]
+}
