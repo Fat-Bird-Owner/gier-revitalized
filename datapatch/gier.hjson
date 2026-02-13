@@ -2,7 +2,7 @@ block.duct:{
 requirements:[lead/1]
 shownPlanets: [gier, erekir]
 customShadow: true
-customShadowRegion: "gr-shadow-1"
+customShadowRegion: "gr-t1-customShadowRegion"
 
 topRegions:[
 reinforced-conduit-top-0,
