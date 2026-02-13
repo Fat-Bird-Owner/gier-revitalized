@@ -1,0 +1,18 @@
+      type: ParticleWeather
+      localizedName: Frag storm
+      color: a7c1fa
+      noiseColor: 3c3837
+      drawNoise: true
+      particleRegion: particle
+      drawParticles: true
+      opacityMultiplier: 1
+      useWindVector: true
+      sizeMax: 5
+      sizeMin: 1.4
+      minAlpha: 0.5
+      maxAlpha: 1
+      density: 15000
+      baseSpeed: 1
+      force: 0
+      sound: loopSmelter
+      soundVol: 0.65
