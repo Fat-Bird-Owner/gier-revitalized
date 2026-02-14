@@ -1,6 +1,8 @@
 type: Router
 name: Crate
+size: 2
 
+researchCostMultiplier: 0.45
 research: gier
 databaseTag: "gier"
 shownPlanets: [gier]
@@ -8,3 +10,9 @@ shownPlanets: [gier]
 itemCapacity: 50
 requirements:[copper/15,graphite/10,lead/5]
 squareSprite: false
+
+baseExplosiveness: 2.5
+explosivenessScale: 5
+flammabilityScale: 1.5
+
+description: "Actively distributes stored items on all outputs, Quite explosive."
