@@ -1,0 +1,17 @@
+type: UnitCargoUnloadPoint
+size: 2
+health: 235
+
+requirements:[
+lead/125
+copper/65
+graphite/35
+]
+
+itemCapacity: 65
+dumpTime: 2.5
+staleTimeDuration: 0
+
+research: drone-facility
+researchCostMultiplier: 0.65
+  
