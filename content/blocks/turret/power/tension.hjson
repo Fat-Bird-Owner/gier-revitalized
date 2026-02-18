@@ -4,7 +4,9 @@ size: 4
 consumes:{
 power: 1
 }
-  
+
+category: turret
+
 requirements:[
 lead/445
 copper/365
