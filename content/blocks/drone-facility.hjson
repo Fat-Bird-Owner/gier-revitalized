@@ -1,0 +1,16 @@
+type: UnitCargoLoader
+size: 2
+name: Drone Facility
+category: units
+health: 475
+
+requirements:[
+copper/65
+lead/45
+graphite/25
+]
+
+research: gier
+researchCostMultiplier: 0.65
+databaseTag: "gier"
+shownPlanets:[gier]
