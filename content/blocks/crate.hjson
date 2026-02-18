@@ -1,4 +1,4 @@
-type: Router
+type: Junction
 name: Crate
 size: 2
 
@@ -6,9 +6,11 @@ researchCostMultiplier: 0.45
 research: gier
 databaseTag: "gier"
 shownPlanets: [gier]
+envEnabled: 2
 
+capacity: 50
 itemCapacity: 50
-requirements:[copper/15,graphite/10,lead/5]
+requirements:[copper/45,graphite/30,lead/15]
 squareSprite: false
 
 baseExplosiveness: 2.5
