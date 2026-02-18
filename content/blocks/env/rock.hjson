@@ -1,0 +1,8 @@
+type: Prop
+buildTime: 1200
+
+requirements:[graphite/35,copper/15]
+instantDeconstruct: false
+instantBuild: false
+customShadow: true
+size: 2
