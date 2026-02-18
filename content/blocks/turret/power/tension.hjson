@@ -22,15 +22,18 @@ shootType:{
 }
 rotates: false
 rotateSpeed: 20
+inaccuracy: 12.5
 
 shootType:{
 type: BasicBulletType
-speed: 10
-lifetime: 30
+speed: 2.5
+lifetime: 120
+hitSound: explosionDull
+hitShake: 0.85
 pierce: true
 damage: 45
 despawnHit: true
-
+homingPower: 0.065
 parts:[
 {
 type: FlarePart
@@ -53,8 +56,8 @@ fragBullets: 5
 fragSpread: 30
 fragRandomSpread: 20
 fragBullet:{
-speed: 0
-damage: 25
+speed: 10
+damage: 5
 lifetime: 6
 type: BulletType
 despawnHit: true
@@ -68,6 +71,7 @@ strokeFrom: 1
 strokeTo: 3
 lenFrom: 0
 lenTo: 60
+lifetime: 30
 colorFrom: ffffff
 colorTo: ffffff00
 }
