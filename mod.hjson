@@ -15,4 +15,6 @@ dependencies: []
 hidden: false
 
 contentOrder:[
+drone-facility
+facility-dropzone
 ]
