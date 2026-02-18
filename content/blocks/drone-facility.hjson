@@ -5,7 +5,7 @@ health: 475
 
 customShadow: true
 itemCapacity: 120
-envRequired: 1
+envEnabled: 1
 
 polyRadius: 5.5
 
