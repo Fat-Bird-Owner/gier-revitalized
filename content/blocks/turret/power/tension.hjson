@@ -7,6 +7,7 @@ power: 1
 
 category: turret
 
+shootCone: 180
 requirements:[
 lead/445
 copper/365
