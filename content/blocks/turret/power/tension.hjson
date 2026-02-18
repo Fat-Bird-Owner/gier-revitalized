@@ -1,5 +1,6 @@
 type: PowerTurret
 size: 4
+outlineRadius: 0
 
 consumes:{
 power: 1
@@ -7,7 +8,7 @@ power: 1
 
 category: turret
 
-shootCone: 180
+shootCone: 10
 requirements:[
 lead/445
 copper/365
@@ -19,7 +20,7 @@ shootType:{
 
 }
 rotates: false
-rotateSpeed: 0
+rotateSpeed: 20
 
 shootEffect:{
 type: ParticleEffect
@@ -50,8 +51,9 @@ speed: 0
 damage: 25
 lifetime: 6
 type: BulletType
+despawnHit: true
 
-despawnEffect:{
+hitEffect:{
 type: ParticleEffect
 particles: 1
 line: true
