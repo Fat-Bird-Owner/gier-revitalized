@@ -7,6 +7,7 @@ consumes:{
 power: 1
 }
 
+customShadow: true
 category: turret
 reload: 25
 inaccuracy: 15
