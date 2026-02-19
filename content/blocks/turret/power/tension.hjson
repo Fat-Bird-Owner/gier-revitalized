@@ -10,13 +10,8 @@ power: 1
 shootY: 0
 customShadow: true
 category: turret
-reload: 25
+reload: 5
 inaccuracy: 15
-shoot:{
-firstShotDelay: 45
-shotDelay: 5
-shots: 3
-}
 
 shootCone: 10
 requirements:[
