@@ -1,7 +1,7 @@
 type: PowerTurret
 size: 4
 outlineRadius: 0
-range: 600
+range: 300
 
 consumes:{
 power: 1
@@ -9,6 +9,12 @@ power: 1
 
 category: turret
 reload: 25
+inaccuracy: 15
+shoot:{
+firstShotDelay: 45
+shotDelay: 5
+shots: 3
+}
 
 shootCone: 10
 requirements:[
@@ -26,59 +32,10 @@ rotateSpeed: 20
 inaccuracy: 12.5
 
 shootType:{
-type: BasicBulletType
-speed: 5
-lifetime: 120
-hitSound: explosionDull
-hitShake: 0.85
-pierce: true
-damage: 45
-despawnHit: true
-homingPower: 0.065
-parts:[
-{
-type: FlarePart
-sides: 2
-width: 2
-radius: 20
-radiusTo: 0
-progress: life
-frontColor: ffffff
-}
-]
-
-width: 10
-height: 14
-trailWidth: 2
-trailLength: 20
-frontColor: ffffff
-backColor: ffffff
-trailColor: ffffff
-
-fragBullets: 5
-fragSpread: 30
-fragRandomSpread: 20
-fragBullet:{
-speed: 0
-damage: 5
-lifetime: 6
-type: BulletType
-despawnHit: true
-
-hitEffect:{
-type: ParticleEffect
-particles: 1
-line: true
-cone: 0
-strokeFrom: 1
-strokeTo: 3
-lenFrom: 0
-lenTo: 60
-lifetime: 30
-colorFrom: ffffff
-colorTo: ffffff00
-}
-  
+type: LightningBulletType
+damage: 15
+lightningLength: 5
+lifetime: 35
 }
   
 }
