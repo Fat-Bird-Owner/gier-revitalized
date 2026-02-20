@@ -1,4 +1,4 @@
-type: Junction
+type: StorageBlock
 name: Crate
 size: 2
 
