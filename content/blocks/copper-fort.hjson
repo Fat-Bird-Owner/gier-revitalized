@@ -4,7 +4,7 @@ name: Copper Fort
 research: gier
 researchCostMultiplier: 0.35
 requirements:[lead/5,copper/5]
-buildTime: 25
+buildtime: 25
 
 envEnabled: 2
 databaseTag: "gier"
