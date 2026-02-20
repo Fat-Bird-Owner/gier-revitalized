@@ -1,11 +1,13 @@
 type: CoreBlock
 size: 4
-name: "Core: Facility"
+name: "Core: [accent]Facility[]"
 
 itemCapacity: 6850
 envEnabled: 2
 health: 4250
 unitType: gamma
+isFirstTier: false
+incinerateNonBuildable: true
 
 research: gier
 researchCostMultiplier: 0.35
