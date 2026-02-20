@@ -1,0 +1,10 @@
+type: CoreBlock
+size: 4
+name: "Core: Facility"
+
+requirements: [
+lead/1650
+copper/1200
+graphite/800
+]
+category: effect
