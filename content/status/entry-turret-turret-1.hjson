@@ -1,0 +1,15 @@
+databaseCategory: "entries"
+name: "Directory: [sky]Turrets[]"
+details: '''
+[lightgrey]Turrets on gier are much bulkier and have high maintenance requirements.
+'''
+
+shownPlanets:[gier]
+databaseTag: "turrets"
+
+research:{
+parent: entry-mineral-1
+objectives:[
+tension
+]
+}
