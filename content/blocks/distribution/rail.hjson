@@ -2,3 +2,9 @@ type: StackConveyor
 name: Rail
 
 requirements:[lead/1]
+
+researchCostMultiplier: 0.45
+research: gier
+databaseTag: "gier"
+shownPlanets: [gier]
+envEnabled: 2
