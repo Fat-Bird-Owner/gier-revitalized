@@ -8,6 +8,7 @@ radius: 56
 shieldRotation: 45
 cooldownNormal: 15
 shieldHealth: 375
+consumeCoolant: false
 
 description: "
 [sky]Priority[]: 2.5
