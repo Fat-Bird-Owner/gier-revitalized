@@ -1,24 +1,41 @@
 type: ForceProjector
 name: Copper Fort
 priority: 3.5
-health: 240
+health: 65
+destroyBullet:{
+type: ExplosionBulletType
+splashDamage: 135
+splashDamageRadius: 40
+hitShake: 7.5
+}
 
 sides: 4
 radius: 56
 shieldRotation: 45
 cooldownNormal: 0.1
-shieldHealth: 375
+shieldHealth: 175
 consumeCoolant: false
+hasLiquids: false
 
 description: "
 [sky]Priority[]: 2.5
 
-Generates a small forcefield in a small area, Long cooldown time.
+Generates a forcefield in a small area, Long cooldown time.
+[red]Explodes upon destruction.[]
 "
 research: gier
 researchCostMultiplier: 0.35
-requirements:[lead/5,copper/5]
-buildtime: 25
+requirements:[lead/65,copper/45,graphite/25]
+buildtime: 220
 
 envEnabled: 2
 databaseTag: "gier"
+shieldBreakEffect: {
+type: WaveEffect
+sides: 4
+rotation: 45
+strokeFrom: 4
+strokeTo: 0
+sizeFrom: 56
+sizeTo: 56
+}
