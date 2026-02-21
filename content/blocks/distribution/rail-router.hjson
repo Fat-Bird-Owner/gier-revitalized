@@ -7,3 +7,5 @@ speed: 10
 research: rail
 researchCostMultiplier: 0.35
 envEnabled: 2
+squareSprite: false
+customShadow: true
