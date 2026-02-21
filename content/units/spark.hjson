@@ -51,6 +51,33 @@ damage: 15
 }
 
 }
+// trails
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -1.5
+    x: -3.125
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      trailLength: 60
+      trailWidth: 0.5
+      trailColor: 7382f0
+      lightOpacity: 0
+    }
+  }
 ]
 
 abilities:[
