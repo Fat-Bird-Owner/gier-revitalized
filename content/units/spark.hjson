@@ -4,8 +4,6 @@ outlineColor: 2f2f3f
 name: Spark
 speed: 2.15
 hitSize: 12
-accel: 0.0219444
-drag: 0.00597222
 omniMovement: false
 rotateSpeed: 3.5
 health: 300
@@ -36,7 +34,7 @@ trailColor: ffffff
 backColor: ffffff
 frontColor: 92c5d4
 
-lifetime: 120
+lifetime: 30
 fragBullets: 1
 fragRandomSpread: 0
 damage: 10
