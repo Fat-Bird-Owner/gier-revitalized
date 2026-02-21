@@ -9,7 +9,7 @@ abilities:[
 type: EnergyFieldAbility
 damageEffect: none
 sectorRad: 0.05
-sectors: 20
+sectors: 25
 range: 60
 color: 4f4f4f
 effectRadius: 0
