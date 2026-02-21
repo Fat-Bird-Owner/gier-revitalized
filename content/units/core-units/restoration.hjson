@@ -33,7 +33,7 @@ radius: 2
 {
 x: -4
 y: 0
-rotation: -180
+rotation: 180
 radius: 2
 }
 {
