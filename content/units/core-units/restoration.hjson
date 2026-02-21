@@ -1,0 +1,33 @@
+type: flying
+speed: 1.85
+
+engineSize: 0
+hitSize: 14
+health: 145
+description: "Repairs nearby buildings and slightly weakens enemies, All in a [red]pethetically[] small range."
+engine:[
+{
+x: 2.125
+y: 0
+rotation: 90
+size: 1.5
+}
+{
+x: -2.125
+y: 0
+rotation: -90
+size: 1.5
+}
+{
+x: 0
+y: 2.15
+rotation: 0
+size: 1.5
+}
+{
+x: 0
+y: -2.15
+rotation: 180
+size: 1.5
+}
+]
