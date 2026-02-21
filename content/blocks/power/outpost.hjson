@@ -1,0 +1,17 @@
+type: PowerNode
+sameBlockConnection: true
+laserScale: 0.5
+
+size: 2
+requirements:[copper/125,lead/85,graphite/65]
+laserRange: 30
+category: power
+
+databaseTag: "gier"
+research: photon-panel
+
+outputsPower: true
+consumes:{
+powerBuffered: 650
+}
+envEnabled: 2
