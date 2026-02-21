@@ -19,31 +19,32 @@ hitEffect: none
 }
 ]
 
+engineSize: 0
 hitSize: 14
 health: 145
 description: "Repairs nearby buildings and slightly weakens enemies, has [red]pathetically[] small range."
 engines:[
 {
-x: 2.125
+x: 4
 y: 0
 rotation: 90
 radius: 2
 }
 {
-x: -2.125
+x: -4
 y: 0
 rotation: -90
 radius: 2
 }
 {
 x: 0
-y: 2.15
+y: 4
 rotation: 0
 radius: 2
 }
 {
 x: 0
-y: -2.15
+y: -4
 rotation: 180
 radius: 2
 }
