@@ -59,7 +59,7 @@ type: MoveEffectAbility
 x: 3.125
 y: -1.5
 chance: 5
-interval: 0.05
+interval: 0.01
 effect:{
 type: ParticleEffect
 length: 0
@@ -74,7 +74,7 @@ type: MoveEffectAbility
 x: -3.125
 y: -1.5
 chance: 5
-interval: 0.05
+interval: 0.01
 effect:{
 type: ParticleEffect
 length: 0
