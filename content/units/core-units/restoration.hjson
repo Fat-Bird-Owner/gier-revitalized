@@ -25,15 +25,17 @@ shootSound: none
 hitEffect: {
 type: ParticleEffect
 lenFrom: 20
-lenTo: 23
+lenTo: 20
 strokeFrom: 3
 strokeTo: 1
 line: true
+lifetime: 20
 colorFrom: 4f4f4f
 colorTo: 4f4f4f00
 layer: 121
 cone: 0
 length: 0.1
+followParent: true
 }
 healEffect: healBlockFull
 layer: 122
