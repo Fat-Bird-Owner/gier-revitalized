@@ -39,13 +39,13 @@ radius: 2
 {
 x: 0
 y: 4
-rotation: 90
+rotation: -90
 radius: 2
 }
 {
 x: 0
 y: -4
-rotation: -90
+rotation: 90
 radius: 2
 }
 ]
