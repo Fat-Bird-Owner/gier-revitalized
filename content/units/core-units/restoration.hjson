@@ -20,15 +20,15 @@ color: 4f4f4f
 effectRadius: 0
 shootSound: none
 hitEffect: {
-type: WaveEffect
-sides: 4
-strokeTo: 0
+type: ParticleEffect
+lenFrom: 20
+lenTo: 15
 strokeFrom: 3
-sizeFrom: 12
-sizeTo: 8
-layer: 121
+strokeTo: 0
+line: true
 colorFrom: 4f4f4f
 colorTo: 4f4f4f
+layer: 121
 }
 healEffect: healBlockFull
 layer: 122
