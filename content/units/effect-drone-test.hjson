@@ -1,4 +1,4 @@
 type: flying
 flying: true
-aiController: EffectDroneAI
+#aiController: EffectDroneAI
 speed: 1
