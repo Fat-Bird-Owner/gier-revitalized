@@ -7,14 +7,14 @@ outlineColor: 2f2f3f
 abilities:[
 {
 type: EnergyFieldAbility
-damageEffect: healBlock
+damageEffect: none
 sectorRad: 0.05
 sectors: 15
 range: 30
 color: 4f4f4f
 effectRadius: 0
 shootSound: none
-hitEffect: none
+hitEffect: healBlock
 
 }
 ]
