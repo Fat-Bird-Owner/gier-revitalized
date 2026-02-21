@@ -13,7 +13,7 @@ sides: 4
 radius: 56
 shieldRotation: 45
 cooldownNormal: 0.1
-shieldHealth: 175
+shieldHealth: 45
 consumeCoolant: false
 hasLiquids: false
 
