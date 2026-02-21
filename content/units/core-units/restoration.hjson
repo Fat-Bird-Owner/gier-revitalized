@@ -7,22 +7,18 @@ outlineColor: 2f2f3f
 abilities:[
 {
 type: EnergyFieldAbility
-damageEffect: none
+damageEffect: healBlockFull
 sectorRad: 0.05
 sectors: 15
 range: 30
 color: 4f4f4f
 effectRadius: 0
 shootSound: none
-hitEffect: {
-effect: healBlockFull
-color: 4f4f4f
-}
+hitEffect: none
 
 }
 ]
 
-engineSize: 1
 hitSize: 14
 health: 145
 description: "Repairs nearby buildings and slightly weakens enemies, has [red]pathetically[] small range."
