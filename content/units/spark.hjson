@@ -3,7 +3,7 @@ flying: true
 outlineColor: 2f2f3f
 name: Spark
 speed: 1.45
-hitSize: 12
+hitSize: 10
 omniMovement: false
 rotateSpeed: 3.5
 health: 300
