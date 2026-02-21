@@ -77,10 +77,19 @@ chance: 5
 interval: 0.01
 effect:{
 type: ParticleEffect
-length: 0
-sizeFrom: 1.5
-sizeTo: 0
-lifetime: 50
+rotWithParent: true
+line: true
+particles: 1
+cone: 0
+length: 6
+layer: 90.5
+lifetime: 25
+lenFrom: 2
+lenTo: 0
+strokeFrom: 0.2
+strokeTo: 0.2
+colorTo: 7382f0
+interp: pow2Out
 }
 
 }
