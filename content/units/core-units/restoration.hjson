@@ -15,6 +15,9 @@ type: EnergyFieldAbility
 damageEffect: none
 sectorRad: 0.025
 sectors: 25
+damage: 5
+healPercent: 5
+reload: 60
 range: 60
 color: 4f4f4f
 effectRadius: 0
