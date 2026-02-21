@@ -40,6 +40,33 @@ followParent: true
 healEffect: healBlockFull
 layer: 122
 }
+{
+alwaysShooting: true
+alwaysContinuous: true
+alternate: false
+shootY: 0
+recoil: 0
+mirror: false
+y: 0
+x: 0
+shootSound: none
+bullet: {
+type: BulletType
+keepVelocity: false
+speed: 0
+collides: false
+hittable: false
+absorbable: false
+shootEffect: none
+smokeEffect: none
+hitEffect: none
+despawnEffect: none
+trailLength: 60
+trailWidth: 1
+trailColor: 7382f0
+lightOpacity: 0
+}
+}
 ]
 
 mineTier: 2
