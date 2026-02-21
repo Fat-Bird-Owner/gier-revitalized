@@ -7,7 +7,7 @@ accel: 0.116667
 drag: 0.035
 flyingLayer: 123
 targetable: false
-outlineRadius: 0
+#outlineRadius: 0
 
 abilities:[
 {
