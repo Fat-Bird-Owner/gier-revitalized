@@ -19,7 +19,17 @@ range: 60
 color: 4f4f4f
 effectRadius: 0
 shootSound: none
-hitEffect: none
+hitEffect: {
+type: WaveEffect
+sides: 4
+strokeTo: 0
+strokeFrom: 3
+sizeFrom: 12
+sizeTo: 8
+layer: 121
+colorFrom: 4f4f4f
+colorTo: 4f4f4f
+}
 healEffect: healBlockFull
 layer: 122
 }
