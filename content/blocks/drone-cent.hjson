@@ -4,4 +4,4 @@ name: Unit Radar
 requirements:[]
 droneType: effect-drone-test
 droneRange: 300
-unitsSpawned: 0
+unitsSpawned: -1
