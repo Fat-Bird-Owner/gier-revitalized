@@ -6,7 +6,7 @@ health: 240
 sides: 4
 radius: 56
 shieldRotation: 45
-cooldownNormal: 15
+cooldownNormal: 0.1
 shieldHealth: 375
 consumeCoolant: false
 
