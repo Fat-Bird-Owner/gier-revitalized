@@ -8,6 +8,7 @@ health: 4250
 unitType: gamma
 isFirstTier: false
 incinerateNonBuildable: true
+customShadow: true
 
 research: gier
 researchCostMultiplier: 0.35
