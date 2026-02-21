@@ -2,14 +2,15 @@ type: flying
 flying: true
 outlineColor: 2f2f3f
 name: Spark
-speed: 2.15
+speed: 1.45
 hitSize: 12
 omniMovement: false
+accel: 0.01667
 rotateSpeed: 3.5
 health: 300
 engineOffset: 6
 engineSize: 2
-circleTarget: true
+circleTarget: false
 range: 300
 
 weapons:[
