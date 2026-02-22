@@ -33,7 +33,9 @@ sizeFrom: 3
 sizeTo: 5
 lifetime: 50
 cone: 14
-lifetime: 64
+lifetime: 75
+length: 40
+interp: sine
 }
 }
 
