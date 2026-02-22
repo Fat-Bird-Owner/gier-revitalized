@@ -1,0 +1,9 @@
+type: OverflowGate
+requirements:[copper/3,lead/2]
+name: Rail Overflow
+
+research: rail-router
+researchCostMultiplier: 0.25
+
+databaseTag: "gier"
+envEnabled: 2
