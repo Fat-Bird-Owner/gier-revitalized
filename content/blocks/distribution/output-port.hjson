@@ -5,6 +5,7 @@ requirements:[lead/15,copper/10]
 research: crate
 researchCostMultiplier: 0.45
 squareSprite: false
+customShadow: true
 
 envEnabled: 2
 databaseTag: "gier"
