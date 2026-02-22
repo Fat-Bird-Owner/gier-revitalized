@@ -9,7 +9,7 @@ laserRange: 60
 category: power
 researchCostMultiplier: 0.06
 
-buildVisibility: sandboxOnly
+#buildVisibility: sandboxOnly
 
 databaseTag: "gier"
 research: photon-panel
