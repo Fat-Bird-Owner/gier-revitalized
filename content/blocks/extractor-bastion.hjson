@@ -14,11 +14,14 @@ configurable: false
 consumes:{
 power: 0.5
 }
+buildVisibility: sandboxOnly
 
 requirements:[lead/250,copper/175,graphite/100]
+/*
 research: {
 parent: hydro-drill
 objectives:[core-facility]
 }
+*/
 researchCostMultiplier: 0.25
 envEnabled: 2
