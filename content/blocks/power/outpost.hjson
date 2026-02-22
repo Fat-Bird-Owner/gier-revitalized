@@ -13,6 +13,7 @@ researchCostMultiplier: 0.06
 
 databaseTag: "gier"
 research: photon-panel
+customShadow: true
 
 outputsPower: true
 envEnabled: 2
