@@ -15,7 +15,10 @@ priority: 5
 requiresUnlock: false
 research: drone-facility
 
-aiController: CargoAI
+controller: CargoAI
+playerControllable: false
+logicControllable: false
+
 engineSize: 0
 hitSize: 14
 health: 145
