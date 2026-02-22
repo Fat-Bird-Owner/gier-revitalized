@@ -68,7 +68,7 @@ impact: true
 knockback: 15
 
 damage: 10
-splashDamage: 10
+splashDamage: 15
 splashDamageRadius: 40
 scaledSplashDamage: true
 frontColor: 7d4c27
