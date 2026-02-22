@@ -14,6 +14,7 @@ dumpTime: 2.5
 staleTimeDuration: 0
 envEnabled: 2
 databaseTag: "gier"
+customShadow: true
 
 research: drone-facility
 researchCostMultiplier: 0.05
