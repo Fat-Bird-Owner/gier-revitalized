@@ -71,6 +71,7 @@ rules.onlyDepositCore = true;
 })
 */
 
+/*
 Events.on(TapEvent, event => {
     // get the tapped tile/building
     if (!event.tile) return;
@@ -85,3 +86,4 @@ Events.on(TapEvent, event => {
         event.tile.block.invert = !event.tile.block.invert;
     }
 });
+*/
