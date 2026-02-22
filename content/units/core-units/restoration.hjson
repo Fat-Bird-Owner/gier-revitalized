@@ -9,6 +9,8 @@ flyingLayer: 123
 targetable: false
 #outlineRadius: 0
 faceTarget: false
+drawSoftShadow: false
+isEnemy: false
 
 weapons:[
 /*
