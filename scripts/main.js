@@ -71,3 +71,20 @@ rules.onlyDepositCore = true;
 })
 */
 
+Events.on(TapEvent, event => {
+
+    if (tile == null) return;
+    if (tile.block == null) return;
+
+    if(!event.tile.build) return;
+
+    let b = event.tile.build;
+
+    Fx.doorOpen.at(b.x, b.y);
+    });
+
+    if (tile.block == Blocks.overflowGate){
+    tile.block.invert != tile.block.invert;
+    }
+    
+});
