@@ -5,5 +5,3 @@ localizedName: "Gier [grey]<Asteroid Sector>[]"
 
 details: "[lightgrey]Gier is an asteroid sector, Expect a completely random map since its an asteroid sector."
 research: gier
-allowLaunchLoadout: true
-overrideLaunchDefaults: true
