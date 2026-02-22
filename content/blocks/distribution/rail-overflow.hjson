@@ -4,6 +4,7 @@ name: Rail Overflow
 
 research: rail-router
 researchCostMultiplier: 0.25
+customShadow: true
 
 databaseTag: "gier"
 envEnabled: 2
