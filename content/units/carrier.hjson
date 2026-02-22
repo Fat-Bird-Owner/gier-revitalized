@@ -12,6 +12,9 @@ isEnemy: false
 itemCapacity: 200
 priority: 5
 
+requiresUnlock: false
+research: drone-facility
+
 aiController: CargoAI
 engineSize: 0
 hitSize: 14
