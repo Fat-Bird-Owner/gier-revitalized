@@ -86,7 +86,7 @@ damage: 5
 healPercent: 5
 reload: 40
 range: 60
-color: 4f4f4f
+color: ffd37fff
 effectRadius: 0
 shootSound: none
 hitEffect: {
@@ -97,8 +97,8 @@ strokeFrom: 3
 strokeTo: 1
 line: true
 lifetime: 20
-colorFrom: 4f4f4f
-colorTo: 4f4f4f00
+colorFrom: ffd37fff
+colorTo: ffd37f00
 layer: 121
 cone: 0
 length: 0.1
