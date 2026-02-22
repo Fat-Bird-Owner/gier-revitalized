@@ -77,7 +77,7 @@ Events.on(TapEvent, event => {
     if (!event.tile.build) return;
 
     // spawn an effect at the building
-    Fx.doorOpen.at(event.tile.build.x, event.tile.build.y);
+    //Fx.doorOpen.at(event.tile.build.x, event.tile.build.y);
 
     // only run on overflow gates
     if (event.tile.block == Blocks.overflowGate) {
