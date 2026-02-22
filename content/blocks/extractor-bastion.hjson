@@ -1,0 +1,15 @@
+type: DroneCenter
+size: 2
+name: Extractor Bastion
+category: production
+  
+unitsSpawned: 2
+droneType: mono
+configurable: false
+
+requirements:[lead/250,copper/175,graphite/100]
+research: {
+parent: hydro-drill
+objectives:[core-facility]
+}
+researchCostMultiplier: 0.25
