@@ -27,7 +27,7 @@ shots: 2
 shotDelay: 0
 }
 
-shootCone: 180
+shootCone: 20
 requirements:[
 lead/445
 copper/365
@@ -36,7 +36,7 @@ graphite/265
 buildTime: 300
 
 rotatable: false
-rotateSpeed: 0
+rotateSpeed: 5
 inaccuracy: 0
 
 shootType:{
@@ -54,20 +54,18 @@ fragBullet:{
 type: MissileBulletType
 speed: 1
 trailEffect: missileTrailSmokeSmall
-trailChance: 0.2
+trailChance: 0.25
 trailWidth: 2
 trailLength: 8
 width: 10
 height: 17
 lifetime: 120
 homingPower: 0.1
-homingDelay: 15
+homingDelay: 30
 homingRange: 80
-homingRange: 120
+homingRange: 200
 impact: true
 knockback: 15
-status: slow
-statusDuration: 90
 
 damage: 10
 splashDamage: 10
@@ -75,7 +73,11 @@ splashDamageRadius: 40
 scaledSplashDamage: true
 frontColor: 7d4c27
 accel: 0.045
-hitEffect: titanExplosionFrag
+hitEffect: {
+type: WrapEffect
+effect: titanExplosionFrag
+color: 7d4c27
+}
 hitSound: unitExplode3
 despawnHit: true
 hitShake: 6.5
