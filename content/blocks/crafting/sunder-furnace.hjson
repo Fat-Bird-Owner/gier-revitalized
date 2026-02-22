@@ -24,7 +24,7 @@ lead/60
 
 craftEffect:{
 type: RadialEffect
-lengthOffset: 4
+lengthOffset: 12
 effect:{
 type: ParticleEffect
 colorFrom: 4f4f4f
@@ -45,11 +45,10 @@ type: DrawRegion
 suffix: "-bottom"
 }
 {
-type: DrawSoftParticles
+type: DrawParticles
 color: 4f4f4f
 color2: 4f4f4f00
-particleLife: 45
-particleRad: 4
+
 }
 {
 type: DrawArcSmelt
