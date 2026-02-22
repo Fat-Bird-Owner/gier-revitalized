@@ -16,6 +16,7 @@ cooldownNormal: 0.1
 shieldHealth: 45
 consumeCoolant: false
 hasLiquids: false
+customShadow: true
 
 description: "
 [sky]Priority[]: 2.5
