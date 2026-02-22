@@ -1,0 +1,49 @@
+type: tether
+speed: 4.5
+name: Carrier
+health: 110
+flying: true
+outlineColor: 2f2f3f
+accel: 0.13
+drag: 0.02
+faceTarget: false
+drawSoftShadow: false
+isEnemy: false
+itemCapacity: 200
+priority: 5
+
+aiController: CargoAI
+engineSize: 0
+hitSize: 14
+health: 145
+description: "
+[sky]Priority:[] 5
+  
+An unarmored item transport drone.
+"
+engines:[
+{
+x: 5
+y: 0
+rotation: 180
+radius: 2.25
+}
+{
+x: -5
+y: 0
+rotation: 0
+radius: 2.25
+}
+{
+x: 0
+y: 5
+rotation: -90
+radius: 2.25
+}
+{
+x: 0
+y: -5
+rotation: 90
+radius: 2.25
+}
+]
