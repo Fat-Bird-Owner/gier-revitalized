@@ -73,7 +73,10 @@ rules.onlyDepositCore = true;
 
 
 // Listen for tap events
-tapEvent((player, tile) => {
+Events.on(TapEvent, e => { 
+    let tile = e.tile;
+    let player = e.player;
+
     if(tile != null && tile.block() != null){
         // Get the tapped block
         let tappedBlock = tile.block();
