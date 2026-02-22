@@ -73,17 +73,15 @@ rules.onlyDepositCore = true;
 
 Events.on(TapEvent, event => {
     // get the tapped tile/building
-    let tile = event.tile;
-    if (!tile) return;
-    let bld = tile.build;
-    if (!bld) return;
+    if (!event.tile) return;
+    if (!event.tile.build) return;
 
     // spawn an effect at the building
     Fx.doorOpen.at(bld.x, bld.y);
 
     // only run on overflow gates
-    if (tile.block == Blocks.overflowGate) {
+    if (event.tile.block == Blocks.overflowGate) {
         // toggle invert
-        tile.block.invert = !tile.block.invert;
+        event.tile.block.invert = !tile.block.invert;
     }
 });
