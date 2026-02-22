@@ -19,7 +19,7 @@ researchCostMultiplier: 0.05
 shootY: 0
 customShadow: true
 category: turret
-reload: 35
+reload: 65
 shake: 0.65
 
 shoot:{
@@ -53,21 +53,25 @@ fragVelocityMax: 1
 fragBullet:{
 type: MissileBulletType
 speed: 1
-trailEffect: none
+trailEffect: missileTrailSmoke
 trailWidth: 2
 trailLength: 8
 width: 10
 height: 17
-lifetime: 100
-homingPower: 0.075
+lifetime: 120
+homingPower: 0.045
+homingDelay: 30
 homingRange: 80
-damage: 25
+damage: 10
+splashDamage: 10
+splashDamageRadius: 40
+scaledSplashDamage: true
 frontColor: 7d4c27
-accel: 0.034
-hitEffect: explosion
-hitSound: explosionDull
+accel: 0.045
+hitEffect: massiveExplosion
+hitSound: explosionCore
 despawnHit: true
-hitShake: 3.5
+hitShake: 4.5
 }
 
 }
