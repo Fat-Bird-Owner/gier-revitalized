@@ -8,6 +8,7 @@ databaseTag: "gier"
 shownPlanets: [gier]
 envEnabled: 2
 solid: true
+customShadow: true
 
 capacity: 50
 itemCapacity: 50
