@@ -73,18 +73,15 @@ rules.onlyDepositCore = true;
 
 
 // Listen for tap events
-Events.on(TapEvent, e => { 
+Events.on(TapEvent, e => {
     let tile = e.tile;
-    let player = e.player;
 
+    // If there's a tile and it has a block
     if(tile != null && tile.block() != null){
-        // Get the tapped block
         let tappedBlock = tile.block();
-        
-        // Get the block's name
-        let blockName = tappedBlock.name;
-        
-        // Print the block name
+        let blockName = tappedBlock.name; // internal block name
+
+        // show it
         Vars.ui.hudfrag.showToast("Tapped block: " + blockName);
     }
 });
