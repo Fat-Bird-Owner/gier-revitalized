@@ -21,3 +21,4 @@ parent: hydro-drill
 objectives:[core-facility]
 }
 researchCostMultiplier: 0.25
+envEnabled: 2
