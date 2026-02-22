@@ -10,6 +10,8 @@ parent: gier
 objectives:[core-facility]
 }
 envEnabled: 2
+researchCostMultiplier: 0.45
+squareSprite: false
 
 itemCapacity: 120
 outputItem: metaglass/15
