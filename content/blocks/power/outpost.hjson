@@ -16,3 +16,5 @@ research: photon-panel
 
 outputsPower: true
 envEnabled: 2
+laserColor2: 9f9f9f
+maxNodes: 2
