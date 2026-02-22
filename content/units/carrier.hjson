@@ -1,5 +1,5 @@
 type: tether
-speed: 4.5
+speed: 2.75
 name: Carrier
 health: 110
 flying: true
@@ -10,7 +10,8 @@ faceTarget: false
 drawSoftShadow: false
 isEnemy: false
 itemCapacity: 200
-priority: 5
+priority: 2
+rotateSpeed: 4.5
 
 requiresUnlock: false
 research: drone-facility
@@ -23,32 +24,32 @@ engineSize: 0
 hitSize: 14
 health: 145
 description: "
-[sky]Priority:[] 5
+[sky]Priority:[] 2
   
 An unarmored item transport drone.
 "
 engines:[
 {
-x: 5
+x: 6.5
 y: 0
 rotation: 180
 radius: 2.25
 }
 {
-x: -5
+x: -6.5
 y: 0
 rotation: 0
 radius: 2.25
 }
 {
 x: 0
-y: 5
+y: 6.5
 rotation: -90
 radius: 2.25
 }
 {
 x: 0
-y: -5
+y: -6.5
 rotation: 90
 radius: 2.25
 }
