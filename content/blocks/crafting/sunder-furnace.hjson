@@ -1,0 +1,59 @@
+type: GenericCrafter
+size: 4
+name: Sunder Furnace
+category: crafting
+
+requirements:[lead/1250,copper/850,graphite/650]
+buildtime: 1500
+research:{
+parent: gier
+objectives:[core-facility]
+}
+
+itemCapacity: 120
+outputItem: metaglass/15
+craftTime: 300
+consumes:{
+power: 2
+items:[
+sand/120
+lead/60
+]
+}
+
+craftEffect:{
+type: RadialEffect
+effect:{
+type: ParticleEffect
+colorFrom: 4f4f4f
+colorTo: 5f5f5f
+sizeFrom: 3
+sizeTo: 6
+lifetime: 50
+cone: 20
+lengthOffset: 4
+}
+}
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawDefault
+}
+{
+type: DrawArcSmelt
+}
+{
+type: DrawSoftParticles
+color: 4f4f4f
+color2: 4f4f4f00
+particleLife: 45
+particleRad: 4
+}
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+]
+}
