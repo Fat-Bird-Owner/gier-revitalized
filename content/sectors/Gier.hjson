@@ -1,7 +1,9 @@
 planet: gier
 name: "Gier [grey]0[]"
 sector: 0
-localizedName: "Gier [grey]<Asteroid Belt>[]"
+localizedName: "Gier [grey]<Asteroid Sector>[]"
 
-details: "[lightgrey]Gier is an asteroid sector, With a completely random experience every time."
+details: "[lightgrey]Gier is an asteroid sector, Expect a completely random map since its an asteroid sector."
 research: gier
+allowLaunchLoadout: true
+overrideLaunchDefaults: true
