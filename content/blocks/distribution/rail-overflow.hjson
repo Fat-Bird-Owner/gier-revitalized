@@ -7,3 +7,4 @@ researchCostMultiplier: 0.25
 
 databaseTag: "gier"
 envEnabled: 2
+squareSprite: false
