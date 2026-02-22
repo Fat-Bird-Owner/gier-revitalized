@@ -18,6 +18,8 @@ hidden: false
 
 contentOrder:[
 rail
+rail-router
+rail-overflow
 
 drone-facility
 facility-dropzone
