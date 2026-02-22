@@ -1,17 +1,17 @@
 databaseCategory: "lore"
 name: "Datachip: [sky]Genesis Era[]"
 details: '''
-During the peaceful period on serpulo where theres still green, A faction known as the [yellow]Generian[] settled in this place.
-This marked the start of the [acid]Genesis Era[], Though the Generians were peaceful and didnt choose to hurt the environment on serpulo.
-Then during one of many core launching procedures a core was was effected by the [sky]Protoplasma[] damaging its AI core.
-The rouge AI end up landing in the craters there they eventually eradicated the Generians, Marking the end of the Geneis Era.
+During a peaceful period on serpulo, A faction known as the [accent]Generians[] settled on the planet.
+This marked the start of the [acid]Genesis Era[], The Generians were a peaceful faction.
+All changed when during one of the many core launching procedures, A core was effected by the [sky]Protoplasmic Radiation[] damaging its AI core.
+The rouge AI called [coarl]Terra[] eventually ended up landing in the craters there they eventually eradicated the Generians, Marking the end of the Geneis Era.
 '''
 
-show: false
+show: true
 shownPlanets:[gier]
 
 research:{
-parent: giee
+parent: gier
 objectives:[
 core-facility
 ]
