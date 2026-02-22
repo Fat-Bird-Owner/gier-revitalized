@@ -71,19 +71,17 @@ rules.onlyDepositCore = true;
 })
 */
 
-/*
-Events.on(TapEvent, event => {
-    // get the tapped tile/building
-    if (!event.tile) return;
-    if (!event.tile.build) return;
 
-    // spawn an effect at the building
-    //Fx.doorOpen.at(event.tile.build.x, event.tile.build.y);
-
-    // only run on overflow gates
-    if (event.tile.block == Blocks.overflowGate) {
-        // toggle invert
-        event.tile.block.invert = !event.tile.block.invert;
+// Listen for tap events
+tapEvent((player, tile) => {
+    if(tile != null && tile.block() != null){
+        // Get the tapped block
+        let tappedBlock = tile.block();
+        
+        // Get the block's name
+        let blockName = tappedBlock.name;
+        
+        // Print the block name
+        Vars.ui.hudfrag.showToast("Tapped block: " + blockName);
     }
 });
-*/
