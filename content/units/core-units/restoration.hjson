@@ -84,7 +84,7 @@ damageEffect: none
 sectorRad: 0.025
 sectors: 25
 maxTargets: 300
-damage: 5
+damage: 0
 healPercent: 5
 reload: 40
 range: 60
