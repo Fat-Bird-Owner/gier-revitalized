@@ -11,7 +11,7 @@ makes gier playable.
 "
 
 iosCompatible: true
-version: "v0"
+version: "v1"
 minGameVersion: "155"
 dependencies: []
 hidden: false
