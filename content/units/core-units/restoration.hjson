@@ -81,6 +81,7 @@ type: EnergyFieldAbility
 damageEffect: none
 sectorRad: 0.025
 sectors: 25
+maxTargets: 300
 damage: 5
 healPercent: 5
 reload: 40
