@@ -82,6 +82,6 @@ Events.on(TapEvent, event => {
     // only run on overflow gates
     if (event.tile.block == Blocks.overflowGate) {
         // toggle invert
-        event.tile.block.invert = !tile.block.invert;
+        event.tile.block.invert = !event.tile.block.invert;
     }
 });
