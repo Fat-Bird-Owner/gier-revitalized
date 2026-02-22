@@ -53,15 +53,15 @@ fragVelocityMax: 1
 fragBullet:{
 type: MissileBulletType
 speed: 1
-trailEffect: missileTrailSmoke
-trailChance: 0.025
+trailEffect: missileTrailSmokeSmall
+trailChance: 0.2
 trailWidth: 2
 trailLength: 8
 width: 10
 height: 17
 lifetime: 120
-homingPower: 0.045
-homingDelay: 30
+homingPower: 0.1
+homingDelay: 15
 homingRange: 80
 damage: 10
 splashDamage: 10
@@ -69,10 +69,10 @@ splashDamageRadius: 40
 scaledSplashDamage: true
 frontColor: 7d4c27
 accel: 0.045
-hitEffect: rocketSmoke
+hitEffect: sparkExplosion
 hitSound: unitExplode3
 despawnHit: true
-hitShake: 4.5
+hitShake: 6.5
 }
 
 }
