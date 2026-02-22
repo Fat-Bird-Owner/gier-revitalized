@@ -15,6 +15,7 @@ envEnabled: 2
 category: crafting
 outputItem: sand/2
 baseEfficiency: 0
+customShadow: true
 
 buildVisibility: shown
 displayEfficiency: false
