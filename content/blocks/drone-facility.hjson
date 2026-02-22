@@ -9,10 +9,6 @@ envEnabled: 2
 
 polyRadius: 5.5
 
-consumes:{
-power: 0.16667
-}
-
 requirements:[
 copper/135
 lead/100
