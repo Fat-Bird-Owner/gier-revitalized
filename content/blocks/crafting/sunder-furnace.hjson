@@ -31,11 +31,11 @@ colorFrom: 4f4f4f
 colorTo: 5f5f5f00
 sizeFrom: 3
 sizeTo: 5
-lifetime: 50
+particles: 45
 cone: 14
 lifetime: 75
 length: 40
-interp: sine
+interp: exp
 }
 }
 
@@ -47,13 +47,12 @@ type: DrawRegion
 suffix: "-bottom"
 }
 {
-type: DrawParticles
-color: 4f4f4f
-color2: 4f4f4f00
-
+type: DrawArcSmelt
 }
 {
-type: DrawArcSmelt
+type: DrawParticles
+color: 4f4f4f
+alpha: 0.35
 }
 {
 type: DrawDefault
