@@ -12,6 +12,36 @@ faceTarget: false
 
 weapons:[
 {
+alwaysShooting: true
+shootCone: 180
+alternate: false
+shootY: 0
+recoil: 0
+mirror: false
+y: 0
+x: 0
+show: true
+
+bullet:{
+type: EmpBulletType
+timeIncrease: 2
+timeDuration: 300
+radius: 60
+damage: 0
+absorbable: false
+shootEffect: none
+smokeEffect: none
+hitEffect: none
+despawnEffect: none
+despawnHit: true
+instantDisappear: true
+unitDamageScl: 1
+hitPowerEffect: none
+hitUnits: false
+}
+
+}
+{
 show: false
 alwaysShooting: true
 alwaysContinuous: true
