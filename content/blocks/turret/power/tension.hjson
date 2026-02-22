@@ -63,13 +63,19 @@ lifetime: 120
 homingPower: 0.1
 homingDelay: 15
 homingRange: 80
+homingRange: 120
+impact: true
+knockback: 15
+status: slow
+statusDuration: 90
+
 damage: 10
 splashDamage: 10
 splashDamageRadius: 40
 scaledSplashDamage: true
 frontColor: 7d4c27
 accel: 0.045
-hitEffect: sparkExplosion
+hitEffect: titanExplosionFrag
 hitSound: unitExplode3
 despawnHit: true
 hitShake: 6.5
