@@ -4,7 +4,7 @@ laserScale: 0.75
 name: Outpost
 
 size: 2
-requirements:[copper/225,lead/185,graphite/125]
+requirements:[copper/75,lead/55,graphite/35]
 laserRange: 60
 category: power
 researchCostMultiplier: 0.06
