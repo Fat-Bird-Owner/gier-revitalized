@@ -1,12 +1,13 @@
 type: PowerNode
 sameBlockConnection: true
 laserScale: 0.75
+name: Outpost
 
 size: 2
 requirements:[copper/225,lead/185,graphite/125]
 laserRange: 60
 category: power
-researchCostMultiplier: 0.15
+researchCostMultiplier: 0.06
 
 buildVisibility: sandboxOnly
 
