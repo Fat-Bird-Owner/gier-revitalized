@@ -3,6 +3,7 @@ size: 2
 name: Sand Strate
 description: "Scrapes sand particles from the ground, if there is any."
 
+customShadow: true
 research: hydro-drill
 researchCostMultiplier: 0.25
 attribute: sand
