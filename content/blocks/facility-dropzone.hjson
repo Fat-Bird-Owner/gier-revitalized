@@ -16,5 +16,5 @@ envEnabled: 2
 databaseTag: "gier"
 
 research: drone-facility
-researchCostMultiplier: 0.65
+researchCostMultiplier: 0.05
   
