@@ -2,10 +2,18 @@ type: DroneCenter
 size: 2
 name: Extractor Bastion
 category: production
-  
+description: "
+[accent]Fabricates 2 Extraction Drones to mine basic tier resources.
+[lightgrey]Unit count is tied to the total Unit Cap.[]
+[red]Requires power.
+"  
 unitsSpawned: 2
 droneType: mono
 configurable: false
+
+consumes:{
+power: 0.5
+}
 
 requirements:[lead/250,copper/175,graphite/100]
 research: {
