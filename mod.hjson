@@ -9,6 +9,8 @@ author: "Fat Bird's Owner"
 description: "
 makes gier playable.
 Not Quite Finished yet.
+
+[accent[]]Has IOS Compat[[]]
 "
 
 iosCompatible: true
