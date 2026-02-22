@@ -39,10 +39,8 @@ drawer:{
 type: DrawMulti
 drawers:[
 {
-type: DrawDefault
-}
-{
-type: DrawArcSmelt
+type: DrawRegion
+suffix: "-bottom"
 }
 {
 type: DrawSoftParticles
@@ -52,8 +50,10 @@ particleLife: 45
 particleRad: 4
 }
 {
-type: DrawRegion
-suffix: "-bottom"
+type: DrawArcSmelt
+}
+{
+type: DrawDefault
 }
 ]
 }
