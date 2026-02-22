@@ -1,7 +1,7 @@
 type: PowerTurret
 size: 4
 outlineRadius: 0
-range: 280
+range: 320
 name: Tension
 health: 2450
 shownPlanets: [gier]
