@@ -87,3 +87,17 @@ Events.on(TapEvent, event => {
     }
 });
 */
+
+Events.on(TapEvent, function(event){
+    if(!event.tile) return;
+    var tile = event.tile;
+    if(!tile.build) return;
+
+    if(tile.block == Blocks.overflowGate){
+        tile.setBlock(Blocks.underflowGate);
+        Fx.doorOpen.at(tile.build.x, tile.build.y);
+    } else if(tile.block == Blocks.underflowGate){
+        tile.setBlock(Blocks.overflowGate);
+        Fx.doorOpen.at(tile.build.x, tile.build.y);
+    }
+});
