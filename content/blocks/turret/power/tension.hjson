@@ -54,6 +54,7 @@ fragBullet:{
 type: MissileBulletType
 speed: 1
 trailEffect: missileTrailSmoke
+trailChance: 0.025
 trailWidth: 2
 trailLength: 8
 width: 10
@@ -68,8 +69,8 @@ splashDamageRadius: 40
 scaledSplashDamage: true
 frontColor: 7d4c27
 accel: 0.045
-hitEffect: massiveExplosion
-hitSound: explosionCore
+hitEffect: rocketSmoke
+hitSound: unitExplode3
 despawnHit: true
 hitShake: 4.5
 }
