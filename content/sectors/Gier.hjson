@@ -3,5 +3,5 @@ name: "Gier [grey]0[]"
 sector: 0
 localizedName: "Gier [grey]<Asteroid Belt>[]"
 
-detail: "[lightgrey]Gier is an asteroid sector, With a completely random experience every time."
+details: "[lightgrey]Gier is an asteroid sector, With a completely random experience every time."
 research: gier
