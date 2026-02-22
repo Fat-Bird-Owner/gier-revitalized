@@ -11,6 +11,7 @@ targetable: false
 faceTarget: false
 
 weapons:[
+/*
 {
 alwaysShooting: true
 shootCone: 180
@@ -41,6 +42,7 @@ hitUnits: false
 }
 
 }
+
 {
 show: false
 alwaysShooting: true
@@ -70,6 +72,7 @@ lightOpacity: 0
 layer: 123.1
 }
 }
+*/
 ]
 
 abilities:[
@@ -80,7 +83,7 @@ sectorRad: 0.025
 sectors: 25
 damage: 5
 healPercent: 5
-reload: 60
+reload: 40
 range: 60
 color: 4f4f4f
 effectRadius: 0
