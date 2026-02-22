@@ -37,7 +37,6 @@ particles: 45
 cone: 14
 lifetime: 75
 length: 40
-interp: exp
 }
 }
 
