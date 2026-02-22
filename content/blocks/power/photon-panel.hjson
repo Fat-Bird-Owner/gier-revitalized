@@ -8,6 +8,7 @@ research: gier
 researchCostMultiplier: 0.15
 databaseTag: "gier"
 powerProduction: 0.166667
+category: power
 
 drawer:{
 type: DrawMulti
