@@ -5,11 +5,11 @@ buildVisibility: sandboxOnly
 
 drillTime: 220
 tier: 3
-drawMineItem: false
+drawMineItem: true
 rotateSpeed: 10
 updateEffectChance: 0.2
 
-#customShadow: true
+customShadow: true
 databaseTag: "gier"
 shownPlanets: [gier]
 envEnabled: 2
