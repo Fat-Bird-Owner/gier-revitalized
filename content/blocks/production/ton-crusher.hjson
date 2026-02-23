@@ -11,5 +11,7 @@ updateEffectChance: 0.2
 
 #customShadow: true
 databaseTag: "gier"
+shownPlanets: [gier]
+envEnabled: 2
 
 requirements:[lead/565,copper/425,graphite/275,metaglass/145,silicon/65]
