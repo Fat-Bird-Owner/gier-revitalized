@@ -8,7 +8,7 @@ tier: 3
 drawMineItem: false
 rotateSpeed: 15
 
-customShadow: true
+#customShadow: true
 databaseTag: "gier"
 
 requirements:[lead/565,copper/425,graphite/275,metaglass/145,silicon/65]
