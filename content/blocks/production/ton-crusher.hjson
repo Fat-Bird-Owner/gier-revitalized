@@ -8,6 +8,8 @@ tier: 3
 drawMineItem: true
 rotateSpeed: 10
 updateEffectChance: 0.2
+squareSprite: false
+category: production
 
 customShadow: true
 databaseTag: "gier"
