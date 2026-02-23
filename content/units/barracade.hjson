@@ -10,12 +10,22 @@ drawSoftShadow: false
 isEnemy: false
 priority: 1
 
+parts:[
+{
+type: ShapePart
+sides: 100
+radius: 11
+layer: 122
+}
+]
+
 abilities:[
 {
 type: ShieldArcAbility
 radius: 4.25
 regen: 0.3334
 angle: 360
+drawArc: false
 
 deflectSound: shieldBreakSmall
 chanceDeflect: 4.5
