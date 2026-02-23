@@ -2,7 +2,12 @@ type: GenericCrafter
 size: 4
 name: Sunder Furnace
 category: crafting
+priority: 5
+description: "
+[sky]Priority:[] 5
 
+Huge Smelting furnace, Able to smelt both metaglass and silicon.
+"
 requirements:[lead/1250,copper/850,graphite/650]
 buildtime: 1500
 research:{
@@ -14,13 +19,17 @@ researchCostMultiplier: 0.45
 squareSprite: false
 
 itemCapacity: 120
-outputItem: metaglass/15
+outputItems: [
+metaglass/60
+silicon/60
+]
 craftTime: 300
 consumes:{
 power: 2
 items:[
 sand/120
 lead/60
+graphite/60
 ]
 }
 
