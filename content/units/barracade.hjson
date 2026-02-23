@@ -31,8 +31,7 @@ drawArc: false
 deflectSound: shieldBreakSmall
 chanceDeflect: 9999
 whenShooting: false
-reflectVel: 1.65
-reflectTime: 1.5
+reflectVel: 1.95
 reflectBuildingDamage: 1.45
 }
 ]
