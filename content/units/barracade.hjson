@@ -29,7 +29,7 @@ angle: 360
 drawArc: false
 
 deflectSound: shieldBreakSmall
-chanceDeflect: 4.5
+chanceDeflect: 9999
 whenShooting: false
 reflectVel: 1.65
 reflectTime: 1.5
