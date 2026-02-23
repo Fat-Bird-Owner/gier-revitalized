@@ -6,7 +6,8 @@ buildVisibility: sandboxOnly
 drillTime: 220
 tier: 3
 drawMineItem: false
-rotateSpeed: 15
+rotateSpeed: 10
+updateEffectChance: 0.2
 
 #customShadow: true
 databaseTag: "gier"
