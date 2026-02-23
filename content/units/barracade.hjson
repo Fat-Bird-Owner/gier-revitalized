@@ -13,7 +13,7 @@ priority: 1
 abilities:[
 {
 type: ShieldArcAbility
-radius: 15
+radius: 9.5
 regen: 0.3334
 angle: 360
 
@@ -32,27 +32,27 @@ health: 65
 armor: 2
 engines:[
 {
-x: 2.25
-y: 2.25
-rotation: 180
+x: 2.5
+y: 2.5
+rotation: -45
 radius: 3
 }
 {
-x: -2.25
-y: 2.25
-rotation: 0
+x: -2.5
+y: 2.5
+rotation: 45
 radius: 3
 }
 {
-x: 2.25
-y: 2.25
-rotation: -90
+x: 2.5
+y: -2.5
+rotation: -135
 radius: 3
 }
 {
-x: 2.25
-y: -2.25
-rotation: 90
+x: 2.5
+y: -2.5
+rotation: 135
 radius: 3
 }
 ]
