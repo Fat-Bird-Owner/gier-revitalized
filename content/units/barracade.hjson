@@ -13,7 +13,7 @@ priority: 1
 abilities:[
 {
 type: ShieldArcAbility
-radius: 9.5
+radius: 4.25
 regen: 0.3334
 angle: 360
 
@@ -50,7 +50,7 @@ rotation: -135
 radius: 3
 }
 {
-x: 2.5
+x: -2.5
 y: -2.5
 rotation: 135
 radius: 3
