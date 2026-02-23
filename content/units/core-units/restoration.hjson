@@ -119,7 +119,7 @@ maxTargets: 300
 damage: 0
 healPercent: 0
 reload: 40
-range: 90
+range: 180
 color: cc002c
 effectRadius: 0
 shootSound: none
