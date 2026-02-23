@@ -16,6 +16,7 @@ type: ShapePart
 sides: 100
 radius: 11
 layer: 122
+color: ffd37fff
 }
 ]
 
