@@ -30,4 +30,5 @@ damage: 65
 impact: true
 knockBack: 35
 hitEffect: casing4
+pointEffectSpace: 40
 }
