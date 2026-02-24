@@ -29,7 +29,7 @@ type: WaveEffect
 sizeFrom: 150
 sizeTo: 150
 strokeFrom: 3
-lifetime: 30
+lifetime: 90
 color: ffffff00
 strokeTo: 0
 layer: 122
@@ -39,7 +39,8 @@ layer: 122
 consumes:{
 power: 0.5
 }
-  
+
+shootSound: explosion
 shootType:{
 type: EmpBulletType
 radius: 150
@@ -47,7 +48,7 @@ despawnHit: true
 instantDisappear: true
 
 timeIncrease: 1.75
-timeDuration: 240
+timeDuration: 239
 powerDamageScl: 1
 powerSclDecrease: 0.45
 hitUnits: false
@@ -58,8 +59,9 @@ type: WaveEffect
 layer: 122
 sizeFrom: 40
 sizeTo: 150
+interp: sine
 strokeFrom: 3
-lifetime: 30
+lifetime: 120
 color: ffffff00
 strokeTo: 0
 }
