@@ -1,0 +1,41 @@
+type: PowerTurret
+size: 2
+reload: 60
+range: 150
+
+buildVisibility: sandboxOnly
+category: effect
+targetGround: false
+targetBlocks: true
+targetHealing: true
+rotatable: false
+alwaysShooting: true
+shootCone: 180
+
+consumes:{
+power: 0.5
+}
+  
+shootType:{
+type: EmpBulletType
+radius: 150
+despawnHit: true
+instantDisappear: true
+
+timeIncrease: 1.75
+timeDuration: 180
+powerDamageScl: 1
+powerSclDecrease: 0.45
+hitUnits: false
+unitDamageScl: 1
+healAmount: 5
+hitEffect:{
+type: WaveEffect
+sizeFrom: 20
+sizeTo: 125
+interp: sine
+strokeFrom: 3
+strokeTo: 3
+}
+
+}
