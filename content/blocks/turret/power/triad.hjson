@@ -3,7 +3,8 @@ size: 2
 name: Triad
 buildVisibility: sandboxOnly
 outlineRadius: 0
-  
+customShadow: true
+
 consumes:{
 power: 0.5
 }
