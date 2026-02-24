@@ -3,11 +3,11 @@ size: 3
 name: Ton Crusher
 buildVisibility: sandboxOnly
 description: "
-More advanced mineral drill, Can now be used to bore up beryllium and titanium.
+Far more advanced mineral drill, Can now be used to bore up beryllium and titanium.
 
-[green]Higher Drill Tier
-[salmon]Requires power[]
-[red] Highly Explosive
+[green]- Drills  Harder Resources
+[salmon]- Requires power[]
+[red]- Highly Explosive
 "
 
 consumes:{
