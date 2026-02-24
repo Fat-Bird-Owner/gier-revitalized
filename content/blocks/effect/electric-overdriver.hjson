@@ -1,6 +1,6 @@
 type: PowerTurret
 size: 2
-reload: 60
+reload: 120
 range: 150
 name: Electric Overdriver
 
@@ -12,6 +12,8 @@ targetHealing: true
 rotatable: false
 alwaysShooting: true
 shootCone: 180
+rotateSpeed: 0
+shootY: 0
 
 drawer:{
 type: DrawRegion
@@ -28,7 +30,7 @@ despawnHit: true
 instantDisappear: true
 
 timeIncrease: 1.75
-timeDuration: 180
+timeDuration: 240
 powerDamageScl: 1
 powerSclDecrease: 0.45
 hitUnits: false
@@ -36,11 +38,12 @@ unitDamageScl: 1
 healAmount: 5
 hitEffect:{
 type: WaveEffect
-sizeFrom: 20
-sizeTo: 125
+sizeFrom: 40
+sizeTo: 150
 interp: sine
 strokeFrom: 3
-strokeTo: 3
+color: ffffff00
+strokeTo: 0
 }
 
 }
