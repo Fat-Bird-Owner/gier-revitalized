@@ -1,0 +1,32 @@
+type: PowerTurret
+size: 2
+name: Triad
+buildVisibility: sandboxOnly
+outlineRadius: 0
+  
+consumes:{
+power: 0.5
+}
+
+drawer:{
+type: DrawTurret
+parts:[
+{
+suffix: "-barrel"
+under: true
+moveY: -2
+progress: recoil
+}]}
+  
+range: 120
+reload: 65
+shake: 6.5
+shootType:{
+type: RailBulletType
+length: 125
+pointEffect: pointBeam
+damage: 65
+impact: true
+knockBack: 35
+hitEffect: casing4
+}
