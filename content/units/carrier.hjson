@@ -20,6 +20,7 @@ controller: CargoAI
 playerControllable: false
 logicControllable: false
 
+itemOffsetY: 0
 engineSize: 0
 hitSize: 14
 health: 145
