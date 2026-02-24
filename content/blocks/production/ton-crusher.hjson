@@ -2,12 +2,24 @@ type: Drill
 size: 3
 name: Ton Crusher
 buildVisibility: sandboxOnly
+description: "
+More advanced mineral drill, Can now be used to bore up beryllium and titanium.
 
+[green]Higher Drill Tier
+[salmon]Requires power[]
+[red] Highly Explosive
+"
+
+consumes:{
+power: 0.75
+}
+
+health: 1350
 drillTime: 220
 tier: 3
 drawMineItem: true
-rotateSpeed: 10
-updateEffectChance: 0.2
+rotateSpeed: 5
+updateEffectChance: 0.25
 squareSprite: false
 category: production
 
@@ -16,4 +28,9 @@ databaseTag: "gier"
 shownPlanets: [gier]
 envEnabled: 2
 
-requirements:[lead/565,copper/425,graphite/275,metaglass/145,silicon/65]
+baseExplosiveness: 2
+explosivenessScale: 6
+flammabilityScale: 0.35
+
+
+requirements:[lead/565,copper/425,graphite/275,silicon/125]
