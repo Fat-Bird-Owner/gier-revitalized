@@ -28,7 +28,6 @@ shootEffect:{
 type: WaveEffect
 sizeFrom: 150
 sizeTo: 150
-interp: none
 strokeFrom: 3
 lifetime: 30
 color: ffffff00
@@ -59,7 +58,6 @@ type: WaveEffect
 layer: 122
 sizeFrom: 40
 sizeTo: 150
-interp: none
 strokeFrom: 3
 lifetime: 30
 color: ffffff00
