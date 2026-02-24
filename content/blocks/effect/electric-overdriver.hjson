@@ -3,6 +3,7 @@ size: 2
 reload: 120
 range: 150
 name: Electric Overdriver
+outlineRadius: 0
 
 buildVisibility: sandboxOnly
 category: effect
