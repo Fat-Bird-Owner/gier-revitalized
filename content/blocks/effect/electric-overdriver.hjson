@@ -2,6 +2,7 @@ type: PowerTurret
 size: 2
 reload: 60
 range: 150
+name: Electric Overdriver
 
 buildVisibility: sandboxOnly
 category: effect
@@ -11,6 +12,10 @@ targetHealing: true
 rotatable: false
 alwaysShooting: true
 shootCone: 180
+
+drawer:{
+type: DrawRegion
+}
 
 consumes:{
 power: 0.5
