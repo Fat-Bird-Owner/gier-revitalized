@@ -58,7 +58,7 @@ healAmount: 5
 hitEffect:{
 type: WaveEffect
 layer: 122
-sizeFrom: 40
+sizeFrom: 0
 sizeTo: 150
 interp: sine
 strokeFrom: 3
