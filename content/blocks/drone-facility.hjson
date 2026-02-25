@@ -12,8 +12,8 @@ polyRadius: 5.5
 
 requirements:[
 copper/135
-lead/100
-graphite/85
+lead/125
+graphite/30
 ]
 
 research: gier
