@@ -1,5 +1,5 @@
 type: tether
-speed: 2.75
+speed: 3.5
 name: Carrier
 health: 110
 flying: true
@@ -9,7 +9,7 @@ drag: 0.02
 faceTarget: false
 drawSoftShadow: false
 isEnemy: false
-itemCapacity: 200
+itemCapacity: 250
 priority: 2
 rotateSpeed: 4.5
 
