@@ -4,7 +4,7 @@ name: Drone Facility
 health: 475
 
 customShadow: true
-itemCapacity: 120
+itemCapacity: 300
 envEnabled: 2
 unitType: carrier
 
