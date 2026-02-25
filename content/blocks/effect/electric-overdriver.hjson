@@ -4,6 +4,9 @@ reload: 120
 range: 150
 name: Electric Overdriver
 outlineRadius: 0
+shownPlanets: [gier]
+envEnabled: 2
+databaseTag: "gier"
 
 buildVisibility: sandboxOnly
 category: effect
