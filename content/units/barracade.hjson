@@ -1,5 +1,5 @@
 type: flying
-speed: 2.25
+speed: 2
 name: Barracade
 flying: true
 outlineColor: 2f2f3f
@@ -8,38 +8,30 @@ drag: 0.03
 faceTarget: true
 drawSoftShadow: false
 isEnemy: false
+health: 150
 priority: 1
-
-parts:[
-{
-type: ShapePart
-sides: 100
-radius: 11
-layer: 122
-color: ffd37fff
-}
-]
+circleTarget: true
 
 abilities:[
 {
 type: ShieldArcAbility
-radius: 4.25
+radius: 4.24
 regen: 0.3334
 angle: 360
-drawArc: false
+drawArc: true
 
 deflectSound: shieldBreakSmall
 chanceDeflect: 9999
 whenShooting: false
-reflectVel: 1.95
-reflectBuildingDamage: 1.45
+reflectVel: 1.05
+reflectBuildingDamage: 0.6
 }
 ]
 
 engineSize: 0
-hitSize: 9.5
+hitSize: 10.5
 health: 65
-armor: 2
+armor: -5
 engines:[
 {
 x: 2.5
