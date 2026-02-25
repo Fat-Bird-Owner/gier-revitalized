@@ -18,14 +18,14 @@ type: ShieldArcAbility
 radius: 4.24
 regen: 0.3334
 angle: 360
-drawArc: true
+drawArc: false
 
 deflectSound: shieldBreakSmall
 chanceDeflect: 9999
 whenShooting: false
 reflectVel: 1.05
 
-region: "-shield-ball"
+#region: "-shield-ball"
 
 reflectBuildingDamage: 0.6
 }
