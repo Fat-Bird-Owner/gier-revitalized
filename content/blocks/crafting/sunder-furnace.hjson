@@ -8,6 +8,8 @@ description: "
 
 Huge Smelting furnace, Able to smelt both metaglass and silicon.
 "
+
+customShadow: true
 requirements:[lead/1250,copper/850,graphite/650]
 buildtime: 1500
 research:{
