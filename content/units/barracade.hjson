@@ -24,6 +24,9 @@ deflectSound: shieldBreakSmall
 chanceDeflect: 9999
 whenShooting: false
 reflectVel: 1.05
+
+region: gr-shield-ball"
+
 reflectBuildingDamage: 0.6
 }
 ]
