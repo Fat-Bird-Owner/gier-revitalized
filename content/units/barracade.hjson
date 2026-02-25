@@ -37,26 +37,26 @@ health: 65
 armor: -5
 engines:[
 {
-x: 2.5
-y: 2.5
+x: 3.5
+y: 3.5
 rotation: -45
 radius: 3
 }
 {
-x: -2.5
-y: 2.5
+x: -3.5
+y: 3.5
 rotation: 45
 radius: 3
 }
 {
-x: 2.5
-y: -2.5
+x: 3.5
+y: -3.5
 rotation: -135
 radius: 3
 }
 {
-x: -2.5
-y: -2.5
+x: -3.5
+y: 3.5
 rotation: 135
 radius: 3
 }
