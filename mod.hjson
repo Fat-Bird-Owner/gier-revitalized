@@ -3,7 +3,7 @@ name: "gr"
 
 displayName: "[sky[]]Gier: [coral[]]Revitalized[[]]"
 repo: "Fat-Bird-Owner/gier-revitalized"
-subtitle: "Gier alive"
+
 author: "Fat Bird's Owner"
 
 description: "
@@ -17,7 +17,8 @@ This mod is meant to be played as a challange typa thing.
 "
 
 iosCompatible: true
-version: "v1"
+version: "v1-Gier"
+subtitle: "v1-Gier"
 minGameVersion: "155"
 dependencies: []
 hidden: false
