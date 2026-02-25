@@ -10,6 +10,8 @@ Planets.gier.accessible = true;
 Planets.gier.alwaysUnlocked = true;
 Planets.gier.campaignRuleDefaults.clearSectorOnLose = true;
 
+Vars.maxSchematicSize = 3064;
+
 Planets.gier.ruleSetter = rules => {
 rules.waveTeam = Team.blue;
 /*
