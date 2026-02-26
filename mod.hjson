@@ -4,16 +4,15 @@ name: "gr"
 displayName: "[sky[]]Gier: [coral[]]Revitalized[[]]"
 repo: "Fat-Bird-Owner/gier-revitalized"
 
-author: "Fat Bird's Owner"
+author: "Fat Bird's Owner - Main Developer"
 
 description: "
-makes gier playable.
-Not Quite Finished yet.
+Makes gier a playable planet.
 
-This mod is meant to be played as a challange typa thing.
+Gier also has completely random terrain generation.
+( if your not happy with your terrian gen then just abandon the sector and relaunch to it.)
 
-[accent[]]Has IOS Compat
-[[]]
+[accent[]]IOS Compatible
 "
 
 iosCompatible: true
