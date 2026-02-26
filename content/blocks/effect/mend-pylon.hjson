@@ -16,6 +16,7 @@ consumes:{
 power: 0.5
 }
 
+category: effect
 drawer:{
 type: DrawMulti
 drawers:[
