@@ -24,13 +24,13 @@ type: DrawDefault
 }
 {
 type: DrawGlowRegion
-color: ffd37f55
+color: 84F5B444
 suffix: "-top"
 }
 {
 type: DrawPulseShape
 square: false
-color: ffd37f66
+color: 84F5B466
 minStroke: 0
 }
 ]
@@ -39,7 +39,7 @@ minStroke: 0
 envEnabled: 2
 databaseTag: "gier"
 customShadow: true
-
+baseColor: 84F5B4FF
 
 #research: cor-facility
 researchCostMultiplier: 0.05
