@@ -2,7 +2,7 @@ type: RegenProjector
 size: 2
 health: 875
 name: Mend Pylon
-range: 10
+range: 12
 healPercent: 0.15
   
 requirements:[
