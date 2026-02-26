@@ -10,7 +10,7 @@ copper/85
 
 itemCapacity: 65
 dumpTime: 2.5
-staleTimeDuration: 0
+staleTimeDuration: 1
 envEnabled: 2
 databaseTag: "gier"
 customShadow: true
