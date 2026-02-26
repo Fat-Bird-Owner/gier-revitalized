@@ -8,7 +8,7 @@ Team.get(5).emoji = "[#8ecff5][]";
 Planets.gier.visible = true;
 Planets.gier.accessible = true;
 Planets.gier.alwaysUnlocked = true;
-Planets.gier.campaignRuleDefaults.clearSectorOnLose = true;
+Planets.gier.clearSectorOnLose = true;
 
 Vars.maxSchematicSize = 3064;
 
