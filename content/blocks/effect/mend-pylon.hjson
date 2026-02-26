@@ -1,0 +1,26 @@
+type: RegenProjector
+size: 2
+health: 875
+name: Mend Pylon
+range: 10
+healPercent: 0.15
+  
+requirements:[
+lead/225
+copper/175
+graphite/75
+silicon/50
+]
+
+consumes:{
+power: 0.5
+}
+
+envEnabled: 2
+databaseTag: "gier"
+customShadow: true
+
+
+#research: cor-facility
+researchCostMultiplier: 0.05
+  
