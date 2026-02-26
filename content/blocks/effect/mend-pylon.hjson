@@ -16,7 +16,7 @@ consumes:{
 power: 0.5
 }
 
-drawers:{
+drawer:{
 type: DrawMulti
 drawers:[
 {
