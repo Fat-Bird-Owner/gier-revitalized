@@ -16,6 +16,26 @@ consumes:{
 power: 0.5
 }
 
+drawers:{
+type: DrawMulti
+drawers:[
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: ffd37f55
+suffix: "-top"
+}
+{
+type: DrawPulseShape
+square: false
+color: ffd37f66
+minStroke: 0
+}
+]
+}
+
 envEnabled: 2
 databaseTag: "gier"
 customShadow: true
