@@ -8,7 +8,7 @@ description: "Very durable defensive barrier, able to reliably tank constant dam
 [red]- Extremely explosive
 "
 
-baseExplosiveness: 25
+baseExplosiveness: 105
 radius: 160
 sides: 4
 itemCapacity: 0
