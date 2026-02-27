@@ -1,9 +1,10 @@
 type: PowerTurret
 size: 2
 name: Triad
-buildVisibility: sandboxOnly
 outlineRadius: 0
 customShadow: true
+shownPlanets: [gier]
+databaseTag: "gier"
 
 consumes:{
 power: 0.5
@@ -19,17 +20,19 @@ moveY: -2
 progress: recoil
 }]}
   
-range: 120
+range: 300
 reload: 65
 shake: 6.5
 shootType:{
 type: RailBulletType
-length: 125
+length: 300
 pointEffect: instTrail
 pierceDamageFactor: 1
 damage: 65
 impact: true
 knockBack: 35
 hitEffect: casing4
-pointEffectSpace: 40
+status: melting
+
+pointEffectSpace: 30
 }
