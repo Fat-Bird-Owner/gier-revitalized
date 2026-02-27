@@ -1,3 +1,4 @@
 type: CoreBlock
 customShadow: true
 health: 750
+name: Veil
