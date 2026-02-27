@@ -1,0 +1,57 @@
+type: flying
+flying: true
+health: 550
+armor: 15
+name: Decay
+  
+speed: 3.5
+accel: 0.05
+drag: 0.02
+hitSize: 9.5
+
+engineSize: 0
+engines:[
+{
+x: 0
+y: -5.25
+rotation: -90
+radius: 2.5
+}
+{
+x: -5
+y: -3.25
+rotation: -45
+radius: 1.5
+}
+{
+x: 5
+y: -3.25
+rotation: -135
+radius: 1.5
+}
+]
+  
+targetFlags:[
+generator
+factory
+storage
+turret
+core
+]
+  
+weapons:[
+{
+continuous: true
+alwaysContinuous: true
+  
+bullet:{
+type: ContinuousFlameBulletType
+width: 6
+length: 40
+pierceCap: 1
+damage: 3.5
+recoil: 0.1
+}
+  
+}
+]
