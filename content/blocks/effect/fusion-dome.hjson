@@ -1,0 +1,28 @@
+type: ForceProjector
+size: 3
+name: "Fusion Dome"
+
+radius: 160
+sides: 4
+itemCapacity: 0
+envEnabled: 2
+health: 4250
+#customShadow: true
+squareSprite: false
+
+#research: copper-fort
+researchCostMultiplier: 0.35
+databaseTag: "gier"
+shieldHealth: 4500
+cooldownNormal: 4.5
+
+shieldRotation: 45
+
+requirements: [
+lead/1050
+copper/875
+graphite/775
+metaglass/445
+silicon/325
+]
+category: effect
