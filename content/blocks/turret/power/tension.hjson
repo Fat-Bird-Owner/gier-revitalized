@@ -12,7 +12,7 @@ power: 1
 }
 
 databaseTag: "gier"
-research: gier
+research: photon-panel
 
 researchCostMultiplier: 0.05
 shootSound: shootScathe
