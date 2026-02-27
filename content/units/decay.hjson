@@ -1,7 +1,8 @@
 type: flying
 flying: true
 health: 550
-armor: -15
+armor: -5
+range: 10
 name: Decay
   
 speed: 3.5
