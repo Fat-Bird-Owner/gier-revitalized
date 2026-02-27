@@ -16,7 +16,7 @@ lead/125
 graphite/30
 ]
 
-research: gier
+research: rail
 researchCostMultiplier: 0.25
 databaseTag: "gier"
 #shownPlanets:[gier]
