@@ -1,0 +1,9 @@
+type: GenericCrafter
+drawer:{
+type: DrawShape
+sides: 65
+radius: 12  
+layer: 125
+color: c33e2b
+}
+buildVisiblity: sandboxOnly
