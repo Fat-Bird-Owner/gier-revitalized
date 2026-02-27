@@ -2,7 +2,7 @@ type: Drill
 size: 2
 name: Hydro Drill
 description: "Drills the ground for any possible extract."
-requirements:[copper/25,lead/15]
+requirements:[copper/23,lead/12]
 customShadow: true
 
 tier: 2
