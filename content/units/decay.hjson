@@ -1,7 +1,7 @@
 type: flying
 flying: true
 health: 550
-armor: 15
+armor: -15
 name: Decay
   
 speed: 3.5
@@ -11,23 +11,26 @@ hitSize: 9.5
 lowAltitude: true
 controller: HugAI
 
+healColor: 7f7f7f
+outlineColor: 2f2f3f
+
 engineSize: 0
 engines:[
 {
 x: 0
-y: -5.25
+y: -6.25
 rotation: -90
 radius: 2.5
 }
 {
-x: -5
-y: -3.25
+x: -6
+y: -4.25
 rotation: -45
 radius: 1.5
 }
 {
-x: 5
-y: -3.25
+x: 6
+y: -4.25
 rotation: -135
 radius: 1.5
 }
@@ -54,8 +57,10 @@ type: ContinuousFlameBulletType
 width: 2
 length: 40
 pierceCap: 1
-damage: 3.5
+damage: 8.5
 recoil: 0.025
+flareWidth: 1.5
+lifesteal: 0.65
 }
   
 }
