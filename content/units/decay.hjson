@@ -8,6 +8,8 @@ speed: 3.5
 accel: 0.05
 drag: 0.02
 hitSize: 9.5
+lowAltitude: true
+controller: HugAI
 
 engineSize: 0
 engines:[
@@ -43,14 +45,17 @@ weapons:[
 {
 continuous: true
 alwaysContinuous: true
+mirror: false
+y:2
+x: 0
   
 bullet:{
 type: ContinuousFlameBulletType
-width: 6
+width: 2
 length: 40
 pierceCap: 1
 damage: 3.5
-recoil: 0.1
+recoil: 0.025
 }
   
 }
