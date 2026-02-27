@@ -21,7 +21,7 @@ squareSprite: false
 researchCostMultiplier: 0.35
 databaseTag: "gier"
 shieldHealth: 4500
-cooldownNormal: 2.75
+cooldownNormal: 0.65
 
 shieldRotation: 45
 
