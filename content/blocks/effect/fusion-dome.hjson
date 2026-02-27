@@ -1,7 +1,11 @@
 type: ForceProjector
 size: 3
 name: "Fusion Dome"
+ddescription: "Very durable defensive barrier, able to reliably tank constant damage.
 
+[green]- High shield durabilty
+[salmon]- Requires heavy powering
+"
 radius: 160
 sides: 4
 itemCapacity: 0
@@ -14,9 +18,13 @@ squareSprite: false
 researchCostMultiplier: 0.35
 databaseTag: "gier"
 shieldHealth: 4500
-cooldownNormal: 4.5
+cooldownNormal: 2.75
 
 shieldRotation: 45
+
+consumes:{
+power: 2.5
+}
 
 requirements: [
 lead/1050
