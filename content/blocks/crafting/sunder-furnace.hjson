@@ -6,14 +6,14 @@ priority: 5
 description: "
 [sky]Priority:[] 5
 
-Huge Smelting furnace, Able to smelt both metaglass and silicon.
+Huge Smelting furnace, Able to smelt both metaglass and silicon at the same time.
 "
 
 customShadow: true
 requirements:[lead/1250,copper/850,graphite/650]
 buildtime: 1500
 research:{
-parent: gier
+parent: hydro-drill
 objectives:[core-facility]
 }
 envEnabled: 2
