@@ -2,12 +2,8 @@ type: ForceProjector
 name: Copper Fort
 priority: 3.5
 health: 65
-destroyBullet:{
-type: ExplosionBulletType
-splashDamage: 135
-splashDamageRadius: 40
-hitShake: 7.5
-}
+
+baseExplosiveness: 15
 
 sides: 4
 radius: 56
@@ -22,7 +18,9 @@ description: "
 [sky]Priority[]: 2.5
 
 Generates a forcefield in a small area, Long cooldown time.
-[red]Explodes upon destruction.[]
+
+[salmon]- Explosive
+[green]- Quick build[]
 "
 research: gier
 researchCostMultiplier: 0.35
