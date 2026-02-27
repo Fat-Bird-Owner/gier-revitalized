@@ -11,6 +11,12 @@ isEnemy: false
 health: 150
 priority: 1
 
+weapons:[
+{
+noAttack: true
+}
+]
+
 abilities:[
 {
 type: ShieldArcAbility
