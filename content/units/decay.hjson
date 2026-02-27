@@ -26,13 +26,13 @@ radius: 2.5
 {
 x: -6
 y: -4.25
-rotation: -45
+rotation: 45
 radius: 1.5
 }
 {
 x: 6
 y: -4.25
-rotation: -135
+rotation: 135
 radius: 1.5
 }
 ]
