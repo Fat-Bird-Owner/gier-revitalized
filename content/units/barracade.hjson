@@ -10,7 +10,6 @@ drawSoftShadow: false
 isEnemy: false
 health: 150
 priority: 1
-circleTarget: true
 
 abilities:[
 {
@@ -31,6 +30,7 @@ reflectBuildingDamage: 0.6
 }
 ]
 
+range: 5
 engineSize: 0
 hitSize: 10.5
 health: 65
