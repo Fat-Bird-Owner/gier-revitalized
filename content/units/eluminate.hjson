@@ -17,7 +17,7 @@ engineSize: 2.5
 trailScl: 1
 trailLength: 14
 
-playerControllable: false
+#playerControllable: false
 logicControllable: false
 priority: 0.25
 
@@ -52,7 +52,7 @@ despawnHit: true
 hitEffect: {
 type: ParticleEffect
 region: "gr-eluminate-glow"
-sizeFrom: 16
+sizeFrom: 8
 sizeTo: 0
 cone: 0
 offset: -90
