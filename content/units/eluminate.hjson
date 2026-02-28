@@ -5,18 +5,24 @@ rotateSpeed: 3.5
 health: 35
 armor: 5
 name: Eluminate
-flying: true
+omniMovement: false
 
-engineOffset: 10
+flying: true
+accel: 0.0225
+drag: 0.01125
+
+engineOffset: 6
 engineSize: 2.5
 
 trailScl: 1
 trailLength: 14
 
+playerControllable: false
 logicControllable: false
 priority: 0.25
 
 buildSpeed: 0.15
+buildRange: 25
 
 outlineColor: 2f2f3f
 drawCell: false
