@@ -1,27 +1,28 @@
 type: DroneCenter
 size: 2
-name: Extractor Bastion
+name: Eluminate Bastion
 category: production
 description: "
-[accent]Fabricates 2 Extraction Drones to mine basic tier resources.
-[lightgrey]Unit count is tied to the total Unit Cap.[]
-[red]Requires power.
+Constructs [accent]eluminates[] to rebuild and assist the player.
+
+[red]- Limit 2 (per building)
+[red]- requires power
+[green]- Eluminates help rebuild
 "  
 unitsSpawned: 2
-droneType: mono
+droneType: eluminate
 configurable: false
 
 consumes:{
-power: 0.5
+power: 0.75
 }
 buildVisibility: sandboxOnly
 
-requirements:[lead/250,copper/175,graphite/100]
-/*
+requirements:[lead/850,copper/675, graphite/475, metaglass/275, silicon/300]
+
 research: {
-parent: hydro-drill
-objectives:[core-facility]
+parent: mend-pylon
 }
-*/
+
 researchCostMultiplier: 0.25
 envEnabled: 2
