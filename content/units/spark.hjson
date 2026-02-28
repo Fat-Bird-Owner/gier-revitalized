@@ -27,7 +27,7 @@ inaccuracy: 15
 bullet:{
 type: MissileBulletType
 homingPower: 0.125
-speed: 0
+speed: 2
 trailColor: ffffff
 backColor: 44d2f0
 frontColor: 66d4f2
@@ -39,6 +39,7 @@ scaledSplashDamage: true
 splashDamage: 15
 splashDamageRadius: 20
 damage: 10
+trailEffect: none
 hitEffect: explosion
 despawnHit: true
 
