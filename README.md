@@ -2,11 +2,10 @@
 
 ![top]
 # Gier Revitalized
-
-### !This mod might be incompatiable with other mod!
+## !This mod might be incompatiable with other mods!
 <br>
 
-Gier Revitalized is intended to bring back this asteroid sector, but within my concept.<br></div>
+### Gier Revitalized is intended to bring back this asteroid sector, but within my concept.<br></div>
 ### Such as:</div>
 - Being Endless
 - Randomly Generated
