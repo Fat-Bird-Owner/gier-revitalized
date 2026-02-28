@@ -14,6 +14,8 @@ Vars.maxSchematicSize = 3064;
 
 Planets.gier.ruleSetter = rules => {
 rules.waveTeam = Team.blue;
+rules.dynamicColor = new Color(0,0,0,0.75);
+rules.modeName = "Endless/Asteroid";
 /*
 rules.placeRangeCheck = false;
 rules.showSpawns = true;
