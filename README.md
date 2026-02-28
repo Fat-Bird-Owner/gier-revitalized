@@ -3,7 +3,7 @@
 ![Icon]
 # Gier Revitalized
 
-## !This Mod Maybe incompatiable with other mod!
+### !This Mod Maybe incompatiable with other mod!
 <br>
 
 Gier Revitalized is intended to bring back this asteroid sector, but within my concept.<br></div>
