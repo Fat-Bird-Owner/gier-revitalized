@@ -1,6 +1,6 @@
 <div align = center>
 
-![Icon]
+![top]
 # Gier Revitalized
 
 ### !This Mod Maybe incompatiable with other mod!
@@ -31,6 +31,7 @@ Gier Revitalized is intended to bring back this asteroid sector, but within my c
 
 ![gp2]
 
+[top]: top.png
 [Icon]: icon.png
 [gp1]: gameplay-1.png
 [gp2]: gameplay-2.png
