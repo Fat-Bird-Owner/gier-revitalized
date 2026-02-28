@@ -5,7 +5,8 @@ rotateSpeed: 3.5
 health: 35
 armor: 5
 name: Eluminate
-hoverable: false
+flying: true
+engineSize: 2.5
 
 playerControllable: false
 logicControllable: false
