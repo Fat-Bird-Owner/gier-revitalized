@@ -19,4 +19,6 @@ baseExplosiveness: 2.5
 explosivenessScale: 5
 flammabilityScale: 1.5
 
-description: "Actively distributes stored items on all outputs, Quite explosive."
+description: "Stores item and can increase core capacity.
+Contents can be unloaded from using an output port.
+"
