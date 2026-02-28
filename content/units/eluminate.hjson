@@ -8,7 +8,6 @@ name: Eluminate
 flying: true
 engineSize: 2.5
 
-playerControllable: false
 logicControllable: false
 priority: 0.25
 
@@ -18,16 +17,20 @@ outlineColor: 2f2f3f
 drawCell: false
 createWreck: false
 drawSoftShadow: false
+createScorch: false
 
 deathExplosionEffect: none
 deathSound: healWave
 defaultCommand: rebuild
+controller: BuilderAI
 
 weapons:[
 {
 controllable: false
 aiControllable: false
 shootOnDeath: true
+shootCone: 180
+
 display: false
 
 bullet:{
