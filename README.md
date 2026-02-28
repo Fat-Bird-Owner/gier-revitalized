@@ -13,6 +13,9 @@ Gier Revitalized is intended to bring back this asteroid sector, but within my c
 - And also including more modded blocks
 <div align = center>
 
+<br>
+<br>
+
 ![gp1]
 
 [Icon]: icon.png
