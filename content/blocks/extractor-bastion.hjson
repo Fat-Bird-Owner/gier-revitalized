@@ -1,7 +1,7 @@
 type: DroneCenter
 size: 2
 name: Eluminate Bastion
-category: production
+category: effect
 description: "
 Constructs [accent]eluminates[] to rebuild and assist the player.
 
