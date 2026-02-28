@@ -1,0 +1,17 @@
+type: PowerGenerator
+name: Watt Reactor
+size: 4
+description: "Extremely expensive building, Has insane power output.
+
+[red]- Expensive
+[red]- Very explosive
+[green]- Insane power output (40 photon panels)[]
+"
+
+powerProduction: 24.3334
+explosionRadius: 105
+explosionDamage: 3750
+explodeEffect: {
+type: ExplosionEffect
+}
+explodeSound: explosionCore
