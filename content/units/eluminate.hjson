@@ -55,10 +55,10 @@ region: "gr-eluminate-glow"
 sizeFrom: 16
 sizeTo: 0
 cone: 0
-offset: 90
+offset: -90
 length: 0
 parrticles: 1
-lifetime: 90
+lifetime: 120
 }
 }
 
