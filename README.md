@@ -13,6 +13,13 @@ Gier Revitalized is intended to bring back this asteroid sector, but within my c
 - And also including more modded blocks
 <div align = center>
 
+## Though expect: 
+- Unfair Generation (Bound to happen)
+- Constant Updating (This mod updates frequently but most are small)
+
+<br>
+<br>
+
 ## Gameplays
 <br>
 <br>
