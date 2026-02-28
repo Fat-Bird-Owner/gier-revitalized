@@ -9,7 +9,7 @@ omniMovement: false
 
 flying: true
 accel: 0.0225
-drag: 0.015
+drag: 0.02
 
 engineOffset: 6
 engineSize: 2.5
@@ -22,7 +22,7 @@ logicControllable: false
 priority: 0.25
 
 buildSpeed: 0.3
-buildRange: 40
+buildRange: 80
 
 outlineColor: 2f2f3f
 drawCell: false
