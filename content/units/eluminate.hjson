@@ -6,7 +6,12 @@ health: 35
 armor: 5
 name: Eluminate
 flying: true
+
+engineOffset: 10
 engineSize: 2.5
+
+trailScl: 1
+trailLength: 14
 
 logicControllable: false
 priority: 0.25
@@ -23,6 +28,7 @@ deathExplosionEffect: none
 deathSound: healWave
 defaultCommand: rebuild
 controller: BuilderAI
+BuilderAI:[rebuild]
 
 weapons:[
 {
@@ -43,8 +49,10 @@ region: "gr-eluminate-glow"
 sizeFrom: 16
 sizeTo: 0
 cone: 0
+offset: 90
 length: 0
 parrticles: 1
+lifetime: 90
 }
 }
 
