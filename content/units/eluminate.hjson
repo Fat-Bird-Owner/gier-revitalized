@@ -17,7 +17,7 @@ engineSize: 2.5
 trailScl: 1
 trailLength: 14
 
-#playerControllable: false
+playerControllable: false
 logicControllable: false
 priority: 0.25
 
@@ -42,7 +42,9 @@ controllable: false
 aiControllable: false
 shootOnDeath: true
 shootCone: 180
-
+x: 0
+y: 0
+mirror: false
 display: false
 
 bullet:{
