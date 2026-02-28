@@ -1,7 +1,7 @@
 // file name very used in logic like template-block.
 name: "gr"
 
-displayName: "[sky[]]Gier: [salmon[]]Revitalized[[]]"
+displayName: "Gier: [salmon[]]Revitalized[[]]"
 repo: "Fat-Bird-Owner/gier-revitalized"
 
 author: "Fat Bird's Owner - Main Developer"
@@ -9,10 +9,9 @@ author: "Fat Bird's Owner - Main Developer"
 description: "
 Makes gier a playable planet.
 
-Gier also has completely random terrain generation.
-( if your not happy with your terrian gen then just abandon the sector and relaunch to it.)
-
 [accent[]]IOS Compatible
+
+[grey] More info in the repository's ReadMe
 "
 
 iosCompatible: true
