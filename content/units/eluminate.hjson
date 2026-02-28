@@ -15,6 +15,7 @@ priority: 0.25
 buildSpeed: 0.15
 
 outlineColor: 2f2f3f
+drawCell: false
 createWreck: false
 drawSoftShadow: false
 
