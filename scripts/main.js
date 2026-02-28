@@ -22,7 +22,7 @@ rules.showSpawns = true;
 rules.onlyDepositCore = true;
 rules.cleanupDeadTeams = true;
 */
-};
+}
 
 });
 /*
