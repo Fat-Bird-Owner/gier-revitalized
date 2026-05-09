@@ -1,4 +1,5 @@
 // Team changes, showing gier and other stuff
+require("Transcripts");
 require("Startup");
 require("Deranged");
 require("WreckFX");
