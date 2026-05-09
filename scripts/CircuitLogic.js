@@ -168,7 +168,11 @@ lifetime: 10
 });
 
 if (movingBuild){
-fx.at(movingBuild.x, movingBuild.y);
+fx.at(
+movingBuild.x,
+movingBuild.y,
+movingBuild.rotation * 90
+);
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 toTile.setBlock(
