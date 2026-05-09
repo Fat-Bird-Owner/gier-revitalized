@@ -25,6 +25,4 @@ Vars.ui.showText("Transcript Error", e);
 }
 }
 
-module.exports = {
-transcript: transcript
-}
+module.exports = transcript;
