@@ -297,7 +297,7 @@ if (!build || !block || !tile) return;
   
 Groups.build.each(b => {
 try {
-if (b.block == block){
+if (b.block == block && b.isValid()){
 
 let ro = 0;
 if (b.rotation == 0) ro = 2;
