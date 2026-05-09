@@ -161,7 +161,7 @@ sizeTo: movingBuild.block.size * 4,
 colorFrom: Color.valueOf("ffffffff"),
 colorTo: Color.valueOf("ffffff"),
 region: movingBuild.block.uiIcon,
-offset: movingBuild.rotation * 90 - 90,
+offset: frontBuild.rotation * 90 - 90,
 layer: 30,
 randLength: false,
 lifetime: 10
@@ -171,7 +171,7 @@ if (movingBuild){
 fx.at(
 movingBuild.x,
 movingBuild.y,
-movingBuild.rotation * 90
+frontBuild.rotation * 90
 );
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
