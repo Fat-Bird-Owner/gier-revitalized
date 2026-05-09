@@ -158,13 +158,13 @@ length: 8,
 cone: 0,
 sizeFrom: movingBuild.block.size * 4,
 sizeTo: movingBuild.block.size * 4,
-colorFrom: Color.valueOf("ffffffff"),
+colorFrom: Color.valueOf("ffffff00"),
 colorTo: Color.valueOf("ffffff"),
 region: movingBuild.block.uiIcon,
 offset: frontBuild.rotation * 90 - 90,
 layer: 30,
 randLength: false,
-lifetime: 10
+lifetime: 5
 });
 
 if (movingBuild){
