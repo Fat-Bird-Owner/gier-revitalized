@@ -2,6 +2,19 @@ type: ThermalGenerator
 size: 3
 name: Geothermal Turbine
 
+description: "
+Alternative to steam turbine.
+Could be placed on hot rocks to produce power.
+
+[green]- Produces power off of hot rocks
+[red]- Explosive
+[salmon]- Requires both surge and oxide tech
+"
+
+databaseTag: "adv-surge-alloy"
+shownPlanets: [kela, gier]
+research: steam-turbine
+
 category: power
 envEnabled: -1
 requirements: [
@@ -16,11 +29,8 @@ surge-alloy/20
 displayEfficiencyScale: 0.222222
 minEfficiency: 0.1
 customShadow: true
-consumes: {
-items:[coal/1]
-}
 
-powerProduction: 0.611111
+powerProduction: 1.5
 drawer: {
 type: DrawMulti
 drawers: [
