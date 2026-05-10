@@ -59,6 +59,7 @@ suffix: "-top"
 type: DrawGlowRegion
 suffix: "-glow"
 color: f3e97955
+alpha: 0.105
 }
 ]
 }
