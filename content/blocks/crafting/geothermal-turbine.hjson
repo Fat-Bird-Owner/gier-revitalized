@@ -14,13 +14,13 @@ surge-alloy/20
 ]
 
 displayEfficiencyScale: 0.222222
-minEfficiency: 1
+minEfficiency: 0.1
 customShadow: true
 consumes: {
 items:[coal/1]
 }
 
-powerProduction: 5.5
+powerProduction: 0.611111
 drawer: {
 type: DrawMulti
 drawers: [
@@ -31,14 +31,14 @@ type: DrawDefault
 type: DrawRegion
 spinSprite: true
 suffix: "-rotator"
-rotateSpeed: 4.5
+rotateSpeed: 7.5
 }
 {
 type: DrawRegion
 spinSprite: true
 suffix: "-rotator"
 rotation: 45
-rotateSpeed: 4.5
+rotateSpeed: 7.5
 }
 {
 type: DrawRegion
