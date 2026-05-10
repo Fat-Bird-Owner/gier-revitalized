@@ -1,0 +1,50 @@
+type: ThermalGenerator
+size: 4
+name: Geothermal Turbine
+
+category: power
+envEnabled: -1
+requirements: [
+lead/175,
+copper/100,
+silicon/55,
+metaglass/25,
+oxide/25,
+surge-alloy/20
+]
+
+minEfficiency: 1
+customShadow: true
+consumes: {
+items:[coal/1]
+}
+
+powerProduction: 3.83333
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+spinSprite: true
+suffix: "-rotator"
+}
+{
+type: DrawRegion
+spinSprite: true
+suffix: "-rotator"
+rotation: 45
+}
+{
+type: DrawRegion
+suffix: "-top"
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: f3e979
+}
+]
+}
