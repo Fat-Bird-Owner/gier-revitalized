@@ -14,7 +14,7 @@ Could be placed on hot rocks to produce power.
 databaseTag: "adv-surge-alloy"
 shownPlanets: [kela, gier]
 research: steam-turbine
-baseExplosiveness: 25
+baseExplosiveness: 40
 
 category: power
 envEnabled: -1
