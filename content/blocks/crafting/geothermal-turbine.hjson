@@ -2,6 +2,9 @@ type: ThermalGenerator
 size: 3
 name: Geothermal Turbine
 
+ambientSound: loopThruster
+ambientSoundVolume: 0.15
+
 description: "
 Alternative to steam turbine.
 Could be placed on hot rocks to produce power.
