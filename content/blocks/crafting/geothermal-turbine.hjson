@@ -13,6 +13,7 @@ oxide/25,
 surge-alloy/20
 ]
 
+displayEfficiencyScale: 0.222222
 minEfficiency: 1
 customShadow: true
 consumes: {
@@ -30,12 +31,14 @@ type: DrawDefault
 type: DrawRegion
 spinSprite: true
 suffix: "-rotator"
+rotateSpeed: 9
 }
 {
 type: DrawRegion
 spinSprite: true
 suffix: "-rotator"
 rotation: 45
+rotateSpeed: 9
 }
 {
 type: DrawRegion
@@ -44,7 +47,7 @@ suffix: "-top"
 {
 type: DrawGlowRegion
 suffix: "-glow"
-color: f3e979
+color: f3e97977
 }
 ]
 }
