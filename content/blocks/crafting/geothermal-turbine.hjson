@@ -20,7 +20,7 @@ consumes: {
 items:[coal/1]
 }
 
-powerProduction: 3.83333
+powerProduction: 5.5
 drawer: {
 type: DrawMulti
 drawers: [
@@ -31,14 +31,14 @@ type: DrawDefault
 type: DrawRegion
 spinSprite: true
 suffix: "-rotator"
-rotateSpeed: 9
+rotateSpeed: 4.5
 }
 {
 type: DrawRegion
 spinSprite: true
 suffix: "-rotator"
 rotation: 45
-rotateSpeed: 9
+rotateSpeed: 4.5
 }
 {
 type: DrawRegion
@@ -47,7 +47,7 @@ suffix: "-top"
 {
 type: DrawGlowRegion
 suffix: "-glow"
-color: f3e97977
+color: f3e97955
 }
 ]
 }
