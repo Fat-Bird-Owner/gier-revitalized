@@ -35,9 +35,27 @@ type: DrawTurret
 basePrefix: "-fnuajitithye"
 parts:[
 {
+suffix: "-glow"
+color: D1545400
+colorTo: D15454FF
+
+progress:{
+type: charge
+ops:[
+{
+op: compress
+start: 0.2
+end: 0.6
+}
+]
+}
+
+}
+{
 type: ShapePart
 sides: 8
 hollow: true
+color: D15454FF
 
 stroke: 0
 strokeTo: 1
