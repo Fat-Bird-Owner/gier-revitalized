@@ -22,3 +22,5 @@ Vars.ui.showText(fileName, e);
 });
   
 }
+
+module.exports = runEvent;
