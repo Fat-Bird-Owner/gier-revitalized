@@ -12,9 +12,10 @@ function runEvent(eventType, runnable, fileName){
 try {
 if (!eventType) return;
 
-Events.on(eventType, event => {
+Events.on(eventType, function(event){
 try {
-
+if (!event) return;
+  
 runnable(event);
   
 } catch(e){
