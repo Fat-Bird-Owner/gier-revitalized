@@ -2,10 +2,19 @@ type: PowerTurret
 name: Explosive Barrel
 range: 40
 
+description: "
+Powering this causes a delayed explosion
+
+[grey]- Mines ore vains
+[red]- Requires power
+- Explosive
+"
+
 requirements: [lead/10, copper/10, graphite/5, silicon/3]
 alwaysShooting: true
 buildVisibility: sandboxOnly
 
+createRubble: false
 reload: 60
 outlineRadius: 0
 
