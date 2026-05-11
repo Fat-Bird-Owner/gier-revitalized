@@ -6,9 +6,11 @@ requirements: [lead/10, copper/10, graphite/5, silicon/3]
 alwaysShooting: true
 buildVisibility: sandboxOnly
 
-maxAmmo: 15
-ammoPerShot: 14
 reload: 60
+outlineRadius: 0
+
+rotate: false
+rotateSpeed: 0
 
 shoot:{
 firstShotDelay: 180
@@ -34,7 +36,6 @@ customShadow: true
 
 drawer:{
 type: DrawTurret
-basePrefix: "-fnuajitithye"
 parts:[
 {
 suffix: "-glow"
