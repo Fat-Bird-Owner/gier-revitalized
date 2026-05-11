@@ -48,6 +48,7 @@ op: curve
 interp: sineIn
 }
 {
+op: compress
 start: 0.2
 end: 1
 }
@@ -62,6 +63,7 @@ op: curve
 interp: sineIn
 }
 {
+op: compress
 start: 0.2
 end: 1
 }
