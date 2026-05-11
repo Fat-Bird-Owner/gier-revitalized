@@ -1,0 +1,73 @@
+type: PowerTurret
+name: Explosive Barrel
+range: 40
+
+requirements: [lead/10, copper/10, graphite/5, silicon/3]
+alwaysShooting: true
+
+maxAmmo: 15
+ammoPerShot: 14
+reload: 60
+
+shownPlanets: [kela, gier]
+databaseTag: "gier"
+  
+shootType:{
+instantDisappear: true
+killShooter: true
+}
+  
+destroyBullet:{
+instantDisappear: true
+despawnHit: true
+hitEffect: blastExplosion
+splashDamageRadius: 40
+splashDamage: 150
+}
+
+drawer:{
+type: DrawTurret
+basePrefix: "-fnuajitithye"
+parts:[
+{
+type: ShapePart
+sides: 8
+hollow: true
+
+stroke: 0
+strokeTo: 1
+
+radius: 4
+radiusTo: 0
+
+progress: {
+type: reload
+ops:[
+{
+op: curve
+interp: sineIn
+}
+{
+start: 0.2
+end: 1
+}
+]
+}
+  
+growProgress: {
+type: reload
+ops:[
+{
+op: curve
+interp: sineIn
+}
+{
+start: 0.2
+end: 1
+}
+]
+}
+  
+}
+]
+}
