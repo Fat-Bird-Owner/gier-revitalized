@@ -9,6 +9,7 @@ fileName - for debugging errors
 */
 
 function runEvent(eventType, runnable, fileName){
+try {
 if (!eventType) return;
 
 Events.on(eventType, event => {
@@ -20,7 +21,8 @@ runnable(event);
 Vars.ui.showText(fileName, e);
 }
 });
-  
+
+} catch(e){}
 }
 
 module.exports = runEvent;
