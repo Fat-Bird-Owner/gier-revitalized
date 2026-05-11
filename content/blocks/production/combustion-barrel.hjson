@@ -4,10 +4,15 @@ range: 40
 
 requirements: [lead/10, copper/10, graphite/5, silicon/3]
 alwaysShooting: true
+buildVisibility: sandboxOnly
 
 maxAmmo: 15
 ammoPerShot: 14
 reload: 60
+
+shoot:{
+firstShotDelay: 180
+}
 
 shownPlanets: [kela, gier]
 databaseTag: "gier"
@@ -41,7 +46,7 @@ radius: 4
 radiusTo: 0
 
 progress: {
-type: reload
+type: charge
 ops:[
 {
 op: curve
@@ -56,7 +61,7 @@ end: 1
 }
   
 growProgress: {
-type: reload
+type: charge
 ops:[
 {
 op: curve
