@@ -30,6 +30,8 @@ splashDamageRadius: 40
 splashDamage: 150
 }
 
+customShadow: true
+
 drawer:{
 type: DrawTurret
 basePrefix: "-fnuajitithye"
@@ -45,7 +47,7 @@ ops:[
 {
 op: compress
 start: 0.2
-end: 0.6
+end: 1
 }
 ]
 }
