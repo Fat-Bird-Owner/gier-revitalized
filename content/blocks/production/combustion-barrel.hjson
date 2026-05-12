@@ -1,6 +1,6 @@
 type: PowerTurret
 name: Explosive Barrel
-armor: 0.15
+armor: 5
 
 range: 40
 minRange: 100
@@ -60,7 +60,7 @@ despawnEffect: blastExplosion
 splashDamageRadius: 40
 splashDamage: 150
 scaleSplashDamage: true
-blockArmorMultiplier: 1000
+blockArmorMultiplier: -1000
 }
 
 customShadow: true
