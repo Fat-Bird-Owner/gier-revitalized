@@ -1,6 +1,8 @@
 type: PowerTurret
 name: Explosive Barrel
+
 range: 40
+minRange: 60
 
 researchCostMultiplier: 0.65
 research: {
@@ -11,7 +13,10 @@ objectives:[core-facility]
 category: production
 description: "
 Powering this or this building getting
-destroyed causes a delayed explosion
+destroyed causes a delayed explosion.
+
+Will mine ores and put them into a
+nearby storage within the outer ring.
 
 [green]- Mines ore depots
 [red]- Requires power
@@ -19,6 +24,7 @@ destroyed causes a delayed explosion
 - Explosive damages allied structure
 "
 
+drawMinRange: true
 attributes:{
 blastPower: 15
 blastTier: 1
