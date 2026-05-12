@@ -2,12 +2,14 @@ type: PowerTurret
 name: Explosive Barrel
 range: 40
 
+category: production
 description: "
 Powering this causes a delayed explosion
 
-[grey]- Mines ore vains
+[green]- Mines ore vains
 [red]- Requires power
 - Explosive
+- Explosive damages allied structure
 "
 
 attributes:{
@@ -79,6 +81,8 @@ strokeTo: 1
 
 radius: 4
 radiusTo: 0
+
+rotation: 22.5
 
 progress: {
 type: charge
