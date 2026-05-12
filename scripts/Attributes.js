@@ -6,7 +6,8 @@ circuitHeatDamage: Attribute.add("circuitHeatDamage"),
 circuitRate: Attribute.add("circuitRate"),
 circuitRange: Attribute.add("circuitRange"),
 pistonPushLength: Attribute.add("pistonPushLength"),
-blastPower: Attribute.add("blastPower")
+blastPower: Attribute.add("blastPower"),
+blastTier: Attribute.add("blastTier")
 }
 
 module.exports = attributes;
