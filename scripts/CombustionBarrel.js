@@ -15,7 +15,7 @@ Vars.ui.content.hide();
 block.stats.add(
 stats.blastPower,
 block.attributes.get(Attribute.get("blastPower")),
-Statunit.items
+StatUnit.items
 );
 
 block.stats.add(
