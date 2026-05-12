@@ -10,6 +10,11 @@ Powering this causes a delayed explosion
 - Explosive
 "
 
+attributes:{
+blastPower: 15
+blastTier: 1
+}
+
 requirements: [lead/10, copper/10, graphite/5, silicon/3]
 alwaysShooting: true
 buildVisibility: sandboxOnly
