@@ -58,6 +58,7 @@ despawnHit: true
 hitEffect: blastExplosion
 splashDamageRadius: 40
 splashDamage: 150
+armorMultiplier: 1000
 }
 
 customShadow: true
