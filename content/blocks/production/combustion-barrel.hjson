@@ -10,7 +10,8 @@ objectives:[core-facility]
 
 category: production
 description: "
-Powering this causes a delayed explosion
+Powering this or this building getting
+destroyed causes a delayed explosion
 
 [green]- Mines ore vains
 [red]- Requires power
