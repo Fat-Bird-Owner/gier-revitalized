@@ -1,6 +1,24 @@
+const stats = Require("Stats");
 const blocks = [
 "gr-combustion-barrel"
 ];
+
+Events.on(EventType.BlockDestroyEvent, event => {
+try {
+
+for (let i = 0; i < blocks.length; i++){
+const block = Vars.content.block(blocks[i]);
+Vars.ui.content.show(block);
+Vars.ui.content.hide();
+
+block.stats.add(stats.blastPower, block.attributes.get(Attribute.get("blastPower")));
+block.stats.add(stats.blastTier, block.attributes.get(Attribute.get("blastTier"))); 
+  
+} catch(e){
+Vars.ui.showInfoToast(e + "[red] - CombustionBarrel", 5);
+}
+});
+
 
 Events.on(EventType.BlockDestroyEvent, event => {
 try {
