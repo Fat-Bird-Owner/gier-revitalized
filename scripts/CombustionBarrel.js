@@ -22,11 +22,11 @@ stats.blastTier,
 block.attributes.get(Attribute.get("blastTier"))
 );
 
-stats.remove(Stat.ammo);
-stats.remove(Stat.inaccuracy);
-stats.remove(Stat.reload);
-stats.remove(Stat.targetsAir);
-stats.remove(Stat.targetsGround);
+block.stats.remove(Stat.ammo);
+block.stats.remove(Stat.inaccuracy);
+block.stats.remove(Stat.reload);
+block.stats.remove(Stat.targetsAir);
+block.stats.remove(Stat.targetsGround);
   
 }
 }catch(e){
