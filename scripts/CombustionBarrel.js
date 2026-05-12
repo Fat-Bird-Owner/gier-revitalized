@@ -1,4 +1,4 @@
-const stats = Require("Stats");
+const stats = require("Stats");
 const blocks = [
 "gr-combustion-barrel"
 ];
