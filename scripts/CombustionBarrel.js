@@ -3,7 +3,7 @@ const blocks = [
 "gr-combustion-barrel"
 ];
 
-Events.on(EventType.BlockDestroyEvent, event => {
+Events.on(EventType.ClientLoadEvent, event => {
 try {
 
 for (let i = 0; i < blocks.length; i++){
