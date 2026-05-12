@@ -56,10 +56,11 @@ killShooter: true
 destroyBullet:{
 instantDisappear: true
 despawnHit: true
-hitEffect: blastExplosion
+despawnEffect: blastExplosion
 splashDamageRadius: 40
 splashDamage: 150
-armorMultiplier: 1000
+scaleSplashDamage: true
+blockArmorMultiplier: 1000
 }
 
 customShadow: true
