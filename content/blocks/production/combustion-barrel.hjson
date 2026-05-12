@@ -62,7 +62,7 @@ killShooter: true
 destroyBullet:{
 instantDisappear: true
 despawnHit: true
-despawnEffect: sapExplosion
+despawnEffect: shockwave
 splashDamageRadius: 40
 splashDamage: 150
 scaleSplashDamage: true
