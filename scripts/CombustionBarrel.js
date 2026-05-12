@@ -58,7 +58,13 @@ if(tile.overlay() == null || tile.overlay().itemDrop == null) return;
 if(!tile.build) return;
 
 const itemDrop = tile.overlay().itemDrop;
-const core = tile.build.team.core();
+const core = Vars.indexer.findTile(
+tile.team(), 
+tile.worldx(),
+tile.worldy(),
+block.minRange,
+b => b.block instanceof StorageBlock
+);
 
 if(!core) return;
 
