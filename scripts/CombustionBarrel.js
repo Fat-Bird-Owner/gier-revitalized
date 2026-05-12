@@ -74,8 +74,10 @@ if(oreHardness <= 0) oreHardness = 1;
 const blastPower = block.attributes.get(Attribute.get("blastPower"));
 const blastTier = block.attributes.get(Attribute.get("blastTier"));
 
+if (oreHardness > blastTier) return;
+  
 const amount = blastPower / Math.max(
-oreHardness - blastTier,
+oreHardness - 1,
 oreHardness
 );
 
@@ -116,7 +118,7 @@ interp: Interp.pow10Out
 fx.at(tile.worldx(), tile.worldy());
 
 offset += Mathf.random(25, 35);
-len += Mathf.random(2, 4.5);
+len += Mathf.random(4, 10);
 }
 
 }catch(e){
