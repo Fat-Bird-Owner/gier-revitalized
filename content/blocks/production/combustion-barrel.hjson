@@ -28,7 +28,7 @@ nearby storage within the outer ring.
 drawMinRange: true
 attributes:{
 blastPower: 15
-blastTier: 1
+blastTier: 4
 }
 
 requirements: [lead/10, copper/10, graphite/5, silicon/3]
