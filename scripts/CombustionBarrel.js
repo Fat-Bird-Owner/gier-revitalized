@@ -84,7 +84,7 @@ let len = 0;
 core.items.add(itemDrop, Mathf.round(amount));
 
 for (let i = 0; i < amount; i++){
-Time.runTask(0.05 * (i + 1), () => {
+Time.runTask((0.05 * (i + 1)) * 60, () => {
 Fx.itemTransfer.at(
 tile.worldx(),
 tile.worldy(),
