@@ -67,9 +67,9 @@ oreHardness
 
 let offset = 0;
 let len = 0;
-
-for(let i = 0; i < 3; i++){
 core.items.add(itemDrop, Mathf.round(amount));
+  
+for(let i = 0; i < 3; i++){
 
 const fx = Object.assign(new ParticleEffect(), {
 sizeFrom: 3,
