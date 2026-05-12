@@ -21,6 +21,13 @@ block.stats.add(
 stats.blastTier,
 block.attributes.get(Attribute.get("blastTier"))
 );
+
+stats.remove(Stat.ammo);
+stats.remove(Stat.inaccuracy);
+stats.remove(Stat.reload);
+stats.remove(Stat.targetsAir);
+stats.remove(Stat.targetsGround);
+  
 }
 }catch(e){
 Vars.ui.showInfoToast(e + "[red] - CombustionBarrel", 5);
