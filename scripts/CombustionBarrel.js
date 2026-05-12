@@ -86,7 +86,7 @@ Fx.itemTransfer.at(
 tile.worldx(),
 tile.worldy(),
 0,
-itemDrop,
+Items.copper.color,
 core
 );
   
