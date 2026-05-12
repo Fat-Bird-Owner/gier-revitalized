@@ -82,6 +82,13 @@ oreHardness
 let offset = 0;
 let len = 0;
 core.items.add(itemDrop, Mathf.round(amount));
+Fx.itemTransfer.at(
+tile.worldx(),
+tile.worldy(),
+0,
+itemDrop,
+core
+);
   
 for(let i = 0; i < 3; i++){
 
