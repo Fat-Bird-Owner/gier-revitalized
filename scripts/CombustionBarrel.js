@@ -36,6 +36,7 @@ if (tile.overlay() == null || tile.overlay().itemDrop == null) return;
   
 const {itemDrop} = tile.overlay();
 const core = tile.build.team.core();
+if (!core) return;
   
 const {hardness} = itemDrop;
 const {block} = tile.block()
