@@ -14,8 +14,11 @@ objectives:[core-facility]
 
 category: production
 description: "
-Powering this or this building getting
-destroyed causes a delayed explosion.
+when this building is destroyed,
+it causes an explosion.
+
+Will automatically explode after a
+short while after be placed.
 
 Will mine ores and put them into a
 nearby storage within the outer ring.
