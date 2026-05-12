@@ -3,7 +3,7 @@ name: Explosive Barrel
 armor: 0.15
 
 range: 40
-minRange: 60
+minRange: 100
 
 researchCostMultiplier: 0.65
 research: {
