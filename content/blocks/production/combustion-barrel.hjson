@@ -2,6 +2,12 @@ type: PowerTurret
 name: Explosive Barrel
 range: 40
 
+researchCostMultiplier: 0.65
+research: {
+parent: hydro-drill
+objectives:[core-facility]
+}
+
 category: production
 description: "
 Powering this causes a delayed explosion
@@ -19,7 +25,6 @@ blastTier: 1
 
 requirements: [lead/10, copper/10, graphite/5, silicon/3]
 alwaysShooting: true
-buildVisibility: sandboxOnly
 
 createRubble: false
 reload: 60
