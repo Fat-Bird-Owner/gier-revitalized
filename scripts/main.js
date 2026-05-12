@@ -31,6 +31,7 @@ require("SealentChamber");
 require("StructureBlock");
 require("ImageBlock");
 require("CircuitLogic");
+require("CombustionBarrel");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
