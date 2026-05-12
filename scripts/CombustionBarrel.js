@@ -82,6 +82,9 @@ oreHardness
 let offset = 0;
 let len = 0;
 core.items.add(itemDrop, Mathf.round(amount));
+
+for (let i = 0; i < amount; i++){
+Time.runTask(0.05, () => {
 Fx.itemTransfer.at(
 tile.worldx(),
 tile.worldy(),
@@ -89,6 +92,7 @@ tile.worldy(),
 Items.copper.color,
 core
 );
+});
   
 for(let i = 0; i < 3; i++){
 
