@@ -26,7 +26,7 @@ const tile = event.tile;
 let found = false;
   
 for (let i = 0; i < blocks.length; i++){
-if (tile.block() != block) found = true;
+if (tile.block() == block) found = true;
 }
 
 if (!found) return;
