@@ -5,6 +5,8 @@ health: 220
 
 range: 40
 minRange: 80
+elevation: 0
+
 
 researchCostMultiplier: 0.65
 research: {
@@ -60,10 +62,11 @@ killShooter: true
 destroyBullet:{
 instantDisappear: true
 despawnHit: true
-despawnEffect: blastExplosion
+despawnEffect: sapExplosion
 splashDamageRadius: 40
 splashDamage: 150
 scaleSplashDamage: true
+hitShake: 7.5
 }
 
 customShadow: true
