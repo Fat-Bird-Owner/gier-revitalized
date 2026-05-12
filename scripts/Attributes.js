@@ -5,7 +5,8 @@ healPercent: Attribute.add("healPerc"),
 circuitHeatDamage: Attribute.add("circuitHeatDamage"),
 circuitRate: Attribute.add("circuitRate"),
 circuitRange: Attribute.add("circuitRange"),
-pistonPushLength: Attribute.add("pistonPushLength")
+pistonPushLength: Attribute.add("pistonPushLength"),
+blastPower: Attribute.add("blastPower")
 }
 
 module.exports = attributes;
