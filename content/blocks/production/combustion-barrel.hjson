@@ -1,5 +1,6 @@
 type: PowerTurret
 name: Explosive Barrel
+armor: 0.15
 
 range: 40
 minRange: 60
