@@ -1,0 +1,38 @@
+type: flying
+name: Abalone
+hitSize: 22
+health: 1250
+armor: 5
+
+outlineColor: 2f2f3f
+  
+speed: 1.25
+accel: 0.15
+drag: 0.05
+flying: true
+rotateSpeed: 2.5
+
+weapons: [
+{
+name: "cruelty-weapon"
+reload: 20
+x: 4
+y: 2
+  
+shoot:{
+type: ShootSpread
+shots: 3
+spread: 15
+}
+
+bullet: {
+type: ShrapnelBulletType
+serrations: 0
+fromColor: f3e979
+toColor: f3e979
+length: 50
+width: 10
+}
+  
+}
+]
