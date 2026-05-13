@@ -52,7 +52,7 @@ strokeFrom: 3
 strokeTo: 0
 length: 40
 line: true
-lifetime: 6
+lifetime: 12
 }
 
 }
