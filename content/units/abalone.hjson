@@ -40,7 +40,20 @@ width: 10
 shootEffect: none
 smokeEffect: none
 hitColor: f3e979
-despawnEffect: randLifeSpark
+despawnEffect: {
+type: ParticleEffect
+particles: 8
+cone: 45
+colorFrom: f3e979
+colorTo: f3e979
+lenFrom: 4
+lenTo: 6
+strokeFrom: 3
+strokeTo: 0
+length: 20
+line: true
+lifetime: 20
+}
 
 }
   
