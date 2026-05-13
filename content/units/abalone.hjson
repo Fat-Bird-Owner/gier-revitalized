@@ -14,15 +14,25 @@ rotateSpeed: 2.5
 
 weapons: [
 {
-name: "cruelty-weapon"
+name: "cr-weapon"
 reload: 20
 x: 4
 y: 2
-  
+
+rotate: true
+rotateSpeed: 2.5
+
+shootSound: shootFuse
 shoot:{
 type: ShootSpread
 shots: 3
 spread: 15
+}
+
+ejectEffect:{
+type: WrapEffect
+color: f3e979
+effect: randLifeSpark
 }
 
 bullet: {
