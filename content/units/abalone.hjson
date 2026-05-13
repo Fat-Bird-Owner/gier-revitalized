@@ -37,7 +37,8 @@ toColor: f3e979
 length: 50
 width: 10
 
-shootEffect:{
+shootEffect: none
+smokeEffect:{
 type: WrapEffect
 color: f3e979
 effect: randLifeSpark
