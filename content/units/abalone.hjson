@@ -21,6 +21,7 @@ type: HoverPart
 radius: 8
 color: f3e979
 y: -7.5
+layerOffset: -0.1
 }
 ]
 
@@ -28,11 +29,12 @@ weapons: [
 {
 name: "cr-weapon"
 reload: 20
-x: 4
-y: 2
+x: 6
+y: -4
 
 rotate: true
 rotateSpeed: 2.5
+shake: 2
 
 shootSound: shootFuse
 shoot:{
