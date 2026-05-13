@@ -41,7 +41,7 @@ shootEffect: none
 smokeEffect: none
 hitColor: f3e979
 
-shootEffect: {
+smokeEffect: {
 type: ParticleEffect
 particles: 4
 cone: 45
