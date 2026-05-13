@@ -56,6 +56,17 @@ shootEffect: none
 smokeEffect: none
 hitColor: f3e979
 
+fragBullets: 3
+stickyExtraLifetime: 20
+fragOnDespawn: false
+fragBullet:{
+type: BasicBulletType
+speed: 3
+lifetime: 60
+sticky: true
+damage: 2
+}
+
 smokeEffect: {
 type: ParticleEffect
 particles: 4
