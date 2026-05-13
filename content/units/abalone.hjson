@@ -29,6 +29,18 @@ shots: 3
 spread: 15
 }
 
+bullet: {
+type: ShrapnelBulletType
+serrations: 0
+fromColor: f3e979
+toColor: f3e979
+length: 50
+width: 10
+
+shootEffect: none
+smokeEffect: none
+hitColor: f3e979
+
 shootEffect: {
 type: ParticleEffect
 particles: 4
@@ -44,17 +56,6 @@ line: true
 lifetime: 12
 }
 
-bullet: {
-type: ShrapnelBulletType
-serrations: 0
-fromColor: f3e979
-toColor: f3e979
-length: 50
-width: 10
-
-shootEffect: none
-smokeEffect: none
-hitColor: f3e979
 
 }
   
