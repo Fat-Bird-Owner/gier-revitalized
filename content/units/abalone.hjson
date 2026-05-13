@@ -5,12 +5,24 @@ health: 1250
 armor: 5
 
 outlineColor: 2f2f3f
-  
+drawSoftShadow: false
+lowAltitude: true
+
 speed: 1.25
 accel: 0.15
 drag: 0.05
 flying: true
 rotateSpeed: 2.5
+
+engineSize: 0
+parts:[
+{
+type: HoverPart
+radius: 8
+color: f3e979
+y: -7.5
+}
+]
 
 weapons: [
 {
@@ -37,6 +49,7 @@ toColor: f3e979
 length: 50
 width: 10
 
+damage: 15
 shootEffect: none
 smokeEffect: none
 hitColor: f3e979
