@@ -29,7 +29,7 @@ shots: 3
 spread: 15
 }
 
-ejectEffect:{
+shootEffect:{
 type: WrapEffect
 color: f3e979
 effect: randLifeSpark
