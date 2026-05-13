@@ -37,7 +37,6 @@ toColor: f3e979
 length: 50
 width: 10
 
-hitEffect
 shootEffect: none
 smokeEffect: none
 hitColor: f3e979
