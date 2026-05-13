@@ -29,12 +29,6 @@ shots: 3
 spread: 15
 }
 
-shootEffect:{
-type: WrapEffect
-color: f3e979
-effect: randLifeSpark
-}
-
 bullet: {
 type: ShrapnelBulletType
 serrations: 0
@@ -42,6 +36,13 @@ fromColor: f3e979
 toColor: f3e979
 length: 50
 width: 10
+
+shootEffect:{
+type: WrapEffect
+color: f3e979
+effect: randLifeSpark
+}
+
 }
   
 }
