@@ -36,6 +36,17 @@ effect: none
 minPitch: 0.95
 maxPitch: 1.05
 }
+{
+type: SoundEffect
+sound: "machine-rage-hum"
+rotWithParent: true
+minPitch: 1
+maxPitch: 1
+minVolume: 0
+maxVolume: 1
+followParent: true
+effect: none
+}
 ]
 }
 
