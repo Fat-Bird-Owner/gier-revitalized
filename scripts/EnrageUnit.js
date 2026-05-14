@@ -13,7 +13,7 @@ const maxThres = (unit.maxHealth / 2);
 const valid = unit.getDuration(status);
   
 if (unit.health >= maxThres || valid != 0) return;
-if (unit.type != target[0] && unit.type != target[1]) return;
+if (unit.type != target[0] && unit.type != target[1] && unit.type != target[2]) return;
   
 unit.apply(status);
 
