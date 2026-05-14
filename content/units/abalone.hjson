@@ -1,7 +1,18 @@
 type: flying
 name: Abalone
+description: "
+Quite durable but has a short range
+
+Is able to shoot sharp shrapnel from 
+it's weapons.
+
+And is enragable.
+
+[salmon]Counter: Knock-back, Insulation
+"
+
 hitSize: 22
-health: 1250
+health: 1500
 armor: 5
 
 outlineColor: 2f2f3f
