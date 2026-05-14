@@ -1,3 +1,6 @@
+effect: fuelburn
+effectChance: 0.35
+
 applyEffect:{
 type: MultiEffect
 effects:[
