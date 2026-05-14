@@ -27,6 +27,61 @@ layerOffset: -0.1
 
 weapons: [
 {
+x: 0
+y: -6.5
+mirror: false
+reload: 300
+reloadWhileCharging: false
+
+shoot:{
+firstShotDelay: 120
+}
+
+bullet:{
+type: RailBulletType
+pointEffect:{
+type: ParticleEffect
+length: 0
+line: true
+cone: 0
+lenFrom: 10
+lenTo: 10
+strokeFrom: 4
+strokeTo: 0
+layer: 101
+colorFrom: f3e979
+colorTo: f3e97900
+
+fragBullets: 1
+fragBullet:{
+type: BulletType
+lifetime: 300
+splashDamage: 220
+splashDamageRadius: 16
+absorbable: false
+reflectable: false
+hittable: false
+
+parts:[
+{
+name: "gr-copper-fort"
+moveRot: 750
+y: 32
+x: 32
+moveX: -32
+moveY: -32
+progress: life
+}
+]
+
+}
+
+}
+
+}
+
+}
+{
 name: "cr-weapon"
 reload: 12.5
 x: 6
