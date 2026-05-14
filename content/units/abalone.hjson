@@ -20,7 +20,7 @@ parts:[
 type: HoverPart
 radius: 8
 color: f3e979
-y: -7.5
+y: -6.5
 layerOffset: -0.1
 }
 ]
@@ -55,6 +55,7 @@ damage: 15
 shootEffect: none
 smokeEffect: none
 hitColor: f3e979
+hitEffect: hitBeam
 
 fragBullets: 3
 stickyExtraLifetime: 20
@@ -65,6 +66,8 @@ speed: 3
 lifetime: 60
 sticky: true
 damage: 2
+hitEffect: disperseTrail
+hitColor: f3e979
 }
 
 smokeEffect: {
