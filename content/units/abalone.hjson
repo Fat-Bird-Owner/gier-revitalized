@@ -28,7 +28,7 @@ layerOffset: -0.1
 weapons: [
 {
 name: "cr-weapon"
-reload: 20
+reload: 12.5
 x: 6
 y: -4
 
@@ -48,10 +48,10 @@ type: ShrapnelBulletType
 serrations: 0
 fromColor: f3e979
 toColor: f3e979
-length: 50
-width: 10
+length: 75
+width: 12
 
-damage: 21
+damage: 30
 shootEffect: none
 smokeEffect: none
 hitColor: f3e979
