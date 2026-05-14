@@ -4,7 +4,8 @@ try{
 const unit = e.unit;
 const target = [
 Vars.content.unit("gr-ash"),
-Vars.content.unit("gr-arraign")
+Vars.content.unit("gr-arraign"),
+Vars.content.unit("gr-abalone")
 ];
   
 const status = Vars.content.getByName(ContentType.status, "gr-rage");
