@@ -51,28 +51,11 @@ toColor: f3e979
 length: 50
 width: 10
 
-damage: 15
+damage: 21
 shootEffect: none
 smokeEffect: none
 hitColor: f3e979
 hitEffect: hitBeam
-
-fragBullets: 3
-fragOnDespawn: false
-fragRandomSpread: 330
-fragVelocityMin: 0.8
-
-fragBullet:{
-type: BasicBulletType
-speed: 3
-lifetime: 60
-stickyExtraLifetime: 20
-sticky: true
-splashDamage: 2
-solashDamageRadius: 4
-despawnEffect: disperseTrail
-hitColor: f3e979
-}
 
 smokeEffect: {
 type: ParticleEffect
