@@ -21,6 +21,8 @@ range: 0
 reload: 600 
 duration: 180
 effect: overclock
+onShoot: true
+range: 160
 }
 ]
 
