@@ -19,6 +19,7 @@ abilities:[
 type: StatusFieldAbility
 range: 0
 reload: 600 
+duration: 180
 effect: overclock
 }
 ]
