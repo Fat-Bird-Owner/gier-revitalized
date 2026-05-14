@@ -18,9 +18,8 @@ abilities:[
 {
 type: StatusFieldAbility
 range: 0
-reload: 600
-activeEffect: pointShockwave 
-effect: overdrive
+reload: 600 
+effect: overclock
 }
 ]
 
