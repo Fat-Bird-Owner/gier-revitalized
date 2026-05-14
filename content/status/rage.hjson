@@ -43,7 +43,7 @@ effect: overclocked
 color: D15E60FF
 }
 
-damageMultiplier: 1.25
-speedMultiplier: 2.5
+damageMultiplier: 1.15
+reloadMultiplier: 1.45
 permanent: true
 name: Rage
