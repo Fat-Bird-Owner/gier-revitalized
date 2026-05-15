@@ -1,4 +1,5 @@
 Events.run(Trigger.update, () => {
+if (!Vars.state.isPlaying()) return;
 const block = Vars.content.block("gr-geothermal-turbine");
 const blocks = Groups.build.copy().select(b => b.block == block);
 
