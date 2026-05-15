@@ -64,5 +64,11 @@ suffix: "-glow"
 color: f3e97955
 alpha: 0.105
 }
+{
+type: DrawGlowRegion
+suffix: "-light"
+color: E3AE6F44
+alpha: 0.185
+}
 ]
 }
