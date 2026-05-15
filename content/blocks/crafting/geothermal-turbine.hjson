@@ -9,6 +9,8 @@ description: "
 Alternative to steam turbine.
 Could be placed on hot rocks to produce power.
 
+[accent]- Pumps oil from heated oil tiles(15/sec)
+
 [green]- Produces power off of hot rocks
 [red]- Explosive
 [salmon]- Requires both surge and oxide tech
