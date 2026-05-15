@@ -142,15 +142,12 @@ despawnHit: true
 recoil: 2.5
 trailRotation: true
 trailChance: 1
-trailEffect:{
-type: WrapEffect
-effect: randLifeSpark
-color: ffaa5f
-}
+trailEffect: randLifeSpark
+trailColor: ffaa5f
 
 shieldDamageMultiplier: 2.15
 hitEffect: {
-type: MultiEffects
+type: MultiEffect
 effects:[
 launchPod
 {
@@ -160,6 +157,7 @@ color: ffaa5f
 }
 ]
 }
+
 hitSound: ash-artillery-hit
 }
 
