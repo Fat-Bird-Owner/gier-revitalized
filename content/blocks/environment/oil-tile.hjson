@@ -1,5 +1,5 @@
 type: Floor
-dropLiquid: oil
+liquidDrop: oil
 name: Oil Tile
 
 variants: 0
