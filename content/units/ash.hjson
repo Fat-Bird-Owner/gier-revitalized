@@ -23,8 +23,8 @@ flying: true
 outlineColor: 2f2f3f
 name: Ash
 speed: 2.5
-accel: 0.015
-drag: 0.005
+accel: 0.15
+drag: 0.05
 armor: 5
 range: 200
 
@@ -85,11 +85,13 @@ max: 300
 
 
 weapons:[
+
 {
 reload: 300
-shootStatus: unmoving
+shootStatus: slow
 shootStatusDuration: 70
 chargeSound: chargeVela
+shootSound: ash-artillery-shoot
 shoot:{
 firstShotDelay: 90
 }
@@ -130,7 +132,7 @@ speed: 6.5
 lifetime: 90
 homingPower: 0.04
 
-splashDamage: 205
+splashDamage: 225
 splashDamageRadius: 40
 scaledSplashDamage: true
 
@@ -138,9 +140,27 @@ hitShake: 25
 despawnHit: true
 
 recoil: 2.5
+trailRotation: true
+trailChance: 1
+trailEffect:{
+type: WrapEffect
+effect: randLifeSpark
+color: ffaa5f
+}
 
-hitEffect: launchPod
-hitSound: explosionArtilleryShockBig
+shieldDamageMultiplier: 2.15
+hitEffect: {
+type: MultiEffects
+effects:[
+launchPod
+{
+type: WrapEffect
+effect: scatheExplosionSmall
+color: ffaa5f
+}
+]
+}
+hitSound: ash-artillery-hit
 }
 
 }
