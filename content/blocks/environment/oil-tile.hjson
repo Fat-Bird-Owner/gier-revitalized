@@ -4,6 +4,6 @@ name: Oil Tile
 
 variants: 0
 attributes:{
-hot: 0.03334
+heat: 0.03334
 }
 
