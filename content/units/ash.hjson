@@ -40,6 +40,7 @@ engineSize: 0
 drawSoftShadow: false
 faceTarget: true
 circleTarget: true
+circleTargetRadius: 100
 
 parts:[
 {
@@ -154,6 +155,11 @@ launchPod
 type: WrapEffect
 effect: scatheExplosionSmall
 color: ffaa5f
+}
+{
+type: WrapEffect
+effect: titanExplosion
+color: ffaa5f77
 }
 ]
 }
