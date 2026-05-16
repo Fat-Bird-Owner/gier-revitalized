@@ -39,15 +39,28 @@ cloudMesh: [
    octaves: 3
    persistence: 0.3
    scl: 1
-   thresh: 0.5
+   thresh: 0.22
   }
   {
    type: HexSkyMesh
    planet: kela
    speed: 1.01
-   radius: 0.31
+   radius: 0.16
    divisions: 5
    color: f4ee8e77
+   octaves: 2
+   persistence: 0.6
+   scl: 0.9
+   thresh: 0.37
+	seed: 2
+  }
+  {
+   type: HexSkyMesh
+   planet: kela
+   speed: 1.01
+   radius: 0.26
+   divisions: 5
+   color: f4ee8e66
    octaves: 2
    persistence: 0.6
    scl: 0.9
