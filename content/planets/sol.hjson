@@ -6,6 +6,8 @@ accessible: false
 
 parent: sun
 solorSystem: sol
+orbitRadius: 12000
+drawPebit: false
   
 mesh:[
 {
