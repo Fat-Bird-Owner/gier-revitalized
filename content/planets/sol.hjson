@@ -1,4 +1,4 @@
-radius: 5
+radius: 8.5
 name: Sol
 iconColor: 596ab8ff
 alwaysUnlocked: false
@@ -15,12 +15,14 @@ octaves: 1.5
 persistence: 1
 scl: 1.25
 mag: 0.75 
-colorScale: 1.25
+colorScale: 2.45
 colors:[
-b2c6d2
-8da1e3
-596ab8
-6ecdec
+ff7a38
+ff9638
+ffc64c
+ffc64c
+ffe371
+f4ee8e
 ]
 
 }
