@@ -4,7 +4,8 @@ iconColor: f4ee8e
 alwaysUnlocked: false
 accessible: false
 
-parent: sol
+parent: sun
+solorSystem: sol
   
 mesh:[
 {
