@@ -1,0 +1,29 @@
+type: StorageBlock
+name: Cargo Cell
+size: 3
+
+researchCostMultiplier: 0.45
+#research: rail
+databaseTag: "gier"
+shownPlanets: [gier]
+envEnabled: -1
+solid: true
+customShadow: true
+category: effect
+
+capacity: 50
+itemCapacity: 450
+requirements: [lead/375,copper/225,graphite/225,titanium/100,plastanium/25]
+squareSprite: false
+
+baseExplosiveness: 12.5
+explosivenessScale: 5
+flammabilityScale: 2.5
+
+description: "Stores items, unloadable with an output port.
+Has a much greater storage capacity then a crate
+
+[green]- Expands core capacity
+[red]- Explosive
+- Flammable
+"
