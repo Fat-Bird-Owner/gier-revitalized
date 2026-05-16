@@ -11,6 +11,7 @@
 - Randomly Generated
 - And also including many modded blocks
 - Also has IOS support for some reason
+- Even has a secondary planet with a proper campaign with a more linear difficulty curve
 <div align = center>
 
 ## Though expect: </div>
