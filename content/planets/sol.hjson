@@ -1,5 +1,5 @@
 radius: 8.5
-name: Sol
+#name: Sol
 iconColor: 596ab8ff
 alwaysUnlocked: false
 accessible: false
@@ -58,13 +58,13 @@ cloudMesh: [
    type: HexSkyMesh
    planet: kela
    speed: 1.01
-   radius: 0.26
+   radius: 0.2
    divisions: 5
    color: f4ee8e66
    octaves: 2
    persistence: 0.6
    scl: 0.9
    thresh: 0.5
-	seed: 2
+	seed: 4
   }
 ]
