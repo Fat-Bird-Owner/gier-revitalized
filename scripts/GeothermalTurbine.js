@@ -1,6 +1,7 @@
 let blocks = null;
 
 Events.run(Trigger.update, () => {
+try {
 if (!Vars.state.isPlaying()) return;
 const block = Vars.content.block("gr-geothermal-turbine");
 
@@ -25,4 +26,6 @@ Liquids.oil,
 
 }catch(e){}
 }
-});
+} catch(e){
+Vars.ui.showInfoToast(e,5);
+}});
