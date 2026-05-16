@@ -5,7 +5,7 @@ try {
 if (!Vars.state.isPlaying()) return;
 const block = Vars.content.block("gr-geothermal-turbine");
 
-if (blocks == null || blocks.size() != Groups.build.size()){
+if (blocks == null || blocks.size != Groups.build.size()){
 blocks = Groups.build.copy().select(b => b.block == block);
 }
   
