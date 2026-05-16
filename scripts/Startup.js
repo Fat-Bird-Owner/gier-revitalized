@@ -110,6 +110,23 @@ t.checkPref("deranged", false, b => {});
 t.checkPref("wreckEnabled", true, b => {});
 
 t.checkPref("unitWreckEnabled", false, b => {});
+
+t.checkPref("core-facility-old", false, b => {
+try{
+
+const block = Vars.content.block("gr-core-facility");
+                
+if (b == true){
+block.region = Core.atlas.find("gr-core-facility-old2");
+block.teamRegion = Core.atlas.find("gr-core-facility-team-old2");
+} else {
+block.region = Core.atlas.find("gr-core-facility");
+block.teamRegion = Core.atlas.find("gr-core-facility-team");
+}
+                
+} catch(e){
+Vars.ui.showInfoToast(e,10);
+}});
   
 });
 
@@ -127,6 +144,11 @@ Vars.ui.showText(title,display);
 
 if (Core.settings.getBool("disable-plague") == true){        
 Vars.content.liquid("gr-plague").viscosity = 0;
+}
+
+if (Core.settings.getBool("core-facility-old") == true){        
+block.region = Core.atlas.find("gr-core-facility-old2");
+block.teamRegion = Core.atlas.find("gr-core-facility-team-old2");
 }
 
 if (Core.settings.getBool("command-block") == true){        
