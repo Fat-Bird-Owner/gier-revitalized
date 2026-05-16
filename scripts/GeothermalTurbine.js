@@ -1,10 +1,19 @@
 let blocks = null;
+let floorBlock = null;
+let block = null;
 
 Events.run(Trigger.update, () => {
 try {
-if (!Vars.state.isPlaying()) return;
-const block = Vars.content.block("gr-geothermal-turbine");
+if (!Vars.state.isPlaying()) return
 
+if (floorBlock == null){
+floorBlock = Vars.content.block("gr-oil-tile");
+}
+
+if (block == null){
+block = Vars.content.block("gr-geothermal-turbine");;
+}
+  
 if (blocks == null || blocks.size != Groups.build.copy().size){
 blocks = Groups.build.copy().select(b => b.block == block);
 }
@@ -12,11 +21,11 @@ blocks = Groups.build.copy().select(b => b.block == block);
 for(let i = 0; i < blocks.size; i++){
 try{
 const build = blocks.get(i);
-
+  
 if(
 build.liquids &&
 build.tile &&
-build.tile.floor() == Vars.content.block("gr-oil-tile")
+build.tile.floor() == floorBlock
 ){
 build.liquids.add(
 Liquids.oil,
