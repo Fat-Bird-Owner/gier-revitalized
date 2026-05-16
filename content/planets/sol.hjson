@@ -5,9 +5,9 @@ alwaysUnlocked: false
 accessible: false
 
 parent: sun
-solorSystem: sol
+solorSystem: sun
 orbitRadius: 12000
-drawPebit: false
+drawOrbit: false
   
 mesh:[
 {
