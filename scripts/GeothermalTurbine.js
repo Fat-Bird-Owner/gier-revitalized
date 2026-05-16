@@ -1,8 +1,13 @@
+let blocks = null;
+
 Events.run(Trigger.update, () => {
 if (!Vars.state.isPlaying()) return;
 const block = Vars.content.block("gr-geothermal-turbine");
-const blocks = Groups.build.copy().select(b => b.block == block);
 
+if (blocks == null || blocks.size != Groups.build.size()){
+blocks = Groups.build.copy().select(b => b.block == block);
+}
+  
 for(let i = 0; i < blocks.size; i++){
 try{
 const build = blocks.get(i);
