@@ -19,7 +19,6 @@ check += Time.delta;
 if (check >= 60){
 blocks = Groups.build.copy().select(b => b.block == block);
 check = 0;
-if (blocks.size <= 0) return;
 }
   
 for(let i = 0; i < blocks.size; i++){
