@@ -2,6 +2,8 @@ const statUnit = require("StatUnits");
 const stat = require("Stats");
 let observerActivations = 0;
 let circuitActivations = 0;
+let timer = 0;
+let builds = null;
 
 const blocks = [
 "gr-circuit-wire",
@@ -294,8 +296,11 @@ const block = Vars.content.block(other[5]);
 const {build} = tile;
 
 if (!build || !block || !tile) return;
+if (time >= 60){
+builds = Groups.build.copy().select(b => b.block == block);
+}
   
-Groups.build.each(b => {
+builds.each(b => {
 try {
 if (b.block == block && b.isValid()){
 
@@ -334,7 +339,7 @@ try {
   
 observerActivations = 0;
 circuitActivations = 0;
-  
+timer += Time.delta; 
 } catch(e){
 Vars.ui.showInfoToast(e, 5);  
 }});
