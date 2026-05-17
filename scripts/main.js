@@ -30,7 +30,7 @@ require("Multicrafter");
 require("SealentChamber");
 require("StructureBlock");
 require("ImageBlock");
-require("CircuitLogic");
+//require("CircuitLogic");
 require("CombustionBarrel");
 require("GeothermalTurbine");
 //require("MixDistributor");
