@@ -32,7 +32,7 @@ require("StructureBlock");
 require("ImageBlock");
 require("CircuitLogic");
 require("CombustionBarrel");
-require("GeothermalTurbine");
+//require("GeothermalTurbine");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
