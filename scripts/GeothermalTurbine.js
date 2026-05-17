@@ -2,6 +2,7 @@ let blocks = null;
 let unfiltered = 0;
 let floorBlock = null;
 let block = null;
+let check = 0;
 
 Events.run(Trigger.update, () => {
 try {
@@ -14,10 +15,12 @@ floorBlock = Vars.content.block("gr-oil-tile");
 if (block == null){
 block = Vars.content.block("gr-geothermal-turbine");;
 }
-  
-if (!blocks || unfiltered != Groups.build.size()){
+
+check += Time.delta;
+if (check >= 60 && (!blocks || unfiltered != Groups.build.size())){
 blocks = Groups.build.copy().select(b => b.block == block);
 unfiltered = Groups.build.size();
+check = 0;
 if (blocks.size <= 0) return;
 }
   
