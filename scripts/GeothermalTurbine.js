@@ -15,9 +15,9 @@ if (block == null){
 block = Vars.content.block("gr-geothermal-turbine");;
 }
   
-if (!blocks || unfiltered != Groups.build.copy().size){
+if (!blocks || unfiltered != Groups.build.size()){
 blocks = Groups.build.copy().select(b => b.block == block);
-unfiltered = Groups.build.copy().size;
+unfiltered = Groups.build.size();
 if (blocks.size <= 0) return;
 }
   
