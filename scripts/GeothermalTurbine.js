@@ -24,16 +24,15 @@ if (blocks.size <= 0) return;
 for(let i = 0; i < blocks.size; i++){
 try{
 const build = blocks.get(i);
+
+if(!build || !build.isValid() || !build.tile){
+blocks.remove(i);
+continue;
+}
   
 if(
-build.liquids &&
-build.tile &&
-build.tile.floor() == floorBlock
-){
-build.liquids.add(
-Liquids.oil,
-(15 / 60) * Time.delta
-);
+build.liquids && build.tile && build.tile.floor() == floorBlock){
+build.liquids.add( Liquids.oil, (15 / 60) * Time.delta);
 }
 
 }catch(e){}
