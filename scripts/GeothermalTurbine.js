@@ -1,4 +1,5 @@
 let blocks = null;
+let unfiltered = 0;
 let floorBlock = null;
 let block = null;
 
@@ -14,8 +15,9 @@ if (block == null){
 block = Vars.content.block("gr-geothermal-turbine");;
 }
   
-if (!blocks || blocks.size != Groups.build.copy().size){
+if (!blocks || unfiltered != Groups.build.copy().size){
 blocks = Groups.build.copy().select(b => b.block == block);
+unfiltered = Groups.build.copy().size;
 if (blocks.size <= 0) return;
 }
   
