@@ -4,7 +4,7 @@ let block = null;
 
 Events.run(Trigger.update, () => {
 try {
-if (!Vars.state.isPlaying()) return
+if (!Vars.state.isPlaying()) return;
 
 if (floorBlock == null){
 floorBlock = Vars.content.block("gr-oil-tile");
@@ -14,8 +14,9 @@ if (block == null){
 block = Vars.content.block("gr-geothermal-turbine");;
 }
   
-if (blocks == null || blocks.size != Groups.build.copy().size){
+if (!blocks || blocks.size != Groups.build.copy().size){
 blocks = Groups.build.copy().select(b => b.block == block);
+if (blocks.size <= 0) return;
 }
   
 for(let i = 0; i < blocks.size; i++){
