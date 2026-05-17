@@ -1,0 +1,22 @@
+type: PowerNode
+name: Surge Node
+
+laserRange: 8.5
+maxNodes: 5
+
+customShadow: true
+requirements:[silicon/10, surge-alloy/3]
+
+databaseTag: "adv-surge-alloy"
+category: power
+
+research:{
+parent: outpost
+objectives:[surge-node]
+}
+  
+outputsPower: true
+consumesPower: true
+consumes:{
+powerBuffered: 175
+}
