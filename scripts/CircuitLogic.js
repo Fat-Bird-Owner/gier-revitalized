@@ -340,7 +340,8 @@ try {
   
 observerActivations = 0;
 circuitActivations = 0;
-timer += Time.delta; 
+time += Time.delta; 
+  
 } catch(e){
 Vars.ui.showInfoToast(e, 5);  
 }});
