@@ -2,7 +2,7 @@ const statUnit = require("StatUnits");
 const stat = require("Stats");
 let observerActivations = 0;
 let circuitActivations = 0;
-let timer = 0;
+let time = 0;
 let builds = null;
 
 const blocks = [
@@ -298,6 +298,7 @@ const {build} = tile;
 if (!build || !block || !tile) return;
 if (time >= 60){
 builds = Groups.build.copy().select(b => b.block == block);
+time = 0;
 }
   
 builds.each(b => {
