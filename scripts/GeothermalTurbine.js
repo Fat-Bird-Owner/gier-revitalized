@@ -1,5 +1,4 @@
 let blocks = null;
-let unfiltered = 0;
 let floorBlock = null;
 let block = null;
 let check = 0;
@@ -17,9 +16,8 @@ block = Vars.content.block("gr-geothermal-turbine");;
 }
 
 check += Time.delta;
-if (check >= 60 && (!blocks || unfiltered != Groups.build.size())){
+if (check >= 60){
 blocks = Groups.build.copy().select(b => b.block == block);
-unfiltered = Groups.build.size();
 check = 0;
 if (blocks.size <= 0) return;
 }
@@ -34,7 +32,7 @@ continue;
 }
   
 if(
-build.liquids && build.tile && build.tile.floor() == floorBlock){
+build.liquids && build.tile && build.tile.floor() == floorBlock && build.team != Team.derelict){
 build.liquids.add( Liquids.oil, (15 / 60) * Time.delta);
 }
 
