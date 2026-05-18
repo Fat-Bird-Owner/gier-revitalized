@@ -17,7 +17,7 @@ shootEffect: none
 }
 
 drawer:{
-type: MultiEffect
+type: DrawMulti
 drawers:[
 {
 type: DrawRegion
