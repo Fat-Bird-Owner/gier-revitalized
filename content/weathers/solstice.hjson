@@ -14,7 +14,6 @@ soundVolMin: 0.45
 
 noiseColor: D3DEE455
 drawNoise: true
-drawParticles: true
 noiseLayers: 1
 
 status: gr-frigid
