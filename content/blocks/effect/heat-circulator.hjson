@@ -1,0 +1,31 @@
+type: ContinuousLiquidTurret
+size: 1
+name: Heat Circulator
+
+alwayShooting: true
+range: 300
+
+requirements:[lead/50, copper/50, silicon/35]
+category: turret
+  
+ammoTypes:{
+gr-liquid-steam: {
+type: EmptyBulletType
+despawnEffecr: none
+shootEffect: none
+}
+}
+
+drawer:{
+type: MultiEffect
+drawers:[
+{
+type: DrawRegion
+}
+{
+type: DrawGlowRegion
+suffix: "-light"
+color: ffffff
+}
+]
+}
