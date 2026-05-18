@@ -4,7 +4,7 @@ name: Solstice
 noiseScale: 2500
 baseSpeed: 6
 yspeed: -1.66667
-xspeed: -1.66667
+xspeed: 1.66667
 drawParticles: false
 
 
