@@ -3,10 +3,10 @@ size: 1
 name: Heat Circulator
 
 alwaysShooting: true
-range: 300
+range: 150
 
 requirements:[lead/50, copper/50, silicon/35]
-category: turret
+category: effect
   
 ammoTypes:{
 gr-liquid-steam: {
