@@ -2,7 +2,7 @@ type: ContinuousLiquidTurret
 size: 1
 name: Heat Circulator
 
-alwayShooting: true
+alwaysShooting: true
 range: 300
 
 requirements:[lead/50, copper/50, silicon/35]
