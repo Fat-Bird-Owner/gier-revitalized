@@ -3,14 +3,16 @@ color: 9eabf7
 name: Solstice
 noiseScale: 2500
 baseSpeed: 6
-yspeed: -5
+yspeed: -1.66667
+xspeed: -1.66667
+drawParticles: false
 
 
 sound: wind
 soundVol: 1.2
 soundVolMin: 0.45
 
-noiseColor: D3DEE466
+noiseColor: D3DEE455
 drawNoise: true
 drawParticles: true
 noiseLayers: 1
