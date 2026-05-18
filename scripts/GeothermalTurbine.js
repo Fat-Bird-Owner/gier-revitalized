@@ -21,7 +21,7 @@ blocks = Groups.build.copy().select(b => b.block == block);
 check = 0;
 }
 
-if (!block) return;  
+if (!blocks) return;  
 for(let i = 0; i < blocks.size; i++){
 try{
 const build = blocks.get(i);
