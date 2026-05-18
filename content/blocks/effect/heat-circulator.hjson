@@ -3,7 +3,7 @@ size: 1
 name: Heat Circulator
 
 alwaysShooting: true
-range: 150
+range: 75
 
 requirements:[lead/50, copper/50, silicon/35]
 category: effect
