@@ -7,7 +7,10 @@ range: 150
 
 requirements:[lead/50, copper/50, silicon/35]
 category: effect
-  
+rotate: false
+customShadow: true
+playerControllable: false
+
 ammoTypes:{
 gr-liquid-steam: {
 type: EmptyBulletType
