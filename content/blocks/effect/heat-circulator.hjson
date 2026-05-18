@@ -4,6 +4,7 @@ name: Heat Circulator
 
 alwaysShooting: true
 range: 75
+enableDrawStatus: false
 
 requirements:[lead/50, copper/50, silicon/35]
 category: effect
