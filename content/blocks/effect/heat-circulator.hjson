@@ -11,7 +11,7 @@ category: turret
 ammoTypes:{
 gr-liquid-steam: {
 type: EmptyBulletType
-despawnEffecr: none
+despawnEffect: none
 shootEffect: none
 }
 }
