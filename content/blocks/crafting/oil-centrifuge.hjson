@@ -1,0 +1,43 @@
+type: GenericCrafter
+size: 2
+name: Oil Centrifuge
+
+category: crafting
+requirements: [lead/50, copper/25, silicon/15, metaglass/15]
+  
+shownPlanets: [gier, kela]
+envEnabled: -1
+research: {
+parent: sunder-furnace
+objectives: [oil-centrifuge]
+}
+
+consumes:{
+power: 0.15
+items:[coal/5]
+}
+
+outputLiquid: oil/0.03334
+customShadow: true
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+padding: 2.24
+drawLiquid: oil
+}
+{
+type: DrawParticles
+color: 313131ff
+}
+{
+type: DrawDefault
+}
+]
+}
