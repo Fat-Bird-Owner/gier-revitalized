@@ -40,7 +40,7 @@ suffix: "-bottom"
 }
 {
 type: DrawLiquidTile
-padding: 0.45
+padding: 1.2
 drawLiquid: oil
 }
 {
@@ -52,6 +52,7 @@ type: DrawParticles
 color: 596ab8ff
 particles: 12
 particleSize: 1.5
+particleLife: 105
 }
 {
 type: DrawDefault
