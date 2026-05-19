@@ -14,7 +14,7 @@ maxBoost: 1.25
 baseEfficiency: 0
 boostScale: 2.25
 minEfficiency: 0.1
-attribute: oil
+attribute: carbon
 
 category: crafting
 requirements: [lead/50, copper/25, silicon/15, metaglass/15]
