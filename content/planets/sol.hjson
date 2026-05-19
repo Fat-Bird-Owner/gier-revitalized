@@ -4,8 +4,8 @@ iconColor: f4ee8e
 alwaysUnlocked: false
 accessible: false
 
-parent: sun
-solorSystem: sun
+parent: sol
+solorSystem: sol
 orbitRadius: 12000
 drawOrbit: false
   
