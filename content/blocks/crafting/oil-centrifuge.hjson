@@ -4,6 +4,7 @@ name: Oil Centrifuge
 
 category: crafting
 requirements: [lead/50, copper/25, silicon/15, metaglass/15]
+squareSprite: false
   
 shownPlanets: [gier, kela]
 envEnabled: -1
