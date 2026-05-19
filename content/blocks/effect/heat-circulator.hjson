@@ -1,6 +1,10 @@
 type: ContinuousLiquidTurret
 size: 1
 name: Heat Circulator
+description: "
+Heats up it's surroundings.
+Used to cancel the effects of solstice.
+"
 
 alwaysShooting: true
 range: 75
