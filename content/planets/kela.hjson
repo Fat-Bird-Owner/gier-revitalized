@@ -1,3 +1,6 @@
+generator: SerpuloPlanetGenerator
+parent: sol
+
 radius: 0.85
 statParent: gier
 #name: Kela
@@ -6,7 +9,6 @@ alwaysUnlocked: true
 accessible: true
 bloom: true
 
-generator: SerpuloPlanetGenerator
 orbitRadius: 50
 sectorSize: 2
 startSector: 24
@@ -27,7 +29,6 @@ campaignRuleDefaults: {
 
 prebuildBase: true
 defaultCore: core-shard
-parent: sol
 #solarSystem: sun
 updateLighting: false
 
