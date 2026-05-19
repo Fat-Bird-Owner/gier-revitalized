@@ -4,9 +4,8 @@ iconColor: f4ee8e
 alwaysUnlocked: false
 accessible: false
 
-parent: sun
-solorSystem: sun
-orbitRadius: 12000
+parent: placeholder-planet
+orbitRadius: 120
 drawOrbit: false
   
 mesh:[
