@@ -40,8 +40,12 @@ suffix: "-bottom"
 }
 {
 type: DrawLiquidTile
-padding: 1.2
-drawLiquid: oil
+padTop: 2.24
+padBottom: 2.24
+padLeft: 1.33
+padRight: 1.33
+drawLiquid: water
+alpha: 0.5
 }
 {
 type: DrawBubbles
