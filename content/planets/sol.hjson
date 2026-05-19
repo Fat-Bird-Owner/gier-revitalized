@@ -1,10 +1,11 @@
+parent: placeholder-planet
+
 radius: 8.5
 #name: Sol
 iconColor: f4ee8e
 alwaysUnlocked: false
 accessible: false
 
-parent: placeholder-planet
 orbitRadius: 120
 orbitOffset: 150
 drawOrbit: false
