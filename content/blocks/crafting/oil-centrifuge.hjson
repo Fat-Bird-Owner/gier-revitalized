@@ -1,11 +1,18 @@
 type: GenericCrafter
 size: 2
 name: Oil Centrifuge
+description: "
+Liquefacts coal back into oil.
+
+[green]- Converts coal into oil
+[red]- Explosive
+"
 
 category: crafting
 requirements: [lead/50, copper/25, silicon/15, metaglass/15]
 squareSprite: false
-  
+baseExplosiveness: 15
+
 shownPlanets: [gier, kela]
 envEnabled: -1
 research: {
@@ -14,7 +21,7 @@ objectives: [oil-centrifuge]
 }
 
 consumes:{
-power: 0.15
+power: 0.3
 items:[coal/5]
 }
 
