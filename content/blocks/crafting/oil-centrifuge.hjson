@@ -34,7 +34,7 @@ drawLiquid: oil
 }
 {
 type: DrawParticles
-color: 313131ff
+color: 596ab8ff
 }
 {
 type: DrawDefault
