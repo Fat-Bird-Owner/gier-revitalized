@@ -1,14 +1,18 @@
-type: GenericCrafter
+type: AttributeCrafter
 size: 2
 name: Oil Centrifuge
 description: "
-water is used as a coolent.
-cools down oil turning it into coal.
-which is then crushed and turned into graphite.
+Absorbs ground oil and water below it.
+Oil is hardened in to coal and crushed.
+the water is then used during the cooling proccess.
 
 [green]- Converts oil into graphite
 [red]- Explosive
 "
+
+maxBoost: 1.25
+minEfficiency: 0.1
+attribute: oil
 
 category: crafting
 requirements: [lead/50, copper/25, silicon/15, metaglass/15]
@@ -23,13 +27,12 @@ objectives: [oil-centrifuge]
 }
 
 consumes:{
-power: 0.3
-liquids:[oil/0.016667, water/0.016667]
+power: 0.5
 }
 
 outputItem: graphite/5
 customShadow: true
-craftTime: 240
+craftTime: 120
 
 drawer:{
 type: DrawMulti
@@ -37,19 +40,6 @@ drawers:[
 {
 type: DrawRegion
 suffix: "-bottom"
-}
-{
-type: DrawLiquidTile
-padTop: 2.24
-padBottom: 2.24
-padLeft: 1.33
-padRight: 1.33
-drawLiquid: water
-alpha: 0.5
-}
-{
-type: DrawBubbles
-color: 596ab8ff
 }
 {
 type: DrawParticles
