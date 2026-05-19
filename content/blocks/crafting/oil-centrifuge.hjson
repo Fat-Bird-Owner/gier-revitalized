@@ -11,6 +11,8 @@ the water is then used during the cooling proccess.
 "
 
 maxBoost: 1.25
+baseEfficiency: 0
+boostScale: 0.2
 minEfficiency: 0.1
 attribute: oil
 
