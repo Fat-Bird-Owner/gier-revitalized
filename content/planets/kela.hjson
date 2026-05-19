@@ -1,5 +1,5 @@
 generator: SerpuloPlanetGenerator
-parent: sol
+parent: sun
 
 radius: 0.85
 statParent: gier
