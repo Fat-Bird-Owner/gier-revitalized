@@ -6,6 +6,7 @@ accessible: false
 
 parent: placeholder-planet
 orbitRadius: 120
+orbitOffset: 150
 drawOrbit: false
   
 mesh:[
