@@ -11,7 +11,9 @@ const items = [
 "plastanium",
 "thorium",
 "phase-fabric",
-"carbide"
+"carbide",
+"sand",
+"coal"
 ];
 
 Events.on(ContentInitEvent, () => {
