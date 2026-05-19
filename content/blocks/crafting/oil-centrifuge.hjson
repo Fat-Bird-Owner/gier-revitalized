@@ -34,8 +34,12 @@ padding: 2.24
 drawLiquid: oil
 }
 {
+type: DrawBubbles
+color: 3f3f3f
+}
+{
 type: DrawParticles
-color: 596ab8ff
+color: 5f5f5fff
 }
 {
 type: DrawDefault
