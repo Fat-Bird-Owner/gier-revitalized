@@ -2,9 +2,11 @@ type: GenericCrafter
 size: 2
 name: Oil Centrifuge
 description: "
-Liquefacts coal back into oil.
+water is used as a coolent.
+cools down oil turning it into coal.
+which is then crushed and turned into graphite.
 
-[green]- Converts coal into oil
+[green]- Converts oil into graphite
 [red]- Explosive
 "
 
@@ -22,11 +24,12 @@ objectives: [oil-centrifuge]
 
 consumes:{
 power: 0.3
-items:[coal/5]
+liquids:[oil/0.016667, water/0.016667]
 }
 
-outputLiquid: oil/0.03334
+outputItem: graphite/5
 customShadow: true
+craftTime: 240
 
 drawer:{
 type: DrawMulti
@@ -37,16 +40,18 @@ suffix: "-bottom"
 }
 {
 type: DrawLiquidTile
-padding: 2.24
+padding: 0.45
 drawLiquid: oil
 }
 {
 type: DrawBubbles
-color: 3f3f3f
+color: 596ab8ff
 }
 {
 type: DrawParticles
-color: 5f5f5fff
+color: 596ab8ff
+particles: 12
+particleSize: 1.5
 }
 {
 type: DrawDefault
