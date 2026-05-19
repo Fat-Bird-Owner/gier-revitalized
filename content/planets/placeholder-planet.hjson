@@ -1,8 +1,9 @@
-localizedName: "Sol system"
+localizedName: "Sol"
   
 camRadius: 45
 accessible: false
-  
+minZoom: 0.02
+
 mesh: {
   type: HexSkyMesh
   color: 000000
