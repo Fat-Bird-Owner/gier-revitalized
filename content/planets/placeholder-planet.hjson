@@ -1,0 +1,10 @@
+localizedName: "Sol system"
+  
+camRadius: 45
+accessible: false
+  
+mesh: {
+  type: HexSkyMesh
+  color: 000000
+  thresh: 0.01
+}
