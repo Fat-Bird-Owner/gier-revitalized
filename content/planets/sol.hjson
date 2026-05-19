@@ -36,9 +36,9 @@ cloudMesh: [
    type: HexSkyMesh
    planet: sol
    speed: 1.21
-   radius: 0.06
+   radius: 0.12
    divisions: 5
-   color: ffc64c99
+   color: ffc64c
    octaves: 3
    persistence: 0.3
    scl: 1
@@ -49,9 +49,9 @@ cloudMesh: [
    type: HexSkyMesh
    planet: kela
    speed: 1.21
-   radius: 0.09
+   radius: 0.24
    divisions: 5
-   color: f4ee8e88
+   color: f4ee8e
    octaves: 2
    persistence: 0.6
    scl: 0.9
@@ -62,9 +62,9 @@ cloudMesh: [
    type: HexSkyMesh
    planet: kela
    speed: 1.21
-   radius: 0.14
+   radius: 0.36
    divisions: 5
-   color: f4ee8e88
+   color: f4ee8e
    octaves: 2
    persistence: 0.6
    scl: 0.9
