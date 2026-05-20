@@ -57,5 +57,9 @@ particleLife: 105
 {
 type: DrawDefault
 }
+{
+type: DrawGlowRegion
+color: ffaa5f
+}
 ]
 }
