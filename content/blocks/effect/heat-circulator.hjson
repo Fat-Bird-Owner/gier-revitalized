@@ -10,6 +10,8 @@ alwaysShooting: true
 range: 75
 enableDrawStatus: false
 shootY: 0
+shootEffect: none
+smokeEffect: none
 
 requirements:[lead/50, copper/50, silicon/35]
 category: effect
