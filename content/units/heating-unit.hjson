@@ -1,5 +1,7 @@
 template: MissileUnitType
 hitSize: 0
+flying: false
+drawSoftShadow: false
 speed: 0
 rotateSpeed: 0
 lifetime: 1
