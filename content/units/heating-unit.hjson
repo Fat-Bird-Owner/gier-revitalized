@@ -10,6 +10,7 @@ hittable: false
 targetable: false
 physics: false
 fallSpeed: 0.5
+deathShake: 0
 weapons: [
   {
     controllable: false
@@ -27,16 +28,7 @@ weapons: [
         {
           type: WaveEffect
           lifetime: 30
-          sizeFrom: 32.5
-          sizeTo: 75
-          interp: pow3Out
-          strokeFrom: 9
-          strokeTo: 0
-          colorTo: ffaa5f
-        }
-        {
-          type: WaveEffect
-          lifetime: 30
+          layer: 122
           sizeFrom: 75
           sizeTo: 75
           strokeFrom: 6
