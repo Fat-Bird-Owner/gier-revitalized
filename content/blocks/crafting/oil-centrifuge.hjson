@@ -11,8 +11,6 @@ the water is then used during the cooling proccess.
 [red]- Explosive
 "
 
-groups: 
-
 maxBoost: 1.25
 baseEfficiency: 0
 boostScale: 2.25
@@ -35,7 +33,7 @@ objectives: [oil-centrifuge]
 
 consumes:{
 power: 0.5
-liquid: [water/0.016667]
+liquids: [water/0.016667]
 }
 
 outputItem: graphite/3
