@@ -8,7 +8,8 @@ Used to cancel the effects of Solstice.
 
 alwaysShooting: true
 range: 75
-#enableDrawStatus: false
+enableDrawStatus: false
+shootY: 0
 
 requirements:[lead/50, copper/50, silicon/35]
 category: effect
