@@ -18,13 +18,10 @@ category: effect
 rotate: false
 customShadow: true
 playerControllable: false
+extinguish: false
 
 ammoTypes:{
 gr-liquid-steam: {
-despawnEffect: none
-shootEffect: none
-shootEffect: none
-smokeEffect: none
 spawnUnit: heating-unit
 }
 }
