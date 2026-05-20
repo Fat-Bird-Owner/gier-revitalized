@@ -21,6 +21,7 @@ ammoTypes:{
 gr-liquid-steam: {
 despawnEffect: none
 shootEffect: none
+shootEffect: none
 spawnUnit: heating-unit
 }
 }
