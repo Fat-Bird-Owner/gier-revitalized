@@ -31,9 +31,10 @@ weapons: [
           layer: 122
           sizeFrom: 75
           sizeTo: 75
-          strokeFrom: 6
-          strokeTo: 0
+          strokeFrom: 3
+          strokeTo: 3
           colorTo: ffaa5f
+          colorFrom: ffaa5f
         }
       ]
       despawnHit: true
