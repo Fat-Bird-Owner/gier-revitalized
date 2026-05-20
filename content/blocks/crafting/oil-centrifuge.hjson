@@ -2,11 +2,12 @@ type: AttributeCrafter
 size: 2
 name: Oil Centrifuge
 description: "
-Absorbs ground oil and water below it.
+Absorbs ground oil.
 Oil is hardened in to coal and crushed.
 the water is then used during the cooling proccess.
 
 [green]- Converts oil into graphite
+- Water is required
 [red]- Explosive
 "
 
@@ -30,11 +31,12 @@ objectives: [oil-centrifuge]
 
 consumes:{
 power: 0.5
+liquid: [water/0.016667]
 }
 
-outputItem: graphite/5
+outputItem: graphite/3
 customShadow: true
-craftTime: 120
+craftTime: 90
 
 drawer:{
 type: DrawMulti
