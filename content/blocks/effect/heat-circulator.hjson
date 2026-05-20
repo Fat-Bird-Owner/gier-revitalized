@@ -18,20 +18,8 @@ playerControllable: false
 
 ammoTypes:{
 gr-liquid-steam: {
-type: EmpBulletType
-radius: 75
 despawnEffect: none
 shootEffect: none
-hitPowerEffect: none
-chainEffect: none
-applyEffect: none
-timeDuration: 0
-powerDamageScl: 1
-powerSclDecrease: 0
-hitUnits: true
-unitDamageScl: 1
-status: burning
-statusDuration: 80
 }
 }
 
