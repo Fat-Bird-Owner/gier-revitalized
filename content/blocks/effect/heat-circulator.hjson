@@ -23,6 +23,11 @@ extinguish: false
 ammoTypes:{
 gr-liquid-steam: {
 spawnUnit: heating-unit
+despawnHit: true
+hitEffect: none
+despawnEffect: none
+smokeEffect: none
+shootEffect: none
 }
 }
 
