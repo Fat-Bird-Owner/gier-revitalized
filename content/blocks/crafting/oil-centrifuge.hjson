@@ -11,11 +11,15 @@ the water is then used during the cooling proccess.
 [red]- Explosive
 "
 
+groups: 
+
 maxBoost: 1.25
 baseEfficiency: 0
 boostScale: 2.25
 minEfficiency: 0.1
 attribute: carbon
+
+databaseTag: "gier"
 
 category: crafting
 requirements: [lead/50, copper/25, silicon/15, metaglass/15]
@@ -47,8 +51,8 @@ suffix: "-bottom"
 }
 {
 type: DrawParticles
-color: 596ab8ff
-particles: 12
+color: 596ab866
+particles: 9
 particleSize: 1.5
 particleLife: 105
 }
