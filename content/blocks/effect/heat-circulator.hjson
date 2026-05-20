@@ -1,14 +1,14 @@
-type: ContinuousLiquidTurret
+type: LiquidTurret
 size: 1
 name: Heat Circulator
 description: "
-Heats up it's surroundings.
-Used to cancel the effects of solstice.
+Uses steam to up it's surroundings.
+Used to cancel the effects of Solstice.
 "
 
 alwaysShooting: true
 range: 75
-enableDrawStatus: false
+#enableDrawStatus: false
 
 requirements:[lead/50, copper/50, silicon/35]
 category: effect
@@ -18,9 +18,20 @@ playerControllable: false
 
 ammoTypes:{
 gr-liquid-steam: {
-type: EmptyBulletType
+type: EmpBulletType
+radius: 75
 despawnEffect: none
 shootEffect: none
+hitPowerEffect: none
+chainEffect: none
+applyEffect: none
+timeDuration: 0
+powerDamageScl: 1
+powerSclDecrease: 0
+hitUnits: true
+unitDamageScl: 1
+status: burning
+statusDuration: 80
 }
 }
 
