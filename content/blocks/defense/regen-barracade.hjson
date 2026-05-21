@@ -5,7 +5,7 @@ range: 2
 effect: overclocked
 baseColor: EDF3A9FF
 
-healPercent: 0.111111
+healPercent: 0.011111
 group: walls
 
 buildVisibility: sandboxOnly
