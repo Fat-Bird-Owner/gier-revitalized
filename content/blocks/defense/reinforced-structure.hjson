@@ -17,6 +17,12 @@ customShadow: true
 priority: 0
 hasPower: false
 
+group: walls
+research: {
+parent: insulated-wall
+objectives: [reinforced-structure]
+}
+
 health: 475
 armor: -5
 
