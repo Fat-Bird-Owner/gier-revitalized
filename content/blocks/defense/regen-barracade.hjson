@@ -8,6 +8,7 @@ baseColor: EDF3A9FF
 healPercent: 0.011111
 group: walls
 
+category: defense
 research: reinforced-structure
 customShadow: true
 
