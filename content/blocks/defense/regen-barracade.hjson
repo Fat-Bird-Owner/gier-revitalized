@@ -12,6 +12,7 @@ eletric arcs.
 - Could be nullified
 "
 
+absorbLasers: true
 priority: 0
 size: 2
 range: 2
