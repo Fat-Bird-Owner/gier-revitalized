@@ -9,6 +9,7 @@ healPercent: 0.011111
 group: walls
 
 research: reinforced-structure
+customShadow: true
 
 shownPlanets: [kela, gier]
 health: 4200
