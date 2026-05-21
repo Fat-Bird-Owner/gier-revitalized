@@ -8,9 +8,12 @@ baseColor: EDF3A9FF
 healPercent: 0.011111
 group: walls
 
-buildVisibility: sandboxOnly
+research: reinforced-structure
+
 shownPlanets: [kela, gier]
-health: 1600
+health: 4200
+
+requirements: [lead/25, copper/15, silicon/15, plastanium/10]
 
 drawer: [
 {
