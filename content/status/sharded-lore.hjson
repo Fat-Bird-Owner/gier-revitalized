@@ -1,4 +1,4 @@
-name: Sharded Lore
+name: Sharded
 research: {
 parent: lore-3
 objectives:[
