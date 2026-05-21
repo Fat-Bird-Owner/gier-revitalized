@@ -1,0 +1,19 @@
+type: RegenProjector
+name: Regen Barracade
+size: 2
+range: 1.5
+effect: overclocked
+baseColor: EDF3A9FF
+
+buildVisibility: sandboxOnly
+shownPlanets: [kela, gier]
+
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: EDF3A9FF
+}
+]
