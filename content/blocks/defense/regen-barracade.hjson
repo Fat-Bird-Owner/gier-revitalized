@@ -1,11 +1,23 @@
 type: RegenProjector
 name: Regen Barracade
+description: "
+Acts similar to an insulated wall.
+Able to absorb lasers but cant absorb
+eletric arcs.
+
+[accent]- Regenerates health slowly
+[green]- More durable then insulated wall
+[salmon]- Cant absorb eletric arcs
+- Could be nullified
+"
+
+priority: 0
 size: 2
 range: 2
 effect: overclocked
 baseColor: EDF3A9FF
 
-healPercent: 0.011111
+healPercent: 0.022222
 group: walls
 
 category: defense
