@@ -1,12 +1,16 @@
 type: RegenProjector
 name: Regen Barracade
 size: 2
-range: 1.5
+range: 2
 effect: overclocked
 baseColor: EDF3A9FF
 
+healPercent: 0.000277778
+group: walls
+
 buildVisibility: sandboxOnly
 shownPlanets: [kela, gier]
+health: 1600
 
 drawer: [
 {
@@ -15,5 +19,6 @@ type: DrawDefault
 {
 type: DrawGlowRegion
 color: EDF3A9FF
+suffix: "-light"
 }
 ]
