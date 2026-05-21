@@ -1,7 +1,12 @@
 name: Sharded Lore
 research: {
 parent: lore-3
-objectives:[gr-intercept]
+objectives:[
+{
+type: SectorComeplete
+preset: gr-intercept
+}
+]
 }
 
 allDatabaseTabs: false
@@ -9,9 +14,9 @@ databaseCategory: "lore-faction"
 details: "
 [sky]Appearance: 5-6 generation
 [lightgrey]
-One of the last rouge cores that remained 
-on serpulo. Take  part in the third
-eradication.
+One of the last rouge cores that 
+remained  on serpulo. Take  part
+in the third eradication.
 
 Now on a mission of planetary conquest.
 "
