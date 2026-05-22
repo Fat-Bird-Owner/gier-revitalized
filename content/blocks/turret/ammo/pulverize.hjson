@@ -3,6 +3,9 @@ name: Pulverize
 range: 180
 size: 4
 
+shownPlanets: [gier, kela]
+buildVisibility: sandboxOnly
+
 drawer:{
 basePrefix: "reinforced-"
 }
