@@ -1,8 +1,8 @@
 research:{
-planet: gier
-root: true
-name: "[lightgrey]Gier[]"
-requiresUnlock: false
+    planet: gier
+    root: true
+    name: "gier"
+    requiresUnlock: false
 }
 name: Gier
 show: false
