@@ -1,4 +1,2 @@
 type: TiledFloor
-name: lantern-floor
-maxSize: 1
-variants: 1
+name: lantern floor
