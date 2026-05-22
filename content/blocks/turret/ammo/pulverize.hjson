@@ -9,8 +9,9 @@ buildVisibility: sandboxOnly
 drawer:{
 basePrefix: "reinforced-"
 }
-  
-reload: 40
+
+recoilPow: 0.85
+reload: 20
 shoot: {
 type: ShootAlternate
 spread: 6.5
@@ -32,6 +33,7 @@ lifetime: 44
 speed: 4
 damage: 30
 
+fragRandomSpread: 45
 fragBullets: 5
 fragBullet: {
 type: BasicBulletType
@@ -44,9 +46,9 @@ drag: 0.03333
 lifetime: 90
 
 sticky: true
-lighting: 5
+lightning: 4
 lightningColor: ebeef5
-damage: 4
+damage: 1
 }
   
 }
