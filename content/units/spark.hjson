@@ -9,7 +9,7 @@ drag: 0.02
 hitSize: 7
 omniMovement: false
 rotateSpeed: 3.5
-health: 300
+health: 105
 engineOffset: 6
 engineSize: 0
 circleTarget: true
@@ -81,6 +81,7 @@ scaledSplashDamage: true
 splashDamage: 15
 splashDamageRadius: 20
 damage: 10
+shieldDamageMultiplier: 0.5
 hitEffect: explosion
 hitSound: explosionCleroi
 despawnHit: true
