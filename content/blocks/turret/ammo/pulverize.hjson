@@ -46,7 +46,7 @@ frontColor: ffffff
 backColor: ffffff
 trailColor: ebeef5
 
-spriteM "gr-square"
+sprite: "gr-square"
 spin: 3.5
 speed: 6
 drag: 0.06666
