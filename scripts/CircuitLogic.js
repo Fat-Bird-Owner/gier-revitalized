@@ -191,7 +191,8 @@ k != "tile" &&
 k != "x" &&
 k != "y" &&
 k != "proximity" &&
-k != "team"
+k != "team" &&
+k != "object"
 ){
 toTile.build[k] = movingBuild[k];
 }
