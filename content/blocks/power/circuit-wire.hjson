@@ -28,7 +28,7 @@ circuitRate: 20
 circuitHeatDamage: 11.5
 }
 
-category: power
+category: logic
 databaseTag: "gier"
 envEnabled: -1
 shownPlanets: [kela, gier]
