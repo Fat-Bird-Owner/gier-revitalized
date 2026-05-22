@@ -1,4 +1,3 @@
 type: TiledFloor
 name: Latern Floor
 maxSize: 1
-tilingVariants: 1
