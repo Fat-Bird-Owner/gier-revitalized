@@ -8,6 +8,7 @@ buildVisibility: sandboxOnly
 shake: 2.5
 
 drawer:{
+type: DrawTurret
 basePrefix: "reinforced-"
 }
 
