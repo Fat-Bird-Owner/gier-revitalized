@@ -88,7 +88,7 @@ circuitActivations++;
 if(found){
 
 if(index == 0){
-if(frontBuild.power.graph.getBatteryStored() < 45) return;
+if(!frontBuild.power || !frontBuild.power.graph || frontBuild.power.graph.getBatteryStored() < 45) return;
 
 frontBuild.power.graph.transferPower(-45);
 
