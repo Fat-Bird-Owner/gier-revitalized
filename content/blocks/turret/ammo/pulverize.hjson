@@ -5,9 +5,15 @@ size: 4
 outlineColor: 2f2f3f
 
 shownPlanets: [gier, kela]
-buildVisibility: sandboxOnly
 shake: 2.5
 shootSound: payloadDrop1
+
+databaseTag: "gier"
+requirements: [lead/375, graphite/105, silicon/75, titanium/115, beryllium/115]
+research: {
+parent: trident
+objectives: [pulverize]
+}
 
 category: turret
 drawer:{
@@ -22,6 +28,10 @@ ejectEffect: casing3
 shoot: {
 type: ShootAlternate
 spread: 6.5
+}
+
+coolant: {
+amount: 0.166667
 }
 
 ammoTypes: {
