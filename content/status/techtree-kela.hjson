@@ -4,6 +4,6 @@ show: false
 research:{
 planet: kela
 root: true
-name: "[sky]Kela[]"
+name: "kela"
 alwaysUnlocked: true
 }
