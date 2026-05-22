@@ -46,14 +46,55 @@ frontColor: ffffff
 backColor: ffffff
 trailColor: ebeef5
 
-speed: 3
-drag: 0.03333
-lifetime: 90
+speed: 6
+drag: 0.06666
+lifetime: 45
 
 sticky: true
 lightning: 4
 lightningColor: ebeef5
 damage: 1
+}
+  
+}
+
+# Plastanium Ammo - Anti-air but better
+plastanium: {
+type: BasicBulletType
+frontColor: d8d97f
+backColor: d8d97f
+trailColor: fffac6
+
+width: 12.5
+height: 17.5
+trailLength: 6.25
+knockback: 1.25
+
+lifetime: 22
+speed: 8
+damage: 25
+hitEffect: plasticExplosion
+
+splashDamage: 25
+splashDamageRadius: 23
+status: iframe-kill
+
+fragRandomSpread: 45
+fragBullets: 5
+fragBullet: {
+type: BasicBulletType
+frontColor: d8d97f
+backColor: d8d97f
+trailColor: fffac6
+
+speed: 6
+drag: 0.06666
+lifetime: 45
+
+sticky: true
+lightning: 4
+lightningColor: 00000000
+damage: 2.2
 }
   
 }
