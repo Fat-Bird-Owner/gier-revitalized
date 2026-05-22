@@ -12,7 +12,7 @@ droneConstructTime: 600
 
 plans: [{
 type: AssemblerUnitPlan
-unit: ruthless
+unit: flare
 
 time: 2100
 requirements: [
@@ -22,12 +22,12 @@ gr-insulated-wall/2
 }
 {
 type: AssemblerUnitPlan
-unit: electron
+unit: zenith
 
 time: 5700
 requirements: [
 gr-packed-graphite/9
-gr-mend-pylon/1
+gr-power-cell/2
 gr-packed-beryllium/4
 ]
 }
