@@ -1,0 +1,25 @@
+type: BaseTurret
+size: 2
+name: Scraping Rig
+
+description: "
+Extracts scrap metal from unit wrecks.
+[grey]
+[i] - Scrap Metal: Poor metal, could be
+melted down into other metals.
+"
+
+requirements: [lead/175, copper/50, silicon/75]
+category: production
+databaseTag: "gier"
+shownPlanets: [kela, gier]
+buildVisibility: sandboxOnly
+  
+group: drills
+rotate: false
+rotateSpeed: 0
+fogRadiusMultiplier: 0
+attributes: {
+healthPerScrap: 95
+}
+
