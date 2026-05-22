@@ -6,7 +6,7 @@ envEnabled: -1
 shownPlanets: [kela, gier]
 
 requirements:[titanium/8, copper/20, silicon/20, metaglass/25]
-category: power
+category: logic
 consumes:{
 powerBuffered: 15
 }
