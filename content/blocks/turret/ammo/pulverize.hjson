@@ -7,7 +7,9 @@ outlineColor: 2f2f3f
 shownPlanets: [gier, kela]
 buildVisibility: sandboxOnly
 shake: 2.5
+shootSound: payloadDrop1
 
+category: turret
 drawer:{
 type: DrawTurret
 basePrefix: "reinforced-"
@@ -16,7 +18,7 @@ basePrefix: "reinforced-"
 recoil: 3.45
 recoilTime: 22.5
 reload: 12
-ammoUseEject: casing3
+ejectEffect: casing3
 shoot: {
 type: ShootAlternate
 spread: 6.5
