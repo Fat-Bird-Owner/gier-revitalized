@@ -29,7 +29,7 @@ ejectEffect: casing3
 consumes: {
 liquid:{
 # water coolant
-liquids:[water/0.16667]
+liquid: water/0.16667
 optional: true
 booster: true
 
