@@ -14,7 +14,7 @@ circuitHeatDamage: 45
 }
 
 requirements:[titanium/5, copper/15, silicon/15, metaglass/15]
-category: power
+category: logic
 consumes:{
 powerBuffered: 15
 }
