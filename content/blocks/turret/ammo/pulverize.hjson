@@ -25,13 +25,20 @@ recoil: 3.45
 recoilTime: 22.5
 reload: 12
 ejectEffect: casing3
+
+consumes: {
+liquid:{
+# water coolant
+liquids:[water/0.16667]
+optional: true
+booster: true
+
+}
+}
+
 shoot: {
 type: ShootAlternate
 spread: 6.5
-}
-
-coolant: {
-amount: 0.166667
 }
 
 ammoTypes: {
