@@ -103,4 +103,28 @@ damage: 2.2
   
 }
 
+# Oxide Ammo - AOE
+oxide: {
+type: BasicBulletType
+frontColor: e4ffd6
+backColor: e4ffd6
+trailColor: e4ffd6
+
+width: 12.5
+height: 17.5
+trailLength: 6.25
+knockback: 1.25
+
+lifetime: 33
+speed: 8
+damage: 25
+hitEffect: smeltsmoke
+hitColor: e4ffd6
+
+splashDamage: 45
+splashDamageRadius: 30
+status: oxide
+  
+}
+
 }
