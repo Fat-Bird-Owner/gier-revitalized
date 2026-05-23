@@ -16,7 +16,7 @@ requirements:[lead/105,copper/75,graphite/65,silicon/45,titanium/65, surge-alloy
 warmupSpeed: 0
 powerProduction: 2.5
 envEnabled: -1
-databaseTag: "gier"
+databaseTag: "adv-surge-alloy"
 category: power
 
 consumes:{
