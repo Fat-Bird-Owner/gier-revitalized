@@ -186,16 +186,13 @@ movingBuild.rotation
 for(let k in movingBuild){
 try{
 if(
-k != "power" &&
-k != "items" &&
-k != "liquids" &&
-k != "cons" &&
-k != "proximity" &&
+typeof movingBuild[k] != "function" &&
 k != "tile" &&
-k != "block" &&
-k != "team" &&
 k != "x" &&
-k != "y"
+k != "y" &&
+k != "proximity" &&
+k != "team" &&
+k != "object"
 ){
 toTile.build[k] = movingBuild[k];
 }
