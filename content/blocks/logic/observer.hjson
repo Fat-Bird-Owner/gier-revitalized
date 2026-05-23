@@ -6,6 +6,7 @@ rotate: true
 update: true
 fullOverride: "gr-circuit-wire"
 
+replaceable: false
 blockGroup: logic
 attributes:{
 circuitRange: 45
