@@ -304,6 +304,8 @@ time = 0;
   
 builds.each(b => {
 try {
+Time.run(1, () => {
+  
 if (b.block == block && b.isValid()){
 
 let ro = 0;
@@ -325,7 +327,8 @@ observerActivations++;
 Fx.generate.at(b.tile.nearby(b.rotation).worldx(), b.tile.nearby(b.rotation).worldy());
 }
   
-}
+}});
+
 } catch(e){
 Vars.ui.showInfoToast(e + "[red] - CircuitLogic - Observer - Repeat Loop", 5);
 }
