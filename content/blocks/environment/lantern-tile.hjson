@@ -1,2 +1,3 @@
 type: TiledFloor
 name: lantern floor
+maxSize: 1
