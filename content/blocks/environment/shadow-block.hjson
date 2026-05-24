@@ -10,4 +10,4 @@ sameBlockConnection: true
 
 maxNodes: 99
 autolink: false
-powerLayer: 140
+powerLayer: 80
