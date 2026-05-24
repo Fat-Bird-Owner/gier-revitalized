@@ -1,5 +1,5 @@
 type: PowerNode
-laserRange: 9999
+laserRange: 100
 laserScale: 7.5
 forceDark: true
 
