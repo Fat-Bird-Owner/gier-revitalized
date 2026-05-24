@@ -6,3 +6,4 @@ forceDark: true
 health: 999999999
 targetable: false
 underBullets: false
+sameBlockConnection: true
