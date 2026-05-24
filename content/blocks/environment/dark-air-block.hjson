@@ -1,0 +1,3 @@
+type: AirBlock
+buildVisibility: editorOnly
+drawDark: true
