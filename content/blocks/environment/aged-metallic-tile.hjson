@@ -1,0 +1,4 @@
+type: Floor
+name: "(Aged) Metalic Tile"
+variants: 3
+drawEdgeOut: false
