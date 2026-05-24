@@ -1,6 +1,6 @@
 type: PowerNode
 laserRange: 100
-laserScale: 7.5
+laserScale: 9
 forceDark: true
 
 health: 999999999
