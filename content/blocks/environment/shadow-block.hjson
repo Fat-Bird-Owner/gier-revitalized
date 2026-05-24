@@ -2,3 +2,7 @@ type: PowerNode
 laserRange: 9999
 laserScale: 7.5
 forceDark: true
+
+health: 999999999
+targetable: false
+underBullets: false
