@@ -34,6 +34,7 @@ require("ImageBlock");
 require("CircuitLogic");
 require("CombustionBarrel");
 require("GeothermalTurbine");
+require("PowerGrid");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
