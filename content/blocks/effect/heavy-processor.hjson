@@ -10,3 +10,4 @@ maxInstructionsPerTick: 80000
 range: 10000
 category: logic
 name: Heavy Proccessor
+targetable: false
