@@ -3,7 +3,8 @@ let group = null;
 
 Events.run(Trigger.update, () => {
 try {
-
+if (Vars.state.isPaused() || !Vars.state.isPlaying()) return;
+  
 time += Time.delta;
 if (time >= 60 || group == null) {
 time = 0;
