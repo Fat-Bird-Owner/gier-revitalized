@@ -10,7 +10,7 @@ other blocks beside itself.
 "
 
 attributes: {
-in
+netIn: 475
 }
 
 consumesPower: true
