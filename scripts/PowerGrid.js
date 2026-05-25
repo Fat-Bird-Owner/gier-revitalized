@@ -13,12 +13,14 @@ if (Vars.state.isPaused() || !Vars.state.isPlaying()) return;
 time += Time.delta;
 if (time >= 60 || group == null) {
 time = 0;
-group = Groups.build.copy().select(build => build.block == Vars.content.block("gr-power-grid"));
+group = Groups.build;
 }
 
 if (group == null) return;
 group.each(build => {
 try {
+if (build.block != Vars.content.block("gr-power-grid")) return;
+
 const netIn = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
 if (netIn >= build.block.attributes.get(Attribute.get("netIn"))) {
 time = 60;
