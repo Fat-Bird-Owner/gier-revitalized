@@ -2,6 +2,7 @@ const blocks = [
 "gr-power-grid"
 ];
 
+const stats = require("Stats");
 let time = 0;
 let group = null;
 
@@ -40,6 +41,8 @@ for (let i = 0; i < blocks.length; i++){
 const block = Vars.content.block(blocks[i]);
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
+
+block.stats.add(stats.netIn, block.attributes.get(Attribute.get("netIn")));
 }
   
 } catch(e){
