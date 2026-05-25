@@ -1,0 +1,14 @@
+type: PowerNode
+name: Power Grid
+customShadow: true
+
+laserRange: 8
+laserColor1: ffffff	
+laserColor2: 6f5f5f
+
+requirements: [silicon/10, surge-alloy/5]
+category: power
+envEnabled: -1
+
+shownPlanets: [kela, gier]
+databaseTag: "adv-surge-alloy"
