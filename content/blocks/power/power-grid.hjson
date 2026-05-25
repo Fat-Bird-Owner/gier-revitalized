@@ -12,3 +12,4 @@ envEnabled: -1
 
 shownPlanets: [kela, gier]
 databaseTag: "adv-surge-alloy"
+laserScale: 0.125
