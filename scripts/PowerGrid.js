@@ -1,7 +1,7 @@
 let time = 0;
 let group = null;
 
-events.run(Trigger.update, () => {
+Event.run(Trigger.update, () => {
 try {
 
 time += Time.delta;
