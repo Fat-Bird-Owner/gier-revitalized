@@ -11,12 +11,13 @@ other blocks beside itself.
 - Combust if grid outputs too much power
 "
 
+baseExplosiveness: 6.5
 attributes: {
 netIn: 475
 }
 
 consumesPower: true
-outputPower: true
+outputsPower: true
 consumes:{
 powerBuffered: 5
 }
