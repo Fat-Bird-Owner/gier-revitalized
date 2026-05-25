@@ -1,4 +1,6 @@
 type: PowerNode
+# PowerGrid
+
 name: Power Grid
 description: "
 A short-range outpost, Able to link to
@@ -20,6 +22,7 @@ powerBuffered: 5
 }
 
 customShadow: true
+update: true
 
 laserRange: 8
 laserColor1: ffffff	
