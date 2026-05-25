@@ -1,3 +1,7 @@
+const blocks = [
+"gr-power-grid"
+];
+
 let time = 0;
 let group = null;
 
@@ -15,7 +19,10 @@ if (group == null) return;
 group.each(build => {
 try {
 const netIn = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
-if (netIn >= build.block.attributes.get(Attribute.get("netIn"))) build.kill();
+if (netIn >= build.block.attributes.get(Attribute.get("netIn"))) {
+time = 60;
+build.kill();
+}
 
   
 } catch(e){
@@ -24,4 +31,17 @@ Vars.ui.showInfoToast(e,5);
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
+}});
+
+Events.on(ClientLoadEvent, () => {
+try {
+
+for (let i = 0; i < blocks.length; i++){
+const block = Vars.content.block(blocks[i]);
+Vars.ui.content.show(block);
+Vars.ui.content.hide();
+}
+  
+} catch(e){
+Vars.ui.showErrorMessage(e);
 }});
