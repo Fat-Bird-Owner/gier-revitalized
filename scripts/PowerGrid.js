@@ -18,8 +18,9 @@ const netIn = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut)
 if (netIn >= build.block.attributes.get(Attributes.get("netIn"))) build.kill();
 
   
-} catch(e){}
-});
+} catch(e){
+Vars.ui.showInfoToast(e,5);
+}});
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
