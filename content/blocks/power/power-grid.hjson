@@ -1,5 +1,24 @@
 type: PowerNode
 name: Power Grid
+description: "
+A short-range outpost, Able to link to
+other blocks beside itself.
+
+[green]- Stores abit of power
+[salmon]- Explosive
+- Combust if grid outputs too much power
+"
+
+attributes: {
+in
+}
+
+consumesPower: true
+outputPower: true
+consumes:{
+powerBuffered: 5
+}
+
 customShadow: true
 
 laserRange: 8
