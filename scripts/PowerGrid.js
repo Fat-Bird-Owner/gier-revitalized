@@ -7,7 +7,7 @@ try {
 time += Time.delta;
 if (time >= 60 || group == null) {
 time = 0;
-group = Groups.build.select(build => build.block == Vars.content.block("gr-power-grid"))
+group = Groups.build.copy().select(build => build.block == Vars.content.block("gr-power-grid"));
 }
 
 if (group == null) return;
