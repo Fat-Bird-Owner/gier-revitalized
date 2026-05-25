@@ -18,5 +18,6 @@ preset: fragmented-fix
 }]
 }
 shownPlanets:[gier]
+envEnabled: -1
 
 # the function in javascript
