@@ -15,7 +15,7 @@ if (group == null) return;
 group.each(build => {
 try {
 const netIn = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
-if (netIn >= build.block.attributes.get(Attributes.get("netIn"))) build.kill();
+if (netIn >= build.block.attributes.get(Attribute.get("netIn"))) build.kill();
 
   
 } catch(e){
