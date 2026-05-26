@@ -15,7 +15,9 @@ flying: true
 engineSize: 0
 trailScl: 1
 trailLength: 4.5
-aiController: HugAI
+
+circleTarget: true
+circleTargetRadius: 4
 
 drawCell: false
 weapons: [
