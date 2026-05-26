@@ -1,0 +1,53 @@
+type: mech
+name: "Made in serpulo"
+hidden: true
+
+health: 650
+armor: 45
+hitSize: 8
+stepSoundVolume: 0.4
+
+speed: 8.5
+accel: 0.85
+drag: 0.6
+flying: true
+
+engineSize: 0
+trailScl: 1
+trailLength: 4.5
+
+drawCell: false
+weapons: [
+{
+name: "large-weapon"
+x: 4
+y: 2
+top: false
+}
+]
+
+abilities: [
+{
+type: MoveLightningAbility
+chance: 0
+maxSpeed: 0
+minSpeed: 0
+heatRegion: "gr-made-in-serpulo"
+}
+{
+type: MoveLightningAbility
+chance: 1
+heatRegion: "gr-made-in-serpulo"
+shootEffect: none
+shootSound: none
+bullet:{
+type: EmptyBulletType
+despawnHit: true
+damage: 10000
+despawnEffect: none
+hitEffect: none
+shootEffect: none
+}
+
+}
+]
