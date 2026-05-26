@@ -111,6 +111,7 @@ t.checkPref("wreckEnabled", true, b => {});
 
 t.checkPref("unitWreckEnabled", false, b => {});
 
+t.row();
 t.button("techTreeReset", () => {
 try {
 
