@@ -131,7 +131,7 @@ Vars.universe.clearLoadoutInfo();
 });
   
 } catch(e){}
-});
+}).grow();
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
