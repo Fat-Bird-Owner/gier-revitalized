@@ -117,13 +117,13 @@ try {
 Vars.content.each(c => {
 try {
 if (c instanceof UnlockableContent){
-if (c.minfo != null && u.minfo.mod != null && "gr".equals(c.minfo.mod.name)){
+if (c.minfo != null && c.minfo.mod != null && "gr".equals(c.minfo.mod.name)){
 
 c.clearUnlock();
 c.techNode.reset();
 Vars.universe.clearLoadoutInfo();
 
-}}} catch(e){}
+}}} catch(e){Vars.ui.showInfoToast(e,5)}
 });
   
 } catch(e){
