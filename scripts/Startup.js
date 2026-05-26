@@ -112,10 +112,10 @@ t.checkPref("wreckEnabled", true, b => {});
 t.checkPref("unitWreckEnabled", false, b => {});
 
 t.row();
-t.button("techTreeReset", () => {
+t.button(Core.bundle.get("settings.researchReset"), () => {
 try {
 
-Vars.ui.showConfirm("Comfirm data wipe", () => {
+Vars.ui.showConfirm(Core.bundle.get("comfirm.researchReset") , () => {
 try {
 
 Vars.content.each(c => {
