@@ -5,10 +5,10 @@ hidden: true
 health: 650
 armor: 45
 hitSize: 8
-rotateSpeed: 7.5
+rotateSpeed: 9.5
 stepSoundVolume: 0.4
 
-speed: 8.5
+speed: 11.5
 accel: 0.085
 drag: 0.06
 flying: true
@@ -71,5 +71,9 @@ hitEffect: none
 shootEffect: none
 }
 
+}
+{
+type: RegenAbility
+percentAmount: 0.25
 }
 ]
