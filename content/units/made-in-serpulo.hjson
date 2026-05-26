@@ -64,7 +64,7 @@ bullet:{
 type: BasicBulletType
 instantDisappear: true
 despawnHit: true
-hitSize: 10
+hitSize: 12
 damage: 2200
 despawnEffect: none
 hitEffect: none
