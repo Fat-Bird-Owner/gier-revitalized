@@ -63,9 +63,13 @@ layer: 122
 shootSound: none
 bullet:{
 type: BasicBulletType
-instantDisappear: true
+speed: 0
+lifetime: 1
+keepVelocity: false
 despawnHit: true
-hitSize: 12
+width: 0
+height: 0
+hitSize: 14
 damage: 2200
 despawnEffect: none
 hitEffect: none
