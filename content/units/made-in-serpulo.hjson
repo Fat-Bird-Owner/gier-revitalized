@@ -19,7 +19,7 @@ trailScl: 1
 trailLength: 12.5
 
 circleTarget: true
-circleTargetRadius: 4
+circleTargetRadius: 1
 
 drawCell: false
 weapons: [
@@ -54,8 +54,8 @@ cone: 0
 region: "gr-made-in-serpulo"
 colorFrom: ffffffff
 colorTo: ffffff00
-sizeFrom: 7
-sizeTo: 7
+sizeFrom: 6
+sizeTo: 6
 offset: -90
 layer: 122
 }
