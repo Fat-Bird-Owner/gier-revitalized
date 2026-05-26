@@ -53,9 +53,10 @@ cone: 0
 region: "gr-made-in-serpulo"
 colorFrom: ffffffff
 colorTo: ffffff00
-sizeFrom: 8
-sizeTo: 8
+sizeFrom: 7
+sizeTo: 7
 offset: -90
+layer: 122
 }
 
 shootSound: none
