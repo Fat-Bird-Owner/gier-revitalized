@@ -8,13 +8,14 @@ hitSize: 8
 stepSoundVolume: 0.4
 
 speed: 8.5
-accel: 0.85
-drag: 0.6
+accel: 0.085
+drag: 0.06
 flying: true
 
 engineSize: 0
 trailScl: 1
 trailLength: 4.5
+aiController: HugAI
 
 drawCell: false
 weapons: [
@@ -22,6 +23,8 @@ weapons: [
 name: "large-weapon"
 x: 4
 y: 2
+controllable: false
+aiControllable: false
 top: false
 }
 ]
@@ -38,12 +41,14 @@ heatRegion: "gr-made-in-serpulo"
 type: MoveLightningAbility
 chance: 1
 heatRegion: "gr-made-in-serpulo"
+length: 0
 shootEffect: none
 shootSound: none
 bullet:{
 type: EmptyBulletType
 despawnHit: true
-damage: 10000
+hitSize: 10
+damage: 2200
 despawnEffect: none
 hitEffect: none
 shootEffect: none
