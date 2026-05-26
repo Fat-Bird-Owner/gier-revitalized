@@ -47,7 +47,8 @@ length: 0
 shootEffect: none
 shootSound: none
 bullet:{
-type: EmptyBulletType
+type: BasicBulletType
+instantDisappear: true
 despawnHit: true
 hitSize: 10
 damage: 2200
