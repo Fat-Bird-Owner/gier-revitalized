@@ -114,6 +114,9 @@ t.checkPref("unitWreckEnabled", false, b => {});
 t.button("techTreeReset", () => {
 try {
 
+Vars.ui.showConfirm("Comfirm data wipe", () => {
+try {
+
 Vars.content.each(c => {
 try {
 if (c instanceof UnlockableContent){
@@ -124,6 +127,9 @@ c.techNode.reset();
 Vars.universe.clearLoadoutInfo();
 
 }}} catch(e){Vars.ui.showInfoToast(e,5)}
+});
+  
+} catch(e){}
 });
   
 } catch(e){
