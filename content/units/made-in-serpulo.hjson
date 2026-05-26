@@ -5,7 +5,7 @@ hidden: true
 health: 650
 armor: 45
 hitSize: 8
-rotateSpeed: 9.5
+rotateSpeed: 13.5
 stepSoundVolume: 0.4
 
 speed: 11.5
