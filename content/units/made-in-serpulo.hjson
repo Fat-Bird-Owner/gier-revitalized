@@ -5,6 +5,7 @@ hidden: true
 health: 650
 armor: 45
 hitSize: 8
+rotateSpeed: 7.5
 stepSoundVolume: 0.4
 
 speed: 8.5
@@ -44,7 +45,16 @@ type: MoveLightningAbility
 chance: 1
 heatRegion: "gr-made-in-serpulo"
 length: 0
-shootEffect: none
+shootEffect: {
+type: ParticleEffect
+particles: 1
+length: 0
+cone: 0
+region: "gr-made-in-serpulo"
+colorFrom: ffffff66
+colorTo: ffffff00
+}
+
 shootSound: none
 bullet:{
 type: BasicBulletType
