@@ -131,11 +131,11 @@ Vars.universe.clearLoadoutInfo();
 });
   
 } catch(e){}
-}).margin(14).width(240).pad(6);
+})
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
-}});
+}}).margin(14).width(240).pad(6);
   
 });
 
