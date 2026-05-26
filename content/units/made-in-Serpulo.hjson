@@ -14,7 +14,7 @@ flying: true
 
 engineSize: 0
 trailScl: 1
-trailLength: 4.5
+trailLength: 12.5
 
 circleTarget: true
 circleTargetRadius: 4
