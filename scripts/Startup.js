@@ -110,10 +110,28 @@ t.checkPref("deranged", false, b => {});
 t.checkPref("wreckEnabled", true, b => {});
 
 t.checkPref("unitWreckEnabled", false, b => {});
+
+t.button("techTreeReset", () => {
+try {
+
+Vars.content.each(c => {
+try {
+if (c instanceof UnlockableContent){
+if (c.minfo != null && u.minfo.mod != null && "gr".equals(c.minfo.mod.name)){
+
+c.clearUnlock();
+c.techNode.reset();
+Vars.universe.clearLoadoutInfo();
+
+}}} catch(e){}
+});
+  
+} catch(e){
+Vars.ui.showInfoToast(e,5);
+}});
   
 });
 
-  
 const display = Core.bundle.get("mod.gr.display");
 const title = Core.bundle.get("mod.gr.mail");
 
