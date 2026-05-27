@@ -7,6 +7,7 @@ let time = 0;
 let group = null;
 let ls = 0;
 let block = null;
+let netIn = null;
 
 Events.run(Trigger.update, () => {
 try {
@@ -15,6 +16,11 @@ if (Vars.state.isPaused() || !Vars.state.isPlaying()) return;
 if (block == null){
 block = Vars.content.block("gr-power-grid");
 }
+
+if (netIn == null){
+netIn = Attribute.get("netIn");
+}
+
   
 time += Time.delta;
 if ((ls != Groups.build.size()) && (time >= 60 || group == null)) {
@@ -27,9 +33,9 @@ if (group == null) return;
 for(let i = 0; i < group.size; i++){ 
 
 const build = group.get(i);
-const netIn = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
+const netInAtt = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
   
-if (netIn >= build.block.attributes.get(Attribute.get("netIn"))) {
+if (netInAtt >= build.block.attributes.get(netIn)) {
 group.remove(i);
 build.kill();
 }
