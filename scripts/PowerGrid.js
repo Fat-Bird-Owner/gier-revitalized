@@ -34,9 +34,12 @@ if (group == null) group = new Seq();
 group.clear();
 
 Groups.build.each(b => {
+try {
 if(b.block == block){
 group.add(b);
 }
+
+} catch(e){}
 });
   
 ls = Groups.build.size();
