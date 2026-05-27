@@ -28,6 +28,7 @@ type: DrawRegion
 type: DrawGlowRegion
 suffix: "-glow"
 color: ff795e
+layer: 10
 }
 ]
 
