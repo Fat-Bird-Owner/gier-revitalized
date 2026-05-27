@@ -20,6 +20,7 @@ drawer: [
 type: DrawRegion
 name: "gr-rail-shadow"
 drawPlan: false
+layer: 10
 }
 {
 type: DrawRegion
@@ -28,7 +29,6 @@ type: DrawRegion
 type: DrawGlowRegion
 suffix: "-glow"
 color: ff795e
-layer: 10
 }
 ]
 
