@@ -6,15 +6,20 @@ const stats = require("Stats");
 let time = 0;
 let group = null;
 let ls = 0;
+let block = null;
 
 Events.run(Trigger.update, () => {
 try {
 if (Vars.state.isPaused() || !Vars.state.isPlaying()) return;
+
+if (block == null){
+block = Vars.content.block("gr-power-grid");
+}
   
 time += Time.delta;
 if ((ls != Groups.build.size()) && (time >= 60 || group == null)) {
 time = 0;
-group = Groups.build.copy().select(build => build.block == Vars.content.block("gr-power-grid"));
+group = Groups.build.copy().select(build => build.block == block);
 ls = Groups.build.size();
 }
 
