@@ -74,6 +74,7 @@ damage: 2200
 despawnEffect: none
 hitEffect: none
 shootEffect: none
+recoil: -0.5
 }
 
 }
