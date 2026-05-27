@@ -12,6 +12,7 @@ Stores large amounts of power.
 - Explodes into damaging lightning arcs
 "
 
+hasShadow: false
 configureSound: shootArc
 drawer: [
 {
@@ -21,6 +22,11 @@ type: DrawRegion
 type: DrawGlowRegion
 suffix: "-glow"
 color: ff795e
+}
+{
+iconOverride: ["gr-rail-shadow"]
+name: "gr-rail-shadow"
+drawPlan: false
 }
 ]
 
