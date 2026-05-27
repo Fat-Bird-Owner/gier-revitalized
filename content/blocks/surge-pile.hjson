@@ -25,6 +25,7 @@ suffix: "-glow"
 color: ff795e
 }
 {
+type: DrawRegion
 name: "gr-rail-shadow"
 drawPlan: false
 }
