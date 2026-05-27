@@ -30,6 +30,7 @@ time = 0;
 group = Groups.build.copy().select(build => build.block == block);
 */
 
+if (group == null) group == new Seq();  
 group.clear();
 
 Groups.build.each(b => {
