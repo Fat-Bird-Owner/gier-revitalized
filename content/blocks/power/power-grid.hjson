@@ -13,7 +13,7 @@ other blocks beside itself.
 
 baseExplosiveness: 6.5
 attributes: {
-netIn: 475
+netIn: 500
 }
 
 consumesPower: true
