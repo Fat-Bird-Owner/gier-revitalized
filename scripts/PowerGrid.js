@@ -5,13 +5,14 @@ const blocks = [
 const stats = require("Stats");
 let time = 0;
 let group = null;
+let ls = 0;
 
 Events.run(Trigger.update, () => {
 try {
 if (Vars.state.isPaused() || !Vars.state.isPlaying()) return;
   
 time += Time.delta;
-if (time >= 60 || group == null) {
+if ((ls != Groups.build.size()) && (time >= 60 || group == null)) {
 time = 0;
 group = Groups.build.copy().select(build => build.block == Vars.content.block("gr-power-grid"));
 }
