@@ -11,7 +11,7 @@ if (!build || !build.block) return;
 
 let found = false;
 for (let i = 0; i < blocks.length; i++){
-if (build.block == Vars.content.block(blocks(i]) {
+if (build.block == Vars.content.block(blocks[i])) {
 found = true;
 break;
 }}
