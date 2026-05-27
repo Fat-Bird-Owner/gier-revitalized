@@ -17,18 +17,20 @@ group = Groups.build.copy().select(build => build.block == Vars.content.block("g
 }
 
 if (group == null) return;
-group.each(build => {
+for(let i = 0; i < group.size; i++){ 
 try {
+const build = group.get(i);
 const netIn = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
+  
 if (netIn >= build.block.attributes.get(Attribute.get("netIn"))) {
-time = 60;
+group.remove(i);
 build.kill();
 }
 
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
-}});
+}}
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
