@@ -31,7 +31,7 @@ research: power-cell
 researchCostMultiplier: 0.25
 
 consumes: {
-powerBuffered: 1750
+powerBuffered: 1000
 }
   
 destroyBullet: {
