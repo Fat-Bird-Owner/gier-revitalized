@@ -1,5 +1,6 @@
 type: Battery
 health: 450
+name: Surge Pile
 description: "
 Extremely destructive pile of surge alloy.
 Stores large amounts of power.
