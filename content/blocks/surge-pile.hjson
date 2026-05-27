@@ -18,16 +18,16 @@ configureSound: shootArc
 drawer: [
 {
 type: DrawRegion
+name: "gr-rail-shadow"
+drawPlan: false
+}
+{
+type: DrawRegion
 }
 {
 type: DrawGlowRegion
 suffix: "-glow"
 color: ff795e
-}
-{
-type: DrawRegion
-name: "gr-rail-shadow"
-drawPlan: false
 }
 ]
 
