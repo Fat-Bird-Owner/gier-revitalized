@@ -12,6 +12,7 @@ Stores large amounts of power.
 - Explodes into damaging lightning arcs
 "
 
+configureSound: shootArc
 drawer: [
 {
 type: DrawRegion
