@@ -16,6 +16,7 @@ found = true;
 break;
 }}
 
+if (!found) return;
 const netInAtt = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
 
 if (netInAtt >= build.block.attributes.get(Attribute.get("netIn"))){
