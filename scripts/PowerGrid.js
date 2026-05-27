@@ -8,8 +8,6 @@ let group = null;
 let ls = 0;
 let block = null;
 let netIn = null;
-const max = 30;
-let current = 0;
 
 Events.run(Trigger.update, () => {
 try {
@@ -48,22 +46,9 @@ ls = Groups.build.size();
 }
 
 if (group == null) return;
-
-let loop = 0;
-for(let i = current; i < group.size; i++){ 
+for(let i = 0; i < group.size; i++){ 
 
 const build = group.get(i);
-if (i >= group.size) {
-i = 0;
-current = 0;
-}
-
-loop++;
-if (loop >= max){
-current = i;
-break;
-}
-
 const netInAtt = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
   
 if (netInAtt >= build.block.attributes.get(netIn)) {
