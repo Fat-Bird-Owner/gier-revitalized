@@ -33,12 +33,16 @@ group = Groups.build.copy().select(build => build.block == block);
 if (group == null) group = new Seq();  
 group.clear();
 
+let loop = 0;
 Groups.build.each(b => {
 try {
+
 if(b.block == block){
 group.add(b);
 }
 
+
+  
 } catch(e){}
 });
   
