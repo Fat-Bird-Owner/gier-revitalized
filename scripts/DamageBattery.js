@@ -10,8 +10,9 @@ if (!build || !source) return;
     
 const block = event.build.block;
 const targetType = Vars.content.getByName(ContentType.block, "gr-power-cell");
-
-if (block == targetType){
+const targetType2 = Vars.content.block("gr-surge-pile");
+    
+if (block == targetType || block == targetType2){
 if (!build.power || !build.power.graph) return;
 if (build.power.graph.getBatteryStored() <= 0) return;
     
