@@ -12,6 +12,7 @@ Stores large amounts of power.
 - Explodes into damaging lightning arcs
 "
 
+fullOverride: "gr-surge-pile"
 hasShadow: false
 configureSound: shootArc
 drawer: [
@@ -24,7 +25,6 @@ suffix: "-glow"
 color: ff795e
 }
 {
-iconOverride: ["gr-rail-shadow"]
 name: "gr-rail-shadow"
 drawPlan: false
 }
