@@ -8,7 +8,7 @@ other blocks beside itself.
 
 [green]- Stores abit of power
 [salmon]- Explosive
-- Combust if grid outputs too much power
+- Explodes if damaged while over netIn
 "
 
 baseExplosiveness: 6.5
