@@ -15,6 +15,7 @@ time += Time.delta;
 if ((ls != Groups.build.size()) && (time >= 60 || group == null)) {
 time = 0;
 group = Groups.build.copy().select(build => build.block == Vars.content.block("gr-power-grid"));
+ls = Groups.build.size();
 }
 
 if (group == null) return;
