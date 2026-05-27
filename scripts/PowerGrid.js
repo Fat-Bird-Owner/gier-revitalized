@@ -3,60 +3,23 @@ const blocks = [
 ];
 
 const stats = require("Stats");
-let time = 0;
-let group = null;
-let ls = 0;
-let block = null;
-let netIn = null;
 
-Events.run(Trigger.update, () => {
+Events.on(BuildDamageEvent, event => {
 try {
-if (Vars.state.isPaused() || !Vars.state.isPlaying()) return;
+const {build} = event;
+if (!build || !build.block) return;
 
-if (block == null){
-block = Vars.content.block("gr-power-grid");
-}
+let found = false;
+for (let i = 0; i < blocks.length; i++){
+if (build.block == Vars.content.block(blocks(i]) {
+found = true;
+break;
+}}
 
-if (netIn == null){
-netIn = Attribute.get("netIn");
-}
-
-  
-time += Time.delta;
-if ((ls != Groups.build.size()) && (time >= 60 || group == null)) {
-time = 0;
-
-/*
-group = Groups.build.copy().select(build => build.block == block);
-*/
-
-if (group == null) group = new Seq();  
-group.clear();
-
-Groups.build.each(b => {
-try {
-
-if(b.block == block){
-group.add(b);
-}
-  
-} catch(e){}
-});
-  
-ls = Groups.build.size();
-}
-
-if (group == null) return;
-for(let i = 0; i < group.size; i++){ 
-
-const build = group.get(i);
 const netInAtt = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
-  
-if (netInAtt >= build.block.attributes.get(netIn)) {
-group.remove(i);
-build.kill();
-}
 
+if (netInAtt >= build.block.attributes.get(Attribute.get("netIn"))){
+build.kill();
 }
   
 } catch(e){
