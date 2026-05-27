@@ -6,7 +6,7 @@ range: 5
 health: 650
 armor: 45
 hitSize: 8
-rotateSpeed: 13.5
+rotateSpeed: 17.5
 stepSoundVolume: 0.4
 
 speed: 11.5
@@ -18,7 +18,7 @@ engineSize: 0
 trailScl: 1
 trailLength: 12.5
 
-circleTarget: false
+circleTarget: true
 circleTargetRadius: 1
 
 drawCell: false
