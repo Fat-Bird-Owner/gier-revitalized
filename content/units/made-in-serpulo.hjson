@@ -18,7 +18,7 @@ engineSize: 0
 trailScl: 1
 trailLength: 12.5
 
-circleTarget: true
+circleTarget: false
 circleTargetRadius: 1
 
 drawCell: false
