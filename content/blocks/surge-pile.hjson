@@ -11,6 +11,17 @@ Stores large amounts of power.
 - Explodes into damaging lightning arcs
 "
 
+drawer: [
+{
+type: DrawRegion
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: ff795e
+}
+]
+
 requirements: [surge-alloy/18]
 category: power
 databaseTag: "adv-surge-alloy"
