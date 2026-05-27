@@ -20,7 +20,7 @@ ls = Groups.build.size();
 
 if (group == null) return;
 for(let i = 0; i < group.size; i++){ 
-try {
+
 const build = group.get(i);
 const netIn = build.sense(LAccess.powerNetIn) - build.sense(LAccess.powerNetOut);
   
@@ -29,10 +29,7 @@ group.remove(i);
 build.kill();
 }
 
-  
-} catch(e){
-Vars.ui.showInfoToast(e,5);
-}}
+}
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);
