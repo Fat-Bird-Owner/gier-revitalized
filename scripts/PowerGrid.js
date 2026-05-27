@@ -25,7 +25,19 @@ netIn = Attribute.get("netIn");
 time += Time.delta;
 if ((ls != Groups.build.size()) && (time >= 60 || group == null)) {
 time = 0;
+
+/*
 group = Groups.build.copy().select(build => build.block == block);
+*/
+
+group.clear();
+
+Groups.build.each(b => {
+if(b.block == block){
+group.add(b);
+}
+});
+  
 ls = Groups.build.size();
 }
 
