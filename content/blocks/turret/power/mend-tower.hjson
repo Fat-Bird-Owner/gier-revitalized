@@ -1,0 +1,56 @@
+type: PowerTurret
+name: Mend Tower
+
+databaseCategory: "adv-plastanium"
+envEnabled: -1
+category: turret
+
+outlineColor: 2f2f3f
+research: mend-pylon
+researchCostMultiplier: 0.15
+
+requirements: [lead/50, copper/40, silicon/35, plastanium/25, oxide/15]
+heatRequirement: 8
+maxHeatEfficiency: 1.5
+
+range: 195
+reload: 60
+targetHealing: true
+
+consumes:{
+power: 0.5
+liquids: {
+liquid: water
+amount: 0.016667
+coolant: true
+optional: true
+}
+}
+
+shootType: {
+type: ArtilleryBulletType
+speed: 4.5
+lifetime: 45
+healAmount: 45
+splashDamageRadius: 22
+status: eletrified
+splashDamage: 15
+
+collides: true
+collidesAir: true
+collidesTeam: true
+healColor: FEB380FF
+
+trailEffect: missileTrail
+trailChance: 0.25
+
+despawnHit: true
+hitEffect: explosionNavanax
+
+width: 7.5
+height: 14
+
+frontColor: FEB380FF
+backColor: BC5452FF
+trailColor: BC5452FF
+}
