@@ -7,7 +7,7 @@ description: "
 Able to shoot at damaged buildings.
 [green]
 - Bullet heals damaged buildings[salmon]
-- Units are higher priority then buildings
+- Units are higher priority than buildings
 "
 
 databaseCategory: "adv-plastanium"
