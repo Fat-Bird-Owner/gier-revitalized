@@ -20,7 +20,7 @@ targetHealing: true
 
 consumes:{
 power: 0.5
-liquids: {
+liquid: {
 liquid: water
 amount: 0.016667
 coolant: true
