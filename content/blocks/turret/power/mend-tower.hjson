@@ -23,7 +23,7 @@ power: 0.5
 liquid: {
 liquid: water
 amount: 0.016667
-coolant: true
+booster: true
 optional: true
 }
 }
@@ -41,7 +41,7 @@ collides: true
 collidesAir: true
 collidesTeam: true
 healColor: FEB380FF
-despawnEffect: none
+despawnEffect: hitMeltdown
 
 hitEffect: [
 {
@@ -52,6 +52,7 @@ strokeFrom: 3
 strokeTo: 0
 sizeFrom: 22
 sizeTo: 22
+lifetime: 65
 }
 {
 type: WaveEffect
