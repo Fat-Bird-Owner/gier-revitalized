@@ -2,6 +2,14 @@ type: PowerTurret
 name: Mend Tower
 size: 2
 
+description: "
+[red]Very angry repair point beware[]
+Able to shoot at damaged buildings.
+[green]
+- Bullet heals damaged buildings[salmon]
+- Units are higher priority then buildings
+"
+
 databaseCategory: "adv-plastanium"
 envEnabled: -1
 category: turret
