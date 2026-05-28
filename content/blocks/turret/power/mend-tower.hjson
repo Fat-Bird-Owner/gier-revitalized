@@ -1,5 +1,6 @@
 type: PowerTurret
 name: Mend Tower
+size: 2
 
 databaseCategory: "adv-plastanium"
 envEnabled: -1
@@ -40,6 +41,28 @@ collides: true
 collidesAir: true
 collidesTeam: true
 healColor: FEB380FF
+despawnEffect: none
+
+hitEffect: [
+{
+type: WaveEffect
+colorFrom: BC5452FF
+colorTo: BC5452FF
+strokeFrom: 3
+strokeTo: 0
+sizeFrom: 22
+sizeTo: 22
+}
+{
+type: WaveEffect
+colorFrom: BC5452FF
+colorTo: BC5452FF
+strokeFrom: 3
+strokeTo: 0
+sizeFrom: 0
+sizeTo: 22
+}
+]
 
 trailEffect: missileTrail
 trailChance: 0.25
