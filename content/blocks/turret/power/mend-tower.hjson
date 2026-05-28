@@ -45,7 +45,7 @@ trailEffect: missileTrail
 trailChance: 0.25
 
 despawnHit: true
-hitEffect: explosionNavanax
+hitSound: explosionNavanax
 
 width: 7.5
 height: 14
