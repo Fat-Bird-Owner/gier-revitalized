@@ -33,7 +33,7 @@ speed: 4.5
 lifetime: 45
 healAmount: 45
 splashDamageRadius: 22
-status: eletrified
+status: electrified
 splashDamage: 15
 
 collides: true
