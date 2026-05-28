@@ -78,3 +78,8 @@ frontColor: FEB380FF
 backColor: BC5452FF
 trailColor: BC5452FF
 }
+
+drawer: {
+type: DrawTurret
+basePrefix: "reinforced-"
+}
