@@ -50,8 +50,9 @@ colorFrom: BC5452FF
 colorTo: BC5452FF
 strokeFrom: 3
 strokeTo: 0
-sizeFrom: 22
+sizeFrom: 18
 sizeTo: 22
+sizeInterp: sineOut
 lifetime: 65
 }
 {
