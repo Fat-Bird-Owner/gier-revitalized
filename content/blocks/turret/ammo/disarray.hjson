@@ -3,10 +3,14 @@ size: 4
 name: Disarray
 range: 240
 
+research: trident
+researchCostMultiplier: 0.75
+
 envEnabled: -1
 category: turret
 shownPlanets:[kela, gier]
 
+databaseTag: "adv-plastanium"
 requirements: [lead/475, copper/350, silicon/175, oxide/65]
 outlineColor: 2f1f1f
 
