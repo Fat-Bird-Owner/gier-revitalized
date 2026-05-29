@@ -4,7 +4,7 @@ size: 3
 
 researchCostMultiplier: 0.45
 #research: rail
-databaseTag: "gier"
+databaseTag: "adv-plastanium"
 shownPlanets: [gier]
 envEnabled: -1
 solid: true
