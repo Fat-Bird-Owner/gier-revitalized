@@ -93,7 +93,7 @@ heating.push(frontBuild);
 
 if(distance > range) return;
 
-Fx.absorb.at(frontBuild.x, frontBuild.y);
+circuitEffect.at(frontBuild.x, frontBuild.y, frontBuild.rotation * 90);
 circuitActivations++;
 
 if(found){
