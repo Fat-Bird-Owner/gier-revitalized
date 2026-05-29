@@ -268,7 +268,7 @@ if (pistonPushLength) block.stats.add(stat.PistonPushLength, pistonPushLength, S
 
 block.replaceable = false;
 if (blocks[i] != "gr-signal"){
-let node = new TechTree.TechNode(Vars.content.block("gr-signal") , block, block.requirements)
+let node = new TechTree.TechNode(Vars.content.block("gr-signal").techNode , block, block.requirements);
 }
   
 }
