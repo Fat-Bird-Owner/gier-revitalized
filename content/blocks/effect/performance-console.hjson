@@ -20,5 +20,6 @@ preset: fragmented-fix
 
 envEnabled: -1
 shownPlanets: [gier]
+hideDatabase: true
 
 # the function in javascript
