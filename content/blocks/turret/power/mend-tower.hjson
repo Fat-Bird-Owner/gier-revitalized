@@ -10,6 +10,11 @@ Able to shoot at damaged buildings.
 - Units are higher priority than buildings
 "
 
+hideDetails: "
+The titanium of this wall is largely impure
+mostly comprised of graphite
+"
+
 databaseTag: "adv-plastanium"
 envEnabled: -1
 category: turret
