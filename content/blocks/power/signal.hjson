@@ -8,9 +8,22 @@ armor: -2
 baswExplosiveness: 12
 
 category: logic
-databaseTag: "gier"
 envEnabled: -1
 shownPlanets: [kela, gier]
+
+research: {
+parent: gr-gier
+objectives: [
+{
+type: Produce
+content: plastanium
+}
+{
+type: OnPlanet
+planet: gier
+}
+]
+}
 
 requirements:[lead/20, copper/20, silicon/15, titanium/10]
 
