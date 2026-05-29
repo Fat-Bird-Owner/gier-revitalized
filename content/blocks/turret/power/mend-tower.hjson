@@ -10,7 +10,7 @@ Able to shoot at damaged buildings.
 - Units are higher priority than buildings
 "
 
-databaseCategory: "adv-plastanium"
+databaseTag: "adv-plastanium"
 envEnabled: -1
 category: turret
 
