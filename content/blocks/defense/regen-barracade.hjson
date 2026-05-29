@@ -12,6 +12,8 @@ eletric arcs.
 - Could be nullified
 "
 
+databaseTag: "adv-plastanium"
+
 absorbLasers: true
 priority: 0
 size: 2
