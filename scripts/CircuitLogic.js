@@ -34,7 +34,18 @@ const wireBlock = Vars.content.block("gr-circuit-wire");
 
 let heating = [];
 let distance = 0;
-
+let circuitEffect = new ParticleEffect();
+Object.assign(circuitEffect, {
+particles: 1,
+length: 0,
+cone: 0,
+sizeFrom: 6,
+sizeTo: 6,
+colorFrom: Color.valueOf("ffd37fff"),
+colorTo: Color.valueOf("ffd37f00"),
+region: Core.atlas.find("gr-triangle")
+});
+  
 const range = startTile.block().attributes.get(Attribute.get("circuitRange"));
   
 function nearby(build){
@@ -93,7 +104,7 @@ if(!frontBuild.power || !frontBuild.power.graph || frontBuild.power.graph.getBat
 frontBuild.power.graph.transferPower(-45);
 
 frontBuild.block.configureSound.at(frontBuild.x, frontBuild.y);
-Fx.generate.at(frontBuild.x, frontBuild.y);
+circuitEffect.at(frontBuild.x, frontBuild.y, frontBuild.rotation * 90);
   
 Sounds.shootPulsar.at(frontBuild.x, frontBuild.y);
 
