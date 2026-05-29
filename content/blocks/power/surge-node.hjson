@@ -6,6 +6,7 @@ maxNodes: 5
 
 customShadow: true
 requirements:[silicon/10, surge-alloy/3]
+hideDatabase: true
 
 databaseTag: "adv-surge-alloy"
 category: power
