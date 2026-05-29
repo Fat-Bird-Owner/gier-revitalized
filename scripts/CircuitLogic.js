@@ -37,14 +37,15 @@ let distance = 0;
 let circuitEffect = new ParticleEffect();
 Object.assign(circuitEffect, {
 particles: 1,
-length: 0,
+length: 2,
 cone: 0,
 sizeFrom: 2,
 sizeTo: 2,
 colorFrom: Color.valueOf("ffd37fff"),
 colorTo: Color.valueOf("ffd37f00"),
 region: Core.atlas.find("gr-triangle"),
-offset: 90
+offset: -90,
+randLength: false
 });
   
 const range = startTile.block().attributes.get(Attribute.get("circuitRange"));
