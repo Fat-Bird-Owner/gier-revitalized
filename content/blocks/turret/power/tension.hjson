@@ -30,7 +30,6 @@ recoil: 0
 outlineRadius: 0
 
 researchCostMultiplier: 0.05
-shootSound: shootScathe
 
 shootY: 0
 hasShadow: false
