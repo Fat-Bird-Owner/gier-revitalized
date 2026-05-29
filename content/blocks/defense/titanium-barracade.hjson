@@ -3,9 +3,9 @@ size: 2
 name: Titanium Barracade
 description: "
 Basic barracade isnt insulative nor does
-it block lasers.
+it block lasers
 
-Serves as a cheap replacement for [accent]insulated walls[].
+Serves as a cheap replacement for [accent]insulated walls[]
 "
 
 category: defense
