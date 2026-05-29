@@ -1,0 +1,18 @@
+type: Wall
+size: 2
+name: Titanium Barracade
+description: "
+Basic barracade isnt insulative nor does
+it block lasers.
+
+Serves as a cheap replacement for [accent]insulated walls[].
+"
+
+category: defense
+requirements: [titanium/20, lead/15]
+envEnabled: -1
+
+research: insulated-wall
+researchCostMultiplier: 1.15
+health: 3050
+
