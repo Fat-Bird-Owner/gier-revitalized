@@ -8,7 +8,7 @@ shownPlanets: [gier]
 envEnabled: -1
 
 description: "Fires multiple homing missiles the the target."
-shootSound: tension-sfx
+shootSound: explosionCrawler
 
 coolant:{
 type: ConsumeCoolant
