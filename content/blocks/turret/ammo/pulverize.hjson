@@ -8,7 +8,7 @@ shownPlanets: [gier, kela]
 shake: 2.5
 shootSound: payloadDrop1
 
-databaseTag: "gier"
+databaseTag: "adv-plastanium"
 requirements: [lead/375, graphite/105, silicon/75, titanium/115, beryllium/115]
 research: {
 parent: trident
