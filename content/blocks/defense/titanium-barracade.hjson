@@ -16,3 +16,4 @@ research: insulated-wall
 researchCostMultiplier: 1.15
 health: 3050
 
+databaseTag: "gier"
