@@ -7,7 +7,9 @@ parent: trident
 objectives:[deviate]
 }
 
+databaseTag: "adv-surge-alloy"
 shootY: 0
+envEnabled: -1
 description: "Shoots focused beams of power.
 
 [green]- Anti-IFrame
@@ -17,7 +19,7 @@ description: "Shoots focused beams of power.
 "
 
 
-requirements:[lead/450,copper/275,silicon/250,surge-alloy/125,oxide/50]
+requirements:[lead/450,copper/275,silicon/250,surge-alloy/75,plastanium/25]
 
 consumes:{
 power: 1.5
