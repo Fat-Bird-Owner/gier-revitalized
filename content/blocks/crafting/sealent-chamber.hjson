@@ -8,7 +8,7 @@ baseExplosiveness: 50
 research: sealent-chamber
 researchCostMultiplier: 0.25
 
-databaseTag: "gier"
+databaseTag: "adv-plastanium"
 category: crafting
 requirements:[
 lead/375
