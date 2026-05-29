@@ -42,6 +42,9 @@ Core.bundle.properties.put("database-tag.adv-plastanium", Items.plastanium.emoji
 const oxide = Core.bundle.get("database-tag.adv-oxide");
 Core.bundle.properties.put("database-tag.adv-oxide", Items.oxide.emoji() + " " + oxide);
 
+const surge = Core.bundle.get("database-tag.adv-surge-alloy");
+Core.bundle.properties.put("database-tag.adv-surge-alloy", Items.surgeAlloy.emoji() + " " + surge);
+  
 const crystal = Core.bundle.get("database-tag.crystal-bug");
 Core.bundle.properties.put("database-tag.crystal-bug", Blocks.crystalCluster.emoji() + " " + crystal);
 
