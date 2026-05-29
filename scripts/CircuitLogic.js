@@ -267,7 +267,7 @@ if(circuitRange) block.stats.add(stat.CircuitRange, circuitRange, statUnit.circu
 if (pistonPushLength) block.stats.add(stat.PistonPushLength, pistonPushLength, StatUnit.blocks);
 
 block.replaceable = false;
-if (blocks[i] != "gr-signal"){
+if (blocks[i] != "gr-signal" && blocks[i] != "gr-damage-signal"){
 let node = new TechTree.TechNode(Vars.content.block("gr-signal").techNode , block, block.requirements);
 }
   
