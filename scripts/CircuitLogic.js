@@ -248,7 +248,7 @@ Events.on(ClientLoadEvent, () => {
 try{
 for(let i = 0; i < blocks.length; i++){
 const block = Vars.content.block(blocks[i]);
-
+  
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
 
@@ -266,7 +266,10 @@ if(heatDamage) block.stats.add(stat.CircuitHeatDamage, heatDamage);
 if(circuitRange) block.stats.add(stat.CircuitRange, circuitRange, statUnit.circuitRange);
 if (pistonPushLength) block.stats.add(stat.PistonPushLength, pistonPushLength, StatUnit.blocks);
 
-block.replaceable = false
+block.replaceable = false;
+if (blocks[i] != "gr-signal"){
+let node = new TechTree.TechNode(Vars.content.block("gr-signal") , block, block.requirements)
+}
   
 }
 }catch(e){
