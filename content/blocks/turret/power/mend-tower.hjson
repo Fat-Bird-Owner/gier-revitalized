@@ -10,7 +10,8 @@ Able to shoot at damaged buildings.
 - Units are higher priority than buildings
 "
 
-hideDetails: "
+hideDetails: false
+details: "
 The titanium of this wall is largely impure
 mostly comprised of graphite
 "
