@@ -106,7 +106,7 @@ if(!frontBuild.power || !frontBuild.power.graph || frontBuild.power.graph.getBat
 frontBuild.power.graph.transferPower(-45);
 
 frontBuild.block.configureSound.at(frontBuild.x, frontBuild.y);
-circuitEffect.at(frontBuild.x, frontBuild.y, frontBuild.rotation * 90);
+Fx.turbinegenerate.at(frontBuild.x, frontBuild.y);
   
 Sounds.shootPulsar.at(frontBuild.x, frontBuild.y);
 
