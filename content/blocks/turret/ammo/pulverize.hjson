@@ -7,6 +7,7 @@ outlineColor: 2f2f3f
 shownPlanets: [gier, kela]
 shake: 2.5
 shootSound: payloadDrop1
+envEnabled: -1
 
 databaseTag: "adv-plastanium"
 requirements: [lead/375, graphite/105, silicon/75, titanium/115, beryllium/115]
