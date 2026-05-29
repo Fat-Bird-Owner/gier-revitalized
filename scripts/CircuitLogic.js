@@ -39,11 +39,12 @@ Object.assign(circuitEffect, {
 particles: 1,
 length: 0,
 cone: 0,
-sizeFrom: 6,
-sizeTo: 6,
+sizeFrom: 2,
+sizeTo: 2,
 colorFrom: Color.valueOf("ffd37fff"),
 colorTo: Color.valueOf("ffd37f00"),
-region: Core.atlas.find("gr-triangle")
+region: Core.atlas.find("gr-triangle"),
+offset: 90
 });
   
 const range = startTile.block().attributes.get(Attribute.get("circuitRange"));
