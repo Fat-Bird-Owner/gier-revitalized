@@ -1,8 +1,8 @@
 type: Wall
 name: Performance Console
+health: 25
 
 category: effect
-buildVisibility: sandboxOnly
 customShadow: true
 
 buildtime: 300
@@ -17,7 +17,8 @@ type: SectorComplete
 preset: fragmented-fix
 }]
 }
-shownPlanets:[gier]
+
 envEnabled: -1
+shownPlanets: [gier]
 
 # the function in javascript
