@@ -1,0 +1,6 @@
+type: TiledFloor
+maxSize: 2
+variants: 1
+
+drawEdgeIn: false
+drawEdgeOut: false
