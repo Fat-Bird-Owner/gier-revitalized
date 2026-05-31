@@ -1,5 +1,5 @@
-type: TiledFloor
-variants: 1
+type: Floor
+variants: 0
 
 drawEdgeIn: false
 drawEdgeOut: false
