@@ -260,6 +260,8 @@ Vars.ui.showInfoToast(String(e) + "[red] - runCircuit", 5);
 Events.on(ClientLoadEvent, () => {
 try{
 for(let i = 0; i < blocks.length; i++){
+
+if (blocks[i] instanceof Battery) continue;
 const block = Vars.content.block(blocks[i]);
   
 Vars.ui.content.show(block);
