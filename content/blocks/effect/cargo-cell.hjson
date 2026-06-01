@@ -3,7 +3,7 @@ name: Cargo Cell
 size: 3
 
 researchCostMultiplier: 0.45
-#research: rail
+research: crate
 databaseTag: "adv-plastanium"
 shownPlanets: [gier]
 envEnabled: -1
