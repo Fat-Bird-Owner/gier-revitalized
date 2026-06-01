@@ -1,5 +1,10 @@
 type: MessageBlock
 name: Circuit Timer
+description: "
+Waits for a set time[grey](In sec)[]
+
+But can't be under circuit rate
+"
 
 databaseTag: "gier"
 envEnabled: -1
