@@ -2,7 +2,7 @@ type: Battery
 name: Observer
 description: "
 Sends out a [accent]circuit pulse[] when a building
-is built or destroyed
+is built or destroyed behind it
 "
 
 hasPower: false
