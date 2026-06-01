@@ -2,7 +2,7 @@ type: GenericCrafter
 size: 1
 name: Signal
 description: "
-When pressed a circuit signal is sent out
+When pressed a [accent]circuit pulse[] is sent out
 
 The circuit will fade after travelling too 
 far
