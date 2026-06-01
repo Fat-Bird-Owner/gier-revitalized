@@ -13,7 +13,6 @@ databaseTag: "adv-plastanium"
 requirements: [lead/375, graphite/105, silicon/75, titanium/115, beryllium/115]
 research: {
 parent: trident
-objectives: [pulverize]
 }
 
 category: turret
