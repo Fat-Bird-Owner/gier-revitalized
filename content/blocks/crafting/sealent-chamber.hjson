@@ -30,9 +30,6 @@ could then be transported and released.
 envEnabled: -1
 research: {
 parent: sealent-capsule
-objectives: [
-sealent-chamber
-]
 }
 
 shownPlanets:[gier, kela]
