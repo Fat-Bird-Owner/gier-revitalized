@@ -5,6 +5,15 @@ rotateSpeed: 0
 rotate: false
 shootCone: 180
 
+reloadWhileCharging: false
+reload: 60
+shootY: 0
+shoot: {
+firstShotDelay: 90
+}
+
+shootSound: explosionQuad
+chargeSound: chargeVela
 outlineRadius: 0
 consumes: {
 power: 3
@@ -39,6 +48,18 @@ alpha: 0.6
 }
 ]
 
+chargeEffect: {
+type: WaveEffect
+sizeFrom: 160
+sizeTo: 0
+strokeFrom: 4
+strokeTo: 
+interp: sineOut
+color: ffaa5f
+colorTo: ffaa5f
+lifetime: 80
+}
+
 shootEffect: [
 {
 type: WaveEffect
@@ -48,7 +69,6 @@ strokeFrom: 4
 strokeTo: 0
 interp: sineOut
 colorFrom: ffaa5f
-colorFo: ffaa5f
 lifetime: 40
 }
 {
@@ -59,7 +79,6 @@ strokeFrom: 4
 strokeTo: 0
 interp: sineOut
 colorFrom: ffaa5f
-colorFo: ffaa5f
 lifetime: 55
 }
 ]
