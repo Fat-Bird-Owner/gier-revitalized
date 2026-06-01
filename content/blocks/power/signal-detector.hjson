@@ -1,5 +1,8 @@
 type: MessageBlock
 name: Signal Detector
+description: "
+Outputs the spread distance of a [accent]Circuit pulse[]
+"
 
 databaseTag: "gier"
 envEnabled: -1
