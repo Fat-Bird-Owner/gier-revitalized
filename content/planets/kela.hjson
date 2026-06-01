@@ -47,7 +47,7 @@ cloudMesh: [
    planet: kela
    speed: 1.01
    radius: 0.17
-   divisions: 4
+   divisions: 5
    color: a7a9c4
    octaves: 2
    persistence: 0.6
