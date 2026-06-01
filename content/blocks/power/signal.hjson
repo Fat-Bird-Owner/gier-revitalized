@@ -1,11 +1,19 @@
 type: GenericCrafter
 size: 1
 name: Signal
+description: "
+When pressed a circuit signal is sent out
+
+The circuit will fade after travelling too 
+far
+
+[salmon]- Explosive
+"
 
 solid: true
 health: 185
 armor: -2
-baswExplosiveness: 12
+baseExplosiveness: 12
 
 category: logic
 envEnabled: -1
