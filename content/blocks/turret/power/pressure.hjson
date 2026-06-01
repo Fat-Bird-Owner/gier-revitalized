@@ -34,19 +34,6 @@ healColor: ffaa5f
   
 status: burning
 statusDuration: 180
-}
-
-customShadow: true
-drawer: [
-{
-type: DrawRegion
-}
-{
-type: DrawGlowRegion
-color: ffaa5f
-alpha: 0.6
-}
-]
 
 chargeEffect: {
 type: WaveEffect
@@ -58,7 +45,20 @@ interp: sineOut
 color: ffaa5f
 colorTo: ffaa5f
 lifetime: 80
+}}
+# shootType end
+
+customShadow: true
+drawer: [
+{
+type: DrawRegion
 }
+{
+type: DrawGlowRegion
+color: ffaa5f
+alpha: 0.9
+}
+]
 
 shootEffect: [
 {
