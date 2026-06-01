@@ -36,6 +36,9 @@ healColor: ffaa5f
 status: burning
 statusDuration: 180
 
+impact: true
+knockback: 10.5
+
 chargeEffect: {
 type: WaveEffect
 sizeFrom: 200
