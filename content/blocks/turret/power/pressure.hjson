@@ -21,7 +21,7 @@ power: 3
 }
   
 buildVisibility: sandboxOnly
-range: 160
+range: 200
 shootType: {
 instantDisappear: true
 despawnHit: true
