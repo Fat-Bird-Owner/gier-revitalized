@@ -48,11 +48,11 @@ cloudMesh: [
    speed: 1.01
    radius: 0.13
    divisions: 5
-   color: a7a9c4
+   color: a7a9c488
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0.3
+   thresh: 0.25
    seed: 2
   }
   {
