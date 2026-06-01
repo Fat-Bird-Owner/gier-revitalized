@@ -1,6 +1,7 @@
 type: PowerTurret
 size: 4
 name: Pressure
+
 rotateSpeed: 0
 rotate: false
 shootCone: 180
@@ -20,11 +21,11 @@ power: 3
 }
   
 buildVisibility: sandboxOnly
-range: 180
+range: 160
 shootType: {
 instantDisappear: true
 despawnHit: true
-splashDamageRadius: 160
+splashDamageRadius: 200
 splashDamage: 25
 scaledSplashDamage: true
 
@@ -37,7 +38,7 @@ statusDuration: 180
 
 chargeEffect: {
 type: WaveEffect
-sizeFrom: 160
+sizeFrom: 200
 sizeTo: 0
 strokeFrom: 4
 strokeTo: 1 
@@ -64,7 +65,7 @@ shootEffect: [
 {
 type: WaveEffect
 sizeFrom: 20
-sizeTo: 160
+sizeTo: 200
 strokeFrom: 4
 strokeTo: 0
 interp: sineOut
@@ -73,8 +74,8 @@ lifetime: 40
 }
 {
 type: WaveEffect
-sizeFrom: 160
-sizeTo: 168
+sizeFrom: 200
+sizeTo: 208
 strokeFrom: 4
 strokeTo: 0
 interp: sineOut
