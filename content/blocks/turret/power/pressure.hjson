@@ -14,6 +14,9 @@ allied structures
 - Explosive
 "
 
+research: tension
+researchCostMultiplier: 0.5
+
 shownPlanets: [kela, gier]
 databaseTag: "adv-plastanium"
 
