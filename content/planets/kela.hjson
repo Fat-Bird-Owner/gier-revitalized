@@ -47,12 +47,12 @@ cloudMesh: [
    planet: kela
    speed: 1.01
    radius: 0.17
-   divisions: 5
-   color: a7a9c499
+   divisions: 4
+   color: a7a9c4
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0.25
+   thresh: 0.2
    seed: 2
   }
   {
