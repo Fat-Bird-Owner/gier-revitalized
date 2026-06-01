@@ -40,7 +40,7 @@ type: WaveEffect
 sizeFrom: 160
 sizeTo: 0
 strokeFrom: 4
-strokeTo: 
+strokeTo: 1 
 interp: sineOut
 color: ffaa5f
 colorTo: ffaa5f
