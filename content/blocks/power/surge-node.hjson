@@ -10,11 +10,7 @@ hideDatabase: true
 
 databaseTag: "adv-surge-alloy"
 category: power
-
-research:{
-parent: outpost
-objectives:[surge-node]
-}
+buildVisibility: sandboxOnly
   
 outputsPower: true
 consumesPower: true
