@@ -59,8 +59,15 @@ type: DrawRegion
 }
 {
 type: DrawGlowRegion
+suffix: "-glow"
 color: ffaa5f
 alpha: 0.9
+}
+{
+type: DrawGlowRegion
+suffix: "-glow-2"
+color: ffaa5f
+alpha: 0.75
 }
 ]
 
