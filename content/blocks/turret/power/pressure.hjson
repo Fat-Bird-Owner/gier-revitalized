@@ -1,6 +1,25 @@
 type: PowerTurret
 size: 4
 name: Pressure
+description: "
+Charges up an EMP
+
+EMP burns targets and repairs
+allied structures
+
+[green]- AOE
+- Heals small amount
+- Melts enemy target
+[red]- Requires Power
+- Explosive
+"
+
+shownPlanets: [kela, gier]
+databaseTag: "adv-plastanium"
+
+baseExplosiveness: 75
+requirements: [lead/375, copper/225, beryllium/125, plastanium/75]
+category: turret
 
 rotateSpeed: 0
 rotate: false
@@ -19,25 +38,21 @@ outlineRadius: 0
 consumes: {
 power: 3
 }
-  
-buildVisibility: sandboxOnly
+
 range: 200
 shootType: {
 instantDisappear: true
 despawnHit: true
 splashDamageRadius: 200
-splashDamage: 25
+splashDamage: 40
 scaledSplashDamage: true
 
 collidesTeam: true
 healPercent: 1.5
 healColor: ffaa5f
   
-status: burning
+status: melting
 statusDuration: 180
-
-impact: true
-knockback: 10.5
 
 chargeEffect: {
 type: WaveEffect
