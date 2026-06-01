@@ -11,7 +11,7 @@ other blocks beside itself.
 - Explodes if damaged while over netIn
 "
 
-research: power-cell
+research: outpost
 baseExplosiveness: 6.5
 attributes: {
 netIn: 500
