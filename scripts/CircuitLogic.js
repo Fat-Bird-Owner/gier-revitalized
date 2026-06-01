@@ -261,7 +261,7 @@ Events.on(ClientLoadEvent, () => {
 try{
 for(let i = 0; i < blocks.length; i++){
 
-if (blocks[i] instanceof "gr-power-cell") continue;
+if (blocks[i] == "gr-power-cell") continue;
 const block = Vars.content.block(blocks[i]);
   
 Vars.ui.content.show(block);
