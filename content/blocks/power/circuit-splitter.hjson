@@ -2,8 +2,10 @@ type: Battery
 size: 1
 name: Circuit Splitter
 description: "
-Like a circuit wire but distributes the
-signal in all directions
+Splits the [accent]circuit pulse[] into multiple
+directions
+
+the split pulses also has a shared travel distance
 "
 
 solid: false
