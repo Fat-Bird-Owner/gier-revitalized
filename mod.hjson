@@ -28,8 +28,8 @@ as those are stable.
 "
 
 iosCompatible: true
-version: "v2.5-Gier"
-subtitle: "[sky[]]v2.5[grey[]]-[lightgrey[]]Gier[[]]"
+version: "v3-Gier"
+subtitle: "[sky[]]v3[grey[]]-[lightgrey[]]Gier[[]]"
 minGameVersion: "156"
 dependencies: []
 hidden: false
