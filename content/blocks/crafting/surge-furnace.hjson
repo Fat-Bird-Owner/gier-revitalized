@@ -1,0 +1,39 @@
+type: GenericCrafter
+size: 4
+customShadow: true
+
+requirements: [lead/375, copper/200, titanium/175, silicon/100, metaglass/125]
+category: crafting
+research: sunder-furnace
+shownPlanets: [kela, gier]
+
+databaseTag: "adv-surge-alloy"
+
+itemCapacity: 30
+name: Surge Furnace
+outputItem: surge-alloy/5
+craftTime: 600
+
+consumes: {
+power: 5
+items: [copper/15, lead/15, titanium/10, beryllium/10, silicon/5]
+liquids: [water/0.16667]
+}
+  
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawCrucibleFlame
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: f3e979
+alpha: 0.8
+}
+]
