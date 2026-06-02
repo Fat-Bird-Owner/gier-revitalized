@@ -28,7 +28,7 @@ shownPlanets: [gier, kela]
 envEnabled: -1
 research: {
 parent: sunder-furnace
-objectives: [oil-centrifuge]
+researchCostMultiplier: 0.5
 }
 
 consumes:{
