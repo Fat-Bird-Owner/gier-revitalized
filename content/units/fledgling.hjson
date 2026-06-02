@@ -1,0 +1,29 @@
+type: mech
+name: Fledgling
+speed: 1.65
+
+outlineColor: 2f2f3f
+health: 650
+armor: 7.5
+
+hitSize: 12
+weapons: [
+{
+name: "fledgling-weapon"
+x: 4
+y: 2
+reload: 45
+
+bullet: {
+type: BasicBulletType
+trailLength: 4
+trailWidtth: 1 
+
+speed: 2.66667
+lifetime: 45
+damage: 25
+
+}
+
+}
+]
