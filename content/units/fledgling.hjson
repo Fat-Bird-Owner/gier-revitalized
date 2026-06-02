@@ -10,14 +10,15 @@ hitSize: 12
 weapons: [
 {
 name: "fledgling-weapon"
-x: 4
-y: 2
-reload: 45
+top: false
+x: 8
+y: 0
+reload: 30
 
 bullet: {
 type: BasicBulletType
 trailLength: 4
-trailWidtth: 1 
+trailWidth: 1 
 
 speed: 2.66667
 lifetime: 45
