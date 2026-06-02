@@ -33,6 +33,7 @@ items:[titanium/40, graphite/50]
 
 outputItem: plastanium/20
 craftTime: 1500
+research: sunder-furnace
 
 craftEffect:{
 type: MultiEffect
