@@ -11,8 +11,8 @@ weapons: [
 {
 name: "fledgling-weapon"
 top: false
-x: 8
-y: 0
+x: 7.5
+y: -1.5
 reload: 30
 
 bullet: {
@@ -20,8 +20,8 @@ type: BasicBulletType
 trailLength: 4
 trailWidth: 1 
 
-speed: 2.66667
-lifetime: 45
+speed: 5
+lifetime: 25
 damage: 25
 
 }
