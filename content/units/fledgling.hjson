@@ -1,6 +1,6 @@
 type: mech
 name: Fledgling
-speed: 1.65
+speed: 0.82
 
 outlineColor: 2f2f3f
 health: 650
