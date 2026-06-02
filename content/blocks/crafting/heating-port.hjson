@@ -17,9 +17,7 @@ rotateDraw: false
 databaseTag: "adv-oxide"
 research:{
 parent: oxidization-reactor
-objectives:[
-heating-port
-]
+researchCostMultiplier: 0.5
 }
 
 category: crafting
