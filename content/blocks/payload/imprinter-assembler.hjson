@@ -12,12 +12,13 @@ droneConstructTime: 600
 
 plans: [{
 type: AssemblerUnitPlan
-unit: flare
+unit: fledgling
 
 time: 2100
 requirements: [
-gr-packed-graphite/5
-gr-insulated-wall/2
+gr-packed-graphite/3
+gr-power-cell/1
+gr-insulated-wall/1
 ]
 }
 {
