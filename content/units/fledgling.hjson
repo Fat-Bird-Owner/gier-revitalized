@@ -13,8 +13,15 @@ name: "fledgling-weapon"
 top: false
 x: 7.5
 y: -1.5
-reload: 30
+reload: 75
 shootSound: shootPayload
+
+recoilTime: 75
+inaccuracy: 6
+shoot: {
+shots: 3
+shotDelay: 15
+}
 
 bullet: {
 type: BasicBulletType
