@@ -1,0 +1,10 @@
+typem Drill
+size: 4
+name: Heavy Excavator
+
+tier: 4
+databaseTag: "gier"
+category: production
+
+research: ton-crusher
+requirements: [lead/275, copper/175, silicon/125, titanium/75, beryllium/75, metaglass/50]
