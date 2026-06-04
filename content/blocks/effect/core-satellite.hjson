@@ -1,12 +1,37 @@
 type: CoreBlock
 size: 3
 name: "Core: Satellite"
+health: 3500
+armor: 10
+
+description: "
+A simple thruster carried structure
+Holds a mediocre amount of items
+
+Able to fabricate a unit to mine 
+and build structures
+
+Once all cores are destroyed the
+sector will be losted
+"
+
+details: "
+Each individual core is launched
+from serpulo
+
+Satellite core's intended directive
+was for gathering resources and further
+expand sharded's research
+[scarlet]
+Satellite core's arent intended to last
+"
 
 databaseTag: "gier"
 envEnabled: -1
 itemCapacity: 5000
 category: effect  
-  
+
+
 requirements: [lead/1750, copper/1000, graphite/250]
 research: gier
 alwaysUnlocked: true
