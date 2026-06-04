@@ -14,6 +14,7 @@ allied structures
 - Explosive
 "
 
+envEnabled: -1
 research: tension
 researchCostMultiplier: 0.5
 
