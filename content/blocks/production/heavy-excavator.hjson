@@ -9,6 +9,9 @@ category: production
 
 research: ton-crusher
 requirements: [lead/275, copper/175, silicon/125, titanium/75, beryllium/75, metaglass/50, thorium/45]
+updateEffectChance: 0.22
+liquidBoostIntensity: 1
+rotateSpeed: 4.5
 
 customShadow: true
 blockedItems: [sand]
