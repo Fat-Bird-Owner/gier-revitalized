@@ -7,7 +7,7 @@ const target = Vars.content.getByName(ContentType.block, "gr-ton-crusher");
 const target2 = Vars.content.block("gr-heavy-excavator");
     
 if (!build || !source) return;
-if (!(build.block == target || build.block == target2) || build.enabled == false || build.status() != BlockStatus.active) return;
+if ((build.block != target && build.block != target2) || build.enabled == false || build.status() != BlockStatus.active) return;
 
 const damageExtra = source.damage * 2.75;
 build.damage(damageExtra);
