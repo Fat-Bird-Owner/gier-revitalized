@@ -23,6 +23,7 @@ shownPlanets: [kela, gier]
 
 databaseTag: "adv-surge-alloy"
 baseExplosiveness: 75
+envEnabled: -1
 
 itemCapacity: 30
 name: Surge Furnace
