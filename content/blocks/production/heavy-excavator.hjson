@@ -2,6 +2,7 @@ type: Drill
 size: 4
 name: Heavy Excavator
 
+drillTime: 720
 tier: 4
 databaseTag: "gier"
 category: production
