@@ -10,6 +10,7 @@ category: production
 research: ton-crusher
 requirements: [lead/275, copper/175, silicon/125, titanium/75, beryllium/75, metaglass/50, thorium/45]
 
+customShadow: true
 blockedItems: [sand]
 consumes: {
 power: 2.5
