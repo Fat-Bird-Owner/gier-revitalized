@@ -1,0 +1,16 @@
+type: CoreBlock
+size: 3
+name: "Core: Satellite"
+
+databaseTag: "gier"
+envEnabled: -1
+itemCapacity: 5000
+category: effect  
+  
+requirements: [lead/1750, copper/1000, graphite/250]
+research: gier
+alwaysUnlocked: true
+
+customShadow: true
+isFirstTier: true
+unitType: gamma
