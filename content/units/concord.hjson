@@ -9,11 +9,13 @@ engineOffset: 7.25
 engineSize: 3
 outlineRadius: 0
 
-trailScl: 3
+trailScl: 1.5
 trailLength: 4
 
 health: 350
-speed: 1.5
+speed: 3
+accel: 0.3
+drag: 0.15
 armor: 10
 
 mineTier: 2
