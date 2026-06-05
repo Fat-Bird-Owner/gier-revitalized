@@ -6,9 +6,14 @@ mineSpeed: 6
 buildSpeed: 1
 
 engineOffset: 7.25
-engineSize: 1.5
+engineSize: 3
 outlineRadius: 0
 
+trailScl: 3
+trailLength: 4
+
 health: 350
-speed: 3.5
+speed: 1.5
 armor: 10
+
+mineTier: 2
