@@ -14,8 +14,8 @@ trailLength: 4
 
 health: 350
 speed: 3
-accel: 0.3
-drag: 0.15
+accel: 0.03
+drag: 0.02
 armor: 10
 
 mineTier: 2
