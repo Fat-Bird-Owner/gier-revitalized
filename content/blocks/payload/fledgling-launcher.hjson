@@ -1,7 +1,7 @@
 type: PowerTurret
 reload: 1800
 size: 2
-range: 1500
+range: 300
 
 buildVisibility: sandboxOnly
 category: units
@@ -15,6 +15,9 @@ xScl: 0
 growX: 1
 growY: 1
 progress: reload
+growProgress: reload
+moveY: 4
+y: -4
 name: "gr-fledgling"
 }
 ]
@@ -42,7 +45,8 @@ width: 12
 sprite: "gr-fledgling"
 despawnUnit: fledgling
 
-speed: 5
+layer: 90
+speed: 1
 lifetime: 300
 scaleLife: true 
 }
