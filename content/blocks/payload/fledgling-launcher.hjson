@@ -46,8 +46,7 @@ sprite: "gr-fledgling"
 despawnUnit: fledgling
 
 layer: 90
-speed: 1
-lifetime: 300
+speed: 5
 scaleLife: true 
 
 frontColor: ffffff
