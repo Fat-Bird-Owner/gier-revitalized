@@ -1,0 +1,45 @@
+type: PowerTurret
+reload: 1800
+size: 2
+range: 1500
+
+buildVisibility: sandboxOnnly
+category: units
+  
+drawer: {
+type: DrawTurret
+parts: [
+{
+size: 12
+sizeTo: 0
+progress: reload
+}
+]
+
+}
+
+itemCapacity: 150
+consumes: {
+power: 3
+items: [copper/75, silicon/150, titanium/25]
+}
+
+shootType: {
+type: ArtilleryBulletType
+absorbable: false
+deflectable: false
+hittable: false
+
+killShooter: true
+shrinkX: 0
+shrinkY: 0
+
+height: 12
+width: 12
+sprite: "fledgling"
+despawnUnit: fledgling
+
+speed: 5
+lifetime: 300
+  
+}
