@@ -1,0 +1,13 @@
+type: flying
+flying: true
+name: Concord
+
+mineSpeed: 6
+buildSpeed: 1
+
+engineOffset: 7.25
+engineSize: 1.5
+
+health: 350
+speed: 3.5
+armor: 10
