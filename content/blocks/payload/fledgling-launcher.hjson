@@ -17,6 +17,7 @@ growY: -1
 progress: reload
 growProgress: reload
 moveY: 4
+x: 0
 y: -4
 name: "gr-fledgling"
 }
