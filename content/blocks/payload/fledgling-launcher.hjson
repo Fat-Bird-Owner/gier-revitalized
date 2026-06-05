@@ -10,9 +10,12 @@ drawer: {
 type: DrawTurret
 parts: [
 {
-size: 12
-sizeTo: 0
+yScl: 0
+xScl: 0
+growX: 1
+growY: 1
 progress: reload
+name: "gr-fledgling"
 }
 ]
 
@@ -36,10 +39,10 @@ shrinkY: 0
 
 height: 12
 width: 12
-sprite: "fledgling"
+sprite: "gr-fledgling"
 despawnUnit: fledgling
 
 speed: 5
 lifetime: 300
-  
+scaleLife: true 
 }
