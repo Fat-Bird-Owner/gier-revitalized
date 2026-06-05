@@ -10,10 +10,10 @@ drawer: {
 type: DrawTurret
 parts: [
 {
-yScl: 0
-xScl: 0
-growX: 1
-growY: 1
+yScl: 1
+xScl: 1
+growX: -1
+growY: -1
 progress: reload
 growProgress: reload
 moveY: 4
@@ -40,8 +40,8 @@ killShooter: true
 shrinkX: 0
 shrinkY: 0
 
-height: 12
-width: 12
+height: 16
+width: 16
 sprite: "gr-fledgling"
 despawnUnit: fledgling
 
@@ -49,4 +49,6 @@ layer: 90
 speed: 1
 lifetime: 300
 scaleLife: true 
+
+frontColor: ffffff
 }
