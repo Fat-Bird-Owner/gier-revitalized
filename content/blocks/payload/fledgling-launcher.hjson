@@ -3,7 +3,7 @@ reload: 1800
 size: 2
 range: 1500
 
-buildVisibility: sandboxOnnly
+buildVisibility: sandboxOnly
 category: units
   
 drawer: {
