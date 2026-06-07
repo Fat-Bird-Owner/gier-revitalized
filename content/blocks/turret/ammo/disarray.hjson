@@ -76,6 +76,7 @@ trailColor: e4ffd6
 hitColor: e4ffd6
 hitEffect: titanSmokeSmall
 despawnEffect: bigShockwave
+hitSound: explosionArtilleryShockBig
 }
 
 tinted-slag-capsule:{
@@ -118,5 +119,6 @@ trailColor: ffa166ff
 hitColor: ffa166ff
 hitEffect: titanSmokeSmall
 despawnEffect: bigShockwave
+hitSound: explosionArtilleryShockBig
 }
 }
