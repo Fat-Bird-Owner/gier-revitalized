@@ -37,7 +37,7 @@ progress: recoil
 mirror: false
 }
 {
-type: DrawRegion
+name: "gr-disarray"
 mirror: false
 heatProgress: recoil
 }
