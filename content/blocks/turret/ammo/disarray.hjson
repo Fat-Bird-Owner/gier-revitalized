@@ -66,19 +66,33 @@ despawnEffect: bigShockwave
 }
 
 tinted-slag-capsule:{
-type: ArtilleryBulletType
-speed: 3
-lifetime: 80
+type: BasicBulletType
+speed: 6
+lifetime: 40
 
-width: 10
-height: 14
+trailInterval: 5
+trailEffect: {
+type: ParticleEffect
+particles: 1
+cone: 0
+region: "gr-shock-wave"
+sizeFrom: 4
+sizeTo: 16
+length: 0
+colorFrom: e37a54
+colorTo: e37a5400
+lifetime: 25
+}
+
+width: 7.5
+height: 11
 trailWidth: 2
 trailLength: 14
 
 collidesAir: true
 collides: true
-splashDamage: 125
-splashDamageRadius: 20
+splashDamage: 200
+splashDamageRadius: 75
 
 status: melting
 statusDuration: 360
