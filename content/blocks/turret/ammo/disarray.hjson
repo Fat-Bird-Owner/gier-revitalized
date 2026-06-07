@@ -2,6 +2,12 @@ type: ItemTurret
 size: 4
 name: Disarray
 range: 240
+dscriptionn: "
+Fires a concentrated bullet that explodes
+
+[green]- Large-AOE damage
+[red]- Requires steam
+"
 
 research: trident
 researchCostMultiplier: 0.75
