@@ -34,8 +34,12 @@ parts:[
 suffix: "-barrel"
 moveY: -5
 progress: recoil
-under: true
 mirror: false
+}
+{
+type: DrawRegion
+mirror: false
+heatProgress: recoil
 }
 ]
 }
