@@ -47,7 +47,6 @@ damage: 15
 shake: 5
 shootSound: shootForeshadow
 outlineRadius: 0
-buildVisibility: sandboxOnly
 category: turret
 cooldownTime: 140
 
