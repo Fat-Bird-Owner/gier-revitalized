@@ -35,7 +35,8 @@ suffix: "-barrel"
 moveY: -5
 progress: recoil
 under: true
-outline: false
+outline: true
+outlineLayerOffset: -0.2
 }
 ]
 }
