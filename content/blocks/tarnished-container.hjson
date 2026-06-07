@@ -4,3 +4,6 @@ name: "[grey](Tarnished)[] Container"
 
 requirements: [lead/175, silicon/75, titanium/25]
 category: effect
+size: 2
+
+buildVisibility: sandboxOnly
