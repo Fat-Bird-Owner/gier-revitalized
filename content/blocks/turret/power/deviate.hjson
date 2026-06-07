@@ -10,6 +10,7 @@ objectives:[deviate]
 databaseTag: "adv-surge-alloy"
 shootY: 0
 envEnabled: -1
+shownPlanets: [kela, gier]
 description: "Shoots focused beams of power.
 
 [green]- Anti-IFrame
