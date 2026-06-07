@@ -36,11 +36,6 @@ moveY: -5
 progress: recoil
 mirror: false
 }
-{
-name: "gr-disarray"
-mirror: false
-heatProgress: recoil
-}
 ]
 }
 
