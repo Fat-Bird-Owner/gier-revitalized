@@ -31,6 +31,8 @@ type: DrawTurret
 basePrefix: "reinforced-"
 parts:[
 {
+type: RegionPart
+under: false
 suffix: "-barrel"
 moveY: -5
 progress: recoil
