@@ -19,7 +19,6 @@ shownPlanets:[kela, gier]
 
 databaseTag: "adv-plastanium"
 requirements: [lead/475, copper/350, silicon/175, oxide/65]
-outlineColor: 2f1f1f
 
 consumes:{
 power: 2
@@ -32,15 +31,16 @@ basePrefix: "reinforced-"
 parts:[
 {
 type: RegionPart
-under: true
-suffix: "-barrel"
-moveY: -5
+suffix: -barrel
+moveY: -2.5
 progress: recoil
 mirror: false
+under: true
 }
 ]
 }
 
+outlineColor: 2f1f1f
 reload: 240
 cooldownTime: 120
 
