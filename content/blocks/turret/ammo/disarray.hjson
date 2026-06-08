@@ -35,7 +35,6 @@ suffix: -barrel
 moveY: -2.5
 progress: recoil
 mirror: false
-under: true
 }
 ]
 }
