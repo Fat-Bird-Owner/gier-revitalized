@@ -32,7 +32,7 @@ basePrefix: "reinforced-"
 parts:[
 {
 type: RegionPart
-under: false
+under: true
 suffix: "-barrel"
 moveY: -5
 progress: recoil
