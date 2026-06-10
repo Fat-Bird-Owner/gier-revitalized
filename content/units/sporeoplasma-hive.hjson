@@ -28,6 +28,10 @@ time: 150
 op: curve
 interp: bounceIn
 }
+{
+op: curve
+interp: slope
+}
 ]
 
 }
