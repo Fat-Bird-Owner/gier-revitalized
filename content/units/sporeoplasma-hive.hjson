@@ -8,13 +8,15 @@ drawCell: false
 
 speed: 0
 rotateSpeed: 0
-  
+hidden: true
+outlineColor: 2f2f3f
+
 parts: [
 {
 type: RegionPart
 name: "gr-sporeoplasma-hive"
-growX: 0.5
-growY: 0.5
+growX: 0.25
+growY: 0.25
 growProgress: {
 type: time
 ops: [
@@ -25,6 +27,10 @@ time: 150
 {
 op: curve
 interp: slope
+}
+{
+op: compress
+interp: bounceIn
 }
 ]
 
