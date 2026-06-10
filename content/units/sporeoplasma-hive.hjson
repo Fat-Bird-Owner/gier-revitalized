@@ -10,6 +10,7 @@ speed: 0
 rotateSpeed: 0
 hidden: true
 outlineColor: 2f2f3f
+physics: false
 
 parts: [
 {
@@ -36,5 +37,20 @@ interp: slope
 
 }
   
+}
+]
+
+weapons: [
+{
+reload: 150
+alwaysShooting: true
+shootEffect: none
+
+bullet: {
+type: EmptyBulletType
+spawnUnit: gr-crystal-bug
+createChance: 0.66
+}
+
 }
 ]
