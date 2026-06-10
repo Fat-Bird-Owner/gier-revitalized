@@ -1,0 +1,25 @@
+type: payload
+hitSize: 16
+flying: false
+
+health: 1750
+drawBody: false
+drawCell: false
+
+speed: 0
+rotateSpeed: 0
+  
+parts: [
+{
+type: RegionPart
+name: "sporeplasma-hive"
+growX: 0.5
+growY: 0.5
+growProgress: {
+type: time
+op: loop
+time: 150
+}
+  
+}
+]
