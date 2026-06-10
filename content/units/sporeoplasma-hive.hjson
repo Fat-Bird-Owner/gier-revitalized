@@ -12,13 +12,22 @@ rotateSpeed: 0
 parts: [
 {
 type: RegionPart
-name: "sporeplasma-hive"
+name: "gr-sporeplasma-hive"
 growX: 0.5
 growY: 0.5
 growProgress: {
 type: time
+ops: [
+{
 op: loop
 time: 150
+}
+{
+op: curve
+interp: slope
+}
+]
+
 }
   
 }
