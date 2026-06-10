@@ -9,8 +9,17 @@ drawCell: false
 speed: 0
 rotateSpeed: 0
 hidden: true
-outlineColor: 2f2f3f
+outlineRadius: 0
 physics: false
+
+flyingLayer: 45
+
+abilities: [
+{
+type: LiquidExplodeAbility
+liquid: gr-tuntra
+}
+]
 
 parts: [
 {
@@ -44,12 +53,17 @@ weapons: [
 {
 reload: 150
 alwaysShooting: true
-shootEffect: none
+shootEffect: {
+type: WrapEffect
+effect: mineHuge
+color: 7457ce
+}
 
 bullet: {
 type: EmptyBulletType
-spawnUnit: gr-crystal-bug
+despawnUnit: gr-crystal-bug
 createChance: 0.66
+instantDisappear: true
 }
 
 }
