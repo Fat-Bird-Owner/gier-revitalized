@@ -26,10 +26,6 @@ time: 150
 }
 {
 op: curve
-interp: slope
-}
-{
-op: compress
 interp: bounceIn
 }
 ]
