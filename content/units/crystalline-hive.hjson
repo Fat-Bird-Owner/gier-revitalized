@@ -119,8 +119,12 @@ color: 7457ce
 
 }
 {
-reload: 7500
+reload: 60
 alwaysShooting: true
+
+shoot: {
+firstShotDelay: 7500
+}
 
 bullet: {
 instantDisappear: true
