@@ -118,6 +118,7 @@ color: 7457ce
 }
 
 }
+/*
 {
 reload: 7501
 alwaysShooting: true
@@ -133,4 +134,6 @@ spawnUnit: crystalline-hive-medium
 }
 
 }
+*/
+
 ]
