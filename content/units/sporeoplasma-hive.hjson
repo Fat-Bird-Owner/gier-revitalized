@@ -70,11 +70,13 @@ bullet: {
 type: MissileBulletType
 frontColor: 7457ce
 backColor: 7457ce
+trailColor: 7457ce
 
-weaveScl: 1.65
+trailEffect: none
+weaveScl: 3
 weaveMag: 1.21
 
-homingPower: 0.2
+homingPower: 0.05
 damage: 6
 
 lifetime: 60
