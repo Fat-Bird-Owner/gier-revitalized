@@ -1,0 +1,135 @@
+type: payload
+hitSize: 16
+flying: false
+name: "Crystalline Hive [lightgrey](Medium)"
+
+health: 2250
+drawBody: false
+drawCell: false
+
+speed: 0
+rotateSpeed: 0
+hidden: true
+outlineRadius: 0
+physics: false
+
+drag: 9999
+groundLayer: 45
+
+abilities: [
+{
+type: LiquidExplodeAbility
+liquid: gr-tuntra
+}
+{
+type: RegenAbility
+percentAmouht: 0.0833333
+}
+]
+
+parts: [
+{
+name: "gr-hive-tendril"
+xScl: 0.95
+yScl: 0.95
+layer: 22
+rotation: 33
+}
+{
+type: RegionPart
+name: "gr-sporeoplasma-hive"
+growX: 0.25
+growY: 0.25
+xScl: 1.15
+yScl: 1.15
+  
+growProgress: {
+type: time
+ops: [
+{
+op: loop
+time: 75
+}
+{
+op: compress
+start: 0.65
+end: 1
+}
+{
+op: curve
+interp: bounceIn
+}
+{
+op: curve
+interp: slope
+}
+]
+
+}
+  
+}
+]
+
+range: 150
+weapons: [
+{
+reload: 12
+inaccuracy: 360
+shootCone: 180
+x: 0
+y: 0
+mirror: false
+
+bullet: {
+type: MissileBulletType
+frontColor: 7457ce
+backColor: 7457ce
+trailColor: 7457ce
+
+trailEffect: none
+weaveScl: 3
+weaveMag: 1.21
+
+trailLength: 4
+trailWidth: 1
+  
+homingPower: 0.075
+damage: 9
+
+lifetime: 60
+speed: 2.5
+range: 150
+}
+
+}
+{
+reload: 150
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+bullet: {
+type: EmptyBulletType
+fragBullets: 2
+instantDisappear: true
+despawnHit: true
+
+fragBullet: {
+type: EmptyBulletType
+despawnUnit: gr-crystal-bug
+createChance: 0.66
+instantDisappear: true
+}
+
+shootEffect: {
+type: WrapEffect
+effect: mineHuge
+color: 7457ce
+}
+
+
+}
+
+}
+]
