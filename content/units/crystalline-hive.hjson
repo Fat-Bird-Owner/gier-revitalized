@@ -37,7 +37,7 @@ type: time
 ops: [
 {
 op: loop
-time: 150
+time: 75
 }
 {
 op: compress
