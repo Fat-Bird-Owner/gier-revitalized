@@ -35,6 +35,11 @@ op: loop
 time: 150
 }
 {
+op: compress
+start: 1
+end: 0
+}
+{
 op: curve
 interp: bounceIn
 }
