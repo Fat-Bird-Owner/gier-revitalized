@@ -28,6 +28,12 @@ percentAmouht: 0.0833333
 
 parts: [
 {
+name: "gr-hive-tendril"
+xScl: 0.75
+yScl: 0.75
+layer: 22
+}
+{
 type: RegionPart
 name: "gr-sporeoplasma-hive"
 growX: 0.25
