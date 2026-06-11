@@ -124,6 +124,7 @@ reload: 7500
 bullet: {
 instantDisappear: true
 killShooter: true
+spawnUnit: crystalline-hive-medium
 }
 
 }
