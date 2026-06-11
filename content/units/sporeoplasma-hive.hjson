@@ -36,7 +36,7 @@ time: 150
 }
 {
 op: compress
-start: 0.8
+start: 0.5
 end: 1
 }
 {
@@ -58,17 +58,20 @@ weapons: [
 {
 reload: 150
 alwaysShooting: true
-shootEffect: {
-type: WrapEffect
-effect: mineHuge
-color: 7457ce
-}
 
 bullet: {
 type: EmptyBulletType
 despawnUnit: gr-crystal-bug
 createChance: 0.66
 instantDisappear: true
+
+shootEffect: {
+type: WrapEffect
+effect: mineHuge
+color: 7457ce
+}
+
+
 }
 
 }
