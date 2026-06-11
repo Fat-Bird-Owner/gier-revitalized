@@ -13,7 +13,8 @@ hidden: true
 outlineRadius: 0
 physics: false
 
-flyingLayer: 45
+drag: 9999
+groundLayer: 45
 
 abilities: [
 {
