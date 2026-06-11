@@ -1,6 +1,7 @@
 type: payload
 hitSize: 16
 flying: false
+name: "Sporeplasma Hive"
 
 health: 1750
 drawBody: false
@@ -18,6 +19,10 @@ abilities: [
 {
 type: LiquidExplodeAbility
 liquid: gr-tuntra
+}
+{
+type: RegenAbility
+percentAmouht: 0.0833333
 }
 ]
 
@@ -54,7 +59,29 @@ interp: slope
 }
 ]
 
+range: 150
 weapons: [
+{
+reload: 12
+inaccuracy: 360
+shootCone: 180
+
+bullet: {
+type: MissileBulletType
+frontColor: 7457ce
+backColor: 7457ce
+
+weaveScl: 1.65
+weaveMag: 1.21
+
+homingPower: 0.2
+damage: 6
+
+lifetime: 60
+speed: 2.5
+}
+
+}
 {
 reload: 150
 alwaysShooting: true
