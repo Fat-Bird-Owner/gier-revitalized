@@ -119,7 +119,7 @@ color: 7457ce
 
 }
 {
-reload: 60
+reload: 7501
 alwaysShooting: true
 
 shoot: {
