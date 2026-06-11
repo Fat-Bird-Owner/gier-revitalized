@@ -118,4 +118,13 @@ color: 7457ce
 }
 
 }
+{
+reload: 7500
+
+bullet: {
+instantDisappear: true
+killShooter: true
+}
+
+}
 ]
