@@ -1,0 +1,12 @@
+type: GenericCrafter
+size: 2
+buildVisibility: sandbox
+
+craftTime: 60
+craftEffect: pulverize
+outputItem: copper/1
+
+requirements: [silicon/15, titanium/20]
+consumes: {
+liquid: [liquid-copper/0.016667]
+}
