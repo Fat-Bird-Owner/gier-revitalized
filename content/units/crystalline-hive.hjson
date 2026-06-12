@@ -38,6 +38,20 @@ damage: 10
 healEffect: 0
 layer: 33
 }
+{
+type: EnergyFieldAbility
+hitUnits: false
+hitEffect: none	
+damageEffect: none	
+status: none
+shootSound: none
+sectors: 20
+color: 000000
+damage: 0
+healEffect: 0
+layer: 32.9
+y: -2
+}
 ]
 
 parts: [
