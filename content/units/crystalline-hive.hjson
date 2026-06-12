@@ -40,7 +40,7 @@ healEffect: none
 layer: 33
 range: 160
 rotateSpeed: 0
-sectorRad: 5.6
+sectorRad: 0.38
 blinkSize: 5.6
 blinkScl: 0
 effectRadius: 0
@@ -53,14 +53,14 @@ damageEffect: none
 status: none
 shootSound: none
 sectors: 20
-color: 000000ff
+color: 5f5f5fff
 damage: 0
 healEffect: none
 layer: 32.9
 y: -1
 range: 160
 rotateSpeed: 0
-sectorRad: 5.6
+sectorRad: 0.38
 blinkSize: 5.6
 blinkScl: 0
 effectRadius: 0
