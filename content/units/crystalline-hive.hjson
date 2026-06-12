@@ -107,7 +107,7 @@ interp: slope
 {
 type: HoverPart
 sides: 100
-radius: 160
+radius: 40
 phase: 300
 layer: 12
 color: 7457ce
