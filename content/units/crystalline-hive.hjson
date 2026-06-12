@@ -53,7 +53,7 @@ damageEffect: none
 status: none
 shootSound: none
 sectors: 20
-color: 5f5f5fff
+color: 3f3f3ff
 damage: 0
 healEffect: none
 layer: 32.9
