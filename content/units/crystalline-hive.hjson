@@ -37,6 +37,7 @@ color: 7457ce
 damage: 10
 healEffect: none
 layer: 33
+range: 160
 }
 {
 type: EnergyFieldAbility
@@ -46,11 +47,12 @@ damageEffect: none
 status: none
 shootSound: none
 sectors: 20
-color: 000000
+color: 000000ff
 damage: 0
 healEffect: none
 layer: 32.9
 y: -2
+range: 160
 }
 ]
 
@@ -123,11 +125,11 @@ weaveMag: 1.21
 trailWidth: 1
 trailLength: 8
 
-homingPower: 0.05
+homingPower: 0.15
 damage: 6
 
 lifetime: 60
-speed: 2.5
+speed: 5
 range: 150
 }
 
