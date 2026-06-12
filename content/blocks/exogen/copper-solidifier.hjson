@@ -1,6 +1,7 @@
 type: GenericCrafter
 size: 2
 buildVisibility: sandbox
+name: Copper Solidifier
 
 craftTime: 60
 craftEffect: pulverize
