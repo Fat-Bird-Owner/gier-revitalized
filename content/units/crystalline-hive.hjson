@@ -25,6 +25,19 @@ liquid: gr-tuntra
 type: RegenAbility
 percentAmouht: 0.0833333
 }
+{
+type: EnergyFieldAbility
+hitUnits: false
+hitEffect: none	
+damageEffect: none	
+status: none
+shootSound: none
+sectors: 20
+color: 7457ce
+damage: 10
+healEffect: 0
+layer: 33
+}
 ]
 
 parts: [
@@ -64,6 +77,14 @@ interp: slope
 }
   
 }
+{
+type: HoverPart
+sides: 100
+radius: 160
+phase: 300
+layer: 12
+color: 7457ce
+}
 ]
 
 range: 150
@@ -85,6 +106,8 @@ trailColor: 7457ce
 trailEffect: none
 weaveScl: 3
 weaveMag: 1.21
+trailWidth: 1
+trailLength: 8
 
 homingPower: 0.05
 damage: 6
@@ -135,5 +158,4 @@ spawnUnit: crystalline-hive-medium
 
 }
 */
-
 ]
