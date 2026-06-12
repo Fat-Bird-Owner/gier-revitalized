@@ -1,6 +1,6 @@
 type: GenericCrafter
 size: 2
-buildVisibility: sandbox
+buildVisibility: sandboxOnly
 name: Copper Solidifier
 
 craftTime: 60
