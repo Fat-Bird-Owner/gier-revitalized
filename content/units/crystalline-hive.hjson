@@ -40,8 +40,8 @@ healEffect: none
 layer: 33
 range: 160
 rotateSpeed: 0
-sectorRad: 0.38
-blinkSize: 5.6
+sectorRad: 8
+blinkSize: 8
 blinkScl: 0
 effectRadius: 0
 }
@@ -60,8 +60,8 @@ layer: 32.9
 y: -1
 range: 160
 rotateSpeed: 0
-sectorRad: 0.38
-blinkSize: 5.6
+sectorRad: 8
+blinkSize: 8
 blinkScl: 0
 effectRadius: 0
 }
