@@ -6,6 +6,7 @@ name: "Crystalline Hive"
 health: 1750
 drawBody: false
 drawCell: false
+clipSize: 200
 
 speed: 0
 rotateSpeed: 0
@@ -38,6 +39,8 @@ damage: 10
 healEffect: none
 layer: 33
 range: 160
+rotateSpeed: 0
+sectorRad: 0.28
 }
 {
 type: EnergyFieldAbility
@@ -51,8 +54,10 @@ color: 000000ff
 damage: 0
 healEffect: none
 layer: 32.9
-y: -2
+y: -3
 range: 160
+rotateSpeed: 0
+sectorRad: 0.28
 }
 ]
 
