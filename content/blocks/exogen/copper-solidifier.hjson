@@ -6,6 +6,7 @@ craftTime: 60
 craftEffect: pulverize
 outputItem: copper/1
 
+category: crafting
 requirements: [silicon/15, titanium/20]
 consumes: {
 liquid: [liquid-copper/0.016667]
