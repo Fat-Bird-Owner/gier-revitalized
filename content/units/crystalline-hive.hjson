@@ -41,6 +41,7 @@ layer: 33
 range: 160
 rotateSpeed: 0
 sectorRad: 0.28
+blinkSize: 0.28
 }
 {
 type: EnergyFieldAbility
@@ -54,10 +55,11 @@ color: 000000ff
 damage: 0
 healEffect: none
 layer: 32.9
-y: -3
+y: -q
 range: 160
 rotateSpeed: 0
 sectorRad: 0.28
+blinkSize: 0.28
 }
 ]
 
