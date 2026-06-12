@@ -55,7 +55,7 @@ color: 000000ff
 damage: 0
 healEffect: none
 layer: 32.9
-y: -q
+y: -1
 range: 160
 rotateSpeed: 0
 sectorRad: 0.28
