@@ -42,6 +42,7 @@ type: DrawSideRegion
 }
 
 liquidOutputDirections:[0,0,0]
+craftTime: 10
 
 consumes:{
 liquids:[
