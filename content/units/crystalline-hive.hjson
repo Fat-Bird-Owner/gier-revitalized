@@ -35,7 +35,7 @@ shootSound: none
 sectors: 20
 color: 7457ce
 damage: 10
-healEffect: 0
+healEffect: none
 layer: 33
 }
 {
@@ -48,7 +48,7 @@ shootSound: none
 sectors: 20
 color: 000000
 damage: 0
-healEffect: 0
+healEffect: none
 layer: 32.9
 y: -2
 }
