@@ -137,12 +137,12 @@ trailWidth: 1
 trailLength: 12
 
 homingPower: 0.15
-damage: 6
+damage: 25
 scaleLife: true
 
 lifetime: 150
 speed: 3
-accel: 0.1
+accel: 0.05
 range: 150
 }
 
