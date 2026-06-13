@@ -14,7 +14,7 @@ hidden: true
 outlineRadius: 0
 physics: false
 
-drag: 9999
+drag: 99999
 groundLayer: 45
 
 abilities: [
@@ -134,13 +134,14 @@ trailEffect: none
 weaveScl: 3
 weaveMag: 1.21
 trailWidth: 1
-trailLength: 8
+trailLength: 12
 
 homingPower: 0.15
 damage: 6
+scaleLife: true
 
-lifetime: 60
-speed: 5
+speed: 3
+accel: 0.05
 range: 150
 }
 
