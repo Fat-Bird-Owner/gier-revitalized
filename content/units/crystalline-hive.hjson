@@ -140,8 +140,9 @@ homingPower: 0.15
 damage: 6
 scaleLife: true
 
+lifetime: 1.5
 speed: 3
-accel: 0.05
+accel: 0.1
 range: 150
 }
 
