@@ -289,7 +289,7 @@ collideTerrain: true
 collides: true
 collidesTiles: true
 speed: 1.3334
-lifetime: 80
+lifetime: 60
 absorbable: false
 reflectable: false
 hittable: false
