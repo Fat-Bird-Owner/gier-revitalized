@@ -73,11 +73,11 @@ name: "gr-slinger-barrel"
 under: false
 progress: {
 type: reload
-op: {
+ops: [{
 type: compress
 start: 0
 end: 0.8
-}
+}]
 
 }
 
