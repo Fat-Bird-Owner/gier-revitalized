@@ -241,4 +241,59 @@ hittable: false
 }
 
 }
+
+{
+reload: 2920
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+shoot: {
+type: ShootSpread
+spread: 90
+shots: 4
+shotDelay: 0
+}
+
+bullet: {
+type: BasicBulletType
+collidesAir: true
+collidesGround: true
+fragRandomSpread: 0
+
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+collides: false
+ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
+fragRandomSpread: 0
+
+fragBullet: {
+instantDisappear: true
+collides: false
+spawnUnit: tumor-slinger
+angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+collideTerrain: true
+collides: true
+collidesTiles: true
+speed: 1.3334
+lifetime: 80
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
 ]
