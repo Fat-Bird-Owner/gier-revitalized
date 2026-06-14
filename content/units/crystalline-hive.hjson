@@ -203,8 +203,8 @@ shotDelay: 0
 
 bullet: {
 type: BasicBulletType
-collidesAir: false
-collidesGround: false
+collidesAir: true
+collidesGround: true
 fragRandomSpread: 0
 
 fragBullets: 1
