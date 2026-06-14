@@ -17,7 +17,14 @@ outlineRadius: 0
 physics: false
 
 drag: 99999
-groundLayer: 45
+groundLayer: 75
+
+abilities: [
+{
+type: LiquidExplodeAbility
+liquid: gr-tuntra
+}
+]
 
 parts: [
 {
@@ -25,6 +32,7 @@ name: "gr-hive-tendril"
 xScl: 0.2
 yScl: 0.2
 layer: 22
+rotation: 15
 }
 {
 type: RegionPart
