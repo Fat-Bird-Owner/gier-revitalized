@@ -16,8 +16,12 @@ hidden: true
 outlineRadius: 0
 physics: false
 
+createScorch: false
 drag: 99999
 groundLayer: 75
+
+deathShake: 0
+deathExplosionEffect: none
 
 abilities: [
 {
