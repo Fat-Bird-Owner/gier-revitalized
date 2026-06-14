@@ -231,6 +231,8 @@ hittable: false
 }
 
 collideTerrain: true
+collides: true
+collidesTiles: true
 speed: 1.3334
 lifetime: 80
 absorbable: false
