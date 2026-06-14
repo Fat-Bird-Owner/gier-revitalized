@@ -74,7 +74,7 @@ under: false
 progress: {
 type: reload
 ops: [{
-type: compress
+op: compress
 start: 0
 end: 0.8
 }]
