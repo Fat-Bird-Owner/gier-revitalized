@@ -49,7 +49,6 @@ yScl: 2
 
 weapons: [
 {
-name: "slinger"
 x: 0
 y: 0
 rotate: true
@@ -62,9 +61,22 @@ rotateSpeed: 3
 shootSound: shoot-disarry
 parts: [
 {
-suffix: "-barrel"
+name: "gr-slinger"
+under: false
+
+xScl: 0.66
+yScl: 0.66
+
+}
+{
+name: "gr-slinger-barrel"
 under: false
 progress: heat
+
+xScl: 0.66
+yScl: 0.66
+
+moveY: -4
 }
 ]
 
@@ -95,11 +107,8 @@ trailLength: 14
 
 collidesAir: true
 collides: true
-splashDamage: 75
+splashDamage: 25
 splashDamageRadius: 22
-
-status: corroded
-statusDuration: 140
 
 frontColor: 89769a
 backColor: 89769a
