@@ -1,6 +1,7 @@
 type: missile
 lifetime: 3000
-  
+range: 120
+
 hitSize: 8
 flying: false
 name: "Tumor: Slinger"
@@ -83,8 +84,47 @@ progress: heat
 }
 ]
 
-bullet: {
+bullet:{
+type: BasicBulletType
+speed: 6
+lifetime: 20
 
+trailRotation: true
+trailInterval: 5
+trailEffect: {
+type: ParticleEffect
+particles: 1
+cone: 0
+region: "gr-shock-wave"
+sizeFrom: 4
+sizeTo: 16
+length: 0
+colorFrom: 89769a
+colorTo: 89769a00
+lifetime: 25
+}
+
+width: 7.5
+height: 11
+trailWidth: 2
+trailLength: 14
+
+collidesAir: true
+collides: true
+splashDamage: 75
+splashDamageRadius: 22
+
+status: corroded
+statusDuration: 140
+
+frontColor: 89769a
+backColor: 89769a
+trailColor: 89769a
+  
+hitColor: 89769a
+hitEffect: titanSmokeSmall
+despawnEffect: bigShockwave
+hitSound: explosionArtilleryShockBig
 }
   
 }
