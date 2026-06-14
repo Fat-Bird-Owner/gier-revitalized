@@ -85,7 +85,7 @@ xScl: 0.66
 yScl: 0.66
 cooldownTime: 150
 
-moveY: -4
+moveY: -2
 }
 ]
 
