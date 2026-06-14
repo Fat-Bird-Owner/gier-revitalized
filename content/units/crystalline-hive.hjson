@@ -189,6 +189,10 @@ spawnUnit: crystalline-hive-medium
 */
 {
 reload: 2940
+alwayShooting: true
+x: 0
+y: 0
+mirror: false
 
 shoot: {
 type: ShootSpread
