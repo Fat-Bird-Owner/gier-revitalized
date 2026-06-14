@@ -211,12 +211,19 @@ fragBullet: {
 instantDisappear: true
 collides: false
 ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
 
 fragBullet: {
 instantDisappear: true
 collides: false
 spawnUnit: tumor
 angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
 }
 
 }
