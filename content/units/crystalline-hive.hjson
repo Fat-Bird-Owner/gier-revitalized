@@ -244,9 +244,9 @@ hittable: false
 }
 
 }
-/*
+
 {
-reload: 2950
+reload: 2940
 alwaysShooting: true
 x: 0
 y: 0
@@ -254,10 +254,10 @@ mirror: false
 
 shoot: {
 type: ShootSpread
-spread: 90
-shots: 4
+spread: 120
+shots: 3
 shotDelay: 0
-firstShotDelay: 2950
+firstShotDelay: 2940
 }
 
 bullet: {
@@ -293,7 +293,7 @@ collideTerrain: true
 collides: true
 collidesTiles: true
 speed: 1.3334
-lifetime: 60
+lifetime: 70
 absorbable: false
 reflectable: false
 hittable: false
