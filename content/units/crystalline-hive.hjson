@@ -188,7 +188,7 @@ spawnUnit: crystalline-hive-medium
 }
 */
 {
-reload: 40
+reload: 2940
 alwaysShooting: true
 x: 0
 y: 0
@@ -205,7 +205,14 @@ bullet: {
 type: BasicBulletType
 collidesAir: false
 collidesGround: false
-despawnUnit: tumor
+fragBullet: 1
+
+fragBullet: {
+instantDisappear: true
+spawnUnit: tumor
+ignoreSpawnAngle: true
+}
+
 collidesTiles: true
 speed: 1.3334
 lifetime: 60
