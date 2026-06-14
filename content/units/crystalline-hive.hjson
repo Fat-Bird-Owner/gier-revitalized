@@ -142,7 +142,7 @@ scaleLife: true
 
 lifetime: 150
 speed: 3
-accel: 0.05
+accel: 0.025
 range: 150
 }
 
