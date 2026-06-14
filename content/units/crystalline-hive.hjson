@@ -196,6 +196,7 @@ mirror: false
 
 shoot: {
 type: ShootSpread
+firstShotDelay: 2920
 spread: 8
 shots: 45
 shotDelay: 0
@@ -254,6 +255,7 @@ type: ShootSpread
 spread: 90
 shots: 4
 shotDelay: 0
+firstShotDelay: 2950
 }
 
 bullet: {
