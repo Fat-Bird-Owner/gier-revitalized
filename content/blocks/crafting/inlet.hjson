@@ -4,7 +4,6 @@ name: Inlet
 
 requirements: [lead/35, copper/15, silicon/15]
   
-envEnabled: 5
 liquidCapacity: 25
 outputLiquid: water/0.016667
 
@@ -22,5 +21,10 @@ drawLiquid: water
 }
 {
 type: DrawDefault
+}
+{
+type: DrawParticles
+color: 596ab8ff
+particles: 7
 }
 ]
