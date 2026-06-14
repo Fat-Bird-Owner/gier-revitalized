@@ -1,0 +1,91 @@
+type: missile
+lifetime: 3000
+  
+hitSize: 8
+flying: false
+name: "Tumor: Slinger"
+
+health: 300
+drawBody: false
+drawCell: false
+
+speed: 0
+rotateSpeed: 0
+hidden: true
+outlineRadius: 0
+physics: false
+
+createScorch: false
+drag: 99999
+groundLayer: 75
+
+deathShake: 0
+deathExplosionEffect: none
+
+abilities: [
+{
+type: LiquidExplodeAbility
+liquid: gr-tuntra
+}
+]
+
+parts: [
+{
+name: "gr-hive-tendril"
+xScl: 0.5
+yScl: 0.5
+layer: 22
+rotation: 15
+}
+{
+type: RegionPart
+name: "gr-tumor"
+growX: 0.25
+growY: 0.25
+xScl: 2.75
+yScl: 2.75
+growProgress: {
+type: time
+ops: [
+{
+op: loop
+time: 75
+}
+{
+op: compress
+start: 0.65
+end: 1
+}
+{
+op: curve
+interp: bounceIn
+}
+{
+op: curve
+interp: slope
+}
+]
+
+}
+  
+}
+]
+
+weapons: [
+{
+name: "slinger"
+
+parts: [
+{
+suffix: "-barrel"
+under: false
+progress: heat
+}
+]
+
+bullet: {
+
+}
+  
+}
+]
