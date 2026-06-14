@@ -43,8 +43,8 @@ type: RegionPart
 name: "gr-tumor"
 growX: 0.25
 growY: 0.25
-xScl: 1.75
-yScl: 1.75
+xScl: 2.5
+yScl: 2.5
 growProgress: {
 type: time
 ops: [
@@ -79,6 +79,10 @@ x: 0
 y: 0
 rotate: true
 mirror: false
+
+reload: 180
+layerOffset: 0.1
+rotateSpeed: 3
 
 parts: [
 {
