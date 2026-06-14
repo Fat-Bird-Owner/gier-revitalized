@@ -2,7 +2,7 @@ type: missile
 lifetime: 3000
 range: 120
 
-hitSize: 8
+hitSize: 24
 flying: false
 name: "Tumor: Slinger"
 
