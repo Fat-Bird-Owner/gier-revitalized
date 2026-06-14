@@ -1,0 +1,60 @@
+type: missile
+lifetime: 3000
+  
+hitSize: 8
+flying: false
+name: "Tumor"
+
+health: 500
+drawBody: false
+drawCell: false
+clipSize: 200
+
+speed: 0
+rotateSpeed: 0
+hidden: true
+outlineRadius: 0
+physics: false
+
+drag: 99999
+groundLayer: 45
+
+parts: [
+{
+name: "gr-hive-tendril"
+xScl: 0.2
+yScl: 0.2
+layer: 22
+}
+{
+type: RegionPart
+name: "gr-tumor"
+growX: 0.25
+growY: 0.25
+growProgress: {
+type: time
+ops: [
+{
+op: loop
+time: 75
+}
+{
+op: compress
+start: 0.65
+end: 1
+}
+{
+op: curve
+interp: bounceIn
+}
+{
+op: curve
+interp: slope
+}
+]
+
+}
+  
+}
+]
+
