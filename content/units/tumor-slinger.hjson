@@ -41,33 +41,8 @@ rotation: 15
 {
 type: RegionPart
 name: "gr-tumor"
-growX: 0.25
-growY: 0.25
-xScl: 2.5
-yScl: 2.5
-growProgress: {
-type: time
-ops: [
-{
-op: loop
-time: 75
-}
-{
-op: compress
-start: 0.65
-end: 1
-}
-{
-op: curve
-interp: bounceIn
-}
-{
-op: curve
-interp: slope
-}
-]
-
-}
+xScl: 2
+yScl: 2
   
 }
 ]
@@ -84,6 +59,7 @@ reload: 180
 layerOffset: 0.1
 rotateSpeed: 3
 
+shootSound: shoot-disarry
 parts: [
 {
 suffix: "-barrel"
@@ -94,7 +70,7 @@ progress: heat
 
 bullet:{
 type: BasicBulletType
-speed: 6
+speed: 12
 lifetime: 20
 
 trailRotation: true
@@ -130,7 +106,7 @@ backColor: 89769a
 trailColor: 89769a
   
 hitColor: 89769a
-hitEffect: titanSmokeSmall
+hitEffect: none
 despawnEffect: bigShockwave
 hitSound: explosionArtilleryShockBig
 }
