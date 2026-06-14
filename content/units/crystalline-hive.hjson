@@ -205,12 +205,13 @@ bullet: {
 type: BasicBulletType
 collidesAir: false
 collidesGround: false
-fragBullet: 1
 
+fragBullets: 1
 fragBullet: {
 instantDisappear: true
 spawnUnit: tumor
 ignoreSpawnAngle: true
+angleOffset: 90
 }
 
 collidesTiles: true
