@@ -188,7 +188,7 @@ spawnUnit: crystalline-hive-medium
 }
 */
 {
-reload: 2940
+reload: 40
 alwayShooting: true
 x: 0
 y: 0
@@ -198,6 +198,7 @@ shoot: {
 type: ShootSpread
 spread: 8
 shots: 45
+shotDelay: 0
 }
 
 bullet: {
@@ -206,7 +207,7 @@ collidesAir: false
 collidesGround: false
 despawnUnit: tumor
 collidesTiles: true
-speed: 3
+speed: 1.3334
 lifetime: 60
 absorbable: false
 reflectable: false
