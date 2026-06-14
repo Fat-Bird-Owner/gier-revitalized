@@ -71,7 +71,15 @@ yScl: 0.66
 {
 name: "gr-slinger-barrel"
 under: false
-progress: heat
+progress: {
+type: reload
+op: {
+type: compress
+start: 0
+end: 0.8
+}
+
+}
 
 xScl: 0.66
 yScl: 0.66
