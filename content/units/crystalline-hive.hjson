@@ -207,6 +207,8 @@ type: BasicBulletType
 collidesAir: true
 collidesGround: true
 fragRandomSpread: 0
+width: 0
+height: 0
 
 fragBullets: 1
 fragBullet: {
@@ -249,6 +251,7 @@ alwaysShooting: true
 x: 0
 y: 0
 mirror: false
+noAttack: true
 
 shoot: {
 type: ShootSpread
