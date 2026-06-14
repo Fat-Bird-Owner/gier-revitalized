@@ -188,7 +188,7 @@ spawnUnit: crystalline-hive-medium
 }
 */
 {
-reload: 2940
+reload: 2920
 alwaysShooting: true
 x: 0
 y: 0
@@ -230,9 +230,9 @@ hittable: false
 
 }
 
-collidesTiles: true
+collideTerrain: true
 speed: 1.3334
-lifetime: 60
+lifetime: 80
 absorbable: false
 reflectable: false
 hittable: false
