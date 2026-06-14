@@ -1,0 +1,26 @@
+type: GenericCrafter
+size: 1
+name: Inlet
+
+requirements: [lead/35, copper/15, silicon/15]
+  
+envEnabled: 4
+liquidCapacity: 25
+outputLiquid: water/0.016667
+
+buildVisibility: sandboxOnly
+category: production
+  
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+}
+{
+type: DrawDefault
+}
+]
