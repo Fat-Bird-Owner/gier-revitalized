@@ -1,0 +1,15 @@
+difficulty: 5.5
+
+sector: 64
+captureWave: 10
+planet: kela
+
+research: {
+parent: intercept
+objectives:[
+{
+type: SectorComplete
+preset: intercept
+}
+]
+}
