@@ -116,7 +116,7 @@ spawnUnit: "gr-crystal-crawler"
 shootEffect: {
 type: WrapEffect
 effect: missileTrailSmoke
-color: 89769a
+color: C9A5C8FF
 }
 
 }
