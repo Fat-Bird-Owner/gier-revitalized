@@ -10,8 +10,8 @@ Team.get(5).emoji = "[#A4CBE0][]";
 Team.get(4).setPalette(Color.valueOf("8f55ce"));
 Team.get(4).emoji = ""; 
 
-Team.get(7).setPalette(Color.valueOf("89769a"));
-Team.get(7).emoji = "[#89769a][]"; 
+Team.get(7).setPalette(Color.valueOf("C9A5C8FF"));
+Team.get(7).emoji = "[#C9A5C8FF][]"; 
 Team.get(7).name = "Crystalline Critters"
   
 Planets.gier.visible = true;
