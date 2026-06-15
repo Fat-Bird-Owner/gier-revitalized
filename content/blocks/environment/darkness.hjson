@@ -1,3 +1,6 @@
 type: StaticWall
 fillsTile: false
 forceDark: true
+name: Darkness
+
+variants: 0
