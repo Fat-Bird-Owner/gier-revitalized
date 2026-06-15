@@ -1,0 +1,158 @@
+type: Payload
+drag: 9999
+name: Crawler Incubator
+
+drawCell: false
+drawBody: false
+groundLayer: 51
+
+speed: 0
+health: 450
+hitSize: 20
+  
+parts: [
+
+{
+type: RegionPart
+name: "gr-crawler-incubator"
+
+moves: [
+{
+gx: 0.25
+gy: 0.25
+progress: {
+type: time
+ops: [
+{
+op: loop
+time: 75
+}
+{
+op: compress
+start: 0.65
+end: 1
+}
+{
+op: curve
+interp: bounceIn
+}
+{
+op: curve
+interp: slope
+}
+]
+
+}
+// 
+  
+}
+]
+  
+}
+// Region end
+
+{
+type: RegionPart
+name: "gr-crawler-incubator-top"
+layerOffset: 0.35
+  
+moves: [
+{
+gx: 0.25
+gy: 0.25
+progress: {
+type: time
+ops: [
+{
+op: loop
+time: 75
+}
+{
+op: compress
+start: 0.65
+end: 1
+}
+{
+op: curve
+interp: bounceIn
+}
+{
+op: curve
+interp: slope
+}
+]
+
+}
+// 
+  
+}
+]
+  
+}
+// Region end
+]
+
+weapons: [
+{
+reload: 600
+shoot: {
+firstShotDelay: 600
+}
+alwayShooting: true
+
+bullet: {
+type: EmptyBulletType
+spawnUnit: "gr-crystal-crawler"
+}
+
+parts: [
+{
+{
+type: RegionPart
+name: "gr-crawler-incubator-spore"
+layer: 51.2
+xScl: 0
+yScl: 0
+  
+moves: [
+{
+gx: 1
+gy: 1
+progress: charge
+}
+{
+gx: 0.25
+gy: 0.25
+progress: {
+type: time
+ops: [
+{
+op: loop
+time: 75
+}
+{
+op: compress
+start: 0.65
+end: 1
+}
+{
+op: curve
+interp: bounceIn
+}
+{
+op: curve
+interp: slope
+}
+]
+
+}
+// 
+  
+}
+]
+  
+}}
+]
+
+}
+]
