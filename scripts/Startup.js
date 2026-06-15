@@ -10,6 +10,10 @@ Team.get(5).emoji = "[#A4CBE0][]";
 Team.get(4).setPalette(Color.valueOf("8f55ce"));
 Team.get(4).emoji = ""; 
 
+Team.get(7).setPalette(Color.valueOf("89769a"));
+Team.get(7).emoji = "[#89769a][]"; 
+
+  
 Planets.gier.visible = true;
 Planets.gier.accessible = true;
 Planets.gier.alwaysUnlocked = true;
