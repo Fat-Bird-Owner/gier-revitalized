@@ -106,6 +106,7 @@ alwaysShooting: true
 x: 0
 y: 0
 mirror: false
+shootSound: blockExplodeExplosive
 
 bullet: {
 type: EmptyBulletType
