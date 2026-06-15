@@ -1,7 +1,7 @@
 type: legs
-health: 665
+health: 650
 name: Impeach
-armor: 15
+armor: 2.5 
 drag: 0.14
 
 speed: 1.2
@@ -23,7 +23,7 @@ reload: 12.5
 rotate: true
 rotateSpeed: 7.5
 
-shootSound: blockPlace1
+shootSound: shootFlame
 x: -3
 y: -2.75
 mirror: false
@@ -46,6 +46,8 @@ name: "gr-F0D5FFFF-weapon-shadow"
 }
 ]
 
+shootStatus: slow
+shootStatusDuration: 60
 bullet: {
 type: ContinuousFlameBulletType
 lifetime: 20
