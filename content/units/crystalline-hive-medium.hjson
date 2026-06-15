@@ -1,7 +1,7 @@
 type: payload
 hitSize: 16
 flying: false
-name: "Crystalline Hive"
+name: "Crystalline Hive: [lightgrey]Medium"
 
 health: 1750
 drawBody: false
