@@ -4,7 +4,7 @@ health: 650
 armor: 5
 
 speed: 0.75
-targetFlags: [core, turret, generator]
+targetFlags: [generator, turret, core]
 databaseTag: "crystal-bug"
 
 drawCell: false
