@@ -429,4 +429,28 @@ hittable: false
 }
 
 }
+
+{
+reload: 150
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+bullet: {
+type: EmptyBulletType
+despawnUnit: gr-impeach
+createChance: 0.66
+instantDisappear: true
+
+shootEffect: {
+type: WrapEffect
+effect: mineHuge
+color: 7457ce
+}
+
+
+}
+
+}
 ]
