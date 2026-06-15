@@ -125,7 +125,7 @@ y: 0
 mirror: false
 
 bullet: {
-type: MissileBulletType
+type: BasicBulletType
 frontColor: 7457ce
 backColor: 7457ce
 trailColor: 7457ce
@@ -136,14 +136,15 @@ weaveMag: 1.21
 trailWidth: 1
 trailLength: 12
 
-homingPower: 0.15
+homingPower: 0.225
 damage: 25
 scaleLife: true
 
-lifetime: 150
-speed: 3
+lifetime: 75
+speed: 6
 accel: 0.025
 range: 150
+homingRange: 150
 }
 
 }
@@ -265,6 +266,9 @@ type: BasicBulletType
 collidesAir: true
 collidesGround: true
 fragRandomSpread: 0
+
+width: 0
+height: 0
 
 fragBullets: 1
 fragBullet: {
