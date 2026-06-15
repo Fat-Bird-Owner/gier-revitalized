@@ -151,10 +151,6 @@ op: curve
 interp: slope
 }]
 
-}
-
-}
-]
 
 }
 
@@ -166,4 +162,3 @@ interp: slope
 
 }
 ]
-
