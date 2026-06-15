@@ -23,7 +23,7 @@ crushDamage: 1.25
 abilities: [
 {
 type: MoveEffectAbility
-minVelocity: 0
+minVelocity: 1
 color: 89769a
 effect: vapor
 interval: 6
