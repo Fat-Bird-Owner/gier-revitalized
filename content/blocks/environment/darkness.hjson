@@ -5,3 +5,4 @@ name: Darkness
 
 variants: 0
 hasShadow: false
+fullOverride: "gr-darkness-ui"
