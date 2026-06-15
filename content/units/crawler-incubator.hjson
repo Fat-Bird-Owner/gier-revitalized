@@ -109,7 +109,6 @@ spawnUnit: "gr-crystal-crawler"
 //
 parts: [
 {
-{
 type: RegionPart
 name: "gr-crawler-incubator-spore"
 layer: 51.2
@@ -148,6 +147,7 @@ interp: slope
 ]
 
 }
+]
 // 
   
 }
