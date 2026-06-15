@@ -1,7 +1,7 @@
 type: legs
 health: 650
 name: Impeach
-armor: 2.5 
+armor: 15
 drag: 0.14
 
 speed: 1.2
@@ -16,6 +16,7 @@ legMinLength: 0.75
 
 outlineRadius: 0
 outlineColor: 00000000
+range: 80
 
 weapons:[
 {
@@ -60,6 +61,7 @@ pierceArmor: false
 length: 80
 width: 1.5
 colors: [F0D5FFFF, F4E0FFFF, F8EAFFFF, FBF4FFFF, ffffff]
+range: 80
 }
 
 }
