@@ -26,6 +26,7 @@ type: MoveEffectAbility
 minVelocity: 0
 color: 89769a
 effect: vapor
+interval: 6
 }
 ]
   
@@ -47,6 +48,7 @@ hitEffect: missileTrailSmoke
 hitColor: 89769a
 despawnEffect: shockwave
 killShooter: true
+instantDisappear: true
 }
 
 }
