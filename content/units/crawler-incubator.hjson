@@ -10,6 +10,9 @@ speed: 0
 health: 450
 hitSize: 20
 
+rotateSpeed: 0
+outlineRadius: 0
+
 parts: [
 
 {
@@ -99,10 +102,17 @@ reload: 600
 shoot: {
 firstShotDelay: 600
 }
-alwayShooting: true
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
 
 bullet: {
 type: EmptyBulletType
+despawnHit: true
+instantDisappear: true
+hitColor: 89769a
+hitEffect: missileTrailSmoke
 spawnUnit: "gr-crystal-crawler"
 }
 
