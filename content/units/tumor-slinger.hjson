@@ -20,7 +20,7 @@ createScorch: false
 drag: 99999
 groundLayer: 75
 
-deathShake: 0
+deathShake: 2
 deathExplosionEffect: none
 
 abilities: [
