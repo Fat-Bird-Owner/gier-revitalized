@@ -383,7 +383,7 @@ shoot: {
 type: ShootSpread
 firstShotDelay: 2920
 spread: 120
-shots: 33
+shots: 3
 shotDelay: 0
 }
 
