@@ -1,11 +1,12 @@
 type: payload
 hitSize: 16
 flying: false
-name: "Crystalline Hive [lightgrey](Medium)"
+name: "Crystalline Hive"
 
-health: 2250
+health: 1750
 drawBody: false
 drawCell: false
+clipSize: 200
 
 speed: 0
 rotateSpeed: 0
@@ -13,7 +14,7 @@ hidden: true
 outlineRadius: 0
 physics: false
 
-drag: 9999
+drag: 99999
 groundLayer: 45
 
 abilities: [
@@ -23,26 +24,61 @@ liquid: gr-tuntra
 }
 {
 type: RegenAbility
-percentAmouht: 0.0833333
+percentAmount: 0.0833333
+}
+{
+type: EnergyFieldAbility
+hitUnits: false
+hitEffect: none	
+damageEffect: none	
+status: none
+shootSound: none
+sectors: 20
+color: 7457ce
+damage: 10
+healEffect: none
+layer: 33
+range: 160
+rotateSpeed: 0
+sectorRad: 8
+blinkSize: 8
+blinkScl: 0
+effectRadius: 0
+}
+{
+type: EnergyFieldAbility
+hitUnits: false
+hitEffect: none	
+damageEffect: none	
+status: none
+shootSound: none
+sectors: 20
+color: 3f3f3ff
+damage: 0
+healEffect: none
+layer: 32.9
+y: -1
+range: 160
+rotateSpeed: 0
+sectorRad: 8
+blinkSize: 8
+blinkScl: 0
+effectRadius: 0
 }
 ]
 
 parts: [
 {
 name: "gr-hive-tendril"
-xScl: 0.95
-yScl: 0.95
+xScl: 0.75
+yScl: 0.75
 layer: 22
-rotation: 33
 }
 {
 type: RegionPart
 name: "gr-sporeoplasma-hive"
 growX: 0.25
 growY: 0.25
-xScl: 1.15
-yScl: 1.15
-  
 growProgress: {
 type: time
 ops: [
@@ -68,6 +104,14 @@ interp: slope
 }
   
 }
+{
+type: HoverPart
+sides: 100
+radius: 40
+phase: 300
+layer: 12
+color: 7457ce
+}
 ]
 
 range: 150
@@ -81,7 +125,7 @@ y: 0
 mirror: false
 
 bullet: {
-type: MissileBulletType
+type: BasicBulletType
 frontColor: 7457ce
 backColor: 7457ce
 trailColor: 7457ce
@@ -89,16 +133,18 @@ trailColor: 7457ce
 trailEffect: none
 weaveScl: 3
 weaveMag: 1.21
-
-trailLength: 4
 trailWidth: 1
-  
-homingPower: 0.075
-damage: 9
+trailLength: 12
 
-lifetime: 60
-speed: 2.5
+homingPower: 0.225
+damage: 25
+scaleLife: true
+
+lifetime: 75
+speed: 6
+accel: 0.025
 range: 150
+homingRange: 150
 }
 
 }
@@ -111,16 +157,9 @@ mirror: false
 
 bullet: {
 type: EmptyBulletType
-fragBullets: 2
-instantDisappear: true
-despawnHit: true
-
-fragBullet: {
-type: EmptyBulletType
 despawnUnit: gr-crystal-bug
 createChance: 0.66
 instantDisappear: true
-}
 
 shootEffect: {
 type: WrapEffect
@@ -129,6 +168,258 @@ color: 7457ce
 }
 
 
+}
+
+}
+/*
+{
+reload: 7501
+alwaysShooting: true
+
+shoot: {
+firstShotDelay: 7500
+}
+
+bullet: {
+instantDisappear: true
+killShooter: true
+spawnUnit: crystalline-hive-medium
+}
+
+}
+*/
+
+{
+reload: 2920
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+shoot: {
+type: ShootSpread
+firstShotDelay: 2920
+spread: 8
+shots: 45
+shotDelay: 0
+}
+
+bullet: {
+type: BasicBulletType
+collidesAir: true
+collidesGround: true
+fragRandomSpread: 0
+width: 0
+height: 0
+
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+collides: false
+ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
+fragRandomSpread: 0
+
+fragBullet: {
+instantDisappear: true
+collides: false
+spawnUnit: tumor
+angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+collideTerrain: true
+collides: true
+collidesTiles: true
+speed: 1.3334
+lifetime: 80
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+{
+reload: 2940
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+shoot: {
+type: ShootSpread
+spread: 90
+shots: 4
+shotDelay: 0
+firstShotDelay: 2940
+}
+
+bullet: {
+type: BasicBulletType
+collidesAir: true
+collidesGround: true
+fragRandomSpread: 0
+
+width: 0
+height: 0
+
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+collides: false
+ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
+fragRandomSpread: 0
+
+fragBullet: {
+instantDisappear: true
+collides: false
+spawnUnit: tumor-slinger
+angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+collideTerrain: true
+collides: true
+collidesTiles: true
+speed: 1.3334
+lifetime: 70
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+
+
+{
+reload: 2920
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+shoot: {
+type: ShootSpread
+firstShotDelay: 2920
+spread: 8
+shots: 45
+shotDelay: 0
+}
+
+bullet: {
+type: BasicBulletType
+collidesAir: true
+collidesGround: true
+fragRandomSpread: 0
+width: 0
+height: 0
+
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+collides: false
+ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
+fragRandomSpread: 0
+
+fragBullet: {
+instantDisappear: true
+collides: false
+spawnUnit: tumor
+angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+collideTerrain: true
+collides: true
+collidesTiles: true
+speed: 0.6667
+lifetime: 80
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+{
+reload: 2920
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+shoot: {
+type: ShootSpread
+firstShotDelay: 2920
+spread: 120
+shots: 33
+shotDelay: 0
+}
+
+bullet: {
+type: BasicBulletType
+collidesAir: true
+collidesGround: true
+fragRandomSpread: 0
+width: 0
+height: 0
+
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+collides: false
+ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
+fragRandomSpread: 0
+
+fragBullet: {
+instantDisappear: true
+collides: false
+spawnUnit: crawler-incubator
+angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+collideTerrain: true
+collides: true
+collidesTiles: true
+speed: 0.445
+lifetime: 80
+absorbable: false
+reflectable: false
+hittable: false
 }
 
 }
