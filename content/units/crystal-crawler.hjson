@@ -25,7 +25,7 @@ abilities: [
 type: MoveEffectAbility
 minVelocity: 0
 color: 89769a
-effect: vqpor
+effect: vapor
 }
 ]
   
