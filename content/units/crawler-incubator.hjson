@@ -149,12 +149,14 @@ interp: bounceIn
 {
 op: curve
 interp: slope
-}]
+}
+]
 
 
 }
 
 #--
+}]
 
 }
 ]
