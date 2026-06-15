@@ -41,8 +41,8 @@ rotation: 15
 {
 type: RegionPart
 name: "gr-tumor"
-xScl: 2
-yScl: 2
+xScl: 1.75
+yScl: 1.75
   
 }
 ]
@@ -116,8 +116,8 @@ trailLength: 14
 
 collidesAir: true
 collides: true
-splashDamage: 25
-splashDamageRadius: 22
+splashDamage: 45
+splashDamageRadius: 35
 
 frontColor: 89769a
 backColor: 89769a
