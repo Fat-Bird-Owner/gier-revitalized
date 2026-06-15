@@ -9,9 +9,9 @@ groundLayer: 51
 speed: 0
 health: 450
 hitSize: 20
-outlineRadius: 0
-
+  
 parts: [
+
 {
 type: RegionPart
 name: "gr-crawler-incubator"
@@ -41,15 +41,21 @@ op: curve
 interp: slope
 }
 ]
+
 }
+// 
+  
 }
 ]
+  
 }
+// Region end
+
 {
 type: RegionPart
 name: "gr-crawler-incubator-top"
 layerOffset: 0.35
-
+  
 moves: [
 {
 gx: 0.25
@@ -75,10 +81,15 @@ op: curve
 interp: slope
 }
 ]
+
 }
+// 
+  
 }
 ]
+  
 }
+// Region end
 ]
 
 weapons: [
@@ -94,48 +105,5 @@ type: EmptyBulletType
 spawnUnit: "gr-crystal-crawler"
 }
 
-parts: [
-{
-type: RegionPart
-name: "gr-crawler-incubator-spore"
-layer: 51.2
-xScl: 0
-yScl: 0
-
-moves: [
-{
-gx: 1
-gy: 1
-progress: charge
-}
-{
-gx: 0.25
-gy: 0.25
-progress: {
-type: time
-ops: [
-{
-op: loop
-time: 75
-}
-{
-op: compress
-start: 0.65
-end: 1
-}
-{
-op: curve
-interp: bounceIn
-}
-{
-op: curve
-interp: slope
-}
-]
-}
-}
-]
-}
-]
 }
 ]
