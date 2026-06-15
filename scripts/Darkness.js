@@ -1,4 +1,4 @@
-Events.on(ContentInitEvent, () => {
+Events.on(ClientLoadEvent, () => {
 try {
 
 const darkness = Vars.content.block("gr-darkness");
