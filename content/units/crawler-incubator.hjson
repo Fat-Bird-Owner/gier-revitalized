@@ -9,7 +9,8 @@ groundLayer: 51
 speed: 0
 health: 450
 hitSize: 20
-  
+
+/*
 parts: [
 
 {
@@ -91,6 +92,7 @@ interp: slope
 }
 // Region end
 ]
+*/
 
 weapons: [
 {
