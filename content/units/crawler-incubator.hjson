@@ -12,7 +12,6 @@ hitSize: 20
 outlineRadius: 0
 
 parts: [
-
 {
 type: RegionPart
 name: "gr-crawler-incubator"
@@ -42,21 +41,15 @@ op: curve
 interp: slope
 }
 ]
-
 }
-// 
-  
 }
 ]
-  
 }
-// Region end
-
 {
 type: RegionPart
 name: "gr-crawler-incubator-top"
 layerOffset: 0.35
-  
+
 moves: [
 {
 gx: 0.25
@@ -82,15 +75,10 @@ op: curve
 interp: slope
 }
 ]
-
 }
-// 
-  
 }
 ]
-  
 }
-// Region end
 ]
 
 weapons: [
@@ -113,7 +101,7 @@ name: "gr-crawler-incubator-spore"
 layer: 51.2
 xScl: 0
 yScl: 0
-  
+
 moves: [
 {
 gx: 1
@@ -144,9 +132,10 @@ op: curve
 interp: slope
 }
 ]
-
-}}
-]}]
-
+}
+}
+]
+}
+]
 }
 ]
