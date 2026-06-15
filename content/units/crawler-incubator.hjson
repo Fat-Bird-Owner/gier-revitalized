@@ -1,4 +1,5 @@
-type: payload
+type: missile
+lifetime: 3000
 drag: 9999
 name: Crawler Incubator
 
