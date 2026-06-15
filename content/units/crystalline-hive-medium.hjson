@@ -3,7 +3,7 @@ hitSize: 16
 flying: false
 name: "Crystalline Hive: [lightgrey]Medium"
 
-health: 1750
+health: 2500
 drawBody: false
 drawCell: false
 clipSize: 200
@@ -70,9 +70,10 @@ effectRadius: 0
 parts: [
 {
 name: "gr-hive-tendril"
-xScl: 0.75
-yScl: 0.75
+xScl: 0.85
+yScl: 0.85
 layer: 22
+rotation: 44
 }
 {
 type: RegionPart
@@ -157,8 +158,13 @@ mirror: false
 
 bullet: {
 type: EmptyBulletType
-despawnUnit: gr-crystal-bug
+fragBullets: 3
+
+fragBullet: {
+spawnUnit: gr-crystal-bug
 createChance: 0.66
+}
+
 instantDisappear: true
 
 shootEffect: {
