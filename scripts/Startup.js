@@ -13,6 +13,7 @@ Team.get(4).emoji = "";
 Team.get(7).setPalette(Color.valueOf("C9A5C8FF"));
 Team.get(7).emoji = "[#C9A5C8FF][]"; 
 Team.get(7).name = "Crystalline Critters"
+Team.get(7).ignoreUnitCap = true;
   
 Planets.gier.visible = true;
 Planets.gier.accessible = true;
