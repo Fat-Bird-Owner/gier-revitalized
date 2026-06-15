@@ -4,3 +4,4 @@ forceDark: true
 name: Darkness
 
 variants: 0
+hasShadow: false
