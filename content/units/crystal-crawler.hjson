@@ -1,0 +1,53 @@
+type: crawl
+name: Crystal Crawler
+health: 650
+armor: 5
+
+speed: 0.75
+
+databaseTag: "crystal-bug"
+
+drawCell: false
+shadowElevation: 0.16
+controller: HugAI
+
+rotateSpeed: 6
+omniMovement: false
+
+rotateToBuilding: false
+faceTarget: false
+drawSoftShadow: false
+
+crushDamage: 0.5
+
+abilities: [
+{
+type: MoveEffectAbility
+minVelocity: 0
+color: 89769a
+effect: vqpor
+}
+]
+  
+outlineRadius: 0
+weapons:[
+{
+x: 0
+y: 0
+rotate: true
+mirror: false
+shootOnDeath: true
+  
+bullet:{
+type: BombBulletType
+splashDamage: 1500
+splashDamageRadius: 40
+despawnHit: true
+hitEffect: missileTrailSmoke
+hitColor: 89769a
+despawnEffect: shockwave
+killShooter: true
+}
+
+}
+]
