@@ -107,12 +107,16 @@ x: 0
 y: 0
 mirror: false
 
+shootEffect: {
+type: WrapEffect
+effect: missileTrailSmoke
+color: 89769a
+}
+
 bullet: {
 type: EmptyBulletType
 despawnHit: true
 instantDisappear: true
-hitColor: 89769a
-hitEffect: missileTrailSmoke
 spawnUnit: "gr-crystal-crawler"
 }
 
