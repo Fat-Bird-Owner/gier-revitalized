@@ -102,7 +102,7 @@ particles: 1
 cone: 0
 region: "gr-shock-wave"
 sizeFrom: 4
-sizeTo: 16
+sizeTo: 8
 length: 0
 colorFrom: 89769a
 colorTo: 89769a00
