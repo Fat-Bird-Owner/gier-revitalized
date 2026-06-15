@@ -125,10 +125,15 @@ progress: charge
 {
 gx: 0.25
 gy: 0.25
+
+#--
+
 progress: {
 type: time
 
-ops: [{
+
+ops: [
+{
 op: loop
 time: 75
 }
@@ -150,11 +155,10 @@ interp: slope
 
 }
 ]
-// 
-  
+
 }
-]
-}
+
+#--
 
 }
 ]
