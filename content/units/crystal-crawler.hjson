@@ -18,8 +18,12 @@ rotateToBuilding: false
 faceTarget: false
 drawSoftShadow: false
 
+segments: 3
+segmentScl: 3
 crushDamage: 1.25
 
+drawCell: false
+drawBody: false
 abilities: [
 {
 type: MoveEffectAbility
