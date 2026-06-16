@@ -22,6 +22,8 @@ segments: 3
 segmentScl: 3
 crushDamage: 1.25
 
+segmentMag: 0
+
 drawCell: false
 drawBody: false
 abilities: [
