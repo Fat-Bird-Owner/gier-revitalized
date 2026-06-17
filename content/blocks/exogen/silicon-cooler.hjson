@@ -1,0 +1,29 @@
+type: GenericCrafter
+size: 1
+buildVisibility: sandboxOnly
+name: Silicon Cooler
+
+craftTime: 60
+craftEffect: pulverize
+outputItem: silicon/1
+
+category: crafting
+requirements: [silicon/15, titanium/20]
+consumes: {
+liquids: [liquid-silicon/0.016667]
+}
+
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawBlurSpin
+suffix: "-rotator"
+blurThresh: 1
+}
+{
+type: DrawRegion
+suffix: "-top"
+}
+]
