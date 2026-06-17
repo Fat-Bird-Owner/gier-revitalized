@@ -148,7 +148,7 @@ if(!currentTile) return;
 if(!currentTile.build) break;
 
 if(currentTile.solid() && !currentTile.build) return;
-if (currentTile.block().size > frontBuild.block.size) return;
+if (currentTile.block().size > frontBuild.block.size && !(currentTile.build instanceof PayloadConveyor.PayloadConveyorBuild)) return;
 
 chain.push(currentTile);
 
@@ -190,6 +190,14 @@ frontBuild.rotation * 90
 );
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
+
+if (currentTile.build instanceof PayloadConveyor.PayloadConveyorBuild && currentTile.item == null) {
+currentTile.item = new BuildPayload(movingBuild.block);
+movingBuild.setAir();
+  
+return;
+}
+
 toTile.setBlock(
 movingBuild.block,
 movingBuild.team,
