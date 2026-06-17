@@ -191,9 +191,10 @@ frontBuild.rotation * 90
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 
-Vars.ui.showInfoToast(toTile.build instanceof PayloadConveyor.PayloadConveyorBuild + " : " + toTile.build.item == null, 5);
+Vars.ui.showInfoToast(toTile.build instanceof PayloadConveyor.PayloadConveyorBuild + " : " + toTile.build.acceptPayload(toTile.build, new BuildPayload(fromTile.block(), fromTile.team()), 5);
+  
 if (toTile.build instanceof PayloadConveyor.PayloadConveyorBuild && toTile.build.item == null) {
-toTile.build.item = new BuildPayload(fromTile.block(), movingBuild.team());
+toTile.build.item = new BuildPayload(fromTile.block(), fromTile.team());
 fromTile.setAir();
   
 return;
