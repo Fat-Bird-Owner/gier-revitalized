@@ -193,7 +193,7 @@ Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 
 Vars.ui.showInfoToast(toTile.build.handlePayload != null, 5);
   
-if (toTile.build.handlePayload) {
+if (toTile.build.handlePayload != null) {
 toTile.build.handlePayload(toTile.build, new BuildPayload(fromTile.block(), fromTile.team()) );
 fromTile.setAir();
   
