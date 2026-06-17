@@ -1,0 +1,14 @@
+type: AttributeCrafter
+attribute: steam
+
+category: production
+buildVisibility: sandboxOnly
+requirements: [lead/50, copper/50, silicon/25]
+
+size: 3
+baseEfficiency: 0
+boostScale: 0.1112
+  
+minEfficiency: 1
+displayEfficiency: false
+outputLiquid: liquid-silicon/0.05
