@@ -159,7 +159,7 @@ if(!currentTile) return;
 if(currentTile.build && !currentTile.build.handlePayload) return;
 if(currentTile.solid()) return;
 
-for(let i = chain.length - 1; i >= 0; i--){
+for(let i = 0; i < chain.length; i++){
 
 const fromTile = chain[i];
 const toTile = fromTile.nearby(frontBuild.rotation);
