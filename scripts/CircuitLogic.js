@@ -156,7 +156,7 @@ currentTile = currentTile.nearby(frontBuild.rotation);
 }
 
 if(!currentTile) return;
-if(currentTile.build && !(currentTile.build instanceof PayloadConveyor.PayloadConveyorBuild)) return;
+if(currentTile.build && !currentTile.build.handlePayload) return;
 if(currentTile.solid()) return;
 
 for(let i = chain.length - 1; i >= 0; i--){
@@ -191,10 +191,10 @@ frontBuild.rotation * 90
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 
-Vars.ui.showInfoToast(toTile.build instanceof PayloadConveyor.PayloadConveyorBuild, 5);
+Vars.ui.showInfoToast(toTile.build.handlePayload, 5);
   
-if (toTile.build instanceof PayloadConveyor.PayloadConveyorBuild && toTile.build.item == null) {
-toTile.build.item = new BuildPayload(fromTile.block(), fromTile.team());
+if (toTile.build.handlePayload) {
+toTile.build.handlePayload(toTile.build, new BuildPayload(fromTile.block(), fromTile.team()) );
 fromTile.setAir();
   
 return;
