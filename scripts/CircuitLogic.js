@@ -191,7 +191,7 @@ frontBuild.rotation * 90
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
 
-if (toTile.build instanceof PayloadConveyor.PayloadConveyorBuild && toTile.item == null) {
+if (toTile.build instanceof PayloadConveyor.PayloadConveyorBuild && toTile.build.item == null) {
 toTile.item = new BuildPayload(movingBuild.block, movingBuild.team);
 fromTile.setAir();
   
