@@ -55,8 +55,8 @@ collidesTeam: true
 healPercent: 1.5
 healColor: ffaa5f
   
-status: melting
-statusDuration: 180
+status: disarmed
+statusDuration: 30
 
 chargeEffect: {
 type: WaveEffect
