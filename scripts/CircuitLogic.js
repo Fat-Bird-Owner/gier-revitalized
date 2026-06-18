@@ -183,6 +183,7 @@ lifetime: 5
 });
 
 if (fromTile.block().size > 1) continue;
+if (fromTile.build instanceof ConstructBlock.ConstructBuild) break;
   
 if (movingBuild){
 fx.at(
