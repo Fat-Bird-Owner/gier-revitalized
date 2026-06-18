@@ -191,7 +191,7 @@ frontBuild.rotation * 90
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
   
-if (toTile.build && toTile.build.handlePayload) {
+if (toTile.build && toTile.build.handlePayload && fromTile.block().name != "build1") {
 toTile.build.handlePayload(toTile.build, new BuildPayload(fromTile.block(), fromTile.team()) );
 fromTile.setAir();
   
