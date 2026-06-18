@@ -50,9 +50,9 @@ rotationOffset: 45
 }
 
 requirements:[
-lead/445
-copper/365
-graphite/265
+lead/400
+copper/350
+graphite/250
 ]
 buildTime: 300
 
