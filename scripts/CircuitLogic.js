@@ -159,7 +159,7 @@ if(!currentTile) return;
 if(currentTile.build && !currentTile.build.handlePayload) return;
 if(currentTile.solid()) return;
 
-for(let i = 0; i < chain.length; i++){
+for(let i = chain.length - 1; i >= 0; i--){
 
 const fromTile = chain[i];
 const toTile = fromTile.nearby(frontBuild.rotation);
@@ -182,6 +182,8 @@ randLength: false,
 lifetime: 5
 });
 
+if (fromTile.block().size > 1) continue;
+  
 if (movingBuild){
 fx.at(
 movingBuild.x,
@@ -191,7 +193,7 @@ frontBuild.rotation * 90
 }
 Sounds.unitCreate.at(movingBuild.x, movingBuild.y);
   
-if (toTile.build && toTile.build.handlePayload && fromTile.block().name != "build1") {
+if (toTile.build && toTile.build.handlePayload != null && fromTile.block().name != "build1") {
 toTile.build.handlePayload(toTile.build, new BuildPayload(fromTile.block(), fromTile.team()) );
 fromTile.setAir();
   
