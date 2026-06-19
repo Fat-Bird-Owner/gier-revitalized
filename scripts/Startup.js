@@ -70,7 +70,7 @@ Events.on(ClientLoadEvent, e => {
 try{
 
 
-Vars.ui.settings.addCategory("[sky]Gier: Revitalized[]", Icon.menu, t => {
+Vars.ui.settings.addCategory("[accent]Gier: Revitalized[]", Icon.menu, t => {
 
 t.checkPref("startup", false, b => {});
 t.checkPref("disable-plague", false, b => {
