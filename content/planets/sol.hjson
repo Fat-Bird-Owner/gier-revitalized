@@ -10,6 +10,9 @@ drawOrbit: false
 solarSystem: sol
 parent: sun
 
+drawOrbit: false
+tidalLock: true
+
 mesh:[
 {
 type: SunMesh
