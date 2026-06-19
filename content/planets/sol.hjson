@@ -43,7 +43,7 @@ cloudMesh: [
    octaves: 3
    persistence: 0.3
    scl: 1
-   thresh: 0.36
+   thresh: 0.56
 	seed: 4
   }
   {
@@ -56,7 +56,7 @@ cloudMesh: [
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0.3
+   thresh: 0.35
 	seed: 4
   }
   {
