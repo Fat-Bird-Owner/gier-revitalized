@@ -50,7 +50,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: kela
    speed: 1.21
-   radius: 0.24
+   radius: 0.18
    divisions: 5
    color: f4ee8e
    octaves: 2
@@ -63,7 +63,7 @@ cloudMesh: [
    type: HexSkyMesh
    planet: kela
    speed: 1.21
-   radius: 0.36
+   radius: 0.24
    divisions: 5
    color: f4ee8e
    octaves: 2
