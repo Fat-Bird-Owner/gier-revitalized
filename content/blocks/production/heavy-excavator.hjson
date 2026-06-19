@@ -13,10 +13,8 @@ updateEffectChance: 0.22
 liquidBoostIntensity: 1
 rotateSpeed: 4.5
 
-blockedItems: [thorium]
-
 customShadow: true
-blockedItems: [sand]
+blockedItems: [sand, thorium]
 consumes: {
 power: 2.5
 liquids: [water/0.033334]
