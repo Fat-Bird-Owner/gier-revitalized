@@ -1,0 +1,4 @@
+type: OreBlock
+name: Depleted Thorium
+
+itemDrop: gr-depleted-thorium
