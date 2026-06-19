@@ -5,13 +5,19 @@ alwaysUnlocked: false
 accessible: false
 
 orbitRadius: 12000
-orbitOffset: 150
+orbitSpacing: 9
 drawOrbit: false
 solarSystem: sol
 parent: sun
 
 drawOrbit: false
 tidalLock: true
+bloom: true
+
+tidalLock: true
+accessible: false
+visible: true
+hasAtmosphere: false
 
 mesh:[
 {
