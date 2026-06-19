@@ -21,7 +21,7 @@ Planets.gier.alwaysUnlocked = true;
 Planets.gier.clearSectorOnLose = true;
 Planets.gier.parent = Vars.content.planet("gr-kela");
 Planets.gier.updateLighting = true;
-  
+
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
 
@@ -31,6 +31,7 @@ kela.techTree.addPlanet(kela);
 kela.defaultEnv = Planets.tantros.defaultEnv;
 kela.generator = new TantrosPlanetGenerator();
 kela.meshLoader = () => new HexMesh(kela, 6);
+kela.parent = Vars.content.planet("gr-sol");
 Core.app.post(() => kela.reloadMesh());
 
   
