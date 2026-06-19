@@ -95,7 +95,7 @@ lifetime: 40
 trailLength: 0
 trailWidth: 3
 
-damage: 42
+damage: 75
 
 knockback: 15
 impact: true
@@ -126,7 +126,7 @@ trailWidth: 3
 
 frontColor: 8c7fa9
 backColor: 8c7fa9
-damage: 29
+damage: 50
 layer: 77
 
 knockback: 15
