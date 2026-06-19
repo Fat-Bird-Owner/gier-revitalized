@@ -1,5 +1,4 @@
 generator: SerpuloPlanetGenerator
-parent: sun
 
 radius: 0.85
 statParent: gier
@@ -28,8 +27,9 @@ campaignRuleDefaults: {
 }
 
 prebuildBase: true
-defaultCore: core-shard
-solarSystem: sun
+parent: gr-sol
+defaultCore: core-satellite
+solarSystem: gr-sol
 updateLighting: false
 
 mesh: [
