@@ -29,7 +29,7 @@ campaignRuleDefaults: {
 prebuildBase: true
 parent: gr-sol
 defaultCore: core-satellite
-solarSystem: gr-sol
+#solarSystem: gr-sol
 updateLighting: false
 
 mesh: [
