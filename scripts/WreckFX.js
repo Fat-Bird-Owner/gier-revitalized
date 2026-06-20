@@ -6,7 +6,7 @@ const tile = e.tile;
 const block = tile.block();
 const build = tile.build;
 
-if (!build || !build.x || !build.y || !build.team || !build.team.color) return;
+if (!build || !build.x || !build.y || !build.team || !build.team.color || !build.block.createRubble) return;
   
 const particle = new ParticleEffect();
 Object.assign(particle, {
