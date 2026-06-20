@@ -8,8 +8,7 @@ A larger variant of the photon
 use depleted thorium to better 
 absorb the sun's radiation
 [green]
-- Better power production
-- Stores abit of power[red]
+- Better power production[red]
 - Quite explosive
 "
 
@@ -23,15 +22,9 @@ objectives: [heavy-excavator]
 
 customShadow: true
 databaseTag: "adv-depleted-thorium"
-outputsPower: true
-consumesPower: true
-
-consumes: {
-powerBuffered: 150
-}
   
 baseExplosiveness: 25
-powerProduction: 0.583334
+powerProduction: 0.75
 drawer: [
 {
 type: DrawDefault
