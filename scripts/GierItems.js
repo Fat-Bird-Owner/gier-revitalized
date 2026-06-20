@@ -28,9 +28,9 @@ item.shownPlanets.add(Planets.gier);
 item.shownPlanets.add(Vars.content.planet("gr-kela"));
 item.databaseTabs = item.shownPlanets;
 
-if (!lastItem.content.hardness || item.hardness > lastItem.content.hardness) lastItem = item.techNode;
 let node = new TechTree.TechNode(lastItem , item, ItemStack.empty);
- 
+if (!lastItem.content.hardness || item.hardness > lastItem.content.hardness) lastItem = item.techNode;
+  
 }
   
 } catch(e){
