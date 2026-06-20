@@ -135,6 +135,54 @@ homingPower: 0.005
 status: melting
 statusDuration: 600
 }
+
+depleted-thorium: {
+width: 15
+height: 21
+
+hitSound: blockExplodeExplosiveAlt
+hitEffect: {
+type: MultiEffect
+effects:[
+instBomb
+shieldWave
+]
+}
+
+despawnHit: true
+
+speed: 10
+lifetime: 40
+
+trailLength: 0
+trailWidth: 3
+
+frontColor: B58DA5
+backColor: B58DA5
+damage: 50
+splashDamage: 30
+splashDamageRadius: 12
+
+layer: 77
+
+knockback: 15
+impact: true
+homingPower: 0.005
+status: melting
+statusDuration: 600
+
+armorMultiplier: 0.8
+
+trailEffect: {
+type: ParticleEffect
+sizeFrom: 3
+sizeTo: 0
+interp: pow10Out
+particles: 1
+length: 0
+}
+
+}
 }
 
 
