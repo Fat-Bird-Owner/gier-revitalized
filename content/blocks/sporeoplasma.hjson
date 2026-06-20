@@ -51,6 +51,8 @@ damage: 0
 
 drawTeamOverlay: false
 createRubble: false
+fullOverride: "gr-sporeoplasma"
+
 requirements:[]
 buildVisibility: sandboxOnly
 name: Sporeoplasma
