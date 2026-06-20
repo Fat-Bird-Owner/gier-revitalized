@@ -1,3 +1,13 @@
 healthMultiplier: 0.9
 damage: 0.75
 reloadMultiplier: 0.85
+
+effect: {
+type: ParticleEffect
+particles: 1
+length: 0
+colorFrom: B58DA5FF
+colorTo: B58DA5FF
+sizeFrom: 3
+sizeTo: 0
+}
