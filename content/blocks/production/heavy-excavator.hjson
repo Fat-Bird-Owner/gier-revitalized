@@ -19,3 +19,7 @@ consumes: {
 power: 2.5
 liquids: [water/0.033334]
 }
+
+drillMultipliers: {
+thorium: 0.75
+}
