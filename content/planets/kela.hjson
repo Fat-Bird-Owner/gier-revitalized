@@ -55,7 +55,9 @@ cloudMesh: [
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0.45
+   thresh: 0
+# 0.25
+
    seed: 2
   }
   {
@@ -64,11 +66,13 @@ cloudMesh: [
    speed: 1.01
    radius: 0.1
    divisions: 5
-   color: 767aa6bd
+   color: a7a9c4
+# 767aa6bd
+
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0
+   thresh: 0.45
 # 0.45
 
    seed: 2
