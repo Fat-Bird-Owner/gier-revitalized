@@ -24,6 +24,10 @@ booster: true
 }
 }
 
+drillMultipliers: {
+depleted-thorium: 0.2
+}
+
 health: 1350
 drillTime: 190
 tier: 3
