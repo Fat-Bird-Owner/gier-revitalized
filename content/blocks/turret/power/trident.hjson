@@ -161,15 +161,16 @@ frontColor: B58DA5
 backColor: B58DA5
 damage: 50
 splashDamage: 30
-splashDamageRadius: 12
+splashDamageRadius: 24
 
 layer: 77
 
 knockback: 15
 impact: true
 homingPower: 0.005
-status: melting
-statusDuration: 600
+
+status: incendiary-depletion
+statusDuration: 180
 
 armorMultiplier: 0.8
 
@@ -180,6 +181,8 @@ sizeTo: 0
 interp: pow10Out
 particles: 1
 length: 0
+colorFrom: B58DA5
+colorTo: B58DA5
 }
 
 }
