@@ -20,7 +20,7 @@ const items = [
 Events.on(ContentInitEvent, () => {
 try {
 
-let lastItem = Vars.content.block("gr-gier").techNode;
+let lastItem = Vars.content.statusEffect("gr-gier").techNode;
   
 for (let i = 0; i < items.length; i++){
 const item = Vars.content.item(items[i]);
@@ -30,7 +30,7 @@ item.databaseTabs = item.shownPlanets;
 
 if (!lastItem.content.hardness || item.hardness > lastItem.content.hardness) lastItem = item.techNode;
 let node = new TechTree.TechNode(lastItem , item, ItemStack.empty);
-  
+ 
 }
   
 } catch(e){
