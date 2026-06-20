@@ -1,0 +1,45 @@
+type: SolarGenerator
+size: 3
+name: Radiance Panel
+
+description: "
+A larger variant of the photon
+  
+use depleted thorium to better 
+absorb the sun's radiation
+[green]
+- Better power production
+- Stores abit of power[red]
+- Quite explosive
+"
+
+
+requirements: [surge-alloy/15, titanium/35, depleted-thorium/50, copper/75]
+category: power
+research: {
+parent: photon-panel
+objectives: [heavy-excavator]
+}
+
+customShadow: true
+databaseTag: "adv-depleted-thorium"
+outputsPower: true
+consumesPower: true
+
+consumes: {
+powerBuffered: 150
+}
+  
+baseExplosiveness: 25
+powerProduction: 0.583334
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+alpha: 0.4
+color: f9a3c7
+}
+]
