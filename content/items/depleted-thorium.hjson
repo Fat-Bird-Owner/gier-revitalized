@@ -1,5 +1,10 @@
 hardness: 3
 radioactivity: 0.15
 
+description: "
+A far-less radioactive thorium
+Used in durable structures
+"
+
 name: Depleted Thorium
 color: B58DA5FF
