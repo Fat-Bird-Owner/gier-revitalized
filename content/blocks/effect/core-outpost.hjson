@@ -1,0 +1,24 @@
+type: CoreBlock
+size: 5
+name: "Core: Outpost"
+health: 8500
+armor: 25
+
+description: "
+A larger
+Far more durable core
+
+Able to store far more items
+"
+
+databaseTag: "gier"
+envEnabled: -1
+itemCapacity: 9500
+category: effect
+
+requirements: [lead/2500, copper/2000, graphite/1750, graphite/1250, titanium/450, beryllium/450, depleted-thorium/350]
+research: "core-facility"
+
+customShadow: true
+isFirstTier: true
+unitType: restoration
