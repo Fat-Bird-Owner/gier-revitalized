@@ -129,4 +129,49 @@ hitEffect: titanSmokeSmall
 despawnEffect: bigShockwave
 hitSound: explosionArtilleryShockBig
 }
+
+depleted-thorium:{
+type: BasicBulletType
+speed: 6
+lifetime: 40
+
+trailRotation: true
+trailInterval: 5
+trailEffect: {
+type: ParticleEffect
+particles: 1
+cone: 0
+region: "gr-shock-wave"
+sizeFrom: 4
+sizeTo: 16
+length: 0
+colorFrom: 876081
+colorTo: 87608100
+lifetime: 25
+}
+
+width: 7.5
+height: 11
+trailWidth: 2
+trailLength: 14
+
+collidesAir: true
+collides: true
+splashDamage: 100
+splashDamageRadius: 100
+splashDamageRadius: 80
+
+status: incendiary-depletion
+statusDuration: 240
+armorMultiplier: 0.7
+
+frontColor: B58DA5FF
+backColor: 876081FF
+trailColor: B58DA5FF
+  
+hitColor: B58DA5FF
+hitEffect: titanSmokeSmall
+despawnEffect: bigShockwave
+hitSound: explosionArtilleryShockBig
+}
 }
