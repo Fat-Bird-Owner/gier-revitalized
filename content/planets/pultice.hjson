@@ -15,12 +15,17 @@ tidalLock: true
 bloom: true
 sectorSize: 2
 
+startSector: 6
 tidalLock: true
 visible: true
 hasAtmosphere: true
+generator: PlanetGenerator
 
 atmosphereColor: 80CB71FF
 icon: editor
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+
 mesh:[
 {
 type: NoiseMesh
