@@ -12,7 +12,7 @@ drawCell: false
 
 speed: 0
 rotateSpeed: 0
-hidden: true
+hidden: false
 outlineRadius: 0
 physics: false
 
