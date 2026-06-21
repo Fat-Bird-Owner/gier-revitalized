@@ -149,7 +149,7 @@ status: corroded
 }
 
 # Depleted thorium Ammo - Tank killer
-oxide: {
+depleted-thorium: {
 type: BasicBulletType
 frontColor: B58DA5FF
 backColor: B58DA5FF
