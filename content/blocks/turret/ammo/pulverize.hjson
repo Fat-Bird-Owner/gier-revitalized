@@ -166,7 +166,7 @@ damage: 35
 hitEffect: smeltsmoke
 hitColor: e4ffd6
 
-status: slowed
+status: slow
 statusDuration: 45
 reloadMultiplier: 0.85
 
