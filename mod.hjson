@@ -18,18 +18,18 @@ Makes gier a playable planet.
 
 [grey[]]More info in the repository's ReadMe.
 
-If the main version is a bugged then 
-please use the latest releases instead
-as those are stable.
+If the main version isnt available or is
+bugged then please use download from the 
+latest releases instead.
 [[]]
 
 [accent[]]Starring is greatly appreciated[[]]
-[grey[]](Our current goal is 15 stars)[[]]
+[grey[]](Our current goal is 20 stars)[[]]
 "
 
 iosCompatible: true
-version: "v3-Gier"
-subtitle: "[sky[]]v3[grey[]]-[lightgrey[]]Gier[[]]"
+version: "v3.1 - Gier"
+subtitle: "[sky[]]v3.1[grey[]]-[lightgrey[]]Gier[[]]"
 minGameVersion: "156"
 dependencies: []
 hidden: false
