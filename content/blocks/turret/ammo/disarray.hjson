@@ -132,7 +132,7 @@ hitSound: explosionArtilleryShockBig
 
 depleted-thorium:{
 type: BasicBulletType
-speed: 6
+speed: 7
 lifetime: 40
 
 trailRotation: true
@@ -168,24 +168,15 @@ armorMultiplier: 0.7
 frontColor: B58DA5FF
 backColor: 876081FF
 trailColor: B58DA5FF
-  
+
+reloadMultiplier: 0.65
+rangeChange: 40
+
 hitColor: B58DA5FF
 hitEffect: {
-type: ParticleEffect
-sizeFrom: 3
-sizeTo: 0
-interp: sineOut
-particles: 9
-length: 0
-colorFrom: B58DA5
-colorTo: B58DA5
-line: true
-lenFrom: 23
-lenTo: 23
-cone: 45
-strokeFrom: 4
-strokeTo: 0
-lifetime: 122
+type: WrapEffect
+color: B58DA5FF
+effect: scatheExplosionSmall
 }
 
 despawnEffect: bigShockwave
