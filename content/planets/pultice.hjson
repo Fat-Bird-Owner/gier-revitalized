@@ -36,9 +36,9 @@ color1: 80CB71FF
 color2: 4E904FFF
 radius: 2.85
 octaves: 4
-persistence: 3.1
+persistence: 5
 scale: 1
-mag: 7
+mag: 0.2
 }
 ]
 
