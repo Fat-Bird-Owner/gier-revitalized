@@ -1,0 +1,83 @@
+radius: 3
+#name: Sol
+iconColor: f4ee8e
+alwaysUnlocked: false
+accessible: true
+
+orbitRadius: 10000
+orbitSpacing: 9
+drawOrbit: false
+solarSystem: pultice
+parent: sun
+
+drawOrbit: false
+tidalLock: true
+bloom: true
+sectorSize: 2
+
+tidalLock: true
+accessible: true
+visible: true
+hasAtmosphere: true
+
+atmosphereColor: 80CB71FF
+icon: editor
+mesh:[
+{
+type: NoiseMesh
+planet: gr-pultice
+seed: 68
+divisions: 4
+color1: 80CB71FF
+color2: 4E904FFF
+radius: 3
+octaves: 4
+persistence: 3.1
+scale: 1
+mag: 1
+}
+]
+
+  /*
+cloudMesh: [
+ {
+   type: HexSkyMesh
+   planet: sol
+   speed: 1.21
+   radius: 0.12
+   divisions: 5
+   color: ffc64c66
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.56
+	seed: 4
+  }
+  {
+   type: HexSkyMesh
+   planet: kela
+   speed: 1.21
+   radius: 0.18
+   divisions: 5
+   color: f4ee8e55
+   octaves: 2
+   persistence: 0.6
+   scl: 0.9
+   thresh: 0.35
+	seed: 4
+  }
+  {
+   type: HexSkyMesh
+   planet: kela
+   speed: 1.21
+   radius: 0.24
+   divisions: 5
+   color: f4ee8e44
+   octaves: 2
+   persistence: 0.6
+   scl: 0.9
+   thresh: 0.24
+	seed: 4
+  }
+]
+*/
