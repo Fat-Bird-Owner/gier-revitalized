@@ -37,8 +37,8 @@ color2: 4E904FFF
 radius: 2.85
 octaves: 4
 persistence: 3.1
-scale: 3
-mag: 0.2
+scale: 1
+mag: 7
 }
 ]
 
