@@ -153,6 +153,8 @@ particles: 9
 length: 30
 colorFrom: B58DA5
 colorTo: B58DA5
+lifetime: 40
+layer: 44
 }
 {
 type: ParticleEffect
@@ -166,6 +168,7 @@ colorTo: B58DA5
 line: true
 lenFrom: 4
 lenTo: 8
+cone: 45
 }
 shieldWave
 ]
