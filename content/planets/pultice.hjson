@@ -13,7 +13,7 @@ parent: sun
 drawOrbit: false
 tidalLock: true
 bloom: true
-sectorSize: 1
+sectorSize: 3
 
 startSector: 6
 tidalLock: true
@@ -42,7 +42,7 @@ mag: 0.35
 }
 ]
 
-
+/*
 cloudMesh: [
  {
    type: HexSkyMesh
@@ -84,6 +84,7 @@ cloudMesh: [
 	seed: 4
   }
 ]
+*/
 
 research:{
     planet: gr-pultice
