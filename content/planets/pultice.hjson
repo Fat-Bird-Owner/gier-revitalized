@@ -86,9 +86,11 @@ cloudMesh: [
 ]
 */
 
+/*
 research:{
     planet: gr-pultice
     root: true
     name: "Pultice"
     requiresUnlock: false
 }
+*/
