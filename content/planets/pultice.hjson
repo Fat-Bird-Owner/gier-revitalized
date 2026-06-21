@@ -13,7 +13,7 @@ parent: sun
 drawOrbit: false
 tidalLock: true
 bloom: true
-sectorSize: 2
+sectorSize: 1
 
 startSector: 6
 tidalLock: true
@@ -74,13 +74,13 @@ cloudMesh: [
    type: HexSkyMesh
    planet: kela
    speed: 1.21
-   radius: 0.24
-   divisions: 5
-   color: f4ee8e44
+   radius: 0.06
+   divisions: 4
+   color: 6AA95EFF
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0
+   thresh: 1
 	seed: 4
   }
 ]
