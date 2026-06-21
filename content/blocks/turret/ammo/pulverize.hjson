@@ -148,4 +148,41 @@ status: corroded
   
 }
 
+# Depleted thorium Ammo - Tank killer
+oxide: {
+type: BasicBulletType
+frontColor: B58DA5FF
+backColor: B58DA5FF
+trailColor: B58DA5FF
+
+width: 12.5
+height: 17.5
+trailLength: 6.25
+knockback: 0.45
+
+lifetime: 33
+speed: 8
+damage: 35
+hitEffect: smeltsmoke
+hitColor: e4ffd6
+
+status: slowed
+statusDuration: 45
+reloadMultiplier: 0.85
+
+fragBullets: 1
+fragBullet: {
+type: BasicBulletType
+damage: 0
+
+splashDamage: 50
+splashDamageRadius: 45
+instantDisappear: true
+despawnHit: true
+
+statusEffect: incendiary-depletion
+statusDuration: 180
+}
+
+}
 }
