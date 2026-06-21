@@ -144,7 +144,29 @@ hitSound: blockExplodeExplosiveAlt
 hitEffect: {
 type: MultiEffect
 effects:[
-instBomb
+{
+type: ParticleEffect
+sizeFrom: 6
+sizeTo: 0
+interp: pow10Out
+particles: 9
+length: 30
+colorFrom: B58DA5
+colorTo: B58DA5
+}
+{
+type: ParticleEffect
+sizeFrom: 3
+sizeTo: 0
+interp: sineOut
+particles: 9
+length: 54
+colorFrom: B58DA5
+colorTo: B58DA5
+line: true
+lenFrom: 4
+lenTo: 8
+}
 shieldWave
 ]
 }
@@ -174,6 +196,7 @@ statusDuration: 180
 
 armorMultiplier: 0.8
 
+trailInterval: 3
 trailEffect: {
 type: ParticleEffect
 sizeFrom: 3
