@@ -7,7 +7,7 @@ accessible: true
 orbitRadius: 10000
 orbitSpacing: 9
 drawOrbit: false
-solarSystem: pultice
+solarSystem: sun
 parent: sun
 
 drawOrbit: false
