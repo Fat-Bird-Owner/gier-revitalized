@@ -84,3 +84,10 @@ cloudMesh: [
 	seed: 4
   }
 ]
+
+research:{
+    planet: gr-pultice
+    root: true
+    name: "Pultice"
+    requiresUnlock: false
+}
