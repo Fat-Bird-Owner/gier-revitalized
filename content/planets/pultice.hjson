@@ -31,30 +31,30 @@ mesh:[
 type: NoiseMesh
 planet: gr-pultice
 seed: 68
-divisions: 4
+divisions: 3
 color1: 80CB71FF
 color2: 4E904FFF
 radius: 2.85
 octaves: 4
 persistence: 3.1
 scale: 1
-mag: 0.2
+mag: 0.35
 }
 ]
 
-  /*
+
 cloudMesh: [
  {
    type: HexSkyMesh
    planet: sol
    speed: 1.21
    radius: 0.12
-   divisions: 5
-   color: ffc64c66
+   divisions: 4
+   color: 4E904FFF
    octaves: 3
    persistence: 0.3
    scl: 1
-   thresh: 0.56
+   thresh: 0.55
 	seed: 4
   }
   {
@@ -62,12 +62,12 @@ cloudMesh: [
    planet: kela
    speed: 1.21
    radius: 0.18
-   divisions: 5
-   color: f4ee8e55
+   divisions: 4
+   color: 80CB71FF
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0.35
+   thresh: 0.40
 	seed: 4
   }
   {
@@ -80,8 +80,7 @@ cloudMesh: [
    octaves: 2
    persistence: 0.6
    scl: 0.9
-   thresh: 0.24
+   thresh: 0
 	seed: 4
   }
 ]
-*/
