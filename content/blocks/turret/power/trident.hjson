@@ -169,6 +169,7 @@ line: true
 lenFrom: 4
 lenTo: 8
 cone: 45
+lifetime: 45
 }
 shieldWave
 ]
