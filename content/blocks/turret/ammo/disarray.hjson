@@ -170,7 +170,24 @@ backColor: 876081FF
 trailColor: B58DA5FF
   
 hitColor: B58DA5FF
-hitEffect: titanSmokeSmall
+hitEffect: {
+type: ParticleEffect
+sizeFrom: 3
+sizeTo: 0
+interp: sineOut
+particles: 9
+length: 0
+colorFrom: B58DA5
+colorTo: B58DA5
+line: true
+lenFrom: 23
+lenTo: 23
+cone: 45
+strokeFrom: 4
+strokeTo: 0
+lifetime: 122
+}
+
 despawnEffect: bigShockwave
 hitSound: explosionArtilleryShockBig
 }
