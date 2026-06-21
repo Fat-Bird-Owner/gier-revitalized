@@ -151,6 +151,8 @@ status: corroded
 # Depleted thorium Ammo - Tank killer
 depleted-thorium: {
 type: BasicBulletType
+armorMultiplier: 0.4
+
 frontColor: B58DA5FF
 backColor: B58DA5FF
 trailColor: B58DA5FF
@@ -163,6 +165,8 @@ knockback: 0.45
 
 lifetime: 33
 speed: 8
+rangeChange: 84
+
 damage: 35
 hitEffect: titanExplosionFrag
 hitColor: B58DA5FF
