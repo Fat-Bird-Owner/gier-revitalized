@@ -1,5 +1,5 @@
 radius: 3
-#name: Sol
+localizedName: Pultice
 iconColor: f4ee8e
 alwaysUnlocked: false
 accessible: true
@@ -16,7 +16,6 @@ bloom: true
 sectorSize: 2
 
 tidalLock: true
-accessible: true
 visible: true
 hasAtmosphere: true
 
@@ -34,7 +33,7 @@ radius: 3
 octaves: 4
 persistence: 3.1
 scale: 1
-mag: 1
+mag: 0
 }
 ]
 
