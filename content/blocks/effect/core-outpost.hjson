@@ -4,11 +4,13 @@ name: "Core: Outpost"
 health: 8500
 armor: 25
 
+researchCostMultiplier: 0.25
 description: "
-A larger
-Far more durable core
-
+A larger, Far more durable core
 Able to store far more items
+
+Once destroyed the sector 
+is losted
 "
 
 databaseTag: "gier"
