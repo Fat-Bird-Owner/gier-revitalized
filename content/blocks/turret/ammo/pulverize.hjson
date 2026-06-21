@@ -156,6 +156,7 @@ backColor: B58DA5FF
 trailColor: B58DA5FF
 
 width: 12.5
+
 height: 17.5
 trailLength: 6.25
 knockback: 0.45
@@ -163,8 +164,8 @@ knockback: 0.45
 lifetime: 33
 speed: 8
 damage: 35
-hitEffect: smeltsmoke
-hitColor: e4ffd6
+hitEffect: titanExplosionFrag
+hitColor: B58DA5FF
 
 status: slow
 statusDuration: 45
