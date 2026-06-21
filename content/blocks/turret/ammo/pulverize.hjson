@@ -185,7 +185,7 @@ splashDamageRadius: 45
 instantDisappear: true
 despawnHit: true
 
-statusEffect: incendiary-depletion
+status: incendiary-depletion
 statusDuration: 180
 }
 
