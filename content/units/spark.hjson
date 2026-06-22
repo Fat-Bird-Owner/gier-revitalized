@@ -78,6 +78,7 @@ strokeTo: 0
 line: true
 colorFrom: ffd37fff
 colorTo: ffd37fff
+offset: 180
 }
 
 lifetime: 120
