@@ -62,7 +62,8 @@ layer: 69
 
 backColor: ffd37fff
 frontColor: ffd37fff
-trailChance: 0.25
+trailInterval: 6
+trailRotation: true
 trailEffect: {
 type: ParticleEffect
 baseLength: 0
