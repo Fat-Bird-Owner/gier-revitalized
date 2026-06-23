@@ -1,0 +1,51 @@
+type: flying
+flying: true
+name: Garrison
+
+mineSpeed: 6
+buildSpeed: 1
+
+engineOffset: 7.25
+engineSize: 3
+outlineRadius: 0
+
+trailScl: 1
+trailLength: 4
+
+health: 650
+speed: 4.5
+accel: 0.1
+drag: 0.05
+armor: 10
+
+mineTier: 2
+weapons: [
+{
+type: RepairBeamWeapon
+widthSinMag: 0.11
+reload: 20
+x: 8
+y: -3.5
+rotate: false
+shootY: 0
+beamWidth: 0.7
+aimDst: 0
+shootCone: 15
+mirror: true
+
+repairSpeed: 3.3
+fractionRepairSpeed: 0.06
+
+targetUnits: false
+targetBuildings: true
+autoTarget: false
+controllable: true
+laserColor: FFD37F
+healColor: FFD37F
+
+bullet: {
+maxRange: 225
+}
+
+}
+]
