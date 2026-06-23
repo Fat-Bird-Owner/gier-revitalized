@@ -5,9 +5,8 @@ name: Garrison
 mineSpeed: 6
 buildSpeed: 1
 
-engineOffset: 7.25
-engineSize: 3
-outlineRadius: 0
+engineOffset: 12
+engineSize: 5
 
 trailScl: 1
 trailLength: 4
@@ -25,7 +24,7 @@ type: RepairBeamWeapon
 widthSinMag: 0.11
 reload: 20
 x: 8
-y: -3.5
+y: 3.5
 rotate: false
 shootY: 0
 beamWidth: 0.7
