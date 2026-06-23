@@ -6,7 +6,7 @@ mineSpeed: 6
 buildSpeed: 1
 
 engineOffset: 12
-engineSize: 5
+engineSize: 3
 
 trailScl: 1
 trailLength: 4
