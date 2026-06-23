@@ -2,8 +2,8 @@ type: flying
 flying: true
 name: Garrison
 
-mineSpeed: 10
-buildSpeed: 1.25
+mineSpeed: 12.5
+buildSpeed: 1.75
 
 engineOffset: 12
 engineSize: 2
