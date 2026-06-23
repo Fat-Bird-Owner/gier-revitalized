@@ -10,6 +10,7 @@ engineSize: 5
 
 trailScl: 1
 trailLength: 4
+outlineColor: 2f2f3f
 
 health: 650
 speed: 4.5
