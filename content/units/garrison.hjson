@@ -1,4 +1,4 @@
-type: flying
+type: payload
 flying: true
 name: Garrison
 description: "
@@ -12,11 +12,13 @@ iteration
 and a basic repair field
 "
 
+payloadCapacity: 64
 mineSpeed: 12.5
 buildSpeed: 1.75
 
 engineOffset: 12
 engineSize: 2
+vulnerableWithPayloads: true
 
 trailScl: 1
 trailLength: 4
