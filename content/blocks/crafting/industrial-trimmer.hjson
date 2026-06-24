@@ -1,0 +1,44 @@
+type: GenericCrafter
+size: 3
+name: Industrial Trimmer
+
+requirements: [lead/175, silicon/50, titanium/50]
+category: crafter
+
+envEnabled: -1
+shownPlanets: [gier, kela]
+databaseTag: "gier"
+
+outputItem: metaglass/5
+craftTime: 180
+consumes: {
+power: 1
+items: [graphite/5] # placeholder Item
+}
+
+drawer: [
+{
+type: DrawRegion
+suffix: -bottom
+}
+{
+type: DrawPistons
+suffix: -piston-0
+sides: 1
+sinMag: 32
+sinScl: 45
+lenOffset: -16
+}
+{
+type: DrawPistons
+suffix: -piston-0
+angleOffset: 90
+sides: 1
+sinMag: 32
+sinScl: 45
+lenOffset: -16
+}
+{
+type: DrawDefault
+}
+]
