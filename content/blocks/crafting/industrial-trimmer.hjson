@@ -4,6 +4,7 @@ name: Industrial Trimmer
 
 requirements: [lead/175, silicon/50, titanium/50]
 category: crafting
+squareSprite: false
 
 envEnabled: -1
 shownPlanets: [gier, kela]
