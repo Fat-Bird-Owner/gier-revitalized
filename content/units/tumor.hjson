@@ -20,6 +20,7 @@ createScorch: false
 drag: 99999
 groundLayer: 75
 
+isEnemy: false
 deathShake: 0
 deathExplosionEffect: none
 
