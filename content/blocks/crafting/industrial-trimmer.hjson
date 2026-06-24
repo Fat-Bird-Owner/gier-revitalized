@@ -27,7 +27,7 @@ suffix: -piston-0
 sides: 1
 sinMag: 20
 sinScl: 6
-lenOffset: -16
+lenOffset: -18
 }
 {
 type: DrawPistons
@@ -36,7 +36,7 @@ angleOffset: 90
 sides: 1
 sinMag: 20
 sinScl: 6
-lenOffset: -16
+lenOffset: -18
 }
 {
 type: DrawDefault
