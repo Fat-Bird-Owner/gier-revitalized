@@ -28,6 +28,7 @@ accel: 0.1
 drag: 0.05
 armor: 10
 
+targetable: false
 mineTier: 2
 weapons: [
 {
