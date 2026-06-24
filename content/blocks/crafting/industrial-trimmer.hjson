@@ -14,7 +14,7 @@ outputItem: metaglass/5
 craftTime: 180
 consumes: {
 power: 1
-items: [graphite/5] # placeholder Item
+items: [metaglass-chunk/5] # placeholder Item
 }
 
 drawer: [
