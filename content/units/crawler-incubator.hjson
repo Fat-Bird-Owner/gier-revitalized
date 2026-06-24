@@ -13,6 +13,18 @@ hitSize: 20
 
 rotateSpeed: 0
 outlineRadius: 0
+isEnemy: false
+
+deathShake: 2
+deathExplosionEffect: none
+isEnemy: false
+
+abilities: [
+{
+type: LiquidExplodeAbility
+liquid: gr-tuntra
+}
+]
 
 parts: [
 
