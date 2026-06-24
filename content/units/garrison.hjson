@@ -23,7 +23,9 @@ vulnerableWithPayloads: true
 trailScl: 1
 trailLength: 4
 outlineColor: 2f2f3f
+isEnemy: false
 
+flyingLayer: 123
 health: 650
 speed: 4.5
 accel: 0.1
