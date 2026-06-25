@@ -24,7 +24,8 @@ gr-packed-graphite/3
 }
 {
 type: AssemblerUnitPlan
-unit: mono # placeholder unit
+unit: mono 
+# placeholder unit
 
 time: 1800
 requirements: [
@@ -36,7 +37,8 @@ gr-packed-graphite/2
 }
 {
 type: AssemblerUnitPlan
-unit: poly # placeholder unit
+unit: poly
+# placeholder unit
 
 time: 2100
 requirements: [
