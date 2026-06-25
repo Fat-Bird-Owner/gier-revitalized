@@ -10,11 +10,11 @@ envEnabled: -1
 shownPlanets: [gier, kela]
 databaseTag: "gier"
 
-outputItem: metaglass/5
+outputItem: metaglass/6
 craftTime: 180
 consumes: {
 power: 1
-items: [metaglass-chunk/5]
+items: [metaglass-chunk/12]
 }
 
 customShadow: true
@@ -38,7 +38,7 @@ angleOffset: 90
 sides: 1
 sinMag: 20
 sinScl: 6
-sinOffset: 20
+sinOffset: 60
 lenOffset: -18
 }
 {
