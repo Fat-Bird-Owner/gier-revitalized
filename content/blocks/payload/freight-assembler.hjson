@@ -4,6 +4,7 @@ name: Freight Assembler
 
 research: imprinter
 researchCostMultiplier: 0.5
+buildSpeed: 0.5
 
 description: "
 Constructs blocks using there
