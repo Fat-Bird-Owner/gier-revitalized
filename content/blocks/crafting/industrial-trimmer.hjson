@@ -2,7 +2,7 @@ type: GenericCrafter
 size: 3
 name: Industrial Trimmer
 
-requirements: [lead/175, silicon/50, titanium/50]
+requirements: [lead/175, graphite/100, graphite/75]
 category: crafting
 squareSprite: false
 
@@ -14,9 +14,10 @@ outputItem: metaglass/5
 craftTime: 180
 consumes: {
 power: 1
-items: [metaglass-chunk/5] # placeholder Item
+items: [metaglass-chunk/5]
 }
 
+customShadow: true
 drawer: [
 {
 type: DrawRegion
@@ -37,6 +38,7 @@ angleOffset: 90
 sides: 1
 sinMag: 20
 sinScl: 6
+sinOffset: 20
 lenOffset: -18
 }
 {
