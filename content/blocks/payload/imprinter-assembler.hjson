@@ -2,34 +2,48 @@ type: UnitAssembler
 size: 3
 name: Imprinter
 
-requirements:[lead/275,copper/195,silicon/65]
+requirements:[lead/275, copper/195, graphite/125, silicon/75, metaglass/75]
 category: units
-
 customShadow: true
 
 droneType: mechanic
-droneConstructTime: 600
+droneConstructTime: 300
 
-plans: [{
+plans: [
+{
 type: AssemblerUnitPlan
 unit: fledgling
 
-time: 2100
+time: 1500
 requirements: [
+gr-power-cell/2
+gr-circuit-wire/10
 gr-packed-graphite/3
-gr-power-cell/1
-gr-insulated-wall/1
 ]
+
 }
 {
 type: AssemblerUnitPlan
-unit: zenith
+unit: mono # placeholder unit
 
-time: 5700
+time: 1800
 requirements: [
-gr-packed-graphite/9
-gr-power-cell/2
-gr-packed-beryllium/4
+gr-power-cell/1
+gr-observer/2
+gr-packed-graphite/2
 ]
+
+}
+{
+type: AssemblerUnitPlan
+unit: poly # placeholder unit
+
+time: 2100
+requirements: [
+gr-power-cell/3
+gr-packed-graphite/4
+gr-packed-beryllium/2
+]
+
 }
 ]
