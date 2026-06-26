@@ -31,7 +31,7 @@ if (block instanceof UnitAssembler){
 block.addBar("Blocks", e => new Bar(
 "Blocks", 
 Pal.items,
-() => e && e.blocks.total() > 0 ? e.blocks : 0));
+() => e && e.blocks.total() > 0 ? e.blocks.total() : 0));
   
 return;
 }
