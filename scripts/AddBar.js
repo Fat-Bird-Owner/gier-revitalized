@@ -10,7 +10,7 @@ const blocks = [
 "gr-freight-assembler"
 ]
 
-Events.on(ContentInitEvent, () => {
+Events.on(ClientLoadEvent, () => {
 try{
 
 function giveBar(string){
