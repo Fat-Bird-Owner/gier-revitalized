@@ -34,12 +34,6 @@ graphite/20
 
 craftEffect: [
 {
-type: SeqEffect
-layer: 65
-followParent: false
-
-effects: [
-{
 type: ParticleEffect
 length: -160
 baseLength: 160
@@ -49,8 +43,9 @@ offset: 90
 
 sizeFrom: 30
 sizeTo: 16
-name: "gr-pod-receiver-pod"
+region: "gr-pod-receiver-pod"
 
+lightScl: 0
 colorFrom: 8f8f8f00
 colorTo: ffffffff
 
@@ -58,15 +53,29 @@ lifetime: 180
 particles: 1
 interp: sineOut
 }
+
+# E
+
+{
+type: SeqEffect
+layer: 65
+followParent: false
+
+effects: [
+{
+type: Effect
+lifetime: 180
+}
 {
 type: ParticleEffect
 length: 0
 cone: 0
 offset: -90
-name: "gr-pod-receiver-pod"
+region: "gr-pod-receiver-pod"
 
 sizeFrom: 16
 sizeTo: 16
+lightScl: 0
 
 colorFrom: ffffff
 colorTo: ffffff00
