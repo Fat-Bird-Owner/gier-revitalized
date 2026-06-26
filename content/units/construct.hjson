@@ -1,0 +1,29 @@
+type: flying
+name: Dove
+flying: true
+
+drawSoftShadow: false
+hittable: true
+targetable: false
+
+armor: 5
+speed: 2.5
+accel: 0.05
+drag: 0.015
+engineOffset: 6.5
+
+trailScl: 1
+trailLength: 6
+hitSize: 10
+
+defaultCommand: rebuild
+health: 650
+outlineRadius: 0
+
+range: 50
+isEnemy: false
+controlSelectGlobal: false
+
+buildSpeed: 0.5
+wreckSoundVolume: 0.75
+deathSoundVolume: 0.75
