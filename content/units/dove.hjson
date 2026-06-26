@@ -7,7 +7,7 @@ hittable: true
 targetable: false
 
 armor: 5
-speed: 4.5
+speed: 2.5
 engineOffset: 6
 
 trailScl: 1
@@ -16,7 +16,8 @@ hitSize: 10
 
 defaultCommand: mine
 health: 450
-  
+outlineColor: 2f2f3f
+
 range: 50
 isEnemy: false
 controlSelectGlobal: false
