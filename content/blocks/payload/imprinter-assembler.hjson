@@ -37,7 +37,7 @@ gr-packed-graphite/2
 }
 {
 type: AssemblerUnitPlan
-unit: poly
+unit: construct
 # placeholder unit
 
 time: 2100
