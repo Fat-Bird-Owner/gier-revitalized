@@ -37,11 +37,11 @@ layer: 65
 effects: [
 {
 type: ParticleEffect
-length: -72
-baseLength: 72
+length: -160
+baseLength: 160
 randLength: false
 cone: 0
-offset: 180
+offset: 0
 
 sizeFrom: 30
 sizeTo: 16
@@ -88,7 +88,7 @@ sizeFrom: 8
 sizeTo: 0
 interp: pow10Out
 length: 32
-lifetime: 65
+lifetime: 95
 }
 ]
 
