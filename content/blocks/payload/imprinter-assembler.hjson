@@ -2,7 +2,7 @@ type: UnitAssembler
 size: 3
 name: Imprinter
 
-requirements:[lead/275, copper/195, graphite/125, silicon/75, metaglass/75]
+requirements:[lead/300, copper/275, graphite/150, silicon/125, depleted-thorium/50]
 category: units
 customShadow: true
 
