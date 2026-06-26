@@ -41,7 +41,7 @@ length: -160
 baseLength: 160
 randLength: false
 cone: 0
-offset: 0
+offset: 90
 
 sizeFrom: 30
 sizeTo: 16
@@ -84,11 +84,11 @@ type: ParticleEffect
 particles: 120
 colorFrom: 6f6f6f
 colorTo: 6f6f6f
-sizeFrom: 8
+sizeFrom: 16
 sizeTo: 0
 interp: pow10Out
-length: 32
-lifetime: 95
+length: 44
+lifetime: 130
 }
 ]
 
