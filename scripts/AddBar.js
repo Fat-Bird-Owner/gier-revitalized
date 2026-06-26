@@ -26,7 +26,7 @@ block.removeBar("power");
 return;
 }
 
-if (block instanceof UnitAssembler){
+if (block instanceof Constructor){
 
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
