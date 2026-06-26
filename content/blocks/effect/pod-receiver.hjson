@@ -35,14 +35,14 @@ graphite/20
 craftEffect: [
 {
 type: ParticleEffect
-length: -160
-baseLength: 160
+length: 160
+baseLength: -160
 randLength: false
 cone: 0
-offset: 90
+offset: 0
 
 sizeFrom: 30
-sizeTo: 16
+sizeTo: 10
 region: "gr-pod-receiver-pod"
 
 lightScl: 0
@@ -70,11 +70,11 @@ lifetime: 180
 type: ParticleEffect
 length: 0
 cone: 0
-offset: -90
+offset: 0
 region: "gr-pod-receiver-pod"
 
-sizeFrom: 16
-sizeTo: 16
+sizeFrom: 10
+sizeTo: 10
 lightScl: 0
 
 colorFrom: ffffff
@@ -106,6 +106,7 @@ sizeTo: 0
 interp: pow10Out
 length: 44
 lifetime: 165
+lightScl: 0
 }
 ]
 
