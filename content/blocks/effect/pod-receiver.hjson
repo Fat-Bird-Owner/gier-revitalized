@@ -1,0 +1,95 @@
+type: GenericCrafter
+size: 2
+name: "Pod: Receiver"
+
+description: "
+Uses a medium amount of water
+to receive a number of items
+[green]
+- Receive a number of items
+- Anywhere on the map[red]
+- Extremely explosive
+- Requires power
+- Requires water
+"
+
+buildVisibility: sandboxOnly
+category: effect
+liquidCapacity: 450
+consumes: {
+power: 1.5
+liquids: [water/2.5]
+}
+
+itemCapacity: 20
+craftTime: 300
+outputItems: [
+lead/20
+copper/20
+graphite/20
+]
+
+craftEffect: [
+{
+type: SeqEffect
+layer: 65
+  
+effects: [
+{
+type: ParticleEffect
+length: -18
+baseLength: 18
+randLength: false
+cone: 0
+offset: -90
+
+sizeFrom: 30
+sizeTo: 16
+
+colorFrom: 8f8f8f00
+colorTo: ffffffff
+
+lifetime: 180
+interp: sineOut
+}
+{
+type: ParticleEffect
+length: 0
+cone: 0
+offset: -90
+
+sizeFrom: 30
+sizeTo: 16
+
+colorFrom: 8f8f8f00
+colorTo: ffffffff
+
+lifetime: 180
+interp: sineOut
+}
+]
+
+}
+# E
+{
+type: SeqEffect
+layer: 33
+effects: [
+{
+type: Effect
+lifetime: 180
+}
+{
+type: ParticleEffect
+particles: 120
+colorFrom: 6f6f6f
+colorTo: 6f6f6f
+sizeFrom: 4
+sizeTo: 0
+interp: pow10Out
+}
+]
+
+  
+}
+]
