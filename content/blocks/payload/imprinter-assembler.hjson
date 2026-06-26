@@ -24,7 +24,7 @@ gr-packed-graphite/3
 }
 {
 type: AssemblerUnitPlan
-unit: mono 
+unit: dove 
 # placeholder unit
 
 time: 1800
