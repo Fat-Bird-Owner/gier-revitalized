@@ -37,11 +37,11 @@ layer: 65
 effects: [
 {
 type: ParticleEffect
-length: -18
-baseLength: 18
+length: -72
+baseLength: 72
 randLength: false
 cone: 0
-offset: -90
+offset: 180
 
 sizeFrom: 30
 sizeTo: 16
@@ -58,13 +58,13 @@ length: 0
 cone: 0
 offset: -90
 
-sizeFrom: 30
+sizeFrom: 16
 sizeTo: 16
 
-colorFrom: 8f8f8f00
-colorTo: ffffffff
+colorFrom: ffffff
+colorTo: ffffff00
 
-lifetime: 180
+lifetime: 120
 interp: sineOut
 }
 ]
@@ -84,9 +84,10 @@ type: ParticleEffect
 particles: 120
 colorFrom: 6f6f6f
 colorTo: 6f6f6f
-sizeFrom: 4
+sizeFrom: 8
 sizeTo: 0
 interp: pow10Out
+length: 32
 }
 ]
 
