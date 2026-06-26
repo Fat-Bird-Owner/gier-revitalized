@@ -10,7 +10,7 @@ armor: 5
 speed: 4.5
 engineOffset: 6
 
-trailScl: 2
+trailScl: 1
 trailLength: 6
 hitSize: 10
 
