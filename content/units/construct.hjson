@@ -1,5 +1,5 @@
 type: flying
-name: Dove
+name: Construct
 flying: true
 
 drawSoftShadow: false
@@ -14,7 +14,7 @@ engineOffset: 6.5
 
 trailScl: 1
 trailLength: 6
-hitSize: 10
+hitSize: 14.5
 
 defaultCommand: rebuild
 health: 650
