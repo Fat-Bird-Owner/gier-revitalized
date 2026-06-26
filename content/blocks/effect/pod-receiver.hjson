@@ -5,6 +5,9 @@ name: "Pod: Receiver"
 description: "
 Uses a medium amount of water
 to receive a number of items
+[lightgrey]
+A horribly inefficient why to
+get resources
 [green]
 - Receive a number of items
 - Anywhere on the map[red]
@@ -33,7 +36,8 @@ craftEffect: [
 {
 type: SeqEffect
 layer: 65
-  
+followParent: false
+
 effects: [
 {
 type: ParticleEffect
@@ -45,11 +49,13 @@ offset: 90
 
 sizeFrom: 30
 sizeTo: 16
+name: "gr-pod-receiver-pod"
 
 colorFrom: 8f8f8f00
 colorTo: ffffffff
 
 lifetime: 180
+particles: 1
 interp: sineOut
 }
 {
@@ -57,6 +63,7 @@ type: ParticleEffect
 length: 0
 cone: 0
 offset: -90
+name: "gr-pod-receiver-pod"
 
 sizeFrom: 16
 sizeTo: 16
@@ -66,6 +73,7 @@ colorTo: ffffff00
 
 lifetime: 120
 interp: sineOut
+particles: 1
 }
 ]
 
@@ -88,7 +96,7 @@ sizeFrom: 16
 sizeTo: 0
 interp: pow10Out
 length: 44
-lifetime: 130
+lifetime: 165
 }
 ]
 
