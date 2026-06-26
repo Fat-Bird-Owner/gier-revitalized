@@ -6,8 +6,7 @@ const blocks = [
 "gr-actuator",
 "gr-sealent-chamber",
 "gr-sealent-chamber-oil",
-"gr-plastanium-crusher",
-"gr-imprinter-assembler"
+"gr-plastanium-crusher"
 ]
 
 Events.on(ContentInitEvent, () => {
@@ -27,11 +26,10 @@ return;
 }
 
 if (block instanceof UnitAssembler){
-  
-block.addBar("Blocks", e => new Bar(
-"Blocks", 
-Pal.items,
-() => e && e.blocks.total() > 0 ? e.blocks.total() : 0));
+
+Vars.ui.content.show(block);
+Vars.ui.content.hide();
+block.stats.replace(Stat.output, StatValues.content(block.filter));
   
 return;
 }
@@ -47,5 +45,5 @@ giveBar(blocks[i]);
 }
   
 } catch(e){
-Vars.ui.showInfoToast(e,15);
+Vars.ui.showText("G:R - AddBar", e);
 }});
