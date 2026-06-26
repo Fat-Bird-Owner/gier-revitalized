@@ -24,6 +24,17 @@ if (block instanceof PowerGenerator){
 block.removeBar("power");
 return;
 }
+
+if (block instanceof UnitAssembler){
+  
+block.addBar("Blocks", e => new Bar(
+"Blocks", 
+Pal.items,
+() => e && e.blocks.total() > 0 ? e.blocks : 0));
+}
+  
+return;
+}
   
 block.addBar("progress", e => new Bar(
 "Process", 
