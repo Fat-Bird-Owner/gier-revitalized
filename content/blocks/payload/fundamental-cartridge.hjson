@@ -1,0 +1,12 @@
+type: UnitAssemblerModule
+size: 3
+name: "Fundamental Cartridge"
+
+requirements:[lead/450, copper/350, graphite/250, silicon/150, depleted-thorium/75]
+category: units
+buildVisibility: sandboxOnly
+
+tier: 2
+consumes: {
+power: 0.5
+}
