@@ -39,11 +39,11 @@ length: 160
 baseLength: -160
 randLength: false
 cone: 0
-offset: 180
+offset: 0
 baseRotation: -90
 
 sizeFrom: 30
-sizeTo: 9
+sizeTo: 8
 region: "gr-pod-receiver-pod"
 
 lightScl: 0
@@ -76,8 +76,8 @@ cone: 0
 offset: 0
 region: "gr-pod-receiver-pod"
 
-sizeFrom: 9
-sizeTo: 9
+sizeFrom: 8
+sizeTo: 8
 lightScl: 0
 
 colorFrom: ffffff
