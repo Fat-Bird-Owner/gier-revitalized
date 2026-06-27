@@ -105,7 +105,7 @@ type: ParticleEffect
 particles: 17
 colorFrom: 6f6f6f
 colorTo: 6f6f6f
-sizeFrom: 16
+sizeFrom: 9
 sizeTo: 0
 interp: pow10Out
 length: 64
