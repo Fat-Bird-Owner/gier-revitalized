@@ -109,7 +109,7 @@ sizeFrom: 9
 sizeTo: 0
 interp: pow10Out
 length: 64
-lifetime: 233
+lifetime: 466
 lightScl: 0
 }
 ]
