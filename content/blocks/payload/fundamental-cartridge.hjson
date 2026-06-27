@@ -6,7 +6,7 @@ requirements:[lead/450, copper/350, graphite/250, silicon/150, depleted-thorium/
 category: units
 buildVisibility: sandboxOnly
 
-tier: 2
+tier: 1
 consumes: {
 power: 0.5
 }
