@@ -102,7 +102,7 @@ lifetime: 180
 }
 {
 type: ParticleEffect
-particles: 65
+particles: 17
 colorFrom: 6f6f6f
 colorTo: 6f6f6f
 sizeFrom: 16
