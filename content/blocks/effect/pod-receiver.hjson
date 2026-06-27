@@ -39,7 +39,7 @@ length: 160
 baseLength: -160
 randLength: false
 cone: 0
-offset: -90
+offset: 90
 baseRotation: -90
 
 sizeFrom: 30
