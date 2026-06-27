@@ -50,7 +50,7 @@ lightScl: 0
 colorFrom: 8f8f8f00
 colorTo: ffffffff
 
-spin: -0.75
+spin: -0.25
 layer: 72
 lifetime: 180
 particles: 1
