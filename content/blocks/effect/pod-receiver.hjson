@@ -39,7 +39,7 @@ length: 160
 baseLength: -160
 randLength: false
 cone: 0
-offset: 90
+offset: 135
 baseRotation: -90
 
 sizeFrom: 30
@@ -50,7 +50,7 @@ lightScl: 0
 colorFrom: 8f8f8f00
 colorTo: ffffffff
 
-spin: 0
+spin: -0.75
 layer: 72
 lifetime: 180
 particles: 1
@@ -93,7 +93,8 @@ particles: 1
 # E
 {
 type: SeqEffect
-layer: 33
+layer: 31
+
 effects: [
 {
 type: Effect
@@ -101,14 +102,14 @@ lifetime: 180
 }
 {
 type: ParticleEffect
-particles: 120
+particles: 65
 colorFrom: 6f6f6f
 colorTo: 6f6f6f
 sizeFrom: 16
 sizeTo: 0
 interp: pow10Out
-length: 44
-lifetime: 165
+length: 64
+lifetime: 233
 lightScl: 0
 }
 ]
