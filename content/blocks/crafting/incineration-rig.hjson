@@ -1,0 +1,16 @@
+type: GenericCrafter
+size: 2
+name: Incineration Rig
+
+category: production
+requirements: [lead/175, copper/150, graphite/75, silicon/35]
+buildVisiblity: sandboxOnly
+
+baseExplosiveness: 150
+craftTime: 30 
+consumes: {
+power: 1.5
+itemFlammable: {
+minFlammability: -0.5
+amount: 5
+}}
