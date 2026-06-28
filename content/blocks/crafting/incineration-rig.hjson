@@ -3,23 +3,36 @@ size: 2
 name: Incineration Rig
 
 description: "
-Burns items
+Incinerates items rapidly
+Produces slag as a byproduct
+
+Cant melt any items that are 
+unflammable
+[green]
+- Incinerates items
+- produces slag[red]
+- Explosive
+- Cant incinerate items with 
+flammability lower then 0
+- requires power
 "
 
 category: production
-requirements: [lead/175, copper/150, graphite/75, silicon/35]
+requirements: [lead/175, copper/150, graphite/75, silicon/40, metaglass/40]
 buildVisiblity: sandboxOnly
+outputLiquid: slag/0.16667
 
-baseExplosiveness: 150
-craftTime: 15
+ignoreLiquidFullness: true
+baseExplosiveness: 75
+craftTime: 5
 consumes: {
 power: 1.5
 itemFlammable: {
 minFlammability: 0
-amount: 5
 }
 }
 
+itemCapacity: 40
 customShadow: true
 drawer: [
 {
