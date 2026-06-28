@@ -8,14 +8,14 @@ description: "
 Incinerates items rapidly
 Produces slag as a byproduct
 
-Cant melt any items that are 
+Cant incinerate any items that are 
 unflammable
 [green]
 - Incinerates items
+- Scale with heat from tile
 - produces slag[red]
 - Explosive
-- Cant incinerate items with 
-flammability lower then 0
+- Cant incinerate unflammable items
 - requires power
 "
 
