@@ -19,3 +19,15 @@ minFlammability: 0
 amount: 5
 }
 }
+
+customShadow: true
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-top"
+color: f3e979
+}
+]
