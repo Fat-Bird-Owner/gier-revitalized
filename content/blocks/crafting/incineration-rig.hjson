@@ -21,6 +21,7 @@ category: production
 requirements: [lead/175, copper/150, graphite/75, silicon/40, metaglass/40]
 buildVisiblity: sandboxOnly
 outputLiquid: slag/0.16667
+liquidCapacity: 30
 
 ignoreLiquidFullness: true
 baseExplosiveness: 75
