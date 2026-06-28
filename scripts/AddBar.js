@@ -7,7 +7,8 @@ const blocks = [
 "gr-sealent-chamber",
 "gr-sealent-chamber-oil",
 "gr-plastanium-crusher",
-"gr-freight-assembler"
+"gr-freight-assembler",
+"gr-incineration-rig"
 ]
 
 Events.on(ClientLoadEvent, () => {
@@ -32,6 +33,16 @@ Vars.ui.content.show(block);
 Vars.ui.content.hide();
 block.stats.replace(Stat.output, StatValues.content(block.filter));
   
+return;
+}
+
+if (block instanceof GenericCrafter){
+
+Vars.ui.content.show(block);
+Vars.ui.content.hide();
+block.stats.remove(Stat.input);
+block.stats.remove(Stat.productionTime);
+
 return;
 }
   
