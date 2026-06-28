@@ -36,7 +36,7 @@ block.stats.replace(Stat.output, StatValues.content(block.filter));
 return;
 }
 
-if (block instanceof GenericCrafter){
+if (string == "gr-incineration-rig"){
 
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
