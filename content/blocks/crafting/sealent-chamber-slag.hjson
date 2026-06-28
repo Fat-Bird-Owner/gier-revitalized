@@ -23,7 +23,7 @@ shownPlanets:[gier, kela]
 
 consumes:{
 power: 0.5
-liquids:[slag/1.66667]
+liquids:[slag/0.16667]
 items:[metaglass/30, titanium/15]
 }
 
