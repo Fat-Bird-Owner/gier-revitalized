@@ -1,7 +1,9 @@
-type: GenericCrafter
+type: AttributeCrafter
 size: 2
 name: Incineration Rig
 
+maxBoost: 1.5
+boostScale: 0.25
 description: "
 Incinerates items rapidly
 Produces slag as a byproduct
