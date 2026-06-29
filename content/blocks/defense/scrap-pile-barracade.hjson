@@ -1,0 +1,11 @@
+type: Wall
+name: Scrap Pile Barracade
+size: 2
+
+health: 1750
+armor: 0
+variants: 3
+  
+category: defense
+requirements: [scrap/10]
+buildVisibility: editorOnly
