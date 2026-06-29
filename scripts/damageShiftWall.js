@@ -5,7 +5,7 @@ Events.on(BuildDamageEvent, event => {
 try {
 const {build, source} = event;
 
-if (target == null || transitBlock = null) {
+if (target === null || transitBlock === null) {
 target = Vars.content.block("gr-refined-scrap-barracade");
 transitBlock = Vars.content.block("gr-scrap-piled-barracade");
 } 
