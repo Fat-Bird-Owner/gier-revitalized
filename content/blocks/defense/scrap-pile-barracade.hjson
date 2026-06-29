@@ -8,4 +8,4 @@ variants: 3
   
 category: defense
 requirements: [scrap/10]
-buildVisibility: editorOnly
+buildVisibility: sandboxOnly
