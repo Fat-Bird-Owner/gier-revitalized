@@ -35,6 +35,7 @@ require("CircuitLogic");
 require("CombustionBarrel");
 require("GeothermalTurbine");
 require("PowerGrid");
+require("damageShiftWall");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
