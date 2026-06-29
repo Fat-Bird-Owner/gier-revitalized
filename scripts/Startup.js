@@ -58,6 +58,9 @@ Core.bundle.properties.put("database-tag.circuit-logic", String.fromCharCode(Ico
 
 const gierTag = Core.bundle.get("database-tag.gier");
 Core.bundle.properties.put("database-tag.gier", String.fromCharCode(Iconc.commandRally) + " " + gierTag);
+
+const scrapTag = Core.bundle.get("database-tag.adv-scrap");
+Core.bundle.properties.put("database-tag.adv-scrap", Items.scrap.emoji() + " " + scrapTag);
   
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
