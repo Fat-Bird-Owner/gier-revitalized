@@ -1,0 +1,41 @@
+type: Wall
+name: Refined Scrap Barracade
+size: 2
+
+health: 1750
+armor: 10
+  
+insulated: true
+absorbLaser: true
+category: defense
+
+requirements: [scrap/25, titanium/10]
+databaseTag: "adv-scrap"
+shownPlanets: [gier, kela]
+
+research: insulated-wall
+researchCostMultipler: 0.5
+  
+description: "
+A cheap expandable wall
+
+Protects from enemy bullet
+lightning arc and lasers
+
+Quick to build and has 
+decent armor
+
+Becomes damaged at half durability
+making it loose it's laser and lightning
+absorbant properties as well as it's armor
+and deconstruct value
+[green]
+- Cheap
+- Absorbs laser
+- Absorbs lightning arcs[red]
++ At half durablity:
+- Looses laser absorbant property
+- Looses lightning absorbant property
+- Looses armor
+- Looses deconstruct value
+"
