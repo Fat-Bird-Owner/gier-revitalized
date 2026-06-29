@@ -61,6 +61,9 @@ Core.bundle.properties.put("database-tag.gier", String.fromCharCode(Iconc.comman
 
 const scrapTag = Core.bundle.get("database-tag.adv-scrap");
 Core.bundle.properties.put("database-tag.adv-scrap", Items.scrap.emoji() + " " + scrapTag);
+
+const depletedThoriumTag = Core.bundle.get("database-tag.adv-depleted-thorium");
+Core.bundle.properties.put("database-tag.adv-depleted-thorium", Items.scrap.emoji() + " " + depletedThoriumTag);
   
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
