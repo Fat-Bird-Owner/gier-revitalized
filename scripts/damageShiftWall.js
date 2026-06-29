@@ -29,13 +29,13 @@ layer: 21,
 spin: Mathf.random(0.05, 0.1),
 colorTo: Color.valueOf("ffffff"),
 colorFrom: Color.valueOf("ffffff"),
-offset: offset,
+offset: source.rotation(),
 sizeInterp: Interp.pow10In,
 interp: Interp.pow10Out,
 cone: 25
 });
 
-fx.at(source.x, source.y, source.rotation());
+fx.at(source.x, source.y);
   
 } catch(e){
 Vars.ui.showInfoToast(e + "[red] - damageShiftWall",5);
