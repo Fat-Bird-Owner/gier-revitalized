@@ -10,7 +10,7 @@ target = Vars.content.block("gr-refined-scrap-barracade");
 transitBlock = Vars.content.block("gr-scrap-piled-barracade");
 } 
 
-if (build && build.block != target && build.health <= (build.block.health / 2) && build.health > 0) return;
+if (build && build.block == target && build.health <= (build.block.health / 2) && build.health > 0) return;
 
 const altHealth = build.health
   
