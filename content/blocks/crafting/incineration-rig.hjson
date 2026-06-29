@@ -25,6 +25,9 @@ buildVisiblity: sandboxOnly
 outputLiquid: slag/0.16667
 liquidCapacity: 30
 
+research: "gr-fluid-cracker"
+researchCostMultiplier: 0.25
+
 ignoreLiquidFullness: true
 baseExplosiveness: 75
 craftTime: 5
