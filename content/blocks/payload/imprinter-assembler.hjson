@@ -9,7 +9,7 @@ customShadow: true
 droneType: mechanic
 droneConstructTime: 300
 
-research: freight-assembler
+research: freight-conveyor
 researchCostMultiplier: 0.25
 
 plans: [
