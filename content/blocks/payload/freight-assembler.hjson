@@ -2,7 +2,7 @@ type: Constructor
 size: 3
 name: Freight Assembler
 
-research: imprinter
+databaseTag: "adv-depleted-thorium"
 researchCostMultiplier: 0.5
 buildSpeed: 0.5
 
