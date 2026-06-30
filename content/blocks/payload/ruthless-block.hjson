@@ -14,8 +14,6 @@ category: units
 databaseTag: "exogen"
 databaseCategory: "unit-spawn"
 
-
-
 buildTime: 180
 requirements:[lead/65,copper/35,graphite/20]
 reload: 30
@@ -40,10 +38,12 @@ buildingRotate: true
 }
 ]
 
+/*
 research:{
 parent: gier
 objectives:[ruthless-block]
 }
+*/
 
 shootType:{
 type: EmptyBulletType
