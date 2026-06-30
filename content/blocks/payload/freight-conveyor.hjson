@@ -11,7 +11,6 @@ research: freight-assembler
 researcCostMultiplier: 0.25
 
 envEnabled: -1
-research: imprinter
 researchCostMultiplier: 0.25
   
 customShadow: true
