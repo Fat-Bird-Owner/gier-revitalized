@@ -12,8 +12,9 @@ researcCostMultiplier: 0.25
 databaseTag: "adv-depleted-thorium"
 
 envEnabled: -1
-researchCostMultiplier: 0.25
-  
+researchCostMultiplier: 0.25 
+requirements: [lead/25, copper/25, silicon/15, depleted-thorium/15]
+
 customShadow: true
 category: units
 requirements:[
