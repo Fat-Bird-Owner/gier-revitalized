@@ -11,6 +11,7 @@ droneConstructTime: 300
 
 research: freight-conveyor
 researchCostMultiplier: 0.25
+databaseTag: "adv-depleted-thorium"
 
 plans: [
 {
