@@ -16,6 +16,8 @@ payload purposes.
 [red]- Needs a required tile behind it
 - Explosive
 "
+
+research: freight-assembler
 category: units
 size: 2
 
@@ -24,6 +26,7 @@ requirements:[lead/65, copper/30, silicon/15, oxide/10]
 buildVisibility: sandboxOnly
 
 canOverdrive: true
+researchCostMultiplier: 0.25
 
 privileged: true
 buildSpeed: 0.1
