@@ -22,6 +22,12 @@ category: units
 requirements: [graphite/150, silicon/115, beryllium/75, depleted-thorium/25]
 baseExplosiveness: 25
 
+research: {
+parent: gr-gier
+objectives: [freight-assembler]
+}
+researchCostMultiplier: 0.25
+
 consumes: {
 power: 0.5
 }
