@@ -1,0 +1,47 @@
+type: GenericCrafter
+size: 3
+name: Transmutation Centrifuge
+
+description: "
+Purifies depleted thorium turning it
+into regular thorium
+[green]
+- Converts depleted thorium into thorium[red]
+- Requires power
+- Requires tuntra
+- Highly explosive
+"
+
+baseExplosiveness: 150
+
+requirements: [silicon/150, titanium/150, beryllium/100, thorium/50]
+category: crafting
+databaseTag: "adv-thorium"
+  
+outputItem: thorium/5
+craftTime: 300
+consumes: {
+power: 3
+items: [depleted-thorium/10]
+liquids: [tuntra/0.16667]
+}
+
+customShadow: true
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawPlasma
+plasmas: 2
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+alpha: 0.5
+}
+]
