@@ -29,7 +29,8 @@ group: walls
 fogRadiusMultiplier: 0
 
 priority: 0
-  
+shootY: 0
+
 shootCone: 180
 reload: 80
 shootType: {
@@ -39,6 +40,7 @@ splashDamageRadius: 20
 scaledSplashDamage: true
 status: incendiary-depletion
 statusDuration: 60
+despawnEffect: none
 }
 
 shootEffect: [
@@ -62,6 +64,7 @@ strokeFrom: 3
 strokeTo: 3
 particles: 3
 lifetime: 70
+length: 0
 }
 {
 type: ParticleEffect
@@ -74,10 +77,13 @@ strokeFrom: 3
 strokeTo: 3
 particles: 4
 lifetime: 46
+line: true
+length: 0
 }
 {
 type: ParticleEffect
 baseLength: 4
+length: 0
 colorFrom: f9a3c7
 colorTo: ffaa5f
 lenFrom: 5
@@ -86,5 +92,6 @@ strokeFrom: 3
 strokeTo: 3
 particles: 5
 lifetime: 23
+line: true
 }
 ]
