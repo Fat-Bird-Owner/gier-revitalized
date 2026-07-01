@@ -1,10 +1,11 @@
 type: PowerTurret
 size: 2
 name: Reinforced Thorium Wall
+databaseTag: "adv-thorium"
 
 health: 2500
 description: "
-Able release a burst of radiation
+Able to release a burst of radiation
 temporarily depleting nearby enemies
 [green]
 + Able to burst out radiation
