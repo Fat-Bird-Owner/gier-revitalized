@@ -1,0 +1,26 @@
+type: Wall
+name: Grid
+size: 1
+
+health: 400
+armor: 10
+customShadow: true
+  
+insulated: true
+absorbLaser: true
+category: defense
+
+requirements: [scrap/6, titanium/4, silicon/4]
+databaseTag: "adv-scrap"
+shownPlanets: [gier, kela]
+
+research: refined-scrap-barracade
+researchCostMultipler: 0.5
+  
+description: "
+A smaller variant of the
+refined scrap barracade
+
+Doesn't become damaged
+but has less overall health
+"
