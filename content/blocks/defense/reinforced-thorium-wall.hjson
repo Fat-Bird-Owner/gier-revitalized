@@ -1,0 +1,90 @@
+type: PowerTurret
+size: 2
+name: Reinforced Thorium Wall
+
+health: 2500
+description: "
+Able release a burst of radiation
+temporarily depleting nearby enemies
+[green]
++ Able to burst out radiation
+- Depleting enemies
+- And dealing small amounts of damage
+"  
+
+hasShadow: false
+range: 20
+buildVisibility: sandboxOnly 
+  
+research: insulated-wall
+researchCostMultiplier: 0.25
+category: defense
+
+cone: 0
+recoil: 0
+rotateSpeed: 0
+
+rotate: false
+group: walls
+fogRadiusMultiplier: 0
+
+priority: 0
+  
+shootCone: 180
+reload: 80
+shootType: {
+type: BulletType
+splashDamage: 20
+splashDamageRadius: 20
+scaledSplashDamage: true
+status: incendiary-depletion
+statusDuration: 60
+}
+
+shootEffect: [
+{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 10
+colorFrom: f9a3c7
+colorTo: f9a3c7
+strokeFrom: 3
+strokeTo: 0
+}
+{
+type: ParticleEffect
+baseLength: 4
+colorFrom: f9a3c7
+colorTo: ffaa5f
+lenFrom: 15
+lenTo: 15
+strokeFrom: 3
+strokeTo: 3
+particles: 3
+lifetime: 70
+}
+{
+type: ParticleEffect
+baseLength: 4
+colorFrom: f9a3c7
+colorTo: ffaa5f
+lenFrom: 10
+lenTo: 10
+strokeFrom: 3
+strokeTo: 3
+particles: 4
+lifetime: 46
+}
+{
+type: ParticleEffect
+baseLength: 4
+colorFrom: f9a3c7
+colorTo: ffaa5f
+lenFrom: 5
+lenTo: 5
+strokeFrom: 3
+strokeTo: 3
+particles: 5
+lifetime: 23
+}
+]
