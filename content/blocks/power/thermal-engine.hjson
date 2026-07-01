@@ -24,31 +24,42 @@ suffix: "-bottom"
 }
 {
 type: DrawRegion
-rotateSpeed: 12
+rotateSpeed: 6
 buildingRotate: true
 suffix: "-rotator"
 rotation: 0
+spinSprite: true
 }
 {
 type: DrawRegion
-rotateSpeed: 12
+rotateSpeed: 6
 buildingRotate: true
 rotation: 45
 suffix: "-rotator"
+spinSprite: true
 }
 {
 type: DrawRegion
-rotateSpeed: 12
+rotateSpeed: 6
 buildingRotate: true
 suffix: "-rotator"
 rotation: 22.5
+spinSprite: true
+}
+{
+type: DrawRegion
+rotateSpeed: 6
+buildingRotate: true
+suffix: "-rotator"
+rotation: -22.5
+spinSprite: true
 }
 {
 type: DrawDefault
 }
 {
 type: DrawGlowRegion
-alpha: 0.5
+alpha: 0.85
 color: FFD37F
 }
 ]
