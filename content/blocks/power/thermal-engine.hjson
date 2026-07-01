@@ -1,0 +1,48 @@
+type: ThermalGenerator
+name: Thermal Engine
+size: 4
+
+minEfficiency: 0.1
+displayEfficiencyScale: 0.0625
+category: power
+
+requirements: [lead/350, copper/200, silicon/200, graphite/150]
+buildVisibility: sandboxOnly
+databaseTag: "gier"
+
+alwaysUnlocked: true
+buildVisibility: sandboxOnly
+  
+powerProduction: 4
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawRegion
+rotateSpeed: 12
+buildingRotate: true
+rotation: 0
+}
+{
+type: DrawRegion
+rotateSpeed: 12
+buildingRotate: true
+rotation: 45
+}
+{
+type: DrawRegion
+rotateSpeed: 12
+buildingRotate: true
+rotation: 22.5
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+alpha: 0.5
+color: FFD37F
+}
+]
