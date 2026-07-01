@@ -10,7 +10,7 @@ parent: trench
 objectives:[
 {
 type: SectorComplete
-preset: trench
+preset: aftermath
 }
 sunder-furnace
 mend-pylon
