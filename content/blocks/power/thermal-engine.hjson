@@ -12,7 +12,10 @@ databaseTag: "gier"
 
 alwaysUnlocked: true
 buildVisibility: sandboxOnly
-  
+envEnabled: -1
+
+shownPlanets: [kela]
+
 powerProduction: 4
 drawer: [
 {
