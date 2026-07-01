@@ -14,6 +14,7 @@ into regular thorium
 
 baseExplosiveness: 150
 buildVisibility: sandboxOnly
+itemCapacity: 20
 
 requirements: [silicon/150, titanium/150, beryllium/100, thorium/50]
 category: crafting
@@ -27,6 +28,7 @@ items: [depleted-thorium/10]
 liquids: [tuntra/0.16667]
 }
 
+ambientSound: loopBio
 customShadow: true
 drawer: [
 {
