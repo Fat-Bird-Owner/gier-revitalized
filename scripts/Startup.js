@@ -64,7 +64,11 @@ Core.bundle.properties.put("database-tag.adv-scrap", Items.scrap.emoji() + " " +
 
 const depletedThoriumTag = Core.bundle.get("database-tag.adv-depleted-thorium");
 Core.bundle.properties.put("database-tag.adv-depleted-thorium", Items.thorium.emoji() + " " + depletedThoriumTag);
+
+const thoriumTag = Core.bundle.get("database-tag.adv-thorium");
+Core.bundle.properties.put("database-tag.adv-thorium", Items.thorium.emoji() + " " + thoriumTag
   
+
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
 }});
