@@ -32,6 +32,7 @@ priority: 0
 shootY: 0
 elevation: 4
 
+playerControllable: false
 shootCone: 180
 reload: 80
 shootType: {
