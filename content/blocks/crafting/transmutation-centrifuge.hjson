@@ -36,6 +36,9 @@ type: DrawRegion
 suffix: "-bottom"
 }
 {
+type: DrawCrucibleFlame
+}
+{
 type: DrawPlasma
 plasmas: 2
 }
