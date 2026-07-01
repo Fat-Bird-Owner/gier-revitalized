@@ -36,6 +36,7 @@ elevation: 4
 playerControllable: false
 shootCone: 180
 reload: 80
+
 shootType: {
 type: BulletType
 splashDamage: 20
@@ -44,6 +45,9 @@ scaledSplashDamage: true
 status: incendiary-depletion
 statusDuration: 60
 despawnEffect: none
+hitEffect: none
+instantDisappear: true
+despawnHit: true
 }
 
 shootEffect: [
@@ -66,7 +70,7 @@ lenTo: 30
 strokeFrom: 3
 strokeTo: 0
 particles: 3
-lifetime: 70
+lifetime: 23
 length: 0
 line: true
 }
@@ -95,7 +99,7 @@ lenTo: 10
 strokeFrom: 3
 strokeTo: 0
 particles: 5
-lifetime: 23
+lifetime: 70
 line: true
 }
 ]
