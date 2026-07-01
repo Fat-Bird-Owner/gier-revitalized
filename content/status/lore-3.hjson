@@ -31,7 +31,7 @@ parent: gr-lore-2
 objectives:[
 {
 type: SectorComplete
-preset: trench
+preset: aftermath
 }
 ]
 }
