@@ -62,7 +62,7 @@ strokeTo: 0
 }
 {
 type: ParticleEffect
-baseLength: 4
+baseLength: 8
 colorFrom: f9a3c7
 colorTo: ffaa5f
 lenFrom: 30
@@ -76,7 +76,7 @@ line: true
 }
 {
 type: ParticleEffect
-baseLength: 4
+baseLength: 6
 colorFrom: f9a3c7
 colorTo: ffaa5f
 lenFrom: 15
