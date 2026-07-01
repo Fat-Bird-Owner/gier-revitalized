@@ -13,7 +13,7 @@ temporarily depleting nearby enemies
 "  
 
 hasShadow: false
-range: 20
+range: 40
 buildVisibility: sandboxOnly 
   
 research: insulated-wall
@@ -36,7 +36,7 @@ reload: 80
 shootType: {
 type: BulletType
 splashDamage: 20
-splashDamageRadius: 20
+splashDamageRadius: 40
 scaledSplashDamage: true
 status: incendiary-depletion
 statusDuration: 60
@@ -58,23 +58,24 @@ type: ParticleEffect
 baseLength: 4
 colorFrom: f9a3c7
 colorTo: ffaa5f
-lenFrom: 15
-lenTo: 15
+lenFrom: 30
+lenTo: 30
 strokeFrom: 3
-strokeTo: 3
+strokeTo: 0
 particles: 3
 lifetime: 70
 length: 0
+line: true
 }
 {
 type: ParticleEffect
 baseLength: 4
 colorFrom: f9a3c7
 colorTo: ffaa5f
-lenFrom: 10
-lenTo: 10
+lenFrom: 15
+lenTo: 15
 strokeFrom: 3
-strokeTo: 3
+strokeTo: 0
 particles: 4
 lifetime: 46
 line: true
@@ -86,10 +87,10 @@ baseLength: 4
 length: 0
 colorFrom: f9a3c7
 colorTo: ffaa5f
-lenFrom: 5
-lenTo: 5
+lenFrom: 10
+lenTo: 10
 strokeFrom: 3
-strokeTo: 3
+strokeTo: 0
 particles: 5
 lifetime: 23
 line: true
