@@ -35,7 +35,7 @@ suffix: "-bottom"
 }
 {
 type: DrawPlasma
-plasmas: 2
+plasmas: 1
 }
 {
 type: DrawDefault
