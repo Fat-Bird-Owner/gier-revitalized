@@ -6,7 +6,7 @@ captureWave: 10
 planet: kela
 
 rules: {
-solarMultiplier: 1
+solarMultiplier: 100
 }
 
 research: {
