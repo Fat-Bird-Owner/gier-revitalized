@@ -23,6 +23,7 @@ suffix: "-bottom"
 type: DrawRegion
 rotateSpeed: 12
 buildingRotate: true
+suffix: "-rotator"
 rotation: 0
 }
 {
@@ -30,11 +31,13 @@ type: DrawRegion
 rotateSpeed: 12
 buildingRotate: true
 rotation: 45
+suffix: "-rotator"
 }
 {
 type: DrawRegion
 rotateSpeed: 12
 buildingRotate: true
+suffix: "-rotator"
 rotation: 22.5
 }
 {
