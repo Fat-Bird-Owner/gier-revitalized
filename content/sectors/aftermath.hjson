@@ -1,0 +1,19 @@
+//name: Aftermath
+difficulty: 4.5
+
+sector: 69
+captureWave: 10
+planet: kela
+
+research: {
+parent: fragmented-fix
+objectives:[
+rail
+rail-router
+rail-overflow
+output-port
+tension
+crate
+copper-fort
+]
+}
