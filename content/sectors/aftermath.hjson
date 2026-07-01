@@ -5,6 +5,10 @@ sector: 69
 captureWave: 10
 planet: kela
 
+rules: {
+solarMultiplier: 1
+}
+
 research: {
 parent: fragmented-fix
 objectives:[
