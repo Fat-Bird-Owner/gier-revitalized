@@ -17,6 +17,7 @@ envEnabled: -1
 shownPlanets: [kela]
 
 powerProduction: 4
+customShadow: true
 drawer: [
 {
 type: DrawRegion
