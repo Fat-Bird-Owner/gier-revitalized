@@ -30,6 +30,7 @@ fogRadiusMultiplier: 0
 
 priority: 0
 shootY: 0
+shadowElevation: 8
 
 shootCone: 180
 reload: 80
