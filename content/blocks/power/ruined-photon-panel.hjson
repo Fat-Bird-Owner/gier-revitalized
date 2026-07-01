@@ -5,3 +5,4 @@ size: 2
 requirements:[lead/35, copper/20, graphite/12]
 buildVisibility: editorOnly
 variants: 3
+conductive: true
