@@ -37,6 +37,11 @@ playerControllable: false
 shootCone: 180
 reload: 80
 
+drawer: {
+type: DrawRegion
+}
+
+
 shootType: {
 type: BulletType
 splashDamage: 20
