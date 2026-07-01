@@ -13,6 +13,7 @@ into regular thorium
 "
 
 baseExplosiveness: 150
+buildVisibility: sandboxOnly
 
 requirements: [silicon/150, titanium/150, beryllium/100, thorium/50]
 category: crafting
