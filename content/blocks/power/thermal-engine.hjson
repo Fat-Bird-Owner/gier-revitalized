@@ -60,7 +60,7 @@ type: DrawDefault
 }
 {
 type: DrawGlowRegion
-alpha: 0.5
+alpha: 0.9
 color: FFD37F
 }
 ]
