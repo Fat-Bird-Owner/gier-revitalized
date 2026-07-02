@@ -78,6 +78,40 @@ suffix: "-rotator"
 rotation: -22.5
 spinSprite: true
 }
+# Blur spin
+{
+type: DrawRegion
+rotateSpeed: 6
+buildingRotate: true
+suffix: "-rotator-blur"
+rotation: 0
+spinSprite: true
+}
+{
+type: DrawRegion
+rotateSpeed: 6
+buildingRotate: true
+rotation: 45
+suffix: "-rotator-blur"
+spinSprite: true
+}
+{
+type: DrawRegion
+rotateSpeed: 6
+buildingRotate: true
+suffix: "-rotator-blur"
+rotation: 22.5
+spinSprite: true
+}
+{
+type: DrawRegion
+rotateSpeed: 6
+buildingRotate: true
+suffix: "-rotator-blur"
+rotation: -22.5
+spinSprite: true
+}
+# End
 {
 type: DrawDefault
 }
