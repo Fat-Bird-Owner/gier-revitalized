@@ -6,16 +6,26 @@ captureWave: 2
 planet: kela
 
 research: {
-parent: trench
+parent: techtree-kela
 objectives:[
-{
-type: SectorComplete
-preset: aftermath
-}
-sunder-furnace
-mend-pylon
-overhead-belt
-trident
-sand-strate
+gr-drone-facility
+gr-tension
+gr-trident
+gr-crate
+gr-mend-pylon
+gr-outpost
+gr-copper-fort
+gr-sunder-furnace
+gr-output-port
+gr-rail-router
+gr-facility-dropzone
+gr-power-cell
+gr-photon-panel
+gr-core-facility
+gr-rail-overflow
+gr-rail
+gr-hydro-drill
+gr-sand-strate
+gr-overhead-belt
 ]
 }
