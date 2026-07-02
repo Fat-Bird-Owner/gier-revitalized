@@ -86,6 +86,7 @@ buildingRotate: true
 suffix: "-rotator-blur"
 rotation: 0
 spinSprite: true
+color: ffffff66
 }
 {
 type: DrawRegion
@@ -94,6 +95,7 @@ buildingRotate: true
 rotation: 45
 suffix: "-rotator-blur"
 spinSprite: true
+color: ffffff66
 }
 {
 type: DrawRegion
@@ -102,6 +104,7 @@ buildingRotate: true
 suffix: "-rotator-blur"
 rotation: 22.5
 spinSprite: true
+color: ffffff66
 }
 {
 type: DrawRegion
@@ -110,6 +113,7 @@ buildingRotate: true
 suffix: "-rotator-blur"
 rotation: -22.5
 spinSprite: true
+color: ffffff66
 }
 # End
 {
