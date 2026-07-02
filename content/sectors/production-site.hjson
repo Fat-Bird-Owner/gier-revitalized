@@ -4,13 +4,18 @@ sector: 0
 planet: kela
 
 research: {
-parent: intercept
+parent: techtree-kela
 objectives:[
-{
-type: SectorComplete
-preset: intercept
-}
-sunder-furnace
-sand-strate
+gr-crate
+gr-outpost
+gr-sunder-furnace
+gr-rail-router
+gr-photon-panel
+gr-rail-overflow
+gr-rail
+gr-hydro-drill
+gr-sand-strate
+gr-overhead-belt
+gr-button
 ]
 }
