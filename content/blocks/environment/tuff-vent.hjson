@@ -4,6 +4,5 @@ effectSpacing: 10
 
 variants: 0
 attributes: {
-heat: 1
 steam: 1
 }
