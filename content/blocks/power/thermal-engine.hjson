@@ -58,9 +58,4 @@ spinSprite: true
 {
 type: DrawDefault
 }
-{
-type: DrawGlowRegion
-alpha: 0.9
-color: FFD37F
-}
 ]
