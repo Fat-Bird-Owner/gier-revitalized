@@ -1,0 +1,7 @@
+type: SteamVent
+parent: tuff
+effectSpacing: 10
+
+attributes: {
+heat: 0.11112
+}
