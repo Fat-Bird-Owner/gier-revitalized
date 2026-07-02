@@ -3,7 +3,7 @@ name: Thermal Engine
 size: 4
 
 minEfficiency: 0.1
-displayEfficiencyScale: 0.0625
+displayEfficiencyScale: 0.125
 category: power
 
 requirements: [lead/350, copper/200, silicon/200, graphite/150]
