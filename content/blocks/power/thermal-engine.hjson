@@ -1,6 +1,30 @@
 type: ThermalGenerator
-name: Thermal Engine
+name: "Thermal Engine [sky]<Special>"
 size: 4
+
+health: 1200
+description: "
+[sky]Special Tech[]
+
+Produces decent quantities of
+power
+
+Though it's cost out weight of
+benefits quite heavily
+[green]
+- Produces power[red]
+- Extremely explosive
+- Requires heat tiles
+- Quite fragile
+- Expensive
+"
+
+explosionShake: 4
+explosionShakeDuration: 16
+explosionDamage: 1900
+explosionMinWarmup: 0.3
+explodeEffect: impactReactorExplosion
+explodeSound: explosionReactor2
 
 minEfficiency: 0.1
 displayEfficiencyScale: 0.125
