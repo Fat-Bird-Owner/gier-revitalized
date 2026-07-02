@@ -1,0 +1,31 @@
+databaseCategory: "sector-lore"
+name: "Sector Chip: [accent]Fragmented[]"
+details: '''
+Fragmented was originally a large
+production site owned by the [sky]
+Exogen
+[]
+But due to being poorly maintanace
+the sector eventually disappeared
+from kela
+
+[grey]Location:
+- Depth: -2KM - Sea level
+- Depth Type:[acid] Illumination[]
+- Location: Sector-24-kela
+'''
+
+show: true
+shownPlanets:[gier]
+fullOverride: "gr-sector-lore"
+allDatabaseTabs: false
+  
+research:{
+parent: gr-techtree-kela
+objectives:[
+{
+type: SectorComplete
+preset: fragmented-fix
+}
+]
+}
