@@ -1,24 +1,31 @@
-difficulty: 7.5
+difficulty: 8
 
 sector: 64
 captureWave: 15
 planet: kela
 
 research: {
-parent: intercept
+parent: fragmented
 objectives:[
-rail
-rail-router
-rail-overflow
-output-port
-tension
-trident
-insulated-wall
-copper-fort
-titanium-barracade
-outpost
-core-facility
-sand-strate
-crate
+gr-core-facility
+gr-insulated-wall
+gr-core-satellite
+gr-tension
+gr-rail
+gr-sunder-furnace
+gr-power-cell
+gr-ton-crusher
+gr-thermal-engine
+gr-trident
+gr-rail-router
+gr-outpost
+gr-hydro-drill
+gr-output-port
+gr-overhead-belt
+gr-sand-strate
+gr-crate
+gr-titanium-barracade
+gr-copper-fort
+gr-rail-overflow
 ]
 }
