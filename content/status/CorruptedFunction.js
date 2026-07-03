@@ -5,6 +5,8 @@ const effect = Vars.content.statusEffect("gr-corrupted")
   
 if (!unit || !bullet || !unit.hasEffect(effect)) return;
 
+Vars.ui.showInfoToast("Dam", 5);
+
 const {type} = unit;
 const chance = (((type.health /  unit.health) - 1) * -100) - 25;
 
