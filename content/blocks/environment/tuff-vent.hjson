@@ -2,6 +2,24 @@ type: SteamVent
 parent: tuff
 effectSpacing: 10
 
+effect: [
+{
+type: RadialEffect
+effect: ventSteam
+effectRotationOffset: 22.5
+amount: 1
+lengthOffset: 3.5
+}
+{
+type: RadialEffect
+effect: ventSteam
+effectRotationOffset: 135
+amount: 1
+lengthOffset: 4.625
+}
+ventSteam
+]
+
 variants: 0
 attributes: {
 steam: 1
