@@ -1,0 +1,8 @@
+name: Corrupted
+description: "
+A chance for the unit to
+switch teams upon taking damage
+
+Chance increases as health gets
+lower
+"
