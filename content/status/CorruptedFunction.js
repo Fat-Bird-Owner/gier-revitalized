@@ -9,8 +9,9 @@ const {type} = unit;
 const chance = (((type.health /  unit.health) - 1) * -100) - 25;
 
 if (Mathf.random(1, 100) <= chance) {
-unit.team = bullet.team;
+unit.setProp(LAccess.team, bullet.team)
 unit.unapply(effect);
+Fx.teleport.at(unit.x, unit.y);
 }
 
 } catch(e){
