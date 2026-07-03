@@ -8,10 +8,14 @@ if (!unit || !bullet || !unit.hasEffect(effect)) return;
 Vars.ui.showInfoToast("Dam", 5);
 
 const {type} = unit;
-const chance = (((type.health /  unit.health) - 1) * -100) - 25;
+const chance = Mathf.clamp(
+100 - unit.health / type.health * 100 - 25,
+0,
+100
+);
 
 if (Mathf.random(1, 100) <= chance) {
-unit.setProp(LAccess.team, bullet.team)
+unit.team = bullet.team;
 unit.unapply(effect);
 Fx.teleport.at(unit.x, unit.y);
 }
