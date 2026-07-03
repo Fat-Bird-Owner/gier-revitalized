@@ -5,8 +5,8 @@ const effect = Vars.content.statusEffect("gr-corrupted")
   
 if (!unit || !bullet || !unit.hasEffect(effect)) return;
 
-const {type} = unit.type;
-const chance = ((type.health /  unit.health) - 1) * -100) - 25;
+const {type} = unit;
+const chance = (((type.health /  unit.health) - 1) * -100) - 25;
 
 if (Mathf.random(1, 100) <= chance) {
 unit.team = bullet.team;
