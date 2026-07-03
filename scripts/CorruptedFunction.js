@@ -21,6 +21,11 @@ const chance = Mathf.clamp(
 if (Mathf.random(1, 100) <= chance && !unit.hasEffect(StatusEffects.boss)) {
 unit.team = bullet.team;
 unit.unapply(effect);
+  
+unit.controller = u => !type.playerControllable || (unit.team.isAI() && !unit.team.rules().rtsAi)
+? type.aiController.get()
+: new CommandAI();
+  
 Fx.teleport.at(unit.x, unit.y);
 }
 
