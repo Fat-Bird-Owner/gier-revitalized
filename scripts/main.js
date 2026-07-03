@@ -6,6 +6,7 @@ require("Deranged");
 require("WreckFX");
 require("Attributes");
 require("GierItems");
+require("CorruptedFunction");
 
 //    ### Class Overrides ###
 // Subclass: Block
