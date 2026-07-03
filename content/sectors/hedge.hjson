@@ -1,0 +1,24 @@
+difficulty: 7.5
+
+sector: 64
+captureWave: 15
+planet: kela
+
+research: {
+parent: intercept
+objectives:[
+rail
+rail-router
+rail-overflow
+output-port
+tension
+trident
+insulated-wall
+copper-fort
+titanium-barracade
+outpost
+core-facility
+sand-strate
+crate
+]
+}
