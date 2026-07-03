@@ -6,8 +6,14 @@ const effect = Vars.content.statusEffect("gr-corrupted");
 if (!unit || !bullet || !unit.hasEffect(effect)) return;
 
 const {type} = unit;
+const mul = Mathf.clamp(
+(bullet.damage / 50),
+0,
+1
+);
+
 const chance = Mathf.clamp(
-100 - unit.health / type.health * 100 - 50,
+(100 - unit.health / type.health * 100 - 75) * mul,
 0,
 100
 );
