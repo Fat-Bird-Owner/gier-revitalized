@@ -29,7 +29,7 @@ rotateSpeed: 0
 recoil: 0
 outlineRadius: 0
 
-researchCostMultiplier: 0.05
+researchCostMultiplier: 0.025
 
 shootY: 0
 hasShadow: false
