@@ -1,0 +1,11 @@
+type: UnitCargoLoader
+size: 2
+buildVisibility: sandboxOnly
+
+unitType: drive
+unitBuildTime: 900
+requirements: [lead/175, titanium/125, silicon/75]
+
+category: effect
+envEnabled: -1
+polyColor: D3DEE4FF
