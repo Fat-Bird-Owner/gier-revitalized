@@ -13,6 +13,8 @@ outlineColor: 2f2f3f
 engineSize: 0
 hitSize: 12.5
 
+targetFlags:[generator, blockRepair, core]
+
 flyingLayer: 110.1
 range: 50
 abilities:[
