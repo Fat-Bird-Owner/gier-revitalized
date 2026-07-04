@@ -11,3 +11,5 @@ researchCostMultiplier: 0.35
 envEnabled: -1
 squareSprite: false
 customShadow: true
+
+alwaysUnlocked: true
