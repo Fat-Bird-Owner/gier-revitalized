@@ -1,6 +1,7 @@
 type: UnitCargoLoader
 size: 2
 buildVisibility: sandboxOnly
+name: "Drive Bay"
 
 description: "
 A mechanical pad poccessing
