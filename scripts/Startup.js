@@ -131,6 +131,8 @@ t.checkPref("wreckEnabled", true, b => {});
 
 t.checkPref("unitWreckEnabled", false, b => {});
 
+t.checkPref("doomsday", false, b => {});
+  
 t.row();
 t.button(Core.bundle.get("settings.researchReset"), () => {
 try {
@@ -164,6 +166,20 @@ const title = Core.bundle.get("mod.gr.mail");
 
 if (Core.settings.getBool("command-block-texture") != true){        
 Vars.content.block("gr-command-block").region = Core.atlas.find("gr-command-block-modern");
+}
+
+if (Core.setting.getBool("doomsday") != true){
+Vars.content.each(c => {
+try {
+
+if (c instanceof Block){
+c.baseExplosiveness = 1000;
+}
+  
+} catch(e){
+Vars.ui.showText("startup", e);
+}});
+
 }
   
 if (Core.settings.getBool("startup") != true){        
