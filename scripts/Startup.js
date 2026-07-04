@@ -168,7 +168,7 @@ if (Core.settings.getBool("command-block-texture") != true){
 Vars.content.block("gr-command-block").region = Core.atlas.find("gr-command-block-modern");
 }
 
-if (Core.setting.getBool("doomsday") != true){
+if (Core.settings.getBool("doomsday") != true){
 Vars.content.each(c => {
 try {
 
