@@ -6,6 +6,7 @@ description: "Transports items in stacks, Outputs like a router.
 [grey]- Outputs like a router
 "
 requirements:[lead/1]
+alwaysUnlocked: true
 
 customShadow: true
 
