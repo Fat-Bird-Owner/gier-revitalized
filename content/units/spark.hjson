@@ -6,6 +6,8 @@ speed: 2
 accel: 0.04
 drag: 0.02
 
+targetFlags:[shield, drill, core]
+
 hitSize: 7
 omniMovement: false
 rotateSpeed: 3.5
