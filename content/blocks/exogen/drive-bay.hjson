@@ -15,7 +15,7 @@ printing
 health: 260
 armor: 15
 consumes: {
-liquid: [liquid-lead/0.03334]
+liquids: [liquid-lead/0.03334]
 }
 
 unitType: drive
