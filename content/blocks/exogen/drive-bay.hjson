@@ -3,6 +3,7 @@ size: 2
 buildVisibility: sandboxOnly
 name: "Drive Bay"
 
+polyRadius: 6
 description: "
 A mechanical pad poccessing
 the schematic needed to fabricate
