@@ -10,6 +10,7 @@ description: "Drills the ground for any possible extract.
 requirements:[lead/10,copper/20]
 customShadow: true
 
+alwaysUnlocked: true
 consumes:{
 liquids: {
 liquids:[
