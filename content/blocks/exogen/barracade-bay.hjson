@@ -1,0 +1,24 @@
+type: UnitCargoLoader
+size: 2
+buildVisibility: sandboxOnly
+name: "Barracade Bay"
+
+description: "
+A mechanical pad poccessing
+the schematic needed to fabricate
+a Barracade
+"
+
+health: 260
+armor: 15
+consumes: {
+liquids: [liquid-lead/0.016667, liquid-copper/0.016667]
+}
+
+unitType: barracade
+unitBuildTime: 1200
+requirements: [copper/150, beryllium/65, graphite/115]
+
+category: effect
+envEnabled: -1
+polyColor: D3DEE4FF
