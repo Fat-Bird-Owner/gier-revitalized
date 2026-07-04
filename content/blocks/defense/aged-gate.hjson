@@ -1,0 +1,11 @@
+type: Door
+size: 2
+name: "Gate [lightgrey](Aged)[]"
+
+category: defense
+buildVisibility: sandboxOnly
+health: 2147483647
+armor: 2147483647
+  
+targetable: false
+privileged: true
