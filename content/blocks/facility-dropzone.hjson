@@ -19,3 +19,4 @@ dumpTime: 2.5
 research: drone-facility
 researchCostMultiplier: 0.05
   
+alwaysUnlocked: true
