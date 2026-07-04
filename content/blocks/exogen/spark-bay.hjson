@@ -1,0 +1,24 @@
+type: UnitCargoLoader
+size: 2
+buildVisibility: sandboxOnly
+name: Spark Bay
+
+description: "
+A mechanical pad poccessing
+the schematic needed to fabricate
+a Spadk
+"
+
+health: 260
+armor: 15
+consumes: {
+liquids: [liquid-silicon/0.03334]
+}
+
+unitType: spark
+unitBuildTime: 750
+requirements: [lead/250, titanium/175, silicon/125]
+
+category: effect
+envEnabled: -1
+polyColor: D3DEE4FF
