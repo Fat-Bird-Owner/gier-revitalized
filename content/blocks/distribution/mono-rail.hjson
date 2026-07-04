@@ -2,9 +2,7 @@ type: StackConveyor
 name: Mono Rail
 description: "Transports items in stacks, Outputs like a router.
 Could be powered for additional speed
-[grey]
-- Is a Stack Belt
-- Outputs like a router[green]
+[green]
 - Could be boosted with power
 - Armored
 "
@@ -13,8 +11,9 @@ armor: 5
 requirements:[beryllium/1, surge-alloy/1]
 alwaysUnlocked: true
 
+fullOverride: "gr-mono-rail-preview"
 consumes: {
-power: 0.016667
+power: 0.033334
 }
 
 hasPower: true
