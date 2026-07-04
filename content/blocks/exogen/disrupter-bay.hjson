@@ -1,0 +1,25 @@
+type: UnitCargoLoader
+size: 2
+buildVisibility: sandboxOnly
+name: "Disrupter Bay"
+
+description: "
+A mechanical pad poccessing
+the schematic needed to fabricate
+a Barracade
+"
+
+health: 550
+armor: 15
+consumes: {
+power: 0.75
+liquids: [liquid-silicon/0.03334, liquid-copper/0.016667]
+}
+
+unitType: disrupter
+unitBuildTime: 1500
+requirements: [copper/225, lead/225, beryllium/65, titanium/65, graphite/115]
+
+category: effect
+envEnabled: -1
+polyColor: D3DEE4FF
