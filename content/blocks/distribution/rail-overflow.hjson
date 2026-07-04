@@ -7,6 +7,8 @@ research: rail-router
 researchCostMultiplier: 0.25
 customShadow: true
 
+alwaysUnlocked: true
+
 databaseTag: "gier"
 envEnabled: -1
 squareSprite: false
