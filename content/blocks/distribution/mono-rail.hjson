@@ -1,0 +1,28 @@
+type: StackConveyor
+name: Rail
+description: "Transports items in stacks, Outputs like a router.
+Could be powered for additional speed
+[grey]
+- Is a Stack Belt
+- Outputs like a router[green]
+- Could be boosted with power
+- Armored
+"
+
+armor: 5
+requirements:[beryllium/1, surge-alloy/1]
+alwaysUnlocked: true
+
+hasPower: true
+consumesPower: true
+conductivePower: true
+
+speed: 0.0333333
+baseEfficiency: 1
+customShadow: true
+  
+researchCostMultiplier: 0.5
+research: rail
+databaseTag: "adv-surge-alloy"
+shownPlanets: [gier]
+envEnabled: -1
