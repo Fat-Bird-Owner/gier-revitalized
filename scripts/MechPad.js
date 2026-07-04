@@ -1,7 +1,7 @@
 // The blocks that will be given stats on contentInit
 const mechPads = [
 "gr-mechanical-pad",
-"gr-drive-pad"
+"gr-drive-bay"
 ];
 
 // Basically an init for this override class
