@@ -16,6 +16,7 @@ function mechPadBuild(string){
 const pad = Vars.content.block(string);
 if (!pad || !(pad instanceof UnitCargoLoader)) return;
 
+pad.itemCapacity = 0;
 pad.addBar("progress", e => new Bar("Progress",Pal.lightOrange, () => e && e. buildProgress > 0 ? e. buildProgress : 0 ));
 pad.stats.add(buildTime, pad.unitBuildTime/60 , StatUnit.seconds); 
 pad.stats.add(Stat.output, StatValues.content(pad.unitType));
