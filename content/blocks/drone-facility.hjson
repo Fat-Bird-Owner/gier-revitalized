@@ -22,3 +22,5 @@ research: rail
 researchCostMultiplier: 0.05
 databaseTag: "gier"
 #shownPlanets:[gier]
+
+alwaysUnlocked: true
