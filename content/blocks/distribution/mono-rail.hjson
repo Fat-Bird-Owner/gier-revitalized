@@ -1,5 +1,5 @@
 type: StackConveyor
-name: Rail
+name: Mono Rail
 description: "Transports items in stacks, Outputs like a router.
 Could be powered for additional speed
 [grey]
