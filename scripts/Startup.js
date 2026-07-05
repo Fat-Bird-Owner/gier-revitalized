@@ -205,6 +205,11 @@ const fakeSerpulo = Vars.content.planet("gr-serpulo-fake");
 fakeSerpulo.meshLoader = Planets.serpulo.meshLoader;
 fakeSerpulo.atmosphereColor = Planets.serpulo.atmosphereColor;
 Core.app.post(() => fakeSerpulo.reloadMesh());
+
+const fakeErekir = Vars.content.planet("gr-test-planet");
+fakeErekir.meshLoader = Planets.erekir.meshLoader;
+fakeErekir.atmosphereColor = Planets.erekir.atmosphereColor;
+Core.app.post(() => fakeErekir.reloadMesh());
   
 } catch(e){
 Vars.ui.showText("startup - planet", e);
