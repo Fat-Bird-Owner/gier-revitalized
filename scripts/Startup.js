@@ -26,6 +26,7 @@ const fakeSerpulo = Vars.content.planet("gr-serpulo-fake");
 fakeSerpulo.mesh = Planets.serpulo.mesh;
 fakeSerpulo.cloudMesh = Plants.serpulo.cloudMesh;
 fakeSerpulo.atmosphereColor = Planets.serpulo.atmosphereColor;
+Core.app.post(() => fakeSerpulo.reloadMesh());
   
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
