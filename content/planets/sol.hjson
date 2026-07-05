@@ -2,10 +2,9 @@ radius: 8.5
 #name: Sol
 iconColor: f4ee8e
 alwaysUnlocked: false
-accessible: false
+accessible: true
+hasAtmosphere: true
 
-orbitRadius: 12000
-orbitSpacing: 9
 drawOrbit: false
 solarSystem: sol
 
@@ -16,7 +15,7 @@ bloom: true
 tidalLock: true
 accessible: false
 visible: true
-hasAtmosphere: false
+hasAtmosphere: true
 
 mesh:[
 {
