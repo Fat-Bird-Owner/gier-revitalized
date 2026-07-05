@@ -10,6 +10,7 @@ Could be powered for additional speed
 armor: 5
 requirements:[beryllium/1, surge-alloy/1]
 alwaysUnlocked: true
+fullOverride: "gr-mono-rail"
 
 consumes: {
 power: 0.033334
