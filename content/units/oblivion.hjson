@@ -15,5 +15,5 @@ rotateSpeed: 1
 drawSoftShadow: false
 outlineRadius: 0
 armor: 20
-
+crushDamage: 7.5
 
