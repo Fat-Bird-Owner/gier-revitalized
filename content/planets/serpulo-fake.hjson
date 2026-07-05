@@ -1,4 +1,4 @@
-localizedName: Seepulo
+localizedName: Serpulo
 
 # ignore the clouds and mesh
 mesh: {
@@ -53,7 +53,7 @@ generator: {
 }
 
 sectorSize: 1
-orbitSpacing: 12
+orbitSpacing: 6
 radius: 1
 minZoom: 0.5
 drawOrbit: true
