@@ -4,8 +4,8 @@ health: 4500
 armor: 20
 
 speed: 1.5
-accel: 0.015
-drag: 0.01
+accel: 0.15
+drag: 0.05
 flying: true
 range: 400
 rotateSpeed: 1
