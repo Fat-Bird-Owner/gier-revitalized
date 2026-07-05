@@ -45,24 +45,16 @@ parts:[
 {
 type: ShapePart
 circle: true
-color1: FFD37F
-radius: 0
-radiusTo: 24
-stroke: 0
-strokeTo: 1.5
+color: FFD37F00
+colorTo: FFD37F
+radius: 24
+radiusTo: 0
+stroke: 1.5
+strokeTo: 0
+hollow: true
 progress: warmup
 }
 ]
-
-chargeEffect: {
-type: WaveEffect
-colorFrom: FFD37F
-colorTo: FFD37F
-sizeFrom: 24
-sizeTo: 0
-strokeFrom: 1.5
-strokeTo: 0
-}
   
 bullet:{
 type: ContinuousLaserBulletType
@@ -75,7 +67,15 @@ shake: 1
 despawnEffect: smokeCloud
 smokeEffect: none
 
-chargeEffect: greenLaserChargeSmall
+chargeEffect: {
+type: WaveEffect
+colorFrom: FFD37F
+colorTo: FFD37F
+sizeFrom: 24
+sizeTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+}
 
 incendChance: 0.1
 incendSpread: 5
