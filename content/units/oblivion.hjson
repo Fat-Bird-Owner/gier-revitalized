@@ -12,6 +12,7 @@ rotateSpeed: 1
 
 drawSoftShadow: false
 lowAltitude: true
+outlineRadius: 0
 
 engineSize: 0
 parts:[
