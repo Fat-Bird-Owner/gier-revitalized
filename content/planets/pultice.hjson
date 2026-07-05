@@ -8,7 +8,7 @@ orbitRadius: 12
 orbitSpacing: 9
 drawOrbit: false
 solarSystem: sun
-parent: test-sun
+parent: sun
 
 drawOrbit: false
 tidalLock: true
