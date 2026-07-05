@@ -1,0 +1,93 @@
+type: flying
+hitSize: 22
+health: 4500
+armor: 20
+
+speed: 1.5
+accel: 0.015
+drag: 0.01
+flying: true
+range: 400
+rotateSpeed: 1
+
+drawSoftShadow: false
+lowAltitude: true
+
+engineSize: 0
+parts:[
+{
+type: HoverPart
+radius: 16
+layerOffset: -0.1
+color: FFD37F 
+y: -12.25
+}]
+  
+name: Cruelty
+outlineColor: 1f1f2f
+weapons:[
+{
+x: 0
+y: 0
+shootY: -6.5
+mirror: false
+
+reload: 1200
+shake: 5
+continuous: true
+  
+shoot:{
+firstShotDelay: 150
+}
+
+parts:[
+{
+type: ShapePart
+circle: true
+color1: FFD37F
+radius: 0
+radiusTo: 24
+stroke: 0
+strokeTo: 1.5
+progress: warmup
+}
+]
+
+chargeEffect: {
+type: WaveEffect
+colorFrom: FFD37F
+colorTo: FFD37F
+sizeFrom: 24
+sizeTo: 0
+strokeFrom: 1.5
+strokeTo: 0
+}
+  
+bullet:{
+type: ContinuousLaserBulletType
+damage: 45
+length: 200
+hitEffect: hitMeltHeal
+drawSize: 420
+lifetime: 220
+shake: 1
+despawnEffect: smokeCloud
+smokeEffect: none
+
+chargeEffect: greenLaserChargeSmall
+
+incendChance: 0.1
+incendSpread: 5
+incendAmount: 1
+
+healPercent: 1
+collidesTeam: true
+
+colors: [FFD37F,FFD37F,FFD37F,ffffff]
+}
+
+}
+]
+
+
+
