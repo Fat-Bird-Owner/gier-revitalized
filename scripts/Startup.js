@@ -23,8 +23,8 @@ Planets.gier.parent = Vars.content.planet("gr-kela");
 Planets.gier.updateLighting = true;
 
 const fakeSerpulo = Vars.content.planet("gr-serpulo-fake");
-fakeSerpulo.mesh = Planets.serpulo.mesh;
-fakeSerpulo.cloudMesh = Plants.serpulo.cloudMesh;
+fakeSerpulo.meshLoader = Planets.serpulo.meshLoader;
+fakeSerpulo.meshLoader = Plants.serpulo.meshLoader;
 fakeSerpulo.atmosphereColor = Planets.serpulo.atmosphereColor;
 Core.app.post(() => fakeSerpulo.reloadMesh());
   
