@@ -14,19 +14,6 @@ mesh: {
   mag: 1.5
 }
 
-cloudMesh: {
-  type: HexSkyMesh
-  seed: 96
-  speed: 0.4
-  radius: 0.05
-  divisions: 4
-  color: 7f8fff
-  octaves: 3
-  persistence: 0.7
-  scl: 1
-  thresh: 0.5
-}
-
 generator: {
   min: 1
   max: 1
@@ -66,7 +53,7 @@ bloom: false
 visible: true
 atmosphereColor: aaaaaaaa
 iconColor: 29302b
-hasAtmosphere: false
+hasAtmosphere: true
 allowWaveSimulation: true
 allowLaunchToNumbered: true
 clearSectorOnLose: true
