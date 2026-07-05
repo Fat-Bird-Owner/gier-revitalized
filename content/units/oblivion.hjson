@@ -30,7 +30,7 @@ weapons:[
 {
 x: 0
 y: 0
-shootY: -6.5
+shootY: 6.5
 mirror: false
 
 reload: 1200
