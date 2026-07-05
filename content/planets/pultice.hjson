@@ -4,11 +4,11 @@ iconColor: f4ee8e
 alwaysUnlocked: false
 accessible: true
 
-orbitRadius: 10000
+orbitRadius: 12
 orbitSpacing: 9
 drawOrbit: false
-solarSystem: sun
-parent: sun
+solarSystem: test-sun
+parent: test-sun
 
 drawOrbit: false
 tidalLock: true
