@@ -12,7 +12,6 @@ drawOrbit: false
 tidalLock: true
 bloom: true
 
-tidalLock: true
 accessible: false
 visible: true
 hasAtmosphere: true
