@@ -22,6 +22,10 @@ Planets.gier.clearSectorOnLose = true;
 Planets.gier.parent = Vars.content.planet("gr-kela");
 Planets.gier.updateLighting = true;
 
+const fakeSerpulo = Vars.content.planet("gr-serpulo-fake");
+fakeSerpulo.mesh = Planets.serpulo.mesh;
+fakeSerpulo.cloudMesh = Plants.serpulo.cloudMesh;
+  
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
 
