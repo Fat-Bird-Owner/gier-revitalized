@@ -16,6 +16,7 @@ tidalLock: true
 accessible: false
 visible: true
 hasAtmosphere: true
+parent: sol
 
 mesh:[
 {
