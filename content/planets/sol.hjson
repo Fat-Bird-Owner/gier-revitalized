@@ -8,7 +8,6 @@ orbitRadius: 12000
 orbitSpacing: 9
 drawOrbit: false
 solarSystem: sol
-parent: sol
 
 drawOrbit: false
 tidalLock: true
