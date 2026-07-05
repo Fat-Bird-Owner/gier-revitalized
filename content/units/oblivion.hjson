@@ -1,5 +1,7 @@
 type: tank
+template: TankUnitType
 hitSize: 22
+
 health: 9500
 name: Oblivion
 
@@ -11,18 +13,7 @@ range: 400
 rotateSpeed: 1
 
 drawSoftShadow: false
-lowAltitude: true
 outlineRadius: 0
-
-engineSize: 0
 armor: 20
-parts:[
-{
-type: HoverPart
-radius: 16
-layerOffset: -0.1
-color: FFD37F 
-y: -12.25
-}]
 
 
