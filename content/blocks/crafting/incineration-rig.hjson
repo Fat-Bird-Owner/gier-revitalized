@@ -2,6 +2,8 @@ type: AttributeCrafter
 size: 2
 name: Incineration Rig
 
+databaseTag: "adv-scrap"
+
 maxBoost: 1.5
 boostScale: 0.25
 description: "
