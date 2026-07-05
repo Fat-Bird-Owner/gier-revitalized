@@ -6,8 +6,8 @@ mesh: {
   type: NoiseMesh
   seed: 69
   divisions: 4
-  color1: ffffff
-  color2: 7f7f7f
+  color1: 8f8fff
+  color2: 9fff8b
   radius: 0.8
   octaves: 3
   persistence: 0.8
