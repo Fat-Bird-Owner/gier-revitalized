@@ -22,12 +22,6 @@ Planets.gier.clearSectorOnLose = true;
 Planets.gier.parent = Vars.content.planet("gr-kela");
 Planets.gier.updateLighting = true;
 
-const fakeSerpulo = Vars.content.planet("gr-serpulo-fake");
-fakeSerpulo.meshLoader = Planets.serpulo.meshLoader;
-fakeSerpulo.meshLoader = Plants.serpulo.meshLoader;
-fakeSerpulo.atmosphereColor = Planets.serpulo.atmosphereColor;
-Core.app.post(() => fakeSerpulo.reloadMesh());
-  
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
 
@@ -202,4 +196,17 @@ Vars.content.block("gr-command-block").buildVisibility = BuildVisibility.shown;
   
 } catch(e) {
 Vars.ui.showText("Not work",e,Align.center);
-}})
+}});
+
+Events.on(ClientLoadEvent, () => {
+try {
+
+const fakeSerpulo = Vars.content.planet("gr-serpulo-fake");
+fakeSerpulo.meshLoader = Planets.serpulo.meshLoader;
+fakeSerpulo.meshLoader = Plants.serpulo.meshLoader;
+fakeSerpulo.atmosphereColor = Planets.serpulo.atmosphereColor;
+Core.app.post(() => fakeSerpulo.reloadMesh());
+  
+} catch(e){
+Vars.ui.showText("startup - planet", e);
+}});
