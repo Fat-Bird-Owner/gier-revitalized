@@ -1,0 +1,46 @@
+# This is tooken straight from Slotterleet/example-planet-json for debugging purposes credits to them
+
+localizedName: Test Sun
+
+mesh: {
+    type: SunMesh
+    divisions: 3
+    octaves: 4
+    persistence: 0.6
+    scl: 1
+    pow: 1
+    mag: 0.5
+    colorScale: 1
+
+    colors: [
+        ffe06f
+        ffe790
+        ffedae
+        fff8c8
+        ffe53b
+    ]
+}
+
+accessible: false
+
+visible: true
+
+hasAtmosphere: false
+
+bloom: true
+
+orbitSpacing: 8
+
+solarSystem: test-sun
+
+parent: sun
+
+orbitRadius: 12000
+
+drawOrbit: false
+
+tidalLock: true
+
+iconColor: ffe06f
+
+icon: commandRally
