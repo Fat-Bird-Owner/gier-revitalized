@@ -7,7 +7,7 @@ accessible: true
 orbitRadius: 12
 orbitSpacing: 9
 drawOrbit: false
-solarSystem: test-sun
+solarSystem: sun
 parent: test-sun
 
 drawOrbit: false
