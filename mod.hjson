@@ -34,7 +34,7 @@ minGameVersion: "156"
 dependencies: []
 hidden: false
 
-contentOrder:[
+contentOrder:
 beryllium-attribute
 
 rail
@@ -52,4 +52,6 @@ drive-bay
 spark-bay
 barracade-bay
 disrupter-bay
+
+test-sun
 ]
