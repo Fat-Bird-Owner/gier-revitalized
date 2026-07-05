@@ -13,7 +13,7 @@ parent: sun
 drawOrbit: false
 tidalLock: true
 bloom: true
-sectorSize: 3
+sectorSize: 2
 
 startSector: 6
 tidalLock: true
@@ -31,7 +31,7 @@ mesh:[
 type: NoiseMesh
 planet: gr-pultice
 seed: 68
-divisions: 3
+divisions: 5
 color1: 80CB71FF
 color2: 4E904FFF
 radius: 2.85
