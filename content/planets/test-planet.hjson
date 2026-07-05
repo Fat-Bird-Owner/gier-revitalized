@@ -1,13 +1,13 @@
 # Another speciment from Slotterleet/example-planet-json
 
-localizedName: Test planet
+localizedName: Pluton
 
 mesh: {
   type: NoiseMesh
   seed: 69
   divisions: 4
-  color1: a2a2c2
-  color2: 22262b
+  color1: ffffff
+  color2: 7f7f7f
   radius: 0.8
   octaves: 3
   persistence: 0.8
@@ -21,11 +21,11 @@ cloudMesh: {
   speed: 0.4
   radius: 0.05
   divisions: 4
-  color: 4662e87e
+  color: 7f8fff
   octaves: 3
   persistence: 0.7
   scl: 1
-  thresh: 0.4
+  thresh: 0.5
 }
 
 generator: {
@@ -60,7 +60,7 @@ minZoom: 0.5
 drawOrbit: true
 atmosphereRadIn: 0
 atmosphereRadOut: 0.3
-accessible: true
+accessible: false
 updateLighting: false
 sectorSeed: 529
 bloom: false
@@ -77,11 +77,3 @@ defaultCore: core-nucleus
 parent: test-sun
 solarSystem: test-sun
 launchCandidates: []
-
-itemWhitelist: [
-  copper
-  lead
-  beryllium
-  graphite
-  titanium
-]
