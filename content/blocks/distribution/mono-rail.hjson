@@ -21,7 +21,7 @@ consumesPower: true
 conductivePower: true
 
 speed: 0.0333333
-baseEfficiency: 1
+baseEfficiency: 1.5
 customShadow: true
   
 researchCostMultiplier: 0.5
