@@ -8,11 +8,11 @@ name: Oblivion
 speed: 0.75
 accel: 0.15
 drag: 0.05
-flying: true
+
 range: 400
 rotateSpeed: 1
-
 drawSoftShadow: false
+
 outlineRadius: 0
 armor: 20
 crushDamage: 7.5
