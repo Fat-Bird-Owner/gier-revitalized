@@ -5,7 +5,7 @@ name: Inlet
 requirements: [lead/35, copper/15, silicon/15]
   
 liquidCapacity: 25
-outputLiquid: water/0.016667
+outputLiquid: water/0.05
 
 buildVisibility: sandboxOnly
 category: production
