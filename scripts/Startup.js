@@ -203,7 +203,6 @@ try {
 
 const fakeSerpulo = Vars.content.planet("gr-serpulo-fake");
 fakeSerpulo.meshLoader = Planets.serpulo.meshLoader;
-fakeSerpulo.cloudMeshLoader = Planets.serpulo.cloudMeshLoader;
 fakeSerpulo.atmosphereColor = Planets.serpulo.atmosphereColor;
 Core.app.post(() => fakeSerpulo.reloadMesh());
   
