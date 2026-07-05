@@ -1,7 +1,7 @@
 type: tank
 hitSize: 22
-health: 4500
-armor: 20
+health: 9500
+name: Oblivion
 
 speed: 0.75
 accel: 0.15
@@ -15,6 +15,7 @@ lowAltitude: true
 outlineRadius: 0
 
 engineSize: 0
+armor: 20
 parts:[
 {
 type: HoverPart
@@ -23,72 +24,5 @@ layerOffset: -0.1
 color: FFD37F 
 y: -12.25
 }]
-  
-name: Oblivion
-outlineColor: 1f1f2f
-weapons:[
-{
-x: 0
-y: 0
-shootY: 6.5
-mirror: false
-
-reload: 1200
-shake: 5
-continuous: true
-  
-shoot:{
-firstShotDelay: 150
-}
-
-parts:[
-{
-type: ShapePart
-circle: true
-color: FFD37F00
-colorTo: FFD37F
-radius: 24
-radiusTo: 0
-stroke: 1.5
-strokeTo: 0
-hollow: true
-progress: warmup
-}
-]
-  
-bullet:{
-type: ContinuousLaserBulletType
-damage: 45
-length: 200
-hitEffect: hitMeltHeal
-drawSize: 420
-lifetime: 220
-shake: 1
-despawnEffect: smokeCloud
-smokeEffect: none
-
-chargeEffect: {
-type: WaveEffect
-colorFrom: FFD37F
-colorTo: FFD37F
-sizeFrom: 24
-sizeTo: 0
-strokeFrom: 1.5
-strokeTo: 0
-}
-
-incendChance: 0.1
-incendSpread: 5
-incendAmount: 1
-
-healPercent: 1
-collidesTeam: true
-
-colors: [FFD37F,FFD37F,FFD37F,ffffff]
-}
-
-}
-]
-
 
 
