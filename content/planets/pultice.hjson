@@ -4,7 +4,7 @@ iconColor: f4ee8e
 alwaysUnlocked: false
 accessible: true
 
-orbitRadius: 12
+orbitRadius: 12000
 orbitSpacing: 9
 drawOrbit: false
 solarSystem: sun
