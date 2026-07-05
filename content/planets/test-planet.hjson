@@ -54,7 +54,7 @@ generator: {
 }
 
 sectorSize: 1
-orbitSpacing: 12
+orbitSpacing: 3
 radius: 1
 minZoom: 0.5
 drawOrbit: true
