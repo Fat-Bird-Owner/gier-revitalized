@@ -13,7 +13,7 @@ alwaysUnlocked: true
 fullOverride: "gr-mono-rail"
 
 consumes: {
-power: 0.033334
+power: 0.016667
 }
 
 hasPower: true
