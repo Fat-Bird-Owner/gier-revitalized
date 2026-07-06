@@ -1,0 +1,13 @@
+type: CoreBlock
+size: 3
+name: "Silo Core"
+health: 2500
+armor: 15
+
+requirements: [lead/1000, copper/750, silicon/500]
+buildVisibility: sandboxOnly
+category: effect
+
+customShadow: false
+isFirstTier: true
+unitType: beta
