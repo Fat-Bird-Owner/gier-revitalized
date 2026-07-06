@@ -10,7 +10,7 @@ consumes:{
 items:[copper/1]
 }
 
-outputLiquid: liquid-copper/0.01667
+outputLiquid: liquid-copper/0.05
 
 envEnabled: -1
 buildVisibility: sandboxOnly
