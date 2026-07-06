@@ -7,7 +7,7 @@ consumes:{
 items:[lead/1]
 }
 
-outputLiquid: liquid-lead/0.01667
+outputLiquid: liquid-lead/0.05
 
 envEnabled: -1
 buildVisibility: debugOnly
