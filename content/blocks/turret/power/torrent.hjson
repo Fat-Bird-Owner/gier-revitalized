@@ -1,0 +1,37 @@
+type: TractorBeamTurret
+size: 2
+name: Torrent
+
+outlineRadius: 0
+description: "
+Pulls targets in using a tractor 
+beam
+
+Tractor beam damages and applies
+melting to the target
+[grey]
+- Pulls targets in[green]
+- Damages target
+- Melts target[red]
+- Explosive
+- Consumes power
+"
+
+status: melting
+envEnabled: -1
+research: tension
+researchCostMultiplier: 0.25
+
+baseExplosiveness: 20
+databaseTag: "adv-surge-alloy"
+category: turret
+requirements: [silicon/75, titanium/125, surge-alloy/25]
+consumes: {
+power: 2.5
+}
+
+hasPower: true
+force: 32
+scaledForce: 18
+range: 200
+damage: 1.5
