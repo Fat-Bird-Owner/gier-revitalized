@@ -10,6 +10,10 @@ be increased
 
 Given theres a module for the
 previous lower tier
+[green]
+- Increases assembler tier
+- Optionally takes payload input[red]
+- Yep its explosive
 "
 
 requirements:[lead/450, copper/350, graphite/250, silicon/150, depleted-thorium/75]
@@ -19,6 +23,7 @@ regionSuffix: "-gier"
 
 research: imprinter-assembler
 researchCostMultiplier: 0.25
+baseExplosiveness: 15
 
 tier: 1
 consumes: {
