@@ -1,7 +1,18 @@
 type: CellLiquid
 name: Tuntra
 
-hidden: true
+description: "
+A form of spore
+Cultivated to grow from solar
+radiation
+
+Extremely invasive
+
+Multiplies rapidly when coming
+in contact with water
+"
+
+hidden: false
 colorFrom: 7457ce
 colorTo: 8d5bc2
 color: 7947ad
