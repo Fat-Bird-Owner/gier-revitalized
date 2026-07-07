@@ -9,6 +9,7 @@ customShadow: true
 droneType: mechanic
 droneConstructTime: 300
 
+regionSuffix: "-gier"
 research: freight-conveyor
 researchCostMultiplier: 0.25
 databaseTag: "adv-depleted-thorium"
@@ -34,7 +35,7 @@ unit: dove
 time: 1800
 requirements: [
 gr-power-cell/1
-gr-observer/2
+gr-observer/3
 gr-packed-graphite/2
 ]
 
