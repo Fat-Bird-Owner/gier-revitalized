@@ -39,7 +39,7 @@ mirror: false
 ]
 }
 
-outlineColor: 2f1f1f
+outlineColor: 1f1f2f
 reload: 240
 cooldownTime: 120
 
