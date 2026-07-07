@@ -3,6 +3,7 @@ size: 2
 name: Torrent
 
 outlineRadius: 0
+targetGround: true
 description: "
 Pulls targets in using a tractor 
 beam
