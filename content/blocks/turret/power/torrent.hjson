@@ -8,16 +8,16 @@ Pulls targets in using a tractor
 beam
 
 Tractor beam damages and applies
-melting to the target
+slow to the target
 [grey]
 - Pulls targets in[green]
 - Damages target
-- Melts target[red]
+- Slows down target[red]
 - Explosive
 - Consumes power
 "
 
-status: melting
+status: slow
 envEnabled: -1
 research: tension
 researchCostMultiplier: 0.25
@@ -34,4 +34,4 @@ hasPower: true
 force: 32
 scaledForce: 18
 range: 200
-damage: 1.5
+damage: 1.25
