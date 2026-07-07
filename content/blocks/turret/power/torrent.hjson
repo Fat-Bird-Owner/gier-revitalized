@@ -8,16 +8,16 @@ Pulls targets in using a tractor
 beam
 
 Tractor beam damages and applies
-slow to the target
+sapped to the target
 [grey]
 - Pulls targets in[green]
 - Damages target
-- Slows down target[red]
+- Saps down target[red]
 - Explosive
 - Consumes power
 "
 
-status: slow
+status: sapped
 envEnabled: -1
 research: tension
 researchCostMultiplier: 0.25
