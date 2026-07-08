@@ -1,0 +1,7 @@
+type: UnitAssemblerModule
+size: 3
+name: "Primary Cartridge"
+
+buildVisibility: debugOnly
+shownPlanets: [kela, gier]
+tier: 2
