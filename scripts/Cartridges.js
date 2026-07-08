@@ -14,7 +14,9 @@ const blockCopy = Vars.content.block(copyBlock)
   
 for (let i in blockCopy){
 if (i == "buildVisibility" || i == "name") continue;
+try {
 assembler[i] = blockCopy[i];
+} catch(e){}
 }
 
 assembler.tier = i + 1;
