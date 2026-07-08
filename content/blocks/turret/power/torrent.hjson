@@ -35,4 +35,4 @@ hasPower: true
 force: 32
 scaledForce: 18
 range: 200
-damage: 0.83334
+damage: 0.583333
