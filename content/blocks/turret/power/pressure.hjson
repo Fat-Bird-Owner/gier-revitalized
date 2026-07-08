@@ -111,4 +111,17 @@ interp: sineOut
 colorFrom: ffaa5f
 lifetime: 55
 }
+{
+type: ParticleEffect
+particles: 17
+length: 125
+colorFrom: ffaa5f
+strokeFrom: 3
+strokeTo: 5
+lenFrom: 12
+lenTo: 16
+line: true
+lifetime: 220
+interp: sineOut
+}
 ]
