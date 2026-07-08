@@ -1,8 +1,8 @@
 const blocks = [
-"primary-cartridge"
+"gr-primary-cartridge"
 ];
 
-const copyBlock = "fundamental-cartridge"
+const copyBlock = "gr-fundamental-cartridge"
 
 Events.on(ClientLoadEvent , () => {
 try {
@@ -22,5 +22,5 @@ assembler.tier = i + 1;
 }
   
 } catch(e){
-Vars.ui.showInfoToast(e,5); 
+Vars.ui.showText("Cartridges", e); 
 }});
