@@ -8,11 +8,12 @@ Events.on(ModContentLoadEvent , () => {
 try {
 
 for (let i = 0; i < blocks.length; i++){
-const assembler = new UnitAssembler(blocks[i])
+const assembler = Vars.content.block(blocks[i])
 
 const blockCopy = Vars.content.block(copyBlock)
   
 for (let i in blockCopy){
+if (i == "buildVisibility" || i == "name") continue;
 assembler[i] = blockCopy[i];
 }
 
