@@ -13,7 +13,7 @@ const assembler = Vars.content.block(blocks[i])
 const blockCopy = Vars.content.block(copyBlock)
   
 for (let i in blockCopy){
-if (i == "buildVisibility" || i == "name") continue;
+if (i == "buildVisibility" || i == "name" || i == "research") continue;
 try {
 assembler[i] = blockCopy[i];
 } catch(e){}
