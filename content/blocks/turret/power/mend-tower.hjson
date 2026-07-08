@@ -10,6 +10,7 @@ Able to shoot at damaged buildings.
 - Units are higher priority than buildings
 "
 
+coolantMultiplier: 10
 databaseTag: "adv-plastanium"
 envEnabled: -1
 category: turret
