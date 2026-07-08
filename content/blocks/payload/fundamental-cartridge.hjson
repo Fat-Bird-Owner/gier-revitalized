@@ -1,6 +1,6 @@
 type: UnitAssemblerModule
 size: 3
-name: "Fundamental Cartridge [lightgrey](T1)"
+name: "Fundamental Cartridge"
 description: "
 When placed adjacent to an
 assembler's bounding box
