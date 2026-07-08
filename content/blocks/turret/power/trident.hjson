@@ -78,13 +78,6 @@ width: 7.5
 height: 10.5
 
 hitSound: blockExplodeExplosiveAlt
-hitEffect: {
-type: MultiEffect
-effects:[
-instBomb
-shieldWave
-]
-}
 
 despawnHit: true
 
@@ -107,13 +100,6 @@ width: 7.5
 height: 10.5
 
 hitSound: blockExplodeExplosiveAlt
-hitEffect: {
-type: MultiEffect
-effects:[
-instBomb
-shieldWave
-]
-}
 
 despawnHit: true
 
