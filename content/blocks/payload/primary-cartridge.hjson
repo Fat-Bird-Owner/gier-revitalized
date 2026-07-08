@@ -1,9 +1,0 @@
-type: UnitAssemblerModule
-size: 3
-name: "Primary Cartridge"
-
-placeablePlayer: false
-
-buildVisibility: hidden
-shownPlanets: [kela, gier]
-tier: 2
