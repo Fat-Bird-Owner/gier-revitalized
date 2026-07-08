@@ -43,7 +43,8 @@ launchPod
 }
 }
 
-reload: 30
+reload: 35
+inaccuracy: 15
 range: 400
 rotateSpeed: 4.5
 shootSound: unitCreateBig
