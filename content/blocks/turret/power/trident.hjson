@@ -43,7 +43,7 @@ launchPod
 }
 }
 
-reload: 35
+reload: 17.5
 inaccuracy: 15
 range: 400
 rotateSpeed: 4.5
