@@ -114,14 +114,15 @@ lifetime: 55
 {
 type: ParticleEffect
 particles: 17
-length: 125
+length: 225
 colorFrom: ffaa5f
+colorTo: ffffff00
 strokeFrom: 3
-strokeTo: 5
+strokeTo: 0
 lenFrom: 12
 lenTo: 16
 line: true
-lifetime: 220
+lifetime: 110
 interp: sineOut
 }
 ]
