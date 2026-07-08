@@ -4,7 +4,7 @@ const blocks = [
 
 const copyBlock = "fundamental-cartridge"
 
-Events.on(ModContentLoadEvent , () => {
+Events.on(ClientLoadEvent , () => {
 try {
 
 for (let i = 0; i < blocks.length; i++){
