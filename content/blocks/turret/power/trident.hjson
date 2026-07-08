@@ -74,8 +74,8 @@ under: true
 ejectEffect: casing4
 ammoTypes:{
 copper:{
-width: 15
-height: 21
+width: 7.5
+height: 10.5
 
 hitSound: blockExplodeExplosiveAlt
 hitEffect: {
@@ -103,8 +103,8 @@ status: iframe-kill
 }
 
 lead:{
-width: 15
-height: 21
+width: 7.5
+height: 10.5
 
 hitSound: blockExplodeExplosiveAlt
 hitEffect: {
@@ -136,8 +136,8 @@ statusDuration: 300
 }
 
 depleted-thorium: {
-width: 15
-height: 21
+width: 7.5
+height: 10.5
 
 hitSound: blockExplodeExplosiveAlt
 hitEffect: {
