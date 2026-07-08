@@ -1,6 +1,6 @@
 type: ItemTurret
 size: 4
-name: Trident
+name: Volley
 category: turret
 outlineColor: 2f2f3f
 
@@ -11,20 +11,18 @@ amount: 0.33334
 }
 
 maxAmmo: 20
-ammoPerShot: 4
+ammoPerShot: 2
 description: "
-Costly turret, Able fire high-velocity rounds.
-Does enough base damage to ignore basic [white][IFrame][] and could use multiple ammoTypes.
+Expensive turret, Able rapidly fire high-velocity rounds.
 
 [green]- Fast bullet speed
 [salmon]- Quite inaccurate
-- Explosive
-
-[accent]- Could ignore IFrame
-- Inflict melting[]
+- Explosive[accent]
+- Poccesses anti-iframe capabilities
+- Able to inflict melting
 "
 
-requirements:[lead/625,copper/475,graphite/220]
+requirements:[lead/500,copper/450,graphite/200]
 research: tension
 researchCostMultiplier: 0.25
 
@@ -45,7 +43,7 @@ launchPod
 }
 }
 
-reload: 120
+reload: 30
 range: 400
 rotateSpeed: 4.5
 shootSound: unitCreateBig
@@ -54,7 +52,7 @@ databaseTag: "gier"
 envEnabled: -1
 shoot:{
 shots: 3
-shotDelay: 6
+shotDelay: 30
 }
 
 drawer:{
@@ -95,7 +93,7 @@ lifetime: 40
 trailLength: 0
 trailWidth: 3
 
-damage: 75
+damage: 37.5
 
 knockback: 15
 impact: true
@@ -126,14 +124,14 @@ trailWidth: 3
 
 frontColor: 8c7fa9
 backColor: 8c7fa9
-damage: 50
+damage: 25
 layer: 77
 
 knockback: 15
 impact: true
 homingPower: 0.005
 status: melting
-statusDuration: 600
+statusDuration: 300
 }
 
 depleted-thorium: {
@@ -185,8 +183,8 @@ trailWidth: 3
 
 frontColor: B58DA5
 backColor: B58DA5
-damage: 50
-splashDamage: 30
+damage: 25
+splashDamage: 15
 splashDamageRadius: 24
 
 layer: 77
@@ -196,7 +194,7 @@ impact: true
 homingPower: 0.005
 
 status: incendiary-depletion
-statusDuration: 180
+statusDuration: 60
 
 armorMultiplier: 0.8
 
