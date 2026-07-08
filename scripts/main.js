@@ -7,7 +7,7 @@ require("WreckFX");
 require("Attributes");
 require("GierItems");
 require("CorruptedFunction");
-
+require("gierTroll");
 //    ### Class Overrides ###
 // Subclass: Block
 require("PowerButton"); // Requires to atleast have powerProduction
