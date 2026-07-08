@@ -26,14 +26,14 @@ range: 195
 reload: 60
 targetHealing: true
 
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.03334
+}
+
 consumes:{
 power: 0.5
-liquid: {
-liquid: water
-amount: 0.016667
-booster: true
-optional: true
-}
 }
 
 shootType: {
