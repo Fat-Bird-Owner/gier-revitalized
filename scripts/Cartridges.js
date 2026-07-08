@@ -8,7 +8,7 @@ Events.on(ModContentLoadEvent , () => {
 try {
 
 for (let i = 0; i < blocks.length; i++){
-const assembler = UnitAssembler(blocks[i])
+const assembler = new UnitAssembler(blocks[i])
 
 const blockCopy = Vars.content.block(copyBlock)
   
