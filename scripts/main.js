@@ -8,6 +8,9 @@ require("Attributes");
 require("GierItems");
 require("CorruptedFunction");
 
+// Loadmap blocks
+require("Cartridges");
+
 //    ### Class Overrides ###
 // Subclass: Block
 require("PowerButton"); // Requires to atleast have powerProduction
