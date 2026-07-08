@@ -1,0 +1,22 @@
+type: StackRouter
+name: Rail Router
+description: "
+Instantly distributes items in all
+non-input directions
+
+But comes at the cost of being
+directional
+"
+
+requirements:[lead/10,copper/5,surge-alloy/5]
+speed: 20
+
+databaseTag: "adv-surge-tech"
+research: rail-router
+researchCostMultiplier: 0.5
+envEnabled: -1
+squareSprite: false
+customShadow: true
+
+baseEfficiency: 1
+glowAlpha: 0
