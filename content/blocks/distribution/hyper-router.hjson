@@ -1,5 +1,5 @@
 type: StackRouter
-name: Rail Router
+name: Hyper Router
 description: "
 Instantly distributes items in all
 non-input directions
@@ -8,6 +8,10 @@ But comes at the cost of being
 directional
 "
 
+scaledHealth: 75
+armor: 10
+
+configurable: false
 requirements:[lead/10,copper/5,surge-alloy/5]
 speed: 20
 
