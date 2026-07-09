@@ -34,6 +34,9 @@ isEnemy: false
 health: 650
 priority: 5
 
+targetFlags: [turret, core]
+crashDamagemultiplier: 3
+
 weapons:[
 {
 noAttack: true
