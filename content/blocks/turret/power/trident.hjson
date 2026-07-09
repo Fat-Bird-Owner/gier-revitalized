@@ -48,7 +48,7 @@ reload: 17.5
 inaccuracy: 15
 range: 400
 rotateSpeed: 4.5
-shootSound: trident-shoot
+shootSound: unitCreateBig
 
 databaseTag: "gier"
 envEnabled: -1
@@ -158,7 +158,6 @@ lenTo: 8
 cone: 45
 lifetime: 45
 }
-shieldWave
 ]
 }
 
