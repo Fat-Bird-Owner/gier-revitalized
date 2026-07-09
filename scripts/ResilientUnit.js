@@ -20,7 +20,7 @@ if (found != true) return;
 const shieldGain = Mathf.clamp(bullet.damage - unit.armor, 0, unit.armor);
 if (shieldGain <= 0) return;
 
-Fx.absorb.at(unit.x, unit.y);
+Fx.absorb.at(bullet.x, bullet.y);
 unit.shield += shieldGain;
 unit.apply(StatusEffects.overClocked, 0.5 * 30);
   
