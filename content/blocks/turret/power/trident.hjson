@@ -48,7 +48,7 @@ reload: 17.5
 inaccuracy: 15
 range: 400
 rotateSpeed: 4.5
-shootSound: unitCreateBig
+shootSound: trident-shoot
 
 databaseTag: "gier"
 envEnabled: -1
@@ -78,7 +78,7 @@ copper:{
 width: 7.5
 height: 10.5
 
-hitSound: blockExplodeExplosiveAlt
+hitSound: trident-bullet-impact
 
 despawnHit: true
 
@@ -100,7 +100,7 @@ lead:{
 width: 7.5
 height: 10.5
 
-hitSound: blockExplodeExplosiveAlt
+hitSound: trident-bullet-impact
 
 despawnHit: true
 
@@ -127,7 +127,7 @@ depleted-thorium: {
 width: 7.5
 height: 10.5
 
-hitSound: blockExplodeExplosiveAlt
+hitSound: trident-bullet-impact
 hitEffect: {
 type: MultiEffect
 effects:[
