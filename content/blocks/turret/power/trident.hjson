@@ -20,6 +20,7 @@ Expensive turret, Able rapidly fire high-velocity rounds.
 - Explosive[accent]
 - Poccesses anti-iframe capabilities
 - Able to inflict melting
+- Able to inflict incendiary depletion
 "
 
 requirements:[lead/500,copper/450,graphite/200]
@@ -108,10 +109,11 @@ lifetime: 40
 
 trailLength: 0
 trailWidth: 3
+reloadMultiplier: 1.25
 
 frontColor: 8c7fa9
 backColor: 8c7fa9
-damage: 25
+damage: 15
 layer: 77
 
 knockback: 15
