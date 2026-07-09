@@ -12,7 +12,7 @@ let found = false;
 for (let i = 0; i < resilientUnit.length; i++){
 if (unit.type == Vars.content.unit(resilientUnit[i])){
 found = true;
-return;
+break;
 }}
 
 if (found != true) return;
