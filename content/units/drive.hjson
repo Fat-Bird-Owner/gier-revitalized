@@ -73,11 +73,12 @@ width: 7.5
 height: 7.5
 layer: 65
 speed: 1.5
+keepVelocity: false
 
 // overrides
 trailEffect: none
-splashDamage: 15
-splashDamageRadius: 16
+splashDamage: 17
+splashDamageRadius: 12
 
 hitEffect: flakExplosion
 
