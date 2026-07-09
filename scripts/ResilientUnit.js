@@ -22,7 +22,7 @@ if (shieldGain <= 0) return;
 
 Fx.absorb.at(bullet.x, bullet.y);
 unit.shield += shieldGain;
-unit.apply(StatusEffects.overClocked, 0.5 * 30);
+unit.apply(StatusEffects.overclock, 0.5 * 30);
   
 } catch(e){
 Vars.ui.showInfoToast(e + " - resilientUnit", 5);
