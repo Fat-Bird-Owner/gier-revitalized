@@ -45,6 +45,7 @@ require("damageShiftWall");
 require("IFrameUnit");
 require("EnrageUnit");
 require("ZapUnit");
+require("ResilientUnit");
 
 // Mods
 //require("Modifiers");
