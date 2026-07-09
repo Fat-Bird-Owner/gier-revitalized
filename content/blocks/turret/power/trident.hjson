@@ -10,8 +10,10 @@ allowGas: false
 amount: 0.33334
 }
 
+shake: 1.75
 maxAmmo: 20
-ammoPerShot: 2
+consumeAmmoOnce: false
+ammoPerShot: 1
 description: "
 Expensive turret, Able rapidly fire high-velocity rounds.
 
