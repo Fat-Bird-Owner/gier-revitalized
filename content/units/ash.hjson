@@ -133,7 +133,7 @@ speed: 6.5
 lifetime: 90
 homingPower: 0.04
 
-splashDamage: 225
+splashDamage: 250
 splashDamageRadius: 40
 scaledSplashDamage: true
 
@@ -142,11 +142,13 @@ despawnHit: true
 
 recoil: 2.5
 trailRotation: true
-trailChance: 1
+trailInterval: 1
 trailEffect: randLifeSpark
 trailColor: ffaa5f
 
-shieldDamageMultiplier: 2.15
+damage: 1
+shieldDamageMultiplier: 250
+
 hitEffect: {
 type: MultiEffect
 effects:[
