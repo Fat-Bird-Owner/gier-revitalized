@@ -35,4 +35,6 @@ hasPower: true
 force: 32
 scaledForce: 18
 range: 200
-damage: 0.58334
+damage: 0.58335
+
+# yes that dps number is on purpose
