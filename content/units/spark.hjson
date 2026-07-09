@@ -11,7 +11,7 @@ targetFlags:[shield, drill, core]
 hitSize: 7
 omniMovement: false
 rotateSpeed: 3.5
-health: 105
+health: 135
 engineOffset: 6
 engineSize: 0
 circleTarget: true
@@ -89,7 +89,7 @@ scaledSplashDamage: true
 splashDamage: 15
 splashDamageRadius: 20
 damage: 10
-shieldDamageMultiplier: 0.75
+shieldDamageMultiplier: 0.65
 hitEffect: explosion
 hitSound: explosionCleroi
 despawnHit: true
