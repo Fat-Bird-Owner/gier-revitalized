@@ -1,0 +1,23 @@
+type: ThermalGenerator
+size: 2
+name: Thermal Port
+
+requirements: [copper/175, lead/100, silicon/50]
+category: power
+buildVisibility: sandboxOnly
+  
+shownPlanets: [kela]
+displayEfficiencyScale: 0.25
+minEfficiency: 0.1
+
+powerProduction: 0.5
+outputLiquid: slag/0.16667
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+}
+]
