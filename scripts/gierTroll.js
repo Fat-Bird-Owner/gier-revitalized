@@ -9,7 +9,7 @@ return;
 }
 */
   
-if (sec.info.attempts < 15) sec.preset.difficulty = SectorDifficulty.unreasonable;
+if (sec.info.attempts >= 15) sec.preset.difficulty = SectorDifficulty.unreasonable;
   
 } catch(e){
 Vars.ui.showInfoToast(e,5);  
