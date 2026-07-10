@@ -11,6 +11,7 @@ outlineRadius: 0
 
 trailScl: 1
 trailLength: 4
+targetable: false
 
 health: 350
 speed: 3
