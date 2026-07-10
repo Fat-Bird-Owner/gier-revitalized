@@ -22,9 +22,11 @@ Planets.gier.clearSectorOnLose = true;
 Planets.gier.parent = Vars.content.planet("gr-kela");
 Planets.gier.updateLighting = true;
 
+/*
 Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
-
+*/
+  
 const kela = Vars.content.getByName(ContentType.planet, "gr-kela");
 kela.techTree = Planets.gier.techTree;
 kela.techTree.addPlanet(kela);
