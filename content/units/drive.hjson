@@ -8,6 +8,7 @@ hitSize: 12
 flying: true
 createWreck: true
 
+targetAir: false
 databaseCategory: "threats"
 research:{
 parent: techtree-kela
