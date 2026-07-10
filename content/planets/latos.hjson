@@ -9,6 +9,7 @@ mesh: {
   radius: 0.8
   octaves: 3
   persistence: 0.8
+  radius: 0.4
   scale: 1
   mag: 1.5
 }
@@ -52,7 +53,7 @@ bloom: false
 visible: true
 atmosphereColor: 8f8f9b
 iconColor: 9f9fff
-hasAtmosphere: true
+hasAtmosphere: false
 allowWaveSimulation: true
 allowLaunchToNumbered: true
 clearSectorOnLose: true
