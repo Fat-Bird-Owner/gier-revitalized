@@ -21,7 +21,6 @@ orbitRadius: 120
 
 clearSectorOnLose: true
 campaignRuleDefaults: {
-	showSpawns: true
 	sectorInvasion: false
 	fog: false
 }
