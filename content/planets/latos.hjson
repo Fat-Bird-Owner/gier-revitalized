@@ -1,13 +1,11 @@
-# Another speciment from Slotterleet/example-planet-json
-
-localizedName: Erekir
+localizedName: Latos
 
 mesh: {
   type: NoiseMesh
   seed: 69
   divisions: 4
-  color1: 8f8fff
-  color2: 9fff8b
+  color1: 9f9f9f
+  color2: 8f8f8b
   radius: 0.8
   octaves: 3
   persistence: 0.8
@@ -41,8 +39,8 @@ generator: {
 }
 
 sectorSize: 1
-orbitSpacing: 3
-radius: 1
+orbitSpacing: 1
+radius: 0.4
 minZoom: 0.5
 drawOrbit: true
 atmosphereRadIn: 0
@@ -52,15 +50,15 @@ updateLighting: false
 sectorSeed: 529
 bloom: false
 visible: true
-atmosphereColor: aaaaaaaa
-iconColor: 29302b
+atmosphereColor: 8f8f9b
+iconColor: 9f9fff
 hasAtmosphere: true
 allowWaveSimulation: true
 allowLaunchToNumbered: true
 clearSectorOnLose: true
 allowWaves: true
-icon: planet
+icon: editor
 defaultCore: core-nucleus
-parent: test-sun
-solarSystem: test-sun
+parent: kela
+solarSystem: sun
 launchCandidates: []
