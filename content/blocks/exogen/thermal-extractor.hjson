@@ -17,7 +17,7 @@ outputLiquid: liquid-silicon/0.33334
 customShadow: true
 drawer: [
 {
-type: RegionPart
+type: DrawRegion
 suffix: "-bottom"
 }
 {
