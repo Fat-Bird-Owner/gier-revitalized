@@ -1,4 +1,5 @@
 type: AttributeCrafter
+name: Thermal Extractor
 attribute: steam
 
 category: production
@@ -11,4 +12,24 @@ boostScale: 0.1112
   
 minEfficiency: 1
 displayEfficiency: false
-outputLiquid: liquid-silicon/0.16667
+outputLiquid: liquid-silicon/0.33334
+
+customShadow: true
+drawer: [
+{
+type: RegionPart
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+padding: 1.25
+drawLiquid: silicon
+}
+{
+type: DrawBubbles
+color: 53565c
+}
+{
+type: DrawDefault
+}
+]
