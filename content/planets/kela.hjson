@@ -16,7 +16,7 @@ allowLaunchToNumbered: false
 allowSelfSectorLaunch: false
 
 atmosphereColor: 1d214ec3
-orbitSpacing: 30
+orbitSpacing: 12
 orbitRadius: 120
 
 clearSectorOnLose: true
