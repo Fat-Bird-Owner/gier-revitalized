@@ -1,4 +1,4 @@
-Events.on(WorldLoadEvent, () => {
+Events.on(SectorLaunchEvent, () => {
 try{
 if (Core.settings.getBool("deranged") == true && Vars.state.isCampaign() && Vars.state.rules.sector == Planets.gier.sectors.get(0)){        
 const rule = Vars.state.rules;
