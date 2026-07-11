@@ -1,4 +1,5 @@
 localizedName: Latos
+drawOrbit: false
 
 mesh: {
   type: NoiseMesh
