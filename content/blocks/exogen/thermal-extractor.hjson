@@ -10,7 +10,7 @@ size: 3
 baseEfficiency: 0
 boostScale: 0.1112
   
-minEfficiency: 1
+minEfficiency: 9
 displayEfficiency: false
 outputLiquid: liquid-silicon/0.33334
 
