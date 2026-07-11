@@ -23,7 +23,7 @@ suffix: "-bottom"
 {
 type: DrawLiquidTile
 padding: 1.25
-drawLiquid: silicon
+drawLiquid: liquid-silicon
 }
 {
 type: DrawBubbles
