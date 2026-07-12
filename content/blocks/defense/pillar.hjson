@@ -6,7 +6,7 @@ requirements: [titanium/35, depleted-thorium/25, silicon/15]
 category: defense
 health: 1500
 
-group: wall
+group: walls
 databaseTag: "adv-depleted-thorium"
 armor: 5
   
