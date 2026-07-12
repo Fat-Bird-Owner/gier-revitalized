@@ -1,0 +1,9 @@
+type: Wall
+name: Spare Cell
+size: 2
+
+requirements: [lead/25, copper/50, titanium/25]
+placeablePlayer: false
+buildVisibility: debugOnly
+
+category: units
