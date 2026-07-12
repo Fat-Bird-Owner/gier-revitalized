@@ -17,7 +17,7 @@ y: -1.5
 reload: 240
 
 shootStatus: unmoving
-shootStatusDuration: 120
+shootStatusDuration: 300
   
 shake: 2.5
 recoilTime: 220
@@ -38,7 +38,7 @@ despawnHit: true
 hitShake: 7.5
   
 width: 10
-height: 28
+height: 42
 hitSound: acceleratorLightning1
 
 fragLifeMin: 1
