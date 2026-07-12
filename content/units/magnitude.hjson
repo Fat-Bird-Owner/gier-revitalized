@@ -13,7 +13,7 @@ name: "magnitude-weapon"
 top: false
 x: 7.75
 y: 0
-reload: 75
+reload: 60
 
 shake: 2.5
 recoilTime: 75
@@ -21,20 +21,30 @@ inaccuracy: 6
 
 bullet: {
 type: BasicBulletType
-trailLength: 4
-trailWidth: 1.5
+trailLength: 7
+trailWidth: 2
 
 speed: 5
 lifetime: 30
-damage: 35
+damage: 75
   
-width: 7.5
-height: 10.5
+width: 10
+height: 14
   
 fragLifeMin: 1
 fragRandomSpread: 0
 fragBullets: 1
-
+fragBullet: {
+type: BasicBulletType
+trailLength: 4
+trailWidth: 1 
+speed: 5
+lifetime: 25
+pierce: true
+damage: 20
+pierceCap: 4
+pierceBuilding: true
+}
   
 }
 
