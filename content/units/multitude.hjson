@@ -18,7 +18,7 @@ reload: 200
   
 shake: 2.5
 recoilTime: 120
-inaccuracy: 22.5
+inaccuracy: 2.5
 
 shootSound: blockExplode2
 bullet: {
@@ -30,7 +30,7 @@ splashDamage: 250
 splashDamageRadius: 40
 scaledSplashDamage: true
 
-speed: 2
+speed: 4
 lifetime: 80
 hitShake: 7.5
 
