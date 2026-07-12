@@ -14,47 +14,27 @@ name: "multitude-weapon"
 top: false
 x: 11.5
 y: -1.5
-reload: 36
-
-shootStatus: slow
-shootStatusDuration: 300
+reload: 200
   
 shake: 2.5
-recoilTime: 220
+recoilTime: 120
 inaccuracy: 22.5
 
-shootSound: coreExplosion
-
-shoot: {
-shots: 17
-shotDelay: 0
-}
-
+shootSound: blockExplode2
 bullet: {
-type: BasicBulletType
-trailLength: 7
-trailWidth: 2
-
-speed: 10
-lifetime: 16
-damage: 15
-
-despawnHit: true
-hitShake: 7.5
-  
+type: ArtilleryBulletType
 width: 10
-height: 21
-hitSound: acceleratorLightning1
+height: 14
 
-fragLifeMin: 1
-fragRandomSpread: 0
-fragBullets: 1
-fragVelocityMin: 1
+splashDamage: 250
+splashDamageRadius: 40
+scaledSplashDamage: true
 
-pierce: true
-pierceBuilding: true
-pierceCap: 2
+speed: 2
+lifetime: 80
+hitShake: 7.5
 
+scaleLife: true
 }
 
 }
