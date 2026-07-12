@@ -4,6 +4,8 @@ size: 2
 
 requirements: [copper/75, silicon/35]
 placeablePlayer: false
-buildVisibility: debugOnly
+databaseTag: "freight-block"
 
 category: units
+research: freight-assembler
+researchCostMultiplier: 0.15
