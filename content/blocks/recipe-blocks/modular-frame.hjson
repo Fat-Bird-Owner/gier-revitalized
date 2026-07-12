@@ -2,6 +2,16 @@ type: Wall
 name: Modular Frame
 size: 2
 
+description: "
+A hard inner-metal frame
+
+Present in nearly all units
+
+Provides extra durability
+and a safe space to store 
+ammunition
+"
+
 requirements: [copper/75, silicon/35]
 placeablePlayer: false
 databaseTag: "freight-block"
