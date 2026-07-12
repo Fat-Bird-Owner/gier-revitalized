@@ -19,6 +19,7 @@ reload: 200
 shake: 2.5
 recoilTime: 120
 inaccuracy: 2.5
+layerOffset: -0.00000001
 
 shootSound: blockExplode2
 bullet: {
