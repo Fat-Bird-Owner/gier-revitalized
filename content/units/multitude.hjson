@@ -3,66 +3,72 @@ name: Multitude
 speed: 0.5
 
 outlineColor: 2f2f3f
-health: 2250
+health: 2500
 armor: 15
 
 legForwardScl: 1
 hitSize: 25
 weapons: [
 {
+rotate: true
+reload: 1200
+
+bullet: {
+type: PointBulletType
+maxRange: 200
+trailEffect: absorb
+
+collides: false
+despawnHit: true
+fragBullets: 1
+fragBullet: {
+spawnUnit: target-point
+}
+
+}
+
+}
+{
 name: "multitude-weapon"
 top: true
 x: 11.5
 y: -1.5
-reload: 20
+reload: 60
 
 shake: 2.5
-recoilTime: 20
+recoilTime: 60
 inaccuracy: 2.5
 
 top: false
 shootSound: blockExplode2
 bullet: {
 type: BasicBulletType
-frontColor: FFD37F
-backColor: FFD37F
-trailColor: D4816B
+trailLength: 7
+trailWidth: 2
 
-width: 12.5
-height: 17.5
-trailLength: 6.25
-knockback: 1.25
+speed: 5
+lifetime: 30
+damage: 75
+  
+width: 10
+height: 14
+hitSound: acceleratorLightning2
 
-lifetime: 22
-speed: 8
-damage: 25
-hitEffect: plasticExplosion
+pierce: true
+pierceCap: 3
+pierceBuilding: true
 
-splashDamage: 25
-splashDamageRadius: 23
-status: melting
-
-fragRandomSpread: 45
 fragBullets: 5
 fragBullet: {
-type: BasicBulletType
-frontColor: FFD37F
-backColor: FFD37F
-trailColor: D4816B
-
-sprite: "gr-triangle"
-speed: 6
-drag: 0.06666
-lifetime: 45
-spin: 3.5
-
-sticky: true
-lightning: 4
-lightningColor: 00000000
-damage: 2.2
+type: LightningBulletType
+damage: 7.5
+lightningColor: FFD37F
+lightningLength: 2
+lightningLengthRand: 2
 }
   
 }
 
+# e
 }
 ]
