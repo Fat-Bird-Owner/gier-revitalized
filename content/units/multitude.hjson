@@ -12,33 +12,38 @@ weapons: [
 {
 name: "multitude-weapon"
 top: false
-x: 11.75
+x: 11.5
 y: -1.5
-reload: 240
+reload: 75
 
-shootStatus: unmoving
+shootStatus: slow
 shootStatusDuration: 300
   
 shake: 2.5
 recoilTime: 220
-inaccuracy: 6
+inaccuracy: 22.5
 
 shootSound: coreExplosion
+
+shots: {
+shots: 17
+shotDelay: 0
+}
 
 bullet: {
 type: BasicBulletType
 trailLength: 7
 trailWidth: 2
 
-speed: 10
-lifetime: 75
-damage: 100
+speed: 5
+lifetime: 32
+damage: 15
 
 despawnHit: true
 hitShake: 7.5
   
 width: 10
-height: 42
+height: 21
 hitSound: acceleratorLightning1
 
 fragLifeMin: 1
@@ -48,23 +53,8 @@ fragVelocityMin: 1
 
 pierce: true
 pierceBuilding: true
-pierceCap: 8
+pierceCap: 2
 
-fragOnHit: false  
-fragBullet: {
-type: EmptyBulletType
-instantDisappear: true
-collides: true
-splashDamage: 125
-splashDamageRadius: 40
-scaledSplashDamage: true
-hitSound: acceleratorLightning1
-lightning: 6
-lightningLength: 3
-lightningLenghtRand: 2
-despawnHit: true
-}
-  
 }
 
 }
