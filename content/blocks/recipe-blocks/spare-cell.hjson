@@ -2,6 +2,19 @@ type: Wall
 name: Spare Cell
 size: 2
 
+description: "
+Multiple times more durable then
+a normal power cell
+
+Provides better power flow to units
+allowing them to do more advanced 
+task
+
+Such as building buildings and 
+more complicated attack methods[grey]
+(Such as firing multiple weapons)
+"
+
 requirements: [lead/25, copper/50, titanium/25]
 placeablePlayer: false
 databaseTag: "freight-block"
