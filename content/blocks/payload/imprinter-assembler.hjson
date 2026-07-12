@@ -21,8 +21,8 @@ unit: fledgling
 
 time: 1500
 requirements: [
-gr-power-cell/2
-gr-circuit-wire/10
+gr-modular-frame/1
+gr-basic-ammunition-crate/1
 gr-packed-graphite/3
 ]
 
@@ -34,9 +34,9 @@ unit: dove
 
 time: 1800
 requirements: [
-gr-power-cell/1
 gr-observer/3
 gr-packed-graphite/2
+gr-modular-frame/1
 ]
 
 }
@@ -47,8 +47,8 @@ unit: construct
 
 time: 2100
 requirements: [
-gr-power-cell/3
-gr-packed-graphite/4
+gr-spare-cell/1
+gr-modular-frame/1
 gr-packed-beryllium/2
 ]
 
