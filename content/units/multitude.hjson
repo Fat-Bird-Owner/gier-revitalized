@@ -20,7 +20,7 @@ shake: 2.5
 recoilTime: 120
 inaccuracy: 2.5
 
-layerOffset: -0.0001
+layerOffset: -0.00001
 top: false
 shootSound: blockExplode2
 bullet: {
