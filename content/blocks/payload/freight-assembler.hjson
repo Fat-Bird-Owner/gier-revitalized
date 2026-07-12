@@ -39,4 +39,7 @@ power-cell
 observer
 circuit-wire
 crate
+basic-ammunition-crate
+spare-cell
+modular-frame
 ]
