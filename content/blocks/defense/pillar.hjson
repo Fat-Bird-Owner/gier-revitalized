@@ -1,6 +1,6 @@
 type: BaseShield
 size: 2
-radius: 12
+radius: 6
 
 requirements: [titanium/35, depleted-thorium/25, silicon/15]
 category: defense
@@ -21,7 +21,7 @@ from flying over it
 "
 
 baseExplosiveness: 12
-color: B58DA5FF
+shieldColor: B58DA5FF
 buildVisibility: sandboxOnly
 
 priority: 1
