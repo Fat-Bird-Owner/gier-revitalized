@@ -35,6 +35,7 @@ height: 14
 fragLifeMin: 1
 fragRandomSpread: 0
 fragBullets: 1
+fragVelocityMin: 1
 fragBullet: {
 type: BasicBulletType
 trailLength: 4
@@ -51,8 +52,9 @@ fragBullet: {
 type: LightningBulletType
 damage: 7.5
 lightningColor: FFD37F
+lightningLength: 2
+lightningLengthRand: 2
 }
-
 
 }
   
@@ -89,6 +91,8 @@ fragBullet: {
 type: LightningBulletType
 damage: 7.5
 lightningColor: FFD37F
+lightningLength: 2
+lightningLengthRand: 2
 }
 
 }
