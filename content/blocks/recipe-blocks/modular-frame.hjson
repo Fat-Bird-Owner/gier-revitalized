@@ -1,0 +1,9 @@
+type: Wall
+name: Modular Frame
+size: 2
+
+requirements: [copper/75, silicon/35]
+placeablePlayer: false
+buildVisibility: debugOnly
+
+category: units
