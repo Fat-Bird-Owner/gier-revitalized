@@ -14,7 +14,7 @@ name: "multitude-weapon"
 top: false
 x: 11.5
 y: -1.5
-reload: 75
+reload: 36
 
 shootStatus: slow
 shootStatusDuration: 300
@@ -25,7 +25,7 @@ inaccuracy: 22.5
 
 shootSound: coreExplosion
 
-shots: {
+shoot: {
 shots: 17
 shotDelay: 0
 }
@@ -35,8 +35,8 @@ type: BasicBulletType
 trailLength: 7
 trailWidth: 2
 
-speed: 5
-lifetime: 32
+speed: 10
+lifetime: 16
 damage: 15
 
 despawnHit: true
