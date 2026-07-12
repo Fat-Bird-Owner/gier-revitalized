@@ -1,0 +1,71 @@
+type: mech
+name: Magnitude
+speed: 0.75
+
+outlineColor: 2f2f3f
+health: 1450
+armor: 7.5
+
+hitSize: 16
+weapons: [
+{
+name: "magnitude-weapon"
+top: false
+x: 7.75
+y: 0
+reload: 75
+
+shake: 2.5
+recoilTime: 75
+inaccuracy: 6
+
+bullet: {
+type: BasicBulletType
+trailLength: 4
+trailWidth: 1.5
+
+speed: 5
+lifetime: 30
+damage: 35
+  
+width: 7.5
+height: 10.5
+  
+fragLifeMin: 1
+fragRandomSpread: 0
+fragBullets: 1
+fragBullet: {
+type: BasicBulletType
+trailLength: 4
+trailWidth: 1 
+speed: 5
+lifetime: 25
+pierce: true
+damage: 10
+pierceCap: 4
+pierceBuilding: true
+  
+fragBullets: 3
+fragBullets: {
+type: LightningBulletType
+damage: 7.5
+lightningColor: FFD37F
+}
+
+}
+  
+}
+
+}
+]
+
+abilities: [
+{
+type: ShieldArcAbility
+radius: 40
+max: 350
+regen: 5.83333
+pushUnits: false
+cooldown: 750
+}
+]
