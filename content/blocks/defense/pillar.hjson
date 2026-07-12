@@ -1,6 +1,7 @@
 type: BaseShield
 size: 2
 radius: 6
+name: Pillar
 
 requirements: [titanium/35, depleted-thorium/25, silicon/15]
 category: defense
@@ -25,3 +26,4 @@ shieldColor: B58DA5FF
 buildVisibility: sandboxOnly
 
 priority: 1
+hasPower: false
