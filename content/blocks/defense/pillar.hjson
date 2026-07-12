@@ -1,0 +1,27 @@
+type: BaseShield
+size: 2
+radius: 12
+
+requirements: [titanium/35, depleted-thorium/25, silicon/15]
+category: defense
+health: 1500
+
+group: wall
+databaseTag: "adv-depleted-thorium"
+armor: 5
+  
+sides: 4
+description: "
+Projects a force field upwards
+
+Preventing any non-ally unit
+from flying over it
+[salmon]
+- Explosive
+"
+
+baseExplosiveness: 12
+color: B58DA5FF
+buildVisibility: sandbxOnly
+
+priority: 1
