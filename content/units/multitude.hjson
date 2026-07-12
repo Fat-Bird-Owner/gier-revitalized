@@ -1,0 +1,69 @@
+type: mech
+name: Multitude
+speed: 0.5
+
+outlineColor: 2f2f3f
+health: 2250
+armor: 15
+
+legForwardScl:1
+hitSize: 25
+weapons: [
+{
+name: "multitude-weapon"
+top: false
+x: 8.75
+y: -1.5
+reload: 240
+
+shootStatus: unmoving
+shootStatusDuration: 120
+  
+shake: 2.5
+recoilTime: 220
+inaccuracy: 6
+
+shootSound: coreExplosion
+
+bullet: {
+type: BasicBulletType
+trailLength: 7
+trailWidth: 2
+
+speed: 10
+lifetime: 75
+damage: 100
+
+despawnHit: true
+hitShake: 7.5
+  
+width: 10
+height: 28
+hitSound: acceleratorLightning1
+
+fragLifeMin: 1
+fragRandomSpread: 0
+fragBullets: 1
+fragVelocityMin: 1
+
+pierce: true
+pierceBuilding: true
+pierceCap: 8
+
+fragOnHit: false  
+fragBullet: {
+type: EmptyBulletType
+collides: true
+splashDamage: 125
+splashDamageRadius: 40
+scaledSplashDamage: true
+hitSound: acceleratorLightning1
+lightning: 6
+lightningLength: 3
+lightningLenghtRand: 2
+}
+  
+}
+
+}
+]
