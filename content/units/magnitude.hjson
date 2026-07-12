@@ -46,7 +46,7 @@ pierceCap: 4
 pierceBuilding: true
   
 fragBullets: 3
-fragBullets: {
+fragBullet: {
 type: LightningBulletType
 damage: 7.5
 lightningColor: FFD37F
