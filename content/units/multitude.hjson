@@ -14,29 +14,54 @@ name: "multitude-weapon"
 top: true
 x: 11.5
 y: -1.5
-reload: 200
-  
+reload: 20
+
 shake: 2.5
-recoilTime: 120
+recoilTime: 20
 inaccuracy: 2.5
 
-layerOffset: -0.00001
 top: false
 shootSound: blockExplode2
 bullet: {
-type: ArtilleryBulletType
-width: 10
-height: 14
+type: BasicBulletType
+frontColor: FFD37F
+backColor: FFD37F
+trailColor: D4816B
 
-splashDamage: 250
-splashDamageRadius: 40
-scaledSplashDamage: true
+width: 12.5
+height: 17.5
+trailLength: 6.25
+knockback: 1.25
 
-speed: 4
-lifetime: 80
-hitShake: 7.5
+lifetime: 22
+speed: 8
+damage: 25
+hitEffect: plasticExplosion
 
-scaleLife: true
+splashDamage: 25
+splashDamageRadius: 23
+status: melting
+
+fragRandomSpread: 45
+fragBullets: 5
+fragBullet: {
+type: BasicBulletType
+frontColor: FFD37F
+backColor: FFD37F
+trailColor: D4816B
+
+sprite: "gr-triangle"
+speed: 6
+drag: 0.06666
+lifetime: 45
+spin: 3.5
+
+sticky: true
+lightning: 4
+lightningColor: 00000000
+damage: 2.2
+}
+  
 }
 
 }
