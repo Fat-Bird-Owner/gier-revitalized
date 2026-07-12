@@ -34,6 +34,25 @@ height: 10.5
 fragLifeMin: 1
 fragRandomSpread: 0
 fragBullets: 1
+
+  
+}
+
+}
+]
+
+abilities: [
+{
+type: ShieldArcAbility
+radius: 40
+max: 350
+regen: 5.83333
+pushUnits: false
+cooldown: 750
+}
+]
+
+/*
 fragBullet: {
 type: BasicBulletType
 trailLength: 4
@@ -53,19 +72,4 @@ lightningColor: FFD37F
 }
 
 }
-  
-}
-
-}
-]
-
-abilities: [
-{
-type: ShieldArcAbility
-radius: 40
-max: 350
-regen: 5.83333
-pushUnits: false
-cooldown: 750
-}
-]
+*/
