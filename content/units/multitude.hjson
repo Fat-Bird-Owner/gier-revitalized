@@ -6,13 +6,13 @@ outlineColor: 2f2f3f
 health: 2250
 armor: 15
 
-legForwardScl:1
+legForwardScl: 1
 hitSize: 25
 weapons: [
 {
 name: "multitude-weapon"
 top: false
-x: 8.75
+x: 11.75
 y: -1.5
 reload: 240
 
@@ -53,6 +53,7 @@ pierceCap: 8
 fragOnHit: false  
 fragBullet: {
 type: EmptyBulletType
+instantDisappear: true
 collides: true
 splashDamage: 125
 splashDamageRadius: 40
@@ -61,6 +62,7 @@ hitSound: acceleratorLightning1
 lightning: 6
 lightningLength: 3
 lightningLenghtRand: 2
+despawnHit: true
 }
   
 }
