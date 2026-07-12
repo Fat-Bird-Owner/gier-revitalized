@@ -20,6 +20,8 @@ shake: 2.5
 recoilTime: 75
 inaccuracy: 6
 
+shootSound: blockExplode2
+
 bullet: {
 type: BasicBulletType
 trailLength: 7
@@ -31,7 +33,8 @@ damage: 75
   
 width: 10
 height: 14
-  
+hitSound: acceleratorLightning1
+
 fragLifeMin: 1
 fragRandomSpread: 0
 fragBullets: 1
@@ -46,6 +49,8 @@ pierce: true
 damage: 20
 pierceCap: 4
 pierceBuilding: true
+
+hitSound: acceleratorLightning2
 
 fragBullets: 3
 fragBullet: {
