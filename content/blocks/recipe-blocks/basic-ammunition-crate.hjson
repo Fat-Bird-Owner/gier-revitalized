@@ -2,6 +2,18 @@ type: Wall
 name: "Ammunition Crate [lightgrey](Basic)[]"
 size: 2
 
+description: "
+A box for storing ammunition for 
+storing weapons ammo and more
+
+This basic one only
+supports storing one type of
+ammo at a time
+[lightgrey]
+Commonly present in attacking 
+units
+"
+
 requirements: [lead/50, metaglass/25, silicon/25]
 placeablePlayer: false
 databaseTag: "freight-block"
