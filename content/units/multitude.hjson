@@ -3,14 +3,14 @@ name: Multitude
 speed: 0.5
 
 outlineColor: 2f2f3f
-health: 2500
+health: 3650
 armor: 15
 
 legForwardScl: 1
 hitSize: 25
 weapons: [
 {
-reload: 48
+reload: 60
 
 shoot: {
 shots: 3
@@ -25,7 +25,7 @@ rotateSpeed: 6
 parts: [
 {
 type: RegionPart
-name: multitude-anti-air
+name: "gr-multitude-anti-air"
 outline: false
 }
 ]
@@ -36,7 +36,6 @@ y: -5
 mirror: false
 
 rotate: true
-outline: false
 layerOffset: 0.01
 bullet: {
 lifetime: 60
@@ -108,8 +107,8 @@ intervalBullet: {
 abilities: [
 {
 type: ForceFieldAbility
-radius: 60
-regen: 8.33333
+radius: 45
+regen: 4.15556
 max: 500
 }
 ]
