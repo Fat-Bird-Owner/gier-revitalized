@@ -21,7 +21,7 @@ top: false
 x: -6
 y: -5
 mirror: false
-
+shootY: 6
 rotate: true
 outline: false
 layerOffset: 0.01
