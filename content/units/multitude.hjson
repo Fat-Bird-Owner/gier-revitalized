@@ -66,7 +66,7 @@ trailParam: 0.5
 
 lightning: 2
 lightningLength: 6
-lightningColor: surge
+lightningColor: f3e979
 lightningDamage: 20
 
 despawnSound: shockBullet
@@ -77,7 +77,7 @@ intervalBullet: {
   damage: 5
   lightningLength: 3
   lightningLengthRand: 4
-  lightningColor: surge
+  lightningColor: f3e979
   hitEffect: hitLancerLow
 }
 }
