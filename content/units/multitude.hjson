@@ -10,18 +10,31 @@ legForwardScl: 1
 hitSize: 25
 weapons: [
 {
-reload: 12
+reload: 48
+
+shoot: {
+shots: 3
+shotDelay: 12
+}
 
 inaccuracy: 7.5
 targetGround: false
 
 rotateSpeed: 6
+
+parts: [
+{
+type: RegionPart
 name: multitude-anti-air
+outline: false
+}
+]
+
 top: false
 x: -6
 y: -5
 mirror: false
-shootY: 6
+
 rotate: true
 outline: false
 layerOffset: 0.01
