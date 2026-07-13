@@ -43,12 +43,17 @@ shake: 2.5
 recoilTime: 60
 inaccuracy: 2.5
 
+shoot: {
+shots: 3
+shotDelay: 7.5
+}
+
 top: false
 shootSound: blockExplode2
 bullet: {
 type: BasicBulletType
 speed: 8
-damage: 70
+damage: 60
 width: 11
 height: 20
 lifetime: 27
