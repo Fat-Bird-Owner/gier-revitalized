@@ -14,6 +14,14 @@ reload: 12
 autoTarget: true
 controllable: false
 
+inaccuracy: 7.5
+targetGround: false
+
+rotateSpeed: 6
+name: multitude-anti-air
+top: false
+
+
 bullet: {
 lifetime: 60
 speed: 6
@@ -21,25 +29,6 @@ range: 360
 damage: 15
 collidesAir: true
 collidesGround: false
-}
-
-}
-{
-rotate: true
-reload: 1200
-
-bullet: {
-type: PointBulletType
-maxRange: 200
-trailEffect: absorb
-
-collides: false
-despawnHit: true
-fragBullets: 1
-fragBullet: {
-spawnUnit: target-point
-}
-
 }
 
 }
