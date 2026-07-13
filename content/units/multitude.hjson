@@ -20,7 +20,9 @@ targetGround: false
 rotateSpeed: 6
 name: multitude-anti-air
 top: false
-
+x: -6
+y: -5
+mirror: false
 
 bullet: {
 lifetime: 60
@@ -89,7 +91,7 @@ intervalBullet: {
 abilities: [
 {
 type: ForceFieldAbility
-radius: 120
+radius: 60
 regen: 8.33333
 max: 500
 }
