@@ -11,8 +11,6 @@ hitSize: 25
 weapons: [
 {
 reload: 12
-autoTarget: true
-controllable: false
 
 inaccuracy: 7.5
 targetGround: false
@@ -24,14 +22,17 @@ x: -6
 y: -5
 mirror: false
 
+layerOffset: 0.01
 bullet: {
 lifetime: 60
 speed: 6
 range: 360
+maxRange: 360
 damage: 15
 collidesAir: true
 collidesGround: false
 trailLength: 4
+knockback: 0.75
 }
 
 }
