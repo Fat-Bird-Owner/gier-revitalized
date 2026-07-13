@@ -22,6 +22,8 @@ x: -6
 y: -5
 mirror: false
 
+rotate: true
+outline: false
 layerOffset: 0.01
 bullet: {
 lifetime: 60
