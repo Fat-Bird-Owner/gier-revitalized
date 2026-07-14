@@ -11,22 +11,23 @@ hitSize: 30
 weapons: [
 {
 
-reload: 80
+reload: 160
 
 shoot: {
 shots: 3
-shotDelay: 18
+shotDelay: 36
 }
 
 inaccuracy: 7.5
 targetGround: false
+shake: 7.5
 
 rotateSpeed: 2
 
 parts: [
 {
 type: RegionPart
-name: "gr-multitude-missile-weapon"
+name: "gr-equionox-missile-weapon"
 outline: false
 }
 ]
@@ -92,7 +93,7 @@ knockback: 0.75
 name: "equinox-weapon"
 top: true
 x: 12.5
-y: -2
+y: 2
 reload: 60
 
 shake: 5
