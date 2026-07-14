@@ -105,8 +105,8 @@ knockback: 0.75
 {
 name: "equinox-weapon"
 top: true
-x: 15
-y: 2
+x: 14.75
+y: 1.75
 reload: 60
 
 shake: 5
