@@ -1,0 +1,16 @@
+type: ParticleWeather
+  
+color: baa164
+noiseColor: edc66c55
+noiseScale: 2000
+drawNoise: true
+  
+yspeed: -5
+xspeed: 0.75
+minAlpha: 1
+maxAlpha: 0.33
+
+attrs: {
+light: 0.25
+water: -0.15
+}
