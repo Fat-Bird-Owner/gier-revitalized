@@ -12,5 +12,5 @@ maxAlpha: 0.33
 
 attrs: {
 light: 0.25
-water: -0.15
+carbon: -0.15
 }
