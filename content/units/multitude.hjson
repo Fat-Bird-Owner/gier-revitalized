@@ -34,6 +34,7 @@ top: false
 x: -6
 y: -5
 mirror: false
+shootSound: shootCyclone
 
 rotate: true
 layerOffset: 0.01
@@ -67,7 +68,7 @@ shotDelay: 7.5
 }
 
 top: false
-shootSound: blockExplode2
+shootSound: blockExplode2Alt
 bullet: {
 type: BasicBulletType
 speed: 8
@@ -93,7 +94,7 @@ bulletInterval: 4
 intervalBullet: {
   type: LightningBulletType
   damage: 5
-  lightningLength: 3
+  lightningLength: 4
   lightningLengthRand: 4
   lightningColor: f3e979
   hitEffect: hitLancerLow
