@@ -7,15 +7,14 @@ physics: false
 lifetime: 150
 rotateSpeed: 0.1
 hitSize: 5
-trailLength: 2
-trailScl: 1
+trailLength: 5
+trailScl: 2
 useUnitCap: false
 health: 50
 autoFindTarget: true
 homingDelay: 10
 circleTarget: false
 faceTarget: true
-trailColor: 7a7564
 aimDst: 4
 drawCell: false
 
