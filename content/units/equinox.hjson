@@ -121,43 +121,58 @@ shotDelay: 7.5
 
 top: false
 shootSound: blockExplode2Alt
-bullet: {
-type: BasicBulletType
-speed: 8
-damage: 85
-width: 16
-height: 25
-lifetime: 27
-shrinkX: 0.4
-shrinkY: 0
+bullet: bullet: {
+  type: BasicBulletType
 
-maxDamageFraction: 0.22
-pierce: true
-pierceBuildings: true
-pierceCap: 6
-  
-shootEffect: shootBig
-hitEffect: blastExplosion
-trailParam: 0.5
+  speed: 13
+  damage: 80
 
-lightning: 2
-lightningLength: 6
-lightningColor: f3e979
-lightningDamage: 20
+  pierce: true
+  pierceCap: 10
 
-despawnSound: shockBullet
-bulletInterval: 2
+  width: 14
+  height: 33
+  lifetime: 15
 
-intervalBullet: {
-  type: LightningBulletType
-  damage: 7.5
-  lightningLength: 3
-  lightningLengthRand: 3
-  lightningColor: f3e979
-  hitEffect: hitLancerLow
-}
+  shootEffect: shootBig
+
+  fragVelocityMin: 0.4
+
+  hitEffect: blastExplosion
+
+  splashDamage: 18
+  splashDamageRadius: 13
+
+  fragBullets: 3
+  fragLifeMin: 0
+  fragRandomSpread: 30
+
+  despawnSound: explosion
+
+  fragBullet: {
+    type: BasicBulletType
+
+    speed: 9
+    damage: 20
+
+    width: 10
+    height: 10
+
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 3
+
+    lifetime: 20
+
+    hitEffect: flakExplosion
+
+    splashDamage: 15
+    splashDamageRadius: 10
+  }
 }
 
 # e
 }
 ]
+
+
