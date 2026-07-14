@@ -54,6 +54,7 @@ bullet: {
 spawnUnit: striker-missile
 inaccuracy: 10
 instantDisappear: true
+followAimSpeed: 5
 
 chargeEffect: {
 type: WaveEffect
@@ -106,7 +107,7 @@ damage: 15
 collidesAir: true
 collidesGround: false
 trailLength: 4
-knockback: 0.75
+knockback: 1.5
 }
 
 }
