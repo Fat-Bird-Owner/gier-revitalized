@@ -8,6 +8,9 @@ armor: 15
 
 singleTarget: false
 forceMultiTarget: true
+predictTarget: false
+
+rotateSpeed: 3
 
 legForwardScl: 1
 hitSize: 30
