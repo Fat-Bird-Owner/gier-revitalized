@@ -20,7 +20,7 @@ drawCell: false
 targetable: false
 
 outlines: false
-range: 4
+maxRange: 4
 hidden: true
   
 weapons: [
