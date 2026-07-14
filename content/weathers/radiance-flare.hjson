@@ -1,5 +1,6 @@
 type: ParticleWeather
-  
+name: Radiance Flare
+
 color: edc66c
 noiseColor: baa16433
 noiseScale: 2000
@@ -10,8 +11,9 @@ xspeed: 0.75
 minAlpha: 1
 maxAlpha: 0.33
 
+opacityMultiplier: 0.3
 baseSpeed: 0.3
-density: 4800
+density: 10000
 
 attrs: {
 light: 0.25
