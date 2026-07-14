@@ -20,7 +20,7 @@ firstShotDelay: 120
 }
 
 inaccuracy: 7.5
-targetGround: false
+targetGround: true
 shake: 7.5
 
 rotateSpeed: 2
