@@ -1,13 +1,12 @@
 type: missile
 template: MissileUnitType
 name: Striker Missile
-flying: true
 speed: 5
+missileAccelTime: 45
 physics: false
 lifetime: 150
-missileAccelTime: 90
 rotateSpeed: 10
-homingDelay: 3
+homingDelay: 20.5
 trailLength: 8
 trailScl: 1
 useUnitCap: false
@@ -25,11 +24,14 @@ weapons: [
     shootOnDeath: true
     mirror: false
     shootCone: 360
-    shake: 1
+    shake: 1.5
     bullet: {
       type: ExplosionBulletType
       splashDamage: 60
       splashDamageRadius: 32
+      despawnEffect: none
+      hitEffect: blastExplosion
+      despawnHit: true
     }
   } 
 ]
