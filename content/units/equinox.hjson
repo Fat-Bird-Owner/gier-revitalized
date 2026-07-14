@@ -1,0 +1,148 @@
+type: mech
+name: Multitude
+speed: 0.35
+
+outlineColor: 2f2f3f
+health: 7500
+armor: 15
+
+legForwardScl: 1
+hitSize: 30
+weapons: [
+{
+
+reload: 80
+
+shoot: {
+shots: 3
+shotDelay: 18
+}
+
+inaccuracy: 7.5
+targetGround: false
+
+rotateSpeed: 2
+
+parts: [
+{
+type: RegionPart
+name: "gr-multitude-missile-weapon"
+outline: false
+}
+]
+
+top: false
+x: 7.5
+y: -6
+mirror: true
+alternate: false
+shootSound: shootCyclone
+inaccuracy: 5
+  
+rotate: true
+layerOffset: 0.01
+bullet: {
+spawnUnit: striker-missile
+}
+  
+}
+{
+reload: 60
+
+shoot: {
+shots: 3
+shotDelay: 12
+}
+
+inaccuracy: 7.5
+targetGround: false
+
+rotateSpeed: 6
+
+parts: [
+{
+type: RegionPart
+name: "gr-multitude-anti-air"
+outline: false
+}
+]
+
+top: false
+x: 0
+y: -8
+mirror: false
+shootSound: shootCyclone
+
+rotate: true
+layerOffset: 0.01
+bullet: {
+lifetime: 60
+speed: 6
+range: 360
+maxRange: 360
+damage: 15
+collidesAir: true
+collidesGround: false
+trailLength: 4
+knockback: 0.75
+}
+
+}
+{
+name: "equinox-weapon"
+top: true
+x: 12.5
+y: -2
+reload: 60
+
+shake: 5
+recoilTime: 60
+inaccuracy: 2.5
+
+shoot: {
+shots: 3
+shotDelay: 7.5
+}
+
+top: false
+shootSound: blockExplode2Alt
+bullet: {
+type: BasicBulletType
+speed: 8
+damage: 85
+width: 16
+height: 25
+lifetime: 27
+shrinkX: 0.4
+shrinkY: 0
+
+maxDamageFraction: 0.22
+pierce: true
+pierceBuildings: true
+pierceCap: 6
+  
+shootEffect: shootBig
+hitEffect: blastExplosion
+trailParam: 0.5
+
+lightning: 2
+lightningLength: 6
+lightningColor: f3e979
+lightningDamage: 20
+
+despawnSound: shockBullet
+bulletInterval: 2
+
+intervalBullet: {
+  type: LightningBulletType
+  damage: 7.5
+  lightningLength: 3
+  lightningLengthRand: 3
+  lightningColor: f3e979
+  hitEffect: hitLancerLow
+}
+}
+
+# e
+}
+]
