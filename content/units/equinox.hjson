@@ -121,7 +121,7 @@ shotDelay: 7.5
 
 top: false
 shootSound: blockExplode2Alt
-bullet: bullet: {
+bullet: {
   type: BasicBulletType
 
   speed: 13
