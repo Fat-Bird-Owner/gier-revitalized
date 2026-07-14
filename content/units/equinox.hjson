@@ -27,7 +27,7 @@ rotateSpeed: 2
 parts: [
 {
 type: RegionPart
-name: "gr-equionox-missile-weapon"
+name: "gr-equinox-missile-weapon"
 outline: false
 }
 ]
@@ -92,7 +92,7 @@ knockback: 0.75
 {
 name: "equinox-weapon"
 top: true
-x: 12.5
+x: 15
 y: 2
 reload: 60
 
