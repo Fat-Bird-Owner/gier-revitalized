@@ -15,7 +15,6 @@ autoFindTarget: true
 homingDelay: 10
 circleTarget: false
 faceTarget: true
-aimDst: 4
 drawCell: false
 
 targetable: false
