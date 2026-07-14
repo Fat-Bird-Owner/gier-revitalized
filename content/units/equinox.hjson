@@ -14,12 +14,12 @@ weapons: [
 reload: 280
 
 shoot: {
-shots: 3
-shotDelay: 36
+shots: 6
+shotDelay: 18
 firstShotDelay: 120
 }
 
-inaccuracy: 7.5
+inaccuracy: 15
 targetGround: true
 shake: 7.5
 
