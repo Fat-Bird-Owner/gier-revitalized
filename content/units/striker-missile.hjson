@@ -5,7 +5,7 @@ speed: 5
 missileAccelTime: 45
 physics: false
 lifetime: 150
-rotateSpeed: 2,5
+rotateSpeed: 2.5
 homingDelay: 20.5
 trailLength: 8
 trailScl: 1
