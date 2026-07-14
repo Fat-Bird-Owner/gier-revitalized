@@ -52,6 +52,8 @@ rotate: true
 layerOffset: 0.01
 bullet: {
 spawnUnit: striker-missile
+inaccuracy: 10
+instantDisappear: true
 
 chargeEffect: {
 type: WaveEffect
