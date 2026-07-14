@@ -8,7 +8,7 @@ lifetime: 150
 rotateSpeed: 0.1
 hitSize: 5
 trailLength: 5
-trailScl: 2
+trailScl: 1
 useUnitCap: false
 health: 50
 autoFindTarget: true
