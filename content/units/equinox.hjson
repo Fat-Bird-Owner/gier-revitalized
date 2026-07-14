@@ -11,11 +11,12 @@ hitSize: 30
 weapons: [
 {
 
-reload: 160
+reload: 280
 
 shoot: {
 shots: 3
 shotDelay: 36
+firstShotDelay: 120
 }
 
 inaccuracy: 7.5
@@ -39,11 +40,23 @@ mirror: true
 alternate: false
 shootSound: shootCyclone
 inaccuracy: 5
-  
+
+chargeSound: chargeVela
 rotate: true
 layerOffset: 0.01
 bullet: {
 spawnUnit: striker-missile
+
+chargeEffect: {
+type: WaveEffect
+sizeFrom: 40
+sizeTo: 0
+lifetime: 60
+interp: sineOut
+colorFrom: f3e979
+colorTo: ffffff00
+}
+
 }
   
 }
