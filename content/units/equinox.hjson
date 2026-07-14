@@ -99,6 +99,7 @@ reload: 60
 shake: 5
 recoilTime: 60
 inaccuracy: 2.5
+layerOffset: 0.001
 
 shoot: {
 shots: 3
