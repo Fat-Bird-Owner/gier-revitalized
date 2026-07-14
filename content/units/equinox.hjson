@@ -175,4 +175,13 @@ bullet: bullet: {
 }
 ]
 
-
+abilities: [
+{
+type: ShieldArcAbility
+radius: 35
+max: 750
+regen: 5
+pushUnits: true
+cooldown: 1000
+}
+]
