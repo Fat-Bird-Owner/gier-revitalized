@@ -6,7 +6,8 @@ physics: false
 lifetime: 60
 rotateSpeed: 0.1
 hitSize: 5
-trailLength: 0
+trailLength: 2
+trailScl: 1
 useUnitCap: false
 health: 50
 autoFindTarget: false
@@ -16,25 +17,6 @@ faceTarget: true
 trailColor: 7a7564
 aimDst: 4
 drawCell: false
-  
-abilities: [
-  {
-    type: MoveEffectAbility
-    interval: 4
-    effect: {
-      type: ParticleEffect
-      particles: 12
-      length: 3.2
-      baseLength: 4
-      line: true
-      strokeFrom: 2.2
-      strokeTo: 1.6
-      colorFrom: f3e979
-      colorTo: f3e979
-    }
-    rotateEffect: true
-  }
-]
 
 targetable: false
   
