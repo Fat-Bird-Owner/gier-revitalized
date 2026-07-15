@@ -45,14 +45,14 @@ x: 0
 y: -11.25
 mirror: false
 alternate: false
-shootSound: shootCyclone
+shootSound: shootReign
 inaccuracy: 5
 
 chargeSound: chargeVela
 rotate: true
 layerOffset: 0.01
 bullet: {
-spawnUnit: striker-missile
+spawnUnit: "gr-heavy-striker-missile"
 inaccuracy: 20
 instantDisappear: true
 followAimSpeed: 5
@@ -71,16 +71,16 @@ colorTo: ffffff00
 type: ParticleEffect
 lenFrom: 4
 lenTo: 8
-strokeFrom: 0
-strokeTo: 4
-lifetime: 85
+strokeFrom: 4
+strokeTo: 0
+lifetime: 44
 interp: sineOut
 colorFrom: f3e979
 line: true
 particles: 22
 colorTo: f3e97900
-baseLength: -80
-length: 80
+baseLength: -100
+length: 100
 }
 ]
 
@@ -170,7 +170,7 @@ inaccuracy: 2.5
 
 shootY: 12
 top: false
-shootSound: blockExplode2Alt
+shootSound: blockExplodeExplosive
   
 bullet: {
   type: BasicBulletType
@@ -235,5 +235,15 @@ bullet: {
 }
 
 # e
+}
+]
+
+abilities: [
+{
+type: ShieldRegenFieldAbility
+amount: 250 
+max: 500
+reload: 1200
+range: 160
 }
 ]
