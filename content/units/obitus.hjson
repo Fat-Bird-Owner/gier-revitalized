@@ -12,7 +12,7 @@ predictTarget: false
 
 rotateSpeed: 1.2
 
-legForwardScl: 0.6
+legForwardScl: 0.45
 hitSize: 38
 weapons: [
 {
@@ -30,11 +30,12 @@ targetGround: true
 shake: 7.5
 
 rotateSpeed: 2
+shootSound: shootRipple
 
 parts: [
 {
 type: RegionPart
-name: "gr-obitus-missile-battery"
+name: "gr-obitus-striker-battery"
 outline: false
 }
 ]
@@ -98,6 +99,7 @@ inaccuracy: 5
 targetGround: true
 
 rotateSpeed: 6
+mirror: true
 
 parts: [
 {
@@ -173,7 +175,7 @@ shootSound: blockExplode2Alt
 bullet: {
   type: BasicBulletType
   speed: 7
-  damage: 2500
+  damage: 1500
 
   sprite: large-orb
   width: 17
@@ -189,18 +191,15 @@ bullet: {
   pierceBuilding: true
   pierceCap: 4
 
-  hitColor: 6ecdecff
-  backColor: 6ecdecff
-  trailColor: 6ecdecff
+  hitColor: f3e979
+  backColor: f3e979
+  trailColor: f3e979
   frontColor: ffffffff
 
   trailWidth: 2.8
   trailLength: 9
 
   hitEffect: hitBulletColor
-
-  buildingDamageMultiplier: 0.3
-
   despawnEffect: hitBulletColor
 
   trailRotation: true
@@ -215,7 +214,7 @@ bullet: {
     damage: 25
     collidesAir: false
     ammoMultiplier: 1
-    lightningColor: 6ecdecff
+    lightningColor: f3e979
     lightningLength: 5
     lightningLengthRand: 10
     buildingDamageMultiplier: 0.25
