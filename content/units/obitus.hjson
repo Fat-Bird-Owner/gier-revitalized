@@ -11,7 +11,7 @@ forceMultiTarget: true
 predictTarget: false
 
 rotateSpeed: 1.2
-
+mechLegColor: 3f3f4f
 legForwardScl: 0.45
 hitSize: 38
 weapons: [
