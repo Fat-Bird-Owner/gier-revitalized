@@ -3,7 +3,7 @@ color: 7a95ea66
 name: Drench
   
 yspeed: 1.5
-xspeed:10
+xspeed: 10
 density: 1600
 
 stroke: 1.5
