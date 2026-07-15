@@ -6,7 +6,7 @@ outlineColor: 2f2f3f
 health: 25000
 armor: 25
 singleTarget: true
-range: 420
+range: 280
 
 rotateSpeed: 1.2
 mechLegColor: 3f3f4f
