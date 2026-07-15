@@ -1,0 +1,240 @@
+type: mech
+name: Obitus
+speed: 0.30
+
+outlineColor: 2f2f3f
+health: 25000
+armor: 25
+
+singleTarget: false
+forceMultiTarget: true
+predictTarget: false
+
+rotateSpeed: 1.2
+
+legForwardScl: 0.6
+hitSize: 38
+weapons: [
+{
+
+reload: 320
+
+shoot: {
+shots: 12
+shotDelay: 9
+firstShotDelay: 120
+}
+
+inaccuracy: 15
+targetGround: true
+shake: 7.5
+
+rotateSpeed: 2
+
+parts: [
+{
+type: RegionPart
+name: "gr-obitus-missile-battery"
+outline: false
+}
+]
+
+top: false
+x: 0
+y: -11.25
+mirror: false
+alternate: false
+shootSound: shootCyclone
+inaccuracy: 5
+
+chargeSound: chargeVela
+rotate: true
+layerOffset: 0.01
+bullet: {
+spawnUnit: striker-missile
+inaccuracy: 20
+instantDisappear: true
+followAimSpeed: 5
+
+chargeEffect: [
+{
+type: WaveEffect
+sizeFrom: 40
+sizeTo: 0
+lifetime: 60
+interp: sineOut
+colorFrom: f3e979
+colorTo: ffffff00
+}
+{
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+strokeFrom: 0
+strokeTo: 4
+lifetime: 85
+interp: sineOut
+colorFrom: f3e979
+line: true
+particles: 22
+colorTo: f3e97900
+baseLength: -80
+length: 80
+}
+]
+
+}
+  
+}
+{
+reload: 60
+
+shoot: {
+shots: 3
+shotDelay: 12
+}
+
+inaccuracy: 5
+targetGround: true
+
+rotateSpeed: 6
+
+parts: [
+{
+type: RegionPart
+name: "gr-obitus-anti-air"
+outline: false
+}
+]
+
+top: false
+x: 5.25
+y: 6.75
+mirror: false
+
+rotate: true
+layerOffset: 0.01
+bullet: {
+  type: BasicBulletType
+
+  speed: 8
+  damage: 35
+
+  width: 11
+  height: 20
+  lifetime: 27
+
+  shrinkX: 0.4
+  shrinkY: 0
+
+  shootEffect: shootBig
+  hitEffect: blastExplosion
+
+  trailParam: 0.5
+
+  lightning: 2
+  lightningLength: 6
+  lightningColor: f3e979ff
+  lightningDamage: 10
+
+  despawnSound: shockBullet
+
+  bulletInterval: 4
+
+  intervalBullet: {
+    type: LightningBulletType
+
+    damage: 2.5
+
+    lightningLength: 3
+    lightningLengthRand: 4
+    lightningColor: f3e979ff
+
+    hitEffect: hitLancerLow
+  }
+}
+
+}
+{
+name: "obitus-weapon"
+top: true
+x: 18.25
+y: 0
+reload: 60
+
+shake: 5
+recoilTime: 60
+inaccuracy: 2.5
+
+shootY: 12
+top: false
+shootSound: blockExplode2Alt
+  
+bullet: {
+  type: BasicBulletType
+  speed: 7
+  damage: 2500
+
+  sprite: large-orb
+  width: 17
+  height: 21
+  hitSize: 8
+
+  shootEffect: shootTitan
+  smokeEffect: shootSmokeSmite
+
+  ammoMultiplier: 1
+
+  pierce: true
+  pierceBuilding: true
+  pierceCap: 4
+
+  hitColor: 6ecdecff
+  backColor: 6ecdecff
+  trailColor: 6ecdecff
+  frontColor: ffffffff
+
+  trailWidth: 2.8
+  trailLength: 9
+
+  hitEffect: hitBulletColor
+
+  buildingDamageMultiplier: 0.3
+
+  despawnEffect: hitBulletColor
+
+  trailRotation: true
+  trailEffect: disperseTrail
+  trailInterval: 3
+
+  bulletInterval: 1
+  shake: 5
+    
+  intervalBullet: {
+    type: LightningBulletType
+    damage: 25
+    collidesAir: false
+    ammoMultiplier: 1
+    lightningColor: 6ecdecff
+    lightningLength: 5
+    lightningLengthRand: 10
+    buildingDamageMultiplier: 0.25
+
+    lightningType: {
+      type: BulletType
+      speed: 0.0001
+      damage: 0
+      lifetime: 10
+      hitEffect: hitLancer
+      despawnEffect: none
+      status: shocked
+      hittable: false
+      lightColor: ffffffff
+      buildingDamageMultiplier: 0.25
+    }
+  }
+}
+
+# e
+}
+]
