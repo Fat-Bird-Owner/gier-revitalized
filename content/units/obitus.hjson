@@ -110,16 +110,16 @@ outline: false
 ]
 
 top: false
-x: 5.25
+x: 8
 y: 6.75
-mirror: false
+mirror: true
 
 rotate: true
 layerOffset: 0.01
 bullet: {
   type: BasicBulletType
 
-  speed: 8
+  speed: 10
   damage: 35
 
   width: 11
