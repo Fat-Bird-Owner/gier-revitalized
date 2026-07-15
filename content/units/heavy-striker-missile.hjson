@@ -1,0 +1,63 @@
+type: missile
+template: MissileUnitType
+name: Striker Missile
+speed: 5
+missileAccelTime: 45
+physics: false
+lifetime: 200
+rotateSpeed: 0.5
+homingDelay: 20.5
+trailLength: 8
+trailScl: 1
+useUnitCap: false
+drawCell: false
+
+targetable: true
+health: 150
+drawBody: false
+
+parts: [
+{
+type: RegionPart
+name: "gr-striker-missile"
+}
+]
+  
+outlines: false
+maxRange: 4
+hidden: true
+
+abilities: [
+{
+type: LiquidExplodeAbility
+liquid: slag
+amount: 200
+}
+]
+  
+weapons: [
+  {
+    reload: 1
+    shootOnDeath: true
+    mirror: false
+    shootCone: 360
+    shake: 1.5
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 100
+      splashDamageRadius: 32
+      despawnEffect: none
+      hitEffect: blastExplosion
+      despawnHit: true
+
+      fragBullets: 16
+      fragLifeMin: 0.4
+      fragBullet: {
+      type: LiquidBulletType
+      despawnHit: true
+      liquid: slag
+      puddleSize: 22
+      }
+    }
+  } 
+]
