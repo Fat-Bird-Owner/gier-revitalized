@@ -6,6 +6,7 @@ outlineColor: 2f2f3f
 health: 1450
 armor: 7.5
 
+mechLegColor: 3f3f4f
 legForwardScl: 0.5
 hitSize: 16
 weapons: [
