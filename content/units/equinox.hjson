@@ -12,6 +12,7 @@ predictTarget: false
 
 rotateSpeed: 3
 
+mechLegColor: 3f3f4f
 legForwardScl: 1
 hitSize: 30
 weapons: [
