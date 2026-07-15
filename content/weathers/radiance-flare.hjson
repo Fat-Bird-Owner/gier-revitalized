@@ -6,8 +6,8 @@ noiseColor: baa16433
 noiseScale: 2000
 drawNoise: true
 
-yspeed: -2.5
-xspeed: 0.35
+yspeed: -10
+xspeed: 2
 minAlpha: 0.4
 maxAlpha: 0.33
 
