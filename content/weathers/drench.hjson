@@ -10,3 +10,9 @@ stroke: 1.5
 sound: wind
 soundVol: 0.75
 status: wet
+
+attrs: {
+carbon: 0.25
+light: -0.1
+heat: -0.25
+}
