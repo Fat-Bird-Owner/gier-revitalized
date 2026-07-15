@@ -14,8 +14,8 @@ itemCapacity: 24
 outputItem: metaglass/6
 craftTime: 180
 consumes: {
-power: 1
-items: [metaglass-chunk/12]
+power: -1
+items: [metaglass-chunk/12, metaglass/-1]
 }
 
 customShadow: true
