@@ -30,7 +30,7 @@ latest releases instead.
 iosCompatible: true
 version: "v3.1 - Gier"
 subtitle: "[#F9A3C7FF[]]v3.1 [grey[]]-[lightgrey[]] Gier"
-minGameVersion: "156"
+minGameVersion: "159"
 dependencies: []
 hidden: false
 
