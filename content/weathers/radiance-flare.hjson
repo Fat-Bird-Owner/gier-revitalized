@@ -8,7 +8,7 @@ drawNoise: true
 
 yspeed: -2.5
 xspeed: 0.35
-minAlpha: 1
+minAlpha: 0.6
 maxAlpha: 0.33
 
 opacityMultiplier: 0.3
@@ -17,5 +17,4 @@ density: 10000
 
 attrs: {
 light: 0.25
-carbon: -0.15
 }
