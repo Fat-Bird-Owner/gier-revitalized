@@ -1,0 +1,11 @@
+type: RainWeather
+color: 7a95ea66
+name: Drench
+  
+yspeed: 10
+xspeed: 3.5
+density: 1600
+  
+sound: wind
+soundVol: 0.75
+status: wet
