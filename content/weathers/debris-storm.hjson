@@ -1,0 +1,19 @@
+type: ParticleWeather
+name: Debris Storm
+
+noiseColor: f7cba4
+noiseScale: 2500
+drawNoise: true
+drawParticles: false
+
+minAlpha: 0.4
+maxAlpha: 0.33
+
+opacityMultiplier: 0.4
+baseSpeed: 0.75
+density: 10000
+
+useWindVector: true
+attrs: {
+sand: 0.5
+}
