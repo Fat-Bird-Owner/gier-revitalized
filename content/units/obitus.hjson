@@ -5,10 +5,7 @@ speed: 0.30
 outlineColor: 2f2f3f
 health: 25000
 armor: 25
-
-singleTarget: false
-forceMultiTarget: true
-predictTarget: false
+singleTarget: true
 
 rotateSpeed: 1.2
 mechLegColor: 3f3f4f
@@ -171,7 +168,8 @@ inaccuracy: 2.5
 shootY: 12
 top: false
 shootSound: blockExplodeExplosive
-  
+predictTarget: false
+
 bullet: {
   type: BasicBulletType
   speed: 7
