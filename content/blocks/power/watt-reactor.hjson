@@ -73,7 +73,7 @@ explodeEffect: reactorExplosion
 explodeSound: explosionCore
 
 consumes:{
-items:[graphite/10]
+items:[graphite/10, coal/-3]
 
 coolant:{
 amount: 0.166667
