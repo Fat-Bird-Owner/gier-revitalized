@@ -11,8 +11,8 @@ xspeed: 2
 minAlpha: 0.4
 maxAlpha: 0.33
 
-opacityMultiplier: 0.3
-baseSpeed: 0.3
+opacityMultiplier: 0.5
+baseSpeed: 0.5
 density: 10000
 
 useWindVector: true
