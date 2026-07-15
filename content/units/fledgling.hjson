@@ -7,6 +7,7 @@ health: 650
 armor: 7.5
 
 hitSize: 12
+mechLegColor: 3f3f4f
 weapons: [
 {
 name: "fledgling-weapon"
