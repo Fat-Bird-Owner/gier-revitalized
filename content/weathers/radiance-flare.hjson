@@ -15,6 +15,7 @@ opacityMultiplier: 0.3
 baseSpeed: 0.3
 density: 10000
 
+useWindVector: true
 attrs: {
 light: 0.25
 }
