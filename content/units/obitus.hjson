@@ -10,7 +10,7 @@ range: 280
 
 rotateSpeed: 1.2
 mechLegColor: 3f3f4f
-legForwardScl: 0.45
+legForwardScl: 0.25
 hitSize: 38
 weapons: [
 {
