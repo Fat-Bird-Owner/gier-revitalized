@@ -1,0 +1,66 @@
+type: AttributeCrafter
+size: 4
+squareSprite: false
+
+description: "
+A larger version of the dihyodrgen shaft
+
+extracts afar larger volume of water
+then the shaft
+"
+
+name: Industrial Borehole
+category: production
+attribute: carbon
+priority: 5
+
+outputLiquid: water/2.5
+liquidCapacity: 2500
+customShadow: true
+
+databaseTag: "gier"
+
+ambientSound: dihydrogen-shaft
+ambientSoundVolume: 0.2
+baseEfficiency: 0
+minEfficiency: 0.25
+
+requirements:[
+lead/1250
+copper/750
+metaglass/1500
+graphite/1250
+silicon/250
+]
+
+craftTime: 60
+consumes:{
+power: 0.65
+}
+
+envEnabled: -1
+research: gier
+researchCostMultiplier: 0.34
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 7.5
+}
+{
+type: DrawParticles
+particles: 50 
+color: 596ab8ff
+}
+{
+type: DrawDefault
+}
+]
+}
