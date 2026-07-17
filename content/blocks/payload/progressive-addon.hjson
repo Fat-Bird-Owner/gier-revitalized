@@ -1,0 +1,56 @@
+type: UnitAssembler
+size: 3
+name: Progress Addon
+
+requirements:[lead/300, copper/275, graphite/150, silicon/125, depleted-thorium/50]
+category: units
+customShadow: true
+
+droneType: mechanic
+droneConstructTime: 300
+
+regionSuffix: "-gier"
+buildVisibility: sandboxOnly
+researchCostMultiplier: 0.25
+databaseTag: "adv-depleted-thorium"
+
+plans: [
+{
+type: AssemblerUnitPlan
+unit: magnitude
+
+time: 3000
+requirements: [
+gr-modular-frame/2
+gr-basic-ammunition-crate/1
+gr-fledgling/1
+]
+
+}
+{
+type: AssemblerUnitPlan
+unit: poly 
+
+time: 3600
+requirements: [
+gr-spare-cell/1
+gr-packed-graphite/10
+gr-modular-frame/2
+gr-dove/1
+]
+
+}
+{
+type: AssemblerUnitPlan
+unit: mega
+
+time: 5000
+requirements: [
+gr-spare-cell/3
+gr-construct/1
+gr-packed-beryllium/10
+gr-modular-frame/1
+]
+
+}
+]
