@@ -15,7 +15,7 @@ configurable: false
 requirements:[lead/10,copper/5,surge-alloy/5]
 speed: 20
 
-databaseTag: "adv-surge"
+databaseTag: "adv-surge-alloy"
 research: rail-router
 researchCostMultiplier: 0.5
 envEnabled: -1
