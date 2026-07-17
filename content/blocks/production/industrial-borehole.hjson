@@ -35,12 +35,14 @@ silicon/250
 
 craftTime: 60
 consumes:{
-power: 0.65
+power: 1.5
 }
 
 envEnabled: -1
 research: dihydrogen-shaft
 researchCostMultiplier: 0.35
+boostScale: 0.5625
+maxBoost: 1.5
 
 drawer:{
 type: DrawMulti
