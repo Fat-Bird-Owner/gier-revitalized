@@ -6,6 +6,9 @@ requirements: [lead/175, graphite/100, graphite/75]
 category: crafting
 squareSprite: false
 
+research: sunder-furance
+researcCostMultiplier: 0.15
+
 envEnabled: -1
 shownPlanets: [gier, kela]
 databaseTag: "gier"
