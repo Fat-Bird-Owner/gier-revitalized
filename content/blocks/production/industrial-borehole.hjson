@@ -39,8 +39,8 @@ power: 0.65
 }
 
 envEnabled: -1
-research: gier
-researchCostMultiplier: 0.34
+research: dihydrogen-shaft
+researchCostMultiplier: 0.35
 
 drawer:{
 type: DrawMulti
