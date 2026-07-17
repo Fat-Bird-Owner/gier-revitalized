@@ -23,7 +23,7 @@ squareSprite: false
 
 itemCapacity: 120
 outputItems: [
-metaglass/60
+metaglass-chunk/60
 silicon/60
 ]
 craftTime: 300
