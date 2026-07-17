@@ -49,6 +49,8 @@ inaccuracy: 5
 chargeSound: chargeVela
 rotate: true
 layerOffset: 0.01
+useAttackRange: false
+
 bullet: {
 spawnUnit: "gr-heavy-striker-missile"
 inaccuracy: 20
