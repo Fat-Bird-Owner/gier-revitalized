@@ -21,30 +21,6 @@ power: 0.5
 items: [metaglass-chunk/12]
 }
 
-updateEffectChance: 1
-updateEffectSpread: 1
-updateEffect: {
-type: RadialEffect
-rotationSpacing: 180
-lengthOffset: 9.75
-
-effect: {
-type: ParticleEffect
-sizeFrom: 3
-particles: 1
-baseLength: 10
-sizeTo: 5
-length: 14.5
-layer: 61
-lifetime: 40
-colorFrom: 596ab866
-colorTo: ffffff00
-interp: sineOut
-cone: 25
-}
-
-}
-
 customShadow: true
 drawer: [
 {
