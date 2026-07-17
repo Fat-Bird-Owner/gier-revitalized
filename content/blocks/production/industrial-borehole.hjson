@@ -87,9 +87,9 @@ effect: {
 type: ParticleEffect
 sizeFrom: 3
 particles: 1
-baseLength: 10
+baseLength: 12.5
 sizeTo: 5
-length: 25
+length: 30
 layer: 61
 lifetime: 40
 colorFrom: 596ab866
