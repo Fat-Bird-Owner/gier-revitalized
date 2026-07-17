@@ -23,8 +23,9 @@ size: 2
 
 //result: gr-packed-graphite
 requirements:[lead/125, copper/50, silicon/25, depleted-thorium/25]
-buildVisibility: sandboxOnly
+buildVisibility: shwn
 
+shownPlanets: [kela, gier]
 canOverdrive: true
 researchCostMultiplier: 0.25
 databaseTag: "adv-depleted-thorium"
