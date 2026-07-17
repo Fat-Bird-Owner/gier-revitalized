@@ -25,7 +25,6 @@ baseExplosiveness: 25
 
 research: {
 parent: gr-gier
-objectives: [freight-assembler]
 }
 researchCostMultiplier: 0.25
 
