@@ -81,6 +81,7 @@ updateEffect: {
 type: RadialEffect
 rotationSpacing: 180
 lengthOffset: 9.75
+rotationOffset: -45
 
 effect: {
 type: ParticleEffect
