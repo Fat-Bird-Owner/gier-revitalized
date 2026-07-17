@@ -7,6 +7,13 @@ A larger version of the dihyodrgen shaft
 
 extracts afar larger volume of water
 then the shaft
+
+[sky]Priority: 5
+[green]
+- Extracts a higher volume of water
+- No longer needs graphite
+- Could go over 100% efficiency[red]
+- require more power
 "
 
 name: Industrial Borehole
