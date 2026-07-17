@@ -89,7 +89,7 @@ sizeFrom: 3
 particles: 1
 baseLength: 10
 sizeTo: 5
-length: 14.5
+length: 25
 layer: 61
 lifetime: 40
 colorFrom: 596ab866
