@@ -95,7 +95,7 @@ lifetime: 40
 colorFrom: 596ab866
 colorTo: ffffff00
 interp: sineOut
-cone: 15
+cone: 10
 }
 
 }
