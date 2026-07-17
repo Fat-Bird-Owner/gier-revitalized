@@ -29,8 +29,9 @@ requirements:[
 lead/1250
 copper/750
 metaglass/1500
-graphite/1250
+beryllium/750
 silicon/250
+depleted-thorium/150
 ]
 
 craftTime: 60
