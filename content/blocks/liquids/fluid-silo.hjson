@@ -9,6 +9,7 @@ customShadow: true
 requirements: [titanium/50, metaglass/150]
 category: liquid
 research: fluid-junction
+researcCostMultiplier: 0.25
 
 shownPlanets: [kela, gier]
 databaseTag: "gier"
