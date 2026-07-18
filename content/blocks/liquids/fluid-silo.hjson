@@ -4,7 +4,7 @@ name: Fluid Silo
 
 liquidPadding: 2
 liquidCapacity: 250
-customShadow: false
+customShadow: true
 
 requirements: [titanium/50, metaglass/150]
 category: liquid
