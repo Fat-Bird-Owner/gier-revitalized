@@ -1,5 +1,7 @@
 Events.on(SectorLaunchEvent, () => {
 try{
+
+if (!Vars.state.rules || !Vars.state.rules.sector) return;
 if (Core.settings.getBool("deranged") == true && Vars.state.isCampaign() && Vars.state.rules.sector == Planets.gier.sectors.get(0)){        
 const rule = Vars.state.rules;
 rule.unitBuildSpeedMultiplier = 0.95
