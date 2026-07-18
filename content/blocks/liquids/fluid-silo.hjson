@@ -8,8 +8,8 @@ customShadow: false
 
 requirements: [titanium/50, metaglass/150]
 category: liquids
-# research: 
+research: fluid-junction
 
 shownPlanets: [kela, gier]
 databaseTag: "gier"
-squareSprite: dalse
+squareSprite: false
