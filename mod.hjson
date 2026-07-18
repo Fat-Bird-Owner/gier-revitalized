@@ -28,8 +28,8 @@ latest releases instead.
 "
 
 iosCompatible: true
-version: "v3.1 - Gier"
-subtitle: "[#F9A3C7FF[]]v3.1 [grey[]]-[lightgrey[]] Gier"
+version: "v3.5 - Gier"
+subtitle: "[#F9A3C7FF[]]v3.5 [grey[]]-[lightgrey[]] Gier"
 minGameVersion: "159"
 dependencies: []
 hidden: false
