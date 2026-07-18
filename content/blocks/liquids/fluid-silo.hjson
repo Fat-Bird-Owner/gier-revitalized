@@ -7,7 +7,7 @@ liquidCapacity: 250
 customShadow: false
 
 requirements: [titanium/50, metaglass/150]
-category: liquids
+category: liquid
 research: fluid-junction
 
 shownPlanets: [kela, gier]
