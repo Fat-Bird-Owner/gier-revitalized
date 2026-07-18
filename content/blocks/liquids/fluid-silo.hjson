@@ -2,7 +2,7 @@ type: LiquidRouter
 size: 2
 name: Fluid Silo
 
-liquidPadding: 4
+liquidPadding: 2
 liquidCapacity: 250
 customShadow: false
 
