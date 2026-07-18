@@ -1,0 +1,15 @@
+type: LiquidRouter
+size: 2
+name: Fluid Silo
+
+liquidPadding: 4
+liquidCapacity: 250
+customShadow: false
+
+requirements: [titanium/50, metaglass/150]
+category: liquids
+# research: 
+
+shownPlanets: [kela, gier]
+databaseTag: "gier"
+squareSprite: dalse
