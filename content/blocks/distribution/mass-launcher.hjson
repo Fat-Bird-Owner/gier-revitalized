@@ -30,7 +30,7 @@ trailEffect: {
 type: ParticleEffect
 colorFrom: FFD37F
 colorTo: FFD37F
-offset: 180
+offset: 0
 line: true
 particles: 3
 lenFrom: 4
@@ -39,6 +39,7 @@ strokeFrom: 3
 strokeTo: 0
 lifetime: 40
 cone: 45
+length: 8
 }
 
 width: 10
