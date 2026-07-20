@@ -1,0 +1,41 @@
+type: MassDriver
+size: 3
+name: Mass Launcher
+
+description: "
+Launches a large amount of
+items towards another mass launcher[green]
+  
+- Launches item vast distances[red]
+- Explosive
+- Require power
+"
+
+research: rail
+researchCostMultiplier: 0.25
+databaseTag: "adv-thorium"
+
+envEnabled: -1
+shownPlanets: [gier, kela]
+  
+requirements: [titanium/150, silicon/125, copper/50, thorium/35]
+category: distribution
+bullet: {
+type: MassDriverBolt
+damage: 150
+trailLength: 4
+trailWidth: 2
+
+width: 10
+height: 14
+}
+
+itemCapacity: 120
+reload: 200
+range: 440
+
+customShadow: true
+baseExplosiveness: 50
+consumes: {
+  power: 1
+}
