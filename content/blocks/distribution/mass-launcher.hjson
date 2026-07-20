@@ -17,7 +17,7 @@ databaseTag: "adv-thorium"
 
 envEnabled: -1
 shownPlanets: [gier, kela]
-outlineColor: "2f2f3f"
+outlineRadius: 0
 
 requirements: [titanium/150, silicon/125, copper/50, thorium/35]
 category: distribution
