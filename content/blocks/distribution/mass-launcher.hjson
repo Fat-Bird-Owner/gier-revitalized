@@ -25,7 +25,7 @@ type: MassDriverBolt
 damage: 150
 
 trailRotation: true
-trailInterval: 5
+trailInterval: 1
 trailEffect: {
 type: ParticleEffect
 colorFrom: FFD37F
@@ -39,7 +39,7 @@ strokeFrom: 3
 strokeTo: 0
 lifetime: 40
 cone: 45
-length: 8
+length: 16
 baseRotation: 180
 }
 
