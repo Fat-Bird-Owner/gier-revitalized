@@ -3,19 +3,18 @@ size: 2
 health: 875
 name: Mend Pylon
 range: 20
-healPercent: 0.15
+healPercent: 0.05
 
 description: "A mending dome.
-
-[accent]- Mending range is square
-[green]- Reliable
+[green]
+- Reliable
+- Its actually a square
 [salmon]- Requires power
 "
 
 requirements:[
-lead/225
-copper/175
-graphite/75
+lead/250
+copper/200
 silicon/50
 ]
 
@@ -32,13 +31,13 @@ type: DrawDefault
 }
 {
 type: DrawGlowRegion
-color: 84F5B444
-suffix: "-top"
+color: ffffffff
+suffix: "-activate"
 }
 {
 type: DrawPulseShape
 square: false
-color: 84F5B466
+color: B3D16BFF
 minStroke: 0
 }
 ]
@@ -46,9 +45,20 @@ minStroke: 0
 
 envEnabled: -1
 customShadow: true
-baseColor: 84F5B4FF
+baseColor: B3D16BFF
 
 databaseTag: "gier"
 research: copper-fort
 researchCostMultiplier: 0.25
-  
+
+effect: {
+type: WaveEffect
+colorFrom: B3D16BFF
+colorTo: B3D16BFF
+strokeFrom: 0
+strokeTo: 3
+radiusFrom: 8
+radiusTo: 0
+lifetime: 40
+interp: sineOut
+}
