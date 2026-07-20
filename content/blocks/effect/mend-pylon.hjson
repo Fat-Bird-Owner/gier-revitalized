@@ -30,14 +30,9 @@ drawers:[
 type: DrawDefault
 }
 {
-type: DrawGlowRegion
-color: ffffffff
-suffix: "-activate"
-}
-{
 type: DrawPulseShape
 square: false
-color: B3D16BFF
+color: D3DEE4FF
 minStroke: 0
 }
 ]
@@ -45,7 +40,7 @@ minStroke: 0
 
 envEnabled: -1
 customShadow: true
-baseColor: B3D16BFF
+baseColor: D3DEE4FF
 
 databaseTag: "gier"
 research: copper-fort
@@ -53,10 +48,10 @@ researchCostMultiplier: 0.25
 
 effect: {
 type: WaveEffect
-colorFrom: B3D16BFF
-colorTo: B3D16BFF
-strokeFrom: 0
-strokeTo: 3
+colorFrom: D3DEE4FF
+colorTo: D3DEE4FF
+strokeFrom: 1.5
+strokeTo: 0
 sizeFrom: 8
 sizeTo: 0
 lifetime: 40
