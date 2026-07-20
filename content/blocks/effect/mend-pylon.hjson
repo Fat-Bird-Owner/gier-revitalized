@@ -57,8 +57,8 @@ colorFrom: B3D16BFF
 colorTo: B3D16BFF
 strokeFrom: 0
 strokeTo: 3
-radiusFrom: 8
-radiusTo: 0
+sizeFrom: 8
+sizeTo: 0
 lifetime: 40
 interp: sineOut
 }
