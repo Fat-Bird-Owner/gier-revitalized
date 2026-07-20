@@ -49,9 +49,9 @@ researchCostMultiplier: 0.25
 effect: {
 type: WaveEffect
 colorFrom: D3DEE4FF
-colorTo: D3DEE4FF
-strokeFrom: 1.5
-strokeTo: 0
+colorTo: D3DEE400
+strokeFrom: 0
+strokeTo: 3
 sizeFrom: 8
 sizeTo: 0
 lifetime: 40
