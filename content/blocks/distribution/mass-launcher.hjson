@@ -40,6 +40,7 @@ strokeTo: 0
 lifetime: 40
 cone: 45
 length: 8
+baseRotation: 180
 }
 
 width: 10
