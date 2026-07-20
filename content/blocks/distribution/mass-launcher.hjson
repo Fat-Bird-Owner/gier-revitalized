@@ -53,7 +53,7 @@ reload: 200
 range: 440
 
 customShadow: true
-baseExplosiveness: 50
+baseExplosiveness: 150
 consumes: {
   power: 1
 }
