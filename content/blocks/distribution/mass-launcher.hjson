@@ -39,8 +39,9 @@ lenTo: 6
 strokeFrom: 3
 strokeTo: 0
 lifetime: 40
-cone: 22.5
-length: 16
+cone: 25
+length: 28
+baseLength: 0
 baseRotation: 180
 }
 
