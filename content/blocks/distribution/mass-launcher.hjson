@@ -37,6 +37,8 @@ lenFrom: 4
 lenTo: 6
 strokeFrom: 3
 strokeTo: 0
+lifetime: 40
+cone: 45
 }
 
 width: 10
