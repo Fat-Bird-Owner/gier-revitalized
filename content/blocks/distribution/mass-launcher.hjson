@@ -23,8 +23,21 @@ category: distribution
 bullet: {
 type: MassDriverBolt
 damage: 150
-trailLength: 4
-trailWidth: 2
+
+trailRotation: true
+trailInterval: 5
+trailEffect: {
+type: ParticleEffect
+colorFrom: FFD37F
+colorTo: FFD37F
+offset: 180
+line: true
+particles: 3
+lenFrom: 4
+lenTo: 6
+strokeFrom: 3
+strokeTo: 0
+}
 
 width: 10
 height: 14
