@@ -1,6 +1,6 @@
 type: UnitAssembler
 size: 3
-name: Progress Addon
+name: Mechanical Addon
 
 requirements:[lead/300, copper/275, graphite/150, silicon/125, depleted-thorium/50]
 category: units
@@ -29,27 +29,28 @@ gr-fledgling/1
 }
 {
 type: AssemblerUnitPlan
-unit: poly 
+unit: multitude
 
-time: 3600
+time: 3000
 requirements: [
-gr-spare-cell/1
-gr-packed-graphite/10
-gr-modular-frame/2
-gr-dove/1
+gr-modular-frame/1 # will be replaced by third tier version
+gr-basic-ammunition-crate/1 #will be replaced by third tier version
+gr-magnitude/1
 ]
 
 }
+
 {
 type: AssemblerUnitPlan
-unit: mega
+unit: equinox
 
-time: 5000
+time: 3000
 requirements: [
-gr-spare-cell/3
-gr-construct/1
-gr-packed-beryllium/10
-gr-modular-frame/1
+gr-modular-frame/1 # will be replaced by fourth tier version
+gr-basic-ammunition-crate/1 #will be replaced by fourth tier version
+gr-multitude/1
+gr-spare-cell/5
+gr-mend-pylon/1
 ]
 
 }
