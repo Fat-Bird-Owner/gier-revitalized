@@ -29,6 +29,8 @@ range: 700
 maxPayloadSize: 2.5
 fogRadius: 5
 
+grabWidth: 0.75
+outlineColor: "2f2f3f"
 consumes: {
   power: 0.5
 }
