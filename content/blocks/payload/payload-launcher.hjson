@@ -11,7 +11,9 @@ only when powered
 - Requires power
 "
 
+customShadow: true
 regionSuffix: "-gier"
+
 requirements: [silicon/150, beryllium/75, thorium/75]
 category: units
 shownPlanets: [kela, gier]
