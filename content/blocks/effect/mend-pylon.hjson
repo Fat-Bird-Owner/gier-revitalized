@@ -18,11 +18,12 @@ copper/100
 silicon/50
 ]
 
+optionalUseTime: 240
 consumes:{
 power: 1
 
-liquids: {
-liquids: [water/0.16667]
+items: {
+items: [silicon/1]
 booster: true
 optional: true
 }
