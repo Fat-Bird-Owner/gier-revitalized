@@ -26,11 +26,17 @@ damage: 350
 lifetime: 120
 
 hitEffect: {
-type: WaveEffect
-sizeFrom: 0
-sizeTo: 40
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
 interp: sineOut
 lifetime: 40
+length: 80
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+strokeFrom: 2
+strokeTo: 3
 }
   
 }
