@@ -1,0 +1,99 @@
+type: PowerTurret
+size: 5
+name: "Star Struck"
+
+outlineColor: 2f2f3f
+reload: 200
+range: 400 
+  
+shootType: {
+type: BasicBulletType
+instantDisappear: true
+hitEffect: none
+despawnEffect: none
+  
+hitShake: 15
+despawnHit: true
+spawnBullets: [
+{
+type: LaserBulletType
+length: 420
+colors: [F9A3C7FF, FCD1E3FF, FFFFFFFF]
+damage: 350
+
+hitEffect: {
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 40
+interp: sineOut
+lifetime: 40
+}
+  
+}
+{
+type: BasicBulletType
+speed: 8
+lifetime: 52.5
+damage: 600
+  
+trailRotation: true
+hitEffect: railHit
+hitShake: 25
+
+hitSize: 20
+width: 0
+height: 0
+
+despawnHit: true
+splashDamage: 150
+splashDamageRadius: 80
+
+scaledSplashDamage: true
+hitEffect: {
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 80
+interp: sineOut
+lifetime: 40
+}
+  
+}
+]
+  
+}
+
+drawer: {
+type: DrawTurret
+
+parts: [
+{
+type: RegionPart
+suffix: "-part1"
+moveX: 1.75
+moveY: 1.75
+}
+{
+type: RegionPart
+suffix: "-part1"
+moveX: -1.75
+moveY: 1.75
+}
+{
+type: RegionPart
+suffix: "-part3"
+moveX: 2
+moveY: -2
+}
+{
+type: RegionPart
+suffix: "-part4"
+moveX: -2
+moveY: -2
+}
+{
+name: "gr-star-struck"
+outline: false
+}
+]
+  
+}
