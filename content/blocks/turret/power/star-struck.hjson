@@ -93,9 +93,7 @@ moveY: -2
 }
 {
 type: RegionPart
-name: "gr-star-struck"
-outline: false
-drawRegion: true
+suffix: "-plate"
 }
 ]
   
