@@ -23,7 +23,7 @@ type: LaserBulletType
 length: 420
 colors: [F9A3C7FF, FCD1E3FF, FFFFFFFF]
 damage: 350
-lifetime: 60
+lifetime: 120
 
 hitEffect: {
 type: WaveEffect
