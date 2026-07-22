@@ -30,6 +30,12 @@ drawers:[
 type: DrawDefault
 }
 {
+type: DrawBlurSpin
+suffix: "-rotator"
+blurThres: 1
+rotateSpeed: 4
+}
+{
 type: DrawPulseShape
 square: false
 color: D3DEE4FF
