@@ -95,7 +95,7 @@ moveY: -2
 type: RegionPart
 name: "gr-star-struck"
 outline: false
-drawRegion: false
+drawRegion: true
 }
 ]
   
