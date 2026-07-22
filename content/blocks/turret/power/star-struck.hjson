@@ -37,7 +37,7 @@ lifetime: 52.5
 damage: 600
   
 trailRotation: true
-hitEffect: railHit
+trailEffect: railHit
 hitShake: 25
 trailInterval: 5
 
