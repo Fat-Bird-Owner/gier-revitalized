@@ -32,7 +32,7 @@ type: DrawDefault
 {
 type: DrawBlurSpin
 suffix: "-rotator"
-blurThres: 1
+blurThresh: 1
 rotateSpeed: 4
 }
 {
