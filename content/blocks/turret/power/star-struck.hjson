@@ -8,7 +8,22 @@ predictTarget: false
 outlineColor: 2f2f3f
 reload: 200
 range: 400 
-  
+
+shootEffect: {
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+interp: sineOut
+particles: 22
+lifetime: 60
+length: 160
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+strokeFrom: 2
+strokeTo: 3
+}
+
 shootType: {
 type: BasicBulletType
 instantDisappear: true
@@ -60,13 +75,27 @@ splashDamage: 150
 splashDamageRadius: 80
 
 scaledSplashDamage: true
-hitEffect: {
+hitEffect: [{
 type: WaveEffect
 sizeFrom: 0
 sizeTo: 80
 interp: sineOut
 lifetime: 40
 }
+{
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+interp: sineOut
+lifetime: 60
+length: 120
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+strokeFrom: 2
+strokeTo: 3
+}
+]
   
 }
 ]
