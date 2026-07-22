@@ -2,7 +2,7 @@ type: RegenProjector
 size: 2
 health: 875
 name: Mend Pylon
-range: 20
+range: 10
 healPercent: 0.1
 
 description: "A mending dome.
