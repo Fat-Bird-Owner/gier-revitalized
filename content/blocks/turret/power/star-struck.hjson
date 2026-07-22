@@ -39,6 +39,7 @@ damage: 600
 trailRotation: true
 hitEffect: railHit
 hitShake: 25
+trailInterval: 5
 
 hitSize: 20
 width: 0
@@ -74,25 +75,21 @@ moveY: 1.75
 }
 {
 type: RegionPart
-suffix: "-part1"
+suffix: "-part2"
 moveX: -1.75
 moveY: 1.75
 }
 {
 type: RegionPart
 suffix: "-part3"
-moveX: 2
+moveX: -2
 moveY: -2
 }
 {
 type: RegionPart
 suffix: "-part4"
-moveX: -2
+moveX: 2
 moveY: -2
-}
-{
-name: "gr-star-struck"
-outline: false
 }
 ]
   
