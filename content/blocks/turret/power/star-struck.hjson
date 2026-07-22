@@ -2,6 +2,9 @@ type: PowerTurret
 size: 5
 name: "Star Struck"
 
+rotateSpeed: 5
+predictTarget: false
+
 outlineColor: 2f2f3f
 reload: 200
 range: 400 
@@ -20,6 +23,7 @@ type: LaserBulletType
 length: 420
 colors: [F9A3C7FF, FCD1E3FF, FFFFFFFF]
 damage: 350
+lifetime: 60
 
 hitEffect: {
 type: WaveEffect
@@ -65,7 +69,7 @@ lifetime: 40
 
 drawer: {
 type: DrawTurret
-
+basePrefix: "reinforced-"
 parts: [
 {
 type: RegionPart
