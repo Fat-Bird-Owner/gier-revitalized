@@ -91,11 +91,6 @@ suffix: "-part4"
 moveX: 2
 moveY: -2
 }
-{
-type: RegionPart
-name: "gr-star-struck"
-outline: false
-}
 ]
   
 }
