@@ -18,6 +18,7 @@ copper/100
 silicon/50
 ]
 
+optionalMultiplier: 1.5
 optionalUseTime: 240
 consumes:{
 power: 1
