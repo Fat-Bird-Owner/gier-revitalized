@@ -23,6 +23,7 @@ predictTarget: false
 outlineColor: 2f2f3f
 reload: 320
 range: 400 
+cooldownTime: 160
 
 requirements: [lead/1500, titanium/1500, beryllium/1000, silicon/750, thorium/500]
 category: turret
