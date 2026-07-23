@@ -16,6 +16,7 @@ bullet
 - Inaccurate
 "
 
+databaseTag: "adv-thorium"
 rotateSpeed: 5
 predictTarget: false
 
