@@ -59,8 +59,10 @@ shootType: {
 type: BasicBulletType
 instantDisappear: true
 hitEffect: none
+
 despawnEffect: none
 damage: 0
+showStats: true
 
 chargeEffect: [
 {
