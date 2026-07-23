@@ -224,9 +224,16 @@ suffix: "-part1-heat"
 color: ffaa5f00
 colorTo: ffaa5f
 outline: false
-moveX: 1.75
-moveY: -1.75
 progress: heat
+
+moves: [
+{
+x: 1.75
+y: 1.75
+progress: warmup
+}
+]
+
 }
 
 {
@@ -241,9 +248,16 @@ suffix: "-part2-heat"
 color: ffaa5f00
 colorTo: ffaa5f
 outline: false
-moveX: -1.75
-moveY: -1.75
 progress: heat
+
+moves: [
+{
+x: -1.75
+y: 1.75
+progress: warmup
+}
+]
+
 }
 
 {
@@ -258,9 +272,16 @@ suffix: "-part3-heat"
 color: ffaa5f00
 colorTo: ffaa5f
 outline: false
-moveX: -2
-moveY: -2
 progress: heat
+
+moves: [
+{
+x: -2
+y: -2
+progress: warmup
+}
+]
+
 }
 
 {
@@ -275,9 +296,16 @@ suffix: "-part4-heat"
 color: ffaa5f00
 colorTo: ffaa5f
 outline: false
-moveX: 2
-moveY: -2
 progress: heat
+
+moves: [
+{
+x: 2
+y: 2
+progress: warmup
+}
+]
+
 }
 
 {
