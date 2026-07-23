@@ -79,6 +79,22 @@ colorTo: FCD1E3FF
 cone: 0
 particles: 1
 length: 0
+line: true
+}
+{
+type: ParticleEffect
+lenFrom: 40
+lenTo: 40
+strokeFrom: 5
+strokeTo: 0
+baseRotation: -135
+lifetime: 20
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+cone: 0
+particles: 1
+length: 0
+line: true
 }
 ]
 
