@@ -11,6 +11,7 @@ range: 400
 
 requirements: [lead/1500, titanium/1500, beryllium/1000, silicon/750, thorium/500]
 category: turret
+shownPlanets: [kela, gier]
 
 shootEffect: {
 type: ParticleEffect
@@ -78,7 +79,7 @@ colorFrom: F9A3C7FF
 colorTo: FCD1E3FF
 cone: 0
 particles: 1
-length: 0
+length: 0.1
 line: true
 }
 {
@@ -93,7 +94,7 @@ colorFrom: F9A3C7FF
 colorTo: FCD1E3FF
 cone: 0
 particles: 1
-length: 0
+length: 0.1
 line: true
 }
 ]
