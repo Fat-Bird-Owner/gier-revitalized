@@ -131,8 +131,8 @@ trailRotation: true
 trailEffect: [
 {
 type: ParticleEffect
-sizeFrom: 20
-sizeTo: 20
+sizeFrom: 10
+sizeTo: 10
 strokeFrom: 5
 strokeTo: 0
 baseRotation: 135
@@ -144,11 +144,13 @@ particles: 1
 length: 0.1
 line: false
 region: "gr-rail-trail-fx"
+randLength: false
+baseLength: 10
 }
 {
 type: ParticleEffect
-sizeFrom: 20
-sizeTo: 20
+sizeFrom: 10
+sizeTo: 10
 strokeFrom: 5
 strokeTo: 0
 baseRotation: -135
@@ -160,6 +162,8 @@ particles: 1
 region: "gr-rail-trail-fx"
 length: 0.1
 line: false
+randLength: false
+baseLength: 10
 }
 ]
 
