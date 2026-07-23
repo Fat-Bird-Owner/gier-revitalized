@@ -9,6 +9,9 @@ outlineColor: 2f2f3f
 reload: 200
 range: 400 
 
+requirements: [lead/1500, titanium/1500, beryllium/1000, silicon/750, thorium/500]
+category: turret
+
 shootEffect: {
 type: ParticleEffect
 lenFrom: 4
@@ -62,7 +65,23 @@ lifetime: 52.5
 damage: 600
   
 trailRotation: true
-trailEffect: railHit
+trailEffect: [
+{
+type: ParticleEffect
+lenFrom: 40
+lenTo: 40
+strokeFrom: 5
+strokeTo: 0
+baseRotation: 135
+lifetime: 20
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+cone: 0
+particles: 1
+length: 0
+}
+]
+
 hitShake: 25
 trailInterval: 5
 
