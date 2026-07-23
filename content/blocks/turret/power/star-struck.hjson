@@ -132,8 +132,8 @@ trailRotation: true
 trailEffect: [
 {
 type: ParticleEffect
-sizeFrom: 15
-sizeTo: 10
+sizeFrom: 10
+sizeTo: 15
 strokeFrom: 5
 strokeTo: 0
 baseRotation: 135
@@ -150,8 +150,8 @@ baseLength: 10
 }
 {
 type: ParticleEffect
-sizeFrom: 15
-sizeTo: 10
+sizeFrom: 10
+sizeTo: 15
 strokeFrom: 5
 strokeTo: 0
 baseRotation: -135
