@@ -2,16 +2,41 @@ type: PowerTurret
 size: 5
 name: "Star Struck"
 
+description: "
+Charges up before firing a shot
+
+Fires a laser capable pierce
+Followed by a very fast kinetic 
+bullet
+[green]
+- Kinetic bullet ignores armor
+- Very long range[red]
+- Laser damage against armor: 50%
+- Requires power
+- Inaccurate
+"
+
 rotateSpeed: 5
 predictTarget: false
 
 outlineColor: 2f2f3f
-reload: 200
+reload: 320
 range: 400 
 
 requirements: [lead/1500, titanium/1500, beryllium/1000, silicon/750, thorium/500]
 category: turret
 shownPlanets: [kela, gier]
+
+research: disarray
+researchCostMultiplier: 0.25
+consumes: {
+power: 2.5
+}
+
+shootSound: shootFuse
+shoot: {
+firstShotDelay: 120
+}
 
 shootEffect: {
 type: ParticleEffect
@@ -33,7 +58,36 @@ type: BasicBulletType
 instantDisappear: true
 hitEffect: none
 despawnEffect: none
-  
+damage: 0
+
+chargeEffect: [
+{
+type: WaveEffect
+sizeFrom: 20
+sizeTo: 0
+strokeFrom: 3
+strokeTo: 0
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+interp: sineOut
+}
+{
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+particles: 22
+interp: sineOut
+lifetime: 40
+length: -80
+baseLength: 80
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+sizeFrom: 3
+sizeTo: 0
+}
+]
+
 hitShake: 15
 despawnHit: true
 spawnBullets: [
@@ -43,6 +97,7 @@ length: 420
 colors: [F9A3C7FF, FCD1E3FF, FFFFFFFF]
 damage: 350
 lifetime: 120
+armorMultiplier: 2
 
 hitEffect: {
 type: ParticleEffect
@@ -64,7 +119,9 @@ type: BasicBulletType
 speed: 8
 lifetime: 52.5
 damage: 600
-  
+armorMultiplier: 0
+hitSound: blockExplodeElectricBig
+
 trailRotation: true
 trailEffect: [
 {
