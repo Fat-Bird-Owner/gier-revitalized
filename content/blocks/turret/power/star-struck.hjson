@@ -263,7 +263,6 @@ suffix: "-part4"
 moveX: 2
 moveY: -2
 }
-}
 {
 type: RegionPart
 suffix: "-part4-heat"
