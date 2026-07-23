@@ -5,7 +5,7 @@ Sends out a [accent]circuit pulse[] when a building
 is built or destroyed behind it
 "
 
-hasPower: false
+hasPower: true
 rotate: true
 update: true
 fullOverride: "gr-circuit-wire"
