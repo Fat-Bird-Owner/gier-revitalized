@@ -123,6 +123,10 @@ damage: 600
 armorMultiplier: 0
 hitSound: blockExplodeElectricBig
 
+hittable: false
+reflectable: false
+absorbable: false
+
 trailRotation: true
 trailEffect: [
 {
@@ -139,6 +143,7 @@ cone: 0
 particles: 1
 length: 0.1
 line: true
+region: "gr-rail-trail-fx"
 }
 {
 type: ParticleEffect
@@ -152,6 +157,7 @@ colorFrom: F9A3C7FF
 colorTo: FCD1E3FF
 cone: 0
 particles: 1
+region: "gr-rail-trail-fx"
 length: 0.1
 line: true
 }
@@ -208,10 +214,32 @@ moveY: 1.75
 }
 {
 type: RegionPart
+suffix: "-part1-heat"
+color: ffaa5f00
+colorTo: ffaa5f
+outline: false
+moveX: 1.75
+moveY: -1.75
+progress: heat
+}
+
+{
+type: RegionPart
 suffix: "-part2"
 moveX: -1.75
 moveY: 1.75
 }
+{
+type: RegionPart
+suffix: "-part2-heat"
+color: ffaa5f00
+colorTo: ffaa5f
+outline: false
+moveX: -1.75
+moveY: -1.75
+progress: heat
+}
+
 {
 type: RegionPart
 suffix: "-part3"
@@ -220,13 +248,44 @@ moveY: -2
 }
 {
 type: RegionPart
+suffix: "-part3-heat"
+color: ffaa5f00
+colorTo: ffaa5f
+outline: false
+moveX: -2
+moveY: -2
+progress: heat
+}
+
+{
+type: RegionPart
 suffix: "-part4"
 moveX: 2
 moveY: -2
 }
+}
+{
+type: RegionPart
+suffix: "-part4-heat"
+color: ffaa5f00
+colorTo: ffaa5f
+outline: false
+moveX: 2
+moveY: -2
+progress: heat
+}
+
 {
 type: RegionPart
 suffix: "-plate"
+}
+{
+type: RegionPart
+suffix: "-plate-heat"
+color: ffaa5f00
+colorTo: ffaa5f
+outline: false
+progress: heat
 }
 ]
   
