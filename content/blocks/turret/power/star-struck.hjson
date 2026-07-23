@@ -138,7 +138,7 @@ strokeTo: 0
 baseRotation: 135
 lifetime: 20
 colorFrom: F9A3C7FF
-colorTo: FCD1E3FF
+colorTo: FCD1E300
 cone: 0
 particles: 1
 length: 0.1
@@ -156,7 +156,7 @@ strokeTo: 0
 baseRotation: -135
 lifetime: 20
 colorFrom: F9A3C7FF
-colorTo: FCD1E3FF
+colorTo: FCD1E300
 cone: 0
 particles: 1
 region: "gr-rail-trail-fx"
