@@ -1,0 +1,49 @@
+type: HeatProducer
+name: Arkycite Cultivator
+
+description: "
+Cultivates arkycite and heat as
+a byproduct
+[grey]
+[I] - Arkycite: Used in power
+production and material proccessing
+
+[red]
+- Requires power
+- Won't function when filled
+"
+
+outputLiquid: arkycite/0.16667
+heatOutput: 5
+consumes: {
+power: 1
+liquids: [water/0.16667, tuntra/0.03334]
+items: [graphite/5]
+}
+
+research: sporeoplasmic-cultivator
+researchCostMultiplier: 0.25
+
+envEnabled: -1
+requirements: [lead/175, copper/75, titanium/50, depleted-thorium/50]
+category: crafting
+
+shownPlanets: [kela, gier]
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawBlurSpin
+  
+suffix: "-rotator"
+blurThresh: 1
+rotateSpeed: 8
+}
+{
+type: DrawGlowRegion
+alpha: 0.33
+color: ffaa5f
+suffix: "-heat"
+}
+]
