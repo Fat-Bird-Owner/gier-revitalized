@@ -1,5 +1,6 @@
 type: HeatProducer
 name: Arkycite Cultivator
+size: 2
 
 description: "
 Cultivates arkycite and heat as
