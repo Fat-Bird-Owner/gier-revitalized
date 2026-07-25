@@ -15,6 +15,33 @@ gierWannabe[i] = actualRealGier[i];
 gierWannabe.alwaysUnlocked = true;
 gierWannabe.visible = true;
 gierWannabe.accessible = true;
+
+actualRealGier.techTree.each(node => {
+
+    let content = node.content;
+
+    if(content == null) return;
+
+    let remove = null;
+
+    content.shownPlanets.each(p => {
+
+        if(p.name == "gier"){
+
+            remove = p;
+
+        }
+
+    });
+
+    if(remove != null){
+
+        content.shownPlanets.remove(remove);
+        content.shownPlanets.add(Vars.content.planet("gr-gier"));
+
+    }
+
+})
   
 } catch(e){
 Vars.ui.showText("gier-gier", e);
