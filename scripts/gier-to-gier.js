@@ -6,7 +6,7 @@ const actualRealGier = Planets.gier;
 
 for (let i in actualRealGier){
 try {
-if (i == "sectors") continue;
+if (i == "sectors" || i == "grid") continue;
 gierWannabe[i] = actualRealGier[i];
 
 } catch(e){}
