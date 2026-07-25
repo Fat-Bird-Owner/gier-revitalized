@@ -14,7 +14,8 @@ gierWannabe[i] = actualRealGier[i];
 
 gierWannabe.alwaysUnlocked = true;
 gierWannabe.visible = true;
-
+gierWannabe.accessible = true;
+  
 } catch(e){
 Vars.ui.showText("gier-gier", e);
 }});
