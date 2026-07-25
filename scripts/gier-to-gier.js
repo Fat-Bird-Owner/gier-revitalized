@@ -6,7 +6,7 @@ const actualRealGier = Planets.gier;
 
 for (let i in actualRealGier){
 try {
-if (i == "sectors" || i == "grid" || i == "radius") continue;
+if (i == "sectors" || i == "grid" || i == "radius" || i == "startSector") continue;
 gierWannabe[i] = actualRealGier[i];
 
 } catch(e){}
@@ -15,7 +15,9 @@ gierWannabe[i] = actualRealGier[i];
 gierWannabe.alwaysUnlocked = true;
 gierWannabe.visible = true;
 gierWannabe.accessible = true;
-
+gierWannabe.allowLaunchSchematics  = true;
+gierWannabe.allowLaunchLoadout = true;
+    
 actualRealGier.techTree.each(node => {
 
     let content = node.content;
