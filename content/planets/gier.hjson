@@ -1,5 +1,5 @@
 name: Gier
 sectorSize: 1
 radius: 0.5
-minZoom: 0.1
+minZoom: 0.075
 startSector: 2
