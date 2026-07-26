@@ -1,7 +1,6 @@
 planet: gr-gier
 sector: 0
-outlineRadius: 10
-outlineColor: 2f2f3f
+outline: false
 
 details: "[lightgrey]Gier is an asteroid sector, Expect a completely random map since its an asteroid sector."
 
