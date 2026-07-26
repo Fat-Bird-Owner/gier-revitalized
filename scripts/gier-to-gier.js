@@ -17,7 +17,6 @@ gierWannabe.visible = true;
 gierWannabe.accessible = true;
 gierWannabe.allowLaunchSchematics  = true;
 gierWannabe.allowLaunchLoadout = true;
-Core.app.post(() => gierWannabe.reloadMesh());
     
 actualRealGier.techTree.each(node => {
 
