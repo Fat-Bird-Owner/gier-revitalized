@@ -3,24 +3,30 @@ size: 3
 name: "Sporeoplasmic Cultivator"
 customShadow: false
 
+description: "
+Produces tuntra and abit of power
+[green]
+- produces Tuntra[red]
+- tuntra is water absorbant
+- requires power
+- explodes if full
+"
+
 envEnabled: -1
 category: effect
 databaseTag: "gier"
 itemCapacity: 30
 
 requirements:[
-lead/350
-copper/275
-silicon/250
-metaglass/125
-titanium/175
-oxide/75
-plastanium/50
-surge-alloy/50
+silicon/100
+metaglass/100
+titanium/250
+beryllium/100
 ]
-  
+
+researchCostMultiplier: 0.25
 research:{
-parent: watt-reactor
+parent: sunder-furnace
 objectives:[sporeoplasmic-cultivator]
 }
 
