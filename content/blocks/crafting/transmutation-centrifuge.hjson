@@ -13,7 +13,8 @@ into regular thorium
 "
 
 baseExplosiveness: 150
-buildVisibility: sandboxOnly
+research: sunder-furnace
+researchCostMultiplier: 0.25
 itemCapacity: 20
 
 requirements: [silicon/150, titanium/150, beryllium/100, thorium/50]
