@@ -1,0 +1,51 @@
+type: HeatProducer
+size: 3
+name: Anode Converter
+
+heatOutput: 15
+description: "
+Electroyzes water into ozone
+  
+Hydrogen is then used as a 
+heat starter
+[green]
+- Produces ozone
+- Produces heat[red]
+- Explosive
+- Requires power
+"
+
+requirements: [silicon/100, titanium/150, metaglass/150, thorium/50]
+category: crafting
+databaseTag: "adv-thorium"
+
+outputLiquid: ozone/0.16667
+liquidCapacity: 150
+baseExplosiveness: 15
+
+research: 
+consumes: {
+power: 1
+liquids: [water/0.33334]
+}
+
+customShadow: true
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 4
+}
+{
+type: DrawLiquidTile
+drawLiquid: ozone
+padding: 4
+}
+{
+type: DrawDefault
+}
+]
