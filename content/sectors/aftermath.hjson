@@ -1,5 +1,6 @@
 //name: Aftermath
 difficulty: 4.5
+outlineRadius: 0
 
 sector: 69
 captureWave: 10
