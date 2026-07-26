@@ -23,12 +23,14 @@ outputLiquid: ozone/0.16667
 liquidCapacity: 150
 baseExplosiveness: 15
 
-research: 
+research: oxidization-reactor
+researchCostMultiplier: 0.25
 consumes: {
 power: 1
 liquids: [water/0.33334]
 }
 
+envEnabled: -1
 customShadow: true
 drawer: [
 {
