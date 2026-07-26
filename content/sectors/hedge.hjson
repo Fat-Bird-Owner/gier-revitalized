@@ -1,4 +1,5 @@
 difficulty: 8
+outlineRadius: 0
 
 sector: 64
 captureWave: 15

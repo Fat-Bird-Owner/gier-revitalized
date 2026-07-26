@@ -7,6 +7,7 @@ require("WreckFX");
 require("Attributes");
 require("GierItems");
 require("CorruptedFunction");
+require("gier-to-gier");
 //require("gierTroll");
 
 //    ### Class Overrides ###

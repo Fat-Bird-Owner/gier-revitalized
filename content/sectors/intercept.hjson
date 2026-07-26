@@ -1,5 +1,6 @@
 //name: Intercept
 difficulty: 5
+outlineRadius: 0
 
 sector: 66
 captureWave: 2
