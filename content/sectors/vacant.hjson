@@ -2,6 +2,9 @@ planet: gr-gier
 sector: 2
 captureWave: 0
 
+outlineRadius: 10
+outlineColor: 2f2f3f
+
 overrideLaunchDefaults: true
 description: "
 No threats are located in this sector
