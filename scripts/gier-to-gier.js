@@ -6,7 +6,7 @@ const actualRealGier = Planets.gier;
 
 for (let i in actualRealGier){
 try {
-if (i == "sectors" || i == "grid" || i == "radius" || i == "startSector" || i == "minZoom" || i == "gridMesh" || i == "sectorApproxRadius") continue;
+if (i == "sectors" || i == "grid" || i == "radius" || i == "startSector" || i == "minZoom" || i == "gridMesh" || i == "gridMeshLoader") continue;
 gierWannabe[i] = actualRealGier[i];
 
 } catch(e){}
