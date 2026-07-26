@@ -56,7 +56,7 @@ liquids:[water/0.16667]
 items:[graphite/15]
 }
 
-powerProduction: 6
+powerProduction: 1
 outputLiquid: tuntra/0.166667
 liquidCapacity: 100
 explodeOnFull: true
