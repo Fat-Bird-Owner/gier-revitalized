@@ -10,6 +10,7 @@ createWreck: true
 
 targetAir: true
 databaseCategory: "threats"
+outlineRadius: 0
 
 omniMovement: true
 circleTarget: true
