@@ -4,7 +4,7 @@ speed: 2
 accel: 0.025
 health: 950
 drag: 0.015
-hitSize: 12
+hitSize: 20
 flying: true
 createWreck: true
 
