@@ -1,0 +1,30 @@
+type: flying
+name: Operant
+speed: 2
+accel: 0.025
+health: 950
+drag: 0.015
+hitSize: 12
+flying: true
+createWreck: true
+
+targetAir: true
+databaseCategory: "threats"
+
+omniMovement: true
+circleTarget: true
+outlineColor: 2f2f3f
+drawSoftShadow: false
+engineSize: 0
+
+parts:[
+{
+type: HoverPart
+color: FFD280FF
+radius: 8
+layerOffset: -1
+x: 7
+under: true
+y: 0
+}
+]
