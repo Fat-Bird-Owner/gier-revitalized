@@ -22,11 +22,12 @@ parts:[
 {
 type: HoverPart
 color: FFD280FF
-radius: 6
+radius: 8
 layerOffset: -1
 x: 7
 under: true
 y: 0
+mirror: true
 }
 ]
 
