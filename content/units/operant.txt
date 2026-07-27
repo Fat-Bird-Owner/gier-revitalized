@@ -21,10 +21,54 @@ parts:[
 {
 type: HoverPart
 color: FFD280FF
-radius: 8
+radius: 6
 layerOffset: -1
 x: 7
 under: true
 y: 0
+}
+]
+
+weapons: [
+{
+reload: 60
+
+shoot: {
+shots: 3
+shotDelay: 12
+}
+
+inaccuracy: 5
+targetGround: true
+
+rotateSpeed: 6
+
+parts: [
+{
+type: RegionPart
+name: "gr-multitude-anti-air"
+outline: false
+}
+]
+
+top: false
+x: -7
+mirror: false
+shootSound: shootCyclone
+
+rotate: true
+layerOffset: 0.01
+bullet: {
+lifetime: 60
+speed: 6
+range: 360
+maxRange: 360
+damage: 15
+collidesAir: true
+collidesGround: true
+trailLength: 4
+knockback: 0.75
+}
+
 }
 ]
