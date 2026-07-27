@@ -54,7 +54,7 @@ outline: false
 
 top: false
 x: -7
-mirror: false
+mirror: true
 shootSound: shootCyclone
 
 rotate: true
@@ -75,9 +75,10 @@ knockback: 0.75
 {
 
 reload: 80
+mirror: false
 
 shoot: {
-shots: 6
+shots: 2
 shotDelay: 18
 }
 
