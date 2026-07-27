@@ -71,4 +71,58 @@ knockback: 0.75
 }
 
 }
+{
+
+reload: 80
+
+shoot: {
+shots: 6
+shotDelay: 18
+}
+
+inaccuracy: 15
+targetGround: true
+shake: 7.5
+
+rotateSpeed: 3
+
+parts: [
+{
+type: RegionPart
+name: "gr-equinox-missile-weapon"
+outline: false
+}
+]
+
+top: false
+x: 0
+mirror: false
+y: -5.75
+mirror: true
+alternate: false
+shootSound: shootCyclone
+inaccuracy: 5
+
+chargeSound: chargeVela
+rotate: true
+layerOffset: 0.01
+bullet: {
+spawnUnit: striker-missile
+inaccuracy: 10
+instantDisappear: true
+followAimSpeed: 5
+
+chargeEffect: {
+type: WaveEffect
+sizeFrom: 40
+sizeTo: 0
+lifetime: 60
+interp: sineOut
+colorFrom: f3e979
+colorTo: ffffff00
+}
+
+}
+  
+}
 ]
