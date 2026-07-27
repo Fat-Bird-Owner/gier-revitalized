@@ -75,13 +75,7 @@ knockback: 0.75
 }
 {
 
-reload: 80
-mirror: false
-
-shoot: {
-shots: 2
-shotDelay: 18
-}
+reload: 60
 
 inaccuracy: 15
 targetGround: true
@@ -101,7 +95,6 @@ top: false
 x: 0
 mirror: false
 y: -5.75
-mirror: true
 alternate: false
 shootSound: shootCyclone
 inaccuracy: 5
@@ -110,7 +103,7 @@ chargeSound: chargeVela
 rotate: true
 layerOffset: 0.01
 bullet: {
-spawnUnit: striker-missile
+spawnUnit: heavy-striker-missile
 inaccuracy: 10
 instantDisappear: true
 followAimSpeed: 5
