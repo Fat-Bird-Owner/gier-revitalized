@@ -18,6 +18,16 @@ outlineColor: 2f2f3f
 drawSoftShadow: false
 engineSize: 0
 
+description: "
+Heavier variation of the drive.
+
+Boast a more durable frame as well
+as better offensive weapons.
+
+But at the cost of being bigger and
+slower as well
+"
+
 parts:[
 {
 type: HoverPart
@@ -103,7 +113,7 @@ chargeSound: chargeVela
 rotate: true
 layerOffset: 0.01
 bullet: {
-spawnUnit: heavy-striker-missile
+spawnUnit: striker-missile
 inaccuracy: 10
 instantDisappear: true
 followAimSpeed: 5
