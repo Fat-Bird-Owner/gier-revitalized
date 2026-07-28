@@ -22,6 +22,9 @@ databaseTag: "adv-thorium"
 
 research: eluminate-bastion
 researchCostMultiplier: 0.25
+consumes: {
+power: 0.5
+}
   
 rotate: false
 customShadow: true
