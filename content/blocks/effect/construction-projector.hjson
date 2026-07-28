@@ -1,0 +1,53 @@
+type: PowerTurret
+size: 2
+name: Construction Projector
+description: "
+Amplifies the build speed of nearby units
+[green]
+- Amplifies unit build speed[salmon]
+- Requires power
+- Explosive again...
+"
+
+alwaysShooting: true
+range: 160
+enableDrawStatus: true
+shootY: 0
+shootEffect: none
+smokeEffect: none
+
+requirements:[lead/175, copper/250, silicon/135, thorium/75]
+category: effect
+databaseTag: "adv-thorium"
+
+research: eluminate-bastion
+researchCostMultiplier: 0.25
+  
+rotate: false
+customShadow: true
+playerControllable: false
+extinguish: false
+
+shootType:{
+spawnUnit: construction-unit
+despawnHit: true
+hitEffect: none
+despawnEffect: none
+smokeEffect: none
+shootEffect: none
+}
+
+customShadow: true
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+}
+{
+type: DrawPulseShape
+color: FFD37F
+minStroke: 0
+}
+]
+}
