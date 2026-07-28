@@ -35,7 +35,7 @@ abilities: [
   {
     type: StatusFieldAbility
     effect: construction-overdrive
-    range: 75
+    range: 160
     reload: 1
     duration: 60
     parentizeEffects: false
