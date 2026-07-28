@@ -19,7 +19,8 @@ show: true
 shownPlanets:[gier]
 fullOverride: "gr-sector-lore"
 allDatabaseTabs: false
-  
+
+outline: false
 research:{
 parent: gr-techtree-kela
 objectives:[
