@@ -140,7 +140,7 @@ try {
 
 Vars.ui.showConfirm(Core.bundle.get("comfirm.researchReset") , () => {
 try {
-.
+
 Vars.content.each(c => {
 try {
 if (c instanceof UnlockableContent){
@@ -193,6 +193,22 @@ Vars.content.liquid("gr-plague").viscosity = 0;
 
 if (Core.settings.getBool("command-block") == true){        
 Vars.content.block("gr-command-block").buildVisibility = BuildVisibility.shown;
+}
+
+if (Core.settings.getBool("gr-wall-no-dark") == true){
+
+Vars.content.each(c => {
+try {
+
+if (c instanceof StaticWall){
+c.forceDark = false;
+c.fillsTile = false;
+}
+  
+} catch(e){
+Vars.ui.showText("startup", e);
+}});
+  
 }
   
 } catch(e) {
