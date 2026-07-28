@@ -25,6 +25,7 @@ The war ended after the exhaustion
 of resources on serpulo.
 '''
 
+outline: false
 show: true
 shownPlanets:[gier]
 fullOverride: "gr-lore-1"
