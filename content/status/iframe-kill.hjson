@@ -1,2 +1,3 @@
 reactive: true
 name: "IFrame Kill" 
+outline: false
