@@ -9,7 +9,7 @@ cone: 0
   
 sizeFrom: 8
 sizeTo: 20
-
+outline: false
 interp: sineOut
 
 colorFrom: ffffffff
