@@ -1,0 +1,46 @@
+template: MissileUnitType
+hitSize: 0
+flying: false
+drawSoftShadow: false
+speed: 0
+rotateSpeed: 0
+lifetime: 1
+speed: 0
+drawBody: false
+drawCell: false
+hittable: false
+targetable: false
+physics: false
+fallSpeed: 0.5
+deathShake: 0
+weapons: [
+  {
+    controllable: false
+    alwaysShooting: true
+    x: 0
+    reload: 5
+    shootCone: 360
+    shootSound: none
+    bullet: {
+      keepVelocity: false
+      lifetime: 1
+      hitEffect: none
+      despawnEffect: none
+      shootEffect: none
+      despawnHit: true
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: construction-overdrive
+    range: 75
+    reload: 1
+    duration: 60
+    parentizeEffects: false
+    activeEffect: none
+  }
+]
+deathSound: none
+deathExplosionEffect: none
