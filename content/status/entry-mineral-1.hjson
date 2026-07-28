@@ -7,6 +7,7 @@ These ores are the only ones that can be mined via player-controlled drones.
 
 shownPlanets:[gier]
 databaseTag: "minerals"
+outline: false
 
 research:{
 parent: gier
