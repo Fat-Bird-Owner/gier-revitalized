@@ -12,4 +12,5 @@ shownPlanets:[gier]
 databaseTag: "traits"
 fullOverride: "gr-entry-mineral-1"
 
+outline: false
 research: entry-trait-iframe
