@@ -21,6 +21,7 @@ Genesis Era.
 
 show: true
 shownPlanets:[gier]
+outline: false
 
 research:{
 parent: gier
