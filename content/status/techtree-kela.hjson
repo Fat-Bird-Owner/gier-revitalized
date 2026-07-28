@@ -1,5 +1,6 @@
 name: Kela
 show: false
+outline: false
 
 research:{
 planet: kela
