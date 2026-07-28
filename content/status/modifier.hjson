@@ -1,5 +1,7 @@
 name: Modifiers
 show: false
+outline: false
+
 #research: techtree-kela
 
 description: "Modifiers to change how gier plays. May only be activated on wave one.
