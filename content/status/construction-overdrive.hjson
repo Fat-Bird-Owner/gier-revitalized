@@ -1,5 +1,6 @@
 buildSpeedMultiplier: 1.5
 name: "Construction: Overdrive"
+outline: false
 
 color: FFD37F
 effectChance: 0.05
