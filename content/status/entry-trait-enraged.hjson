@@ -10,6 +10,7 @@ reload faster.
 Applies to[accent] Ash, Arraign, Abalone[]
 '''
 
+outline: falsw
 shownPlanets:[gier]
 databaseTag: "traits"
 fullOverride: "gr-entry-mineral-1"
