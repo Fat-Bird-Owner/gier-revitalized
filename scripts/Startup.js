@@ -131,6 +131,8 @@ t.checkPref("wreckEnabled", true, b => {});
 t.checkPref("unitWreckEnabled", false, b => {});
 
 t.checkPref("doomsday", false, b => {});
+
+t.checkPref("gr-wall-no-dark", false, b => {});
   
 t.row();
 t.button(Core.bundle.get("settings.researchReset"), () => {
@@ -191,6 +193,21 @@ Vars.content.liquid("gr-plague").viscosity = 0;
 
 if (Core.settings.getBool("command-block") == true){        
 Vars.content.block("gr-command-block").buildVisibility = BuildVisibility.shown;
+}
+
+if (Core.settings.getBool("gr-wall-no-dark") == true){        
+
+Vars.content.each(c => {
+try {
+
+if (c instanceof StaticWall){
+c.forceDark = false;
+}
+  
+} catch(e){
+Vars.ui.showText("startup", e);
+}});
+  
 }
   
 } catch(e) {
