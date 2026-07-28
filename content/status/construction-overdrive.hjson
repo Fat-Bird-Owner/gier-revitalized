@@ -1,0 +1,10 @@
+buildSpeedMultiplier: 1.5
+name: "Construction: Overdrive"
+
+color: FFD37F
+effectChance: 0.05
+effect:{
+type: WrapEffect
+effect: overdriven
+color: FFD37F
+}
