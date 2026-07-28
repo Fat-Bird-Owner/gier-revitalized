@@ -23,7 +23,8 @@ show: true
 shownPlanets:[gier]
 fullOverride: "gr-sector-lore"
 allDatabaseTabs: false
-  
+
+outline: false
 research:{
 parent: lore-fragmented
 objectives:[
