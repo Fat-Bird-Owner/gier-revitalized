@@ -1,4 +1,6 @@
 name: Sharded
+outline: false
+
 research: {
 parent: lore-3
 objectives:[
