@@ -211,7 +211,7 @@ Events.on(EventType.TapEvent, e => {
 
                     const error = Core.bundle.format("commandblock.showtoast.run-javascript-2");
                     lastCommand = text;
-                    eval("try{ " + text + "} catch(e) { Vars.ui.showText(error,e)}");
+                    try { (new Function(text))(); } catch(e) { Vars.ui.showText(error, e); }
                     
                     Sounds.waveSpawn.play();
                     Vars.ui.hudfrag.showToast(Icon.chat, Core.bundle.format("commandblock.showtoast.run-javascript-3") + text);
