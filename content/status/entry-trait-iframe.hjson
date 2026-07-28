@@ -13,6 +13,7 @@ Applies to [accent]Barracade, Ash, Fort[]
 shownPlanets:[gier]
 databaseTag: "traits"
 fullOverride: "gr-entry-mineral-1"
+outline: false
 
 research:{
 parent: entry-mineral-1
