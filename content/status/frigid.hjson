@@ -6,6 +6,7 @@ reloadMultiplier: 0.6
 
 intervalDamage: 10
 intervalDamageTime: 60
+outline: false
 
 effect:{
 type: WrapEffect
