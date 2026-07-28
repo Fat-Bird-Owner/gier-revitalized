@@ -1,4 +1,6 @@
 name: Corrupted
+outline: false
+
 description: "
 A chance for the unit to
 switch teams upon taking damage
