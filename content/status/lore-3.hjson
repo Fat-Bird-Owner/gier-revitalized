@@ -26,6 +26,7 @@ show: true
 shownPlanets:[gier]
 fullOverride: "gr-lore-1"
 
+outline: false
 research:{
 parent: gr-lore-2
 objectives:[
