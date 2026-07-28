@@ -7,6 +7,8 @@ Most turrets can only target air units.
 
 shownPlanets:[gier]
 databaseTag: "turrets"
+outline: false
+
 
 research:{
 parent: entry-mineral-1
