@@ -9,6 +9,7 @@ Amplifies the build speed of nearby units
 - Explosive again...
 "
 
+shootSound: none
 alwaysShooting: true
 range: 160
 enableDrawStatus: true
@@ -16,6 +17,7 @@ shootY: 0
 shootEffect: none
 reload: 60
 
+baseExplosiveness: 25
 requirements:[lead/175, copper/250, silicon/135, thorium/75]
 category: effect
 databaseTag: "adv-thorium"
