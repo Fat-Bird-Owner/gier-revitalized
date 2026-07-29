@@ -3,6 +3,7 @@ sector: 2
 captureWave: 0
 
 outline: false
+alwaysUnlocked: true
 
 overrideLaunchDefaults: true
 description: "
