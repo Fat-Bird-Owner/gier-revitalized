@@ -21,6 +21,6 @@ category: effect
 requirements: [lead/2500, copper/2000, graphite/1750, graphite/1250, titanium/450, beryllium/450, depleted-thorium/350]
 research: "core-facility"
 
-customShadow: false
-isFirstTier: true
+customShadow: true
+isFirstTier: false
 unitType: garrison
