@@ -1,0 +1,29 @@
+template: MissileUnitType
+hitSize: 0
+flying: false
+drawSoftShadow: false
+speed: 0
+rotateSpeed: 0
+lifetime: 1
+speed: 0
+drawBody: false
+drawCell: false
+hittable: false
+targetable: false
+physics: false
+fallSpeed: 0.5
+deathShake: 0
+
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: construction-overdrive-2
+    range: 300
+    reload: 1
+    duration: 60
+    parentizeEffects: false
+    activeEffect: none
+  }
+]
+deathSound: none
+deathExplosionEffect: none
