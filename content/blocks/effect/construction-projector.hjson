@@ -10,6 +10,7 @@ Amplifies the build speed of nearby units
 "
 
 shootSound: none
+outlineRadius:0
 alwaysShooting: true
 range: 160
 enableDrawStatus: true
