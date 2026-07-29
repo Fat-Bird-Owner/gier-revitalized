@@ -17,7 +17,5 @@ liquidCapacity: 40
 hasPower: true
 consumes: {
   power: 4
-  liquid: {
-    liquid-steam/0.15
-  }
+  liquids: [ liquid-steam/0.15 ]
 }
