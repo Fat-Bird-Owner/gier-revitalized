@@ -14,6 +14,7 @@ itemCapacity: 20
 launchTime: 2700
 liquidCapacity: 40
 
+customShadow: true
 hasPower: true
 consumes: {
   power: 4
