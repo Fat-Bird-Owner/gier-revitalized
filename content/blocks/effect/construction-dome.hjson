@@ -1,0 +1,58 @@
+type: PowerTurret
+size: 3
+name: Construction Dome
+description: "
+Amplifies the build speed of nearby units
+At a larger scale than the projector
+[green]
+- Amplifies unit build speed[salmon]
+- Requires power
+- Explosive
+"
+
+baseExplosiveness: 50
+alwaysShooting: true
+range: 300
+enableDrawStatus: true
+shootY: 0
+shootEffect: none
+reload: 60
+
+requirements:[lead/350, copper/450, silicon/275, thorium/125, surge-alloy/75]
+category: effect
+databaseTag: "adv-surge-alloy"
+
+research: construction-projector
+researchCostMultiplier: 0.25
+consumes: {
+power: 0.5
+}
+  
+rotate: false
+customShadow: true
+playerControllable: false
+
+shootType:{
+spawnUnit: construction-unit-2
+despawnHit: true
+hitEffect: none
+despawnEffect: none
+smokeEffect: none
+shootEffect: none
+}
+
+customShadow: false
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+}
+{
+type: DrawPulseShape
+color: FFD37F
+minStroke: 0
+square: false
+}
+]
+}
