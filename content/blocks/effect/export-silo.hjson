@@ -1,0 +1,23 @@
+type: LaunchPad
+size: 3
+name: Export Silo
+
+requirements: [lead/275, copper/175, silicon/100, metaglass/40, depleted-thorium/15]
+category: effect
+databaseTag: "adv-depleted-thorium"
+
+research: rail-router
+researchCostMultiplier: 0.25
+envEnabled: -1
+
+itemCapacity: 20
+launchTime: 2700
+liquidCapacity: 40
+
+hasPower: true
+consumes: {
+  power: 4
+  liquid: {
+    steam/0.15
+  }
+}
