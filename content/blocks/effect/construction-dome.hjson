@@ -12,6 +12,7 @@ At a larger scale than the projector
 
 baseExplosiveness: 50
 shootSound: none
+outlineRadius: 0
 
 alwaysShooting: true
 range: 300
