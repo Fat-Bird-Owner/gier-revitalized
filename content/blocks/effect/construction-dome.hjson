@@ -11,6 +11,8 @@ At a larger scale than the projector
 "
 
 baseExplosiveness: 50
+shootSound: none
+
 alwaysShooting: true
 range: 300
 enableDrawStatus: true
