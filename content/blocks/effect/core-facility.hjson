@@ -3,10 +3,14 @@ size: 4
 name: "Core: [accent]Facility[]"
 
 #credit: "Erm"
-description: "A more durable core foundation
+description: "
+Has a more durable  foundation
+Then previous the iteration
+
+as well as being able to support an increased
+number of units than before
 
 [accent]- Drone: Restoration
-
 [green]- Durable
 - More storage
 [grey]- 4x4
@@ -21,7 +25,7 @@ incinerateNonBuildable: true
 customShadow: true
 squareSprite: false
 
-research: gier
+research: core-satellite
 researchCostMultiplier: 0.15
 databaseTag: "gier"
 
