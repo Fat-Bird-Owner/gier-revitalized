@@ -18,6 +18,6 @@ hasPower: true
 consumes: {
   power: 4
   liquid: {
-    steam/0.15
+    liquid-steam/0.15
   }
 }
