@@ -6,19 +6,33 @@ armor: 25
 
 researchCostMultiplier: 0.25
 description: "
-A larger, Far more durable core
-Able to store far more items
+A more advanced iteration of the
+previous [accent]Facility core[]
 
-Once destroyed the sector 
-is losted
+Poccesses greater item capacity 
+as well as durability
+
+Advanced proccessing system
+allows more units to be active
+at one time
 "
 
-databaseTag: "gier"
+databaseTag: "adv-depleted-thorium"
 envEnabled: -1
 itemCapacity: 9500
 category: effect
 
-requirements: [lead/2500, copper/2000, graphite/1750, graphite/1250, titanium/450, beryllium/450, depleted-thorium/350]
+unitCapModifier: 20
+requirements: [
+lead/2500, 
+copper/2000, 
+graphite/1750, 
+graphite/1250, 
+titanium/450, 
+beryllium/450, 
+depleted-thorium/350
+]
+
 research: "core-facility"
 
 customShadow: true
