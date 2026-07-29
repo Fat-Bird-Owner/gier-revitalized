@@ -19,6 +19,7 @@ gierWannabe.allowLaunchSchematics  = true;
 gierWannabe.allowLaunchLoadout = true;
 gierWannabe.prebuildBase = false;
 gierWannabe.allowLaunchToNumbered = false;
+gierWannabe.campaignRules.legacyLaunchPads = true;
     
 actualRealGier.techTree.each(node => {
 
