@@ -53,12 +53,18 @@ blurThresh: 1
 suffix: "-rotator"
 }
 {
+type: DrawLiquidTile
+drawLiquid: liquid-steam
+padding: 6
+alpha: 0.5
+}
+{
 type: DrawDefault
 }
 {
 type: DrawGlowRegion
 color: FFD280FF
 suffix: "-glow"
-alpha: 0.75
+alpha: 1
 }
 ]
