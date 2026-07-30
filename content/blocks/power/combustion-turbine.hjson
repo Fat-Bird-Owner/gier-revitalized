@@ -46,7 +46,7 @@ suffix: "-bottom"
 {
 type: DrawBlurSpin
 rotateSpeed: 6
-blurThres: 1
+blurThresh: 1
 suffix: "-rotator"
 }
 {
