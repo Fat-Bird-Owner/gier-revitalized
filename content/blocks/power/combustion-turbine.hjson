@@ -2,10 +2,13 @@ type: ConsumeGenerator
 name: "Combustion Turbine"
 size: 3
 
+priority: 15
 health: 2500
 description: "
 Consumes flammable items and water
 to generate a large quantity of power
+
+[sky]Priority:[] 15
 [green]
 - Powah[red]
 - Explodes
