@@ -15,7 +15,7 @@ heating: 0.065
 
 name: Watt Reactor
 size: 4
-helth: 3450
+health: 3500
 itemCapacity: 100
 armor: 5
 baseExplosiveness: 15
