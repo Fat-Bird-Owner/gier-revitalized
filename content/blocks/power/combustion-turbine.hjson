@@ -48,6 +48,12 @@ type: DrawRegion
 suffix: "-bottom"
 }
 {
+type: DrawLiquidTile
+drawLiquid: water
+padding: 6
+alpha: 1
+}
+{
 type: DrawBlurSpin
 rotateSpeed: 6
 blurThresh: 1
