@@ -3,6 +3,7 @@ name: "Combustion Turbine"
 size: 3
 
 priority: 15
+outputLiquid: liquid-steam/0.16667
 health: 2500
 description: "
 Consumes flammable items and water
