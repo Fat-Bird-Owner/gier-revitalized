@@ -1,0 +1,55 @@
+type: ConsumeGenerator
+name: "Combustion Turbine"
+size: 3
+
+health: 2500
+description: "
+Consumes flammable items and water
+to generate a large quantity of power
+[green]
+- Powah[red]
+- Explodes
+- Requires flammable items
+"
+
+baseExplosiveness: 75
+category: power
+research: steam-turbine
+
+liquidCapacity: 50
+requirements: [lead/350, copper/150, silicon/100, metaglass/50, thorium/25]
+databaseTag: "adv-depleted-thorium"
+
+alwaysUnlocked: true
+buildVisibility: shown
+envEnabled: -1
+
+shownPlanets: [kela]
+powerProduction: 6
+customShadow: true
+
+itemDuration: 60
+consumes: {
+
+liquids: [water/0.16667]
+itemFlammable: {
+minFlammability: 0.25
+}
+  
+}
+  
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawBlurSpin
+rotateSpeed: 6
+blurThres: 1
+suffix: "-rotator"
+}
+{
+type: DrawDefault
+}
+]
