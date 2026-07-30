@@ -52,4 +52,10 @@ suffix: "-rotator"
 {
 type: DrawDefault
 }
+{
+type: GlowRegion
+color: FFD280FF
+suffix: "-glow"
+alpha: 0.75
+}
 ]
