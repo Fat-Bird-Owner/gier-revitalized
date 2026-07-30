@@ -57,7 +57,7 @@ suffix: "-rotator"
 type: DrawLiquidTile
 drawLiquid: liquid-steam
 padding: 6
-alpha: 0.5
+alpha: 0.75
 }
 {
 type: DrawDefault
