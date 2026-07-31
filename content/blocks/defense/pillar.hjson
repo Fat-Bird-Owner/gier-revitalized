@@ -4,7 +4,7 @@ radius: 6
 name: Pillar
 
 rebuildable: true
-requirements: [titanium/35, depleted-thorium/25, silicon/15]
+requirements: [titanium/35, depleted-thorium/25]
 category: defense
 
 health: 1500
