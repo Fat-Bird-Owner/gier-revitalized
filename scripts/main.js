@@ -39,6 +39,7 @@ require("CombustionBarrel");
 require("GeothermalTurbine");
 require("PowerGrid");
 require("damageShiftWall");
+require("ProjectorBlock");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
