@@ -17,7 +17,7 @@ block.stats.remove(Stat.reload)
 block.stats.remove(Stat.targetsAir)
 block.stats.remove(Stat.targetsGround)
 block.stats.remove(Stat.booster)
-block.stats.remove(Stat.shootRange)
+//block.stats.remove(Stat.shootRange)
   
 }
   
