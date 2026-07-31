@@ -23,7 +23,7 @@ requirements:[lead/175, copper/250, silicon/135, thorium/75]
 category: effect
 databaseTag: "adv-thorium"
 
-research: eluminate-bastion
+research: extractor-bastion
 researchCostMultiplier: 0.25
 consumes: {
 power: 0.5
