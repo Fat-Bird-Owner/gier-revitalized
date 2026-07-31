@@ -75,7 +75,7 @@ type: ParticleEffect
 interp: sineOut
 particles: 3
 
-colorFrom: ffffff
+colorFrom: ffffff77
 colorTo: ffffff00
 lightColor: 767676ff
   
