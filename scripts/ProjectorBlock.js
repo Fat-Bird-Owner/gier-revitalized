@@ -6,7 +6,8 @@ try {
 for (let i = 0; i < blocks.length; i++){
 let block = Vars.content.block(blocks[i]);
 
-Vars.ui.content.show(block)
+Vars.ui.content.show(block);
+Vars.ui.content.hide();
   
 block.stats.remove(Stat.ammo)
 block.stats.remove(Stat.inaccuracy)
