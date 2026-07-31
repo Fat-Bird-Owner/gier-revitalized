@@ -6,6 +6,8 @@ try {
 for (let i = 0; i < blocks.length; i++){
 let block = Vars.content.block(blocks[i]);
 
+if (!block) return;
+  
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
   
