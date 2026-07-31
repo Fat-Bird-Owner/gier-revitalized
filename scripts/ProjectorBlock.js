@@ -3,7 +3,7 @@ const blocks = ["gr-construction-projector", "gr-contruction-dome"]
 Events.on(ClientLoadEvent, () => {
 try {
 
-for (let i = 0; i < blocks.length; i++){
+for (let i = 0; blocks.length < i; i++){
 let block = Vars.content.block(blocks[i]);
 
 Vars.ui.content.show(block);
