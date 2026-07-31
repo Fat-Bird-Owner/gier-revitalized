@@ -20,5 +20,5 @@ block.stats.remove(Stat.shootRange)
 }
   
 } catch(e){
-Vars.ui.showText("ProjectorBlock.js", e);
+//Vars.ui.showText("ProjectorBlock.js", e);
 }});
