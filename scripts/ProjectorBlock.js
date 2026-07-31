@@ -1,4 +1,4 @@
-const blocks = ["gr-construction-projector", "gr-contruction-dome"]
+const blocks = ["gr-construction-projector", "gr-construction-dome"]
 
 Events.on(ClientLoadEvent, () => {
 try {
