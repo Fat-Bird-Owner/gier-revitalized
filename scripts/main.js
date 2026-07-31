@@ -36,7 +36,7 @@ require("StructureBlock");
 require("ImageBlock");
 require("CircuitLogic");
 require("CombustionBarrel");
-require("GeothermalTurbine");
+//require("GeothermalTurbine");
 require("PowerGrid");
 require("damageShiftWall");
 require("ProjectorBlock");
