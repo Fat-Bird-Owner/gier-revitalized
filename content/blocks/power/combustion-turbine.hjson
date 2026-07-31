@@ -69,11 +69,11 @@ alpha: 1
 }
 ]
 
-effectChance: 0.1
+effectChance: 0.2
 generateEffect: {
 type: ParticleEffect
 interp: sineOut
-particles: 6
+particles: 3
 
 colorFrom: ffffff
 colorTo: ffffff00
