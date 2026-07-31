@@ -15,7 +15,7 @@ temporarily depleting nearby enemies
 
 customShadow: true
 range: 40
-buildVisibility: sandboxOnly 
+buildVisibility: shown
   
 research: insulated-wall
 researchCostMultiplier: 0.25
@@ -28,6 +28,8 @@ rotateSpeed: 0
 rotate: false
 group: walls
 fogRadiusMultiplier: 0
+
+requirements: [thorium/25, titanium/10]
 
 priority: 0
 shootY: 0
