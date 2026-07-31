@@ -21,8 +21,7 @@ shownPlanets: [kela, gier]
 research: steam-turbine
 baseExplosiveness: 40
 
-outputLiquid: oil/0
-liquidCpacity: 105
+liquidCpacity: 100
 
 category: power
 envEnabled: -1
