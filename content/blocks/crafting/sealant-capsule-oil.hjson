@@ -23,7 +23,6 @@ envEnabled: -1
 consumes:{
 power: 0.5
 liquids:[oil/0.16667]
-items:[metaglass/3]
 }
 
 outputItem: oil-capsule/1
