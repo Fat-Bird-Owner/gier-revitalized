@@ -3,7 +3,6 @@ name: "Combustion Turbine"
 size: 3
 
 priority: 15
-outputLiquid: liquid-steam/0.16667
 health: 2500
 description: "
 Consumes flammable items and water
@@ -60,12 +59,6 @@ blurThresh: 1
 suffix: "-rotator"
 }
 {
-type: DrawLiquidTile
-drawLiquid: liquid-steam
-padding: 6
-alpha: 0.75
-}
-{
 type: DrawDefault
 }
 {
@@ -75,3 +68,23 @@ suffix: "-glow"
 alpha: 1
 }
 ]
+
+effectChance: 0.1
+generateEffect: {
+type: ParticleEffect
+interp: sineOut
+particles: 6
+
+colorFrom: ffffff
+colorTo: ffffff00
+lightColor: 767676ff
+  
+cone: 22.5
+baseRotation: 45
+lightScl: 0
+  
+length: 35
+sizeTo: 6
+layer: 114
+lifetime: 120
+}
