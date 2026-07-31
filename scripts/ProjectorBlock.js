@@ -3,11 +3,10 @@ const blocks = ["gr-construction-projector", "gr-contruction-dome"]
 Events.on(ClientLoadEvent, () => {
 try {
 
-for (let i = 0; blocks.length < i; i++){
+for (let i = 0; i < blocks.length; i++){
 let block = Vars.content.block(blocks[i]);
 
 Vars.ui.content.show(block);
-Vars.ui.content.hide();
   
 block.stats.remove(Stat.ammo)
 block.stats.remove(Stat.inaccuracy)
@@ -16,6 +15,8 @@ block.stats.remove(Stat.targetAir)
 block.stats.remove(Stat.targetGround)
 block.stats.remove(Stat.booster)
 block.stats.remove(Stat.shootRange)
+
+Vars.ui.content.hide();
   
 }
   
