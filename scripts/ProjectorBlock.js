@@ -11,8 +11,8 @@ Vars.ui.content.show(block);
 block.stats.remove(Stat.ammo)
 block.stats.remove(Stat.inaccuracy)
 block.stats.remove(Stat.reload)
-block.stats.remove(Stat.targetAir)
-block.stats.remove(Stat.targetGround)
+block.stats.remove(Stat.targetsAir)
+block.stats.remove(Stat.targetsGround)
 block.stats.remove(Stat.booster)
 block.stats.remove(Stat.shootRange)
 
