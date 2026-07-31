@@ -1,0 +1,25 @@
+type: Pump
+size: 2
+name: "Electric Siphon"
+
+customShadow: true
+explosivenessScale: 5
+description: "
+
+[sky]Priority:[] 1.5
+  
+Siphons a small number of liquid using power
+But takes a long time to fully operate 
+[green]
+- Reliable liquid pump[salmon]
+- Long startup time
+- Liquid content are extra explosive
+"
+
+requirements: [titanium/45, beryllium/45, metaglass/150, thorium/50]
+category: liquid
+//research: liquid-junction
+
+databaseTag: "adv-thorium"
+priority: 1.5
+pumpAmount: 0.25
