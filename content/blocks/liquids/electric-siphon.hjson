@@ -16,10 +16,14 @@ But takes a long time to fully operate
 - Liquid content are extra explosive
 "
 
-requirements: [titanium/45, beryllium/45, metaglass/150, thorium/50]
+requirements: [titanium/50, beryllium/50, metaglass/150, thorium/50]
 category: liquid
-//research: liquid-junction
+research: fluid-junction
 
 databaseTag: "adv-thorium"
 priority: 1.5
 pumpAmount: 0.25
+
+consumes: {
+power: 0.33333
+}
