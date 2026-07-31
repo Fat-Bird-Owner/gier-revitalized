@@ -3,8 +3,10 @@ size: 2
 radius: 6
 name: Pillar
 
+rebuildable: true
 requirements: [titanium/35, depleted-thorium/25, silicon/15]
 category: defense
+
 health: 1500
 
 group: walls
@@ -23,7 +25,11 @@ from flying over it
 
 baseExplosiveness: 12
 shieldColor: B58DA5FF
-buildVisibility: sandboxOnly
+buildVisibility: shown
 
 priority: 1
 hasPower: false
+research: insulated-wall
+
+researchCostMultiplier: 0.25
+requirements: [depleted-thorium/25. silicon/25, titanoum/10]
