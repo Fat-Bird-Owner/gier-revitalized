@@ -22,8 +22,8 @@ research: fluid-junction
 
 databaseTag: "adv-thorium"
 priority: 1.5
-pumpAmount: 0.25
+pumpAmount: 0.0625
 
 consumes: {
-power: 0.33333
+power: 0.33334
 }
