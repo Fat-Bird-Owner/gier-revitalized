@@ -5,6 +5,13 @@ size: 3
 databaseTag: "gier"
 customShadow: true
 category: units
+
+health: 138388283838
+armor: 138388283838
+
+underBullets: true
+targetable: false
+
 requirements:[
 lead/350
 copper/275
@@ -15,39 +22,21 @@ metaglass/50
 ]
 
 consumes:{
-liquids:[water/0.16667]
-coolant:{
-amount: 0
-maxTemp: 10
-maxFlammability: 10
-allowGas: true
-optional: true
-booster: true
-}
+power: 1
 }
 
+configurable: true
 plans:[
 {
 unit: ruthless
 
 requirements:[
-silicon/100
-lead/50
-metaglass/25
+silicon/50
+lead/150
+copper/100
+graphite/100
 ]
 
-time: 2100
-}
+time: 2000
 
-{
-unit: drive
-
-requirements:[
-silicon/75
-lead/75
-copper/50
-]
-
-time: 1500
-}
 ]
