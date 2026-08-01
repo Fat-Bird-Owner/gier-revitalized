@@ -29,6 +29,7 @@ power: 1.5
 liquids: [slag/0.125]
 }
 
+requirements: [lead/125, copper/50, titanium/50, metaglass/50, silicon/100]
 sqaureSprite: false
 category: crafting
 customShadow: false
