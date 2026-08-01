@@ -24,16 +24,18 @@ envEnabled: -1
 itemCapacity: 30
 baseExplosiveness: 50
 craftTime: 300
-outputItems: [scrap/15, copper/10, lead/10, graphite/5, titanium/5]
+outputItems: [scrap/15, copper/10, lead/10, graphite/5, titanium/5, beryllium/5]
 consumes: {
 power: 1.5
 liquids: [slag/0.125]
 }
 
 requirements: [lead/125, copper/50, titanium/50, metaglass/50, silicon/100]
+researchCostMultiplier: 0.25
+
 sqaureSprite: false
 category: crafting
-customShadow: false
+customShadow: true
 drawer: [
 {
 type: DrawRegion
@@ -43,14 +45,14 @@ suffix: "-bottom"
 type: DrawLiquidTile
 padding: 4
 drawLiquid: slag
-alpha: 0.75
+alpha: 0.85
 }
 {
 type: DrawBlurSpin
 suffix: "-rotator"
 x: 6
 y: -5.75
-rotateSpeed: 3
+rotateSpeed: 6
 blurThresh: 1
 }
 {
@@ -58,10 +60,10 @@ type: DrawBlurSpin
 suffix: "-rotator"
 x: -6
 y: 5.75
-rotateSpeed: 3
+rotateSpeed: 6
 blurThresh: 1
 }
 {
-type: DrawDefaul
+type: DrawDefault
 }
 ]
