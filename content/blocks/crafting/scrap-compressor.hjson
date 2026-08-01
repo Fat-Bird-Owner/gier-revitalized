@@ -23,7 +23,7 @@ envEnabled: -1
   
 baseExplosiveness: 50
 craftTime: 300
-outputItems: [scrap/15, copper/10, lead/10, graphite/5 titanium/5]
+outputItems: [scrap/15, copper/10, lead/10, graphite/5, titanium/5]
 consumes: {
 power: 1.5
 liquids: [slag/0.125]
