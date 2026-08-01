@@ -20,7 +20,8 @@ defenses
 research: incineration-rig
 databaseTag: "adv-scrap"
 envEnabled: -1
-  
+
+itemCapacity: 30
 baseExplosiveness: 50
 craftTime: 300
 outputItems: [scrap/15, copper/10, lead/10, graphite/5, titanium/5]
@@ -40,7 +41,7 @@ suffix: "-bottom"
 }
 {
 type: DrawLiquidTile
-padding: 6
+padding: 4
 drawLiquid: slag
 alpha: 0.75
 }
@@ -61,6 +62,6 @@ rotateSpeed: 3
 blurThresh: 1
 }
 {
-type: DrawDefaulr
+type: DrawDefaul
 }
 ]
