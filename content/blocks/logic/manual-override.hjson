@@ -1,0 +1,25 @@
+# DisableSwitch
+type: SwitchBlock
+
+size: 1
+name: Manual Override
+category: logic
+
+health: 25
+description: "
+Disables/Enables the block in front of it
+on click
+[green]
+- Manual Control[salmon]
+- Fragile
+"
+
+requirements: [titanium/15, silicon/10]
+configurable: false
+// research: 
+
+databaseTag: "gier"
+envEnabled: -1
+rotateDraw: false
+
+rotate: true
