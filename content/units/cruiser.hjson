@@ -54,7 +54,7 @@ x: 0
 y: 8.5
 
 progress: {
-type: Reload
+type: reload
 
 ops: [
 {
