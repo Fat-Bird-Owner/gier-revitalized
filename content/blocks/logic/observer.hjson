@@ -10,6 +10,10 @@ rotate: true
 update: true
 fullOverride: "gr-circuit-wire"
 
+consumes: {
+power: 0
+}
+
 blockGroup: none
 replaceable: false
 blockGroup: logic
