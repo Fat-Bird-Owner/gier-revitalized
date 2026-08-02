@@ -48,27 +48,6 @@ shootSound: shootForeshadow
 
 parts:[
 {
-type: EffectSpawnerPart
-effectInterval: 3
-x: 0
-y: 8.5
-
-progress: reload
-
-effect: {
-type: ParticleEffect
-colorFrom: 4f4f4f88
-colorTo: 6f6f6f00
-sizeFrom: 4
-sizeTo: 8
-particles: 1
-cone: 50
-lifetime: 45
-layer: 120
-}
-
-}
-{
 type: FlarePart
 sides: 4
 color1: FFD37F
@@ -90,6 +69,19 @@ firstShotDelay: 60
 }
 
 bullet:{
+
+shootEffect: {
+type: ParticleEffect
+colorFrom: 4f4f4f88
+colorTo: 6f6f6f00
+sizeFrom: 2
+sizeTo: 4
+particles: 8
+length: 14
+cone: 50
+lifetime: 45
+layer: 120
+}
 
 type: RailBulletType
 pierceEffect: instHit
