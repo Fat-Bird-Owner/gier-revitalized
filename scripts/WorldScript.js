@@ -7,7 +7,19 @@ if (tile.block() != Vars.content.block("gr-world-script") || tile.team == Team.d
 const string = tile.build.message.toString();
 let error = "[grey]No Errors"
 
-try { new Function(string) } catch(err) { error = "[red]Error:[] " + err }
+try { 
+
+if (string.indexOf("planet") != -1 || strint.indexOf("extend") != -1 || string.indexOf("shown") != -1 || string.indexOf("control") != -1) {
+error = "[red]Illegal use of scripts"
+return;
+}
+  
+new Function(string) 
+  
+} catch(err) { 
+error = "[red]Error:[] " + err 
+}
+
 tile.setBlock(Vars.content.block("gr-world-script"))
 tile.build.message.append(error);
   
