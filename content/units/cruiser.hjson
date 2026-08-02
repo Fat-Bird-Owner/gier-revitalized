@@ -4,8 +4,8 @@ health: 1250
 armor: 10
 
 speed: 0.75
-accel: 0.01
-drag: 0.007
+accel: 0.1
+drag: 0.075
 flying: true
 range: 400
 rotateSpeed: 1
@@ -75,6 +75,7 @@ fragVelocityMin: 1
 fragVelocityMax: 1
 
 damage: 150
+maxDamageFactor: 0.75
 
 knockback: 15
 impact: true
@@ -162,5 +163,7 @@ homingRange: 800
 // Researches
 
 description: "
+Fires a piercing beam at extreme range
+And suffers from low durability 
 "
 
