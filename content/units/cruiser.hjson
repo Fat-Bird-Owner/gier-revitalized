@@ -70,6 +70,7 @@ pointEffect: railTrail
 pointEffectSpace: 44
 length: 400
 
+recoil: 12.5
 fragOnDespawn: false
 fragVelocityMin: 1
 fragVelocityMax: 1
