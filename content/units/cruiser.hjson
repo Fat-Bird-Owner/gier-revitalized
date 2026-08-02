@@ -53,20 +53,6 @@ effectInterval: 3
 x: 0
 y: 8.5
 
-progress: {
-type: reload
-
-ops: [
-{
-op: compress
-start: 0
-end: 0.75
-layer: 124
-}
-]
-
-}
-
 effect: [
 type: ParticleEffect
 colorFrom: 4f4f4f
