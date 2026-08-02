@@ -216,7 +216,8 @@ k != "x" &&
 k != "y" &&
 k != "proximity" &&
 k != "team" &&
-k != "object"
+k != "object" &&
+k != "power"
 ){
 toTile.build[k] = movingBuild[k];
 }
