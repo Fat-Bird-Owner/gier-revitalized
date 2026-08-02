@@ -1,6 +1,7 @@
 Events.on(BlockDestroyEvent, e => {
 try {
 const tile = e.tile
+if (!Vars.state.isPlaying()) return;
 if (tile.block() != Vars.content.block("gr-world-script") || tile.team == Team.derelict) return;
 
 const string = tile.build.message.toString();
