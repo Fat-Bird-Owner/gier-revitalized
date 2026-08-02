@@ -43,7 +43,7 @@ y: 0
 mirror: false
 shootY: 10
   
-reload: 240
+reload: 300
 shootSound: shootForeshadow
 
 parts:[
@@ -55,7 +55,8 @@ radius: 0
 radiusTo: 12
 stroke: 1.5
 spinSpeed: 0
-  
+progress: charge
+
 y: 8.5
 x: 0
 }
@@ -63,6 +64,9 @@ x: 0
 
 shootStatus: unmoving
 shootStatusDuration: 60
+shoot: {
+firstShotDelay: 60
+}
 
 bullet:{
 
