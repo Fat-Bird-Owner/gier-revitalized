@@ -7,7 +7,7 @@ speed: 0.75
 accel: 0.1
 drag: 0.075
 flying: true
-range: 400
+range: 350
 rotateSpeed: 1
 
 drawSoftShadow: false
@@ -75,7 +75,7 @@ pierceEffect: instHit
 lineEffect: railHit
 pointEffect: railTrail
 pointEffectSpace: 44
-length: 400
+length: 350
 
 recoil: 12.5
 fragOnDespawn: false
