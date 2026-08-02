@@ -7,7 +7,7 @@ speed: 1.5
 accel: 0.015
 drag: 0.01
 flying: true
-range: 400
+range: 350
 rotateSpeed: 1
 
 drawSoftShadow: false
