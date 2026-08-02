@@ -8,7 +8,7 @@ if (!tile.team() || tile.team() != player.team()) return;
 const build = tile.build
 build.enabled = !build.enabled
 
-if (!build.front() || build.front.team != player.team()) return;
+if (!build.front() || build.front().team != player.team()) return;
 build.front().enabled = build.enabled
 tile.block().clickSound.at(build.x, build.y)
 
