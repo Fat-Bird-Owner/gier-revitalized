@@ -53,7 +53,7 @@ effectInterval: 3
 x: 0
 y: 8.5
 
-effect: [
+effect: {
 type: ParticleEffect
 colorFrom: 4f4f4f
 colorTo: 6f6f6f
@@ -61,7 +61,7 @@ sizeFrom: 4
 sizeTo: 8
 particles: 1
 lifetime: 45
-]
+}
 
 }
 {
