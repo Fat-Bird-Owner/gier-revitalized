@@ -43,11 +43,8 @@ y: 0
 mirror: false
 shootY: 10
   
-reload: 300
-rotate: true
-rotateSpeed: 2.5
-shake: 5
-shootSound: massdriver
+reload: 240
+shootSound: shootForeshadow
 
 parts:[
 {
