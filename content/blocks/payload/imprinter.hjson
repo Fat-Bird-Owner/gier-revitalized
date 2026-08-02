@@ -8,6 +8,7 @@ category: units
 
 health: 138388283838
 armor: 138388283838
+buildVisibility: sandboxOnly
 
 underBullets: true
 targetable: false
@@ -28,7 +29,7 @@ power: 1
 configurable: true
 plans:[
 {
-unit: ruthless
+unit: fledgling
 
 requirements:[
 silicon/50
