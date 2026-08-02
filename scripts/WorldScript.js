@@ -5,7 +5,7 @@ if (!Vars.state.isPlaying()) return;
 if (tile.block() != Vars.content.block("gr-world-script") || tile.team == Team.derelict) return;
 
 const string = tile.build.message.toString();
-let error = "[grey]No Errors"
+let error = ""
 
 try { 
 
@@ -27,7 +27,7 @@ if (!illegal) { (new Function(string))() }
 error = "[red]Error:[] " + err 
 }
 
-Vars.ui.showErrorMessage(error);
+if (error != "") Vars.ui.showErrorMessage(error);
   
 } catch(e){
 Vars.ui.showErrorMessage(e)  
