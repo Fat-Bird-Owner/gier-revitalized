@@ -9,7 +9,12 @@ let error = "[grey]No Errors"
 
 try { 
 
-if (string.indexOf("planet") != -1 || strint.indexOf("extend") != -1 || string.indexOf("shown") != -1 || string.indexOf("control") != -1) {
+if (
+string.indexOf("planet") != -1 || 
+string.indexOf("extend") != -1 || 
+string.indexOf("shown") != -1 || 
+string.indexOf("control") != -1
+) {
 error = "[red]Illegal use of scripts"
 return;
 }
