@@ -61,7 +61,7 @@ ops: [
 op: compress
 start: 0
 end: 0.75
-layer: 125
+layer: 124
 }
 ]
 
