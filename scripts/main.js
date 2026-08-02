@@ -40,6 +40,7 @@ require("CombustionBarrel");
 require("PowerGrid");
 require("damageShiftWall");
 require("ProjectorBlock");
+require("DisableSwitch"); // Switchblock extension
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
