@@ -61,6 +61,9 @@ x: 0
 }
 ]
 
+shootStatus: unmoving
+shootStatusDuration: 60
+
 bullet:{
 
 type: RailBulletType
