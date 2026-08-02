@@ -68,7 +68,7 @@ shoot: {
 firstShotDelay: 60
 }
 
-shootEffect: {
+ejectEffect: {
 type: ParticleEffect
 colorFrom: 4f4f4f88
 colorTo: 6f6f6f00
