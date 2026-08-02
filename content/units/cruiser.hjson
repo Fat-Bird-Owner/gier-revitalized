@@ -68,20 +68,21 @@ shoot: {
 firstShotDelay: 60
 }
 
-bullet:{
-
 shootEffect: {
 type: ParticleEffect
 colorFrom: 4f4f4f88
 colorTo: 6f6f6f00
 sizeFrom: 2
 sizeTo: 4
-particles: 8
-length: 14
+particles: 24
+length: 40
 cone: 50
 lifetime: 45
 layer: 120
 }
+
+
+bullet:{
 
 type: RailBulletType
 pierceEffect: instHit
@@ -96,7 +97,7 @@ fragVelocityMin: 1
 fragVelocityMax: 1
 
 damage: 150
-maxDamageFactor: 0.75
+maxDamageFraction: 0.75
 
 knockback: 15
 impact: true
