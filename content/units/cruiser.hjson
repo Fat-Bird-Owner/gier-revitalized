@@ -60,7 +60,7 @@ colorTo: 6f6f6f
 sizeFrom: 4
 sizeTo: 8
 particles: 1
-lifetimem 45
+lifetime: 45
 ]
 
 }
