@@ -54,9 +54,9 @@ color1: FFD37F
 radius: 0
 radiusTo: 12
 stroke: 1.5
-spinSpeed: 5
+spinSpeed: 0
   
-y: -14
+y: 8.5
 x: 0
 }
 ]
@@ -70,7 +70,7 @@ pointEffect: railTrail
 pointEffectSpace: 44
 length: 400
 
-fragOnDespawn: true
+fragOnDespawn: false
 fragVelocityMin: 1
 fragVelocityMax: 1
 
