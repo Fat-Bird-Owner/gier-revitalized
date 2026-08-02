@@ -1,0 +1,18 @@
+# WorldScript
+type: MessageBlock
+name: World Script
+category: logic
+
+underBullets: true
+targetable: false
+health: 8283982938
+armor: 8283982938
+
+forceDark: true
+priviledged: true
+maxNewlines: 400
+
+buildVisibility: worldProcessorOnly
+description: "
+Runs javascript func when destroyed
+"
