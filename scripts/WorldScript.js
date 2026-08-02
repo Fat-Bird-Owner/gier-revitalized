@@ -19,7 +19,7 @@ error = "[red]Illegal use of scripts"
 return;
 }
   
-new Function(string) 
+(new Function(string))()
   
 } catch(err) { 
 error = "[red]Error:[] " + err 
