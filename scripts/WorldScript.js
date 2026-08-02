@@ -15,7 +15,11 @@ if (
 string.indexOf("planet") != -1 || 
 string.indexOf("extend") != -1 || 
 string.indexOf("shown") != -1 || 
-string.indexOf("control") != -1
+string.indexOf("control") != -1 ||
+string.indexOf("Core") != -1 ||
+string.indexOf("saves") != -1 ||
+string.indexOf("setting") != -1 ||
+string.indexOf("eval") != -1
 ) {
 error = "[red]Illegal use of scripts"
 illegal = true;
