@@ -27,8 +27,7 @@ if (!illegal) { (new Function(string))() }
 error = "[red]Error:[] " + err 
 }
 
-tile.setBlock(Vars.content.block("gr-world-script"))
-tile.build.message.append(error);
+Vars.ui.showErrorMessage(error);
   
 } catch(e){
 Vars.ui.showErrorMessage(e)  
