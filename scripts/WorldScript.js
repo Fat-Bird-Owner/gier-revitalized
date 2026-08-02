@@ -21,7 +21,7 @@ string.indexOf("saves") != -1 ||
 string.indexOf("setting") != -1 ||
 string.indexOf("eval") != -1
 ) {
-error = "[red]Illegal use of scripts"
+error = "Illegal use of scripts detected"
 illegal = true;
 }
   
