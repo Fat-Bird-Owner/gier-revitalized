@@ -48,37 +48,6 @@ shootSound: shootForeshadow
 
 parts:[
 {
-type: EffectSpawnerPart
-effectInterval: 3
-x: 0
-y: 8.5
-
-progress: {
-type: reload
-
-ops: [
-{
-op: compress
-start: 0
-end: 0.75
-}
-]
-
-}
-
-effect: {
-type: ParticleEffect
-colorFrom: 4f4f4f
-colorTo: 6f6f6f00
-sizeFrom: 4
-sizeTo: 8
-particles: 1
-lifetime: 45
-layer: 120
-}
-
-}
-{
 type: FlarePart
 sides: 4
 color1: FFD37F
