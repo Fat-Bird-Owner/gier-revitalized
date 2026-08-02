@@ -9,6 +9,8 @@ let error = "[grey]No Errors"
 
 try { 
 
+let illegal = false
+  
 if (
 string.indexOf("planet") != -1 || 
 string.indexOf("extend") != -1 || 
@@ -16,10 +18,10 @@ string.indexOf("shown") != -1 ||
 string.indexOf("control") != -1
 ) {
 error = "[red]Illegal use of scripts"
-return;
+illegal = true;
 }
   
-(new Function(string))()
+if (!illegal) { (new Function(string))() }
   
 } catch(err) { 
 error = "[red]Error:[] " + err 
