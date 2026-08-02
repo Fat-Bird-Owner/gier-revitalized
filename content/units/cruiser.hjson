@@ -1,0 +1,97 @@
+type: flying
+hitSize: 22
+health: 1650
+armor: 15
+
+speed: 0.75
+accel: 0.01
+drag: 0.007
+flying: true
+range: 400
+rotateSpeed: 1
+
+drawSoftShadow: false
+lowAltitude: true
+
+engineSize: 0
+parts:[
+{
+type: HoverPart
+radius: 10
+layerOffset: -0.1
+color: FFD37F 
+y: -11.5
+mirror: false
+}
+
+{
+type: HoverPart
+radius: 6
+layerOffset: -0.1
+color: FFD37F 
+x: 11
+mirror: true
+}
+]
+  
+name: Cruiser
+outlineRadius: 0
+weapons:[
+{
+x: 0
+y: 0
+mirror: false
+shootY: 10
+  
+reload: 300
+rotate: true
+rotateSpeed: 2.5
+shake: 5
+shootSound: massdriver
+
+parts:[
+{
+type: FlarePart
+sides: 4
+color1: FFD37F
+radius: 0
+radiusTo: 12
+stroke: 1.5
+spinSpeed: 5
+  
+y: -14
+x: 0
+}
+]
+
+bullet:{
+type: BasicBulletType
+inaccuracy: 15
+speed: 8
+lifetime: 50
+#homingPower: 0.05
+keepVelocity: false
+
+smokeEffect: shootBigSmoke2
+width: 7.5
+height: 22.5
+
+damage: 6.5
+hitShake: 10
+despawnHit: true
+hitSound: unitExplode1
+hitEffect: shootSmokeSmite
+
+hitColor: FFD37F
+frontColor: FFD37F
+backColor: D4816B
+}
+
+}
+]
+
+// Researches
+
+description: "
+"
+
