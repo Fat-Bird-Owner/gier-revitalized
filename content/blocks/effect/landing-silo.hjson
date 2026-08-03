@@ -1,0 +1,33 @@
+type: LandingPad
+size: 3
+name: Landing Silo
+
+baseExplosiveness: 25
+description: "
+Receives items from export silos
+
+Using water to absorb the kinetic force
+[green]
+- Receives anytimes from anywhere[salmon]
+- Requires water
+- Explosive
+"
+
+requirements: [graphite/250, silicon/100, metaglass/75, depleted-thorium/25]
+category: effect
+databaseTag: "adv-depleted-thorium"
+
+research: export-silo
+researchCostMultiplier: 0.25
+envEnabled: -1
+
+itemCapacity: 20
+arrivalDuration: 180
+liquidCapacity: 75
+cooldownTime: 300
+consumeLiquidAmount: 150
+
+customShadow: true
+consumes: {
+  liquids: [ water/0.25 ]
+}
