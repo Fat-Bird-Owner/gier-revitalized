@@ -1,5 +1,5 @@
 /// Cut (FromX, FromY, YAmount, XAmount)
-/// Unit kill 1 false
+/// Unit 1 kill false
 
 function returnFunc(split, index) {
   try {
@@ -22,13 +22,16 @@ function returnFunc(split, index) {
 
   return 4;
     
-  } else if (split[index] == "Unit") {
+  } else if (split[index] == "Player" || split[index] == "Unit") {
     index = Number(index);
 
-    let funcType = Number(split[index + 1])
+    let num = Number(split[index + 1])
+    let funcType = Number(split[index + 2])
+
+    let unit = Vars.player.unit()
+    if (split[index] == "Unit") unit = Groups.unit.get(num)
     
     if (funcType == "kill"){
-      let num = Number(split[index + 2])
       let fx = Number(split[index + 3])
       
       if (fx) Groups.unit.get(num).kill()
