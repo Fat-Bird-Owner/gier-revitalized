@@ -28,6 +28,3 @@ cooldownTime: 300
 consumeLiquidAmount: 150
 
 customShadow: true
-consumes: {
-  liquids: [ water/0.25 ]
-}
