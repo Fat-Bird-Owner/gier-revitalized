@@ -1,0 +1,81 @@
+type: flying
+flying: true
+outlineColor: 2f2f3f
+name: Ignition
+speed: 1.5
+accel: 0.04
+drag: 0.02
+
+hitSize: 14
+omniMovement: false
+rotateSpeed: 3.5
+health: 350
+engineOffset: 6
+engineSize: 0
+circleTarget: true
+range: 300
+drawSoftShadow: false
+parts:[
+{
+type: HoverPart
+radius: 6
+color: ffd37fff
+layerOffset: -0.1
+y: -8
+x: 0
+}
+]
+
+
+targetFlags:[
+reactor
+core
+generator
+factory
+storage
+turret
+]
+
+weapons:[
+{
+shootCone: 180
+x: 3.15
+y: 0.5
+shootSound: blockExplode1
+reload: 40
+inaccuracy: 15
+
+bullet:{
+spawnUnit: striker-missile
+}
+
+}
+// trails
+  {
+    alwaysShooting: true
+    alwaysContinuous: true
+    alternate: false
+    shootY: 0
+    recoil: 0
+    y: -2.25
+    x: -4.5
+    shootSound: none
+    bullet: {
+      type: BulletType
+      keepVelocity: false
+      speed: 0
+      collides: false
+      hittable: false
+      absorbable: false
+      shootEffect: none
+      smokeEffect: none
+      hitEffect: none
+      despawnEffect: none
+      trailLength: 20
+      trailWidth: 0.5
+      trailColor: ffd37fff
+      layer: 92
+      lightOpacity: 0
+    }
+  }
+]
