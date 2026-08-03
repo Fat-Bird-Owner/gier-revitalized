@@ -21,7 +21,9 @@ function returnFunc(split, index) {
 
   return null;
     
-  } catch(e) {}
+  } catch(e) {
+    return null;
+  }
 }
 
 Events.on(BlockDestroyEvent, e => {
