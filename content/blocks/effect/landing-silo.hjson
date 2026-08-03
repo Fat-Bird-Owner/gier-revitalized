@@ -13,7 +13,7 @@ Using water to absorb the kinetic force
 - Explosive
 "
 
-requirements: [graphite/250, silicon/100, metaglass/75, depleted-thorium/25]
+requirements: [graphite/250, silicon/100, metaglass/100, depleted-thorium/25]
 category: effect
 databaseTag: "adv-depleted-thorium"
 
@@ -23,7 +23,7 @@ envEnabled: -1
 
 itemCapacity: 20
 arrivalDuration: 180
-liquidCapacity: 75
+liquidCapacity: 300
 cooldownTime: 300
 consumeLiquidAmount: 150
 
