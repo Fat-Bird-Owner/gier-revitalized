@@ -43,7 +43,10 @@ actualRealGier.techTree.each(node => {
 
         content.shownPlanets.remove(remove);
         content.shownPlanets.add(Vars.content.planet("gr-gier"));
-
+        if (content instanceof Block) {
+        content.envEnabled = -1
+        content.buildVisibility = BuildVisibility.shown
+        }
     }
 
 })
