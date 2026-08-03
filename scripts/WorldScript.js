@@ -1,4 +1,5 @@
-/// Funcs: Cut (FromX, FromY, YAmount, XAmount)
+/// Cut (FromX, FromY, YAmount, XAmount)
+/// Unit kill 1 false
 
 function returnFunc(split, index) {
   try {
@@ -20,6 +21,22 @@ function returnFunc(split, index) {
   }
 
   return 4;
+    
+  } else if (split[index] == "Unit") {
+    index = Number(index);
+
+    let funcType = Number(split[index + 1])
+    
+    if (funcType == "kill"){
+      let num = Number(split[index + 2])
+      let fx = Number(split[index + 3])
+      
+      if (fx) Groups.unit.get(num).kill()
+      else Groups.unit.get(num).remove()
+        
+    }
+
+    return true;
     
   }
 
