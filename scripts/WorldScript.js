@@ -11,7 +11,7 @@ function returnFunc(split, index) {
   let xAmount = Number(split[index + 3]);
   let yAmount = Number(split[index + 4]);
     
-  if (isNan(fromX) || isNan(fromY) || isNan(xAmount) || isNan(yAmount)) return null;
+  if (isNaN(fromX) || isNaN(fromY) || isNaN(xAmount) || isNaN(yAmount)) return null;
 
   for (let y = 0; y < yAmount; y++){
     for (let x = 0; x < xAmount; x++){
@@ -23,7 +23,7 @@ function returnFunc(split, index) {
     
   }
 
-  return null;
+  return true;
     
   } catch(e) {
     return null;
