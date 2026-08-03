@@ -16,7 +16,7 @@ to = Vars.content.block(to)
 
 to.region = from.region;
 to.customShadowRegion = from.customShadowRegion;
-to.uiIcon = to.fullIcon = from.uiIcon;
+to.uiIcon = to.fullIcon = from.region;
 
 if (to instanceof LandingPad) to.podRegion = from.podRegion
   
