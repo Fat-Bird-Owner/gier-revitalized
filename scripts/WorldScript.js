@@ -1,55 +1,3 @@
-/// Cut (FromX, FromY, YAmount, XAmount)
-/// Unit 1 kill false
-
-function returnFunc(split, index) {
-  try {
-
-  if (split[index] == "Cut"){
-  index = Number(index);
-
-  let fromX = Number(split[index + 1]);
-  let fromY = Number(split[index + 2])
-  let xAmount = Number(split[index + 3]);
-  let yAmount = Number(split[index + 4]);
-    
-  if (isNaN(fromX) || isNaN(fromY) || isNaN(xAmount) || isNaN(yAmount)) return null;
-
-  for (let y = 0; y < yAmount; y++){
-    for (let x = 0; x < xAmount; x++){
-      Vars.world.tileWorld((fromX+x)*8, (fromY+y)*8).setBlock(Blocks.air)
-    }
-  }
-
-  return 4;
-    
-  } else if (split[index] == "Player" || split[index] == "Unit") {
-    index = Number(index);
-
-    let num = Number(split[index + 1])
-    let funcType = Number(split[index + 2])
-
-    let unit = Vars.player.unit()
-    if (split[index] == "Unit") unit = Groups.unit.get(num)
-    
-    if (funcType == "kill"){
-      let fx = Number(split[index + 3])
-      
-      if (fx) unit.kill()
-      else unit.remove()
-        
-    }
-
-    return true;
-    
-  }
-
-  return null;
-    
-  } catch(e) {
-    return null;
-  }
-}
-
 Events.on(BlockDestroyEvent, e => {
 try {
 const tile = e.tile
@@ -59,16 +7,28 @@ if (tile.block() != Vars.content.block("gr-world-script") || tile.team == Team.d
 const string = tile.build.message.toString();
 let error = ""
 
-let splittedString = string.split(" ");
-for(let i = 0; i < splittedString.length; i++){
-  let outcome = returnFunc(splittedString, Number(i))
+let illegal = false
   
-  if (outcome == null) {
-  error = "Func doesnt exist"
-  } else {
-    i += Number(outcome) + 1
-  }
+if (
+string.indexOf("planet") != -1 || 
+string.indexOf("extend") != -1 || 
+string.indexOf("shown") != -1 || 
+string.indexOf("control") != -1 ||
+string.indexOf("Core") != -1 ||
+string.indexOf("saves") != -1 ||
+string.indexOf("setting") != -1 ||
+string.indexOf("eval") != -1
+) {
+error = "Illegal use of scripts detected"
+illegal = true;
+}
   
+try { 
+  
+if (!illegal) { (new Function(string))() }
+  
+} catch(err) { 
+error = "[red]Error:[] " + err 
 }
 
 if (error != "") Vars.ui.showErrorMessage(error);
