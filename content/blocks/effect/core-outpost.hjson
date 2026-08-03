@@ -26,7 +26,6 @@ unitCapModifier: 20
 requirements: [
 lead/2500, 
 copper/2000, 
-graphite/1750, 
 graphite/1250, 
 titanium/450, 
 beryllium/450, 
