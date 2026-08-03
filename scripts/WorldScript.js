@@ -3,7 +3,7 @@
 function returnFunc(split, index) {
   try {
 
-  if (split[index] == "cut"){
+  if (split[index] == "Cut"){
   let fromX = split[index++]
   let fromY = split[index+2]
   let xAmount = split[index+3]
