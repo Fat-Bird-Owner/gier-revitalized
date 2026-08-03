@@ -7,10 +7,12 @@ planet: kela
 
 research: {
 parent: intercept
-objectives: [{
+objectives: [
+{
 type: SectorComplete
 preset: intercept
-}]
+}
+]
 }
   
 research: {
