@@ -19,7 +19,7 @@ function returnFunc(split, index) {
     }
   }
 
-  return true;
+  return 4;
     
   }
 
@@ -40,11 +40,13 @@ const string = tile.build.message.toString();
 let error = ""
 
 let splittedString = string.split(" ");
-for (let i in splittedString) {
+for(let i = 0; i < splittedString.length; i++){
   let outcome = returnFunc(splittedString, Number(i))
   
   if (outcome == null) {
   error = "Func doesnt exist"
+  } else {
+    i += Number(outcome) + 1
   }
   
 }
