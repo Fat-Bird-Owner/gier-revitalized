@@ -1,3 +1,29 @@
+/// Funcs: Cut (FromX, FromY, YAmount, XAmount)
+
+function returnFunc(split, index) {
+  try {
+
+  if (split[index] == "cut"){
+  let fromX = split[index++]
+  let fromY = split[index+2]
+  let xAmount = split[index+3]
+  let yAmount = split[index+4]
+    
+  if (!fromX || !fromY || !xAmount || !yAmount) return null;
+
+  for (let y = 0; y < yAmount; i++){
+    for (let x = 0; x < xAmount; i++){
+      Vars.world.tileWorld((fromX+x)*8, (fromY+y)*8).setBlock(Blocks.air)
+    }
+  }
+  
+  }
+
+  return null;
+    
+  } catch(e) {}
+}
+
 Events.on(BlockDestroyEvent, e => {
 try {
 const tile = e.tile
@@ -7,28 +33,15 @@ if (tile.block() != Vars.content.block("gr-world-script") || tile.team == Team.d
 const string = tile.build.message.toString();
 let error = ""
 
-let illegal = false
+let splittedString = string.split(" ");
+for (let i in splittedString) {
+  let outcome = returnFunc(splittedString, i)
   
-if (
-string.indexOf("planet") != -1 || 
-string.indexOf("extend") != -1 || 
-string.indexOf("shown") != -1 || 
-string.indexOf("control") != -1 ||
-string.indexOf("Core") != -1 ||
-string.indexOf("saves") != -1 ||
-string.indexOf("setting") != -1 ||
-string.indexOf("eval") != -1
-) {
-error = "Illegal use of scripts detected"
-illegal = true;
-}
+  if (outcome == null) {
+  error = "Func doesnt exist"
+  return;
+  }
   
-try { 
-  
-if (!illegal) { (new Function(string))() }
-  
-} catch(err) { 
-error = "[red]Error:[] " + err 
 }
 
 if (error != "") Vars.ui.showErrorMessage(error);
