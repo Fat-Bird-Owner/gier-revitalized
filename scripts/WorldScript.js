@@ -4,19 +4,23 @@ function returnFunc(split, index) {
   try {
 
   if (split[index] == "Cut"){
-  let fromX = split[index++]
-  let fromY = split[index+2]
-  let xAmount = split[index+3]
-  let yAmount = split[index+4]
+  index = Number(index);
+
+  let fromX = Number(split[index + 1]);
+  let fromY = Number(split[index + 2])
+  let xAmount = Number(split[index + 3]);
+  let yAmount = Number(split[index + 4]);
     
   if (!fromX || !fromY || !xAmount || !yAmount) return null;
 
-  for (let y = 0; y < yAmount; i++){
-    for (let x = 0; x < xAmount; i++){
+  for (let y = 0; y < yAmount; x++){
+    for (let x = 0; x < xAmount; y++){
       Vars.world.tileWorld((fromX+x)*8, (fromY+y)*8).setBlock(Blocks.air)
     }
   }
-  
+
+  return true;
+    
   }
 
   return null;
@@ -37,7 +41,7 @@ let error = ""
 
 let splittedString = string.split(" ");
 for (let i in splittedString) {
-  let outcome = returnFunc(splittedString, i)
+  let outcome = returnFunc(splittedString, Number(i))
   
   if (outcome == null) {
   error = "Func doesnt exist"
