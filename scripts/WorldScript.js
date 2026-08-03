@@ -41,7 +41,6 @@ for (let i in splittedString) {
   
   if (outcome == null) {
   error = "Func doesnt exist"
-  return;
   }
   
 }
