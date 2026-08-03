@@ -10,7 +10,7 @@ parent: intercept
 objectives: [{
 type: SectorComplete
 preset: intercept
-}];
+}]
 }
   
 research: {
