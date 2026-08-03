@@ -1,4 +1,5 @@
-type: GenericCrafter
+type: PowerTurret
+
 drawer:{
 type: DrawMulti
 drawers:[
@@ -18,7 +19,6 @@ layer: 125
 }
 ]
 }
-update: true
 
 destroyEffect: {
 type: WrapEffect
@@ -33,6 +33,21 @@ flammabilityScale: 3.5
 health: 65
 enableDrawStatus: false
 solid: true
+
+rotateSpeed: 0
+reload: 60
+range: 40
+shootType: {
+type: EmptyBulletType
+hitEffect: none
+despawnEffect: none
+shootEffect: none
+smokeEffect: none
+splashDamage: 50
+splashDamageRadius: 40
+scaledSplashDamage: true
+statusEffect: incendiary-depletion
+}
 
 destroyBullet:{
 fragBullets: 6
