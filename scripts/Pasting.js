@@ -11,8 +11,8 @@ try {
 for (let i = 0; i < pastes.length; i++){
 let {from, to} = pastes[i]
 
-from = Vars.content.blocks(from)
-to = Vars.content.blocks(to)
+from = Vars.content.block(from)
+to = Vars.content.block(to)
 
 to.region = from.region;
 to.customShadowRegion = from.customShadowRegion;
