@@ -28,6 +28,7 @@ liquidCapacity: 30
 
 research: "gr-fluid-cracker"
 researchCostMultiplier: 0.25
+envEnabled: -1
 
 ignoreLiquidFullness: true
 baseExplosiveness: 75
