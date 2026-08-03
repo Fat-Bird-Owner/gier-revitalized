@@ -18,7 +18,7 @@ drawSoftShadow: false
 parts:[
 {
 type: HoverPart
-radius: 6
+radius: 12
 color: ffd37fff
 layerOffset: -0.1
 y: -8
