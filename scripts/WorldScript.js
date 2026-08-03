@@ -23,7 +23,7 @@ function returnFunc(split, index) {
     
   }
 
-  return true;
+  return null;
     
   } catch(e) {
     return null;
