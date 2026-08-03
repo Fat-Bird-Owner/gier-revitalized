@@ -348,10 +348,16 @@ else ro = 1;
   
 if (b.tile.nearby(ro) == tile) {
   
-if (observerActivations >= 4) {
-Time.runTask(0.1 * 60, () => { try { runCircuit(b.tile)} } catch(e){} );
-} else {
-try { runCircuit(b.tile); } catch(e){}
+if(observerActivations >= 4){
+    Time.runTask(0.1 * 60, () => {
+        try{
+            runCircuit(b.tile);
+        }catch(e){}
+    });
+}else{
+    try{
+        runCircuit(b.tile);
+    }catch(e){}
 }
 
 observerActivations++;
