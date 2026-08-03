@@ -23,7 +23,7 @@ liquidCapacity: 50
 requirements: [lead/350, copper/150, silicon/100, metaglass/50, thorium/25]
 databaseTag: "adv-depleted-thorium"
 
-alwaysUnlocked: true
+alwaysUnlocked: false
 buildVisibility: shown
 envEnabled: -1
 
