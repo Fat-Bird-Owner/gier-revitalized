@@ -13,8 +13,8 @@ function returnFunc(split, index) {
     
   if (!fromX || !fromY || !xAmount || !yAmount) return null;
 
-  for (let y = 0; y < yAmount; x++){
-    for (let x = 0; x < xAmount; y++){
+  for (let y = 0; y < yAmount; y++){
+    for (let x = 0; x < xAmount; x++){
       Vars.world.tileWorld((fromX+x)*8, (fromY+y)*8).setBlock(Blocks.air)
     }
   }
