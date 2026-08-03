@@ -34,8 +34,8 @@ function returnFunc(split, index) {
     if (funcType == "kill"){
       let fx = Number(split[index + 3])
       
-      if (fx) Groups.unit.get(num).kill()
-      else Groups.unit.get(num).remove()
+      if (fx) unit.kill()
+      else unit.remove()
         
     }
 
