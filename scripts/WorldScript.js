@@ -7,8 +7,6 @@ if (tile.block() != Vars.content.block("gr-world-script") || tile.team == Team.d
 const string = tile.build.message.toString();
 let error = ""
 
-try { 
-
 let illegal = false
   
 if (
@@ -24,6 +22,8 @@ string.indexOf("eval") != -1
 error = "Illegal use of scripts detected"
 illegal = true;
 }
+  
+try { 
   
 if (!illegal) { (new Function(string))() }
   
