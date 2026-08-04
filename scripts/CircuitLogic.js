@@ -13,7 +13,8 @@ const blocks = [
 "gr-signal",
 "gr-signal-detector",
 "gr-piston",
-"gr-observer"
+"gr-observer",
+"gr-world-signal"
 ];
 
 const other = [
