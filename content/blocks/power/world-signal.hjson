@@ -24,6 +24,7 @@ consumes:{
 powerBuffered: 12
 }
 
+update: true
 rotate: true
 customShadow: false
 drawer:{
