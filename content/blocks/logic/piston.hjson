@@ -1,5 +1,5 @@
 type: Battery
-hasPower: false
+hasPower: true
 name: Piston
 description: "
 Pushes blocks away from it's face.
@@ -13,6 +13,10 @@ category: logic
 envEnabled: -1
 databaseTag: "circuit-logic"
 fullOverride: "gr-piston"
+
+consumes: {
+power: 0
+}
 
 blockGroup: logic
 attributes: {
