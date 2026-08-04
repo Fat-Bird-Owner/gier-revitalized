@@ -2,12 +2,22 @@ type: GenericCrafter
 size: 3
 name: Industrial Trimmer
 
+description: "
+Trims metaglass chunks into regular 
+metaglass
+[green]
+- Produces metaglass[red]
+- Explosive
+- Requires power
+"
+
 requirements: [lead/175, copper/100, graphite/75]
 category: crafting
 squareSprite: false
 
 research: sunder-furnace
 researcCostMultiplier: 0.15
+baseExplosiveness: 60
 
 envEnabled: -1
 shownPlanets: [gier, kela]
