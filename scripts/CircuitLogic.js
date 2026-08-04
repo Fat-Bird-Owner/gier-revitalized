@@ -398,11 +398,7 @@ let builds = Groups.build.copy().select(b => b.block == block);
 builds.each(b => {
 try {
 
-Time.runTask(0.1 * 60, () => {
-try{
 runCircuit(b.tile);
-}catch(e){}
-});
   
 } catch(e){
 Vars.ui.showErrorMessage(e)
