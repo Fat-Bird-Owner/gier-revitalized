@@ -14,7 +14,8 @@ const blocks = [
 "gr-signal-detector",
 "gr-piston",
 "gr-observer",
-"gr-world-signal"
+"gr-world-signal",
+"gr-circuit-diode"
 ];
 
 const other = [
@@ -23,7 +24,8 @@ const other = [
 "gr-circuit-timer",
 "gr-signal-detector",
 "gr-piston",
-"gr-observer"
+"gr-observer",
+"gr-circuit-diode"
 ];
 
 function runCircuit(startTile){
@@ -236,6 +238,20 @@ movingBuild.block.size
 }
 
 return;
+} else if (index == 6) {
+let number = Number(frontBuild.message.toString());
+
+if (!number) number = 0.5;
+if (!frontBuild.front() || !frontBuild.front().power ) return
+let graph = frontBuild.front().power.graph
+  
+const stored = graph.getBatteryStored();
+const capacity = graph.getBatteryCapacity();
+const minThres = capacity * number;
+
+frontBuild.front().enabled = (stored >= minThres)
+return;
+  
 }
   
 }
