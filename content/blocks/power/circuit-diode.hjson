@@ -1,0 +1,30 @@
+type: Battery
+size: 1
+name: Circuit Diode
+
+maxTextLength: 10
+description: "
+Disables the power building in front
+of it when the stored power is under
+the inputted fraction
+
+Empty input is treated as 0.5 or 50%
+"
+
+solid: false
+health: 150
+armor: -2
+baswExplosiveness: 2.2
+
+category: logic
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[copper/25, titanium/15, silicon/10]
+consumes:{
+powerBuffered: 12
+}
+
+rotate: true
+customShadow: true
+rotateDraw: false
