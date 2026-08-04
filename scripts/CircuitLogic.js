@@ -242,6 +242,8 @@ return;
 let number = Number(frontBuild.message.toString());
 
 if (!number) number = 0.5;
+else if (number > 1) number = 1;
+  
 if (!frontBuild.front() || !frontBuild.front().power ) return
 let graph = frontBuild.front().power.graph
   
