@@ -389,6 +389,29 @@ time += Time.delta;
 Vars.ui.showInfoToast(e, 5);  
 }});
 
+Events.on(WorldLoadEvent, () => {
+try {
+
+let block = Vars.content.block("gr-world-signal")
+let builds = Groups.build.copy().select(b => b.block == block);
+
+builds.each(b => {
+try {
+
+Time.runTask(0.1 * 60, () => {
+try{
+runCircuit(b.tile);
+}catch(e){}
+});
+  
+} catch(e){
+Vars.ui.showErrorMessage(e)
+}});
+  
+} catch(e){
+Vars.ui.showErrorMessage(e)
+}});
+
 /*
 Events.on(BuildDamageEvent, e => {
 try{
