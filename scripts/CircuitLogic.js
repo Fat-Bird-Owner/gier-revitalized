@@ -397,11 +397,15 @@ let block = Vars.content.block("gr-world-signal")
 Groups.build.each(b => {
 try {
 
+if (b.block == block){
+  
 Time.runTask(0.5 * 60, () => {
         try{
             runCircuit(b.tile);
         }catch(e){}
     });
+
+}
   
 } catch(e){
 Vars.ui.showErrorMessage(e)
