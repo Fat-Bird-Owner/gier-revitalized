@@ -393,9 +393,8 @@ Events.on(WorldLoadEvent, () => {
 try {
 
 let block = Vars.content.block("gr-world-signal")
-let builds = Groups.build.copy().select(b => b.block == block);
 
-builds.each(b => {
+Group.build.each(b => {
 try {
 
 runCircuit(b.tile);
