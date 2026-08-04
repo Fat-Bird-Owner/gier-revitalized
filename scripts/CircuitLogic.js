@@ -394,7 +394,7 @@ try {
 
 let block = Vars.content.block("gr-world-signal")
 
-Group.build.each(b => {
+Groups.build.each(b => {
 try {
 
 runCircuit(b.tile);
