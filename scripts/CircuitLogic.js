@@ -244,7 +244,7 @@ let number = Number(frontBuild.message.toString());
 if (!number) number = 0.5;
 else if (number > 1) number = 1;
   
-if (!frontBuild.front() || !frontBuild.front().power ) return
+if (!frontBuild.front() || !frontBuild.front().power || frontBuild.front().block.privileged || frontBuild.front().team != frontBuild.team) return
 let graph = frontBuild.front().power.graph
   
 const stored = graph.getBatteryStored();
