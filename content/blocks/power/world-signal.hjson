@@ -1,0 +1,39 @@
+type: Battery
+size: 1
+name: World Signal
+description: "
+Releases a pulse when the world loaded
+"
+
+solid: false
+health: 150
+armor: -2
+baswExplosiveness: 2.2
+
+attributes:{
+circuitRange: 105
+}
+
+category: logic
+databaseTag: "gier"
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[titanium/15, surge-alloy/10, graphite/15, copper/25]
+consumes:{
+powerBuffered: 12
+}
+
+rotate: true
+customShadow: false
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+}
+{
+type: DrawSideRegion
+}
+]
+}
