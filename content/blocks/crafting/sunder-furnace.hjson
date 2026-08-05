@@ -21,7 +21,7 @@ databaseTag: "gier"
 researchCostMultiplier: 0.05
 squareSprite: false
 
-itemCapacity: 120
+itemCapacity: 240
 outputItems: [
 metaglass-chunk/60
 silicon/60
