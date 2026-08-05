@@ -304,7 +304,8 @@ const circuitRange = block.attributes.get(Attribute.get("circuitRange"));
 const pistonPushLength = block.attributes.get(Attribute.get("pistonPushLength"));
   
 block.databaseTag = "circuit-logic";
-
+if (!(block instanceof MessageBlock)) block.privileged = true
+  
 block.stats.remove(stat.CircuitRate);
 
 if(rate) block.stats.add(stat.CircuitRate, rate, statUnit.circuitUnit);
@@ -314,7 +315,7 @@ if (pistonPushLength) block.stats.add(stat.PistonPushLength, pistonPushLength, S
 
 if (blocks[i] == "gr-observer") block.replaceable = false;
 if (blocks[i] != "gr-signal" && blocks[i] != "gr-damage-signal"){
-
+  
 let parent = "gr-signal"
 if (blocks[i] == "gr-world-signal") parent = "gr-observer"
 else if (blocks[i] == "gr-circuit-diode") parent = "gr-observer"
