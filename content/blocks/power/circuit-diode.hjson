@@ -27,4 +27,4 @@ powerBuffered: 12
 
 rotate: true
 customShadow: true
-rotateDraw: false
+rotateDraw: true
