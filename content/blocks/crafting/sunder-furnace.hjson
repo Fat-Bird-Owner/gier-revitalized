@@ -17,7 +17,7 @@ customShadow: true
 baseExplosiveness: 150
 destroyBullet: {
 type: BombBulletType
-splashDamage: 2000
+splashDamage: 3000
 splashDamageRadius: 80
 scaledSplashDamage: true
 }
