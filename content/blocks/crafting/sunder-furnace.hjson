@@ -7,9 +7,15 @@ description: "
 [sky]Priority:[] 5
 
 Huge Smelting furnace, Able to smelt both metaglass and silicon at the same time.
+[green]
+- Produces silicon and metaglass chunks[red]
+- Extremely explosive
+- Requires power
 "
 
 customShadow: true
+baseExplosiveness: 150
+
 requirements:[lead/1250,copper/850,graphite/650]
 buildtime: 1500
 research:{
