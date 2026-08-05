@@ -24,11 +24,11 @@ shownPlanets: [gier, kela]
 databaseTag: "gier"
 
 itemCapacity: 24
-outputItem: metaglass/6
-craftTime: 180
+outputItem: metaglass/10
+craftTime: 72
 consumes: {
 power: 0.5
-items: [metaglass-chunk/12]
+items: [metaglass-chunk/10]
 }
 
 customShadow: true
