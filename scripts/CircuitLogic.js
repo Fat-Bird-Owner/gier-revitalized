@@ -314,7 +314,13 @@ if (pistonPushLength) block.stats.add(stat.PistonPushLength, pistonPushLength, S
 
 if (blocks[i] == "gr-observer") block.replaceable = false;
 if (blocks[i] != "gr-signal" && blocks[i] != "gr-damage-signal"){
-let node = new TechTree.TechNode(Vars.content.block("gr-signal").techNode , block, block.requirements);
+
+let parent = "gr-signal"
+if (blocks[i] == "gr-world-signal") parent = "gr-observer"
+else if (blocks[i] == "gr-circuit-diode") parent = "gr-observer"
+  
+parent = Vars.content.block(parent).techNode
+let node = new TechTree.TechNode(parent , block, block.requirements);
 }
   
 }
