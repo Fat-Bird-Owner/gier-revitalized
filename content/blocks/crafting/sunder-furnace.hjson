@@ -15,6 +15,12 @@ Huge Smelting furnace, Able to smelt both metaglass and silicon at the same time
 
 customShadow: true
 baseExplosiveness: 150
+destroyBullet: {
+type: BombBulletType
+splashDamage: 2000
+splashDamageRadius: 80
+scaledSplashDamage: true
+}
 
 requirements:[lead/1250,copper/850,graphite/650]
 buildtime: 1500
