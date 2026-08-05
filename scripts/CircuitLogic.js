@@ -248,7 +248,7 @@ if (!frontBuild.front() || !frontBuild.front().power || frontBuild.front().block
 let graph = frontBuild.front().power.graph
   
 const stored = graph.getBatteryStored();
-const capacity = graph.getBatteryCapacity();
+const capacity = graph.getTotalBatteryCapacity();
 const minThres = capacity * number;
 
 frontBuild.front().enabled = (stored >= minThres)
