@@ -318,6 +318,10 @@ if (blocks[i] != "gr-signal" && blocks[i] != "gr-damage-signal"){
 let parent = "gr-signal"
 if (blocks[i] == "gr-world-signal") parent = "gr-observer"
 else if (blocks[i] == "gr-circuit-diode") parent = "gr-observer"
+else if (blocks[i] == "gr-circuit-splitter") parent = "gr-circuit-wire"
+else if (blocks[i] == "gr-circuit-timer") parent = "gr-circuit-wire"
+else if (blocks[i] == "gr-signal-detector") parent = "gr-circuit-timer"
+else if (blocks[i] == "gr-piston") parent = "gr-circuit-diode"
   
 parent = Vars.content.block(parent).techNode
 let node = new TechTree.TechNode(parent , block, block.requirements);
