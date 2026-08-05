@@ -102,6 +102,7 @@ colors: [F9A3C7FF, FCD1E3FF, FFFFFFFF]
 damage: 350
 lifetime: 120
 armorMultiplier: 2
+showStats: true
 
 hitEffect: {
 type: ParticleEffect
@@ -129,6 +130,7 @@ hitSound: blockExplodeElectricBig
 hittable: false
 reflectable: false
 absorbable: false
+showStats: true
 
 trailRotation: true
 trailEffect: [
