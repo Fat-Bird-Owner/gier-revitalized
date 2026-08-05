@@ -23,7 +23,7 @@ envEnabled: -1
 shownPlanets: [gier, kela]
 databaseTag: "gier"
 
-itemCapacity: 24
+itemCapacity: 60
 outputItem: metaglass/10
 craftTime: 72
 consumes: {
