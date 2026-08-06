@@ -12,7 +12,7 @@ health: 105
 armor: -2
 baswExplosiveness: 15
 
-range: t
+range: 5
 attributes:{
 # The speed of the circuit =1/circuitRate
 circuitRate: 10
