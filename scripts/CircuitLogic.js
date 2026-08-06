@@ -268,7 +268,7 @@ if(!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.
 
 if (index == 8){
 if (frontBuild.findLink() != null) {
-distance += Math.dst(frontBuild.x, frontBuild.y, frontBuild.findLink().x, frontBuild.findLink().y);
+distance += Mathf.dst(frontBuild.x, frontBuild.y, frontBuild.findLink().x, frontBuild.findLink().y);
 distance++;
   
 nearby(frontBuild.findLink().tile);
