@@ -11,9 +11,7 @@ const items = [
 "plastanium",
 "thorium",
 "phase-fabric",
-"carbide",
 "sand",
-"coal",
 "gr-depleted-thorium"
 ];
 
