@@ -1,0 +1,35 @@
+type: Battery
+size: 1
+name: Switch Gate
+description: "
+Quite similar to the circuit splitter
+
+but splits off only when the building in
+front is disabled, the check is inverted
+if the building itself is disabled
+"
+
+solid: false
+health: 220
+armor: -2
+
+attributes:{
+# The speed of the circuit =1/circuitRate
+circuitRate: 10
+# Damage of heating
+circuitHeatDamage: 35
+}
+
+category: logic
+databaseTag: "gier"
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[titanium/20, depleted-thorium/15, silicon/10]
+consumes:{
+powerBuffered: 50
+}
+
+customShadow: false
+rotate: true
+rotateDraw: true
