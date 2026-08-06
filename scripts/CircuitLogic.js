@@ -268,7 +268,7 @@ if(!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.
 
 if (index == 8){
 if (frontBuild.lastLink != null) nearby(frontBuild.lastLink.tile)
-if (frontBuild.front() != null) nearby(frontBuild.front().tile)
+if (frontBuild.front() != null) nearby(frontBuild.tile)
 return;
 }
   
