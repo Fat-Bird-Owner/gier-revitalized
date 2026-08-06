@@ -267,8 +267,8 @@ try{
 if(!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
 
 if (index == 8){
-if (frontBuild.lastLink != null) nearby(frontBuild.lastLink.tile)
-if (frontBuild.front() != null) nearby(frontBuild.tile)
+if (frontBuild.lastLink != null) nearby(build.lastLink.tile)
+if (frontBuild.front() != null) nearby(build.tile)
 return;
 }
   
