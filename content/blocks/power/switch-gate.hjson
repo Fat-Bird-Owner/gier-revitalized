@@ -33,3 +33,6 @@ powerBuffered: 50
 customShadow: false
 rotate: true
 rotateDraw: true
+drawer: {
+type: DrawDefault
+}
