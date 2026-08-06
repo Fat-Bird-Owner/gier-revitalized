@@ -1,5 +1,6 @@
 speedMultiplier: 0.5
 reloadMultiplier: 0.65
+outline: false
 
 name: Anchored
 applyEffect:{
