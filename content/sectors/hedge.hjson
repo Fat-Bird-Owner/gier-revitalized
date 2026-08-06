@@ -32,7 +32,7 @@ gr-rail-overflow
 }
 
 research: {
-parent: fragmented
+parent: fragmented-fix
 objectives:[
 gr-core-facility
 gr-insulated-wall
