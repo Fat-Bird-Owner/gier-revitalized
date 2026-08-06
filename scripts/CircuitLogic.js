@@ -346,7 +346,7 @@ else if (blocks[i] == "gr-circuit-timer") parent = "gr-circuit-wire"
 else if (blocks[i] == "gr-signal-detector") parent = "gr-circuit-timer"
 else if (blocks[i] == "gr-piston") parent = "gr-circuit-diode"
 else if (blocks[i] == "gr-switch-gate") parent = "gr-circuit-splitter"
-  
+else if (blocks[i] == "gr-transmission-line") parent = "gr-circuit-wire"
 parent = Vars.content.block(parent).techNode
 let node = new TechTree.TechNode(parent , block, block.requirements);
 }
