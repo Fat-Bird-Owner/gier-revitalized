@@ -25,7 +25,8 @@ const other = [
 "gr-signal-detector",
 "gr-piston",
 "gr-observer",
-"gr-circuit-diode"
+"gr-circuit-diode",
+"gr-switch-gate"  
 ];
 
 function runCircuit(startTile){
@@ -262,9 +263,15 @@ Time.run((baseTimer/circuitRate) * 60, () => {
 try{
 if(!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
 
-nearby(frontBuild.tile);
+if (index != 7) nearby(frontBuild.tile);
 
-if(index == 1){
+  
+if(index == 1 || index == 7){
+
+if (index == 7) {
+if (!frontBuild.front() || frontBuild.front().enabled == frontBuild.enabled) return;
+}
+  
 const left = frontBuild.left();
 const right = frontBuild.right();
 
@@ -272,6 +279,7 @@ if(left && left.isValid()) nearby(left.tile);
 if(right && right.isValid()) nearby(right.tile);
 }
 
+  
 }catch(e){
 Vars.ui.showInfoToast(String(e) + "[red] - propagation", 5);
 }});
