@@ -9,5 +9,6 @@ research: extractor-bastion
 researchCostMultiplier: 0.25
 shownPlanets: [kela, gier]
 
+radius: 100
 databaseTag: "gier"
 customShadow: true
