@@ -267,7 +267,12 @@ try{
 if(!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
 
 if (index == 8){
-if (frontBuild.findLink() != null) nearby(frontBuild.findLink().tile)
+if (frontBuild.findLink() != null) {
+distance += Math.abs((frontBuild.x - frontBuild.findLink().x) + (frontBuild.y - frontBuild.findLink().y));
+nearby(frontBuild.findLink().tile);
+return;
+}
+  
 if (frontBuild.front() != null) nearby(frontBuild.front().tile)
 return;
 }
