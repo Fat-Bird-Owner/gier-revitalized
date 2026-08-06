@@ -1,0 +1,32 @@
+type: MessageBlock
+size: 1
+name: Sensor
+
+maxTextLength: 40
+description: "
+Disables the building infront of it
+input order goes:
+
+[accent]<Type> <Name> <Amount>[]
+
+type: Includes liquid and item
+name: copper, silicon, surge-alloy, etc
+"
+
+solid: false
+health: 150
+armor: -2
+baswExplosiveness: 2.2
+
+category: logic
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[copper/25, titanium/15, silicon/10]
+consumes:{
+powerBuffered: 12
+}
+
+rotate: true
+customShadow: true
+rotateDraw: true
