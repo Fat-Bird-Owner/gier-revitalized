@@ -12,3 +12,7 @@ shownPlanets: [kela, gier]
 radius: 100
 databaseTag: "gier"
 customShadow: true
+
+consumes: {
+power: 0.15
+}
