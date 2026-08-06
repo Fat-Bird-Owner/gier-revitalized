@@ -1,0 +1,34 @@
+type: DirectionBridge
+size: 1
+name: Transmission Line
+description: "
+Transmit signal to the next connected bridge
+otherwise the building in front if there isn't
+any
+"
+
+solid: false
+health: 105
+armor: -2
+baswExplosiveness: 15
+
+range: t
+attributes:{
+# The speed of the circuit =1/circuitRate
+circuitRate: 10
+# Damage of heating
+circuitHeatDamage: 40
+}
+
+category: logic
+databaseTag: "gier"
+envEnabled: -1
+shownPlanets: [kela, gier]
+
+requirements:[copper/25, titanium/20, silicon/40]
+consumes:{
+powerBuffered: 24
+}
+
+rotate: true
+customShadow: true
