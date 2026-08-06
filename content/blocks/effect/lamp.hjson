@@ -1,0 +1,13 @@
+type: LightBlock
+size: 1
+name: Lamp
+
+category: effect
+requirements: [lead/175, copper/100, titanium/75, silicon/25]
+  
+research: extractor-bastion
+researchCostMultiplier: 0.25
+shownPlanets: [kela, gier]
+
+databaseTag: "gier"
+customShadow: true
