@@ -16,7 +16,8 @@ const blocks = [
 "gr-observer",
 "gr-world-signal",
 "gr-circuit-diode",
-"gr-switch-gate"
+"gr-switch-gate",
+"gr-transmission-line"
 ];
 
 const other = [
@@ -27,7 +28,8 @@ const other = [
 "gr-piston",
 "gr-observer",
 "gr-circuit-diode",
-"gr-switch-gate"  
+"gr-switch-gate",
+"gr-transmission-line"
 ];
 
 function runCircuit(startTile){
@@ -264,6 +266,12 @@ Time.run((baseTimer/circuitRate) * 60, () => {
 try{
 if(!frontBuild || !frontBuild.isValid() || Vars.state.isPaused() || !Vars.state.isPlaying()) return;
 
+if (index == 8){
+if (frontBuild.lastLink != null) nearby(frontBuild.lastLink.tile)
+if (frontBuild.front() != null) nearby(frontBuild.front().tile)
+return;
+}
+  
 if (index != 7) nearby(frontBuild.tile);
 
   
