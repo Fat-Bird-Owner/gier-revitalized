@@ -29,7 +29,8 @@ const other = [
 "gr-observer",
 "gr-circuit-diode",
 "gr-switch-gate",
-"gr-transmission-line"
+"gr-transmission-line",
+"gr-point"
 ];
 
 function runCircuit(startTile){
@@ -258,6 +259,13 @@ const minThres = capacity * number;
 frontBuild.front().enabled = (stored >= minThres)
 return;
   
+} else if (index == 9){
+if (frontBuild.acceptItem(frontBuild, Vars.content.items("gr-signal")){
+frontBuild.items.add(Vars.content.items("gr-signal", 1);
+distance += frontBuild.block.attributes.get("");
+}
+
+return;
 }
   
 }
@@ -349,7 +357,7 @@ else if (blocks[i] == "gr-signal-detector") parent = "gr-circuit-timer"
 else if (blocks[i] == "gr-piston") parent = "gr-circuit-diode"
 else if (blocks[i] == "gr-switch-gate") parent = "gr-circuit-splitter"
 else if (blocks[i] == "gr-transmission-line") parent = "gr-circuit-wire"
-  
+
 parent = Vars.content.block(parent).techNode
 let node = new TechTree.TechNode(parent , block, block.requirements);
 }
