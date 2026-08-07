@@ -30,7 +30,7 @@ shootEffect: generate
 shootSound: shootArc
   
 ammoTypes: {
-  signal: {
+  signal-ammo: {
     type: BasicBulletType
     width: 0
     height: 0
