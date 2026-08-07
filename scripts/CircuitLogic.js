@@ -260,7 +260,7 @@ frontBuild.front().enabled = (stored >= minThres)
 return;
   
 } else if (index == 9){
-if (frontBuild.acceptItem(frontBuild, Vars.content.item("gr-signal-ammo")){
+if (frontBuild.acceptItem(frontBuild, Vars.content.item("gr-signal-ammo"))){
 frontBuild.items.add(Vars.content.items("gr-signal-ammo", 1);
 distance += frontBuild.block.attributes.get("distanceIncrease");
 }
