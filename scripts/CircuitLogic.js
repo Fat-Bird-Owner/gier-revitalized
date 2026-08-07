@@ -350,6 +350,8 @@ if (blocks[i] == "gr-observer") block.replaceable = false;
 if (blocks[i] != "gr-signal" && blocks[i] != "gr-damage-signal"){
   
 let parent = "gr-signal"
+block.shownPlanets = Vars.content.block(parent).shownPlanets;
+  
 if (blocks[i] == "gr-world-signal") parent = "gr-observer"
 else if (blocks[i] == "gr-circuit-diode") parent = "gr-observer"
 else if (blocks[i] == "gr-circuit-splitter") parent = "gr-circuit-wire"
@@ -360,7 +362,6 @@ else if (blocks[i] == "gr-switch-gate") parent = "gr-circuit-splitter"
 else if (blocks[i] == "gr-transmission-line") parent = "gr-circuit-wire"
 
 parent = Vars.content.block(parent).techNode
-block.shownPlanets = parent.content.shownPlanets;
   
 let node = new TechTree.TechNode(parent , block, block.requirements);
 }
