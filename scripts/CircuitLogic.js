@@ -17,7 +17,8 @@ const blocks = [
 "gr-world-signal",
 "gr-circuit-diode",
 "gr-switch-gate",
-"gr-transmission-line"
+"gr-transmission-line",
+"gr-point"
 ];
 
 const other = [
