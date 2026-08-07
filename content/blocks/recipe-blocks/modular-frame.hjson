@@ -19,3 +19,5 @@ databaseTag: "freight-block"
 category: units
 research: freight-assembler
 researchCostMultiplier: 0.15
+
+health: 1250
