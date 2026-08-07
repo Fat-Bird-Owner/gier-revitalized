@@ -22,7 +22,7 @@ acceptsItems: false
 alwaysAllowDeposit: false
 outlineRadius: 0
 
-requirement: [lead/100, copper/50, titanium/40, silicon/25]
+requirements: [lead/100, copper/50, titanium/40, silicon/25]
 category: turret
 databaseTag: "gier"
 
