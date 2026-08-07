@@ -1,0 +1,4 @@
+type: Floor
+name: "Marsh"
+variants: 5
+drawEdgeOut: true
