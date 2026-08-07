@@ -5,7 +5,8 @@ size: 1
 maxAmmo: 5
   
 description: "
-Shoots circuit pulses can store five charges at a time
+Shoots circuit pulses can store five 
+charges at a time
 
 [green]
 - Applies corrupted
