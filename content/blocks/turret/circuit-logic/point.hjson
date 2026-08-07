@@ -41,8 +41,8 @@ ammoTypes: {
     status: corrupted
     statusDuration: 120
 
-    lifetime: 40
-    speed: 4
+    lifetime: 20
+    speed: 8
 
     hitEffect: none
     smokeEffect: none
@@ -52,7 +52,7 @@ ammoTypes: {
     ammoMultiplier: 1
       
     trailRotation: true
-    trailInterval: 2
+    trailInterval: 1
     trailEffect: {
     type: ParticleEffect
     particles: 1
