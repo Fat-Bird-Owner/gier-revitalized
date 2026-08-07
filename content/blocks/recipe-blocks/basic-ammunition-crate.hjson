@@ -18,6 +18,8 @@ requirements: [lead/50, metaglass/25, silicon/25]
 placeablePlayer: false
 databaseTag: "freight-block"
 
+health: 750
+
 category: units
 research: freight-assembler
 researchCostMultiplier: 0.15
