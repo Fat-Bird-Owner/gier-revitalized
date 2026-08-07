@@ -3,7 +3,7 @@ name: Spare Cell
 size: 2
 
 description: "
-Multiple times more durable then
+Multiple times more durable than
 a normal power cell
 
 Provides better power flow to units
@@ -22,3 +22,5 @@ databaseTag: "freight-block"
 category: units
 research: freight-assembler
 researchCostMultiplier: 0.15
+
+health: 750
