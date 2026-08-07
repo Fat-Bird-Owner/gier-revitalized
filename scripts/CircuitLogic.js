@@ -360,6 +360,8 @@ else if (blocks[i] == "gr-switch-gate") parent = "gr-circuit-splitter"
 else if (blocks[i] == "gr-transmission-line") parent = "gr-circuit-wire"
 
 parent = Vars.content.block(parent).techNode
+block.shownPlanets = parent.shownPlanets;
+  
 let node = new TechTree.TechNode(parent , block, block.requirements);
 }
   
