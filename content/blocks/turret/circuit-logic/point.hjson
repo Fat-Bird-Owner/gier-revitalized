@@ -38,8 +38,8 @@ ammoTypes: {
     hitSize: 8
       
     damage: 25
-    statusEffect: corrupted
-    statusDuration: 240
+    status: corrupted
+    statusDuration: 120
 
     lifetime: 40
     speed: 4
