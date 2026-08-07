@@ -20,7 +20,7 @@ distanceIncrease: 5
 
 acceptsItems: false
 alwaysAllowDeposit: false
-outlineRadiusm 0
+outlineRadius: 0
 
 requirement: [lead/100, copper/50, titanium/40, silicon/25]
 category: turret
