@@ -71,5 +71,5 @@ ammoTypes: {
 
 drawer: {
 type: DrawTurret
-basePrefixm "armored-"
+basePrefix: "armored-"
 }
