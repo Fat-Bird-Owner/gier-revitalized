@@ -262,7 +262,7 @@ return;
 } else if (index == 9){
 if (frontBuild.acceptItem(frontBuild, Vars.content.items("gr-signal")){
 frontBuild.items.add(Vars.content.items("gr-signal", 1);
-distance += frontBuild.block.attributes.get("");
+distance += frontBuild.block.attributes.get("distanceIncrease");
 }
 
 return;
