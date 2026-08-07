@@ -1,0 +1,70 @@
+type: ItemTurret
+name: Point
+size: 1
+
+maxAmmo: 5
+  
+description: "
+Shoots circuit pulses can store five charges at a time
+
+[green]
+- Applies corrupted
+- Circuit turret[red]
+- Explosive
+"
+
+baseExplosiveness: 45
+attributes: {
+distanceIncrease: 5
+}
+
+acceptsItems: false
+alwaysAllowDeposit: false
+  
+requirement: [lead/100, copper/50, titanium/40, silicon/25]
+category: turret
+databaseTag: "gier"
+
+reload: 80
+shootEffect: generate
+shootSound: shootArc
+  
+ammoTypes: {
+  signal: {
+    type: BasicBulletType
+    width: 0
+    height: 0
+    hitSize: 8
+      
+    damage: 25
+    statusEffect: corrupted
+    statusDuration: 240
+
+    lifetime: 40
+    speed: 4
+
+    hitEffect: none
+    smokeEffect: none
+    despawnEffect: none
+
+    displayAmmoMultiplier: false
+    ammoMultiplier: 1
+      
+    trailRotation: true
+    trailInterval: 8
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 2
+    cone: 0
+    sizeFrom: 2
+    sizeTo: 2
+    colorFrom: "ffd37fff"
+    colorTo: "ffd37f00"
+    region: "gr-triangle"
+    offset: -90
+    randLength: false
+    }
+      
+  }
+}
