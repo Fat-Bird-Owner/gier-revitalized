@@ -68,3 +68,8 @@ ammoTypes: {
       
   }
 }
+
+drawer: {
+type: DrawTurret
+basePrefixm "armored-"
+}
