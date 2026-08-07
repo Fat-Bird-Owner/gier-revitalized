@@ -2,6 +2,12 @@ type: LiquidJunction
 name: Fluid Junction
 category: liquid
 
+description: "
+Allows for the transportation of
+liquid in a straight line, The same
+as regular junctions
+"
+
 customShadow: true
 
 requirements: [metaglass/2, plastanium/1]
