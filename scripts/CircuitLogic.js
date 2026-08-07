@@ -262,8 +262,8 @@ return;
   
 } else if (index == 9){
 if (frontBuild.acceptItem(frontBuild, Vars.content.item("gr-signal-ammo"))){
-frontBuild.items.add(Vars.content.item("gr-signal-ammo"), 1);
-distance += frontBuild.block.attributes.get("distanceIncrease");
+frontBuild.handleItem(frontBuild, Vars.content.item("gr-signal-ammo"));
+distance += frontBuild.block.attributes.get(Attributes.get("distanceIncrease"));
 }
 
 return;
