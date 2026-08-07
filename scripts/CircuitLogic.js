@@ -448,7 +448,6 @@ Events.on(WorldLoadEvent, () => {
 try {
 
 let block = Vars.content.block("gr-world-signal")
-log(Groups.build.size());
   
 Groups.build.each(b => {
 try {
