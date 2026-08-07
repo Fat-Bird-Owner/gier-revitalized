@@ -1,0 +1,4 @@
+type: Floor
+name: "Jaggy Marsh"
+variants: 0
+drawEdgeOut: true
