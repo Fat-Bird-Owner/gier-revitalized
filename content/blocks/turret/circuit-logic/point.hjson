@@ -52,7 +52,7 @@ ammoTypes: {
     ammoMultiplier: 1
       
     trailRotation: true
-    trailInterval: 8
+    trailInterval: 2
     trailEffect: {
     type: ParticleEffect
     particles: 1
