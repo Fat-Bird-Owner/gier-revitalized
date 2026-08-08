@@ -1,0 +1,77 @@
+type: ItemTurret
+name: Blunt
+size: 2
+
+maxAmmo: 5
+  
+description: "
+Shoots circuit pulses can store five 
+charges at a time
+
+[green]
+- Applies corrupted
+- Circuit turret[red]
+- Explosive
+"
+
+baseExplosiveness: 45
+attributes: {
+distanceIncrease: 10
+}
+
+acceptsItems: false
+alwaysAllowDeposit: false
+outlineRadius: 0
+
+requirements: [lead/250, copper/150, titanium/100, silicon/50]
+category: turret
+databaseTag: "gier"
+
+reload: 80
+shootEffect: generate
+shootSound: shootArc
+  
+ammoTypes: {
+  signal-ammo: {
+    type: BasicBulletType
+    width: 0
+    height: 0
+    hitSize: 8
+      
+    damage: 25
+    status: corrupted
+    statusDuration: 120
+
+    lifetime: 20
+    speed: 8
+
+    hitEffect: none
+    smokeEffect: none
+    despawnEffect: none
+
+    displayAmmoMultiplier: false
+    ammoMultiplier: 1
+      
+    trailRotation: true
+    trailInterval: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 2
+    cone: 0
+    sizeFrom: 2
+    sizeTo: 2
+    colorFrom: "ffd37fff"
+    colorTo: "ffd37f00"
+    region: "gr-triangle"
+    offset: -90
+    randLength: false
+    }
+      
+  }
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: "armored-"
+}
