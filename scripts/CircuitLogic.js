@@ -372,7 +372,7 @@ let node = new TechTree.TechNode(parent , block, block.requirements);
   
 }
 }catch(e){
-Vars.ui.showText("CircuitLogic", String(e));
+Vars.ui.showText("CircuitLogic - Startup", String(e));
 }});
 
 
