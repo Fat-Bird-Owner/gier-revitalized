@@ -18,12 +18,13 @@ rotateSpeed: 7.5
 acceptsItems: false
 alwaysAllowDeposit: false
 outlineRadius: 0
+range: 240
 
-requirements: [lead/250, copper/150, titanium/100, silicon/50]
+requirements: [lead/250, copper/150, titanium/100, silicon/50, depleted-thorium/25]
 category: turret
-databaseTag: "gier"
+databaseTag: "adv-depleted-thorium"
 
-reload: 240
+reload: 60
 shootEffect: generate
 shootSound: shootArc
   
@@ -64,7 +65,17 @@ splashDamageRadius: 24
 status: slow
 statusDuration: 120
 
-despawnEffect: none
+despawnEffect: {
+type: WaveEffect
+sizeFrom: 4
+sizeTo: 30
+colorFrom: FFD37F
+colorTo: FFD37F00
+strokeFrom: 3
+strokeTo: 1
+lifetime: 30
+}
+
 hitSound: shootAfflict
 }
 }
