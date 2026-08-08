@@ -34,6 +34,7 @@ requirements: [lead/250, copper/150, titanium/100, silicon/50, depleted-thorium/
 category: turret
 databaseTag: "adv-depleted-thorium"
 
+cooldownTime: 90
 reload: 60
 shootEffect: generate
 shootSound: shootArc
