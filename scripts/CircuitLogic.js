@@ -337,6 +337,7 @@ const rate = block.attributes.get(Attribute.get("circuitRate"));
 const heatDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
 const circuitRange = block.attributes.get(Attribute.get("circuitRange"));
 const pistonPushLength = block.attributes.get(Attribute.get("pistonPushLength"));
+const distanceIncrease = block.atttributes.ger(Attribut.get("distanceIncrease"));
   
 block.databaseTag = "circuit-logic";
 if (!(block instanceof MessageBlock)) block.privileged = true
@@ -347,7 +348,8 @@ if(rate) block.stats.add(stat.CircuitRate, rate, statUnit.circuitUnit);
 if(heatDamage) block.stats.add(stat.CircuitHeatDamage, heatDamage);
 if(circuitRange) block.stats.add(stat.CircuitRange, circuitRange, statUnit.circuitRange);
 if (pistonPushLength) block.stats.add(stat.PistonPushLength, pistonPushLength, StatUnit.blocks);
-
+if (distanceIncrease) block.stats.add(stat.DistanceIncrease, distanceIncrease, statUnit.circuitRange);
+  
 if (blocks[i] == "gr-observer") block.replaceable = false;
 if (blocks[i] != "gr-signal" && blocks[i] != "gr-damage-signal"){
   
