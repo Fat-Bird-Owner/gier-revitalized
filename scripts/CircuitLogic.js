@@ -475,7 +475,6 @@ Time.runTask(0.5 * 60, () => {
 }
   
 } catch(e){
-Vars.ui.showErrorMessage(e)
 }});
   
 } catch(e){
