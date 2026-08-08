@@ -27,7 +27,6 @@ beryllium/100
 researchCostMultiplier: 0.25
 research:{
 parent: sunder-furnace
-objectives:[sporeoplasmic-cultivator]
 }
 
 drawer:{
