@@ -18,7 +18,8 @@ const blocks = [
 "gr-circuit-diode",
 "gr-switch-gate",
 "gr-transmission-line",
-"gr-point"
+"gr-point",
+"gr-blunt"
 ];
 
 const other = [
@@ -31,7 +32,8 @@ const other = [
 "gr-circuit-diode",
 "gr-switch-gate",
 "gr-transmission-line",
-"gr-point"
+"gr-point",
+"gr-blunt",
 ];
 
 function runCircuit(startTile){
@@ -260,7 +262,7 @@ const minThres = capacity * number;
 frontBuild.front().enabled = (stored >= minThres)
 return;
   
-} else if (index == 9){
+} else if (index == 9 || index == 10){
 if (frontBuild.acceptItem(frontBuild, Vars.content.item("gr-signal-ammo"))){
 frontBuild.handleItem(frontBuild, Vars.content.item("gr-signal-ammo"));
 distance += frontBuild.block.attributes.get(Attribute.get("distanceIncrease"));
