@@ -8,7 +8,7 @@ PistonPushLength: new Stat("pistonPushLength", StatCat.function),
 blastPower: new Stat("blastPower", StatCat.function),
 blastTier: new Stat("blastTier", StatCat.function),
 netIn: new Stat("netIn", StatCat.power),
-distanceIncrease: new Stat("distanceIncrease", StatCat.function)
+DistanceIncrease: new Stat("distanceIncrease", StatCat.function)
 };
 
 module.exports = myStats;
