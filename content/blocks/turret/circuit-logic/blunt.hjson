@@ -7,6 +7,14 @@ ammoPerShot: 2
   
 description: "
 Shoots wave pulse at the target
+
+Capable of slowing down and dealing
+splash damage
+[green]
+- Circuit turret
+- Slows down targets
+- Splash damage[red]
+- Explosive
 "
 
 baseExplosiveness: 45
