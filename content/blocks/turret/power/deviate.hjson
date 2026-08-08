@@ -4,7 +4,6 @@ name: Deviate
 
 research:{
 parent: trident
-objectives:[deviate]
 }
 
 databaseTag: "adv-surge-alloy"
