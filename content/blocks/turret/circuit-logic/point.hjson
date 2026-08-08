@@ -18,6 +18,7 @@ charges at a time
 baseExplosiveness: 45
 attributes: {
 distanceIncrease: 5
+circuitHeatDamage: 15
 }
 
 acceptsItems: false
