@@ -42,7 +42,6 @@ envEnabled: -1
 
 research: {
 parent: sunder-furnace
-objectives:[oxidization-reactor]
 }
 
 drawer:{
