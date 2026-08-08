@@ -97,6 +97,9 @@ const circuitHeatingDamage = block.attributes.get(Attribute.get("circuitHeatDama
 for(let i = 0; i < heating.length; i++){
 if(heating[i] == frontBuild){
 frontBuild.damage(circuitHeatingDamage);
+
+if (frontBuild.block instanceof Turret) frontBuild.heat = 1;
+  
 heating.splice(i,1);
 Fx.turbinegenerate.at(frontBuild.x, frontBuild.y);
 return;
