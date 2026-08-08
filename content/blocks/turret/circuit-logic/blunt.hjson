@@ -4,7 +4,8 @@ size: 2
 
 maxAmmo: 10
 ammoPerShot: 2
-  
+envEnabled: -1
+
 description: "
 Shoots wave pulse at the target
 
