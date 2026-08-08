@@ -21,6 +21,7 @@ splash damage
 baseExplosiveness: 45
 attributes: {
 distanceIncrease: 10
+circuitHeatDamage: 20
 }
 
 rotateSpeed: 7.5
