@@ -337,7 +337,7 @@ const rate = block.attributes.get(Attribute.get("circuitRate"));
 const heatDamage = block.attributes.get(Attribute.get("circuitHeatDamage"));
 const circuitRange = block.attributes.get(Attribute.get("circuitRange"));
 const pistonPushLength = block.attributes.get(Attribute.get("pistonPushLength"));
-const distanceIncrease = block.attributes.get(Attribut.get("distanceIncrease"));
+const distanceIncrease = block.attributes.get(Attribute.get("distanceIncrease"));
   
 block.databaseTag = "circuit-logic";
 if (!(block instanceof MessageBlock)) block.privileged = true
