@@ -2,16 +2,11 @@ type: ItemTurret
 name: Blunt
 size: 2
 
-maxAmmo: 5
+maxAmmo: 10
+ammoPerShot: 2
   
 description: "
-Shoots circuit pulses can store five 
-charges at a time
-
-[green]
-- Applies corrupted
-- Circuit turret[red]
-- Explosive
+Shoots wave pulse at the target
 "
 
 baseExplosiveness: 45
@@ -19,6 +14,7 @@ attributes: {
 distanceIncrease: 10
 }
 
+rotateSpeed: 7.5
 acceptsItems: false
 alwaysAllowDeposit: false
 outlineRadius: 0
@@ -27,7 +23,7 @@ requirements: [lead/250, copper/150, titanium/100, silicon/50]
 category: turret
 databaseTag: "gier"
 
-reload: 80
+reload: 240
 shootEffect: generate
 shootSound: shootArc
   
@@ -37,6 +33,9 @@ type: BasicBulletType
 speed: 6
 lifetime: 40
 
+ammoMultiplier: 1
+displayAmmoMultiplier: false
+
 trailRotation: true
 trailInterval: 5
 trailEffect: {
@@ -45,34 +44,28 @@ particles: 1
 cone: 0
 region: "gr-shock-wave"
 sizeFrom: 4
-sizeTo: 16
+sizeTo: 12
 length: 0
-colorFrom: bad9ab
-colorTo: bad9ab00
+colorFrom: FFD37F
+colorTo: FFD37F00
 lifetime: 25
 }
 
-width: 7.5
-height: 11
-trailWidth: 2
-trailLength: 14
+width: 0
+height: 0
+trailWidth: 0
+trailLength: 0
 
 collidesAir: true
 collides: true
-splashDamage: 200
-splashDamageRadius: 16
+splashDamage: 40
+splashDamageRadius: 24
 
-status: corroded
-statusDuration: 140
+status: slow
+statusDuration: 120
 
-frontColor: e4ffd6
-backColor: bad9ab
-trailColor: e4ffd6
-  
-hitColor: e4ffd6
-hitEffect: titanSmokeSmall
-despawnEffect: bigShockwave
-hitSound: explosionArtilleryShockBig
+despawnEffect: none
+hitSound: shootAfflict
 }
 }
 
