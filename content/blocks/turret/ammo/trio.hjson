@@ -11,6 +11,7 @@ Haven't you?
 
 maxAmmo: 15
 ammoPerShot: 3
+outlineColor: 2f2f2f
 
 shoot: {
 shots: 3
