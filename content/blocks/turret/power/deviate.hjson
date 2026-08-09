@@ -2,9 +2,8 @@ type: PowerTurret
 size: 4
 name: Deviate
 
-research:{
-parent: trident
-}
+research: trident
+
 
 databaseTag: "adv-surge-alloy"
 shootY: 0
