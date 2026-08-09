@@ -28,6 +28,8 @@ buildVisibility: sandboxOnly
 shownPlanets: [kela]
 
 requirements: [copper/200, lead/100, silicon/50, titanium/25]
+range: 400
+targetBuildings: true
 
 envEnabled: -1
 drawer: {
@@ -58,6 +60,7 @@ copper: {
   trailWidth: 3
 
   damage: 25
+  collidesTiles: false
 
   knockback: 15
   impact: true
@@ -86,6 +89,7 @@ lead: {
   backColor: 8c7fa9
 
   damage: 10
+  collidesTiles: false
 
   layer: 77
 
