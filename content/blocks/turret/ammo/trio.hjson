@@ -1,0 +1,94 @@
+type: ItemTurret
+size: 3
+name: Trio
+
+description: "
+You've seen duo, But you haven't seen it's cousin trio
+Haven't you?
+
+[sky]Exogen Building[]
+"
+
+maxAmmo: 15
+ammoPerShot: 3
+
+shoot: {
+shots: 3
+shotDelay: 10
+}
+
+category: turret
+buildVisibility: sandboxOnly
+shownPlanets: [kela]
+
+envEnabled: -1
+drawer: {
+type: DrawTurret
+parts: [
+{
+type: RegionPart
+suffix: "-barrel"
+moveY: -4
+progress: recoil
+under: true
+}
+]
+}
+
+ammoTypes: {
+copper: {
+  width: 10
+  height: 14
+
+  hitSound: trident-bullet-impact
+  despawnHit: true
+
+  speed: 10
+  lifetime: 40
+
+  trailLength: 0
+  trailWidth: 3
+
+  damage: 25
+
+  knockback: 15
+  impact: true
+  homingPower: 0.005
+  status: iframe-kill
+
+  showAmmoMultiplier: false
+  ammoMultiplier: 1
+}
+
+lead: {
+  width: 10
+  height: 14
+
+  hitSound: trident-bullet-impact
+  despawnHit: true
+
+  speed: 10
+  lifetime: 40
+
+  trailLength: 0
+  trailWidth: 3
+  reloadMultiplier: 1.25
+
+  frontColor: 8c7fa9
+  backColor: 8c7fa9
+
+  damage: 10
+
+  layer: 77
+
+  knockback: 15
+  impact: true
+  homingPower: 0.005
+
+  status: melting
+  statusDuration: 300
+
+  showAmmoMultiplier: false
+  ammoMultiplier: 1
+}
+}
