@@ -11,7 +11,7 @@ Haven't you?
 
 maxAmmo: 15
 ammoPerShot: 3
-outlineColor: 2f2f2f
+outlineColor: 1f1f2f
 
 shootSound: trident-shoot
 shootSoundVolume: 0.5
