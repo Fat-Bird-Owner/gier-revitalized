@@ -33,6 +33,7 @@ speed: 5
 lifetime: 25
 damage: 50
 
+shieldDamageMultiplier: 0.75
 }
 
 }
