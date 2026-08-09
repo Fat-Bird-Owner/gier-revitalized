@@ -15,6 +15,7 @@ outlineColor: 1f1f2f
 
 shootSound: trident-shoot
 shootSoundVolume: 0.5
+range: 400
 
 inaccuracy: 5
 reload: 60
