@@ -15,7 +15,7 @@ outlineColor: 1f1f2f
 
 shootSound: trident-shoot
 shootSoundVolume: 0.5
-range: 400
+range: 300
 
 inaccuracy: 5
 reload: 60
@@ -30,7 +30,6 @@ shownPlanets: [kela]
 
 requirements: [copper/200, lead/100, silicon/50, titanium/25]
 range: 400
-targetBuildings: false
 
 envEnabled: -1
 drawer: {
@@ -55,7 +54,7 @@ copper: {
   despawnHit: true
 
   speed: 10
-  lifetime: 40
+  lifetime: 30
 
   trailLength: 0
   trailWidth: 3
@@ -80,7 +79,7 @@ lead: {
   despawnHit: true
 
   speed: 10
-  lifetime: 40
+  lifetime: 30
 
   trailLength: 0
   trailWidth: 3
