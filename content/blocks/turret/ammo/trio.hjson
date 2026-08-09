@@ -13,6 +13,7 @@ maxAmmo: 15
 ammoPerShot: 3
 outlineColor: 2f2f2f
 
+shootSound: trident-shoot
 reload: 60
 shoot: {
 shots: 3
