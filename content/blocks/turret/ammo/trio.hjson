@@ -24,6 +24,8 @@ category: turret
 buildVisibility: sandboxOnly
 shownPlanets: [kela]
 
+requirements: [copper/200, lead/100, silicon/50, titanium/25]
+
 envEnabled: -1
 drawer: {
 type: DrawTurret
