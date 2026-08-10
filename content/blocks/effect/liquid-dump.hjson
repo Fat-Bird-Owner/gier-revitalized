@@ -22,3 +22,4 @@ envEnabled: -1
 
 research: incineration-rig
 researchCostMultiplier: 0.5
+customShadow: true
