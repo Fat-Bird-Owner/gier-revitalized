@@ -1,0 +1,34 @@
+databaseCategory: "sector-lore"
+name: "Sector Chip: [accent]Aftermath[]"
+details: '''[lightgrey]
+A sharded extraction site, Established
+by an automated proccess. Commonly used
+by the crux
+
+It's sole surviving core has losted it's
+capability construct any more photon panels
+
+After the forces of the exogens were repelled
+this sector was ultimately left to rot
+
+Location:
+- Depth: -3km - Sea level
+- Depth Type: Illumination
+- Location: Sector-69-kela
+'''
+
+show: true
+shownPlanets:[gier]
+fullOverride: "gr-sector-lore"
+allDatabaseTabs: false
+
+outline: false
+research:{
+parent: lore-fragmented
+objectives:[
+{
+type: SectorComplete
+preset: aftermath
+}
+]
+}
