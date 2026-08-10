@@ -1,0 +1,16 @@
+type: Incinerator
+name: Liquid Dump
+category: crafting
+
+itemCapacity: 0
+acceptsItems: false
+consumes: {
+power: 1
+}
+
+databaseTag: "gier"
+requirements: [lead/100, copper/75, graphite/25, titanium/25]
+envEnabled: -1
+
+research: incineration-rig
+researchCostMultiplier: 0.5
