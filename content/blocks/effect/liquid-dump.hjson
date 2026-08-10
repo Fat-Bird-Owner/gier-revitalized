@@ -2,6 +2,14 @@ type: Incinerator
 name: Liquid Dump
 category: crafting
 
+description: "
+Dumps away any inputted liquid
+[green]
+- Liquid void[salmon]
+- Requires power
+- Limited to liquids
+"
+
 itemCapacity: 0
 acceptsItems: false
 consumes: {
