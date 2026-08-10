@@ -92,7 +92,7 @@ damage: 10
 shieldDamageMultiplier: 0.65
 hitEffect: explosion
 hitSound: explosionCleroi
-despawnHit: true
+despawnHit: false
 }
 
 }
