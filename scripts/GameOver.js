@@ -1,3 +1,20 @@
+function getScore() {
+try {
+
+const gameStats =  Vars.state.stats
+const score = ((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildingsBuilt * 1.75)) * (1 + (gameStats.wavesLasted/10-10))
+
+if (score >= 3000) return "rank-a"
+else if (score >= 2500) return "rank-b"
+else if (score >= 2000) return "rank-c"
+else if (score >= 1500) return "rank-d"
+else if (score >= 1000) return "rank-e'
+else return "rank-f"
+  
+} catch(e){
+return "rank-f"
+}}
+
 Events.on(LoseEvent, () => {
 try {
 
@@ -97,7 +114,7 @@ Sounds.blockBreak3.play()
 Time.runTask(3 * 60, () => {
 try {
 
-let image = new Image(Core.atlas.find("gr-rank-f"))
+let image = new Image(getScore())
 
 outerStack.add(image)
 
