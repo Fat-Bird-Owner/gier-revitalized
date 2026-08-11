@@ -1,4 +1,4 @@
-function score() {
+function getScore() {
 try {
 
 const gameStats =  Vars.state.stats
@@ -11,7 +11,7 @@ return 0
 function getScore() {
 try {
 
-const score = score();
+const score = getScore();
 
 if (score >= 3000) return "rank-a"
 else if (score >= 2500) return "rank-b"
@@ -71,7 +71,7 @@ let text = Vars.control.saves.getCurrent().getPlayTime()
 if (!text) text = "[grey]null"
   
 dialogB.cont.add(new Label(text)).row()
-dialogB.cont.add(new Label("[accent]score:[] " + score())).row()
+dialogB.cont.add(new Label("[accent]score:[] " + getScore())).row()
   
 function addTab(str){
 
