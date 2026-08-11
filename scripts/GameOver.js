@@ -8,7 +8,7 @@ if (score >= 3000) return "rank-a"
 else if (score >= 2500) return "rank-b"
 else if (score >= 2000) return "rank-c"
 else if (score >= 1500) return "rank-d"
-else if (score >= 1000) return "rank-e'
+else if (score >= 1000) return "rank-e"
 else return "rank-f"
   
 } catch(e){
