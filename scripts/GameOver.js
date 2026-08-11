@@ -127,7 +127,7 @@ Interp.smooth
 
 image.addAction(Actions.scaleTo(0.6, 0.6, 0.05))
 
-image.addAction(Actions.moveBy(Core.graphics.getWidth()/17.5, 0, 1, Interp.sineOut))
+image.addAction(Actions.moveBy(Core.graphics.getWidth()/15, 0, 1, Interp.sineOut))
 
 } catch(e) {
 log(e)
