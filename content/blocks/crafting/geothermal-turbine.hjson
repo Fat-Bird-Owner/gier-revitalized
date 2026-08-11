@@ -8,8 +8,8 @@ ambientSoundVolume: 0.15
 description: "
 Alternative to steam turbine.
 Could be placed on hot rocks to produce power.
-
-[accent]- Pumps oil from heated oil tiles(15/sec)
+[accent]
+- Water is a byproduct
 
 [green]- Produces power off of hot rocks
 [red]- Explosive
@@ -22,7 +22,7 @@ research: steam-turbine
 baseExplosiveness: 40
 
 liquidCpacity: 100
-outputLiquid: water/0.03334
+outputLiquid: water/0.0833333
 
 category: power
 envEnabled: -1
