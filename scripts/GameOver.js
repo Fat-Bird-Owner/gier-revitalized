@@ -114,7 +114,7 @@ Sounds.blockBreak3.play()
 Time.runTask(3 * 60, () => {
 try {
 
-let image = new Image(Core.atlas.find(getScore()))
+let image = new Image(Core.atlas.find("gr-" + getScore()))
 
 outerStack.add(image)
 
