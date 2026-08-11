@@ -22,7 +22,7 @@ research: steam-turbine
 baseExplosiveness: 40
 
 liquidCpacity: 100
-outputLiquid: water/0.111111
+outputLiquid: water/0.00925941
 
 category: power
 envEnabled: -1
