@@ -29,7 +29,7 @@ buildVisibility: sandboxOnly
 shownPlanets: [kela]
 
 requirements: [copper/200, lead/100, silicon/50, titanium/25]
-range: 400
+range: 300
 
 envEnabled: -1
 drawer: {
