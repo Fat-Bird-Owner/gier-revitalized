@@ -9,6 +9,7 @@ require("GierItems");
 require("CorruptedFunction");
 require("gier-to-gier");
 require("Pasting");
+require("GameOver");
 //require("gierTroll");
 
 //    ### Class Overrides ###
