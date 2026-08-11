@@ -154,7 +154,7 @@ outerStack.add(image)
 image.addAction(Actions.moveBy(
 0,
 Core.graphics.getWidth()/-15,
-0.1/2,
+0.05,
 Interp.smooth
 ))
 
