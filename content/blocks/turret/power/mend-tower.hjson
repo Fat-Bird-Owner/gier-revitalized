@@ -64,12 +64,13 @@ keepVelocity: false
 
 bulletInterval: 1
 intervalBullet: {
+
 type: EmptyBulletType
 instantDisappear: true
 despawnHit: true
 hitSize: 22
 impact: true
-knockback: -4.5
+knockback: -10
 damage: 0
 
 collidesGround: false
