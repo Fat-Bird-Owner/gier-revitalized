@@ -15,6 +15,24 @@ else return "rank-f"
 return "rank-f"
 }}
 
+function formatTime(seconds){
+try {
+  
+    seconds = Math.floor(seconds);
+
+    let h = Math.floor(seconds / 3600);
+    let m = Math.floor((seconds % 3600) / 60);
+    let s = seconds % 60;
+
+    return (
+        String(h).padStart(2, "0") + ":" +
+        String(m).padStart(2, "0") + ":" +
+        String(s).padStart(2, "0")
+    );
+
+} catch(e){}
+}
+
 Events.on(LoseEvent, () => {
 try {
 
@@ -40,6 +58,11 @@ outerStack.add(img)
 dialogB.cont.add(outerStack).size(Core.graphics.getWidth()/7.5).pad(35)
 .row()
 
+let text = formatTime(Vars.state.rules.sector.info.minutesCaptured * 60)
+if (!text) text = "null"
+  
+dialogB.cont.add(new Label(text)).row()
+  
 function addTab(str){
 
 let t = new Table();
