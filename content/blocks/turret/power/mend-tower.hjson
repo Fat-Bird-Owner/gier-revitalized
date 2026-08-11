@@ -58,6 +58,7 @@ fragLifeMin: 1
 fragLifeMax: 1
 fragBullet: {
 collides: false
+lifetime: 30
 
 bulletInterval: 3
 intervalBullet: {
