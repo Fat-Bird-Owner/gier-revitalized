@@ -53,37 +53,6 @@ collidesTeam: true
 healColor: FEB380FF
 despawnEffect: hitMeltdown
 
-fragBullets: 1
-fragLifeMin: 1
-fragLifeMax: 1
-fragBullet: {
-collides: false
-lifetime: 30
-speed: 0.02
-keepVelocity: false
-
-bulletInterval: 1
-intervalBullet: {
-
-type: EmptyBulletType
-instantDisappear: true
-despawnHit: true
-hitSize: 22
-impact: true
-knockback: -10
-damage: 0
-
-collidesGround: false
-collides: true
-pierce: true
-
-hitEffect: none
-despawnEffect: none
-
-}
-
-}
-
 hitEffect: [
 {
 type: WaveEffect
