@@ -8,7 +8,7 @@ return Mathf.round(((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildings
 return 0
 }}
 
-function getScore() {
+function getRank() {
 try {
 
 const score = getScore();
@@ -147,7 +147,7 @@ Sounds.blockBreak3.play()
 Time.runTask(3 * 60, () => {
 try {
 
-let image = new Image(Core.atlas.find("gr-" + getScore()))
+let image = new Image(Core.atlas.find("gr-" + getRank()))
 
 outerStack.add(image)
 
