@@ -6,7 +6,7 @@ health: 1750
 armor: 10
   
 insulated: true
-absorbLaser: true
+absorbLaser: false
 category: defense
 
 requirements: [scrap/25, titanium/10]
