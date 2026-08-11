@@ -2,7 +2,7 @@ function getScore() {
 try {
 
 const gameStats =  Vars.state.stats
-return ((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildingsBuilt * 1.75)) * (1 + ((gameStats.wavesLasted-1)/10));
+return Mathf.round(((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildingsBuilt * 1.75)) * (1 + ((gameStats.wavesLasted-1)/10)));
   
 } catch(e){
 return 0
