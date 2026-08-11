@@ -58,7 +58,7 @@ outerStack.add(img)
 dialogB.cont.add(outerStack).size(Core.graphics.getWidth()/7.5).pad(35)
 .row()
 
-let text = formatTime(Vars.state.rules.sector.info.minutesCaptured * 60)
+let text = formatTime(Vars.control.saves.getCurrent().getPlayTime())
 if (!text) text = "[grey]null"
   
 dialogB.cont.add(new Label(text)).row()
