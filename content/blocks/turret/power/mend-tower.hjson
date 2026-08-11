@@ -59,19 +59,22 @@ fragLifeMax: 1
 fragBullet: {
 collides: false
 lifetime: 30
-speed: 0
+speed: 0.02
 keepVelocity: false
 
-bulletInterval: 3
+bulletInterval: 1
 intervalBullet: {
 type: EmptyBulletType
 instantDisappear: true
 despawnHit: true
 hitSize: 22
 impact: true
-knockback: 4.5
-damage: 1
+knockback: -4.5
+damage: 0
+
 collidesGround: false
+collides: true
+pierce: true
 
 hitEffect: none
 despawnEffect: none
