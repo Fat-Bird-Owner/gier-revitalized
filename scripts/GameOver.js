@@ -1,8 +1,17 @@
+function score() {
+try {
+
+return ((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildingsBuilt * 1.75)) * (1 + ((gameStats.wavesLasted-1)/10));
+  
+} catch(e){
+return 0
+}}
+
 function getScore() {
 try {
 
 const gameStats =  Vars.state.stats
-const score = ((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildingsBuilt * 1.75)) * (1 + ((gameStats.wavesLasted-1)/10))
+const score = score();
 
 if (score >= 3000) return "rank-a"
 else if (score >= 2500) return "rank-b"
@@ -62,6 +71,7 @@ let text = Vars.control.saves.getCurrent().getPlayTime()
 if (!text) text = "[grey]null"
   
 dialogB.cont.add(new Label(text)).row()
+dialogB.cont.add(new Label("[accent]score:[] " + score())).row()
   
 function addTab(str){
 
