@@ -38,6 +38,8 @@ displayEfficiencyScale: 0.22223
 minEfficiency: 0.1
 customShadow: true
 
+attribute: geothermal-source
+
 powerProduction: 1.5
 drawer: {
 type: DrawMulti
