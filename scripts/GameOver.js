@@ -2,7 +2,7 @@ function getScore() {
 try {
 
 const gameStats =  Vars.state.stats
-const score = ((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildingsBuilt * 1.75)) * (1 + (gameStats.wavesLasted/10-10))
+const score = ((gameStats.enemyUnitsDestroyed * 2.5) + (gameStats.buildingsBuilt * 1.75)) * (1 + ((gameStats.wavesLasted-1)/10))
 
 if (score >= 3000) return "rank-a"
 else if (score >= 2500) return "rank-b"
