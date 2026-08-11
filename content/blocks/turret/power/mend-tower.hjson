@@ -6,7 +6,8 @@ description: "
 [red]Very angry repair point beware[]
 Able to shoot at damaged buildings.
 [green]
-- Bullet heals damaged buildings[salmon]
+- Bullet heals damaged buildings
+- Bullet pulls in flying targets[salmon]
 - Units are higher priority than buildings
 "
 
@@ -43,7 +44,7 @@ speed: 4.5
 lifetime: 45
 healAmount: 45
 splashDamageRadius: 22
-status: electrified
+status: incendiary-depletion
 splashDamage: 15
 
 collides: true
@@ -51,6 +52,25 @@ collidesAir: true
 collidesTeam: true
 healColor: FEB380FF
 despawnEffect: hitMeltdown
+
+fragBullets: 1
+fragLifeMin: 1
+fragLifeMax: 1
+fragBullet: {
+collides: false
+
+bulletInterval: 3
+intervalBullet: {
+type: ExplosionBulletType
+despawnHit: true
+hitSize: 22
+impact: true
+knockback: 4.5
+damage: 1
+collidesGround: false
+}
+
+}
 
 hitEffect: [
 {
