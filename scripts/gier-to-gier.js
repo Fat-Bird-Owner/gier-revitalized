@@ -23,7 +23,7 @@ gierWannabe.allowLaunchLoadout = true;
 gierWannabe.prebuildBase = false;
 gierWannabe.allowLaunchToNumbered = false;
     
-actualRealGier.techTree.each(node => {
+gierWannabe.techTree.each(node => {
 
     let content = node.content;
 
