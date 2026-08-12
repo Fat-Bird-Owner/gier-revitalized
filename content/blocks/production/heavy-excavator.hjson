@@ -13,6 +13,7 @@ updateEffectChance: 0.22
 liquidBoostIntensity: 1
 rotateSpeed: 4.5
 
+squareSprite: false
 customShadow: true
 blockedItems: [sand]
 consumes: {
