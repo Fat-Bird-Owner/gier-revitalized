@@ -6,8 +6,28 @@ outlineColor: 2f2f3f
 health: 1450
 armor: 7.5
 
+description: "
+A bulkier variation of the fledgling.
+It now mainly shoots a single deadly bullet 
+as opposed to the fledgling's three
+[salmon]
+Counter:
+- Multiple layers of walls are needed to
+block it's piercing bullet
+- Forcefields can also block the bullet
+ignoring the pierce altogether
+"
+
+research: {
+parent: fledgling
+objectives: [{
+type: SectorComplete
+preset: encampment
+}]
+}
+
 mechLegColor: 3f3f4f
-legForwardScl: 0.5
+legForwardScl: 0.75
 hitSize: 16
 weapons: [
 {
