@@ -20,6 +20,7 @@ maxHeatEfficiency: 2
 
 requirements: [lead/150, copper/100, titanium/40, oxide/25]
 category: effect
+databaseTag: "adv-oxide"
 
 customShadow: true
 drawer: [{
