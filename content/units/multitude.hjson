@@ -6,6 +6,26 @@ outlineColor: 2f2f3f
 health: 3650
 armor: 15
 
+description: "
+An even bulkier verson of the previous iteration.
+Boast a high DPS and a turret reserved for taking
+down ariel targets.
+[salmon]
+Counter:
+- Higher DPS turrets are better suited in
+dealing with it
+- Laser turrets which ignore forcefields
+could also prove useful
+"
+
+research: {
+parent: fledgling
+objectives: [{
+type: SectorComplete
+preset: encampment
+}]
+}
+
 mechLegColor: 3f3f4f
 legForwardScl: 1
 hitSize: 25
