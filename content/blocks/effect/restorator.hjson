@@ -36,7 +36,7 @@ color: ebeef5
 
 envEnabled: -1
 research: mend-pylon
-range: 80
+range: 60
 
 targetGround: true
 targetBlocks: true
@@ -48,7 +48,7 @@ showAmmoMultiplier: false
 ammoMultiplier: 1
 
 healPercent: 2.5
-splashDamageRadius: 80
+splashDamageRadius: 60
 
 collidesTeam: true
 status: anchored
