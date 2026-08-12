@@ -17,7 +17,7 @@ envEnabled: -1
 category: turret
 
 outlineColor: 2f2f3f
-research: mend-pylon
+#research: mend-pylon
 researchCostMultiplier: 0.15
 
 requirements: [lead/50, copper/40, silicon/35, plastanium/25, oxide/15]
@@ -27,6 +27,9 @@ maxHeatEfficiency: 1.5
 range: 195
 reload: 60
 targetHealing: true
+
+buildVisibility: sandboxOnly
+shownPlanets: [gr-gier, kela]
 
 coolant:{
 type: ConsumeCoolant
