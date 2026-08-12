@@ -16,6 +16,8 @@ payloadCapacity: 64
 mineSpeed: 12.5
 buildSpeed: 1.75
 
+itemCapacity: 80
+
 engineOffset: 12
 engineSize: 2
 vulnerableWithPayloads: true
