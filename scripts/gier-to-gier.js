@@ -12,6 +12,9 @@ gierWannabe[i] = actualRealGier[i];
 } catch(e){}
 }
 
+Planets.gier.visible = false;
+Planets.gier.accessible = false;
+    
 gierWannabe.alwaysUnlocked = true;
 gierWannabe.visible = true;
 gierWannabe.accessible = true;
