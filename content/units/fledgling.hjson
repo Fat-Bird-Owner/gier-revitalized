@@ -6,6 +6,26 @@ outlineColor: 2f2f3f
 health: 650
 armor: 7.5
 
+description: "
+Unlike other exogen units, This one is adapted to
+ground-based combat.Being a mirrored counterpart
+to the dagger
+[salmon]
+Counters: 
+- Fledglings are relativly weak and could be
+destroyed easily
+- Copper fort forcefields could be destroyed
+rather easily
+"
+
+research: {
+parent: techtree-kela
+objectives: [{
+type: SectorComplete
+preset: aftermath
+}]
+}
+
 hitSize: 12
 mechLegColor: 3f3f4f
 weapons: [
