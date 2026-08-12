@@ -1,6 +1,6 @@
 type: PowerTurret
 name: Restorator
-size: 3
+size: 1
 
 description: "
 Heals allied blocks while anchoring
@@ -33,7 +33,7 @@ color: ebeef5
 
 envEnabled: -1
 research: mend-pylon
-range: 40
+range: 80
 
 targetGround: true
 targetBlocks: true
@@ -45,11 +45,17 @@ showAmmoMultiplier: false
 ammoMultiplier: 1
 
 healPercent: 2.5
-splashDamageRadius: 40
+splashDamageRadius: 80
 
 collidesTeam: true
 status: anchored
 statusDuration: 90
 
 healColor: ebeef5
+shootEffect: none
+smokeEffect: none
+hitEffect: none
+
+despawnHit: true
+instantDisappear: true
 }
