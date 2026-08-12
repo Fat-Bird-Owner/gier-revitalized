@@ -1,0 +1,54 @@
+type: PowerTurret
+name: Restorator
+size: 3
+
+description: "
+Heals allied blocks while anchoring
+enemy units within it's range
+[green]
+- Does a teeny amount of damage
+- Applies anchored
+- Mends at 2.5 %/sec[red]
+- Requires power
+- Requires heat
+- Explosive
+"
+
+baseExplosiveness: 25
+heatRequirement: 2
+maxHeatEfficiency: 2
+
+requirements: [lead/150, copper/100, titanium/40, oxide/25]
+category: effect
+
+customShadow: true
+drawer: [{
+type: DrawRegion
+}
+{
+type: DrawPulseShape
+color: ebeef5
+}]
+
+envEnabled: -1
+research: mend-pylon
+range: 40
+
+targetGround: true
+targetBlocks: true
+targetHealing: true
+
+reload: 60
+shootType: {
+showAmmoMultiplier: false
+ammoMultiplier: 1
+
+healPercent: 2.5
+splashDamageRadius: 40
+
+collidesTeam: true
+status: anchored
+statusDuration: 90
+
+healColor: ebeef5
+}
