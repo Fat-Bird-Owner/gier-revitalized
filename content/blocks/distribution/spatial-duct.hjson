@@ -17,4 +17,5 @@ research: mono-rail
 researchCostMultiplier: 0.5
 envEnabled: -1
 
-speed: 1.5
+speed: 2
+itemCapacity: 2
