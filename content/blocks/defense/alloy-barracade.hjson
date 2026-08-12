@@ -1,0 +1,19 @@
+type: Wall
+size: 2
+name: Alloy Barracade
+description: "
+Takes the bullets meant for your
+other buildings, Quite soft.
+"
+
+category: defense
+requirements: [copper/30, lead/25]
+envEnabled: -1
+
+research: insulated-wall
+researchCostMultiplier: 1.15
+health: 750
+
+research: copper-fort
+researchCostMultiplier: 0.25
+databaseTag: "gier"
