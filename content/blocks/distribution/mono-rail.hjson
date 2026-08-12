@@ -7,6 +7,7 @@ Could be powered for additional speed
 - Armored
 "
 
+health: 85
 armor: 5
 requirements:[beryllium/1, surge-alloy/1]
 fullOverride: "gr-mono-rail"
