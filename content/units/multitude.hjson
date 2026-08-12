@@ -19,7 +19,7 @@ could also prove useful
 "
 
 research: {
-parent: fledgling
+parent: magnitude
 objectives: [{
 type: SectorComplete
 preset: encampment
