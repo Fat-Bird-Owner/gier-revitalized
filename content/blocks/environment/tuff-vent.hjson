@@ -5,4 +5,5 @@ effectSpacing: 10
 variants: 0
 attributes: {
 steam: 1
+carbon: 0.025
 }
