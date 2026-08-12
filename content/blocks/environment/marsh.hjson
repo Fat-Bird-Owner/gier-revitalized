@@ -2,3 +2,7 @@ type: Floor
 name: "Marsh"
 variants: 4
 drawEdgeOut: true
+
+attribute: {
+carbon: 0.45
+}
