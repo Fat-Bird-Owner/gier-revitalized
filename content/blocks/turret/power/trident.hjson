@@ -96,6 +96,18 @@ knockback: 15
 impact: true
 homingPower: 0.005
 status: iframe-kill
+
+hitEffect: {
+type: ParticleEffect
+particles: 6
+cone: 40
+lifetime: 22
+length: 16
+layer: 44
+colorFrom: d99d73
+colorTo: d99d73
+}
+
 }
 
 lead:{
@@ -123,6 +135,19 @@ impact: true
 homingPower: 0.005
 status: melting
 statusDuration: 300
+
+hitEffect: {
+type: ParticleEffect
+particles: 6
+cone: 40
+lifetime: 22
+length: 11
+layer: 44
+colorFrom: 8c7fa9
+colorTo: 8c7fa9
+}
+
+
 }
 
 depleted-thorium: {
@@ -133,6 +158,14 @@ hitSound: trident-bullet-impact
 hitEffect: {
 type: MultiEffect
 effects:[
+{
+type: WaveEffect
+lifetime: 12
+sizeFrom: 4
+sizeTo: 24
+strokeFrom: 1
+strokeTo: 0
+}
 {
 type: ParticleEffect
 sizeFrom: 6
