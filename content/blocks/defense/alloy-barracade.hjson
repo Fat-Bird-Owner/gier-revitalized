@@ -13,7 +13,7 @@ envEnabled: -1
 research: insulated-wall
 researchCostMultiplier: 1.15
 health: 750
-customShadow: true
+customShadow: false
 
 research: copper-fort
 researchCostMultiplier: 0.25
