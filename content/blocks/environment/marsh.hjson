@@ -4,5 +4,5 @@ variants: 4
 drawEdgeOut: true
 
 attribute: {
-carbon: 0.45
+carbon: 0.05
 }
