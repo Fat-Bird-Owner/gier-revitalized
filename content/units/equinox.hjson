@@ -12,6 +12,26 @@ predictTarget: false
 
 rotateSpeed: 3
 
+description: "
+Far more durable than even the previous version.
+Boast even greater destructive capabilities, and
+a shield arc as well
+[salmon]
+Counter:
+- Multitude counters are still effective
+- Missiles could cause alot of destruction
+if they're shot at a blindspot
+"
+
+research: {
+parent: multitude
+objectives: [{
+type: SectorComplete
+preset: encampment
+}]
+}
+
+
 mechLegColor: 3f3f4f
 legForwardScl: 1
 hitSize: 30
