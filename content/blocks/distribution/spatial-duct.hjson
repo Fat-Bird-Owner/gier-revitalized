@@ -19,3 +19,6 @@ envEnabled: -1
 
 speed: 2
 itemCapacity: 2
+
+bridgeReplacement: overhead-belt
+junctionReplacement: rail-overflow
