@@ -15,12 +15,15 @@ enemy units within it's range
 "
 
 baseExplosiveness: 25
-heatRequirement: 2
+heatRequirement: 4
 maxHeatEfficiency: 2
 
 requirements: [lead/150, copper/100, titanium/40, oxide/25]
 category: effect
 databaseTag: "adv-oxide"
+
+playerControllable: false
+rotate: false
 
 customShadow: true
 drawer: [{
@@ -55,6 +58,7 @@ healColor: ebeef5
 shootEffect: none
 smokeEffect: none
 hitEffect: none
+despawnEffect: none
 
 despawnHit: true
 instantDisappear: true
