@@ -1,5 +1,5 @@
 research:{
-    planet: gr-gier
+    planet: gier
     root: true
     name: "gier"
     requiresUnlock: false
