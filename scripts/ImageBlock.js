@@ -30,7 +30,7 @@ try {
         let newImg = new Image(contImage)
         contImage.setScaling(Scaling.fit);
         
-        dialog.cont.add(newImg).setScale(scale).center();
+        dialog.cont.add(newImg).center();
         
     }else{
         dialog.cont.add(imageName).center();
