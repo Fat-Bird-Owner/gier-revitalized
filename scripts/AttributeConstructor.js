@@ -103,7 +103,7 @@ block.stats.remove(Stat.buildSpeed);
 block.stats.remove(Stat.itemCapacity);
 block.stats.remove(Stat.output);
     
-block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("carbon"), false, 1, true, false));
+block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), false, 1, true, false));
 block.stats.replace(Stat.output, StatValues.content(list));
     
 } catch(e){
