@@ -36,7 +36,8 @@ solid: true
 
 rotateSpeed: 0
 reload: 60
-range: 40
+range: 80
+shootCone: 180
 shootType: {
 type: EmptyBulletType
 hitEffect: none
@@ -44,7 +45,9 @@ despawnEffect: none
 shootEffect: none
 smokeEffect: none
 splashDamage: 50
-splashDamageRadius: 40
+splashDamageRadius: 90
+instantDisappear: true
+despawnHit: true
 scaledSplashDamage: true
 statusEffect: incendiary-depletion
 }
