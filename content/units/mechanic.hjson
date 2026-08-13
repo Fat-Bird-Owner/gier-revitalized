@@ -17,6 +17,7 @@ controller: AssemblerAI
 useUnitCap: false
 hidden: true
 isEnemy: false
+physics: false
 
 logicControllable: false
 playerControllable: false
