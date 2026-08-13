@@ -1,0 +1,24 @@
+planet: gr-gier
+sector: 6
+outline: false
+
+description: "
+A placeholder sector preset
+
+Made using random generation and
+will be reworked in the future
+"
+
+research: {
+parent: gier-main
+objectives:[
+{
+type: Produce
+content: metaglass
+}
+{
+type: Produce
+content: silicon
+}
+]
+}
