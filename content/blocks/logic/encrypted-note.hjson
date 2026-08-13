@@ -5,3 +5,8 @@ name: Encrypted Block
 buildVisibility: sandboxOnly
 category: logic
 customShadow: true
+
+privileged: true
+
+breakable: false
+drawTeamOverlay: false
