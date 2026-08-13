@@ -17,7 +17,7 @@ research: sunder-furnace
 researchCostMultiplier: 0.25
 itemCapacity: 20
 
-requirements: [silicon/150, titanium/150, beryllium/100]
+requirements: [silicon/150, titanium/150, beryllium/100, thorium/35]
 category: crafting
 databaseTag: "adv-thorium"
   
