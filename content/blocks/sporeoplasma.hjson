@@ -36,7 +36,7 @@ solid: true
 
 rotateSpeed: 0
 reload: 60
-range: 80
+range: 40
 shootCone: 180
 shootType: {
 hitEffect: none
@@ -45,8 +45,8 @@ collides: true
 collidesAir: true
 shootEffect: none
 smokeEffect: none
-splashDamage: 50
-splashDamageRadius: 90
+splashDamage: 20
+splashDamageRadius: 44
 instantDisappear: true
 despawnHit: true
 scaledSplashDamage: true
