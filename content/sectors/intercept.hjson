@@ -32,7 +32,7 @@ gr-industrial-trimmer
 }
 
 research: {
-parent: techtree-kela
+parent: fragmented-fix
 objectives:[
 gr-drone-facility
 gr-tension
