@@ -7,7 +7,6 @@ try {
     const block = content.block("gr-encrypted-note");
     
     if(!tile || !tile.build || !player) return;
-    if(player.team() != tile.team()) return;
     if(player.selectedBlock != null) return;
     if(tile.build.block != block) return;
 
