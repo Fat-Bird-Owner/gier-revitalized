@@ -28,7 +28,7 @@ try {
     if(contImage && contImage.found()){
 
         let newImg = new Image(contImage)
-        contImg.setScaling(Scaling.fit);
+        contImage.setScaling(Scaling.fit);
         
         dialog.cont.add(newImg).setScale(scale).center();
         
