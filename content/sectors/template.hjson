@@ -2,6 +2,8 @@ planet: gr-gier
 sector: 6
 outline: false
 
+name: template
+
 description: "
 A placeholder sector preset
 
