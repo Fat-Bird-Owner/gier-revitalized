@@ -2,6 +2,6 @@ type: StaticWall
 variants: 4
 name: Tuff wall
 
-attribute: {
+attributes: {
 carbon: 0.5
 }
