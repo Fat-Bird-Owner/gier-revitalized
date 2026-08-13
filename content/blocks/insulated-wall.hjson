@@ -8,7 +8,7 @@ variants: 4
 health: 3600
 absorbLasers: true
 insulated: false
-customShadow: true
+customShadow: false
 
 databaseTag: "gier"
 research: alloy-barracade
