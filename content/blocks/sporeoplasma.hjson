@@ -39,9 +39,10 @@ reload: 60
 range: 80
 shootCone: 180
 shootType: {
-type: EmptyBulletType
 hitEffect: none
 despawnEffect: none
+collides: true
+collidesAir: true
 shootEffect: none
 smokeEffect: none
 splashDamage: 50
