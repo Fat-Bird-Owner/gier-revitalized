@@ -23,10 +23,10 @@ try {
     }
 
     const contImage = atlas.find(imageName);
-    const dialog = new BaseDialog("Info");
+    const dialog = new BaseDialog(block.localizedName);
 
     if(contImage && contImage.found()){
-        dialog.cont.image(contImage).size(contImage.width * 1.25, contImage.height * 1.25).center();
+        dialog.cont.image(contImage).grow().center();
     }else{
         dialog.cont.add(imageName).center();
     }
