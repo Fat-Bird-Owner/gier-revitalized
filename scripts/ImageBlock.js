@@ -26,7 +26,7 @@ try {
     const dialog = new BaseDialog(block.localizedName);
 
     if(contImage && contImage.found()){
-        dialog.cont.image(contImage).image.setScaling(Scaling.fit).center();
+        dialog.cont.image(contImage).setScaling(Scaling.fit).center();
     }else{
         dialog.cont.add(imageName).center();
     }
