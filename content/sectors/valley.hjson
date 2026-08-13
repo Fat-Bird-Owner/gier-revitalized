@@ -8,12 +8,25 @@ planet: kela
 research: {
 parent: fragmented-fix
 objectives:[
-rail
-rail-router
-rail-overflow
-output-port
-tension
-crate
-copper-fort
+gr-core-facility
+gr-insulated-wall
+gr-core-satellite
+gr-tension
+gr-rail
+gr-sunder-furnace
+gr-power-cell
+gr-ton-crusher
+gr-thermal-engine
+gr-trident
+gr-rail-router
+gr-outpost
+gr-hydro-drill
+gr-output-port
+gr-overhead-belt
+gr-sand-strate
+gr-crate
+gr-titanium-barracade
+gr-copper-fort
+gr-rail-overflow
 ]
 }
