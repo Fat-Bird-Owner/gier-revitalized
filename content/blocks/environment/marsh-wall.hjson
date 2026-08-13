@@ -1,3 +1,7 @@
 type: StaticWall
 name: Marsh Wall
 variants: 3
+
+attributes: {
+carbon: 1
+}
