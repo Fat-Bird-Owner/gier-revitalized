@@ -24,7 +24,7 @@ customShadow: true
 databaseTag: "adv-depleted-thorium"
   
 baseExplosiveness: 25
-powerProduction: 0.75
+powerProduction: 1
 drawer: [
 {
 type: DrawDefault
