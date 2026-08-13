@@ -3,5 +3,6 @@ name: Marsh Wall
 variants: 3
 
 attributes: {
+beryllium: 2
 carbon: 1
 }
