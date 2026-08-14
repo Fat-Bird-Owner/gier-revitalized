@@ -1,0 +1,9 @@
+color: BB966BFF
+name: Dense Alloy
+
+flammability: 0.5
+explosiveness: 0.2
+radioactivity: 0.1
+
+hardness: 5
+cost: 2
