@@ -38,7 +38,11 @@ consumesPower: true
 outputsPower: true
 connectedPower: false
 conductivePower: true
-  
+
+consumes: {
+power: 0
+}
+
 absorbLasers: true
 insulated: false
 customShadow: false
