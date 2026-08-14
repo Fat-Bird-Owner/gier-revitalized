@@ -21,7 +21,7 @@ lightning arc on damage
 
 lightningChance: 0.2
 health: 3500
-armor: 20
+armor: 5
 
 destroyBullet: {
 instantDisappear: true
