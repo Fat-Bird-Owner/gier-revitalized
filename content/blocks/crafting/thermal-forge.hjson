@@ -16,6 +16,7 @@ Advancement in defenses
 - Long crafttime
 "
 
+squareSprite: false
 attribute: heat
 maxBoost: 1.5
 databaseTag: "adv-dense-alloy"
