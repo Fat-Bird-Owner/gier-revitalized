@@ -18,7 +18,8 @@ lightning arc on damage
 - Conductive[red]
 - Shards on destruction
 "
- 
+
+lightningChance: 0.2
 health: 3500
 armor: 20
 
