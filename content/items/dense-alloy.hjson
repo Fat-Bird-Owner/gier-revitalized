@@ -1,6 +1,16 @@
 color: BB966BFF
 name: Dense Alloy
 
+description: "
+Exceptionally durable alloy
+
+Made from molding several hard metals into
+one metal alloy 
+
+Has power and laser absorbant properies and
+could even could power
+"
+
 flammability: 0.5
 explosiveness: 0.2
 radioactivity: 0.1
