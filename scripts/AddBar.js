@@ -10,7 +10,8 @@ const blocks = [
 "gr-freight-assembler",
 "gr-incineration-rig",
 "gr-surge-furnace",
-"gr-scrap-compressor"
+"gr-scrap-compressor",
+"gr-thermal-forge"
 ]
 
 Events.on(ClientLoadEvent, () => {
