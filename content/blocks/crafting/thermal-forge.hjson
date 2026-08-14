@@ -20,6 +20,7 @@ attribute: heat
 maxBoost: 1.5
 databaseTag: "adv-dense-alloy"
 
+itemCapacity: 80
 craftTime: 600
 outputItem: dense-alloy/20
 consumes: {
