@@ -18,6 +18,7 @@ Advancement in defenses
 
 attribute: heat
 maxBoost: 1.5
+databaseTag: "adv-dense-alloy"
 
 craftTime: 600
 outputItem: dense-alloy/20
@@ -32,3 +33,25 @@ envEnabled: -1
 
 buildVisibility: sandboxOnly
 shownPlanets: [gr-gier, kela]
+
+customShadow: true
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawCrucibleFlame
+flameColor: ff795e
+midColor: ffaa5f
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+alpha: 0.75
+color: ff795e
+}
+]
