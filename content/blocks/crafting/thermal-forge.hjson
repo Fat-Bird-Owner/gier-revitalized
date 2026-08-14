@@ -31,4 +31,4 @@ requirements: [lead/500, copper/500, silicon/250, titanium/250, metaglass/100, p
 envEnabled: -1
 
 buildVisibility: sandboxOnly
-shownPlanets. [gr-gier, kela]
+shownPlanets: [gr-gier, kela]
