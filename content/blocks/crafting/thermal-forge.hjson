@@ -22,7 +22,7 @@ maxBoost: 1.5
 craftTime: 600
 outputItem: dense-alloy
 consumes: {
-items: [plastanium/20, copper/40, beryllium/20]
+items: [plastanium/20, copper/40, beryllium/20, depleted-thorium/20]
 }
 
 health: 2500
