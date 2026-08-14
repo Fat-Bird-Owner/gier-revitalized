@@ -9,11 +9,15 @@ one metal alloy
 
 Has power and laser absorbant properies and
 could even conduct power
+
+Capable of holding large amounts of power
+but is likely to become unstable
 "
 
 flammability: 0.5
 explosiveness: 0.2
 radioactivity: 0.1
+charge: 0.25
 
 hardness: 5
 cost: 2
