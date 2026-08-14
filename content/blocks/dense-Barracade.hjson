@@ -1,0 +1,53 @@
+type: Wall
+size: 2
+name: Dense Barracade
+
+description: "
+A barracade made from dense alloy
+and silicon.
+
+This wall exhibits conductive
+properties as well as being able to
+absorb lasers.
+
+And has small chance to shoot out a 
+lightning arc on damage
+[green]
+- Armored
+- Chance to shoot out a lightning arc
+- Conductive[red]
+- Shards on destruction
+"
+ 
+health: 3500
+armor: 20
+
+destroyBullet: {
+instantDisappear: true
+despawnHit: true
+fragBullets: 7
+fragBullet: {
+type: BasicBulletType
+speed: 2
+lifetime: 10
+damage: 50
+}}
+  
+consumesPower: true
+outputsPower: true
+connectedPower: false
+conductivePower: true
+  
+absorbLasers: true
+insulated: false
+customShadow: false
+
+databaseTag: "adv-dense-alloy"
+research: insulated-wall
+researchCostMultiplier: 0.25
+  
+category: defense
+requirements:[
+dense-alloy/45
+silicon/25
+]
