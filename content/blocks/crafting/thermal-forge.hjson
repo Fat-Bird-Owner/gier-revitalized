@@ -20,7 +20,7 @@ attribute: heat
 maxBoost: 1.5
 
 craftTime: 600
-outputItem: dense-alloy
+outputItem: dense-alloy/20
 consumes: {
 items: [plastanium/20, copper/40, beryllium/20, depleted-thorium/20]
 }
