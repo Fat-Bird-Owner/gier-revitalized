@@ -190,8 +190,8 @@ drawer: {
   basePrefix: "-lid"
 parts:[
 {
-xScl: 1.33
-yScl: 1.33
+#xScl: 1.33
+#yScl: 1.33
 
 color: ffaa5f00
 colorTo: ffaa5f66
