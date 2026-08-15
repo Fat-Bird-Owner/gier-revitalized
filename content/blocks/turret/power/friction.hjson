@@ -176,8 +176,10 @@ drawer: {
   basePrefix: "-lid"
 parts:[
 {
-color: fffffff00
-colorTo: ffffffff
+color: ffaa5f00
+colorTo: ffaa5fff
+blending: additive
+
 progress: warmup
 suffix: "-warmup"
 }
