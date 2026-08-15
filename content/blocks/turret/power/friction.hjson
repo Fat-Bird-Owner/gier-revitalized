@@ -22,7 +22,7 @@ Which is able to home in on it's target
 "
   
 shootSound: shootSmite
-baseExplosiveness: 50
+baseExplosiveness: 100
 armor: 5
 
 coolant:{
@@ -31,7 +31,7 @@ allowGas: false
 amount: 0.5
 }
 
-shootWarmupSpeed: 0.05
+shootWarmupSpeed: 0.025
 minWarmup: 0.9
 consumes:{
 power: 2.5
