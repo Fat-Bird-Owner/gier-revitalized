@@ -1,7 +1,7 @@
 type: PowerTurret
 size: 4
 outlineRadius: 0
-range: 420
+range: 280
   
 name: Friction
 
@@ -14,8 +14,7 @@ Which is able to home in on it's target
 [green]
 - Bullets are homing
 - Bullets ignore IFrame
-- Bullets does extra damage to force fields
-- Smaller size
+- Bullets does extra damage to forcefields
 - Armored[red]
 - Requires power
 - Explosive
@@ -98,7 +97,7 @@ shootEffect: {
 
 type: BasicBulletType
 speed: 7
-lifetime: 60
+lifetime: 40
 
 rotateSpeed: 1.5
 homingRange: 400
@@ -114,6 +113,7 @@ hitSize: 8
 smokeEffect: shootSmokeSmite
 showAmmoMultiplier: false
 ammoMultiplier: 1
+shieldDamageMultiplier: 1.25
 
 pierceCap: 3
 pierce: true
