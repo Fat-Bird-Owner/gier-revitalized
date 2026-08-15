@@ -9,7 +9,7 @@ powerBuffered: 5000
 }
 
 requirements: [silicon/150, surge-alloy/50, dense-alloy/25]
-shownPlanetsm [kela, gr-gier]
+shownPlanets: [kela, gr-gier]
 
 databaseTag: "adv-dense-alloy"
 drawer: [
