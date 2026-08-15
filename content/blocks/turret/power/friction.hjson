@@ -168,8 +168,6 @@ bulletInterval: 3
   
 }
 
-}
-
 elevation: 0
 drawer: {
   type: DrawTurret
