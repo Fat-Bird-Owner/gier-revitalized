@@ -1,0 +1,192 @@
+type: PowerTurret
+size: 3
+outlineRadius: 0
+range: 420
+  
+name: Friction
+
+health: 3000
+envEnabled: -1
+
+description: "
+Shoots multiple volatile lightning orbs
+Which is able to home in on it's target
+[green]
+- Bullets are homing
+- Bullets ignore IFrame
+- Bullets does extra damage to force fields
+- Smaller size
+- Armored[red]
+- Requires power
+- Explosive
+"
+  
+shootSound: shootSmite
+baseExplosiveness: 50
+  
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.5
+}
+
+shootWarmupSpeed: 0.05
+minWarmup: 0.9
+consumes:{
+power: 2.5
+}
+
+databaseTag: "adv-dense-alloy"
+shownPlanets: [gr-gier, kela]
+buildVisibility: sandboxOnly
+  
+//research: photon-panel
+rotateSpeed: 0
+recoil: 0
+outlineRadius: 0
+
+researchCostMultiplier: 0.025
+
+shootY: 0
+hasShadow: false
+customShadow: true
+category: turret
+reload: 120
+shake: 1.5
+
+shoot: {
+type: ShootSpread
+spread: 90
+shots: 4
+shotDelay: 0
+}
+  
+shootEffect:{
+type: RadialEffect
+effect: shootSmokeMissile
+rotationOffset: 45
+}
+
+buildTime: 900
+liquidCapacity: 150
+requirements:[
+silicon/150,
+metaglass/100,
+thorium/100,
+dense-alloy/50
+]
+
+rotate: false
+shootCone: 180
+inaccuracy: 0
+
+shootType:{
+
+type: BasicBulletType
+speed: 7
+lifetime: 60
+
+rotateSpeed: 1.5
+homingRange: 400
+homingPower: 0.05
+  
+damage: 250
+
+sprite: large-orb
+width: 17
+height: 21
+hitSize: 8
+
+smokeEffect: shootSmokeSmite
+showAmmoMultiplier: false
+ammoMultiplier: 1
+
+pierceCap: 3
+pierce: true
+pierceBuilding: true
+
+hitColor: f3e979
+backColor: f3e979
+trailColor: f3e979
+frontColor: ffffffff
+
+trailWidth: 2.8
+trailLength: 9
+
+hitEffect: hitBulletColor
+
+despawnEffect: {
+  type: MultiEffect
+  effects: [
+    hitBulletColor
+    {
+      type: WaveEffect
+      sizeTo: 30
+      colorFrom: f3e979
+      colorTo: f3e979
+      lifetime: 12
+    }
+  ]
+}
+
+trailRotation: true
+trailEffect: disperseTrail
+trailInterval: 3
+
+intervalBullet: {
+  type: LightningBulletType
+
+  damage: 30
+  collidesAir: false
+  ammoMultiplier: 1
+
+  lightningColor: f3e979
+  lightningLength: 5
+  lightningLengthRand: 10
+
+  buildingDamageMultiplier: 0.25
+
+  lightningType: {
+    type: BulletType
+    speed: 0.0001
+    damage: 0
+
+    lifetime: 10
+
+    hitEffect: hitLancer
+    despawnEffect: none
+
+    status: shocked
+    hittable: false
+
+    lightColor: ffffffff
+    buildingDamageMultiplier: 0.25
+  }
+}
+
+bulletInterval: 3
+  
+}
+
+}
+
+elevation: 0
+drawer: {
+  type: DrawTurret
+  basePrefix: "-lid"
+parts:[
+{
+color: fffffff00
+colorTo: ffffffff
+progress: warmup
+suffix: "-warmup"
+}
+{
+growX: -0.25
+growY: -0.25
+suffix: "-lid"
+color: ffffffff
+colorTo: 8f8f8f7f
+}
+]
+}
