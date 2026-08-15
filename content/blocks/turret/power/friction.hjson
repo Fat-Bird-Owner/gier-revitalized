@@ -50,7 +50,7 @@ researchCostMultiplier: 0.025
 
 shootY: 0
 hasShadow: false
-customShadow: false
+customShadow: true
 category: turret
 reload: 120
 shake: 1.5
