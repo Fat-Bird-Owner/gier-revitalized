@@ -133,6 +133,8 @@ trailRotation: true
 trailEffect: disperseTrail
 trailInterval: 3
 
+statusEffect: iframe-kill
+
 intervalBullet: {
   type: LightningBulletType
 
