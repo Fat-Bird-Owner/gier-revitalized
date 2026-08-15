@@ -1,0 +1,24 @@
+type: Battery
+size: 2
+name: Capacitor Cell
+
+category: power
+envEnabled: -1
+consumes: {
+powerBuffered: 5000
+}
+
+requirements: [silicon/150, surge-alloy/50, dense-alloy/25]
+shownPlanetsm [kela, gr-gier]
+
+databaseTag: "adv-dense-alloy"
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+alpha: 0.75
+}
+]
