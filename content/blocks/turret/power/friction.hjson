@@ -23,7 +23,8 @@ Which is able to home in on it's target
   
 shootSound: shootSmite
 baseExplosiveness: 50
-  
+armor: 5
+
 coolant:{
 type: ConsumeCoolant
 allowGas: false
@@ -60,12 +61,6 @@ spread: 90
 shots: 4
 shotDelay: 0
 }
-  
-shootEffect:{
-type: RadialEffect
-effect: shootSmokeMissile
-rotationOffset: 45
-}
 
 buildTime: 900
 liquidCapacity: 150
@@ -82,13 +77,32 @@ inaccuracy: 0
 
 shootType:{
 
+shootEffect: {
+  type: MultiEffect
+  effects: [
+    shootTitan
+    colorSparkBig
+    {
+
+      type: WaveEffect
+      colorFrom: f3e979
+      colorTo: f3e979
+      lifetime: 12
+      sizeTo: 20
+      strokeFrom: 3
+      strokeTo: 0.3
+
+    }
+  ]
+}
+
 type: BasicBulletType
 speed: 7
 lifetime: 60
 
 rotateSpeed: 1.5
 homingRange: 400
-homingPower: 0.05
+homingPower: 0.075
   
 damage: 250
 
@@ -177,7 +191,7 @@ drawer: {
 parts:[
 {
 color: ffaa5f00
-colorTo: ffaa5fff
+colorTo: ffaa5f66
 blending: additive
 
 progress: warmup
