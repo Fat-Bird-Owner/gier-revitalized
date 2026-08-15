@@ -1,5 +1,5 @@
 type: PowerTurret
-size: 3
+size: 4
 outlineRadius: 0
 range: 420
   
@@ -50,7 +50,7 @@ researchCostMultiplier: 0.025
 
 shootY: 0
 hasShadow: false
-customShadow: true
+customShadow: false
 category: turret
 reload: 120
 shake: 1.5
