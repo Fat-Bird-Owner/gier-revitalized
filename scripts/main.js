@@ -1,3 +1,5 @@
+try {
+
 // Team changes, showing gier and other stuff
 //require("EventRunnable"); Unreliable
 require("Transcripts");
@@ -57,3 +59,7 @@ require("ResilientUnit");
 
 // Mods
 //require("Modifiers");
+
+} catch(e){
+log(e)
+}
