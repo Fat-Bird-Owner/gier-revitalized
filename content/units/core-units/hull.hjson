@@ -16,7 +16,6 @@ outlineRadius: 0
 speed: 1.5
 accel: 0.1
 drag: 0.05
-engineSize: 1
 
 engines: [
 {
