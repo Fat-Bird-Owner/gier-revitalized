@@ -46,6 +46,44 @@ drawSoftShadow: false
 buildSpeed: 1.5
 mineSpeed: 15
 
+weapons: [
+{
+x: 0
+y: 0
+mirror: false
+
+rotate: true
+reload: 90
+
+shoot: {
+shots: 3
+shotDelay: 10
+}
+
+bullet: {
+type: LaserBoltBulletType
+trailLength: 5
+trailWidth: 1
+
+trailColor: 84F491
+speed: 2.5
+lifetime: 60
+
+weaveScale: 1.5
+weaveMag: 2
+healPercent: 1
+
+damage: 10
+splashDamage: 5
+splashDamageRadius: 20
+
+scaledSplashDamage: true
+
+}
+
+}
+]
+
 abilities: [
 {
 type: ForceFieldAbility
