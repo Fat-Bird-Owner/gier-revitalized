@@ -14,32 +14,33 @@ vulnerableWithPayloads: true
 outlineRadius: 0
 
 speed: 1.5
+accel: 0.1
 drag: 0.05
-engineSize: 0
+engineSize: 1
 
 engines: [
 {
-x: 6.25
-y: -6.25
-radius: 1.5
+x: 6.5
+y: -6.5
+radius: 3
 rotation: -135
 }
 {
-x: -6.25
-y: -6.25
-radius: 1.5
+x: -6.5
+y: -6.5
+radius: 3
 rotation: 135
 }
 {
-x: -6.25
-y: 6.25
-radius: 1.5
+x: -6.5
+y: 6.5
+radius: 3
 rotation: -45
 }
 {
-x: 6.25
-y: 6.25
-radius: 1.5
+x: 6.5
+y: 6.5
+radius: 3
 rotation: 45
 }
 ]
