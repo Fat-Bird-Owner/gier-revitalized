@@ -12,6 +12,7 @@ targetable: false
 vulnerableWithPayloads: true
 
 outlineRadius: 0
+engineSize: 0
 
 speed: 1.5
 accel: 0.1
@@ -21,26 +22,26 @@ engines: [
 {
 x: 10
 y: -10
-radius: 3
+radius: 2
 rotation: -135
 }
 {
 x: -10
 y: -10
-radius: 3
-rotation: 135
+radius: 2
+rotation: 45
 }
 {
 x: -10
 y: 10
-radius: 3
-rotation: -45
+radius: 2
+rotation: -135
 }
 {
 x: 10
 y: 10
-radius: 3
-rotation: 225
+radius: 2
+rotation: 135
 }
 ]
 
