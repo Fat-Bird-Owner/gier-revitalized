@@ -20,8 +20,8 @@ databaseTag: "adv-dense-alloy"
 shownPlanets: [gr-gier, kela]
 
 requirements: [copper/60, silicon/30, dense-alloy/30]
-baseColor: CBD97FFF
-range: 4
+baseColor: C9A58FFF
+range: 6
 effectChance: 0
 
 healPercent: 0
