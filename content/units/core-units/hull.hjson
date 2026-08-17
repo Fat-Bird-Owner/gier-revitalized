@@ -61,6 +61,7 @@ shotDelay: 10
 }
 
 bullet: {
+
 type: LaserBoltBulletType
 trailLength: 5
 trailWidth: 1
