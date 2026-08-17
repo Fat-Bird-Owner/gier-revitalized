@@ -70,6 +70,7 @@ trailWidth: 1
 
 frontColor: FFD37F
 backColor: FFD37F
+healColor: FFD37F
 
 trailColor: FFD37F
 speed: 5
