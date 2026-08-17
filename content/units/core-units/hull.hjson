@@ -42,6 +42,7 @@ rotation: -45
 }
 ]
 
+drawSoftShadow: false
 buildSpeed: 1.5
 mineSpeed: 15
 
