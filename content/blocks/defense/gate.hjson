@@ -13,3 +13,6 @@ envEnabled: -1
 
 research: alloy-barracade
 customShadow: true
+armor: 5
+
+health: 875
