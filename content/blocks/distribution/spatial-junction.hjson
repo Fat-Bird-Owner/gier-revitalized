@@ -1,0 +1,18 @@
+type: DuctJunction
+name: Spatial Junction
+databaseTag: "adv-thorium"
+
+requirements: [beryllium/8, thorium/8, metaglass/8]
+health: 150  
+description: "
+Quite similar to spatial-duct
+Acts as an intersection for spatial ducts
+"
+
+research: spatial-duct
+researchCostMultiplier: 0.5
+envEnabled: -1
+
+speed: 2
+itemCapacity: 4
+transparentColor: 00000000
