@@ -10,7 +10,9 @@ payloadCapacity: 576
 hittable: false
 targetable: false
 vulnerableWithPayloads: true
-  
+
+outlineRadius: 0
+
 speed: 1.5
 drag: 0.05
 engines: [
