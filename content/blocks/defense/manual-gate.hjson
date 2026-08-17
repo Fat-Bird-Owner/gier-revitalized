@@ -1,0 +1,19 @@
+type: Door
+size: 1
+name: Gate
+
+description: "
+Door which has to be manually opened
+"
+
+requirements: [titanium/50, silicon/40, dense-alloy/25]
+category: defense
+envEnabled: -1
+
+research: gate
+customShadow: true
+armor: 5
+
+health: 875
+chainEffect: true
+databaseTag: "adv-dense-alloy"
