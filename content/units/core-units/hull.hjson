@@ -19,26 +19,26 @@ drag: 0.05
 
 engines: [
 {
-x: 7.5
-y: -7.5
+x: 10
+y: -10
 radius: 3
 rotation: -135
 }
 {
-x: -7.5
-y: -7.5
+x: -10
+y: -10
 radius: 3
 rotation: 135
 }
 {
-x: -7.5
-y: 7.5
+x: -10
+y: 10
 radius: 3
 rotation: -45
 }
 {
-x: 7.5
-y: 7.5
+x: 10
+y: 10
 radius: 3
 rotation: 45
 }
