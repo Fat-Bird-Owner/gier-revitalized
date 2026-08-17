@@ -15,30 +15,32 @@ outlineRadius: 0
 
 speed: 1.5
 drag: 0.05
+engineSize: 0
+
 engines: [
 {
-x: -12.5
-y: -12.5
+x: 6.25
+y: -6.25
 radius: 1.5
-rotation: 225
+rotation: -135
 }
 {
-x: -12.5
-y: 12.5
+x: -6.25
+y: -6.25
 radius: 1.5
-rotation: -225
+rotation: 135
 }
 {
-x: -12.5
-y: 12.5
-radius: 1.5
-rotation: 45
-}
-{
-x: 12.5
-y: 12.5
+x: -6.25
+y: 6.25
 radius: 1.5
 rotation: -45
+}
+{
+x: 6.25
+y: 6.25
+radius: 1.5
+rotation: 45
 }
 ]
 
