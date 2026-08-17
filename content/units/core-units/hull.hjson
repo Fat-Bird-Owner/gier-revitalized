@@ -78,8 +78,9 @@ speed: 5
 lifetime: 30
 
 collidesTeam: true
+inaccuracy: 15
 
-weaveScale: 1.5
+weaveScale: 3
 weaveMag: 2
 healPercent: 1
 
