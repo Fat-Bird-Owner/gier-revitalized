@@ -1,0 +1,15 @@
+type: AutoDoor
+size: 1
+name: Gate
+
+description: "
+Automatically opens when a ground unit
+is nearby
+"
+
+requirements: [beryllium/50, silicon/40, dense-alloy/25]
+category: defense
+envEnabled: -1
+
+research: alloy-barracade
+customShadow: true
