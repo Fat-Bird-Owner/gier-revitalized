@@ -66,7 +66,10 @@ type: LaserBoltBulletType
 trailLength: 5
 trailWidth: 1
 
-trailColor: 84F491
+frontColor: FFD37F
+backColor: FFD37F
+
+trailColor: FFD37F
 speed: 2.5
 lifetime: 60
 
