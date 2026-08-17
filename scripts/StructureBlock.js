@@ -3,7 +3,8 @@ const attributes = require("Attributes");
 const stats = require("Stats");
 
 const blocks = [
-"gr-reinforced-structure"
+"gr-reinforced-structure",
+"gr-dense-structure"
 ];
 
 Events.on(BuildDamageEvent, event => {
