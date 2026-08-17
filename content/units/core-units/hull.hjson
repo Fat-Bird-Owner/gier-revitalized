@@ -23,7 +23,7 @@ engines: [
 x: 10
 y: -10
 radius: 2
-rotation: -135
+rotation: 135
 }
 {
 x: -10
@@ -35,13 +35,13 @@ rotation: 45
 x: -10
 y: 10
 radius: 2
-rotation: -135
+rotation: -45
 }
 {
 x: 10
 y: 10
 radius: 2
-rotation: 135
+rotation: -135
 }
 ]
 
