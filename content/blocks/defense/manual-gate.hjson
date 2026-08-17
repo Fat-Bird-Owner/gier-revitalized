@@ -11,7 +11,7 @@ category: defense
 envEnabled: -1
 
 research: gate
-customShadow: true
+customShadow: false
 armor: 5
 
 health: 875
