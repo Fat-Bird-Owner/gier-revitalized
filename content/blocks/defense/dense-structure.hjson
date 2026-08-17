@@ -1,5 +1,7 @@
 type: RegenProjector
 name: Dense Structure
+size: 2
+
 description: "
 Quite similar to reinforced structure
 But with a greater multiplier
