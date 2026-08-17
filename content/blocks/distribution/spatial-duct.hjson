@@ -22,4 +22,4 @@ speed: 2
 itemCapacity: 2
 
 bridgeReplacement: overhead-belt
-junctionReplacement: rail-overflow
+junctionReplacement: spatial-junction
