@@ -16,3 +16,5 @@ envEnabled: -1
 speed: 2
 itemCapacity: 4
 transparentColor: 00000000
+
+squareSprite: false
