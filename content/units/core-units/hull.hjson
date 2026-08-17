@@ -20,13 +20,13 @@ engines: [
 x: -12.5
 y: -12.5
 radius: 1.5
-rotation: 125
+rotation: 225
 }
 {
 x: -12.5
 y: 12.5
 radius: 1.5
-rotation: -125
+rotation: -225
 }
 {
 x: -12.5
@@ -70,8 +70,10 @@ frontColor: FFD37F
 backColor: FFD37F
 
 trailColor: FFD37F
-speed: 2.5
-lifetime: 60
+speed: 5
+lifetime: 30
+
+collidesTeam: true
 
 weaveScale: 1.5
 weaveMag: 2
