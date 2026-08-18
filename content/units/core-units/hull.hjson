@@ -26,9 +26,12 @@ outline: false
 x: -7.5
 y: 7.5
 
-under: true
+layerOffset: -0.75
 xScl: 0.75
 yScl: 0.75
+
+mirror: true
+suffix: "-rotators"
 
 moveRot: 360
 progress: {
@@ -44,9 +47,12 @@ outline: false
 x: -7.5
 y: 7.5
 
-under: true
+layerOffset: -0.75
 xScl: 0.75
 yScl: 0.75
+
+mirror: true
+suffix: "-rotators"
 
 moveRot: -360
 progress: {
