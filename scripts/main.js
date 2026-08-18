@@ -13,7 +13,7 @@ require("gier-to-gier");
 require("Pasting");
 require("GameOver");
 require("AttributeVanilla");
-require("BreakBlock");
+//require("BreakBlock"); didnt have the needed event type
 //require("gierTroll");
 
 //    ### Class Overrides ###
