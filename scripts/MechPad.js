@@ -6,7 +6,8 @@ const mechPads = [
 "gr-disrupter-bay",
 "gr-barracade-bay",
 "gr-ash-pad" ,
-"gr-extractor-bastion"
+"gr-extractor-bastion",
+"gr-operant-pad"
 ];
 
 // Basically an init for this override class
