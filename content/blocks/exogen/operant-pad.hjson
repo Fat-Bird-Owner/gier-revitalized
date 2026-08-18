@@ -16,7 +16,7 @@ consumes: {
 liquids: [liquid-silicon/0.125, liquid-lead/0.03334]
 }
 
-unitType: ash
+unitType: operant
 unitBuildTime: 1500
 requirements: [lead/350, copper/200, silicon/175]
 
