@@ -26,3 +26,4 @@ envEnabled: -1
 polyRadius: 0
 
 polyStroke: 0
+destructible: false
