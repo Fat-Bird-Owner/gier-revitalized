@@ -6,7 +6,7 @@ hitSize: 25
 health: 150
 armor: 5
 
-payloadCapacity: 576
+payloadCapacity: 625
 hittable: false
 targetable: false
 vulnerableWithPayloads: true
