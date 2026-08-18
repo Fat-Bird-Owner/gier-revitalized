@@ -138,7 +138,6 @@ bullet: {
   damage: 1500
   width: 75
   lifetime: 65
-  speed: 3
 
   lightningSpacing: 6
   lightningLength: 5
