@@ -2,8 +2,6 @@
 
 ![top]
 
-<img src="sprites/status-effect/gier.png">
-
 # Gier Revitalized
 <br>
 <img src="sprites/blocks/logic/note/note.png">
@@ -28,7 +26,7 @@
 <br>
 <br>
 
-## Gameplays
+## Gameplays (Old)
 <br>
 <br>
 
