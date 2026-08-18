@@ -1,0 +1,10 @@
+name: Overclock Bound
+intervalDamageTime: 6
+intervalDamage: 0.416667
+  
+damageMultiplier: 1.3
+speedMultiplier: 1.3
+reloadMultiplier: 1.5
+
+effect: overclock
+color: EA8878FF
