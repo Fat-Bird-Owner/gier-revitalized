@@ -1,0 +1,166 @@
+type: leg
+flying: true
+name: Disrupter
+
+speed: 3.5
+accel: 0.035
+drag: 0.025
+
+drawBody: false
+drawCell: false
+parts: [
+{
+type: RegionPart
+name: "gr-disrupter"
+}
+]
+
+
+armor: 17
+health: 650
+outlineColor: 2f2f3f
+
+engineSize: 0
+hitSize: 12.5
+
+targetFlags:[reactor, generator, blockRepair, core]
+
+flyingLayer: 110.1
+range: 50
+abilities:[
+{
+type: SuppressionFieldAbility
+orbRadius: 3
+range: 350
+particles: 0
+layer: 110
+
+}
+]
+
+
+weapons:[
+{
+# ripped out from allure
+alwaysShooting: true
+alwaysContinuous: true
+alternate: false
+shootY: 0
+recoil: 0
+y: 0
+x: 0
+mirror: false
+
+shootSound: none
+bullet: {
+type: BulletType
+keepVelocity: false
+speed: 0
+collides: false
+hittable: false
+absorbable: false
+shootEffect: none
+smokeEffect: none
+hitEffect: none
+despawnEffect: none
+trailLength: 60
+trailWidth: 1.5
+trailColor: a393feff
+lightOpacity: 0
+}
+}
+{
+type: Weapon
+name: corvus-weapon
+
+shootSound: explosionNavanax
+chargeSound: chargeVela
+
+mirror: false
+x: 0
+y: 0
+
+reload: 180
+recoil: 0
+shake: 7.5
+cooldownTime: 180
+
+shootStatusDuration: 120
+shootStatus: unmoving
+
+shoot: {
+  firstShotDelay: 90
+}
+
+shootEffect: {
+  type: WrapEffect
+  color: a393fe66
+  effect: shootSmokeSmite
+}
+
+parts: [
+  {
+    type: FlarePart
+    progress: charge
+    spinSpeed: 2.5
+
+    color1: a393feff
+    color2: a393feff
+
+    radius: 0
+    radiusTo: 20
+    layer: 111
+  }
+]
+
+parentizeEffects: true
+
+bullet: {
+
+  fragBullets: 3
+  fragRandomSpread: 45
+  fragBullet: {
+  type: BasicBulletType
+  collides: false
+  hitEffect: none
+  trailChance: 0.75
+  trailEffect: smoke
+  hitEffect: smokeCloud
+  hitColor: 8f8f8f
+  }
+  
+  type: LaserBulletType
+
+  length: 800
+  damage: 1500
+  width: 75
+  lifetime: 65
+
+  lightningSpacing: 6
+  lightningLength: 5
+  lightningDelay: 1.1
+  lightningLengthRand: 15
+  lightningDamage: 100
+  lightningAngleRand: 40
+
+  largeHit: true
+
+  lightColor: a393feff
+  lightningColor: a393feff
+
+  healPercent: 25
+  collidesTeam: false
+
+  sideAngle: 15
+  sideWidth: 0
+  sideLength: 0
+
+  colors: [
+    a393feff
+    a393fe66
+    a393fe22
+  ]
+}
+
+}
+]
