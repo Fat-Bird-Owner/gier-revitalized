@@ -1,23 +1,27 @@
 const blocks = [
-"gr-hulling-rig"
-]
+    "gr-hulling-rig"
+];
 
 Events.on(BlockBuildBeginEvent, event => {
-try {
+    try {
+        const {tile, team, breaking} = event;
 
-const { tile, team, breaking } = event;
-if (!break) return;
+        if (!breaking) return;
 
-let valid = false;
-for (let i = 0; i < blocks.length; i++){
-if (tile.block() == Vars.content.blocks(blocks[i]) {
-valid = true;
-break;
-}}
+        let valid = false;
 
-if (!valid) return;
-tile.setBlock(tile.block(), team)
-  
-} catch(e) {  
-log(e)
-}});
+        for(let i = 0; i < blocks.length; i++){
+            if(tile.block() == Vars.content.block(blocks[i])){
+                valid = true;
+                break;
+            }
+        }
+
+        if(!valid) return;
+
+        tile.setBlock(tile.block(), team);
+
+    } catch(e) {
+        log(e);
+    }
+});
