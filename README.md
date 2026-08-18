@@ -1,12 +1,18 @@
 <div align = center>
 
 ![top]
+
+<img src="sprites/status-effect/gier.png">
+
 # Gier Revitalized
-## !This mod might be incompatiable with other mods!
+<br>
+<img src="sprites/blocks/logic/note/note.png">
+
+> This mod might be incompatible with other mods
 <br>
 
 ### Gier Revitalized is intended to bring back this asteroid sector, but within my concept.<br></div>
-### Such as:</div>
+**Such as:**</div>
 - Being Endless
 - Randomly Generated
 - And also including many modded blocks
