@@ -1,7 +1,13 @@
 type: UnitCargoLoader
 size: 3
 buildVisibility: sandboxOnly
-name: hulling Rig
+name: Hulling Rig
+
+description: "
+Fabricates a hull unit
+
+Able to carry large payloads but is very fragile
+"
 
 consumes: {
 power: 5
@@ -9,12 +15,14 @@ power: 5
 
 unitType: hull
 unitBuildTime: 1800
-breakable: true
+breakable: false
 
-health:273737273737
+health: 273737273737
 underBullets: false
 targetable: false
 
 category: effect
 envEnabled: -1
 polyRadius: 0
+
+polyStroke: 0
