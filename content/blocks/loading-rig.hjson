@@ -1,0 +1,20 @@
+type: UnitCargoLoader
+size: 3
+buildVisibility: sandboxOnly
+name: Loading Rig
+
+consumes: {
+power: 5
+}
+
+unitType: hull
+unitBuildTime: 1800
+breakable: true
+
+health:273737273737
+underBullets: false
+targetable: false
+
+category: effect
+envEnabled: -1
+polyRadius: 0
