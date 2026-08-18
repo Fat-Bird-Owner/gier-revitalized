@@ -8,3 +8,4 @@ reloadMultiplier: 1.5
 
 effect: overclock
 color: EA8878FF
+outline: false
