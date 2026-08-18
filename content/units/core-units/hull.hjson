@@ -13,6 +13,7 @@ vulnerableWithPayloads: true
 
 outlineRadius: 0
 engineSize: 0
+useUnitCap: false
 
 speed: 1.5
 accel: 0.1
@@ -98,13 +99,13 @@ scaledSplashDamage: true
 
 }
 ]
+*/
 
+healColor: 9f9f9f
 abilities: [
 {
-type: ForceFieldAbility
-radius: 65
-health: 1500
-regen: 0.125
+type: RegenAbility
+percentAmount: 0.166667
 }
 ]
-*/
+
