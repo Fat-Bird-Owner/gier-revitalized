@@ -13,6 +13,7 @@ require("gier-to-gier");
 require("Pasting");
 require("GameOver");
 require("AttributeVanilla");
+require("BreakBlock");
 //require("gierTroll");
 
 //    ### Class Overrides ###
