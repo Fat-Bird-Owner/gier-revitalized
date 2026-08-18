@@ -1,0 +1,25 @@
+type: UnitCargoLoader
+size: 3
+buildVisibility: sandboxOnly
+name: Operant Pad
+
+polyRadius: 14
+description: "
+A larger mechanical pad poccessing
+the schematic needed to fabricate
+an Operant
+"
+
+health: 1500
+armor: 15
+consumes: {
+liquids: [liquid-silicon/0.125, liquid-lead/0.03334]
+}
+
+unitType: ash
+unitBuildTime: 1500
+requirements: [lead/350, copper/200, silicon/175]
+
+category: effect
+envEnabled: -1
+polyColor: D3DEE4FF
