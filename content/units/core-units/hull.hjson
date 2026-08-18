@@ -19,6 +19,39 @@ speed: 1.5
 accel: 0.1
 drag: 0.05
 
+parts: [
+{
+type: RegionPart
+outline: false
+x: -7.5
+y: 7.5
+
+under: true
+moveRot: 360
+progress: {
+type: time
+op: loop
+time: 40
+}
+
+}
+{
+type: RegionPart
+outline: false
+x: -7.5
+y: 7.5
+
+under: true
+moveRot: -360
+progress: {
+type: time
+op: loop
+time: 40
+}
+
+}
+]
+
 /*
 engines: [
 {
