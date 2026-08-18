@@ -1,7 +1,7 @@
 type: UnitCargoLoader
 size: 3
 buildVisibility: sandboxOnly
-name: Loading Rig
+name: hulling Rig
 
 consumes: {
 power: 5
