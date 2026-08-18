@@ -7,7 +7,8 @@ Events.on(BlockBuildBeginEvent, event => {
         const {tile, team, breaking} = event;
 
         if (!breaking) return;
-
+        log(tile.block())
+        
         let valid = false;
 
         for(let i = 0; i < blocks.length; i++){
