@@ -9,7 +9,7 @@ Quite similar to spatial-duct
 Acts as an intersection for spatial ducts
 "
 
-research: spatial-duct
+#research: spatial-duct
 researchCostMultiplier: 0.5
 envEnabled: -1
 
@@ -17,5 +17,5 @@ speed: 2
 itemCapacity: 4
 transparentColor: 00000000
 
-#buildVisibility: debugOnly
+buildVisibility: debugOnly
 squareSprite: true
