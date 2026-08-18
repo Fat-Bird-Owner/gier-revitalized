@@ -17,5 +17,5 @@ speed: 2
 itemCapacity: 4
 transparentColor: 00000000
 
-buildVisibility: debugOnly
-squareSprite: false
+#buildVisibility: debugOnly
+squareSprite: true
