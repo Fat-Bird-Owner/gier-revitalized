@@ -18,6 +18,7 @@ speed: 1.5
 accel: 0.1
 drag: 0.05
 
+/*
 engines: [
 {
 x: 10
@@ -44,11 +45,13 @@ radius: 2
 rotation: -135
 }
 ]
+*/
 
 drawSoftShadow: false
 buildSpeed: 1.5
 mineSpeed: 15
 
+/*
 weapons: [
 {
 x: 0
@@ -104,3 +107,4 @@ health: 1500
 regen: 0.125
 }
 ]
+*/
