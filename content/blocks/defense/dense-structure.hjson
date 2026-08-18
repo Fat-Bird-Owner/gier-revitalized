@@ -1,4 +1,6 @@
 type: RegenProjector
+# StructureBlock
+
 name: Dense Structure
 size: 2
 
