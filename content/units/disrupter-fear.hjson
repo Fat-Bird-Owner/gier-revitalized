@@ -1,6 +1,8 @@
-type: leg
+type: legs
 flying: true
 name: Disrupter
+
+hidden: true
 
 speed: 3.5
 accel: 0.035
