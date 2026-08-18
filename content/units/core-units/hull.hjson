@@ -27,6 +27,9 @@ x: -7.5
 y: 7.5
 
 under: true
+xScl: 0.75
+yScl: 0.75
+
 moveRot: 360
 progress: {
 type: time
@@ -42,6 +45,9 @@ x: -7.5
 y: 7.5
 
 under: true
+xScl: 0.75
+yScl: 0.75
+
 moveRot: -360
 progress: {
 type: time
