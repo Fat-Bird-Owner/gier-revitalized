@@ -45,7 +45,7 @@ time: 40
 type: RegionPart
 outline: false
 x: -7.5
-y: 7.5
+y: -7.5
 
 layerOffset: -0.75
 xScl: 0.75
