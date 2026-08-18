@@ -27,7 +27,7 @@ targets.each(b => {
 try {
 if (!b.damaged()) return;
 
-b.heal(damage * healPerc);
+b.heal(Mathf.clamp(damage * healPerc, 0, build.block.health/10));
 
 lightBlock.at(b.x, b.y, b.block.size, Color.valueOf(build.block.baseColor));
 if (build.isHealSuppressed()){
