@@ -50,7 +50,9 @@ customShadow: false
 databaseTag: "adv-dense-alloy"
 research: insulated-wall
 researchCostMultiplier: 0.25
-  
+
+research: reinforced-thorium-wall
+
 category: defense
 requirements:[
 dense-alloy/45
