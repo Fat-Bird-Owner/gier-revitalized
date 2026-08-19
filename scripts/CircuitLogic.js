@@ -368,6 +368,8 @@ else if (blocks[i] == "gr-piston") parent = "gr-circuit-diode"
 else if (blocks[i] == "gr-switch-gate") parent = "gr-circuit-splitter"
 else if (blocks[i] == "gr-transmission-line") parent = "gr-circuit-wire"
 
+block.shownPlanets.addAll([Vars.content.planet("gr-gier"), Vars.content.planet("gr-kela")]);
+  
 parent = Vars.content.block(parent).techNode
   
 let node = new TechTree.TechNode(parent , block, block.requirements);
