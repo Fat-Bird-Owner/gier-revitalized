@@ -16,7 +16,7 @@ priority: 0
 hasPower: false
 
 group: walls
-research: reinforced-structurr
+research: reinforced-structure
 health: 3000
 
 envEnabled: -1
