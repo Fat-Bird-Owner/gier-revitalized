@@ -27,3 +27,4 @@ polyRadius: 0
 
 polyStroke: 0
 destructible: false
+canPickup: false
