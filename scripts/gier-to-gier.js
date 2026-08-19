@@ -40,7 +40,9 @@ actualRealGier.techTree.each(node => {
 
         content.shownPlanets.remove(remove);
         content.databaseTabs.remove(remove);
+        
         content.shownPlanets.add(Vars.content.planet("gr-gier"));
+        content.databaseTabs.add(Vars.content.planet("gr-gier"));
 
         if (content instanceof Block) {
         content.envEnabled = -1
