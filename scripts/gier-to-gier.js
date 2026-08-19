@@ -29,19 +29,19 @@ actualRealGier.techTree.each(node => {
     let remove = null;
 
     content.shownPlanets.each(p => {
-
         if(p.name == "gier"){
 
             remove = p;
 
         }
-
     });
 
     if(remove != null){
 
         content.shownPlanets.remove(remove);
+        content.databaseTabs.remove(remove);
         content.shownPlanets.add(Vars.content.planet("gr-gier"));
+
         if (content instanceof Block) {
         content.envEnabled = -1
         content.buildVisibility = BuildVisibility.shown
