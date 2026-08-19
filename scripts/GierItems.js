@@ -23,7 +23,7 @@ let lastItem = Vars.content.statusEffect("gr-gier").techNode;
   
 for (let i = 0; i < items.length; i++){
 const item = Vars.content.item(items[i]);
-item.shownPlanets.add(Planets.gier);
+item.shownPlanets.add(Vars.content.planet("gr-gier"));
 item.shownPlanets.add(Vars.content.planet("gr-kela"));
 item.databaseTabs = item.shownPlanets;
 
