@@ -1,9 +1,10 @@
 type: Door
 size: 1
-name: Gate
+name: Manual Gate
 
 description: "
 Door which has to be manually opened
+is relatively the same as a normal gate
 "
 
 requirements: [titanium/50, silicon/40, dense-alloy/25]
