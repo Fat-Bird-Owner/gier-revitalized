@@ -369,6 +369,7 @@ else if (blocks[i] == "gr-switch-gate") parent = "gr-circuit-splitter"
 else if (blocks[i] == "gr-transmission-line") parent = "gr-circuit-wire"
 
 block.shownPlanets.addAll([Vars.content.planet("gr-gier"), Vars.content.planet("gr-kela")]);
+block.databaseTabs.addAll([Vars.content.planet("gr-gier"), Vars.content.planet("gr-kela")]);
   
 parent = Vars.content.block(parent).techNode
   
