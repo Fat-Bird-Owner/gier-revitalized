@@ -19,7 +19,7 @@ gierWannabe.allowLaunchSchematics  = true;
 gierWannabe.allowLaunchLoadout = true;
 gierWannabe.prebuildBase = false;
 gierWannabe.allowLaunchToNumbered = false;
-    
+
 actualRealGier.techTree.each(node => {
 
     let content = node.content;
@@ -49,6 +49,8 @@ actualRealGier.techTree.each(node => {
     }
 
 })
+
+actualRealGier.techTree.planet = gierWannabe
   
 } catch(e){
 Vars.ui.showText("gier-gier", e);
