@@ -25,7 +25,7 @@ research: imprinter-assembler
 researchCostMultiplier: 0.25
 baseExplosiveness: 15
 
-databaseTab: "adv-depleted-thorium"
+databaseTag: "adv-depleted-thorium"
 
 tier: 1
 consumes: {
