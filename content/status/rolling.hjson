@@ -1,5 +1,5 @@
-dragMultiplier: -1
-permanent: true
+dragMultiplier: -0.2
+outline: false
 
 effectChance: 0.04
 effect: {
@@ -11,7 +11,9 @@ colorFrom: f3e979
 colorTo: f3e97900
 sizeFrom: 6
 sizeTo: 6
-layer: 43
+spin: 5
+layer: 66
+particles: 1
 }
   
 description: "
