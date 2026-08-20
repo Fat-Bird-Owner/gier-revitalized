@@ -27,6 +27,19 @@
 <br>
 <br>
 
+## Gameplays: 
+
+> <img src="sprites/status-effect/gier.png" width=20> Gier Gameplay
+
+<img src="gameplay/gier-gameplay.png" width=300>
+<br>
+
+> <img src="sprites/status-effect/techtree-kela.png" width=20> Kela Gameplay
+
+<img src="gameplay/kela-gameplay.png" width=450>
+<br>
+<br>
+
 <img src="sprites/blocks/effect/core-satellite.png" width=50>
 <br>
 <br>
