@@ -67,7 +67,7 @@ outerStack.add(img)
 dialogB.cont.add(outerStack).size(Core.graphics.getWidth()/7.5).pad(35)
 .row()
 
-let text = Vars.control.saves.getCurrent().getPlayTime()
+let text = try { return Vars.control.saves.getCurrent().getPlayTime() } catch(e) { return null }
 if (!text) text = "[grey]null"
   
 dialogB.cont.add(new Label(text)).row()
