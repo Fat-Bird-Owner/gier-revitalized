@@ -23,7 +23,7 @@
 ## Though expect: </div>
 - Unfair Generation (Bound to happen)
 - Constant Updating (This mod updates frequently but most are small)
-
+- Medium-Extreme (Maps in this mod aren’t made with game difficulty in mind and especially on eradication)
 <div align = center>
 <br>
 <br>
