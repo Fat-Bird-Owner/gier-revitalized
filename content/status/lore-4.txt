@@ -1,0 +1,45 @@
+databaseCategory: "lore"
+name: "Datachip: [grey]Exhaustion[]"
+details: '''
+[sky]Year: 176[] - [accent]Fourth generation[]
+
+[accent]Fields of gold[grey]
+(Eradication - Act: 2)
+
+The events of exhaustion led rise to
+many problematic factions
+
+Born in the ruins
+These factions were shaped into
+ruthless ravengers
+
+Not shying away one bit to commit in
+atrocities as long it's neccesary for
+there survival
+  
+This era saw a large increase
+in ariel combat and far more destructive
+substances
+
+This generation suffered the creations of 
+multiple monstrositys including [accent]Volents[] and [accent]Combustive Biofuel[]
+
+These designs would later be improved 
+into the [accent]Zenith[] and [accent]Blast compound[] respectively
+  
+'''
+
+show: true
+shownPlanets:[gier]
+fullOverride: "gr-lore-1"
+
+outline: false
+research:{
+parent: gr-lore-2
+objectives:[
+{
+type: SectorComplete
+preset: aftermath
+}
+]
+}
