@@ -1,0 +1,19 @@
+dragMultiplier: -1
+permanent: true
+
+effectChance: 0.04
+effect: {
+type: ParticleEffect
+length: 9
+interp: sineOut
+region: "gr-gas"
+colorFrom: f3e979
+colorTo: f3e97900
+sizeFrom: 6
+sizeTo: 6
+layer: 43
+}
+  
+description: "
+Slippery
+"
