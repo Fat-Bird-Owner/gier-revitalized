@@ -67,8 +67,15 @@ outerStack.add(img)
 dialogB.cont.add(outerStack).size(Core.graphics.getWidth()/7.5).pad(35)
 .row()
 
-let text = try { return Vars.control.saves.getCurrent().getPlayTime() } catch(e) { return null }
-if (!text) text = "[grey]null"
+let text;
+
+try {
+    text = Vars.control.saves.getCurrent().getPlayTime();
+} catch(e) {
+    text = null;
+}
+
+if (!text) text = "[grey]null";
   
 dialogB.cont.add(new Label(text)).row()
 dialogB.cont.add(new Label("[accent]score:[] " + getScore())).row()
