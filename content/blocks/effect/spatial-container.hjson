@@ -2,7 +2,7 @@ type: StorageBlock
 name: Spatial Container
 size: 2
 
-researchCostMultiplier: 0.45
+researchCostMultiplier: 0.5
 research: crate
 databaseTag: "adv-phase-tech"
 shownPlanets: [gr-gier, kela]
@@ -10,6 +10,7 @@ envEnabled: -1
 
 solid: true
 category: effect
+update: true
 
 itemCapacity: 50
 requirements:[lead/400, copper/350, titanium/250, thorium/150, phase-fabric/50]
