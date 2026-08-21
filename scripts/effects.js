@@ -38,5 +38,42 @@ const fissureUnavailable = new Effect(210, 100, e => {
     Draw.reset();
 });
 
-exports.fissureAvailable = fissureAvailable
-exports.fissureUnavailable = fissureUnavailable
+const lineChain = new Effect(30, e => {
+    const target = e.data;
+
+    if(!target || !target.isValid()) return;
+
+    const fin = e.fin();
+    const x1 = e.x;
+    const y1 = e.y;
+    const x2 = target.x;
+    const y2 = target.y;
+
+    let color = (target.team.color) ? target.team.color : Pal.accent
+
+    const alpha = 1 - fin;
+
+    Draw.color(color, alpha);
+
+    Lines.stroke(4 * alpha);
+    Lines.line(x1, y1, x2, y2);
+
+    Draw.color(Color.white, alpha);
+    Lines.stroke(1.2 * alpha);
+    Lines.line(x1, y1, x2, y2);
+
+    Draw.reset();
+});
+
+exports.fissureAvailable = fissureAvailable;
+exports.fissureUnavailable = fissureUnavailable;
+exports.lineChain = lineChain;
+
+Events.on(ClientLoadEvent, () => {
+try {
+
+Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = lineChain;
+    
+} catch(e){
+log(e)
+}});
