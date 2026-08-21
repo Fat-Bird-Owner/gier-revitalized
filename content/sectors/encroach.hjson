@@ -3,13 +3,14 @@ sector: 6
 outline: false
 
 # will be changed in the future
-localizedName: Template
+localizedName: Encroach
 
 description: "
-A placeholder sector preset
+An enemy point of interest
 
-Made using random generation and
-will be reworked in the future
+The remains of a sharded extraction
+site, situated among a few resource rich
+asteroids
 "
 
 research: {
