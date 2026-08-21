@@ -44,6 +44,7 @@ require("ImageBlock");
 require("CircuitLogic");
 require("CombustionBarrel");
 require("WorldScript");
+require("InstantStorage");
 //require("GeothermalTurbine");
 require("PowerGrid");
 require("damageShiftWall");
