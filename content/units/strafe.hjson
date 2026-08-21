@@ -4,6 +4,9 @@ name: Strafe
 
 speed: 2
 drag: 0.05
+faceTarget: false
+
+accel: 0.075
 
 armor: 5
 health: 1500
@@ -25,7 +28,7 @@ shootY: 0
 recoil: 0
 y: -6
 x: 12.25
-mirror: false
+mirror: true
 
 shootSound: none
 bullet: {
@@ -51,38 +54,11 @@ mirror: false
 x: 0
 y: 0
 
-shootEffect:{
-type: WrapEffect
-color: a393fe66
-effect: shootSmokeSmite
-}
-
-shoot:{
-firstShotDelay: 90
-}
-
-chargeSound: chargeVela
-shootSound: explosionNavanax
-shake: 7.5
-parts:[
-{
-type: FlarePart
-progress: charge
-spinSpeed: 2.5
-color1: a393feff
-color2: a393feff
-radius: 0
-layer: 111
-radiusTo: 20
-
-}
-]
-
 bullet:{
 
 type: BombBulletType
 keepVelocity: true
-speed: 0.75
+speed: 2
 
 collides: true
 width: 0
@@ -94,14 +70,14 @@ splashDamageRadius: 20
 fragBullets: 5
 fragRandomSpread: 40
   
-fragRandLifeMin: 0.75
-fragRandLifeMax: 1
+fragLifeMin: 0.75
+fragLifeMax: 1
 fragBullet: {
 type: BasicBulletType
 speed: 1.5
 collides: false
 trailEffect: smoke
-hitEffect: smokePuff
+despawnEffect: smokePuff
 trailChance: 0.75
 }
 
@@ -109,8 +85,8 @@ lifetime: 60
 parts: [
 {
 type: FlarePart
-sizeFrom: 16
-sizeTo: 12
+sizeFrom: 8
+sizeTo: 4
 progress: life
 strokeFrom: 3
 strokeTo: 0
