@@ -65,14 +65,38 @@ const lineChain = new Effect(30, e => {
     Draw.reset();
 });
 
+let squareFx = new Effect(120, e => {
+
+    const build = Vars.world.buildWorld(e.x, e.y)
+
+    if (!build) return; 
+
+    const size = build.block.size + 8;
+    const prog = Interp.sine.apply(e.fin())
+
+    Lines.stroke(2 * prog);
+    Draw.color(Pal.remove);
+
+    Draw.alpha(e.fout())
+    Lines.square(
+        build.x,
+        build.y,
+        size * prog
+    );
+
+    Draw.reset();
+});
+
 exports.fissureAvailable = fissureAvailable;
 exports.fissureUnavailable = fissureUnavailable;
 exports.lineChain = lineChain;
+exports.squareFx = squareFx;
 
 Events.on(ClientLoadEvent, () => {
 try {
 
 Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = lineChain;
+Vars.content.unit("gr-restoration").abilities.get(1).healEffect = squareFx;
     
 } catch(e){
 log(e)
