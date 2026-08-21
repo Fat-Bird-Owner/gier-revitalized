@@ -67,17 +67,30 @@ height: 0
 splashDamage: 250
 splashDamageRadius: 20
 
-fragBullets: 5
+fragBullets: 8
 fragRandomSpread: 40
   
-fragLifeMin: 0.75
+fragLifeMin: 0.25
 fragLifeMax: 1
 fragBullet: {
 type: BasicBulletType
 speed: 1.5
+lifetime: 90
 collides: false
-trailEffect: smoke
-despawnEffect: smokePuff
+trailEffect: {
+type: WrapEffect
+color: 6f6f6f
+layer: 44
+effect: vaporSmall
+}
+
+despawnEffect: {
+type: WrapEffect
+color: 6f6f6f
+layer: 44
+effect: vapor
+}
+
 trailChance: 0.75
 }
 
@@ -85,8 +98,8 @@ lifetime: 60
 parts: [
 {
 type: FlarePart
-sizeFrom: 8
-sizeTo: 4
+radius: 16
+radiusTo: 4
 progress: life
 strokeFrom: 3
 strokeTo: 0
