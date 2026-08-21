@@ -65,7 +65,7 @@ const lineChain = new Effect(30, e => {
     Draw.reset();
 });
 
-let squareFx = new Effect(120, e => {
+const squareFx = new Effect(120, e => {
 
     const build = Vars.world.buildWorld(e.x, e.y)
 
