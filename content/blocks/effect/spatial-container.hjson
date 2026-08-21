@@ -1,0 +1,31 @@
+type: StorageBlock
+name: Spatial Container
+size: 2
+
+researchCostMultiplier: 0.45
+research: crate
+databaseTag: "adv-phase-tech"
+shownPlanets: [gr-gier, kela]
+envEnabled: -1
+
+solid: true
+category: effect
+
+itemCapacity: 50
+requirements:[lead/400, copper/350, titanium/250, thorium/150, phase-fabric/50]
+buildTime: 1500
+squareSprite: false
+
+baseExplosiveness: 50
+
+description: "
+Inputted items are directly transported
+to the core
+
+Unloads from the core but can't support
+it's own core
+[green]
+- Core transport/unload[red]
+- Explosive
+- Can't support a core
+"
