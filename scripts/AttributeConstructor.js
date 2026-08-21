@@ -1,4 +1,4 @@
-
+const fissureEffect = require("effects")
 
 // Main Logic behind the code will enable it if a block has carbon efficiency doesnt actually work tho
 Events.on(BlockBuildEndEvent, e => {
@@ -46,9 +46,9 @@ for(let dy = 0; dy < size; dy++){
     
     if (block != Vars.content.block("gr-fissure-amalgam")){
     if(attribute <= 0){
-    Fx.unitEnvKill.at(worldTile.worldx(), worldTile.worldy());
+    fissureEffect.fissureUnavailable.at(worldTile.worldx(), worldTile.worldy());
     }else{
-    Fx.upgradeCoreBloom.at(worldTile.worldx(), worldTile.worldy(), 1);
+    fissureEffect.fissureAvailable.at(worldTile.worldx(), worldTile.worldy());
     }}
 
     
