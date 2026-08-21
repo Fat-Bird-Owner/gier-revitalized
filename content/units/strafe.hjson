@@ -1,0 +1,125 @@
+type: flying
+flying: true
+name: Strafe
+
+speed: 2
+drag: 0.05
+
+armor: 5
+health: 1500
+outlineRadius: 0
+
+engineOffset: 14
+hitSize: 28.5
+
+flyingLayer: 78
+range: 45
+
+weapons:[
+{
+# ripped out from allure
+alwaysShooting: true
+alwaysContinuous: true
+alternate: false
+shootY: 0
+recoil: 0
+y: -6
+x: 12.25
+mirror: false
+
+shootSound: none
+bullet: {
+type: BulletType
+keepVelocity: false
+speed: 0
+collides: false
+hittable: false
+absorbable: false
+shootEffect: none
+smokeEffect: none
+hitEffect: none
+despawnEffect: none
+trailLength: 25
+trailWidth: 1.5
+trailColor: FFD280FF
+lightOpacity: 0
+}
+}
+{
+reload: 180
+mirror: false
+x: 0
+y: 0
+
+shootEffect:{
+type: WrapEffect
+color: a393fe66
+effect: shootSmokeSmite
+}
+
+shoot:{
+firstShotDelay: 90
+}
+
+chargeSound: chargeVela
+shootSound: explosionNavanax
+shake: 7.5
+parts:[
+{
+type: FlarePart
+progress: charge
+spinSpeed: 2.5
+color1: a393feff
+color2: a393feff
+radius: 0
+layer: 111
+radiusTo: 20
+
+}
+]
+
+bullet:{
+
+type: BombBulletType
+keepVelocity: true
+speed: 0.75
+
+collides: true
+width: 0
+height: 0
+
+splashDamage: 250
+splashDamageRadius: 20
+
+fragBullets: 5
+fragRandomSpread: 40
+  
+fragRandLifeMin: 0.75
+fragRandLifeMax: 1
+fragBullet: {
+type: BasicBulletType
+speed: 1.5
+collides: false
+trailEffect: smoke
+hitEffect: smokePuff
+trailChance: 0.75
+}
+
+lifetime: 60
+parts: [
+{
+type: FlarePart
+sizeFrom: 16
+sizeTo: 12
+progress: life
+strokeFrom: 3
+strokeTo: 0
+spinSpeed: 9
+color: FFD280FF
+}
+]
+
+}
+
+}
+]
