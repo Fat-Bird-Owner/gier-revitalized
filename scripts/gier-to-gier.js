@@ -19,7 +19,8 @@ gierWannabe.allowLaunchSchematics  = true;
 gierWannabe.allowLaunchLoadout = true;
 gierWannabe.prebuildBase = false;
 gierWannabe.allowLaunchToNumbered = false;
-
+gierWannabe.defaultCore = Vars.content.block("gr-core-satellite")
+    
 actualRealGier.techTree.each(node => {
 
     let content = node.content;
