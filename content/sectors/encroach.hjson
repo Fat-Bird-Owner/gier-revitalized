@@ -13,6 +13,7 @@ site, situated among a few resource rich
 asteroids
 "
 
+overrideLaunchDefaults: true
 research: {
 parent: gier-main
 objectives:[
