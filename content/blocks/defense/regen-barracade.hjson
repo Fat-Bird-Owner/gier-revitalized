@@ -31,7 +31,7 @@ customShadow: true
 shownPlanets: [kela, gier]
 health: 4200
 
-requirements: [lead/25, copper/15, silicon/15, plastanium/10]
+requirements: [lead/25, copper/15, metaglass/15, plastanium/10]
 
 drawer: [
 {
