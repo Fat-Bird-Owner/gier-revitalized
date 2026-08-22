@@ -65,7 +65,7 @@ parts: [
 type: RegionPart
 name: "gr-rail-trail-fx"
 color: EAB678FF
-rotation: 45
+rotation: 0
 outline: false
 x: 4
 }
@@ -73,7 +73,7 @@ x: 4
 type: RegionPart
 name: "gr-rail-trail-fx"
 color: EAB678FF
-rotation: -45
+rotation: 90
 outline: false
 x: -4
 }
