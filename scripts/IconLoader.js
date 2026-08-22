@@ -26,7 +26,7 @@ try {
     var teams = Seq.with(Team.all);
 
     extraIcons.each(function(entry){
-        var region = Core.atlas.find(entry.key);
+        var region = Core.atlas.find(entry.value);
 
         if(!region.found()){
             Log.warn("Could not find icon region: \"" + entry.key + "\"");
