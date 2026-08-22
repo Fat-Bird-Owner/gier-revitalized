@@ -58,7 +58,7 @@ trailLength: 16
 pierce: true
 
 despawnHit: true
-hitShale: 15
+hitShake: 15
 
 parts: [
 {
