@@ -200,7 +200,7 @@ Events.on(ClientLoadEvent, () => {
 try {
 
 Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = lineChain;
-Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = healSphere;
+Vars.content.unit("gr-restoration").abilities.get(0).hitEffect = healSphere;
 Vars.content.unit("gr-restoration").abilities.get(1).healEffect = squareFx;
 Vars.content.unit("gr-electron").abilities.get(2).damageEffect = chainLightning;
 Vars.content.unit("gr-arraign").abilities.get(2).damageEffect = chainLightning;
