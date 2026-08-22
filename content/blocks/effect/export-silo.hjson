@@ -27,7 +27,7 @@ research: rail-router
 researchCostMultiplier: 0.25
 envEnabled: -1
 
-itemCapacity: 20
+itemCapacity: 50
 launchTime: 2700
 liquidCapacity: 40
 
