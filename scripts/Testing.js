@@ -100,14 +100,18 @@ function packIcons(){
 function registerIcons(){
     try{
         var ch = 0xE001;
+        var keys = extraIcons.keys();
 
-        extraIcons.each(function(key, value){
+        while(keys.hasNext()){
+            var key = keys.next();
+            var value = extraIcons.get(key);
+
             try{
                 var region = Core.atlas.find(value);
 
                 if(!region.found()){
                     Log.warn("Could not find icon region: \"" + value + "\"");
-                    return;
+                    continue;
                 }
 
                 Fonts.registerIcon(
@@ -120,7 +124,7 @@ function registerIcons(){
             }catch(err){
                 Log.err("Icons.registerIcons entry failed: " + err);
             }
-        });
+        }
 
     }catch(err){
         Log.err("Icons.registerIcons failed: " + err);
