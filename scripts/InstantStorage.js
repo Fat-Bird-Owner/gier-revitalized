@@ -18,8 +18,9 @@ try {
 Groups.build.each(b => {
 try {
 
-if (!b || b.block != Vars.content.block("gr-spatial-container")) return; 
-b.linkedCore = build.team.core()
+if (b.block == Vars.content.block("gr-spatial-container")){
+b.linkedCore = build.team.core();
+}
   
 } catch(e){
 }});
