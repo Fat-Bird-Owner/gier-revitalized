@@ -3,9 +3,11 @@ var extraIcons = new StringMap();
 function load(){
     try{
         Log.info("Loading icons");
+
         addIcon("copper-fort", "gr-copper-fort");
         addIcon("kela", "gr-techtree-kela");
         addIcon("gier", "gr-gier");
+
     }catch(err){
         Log.err("Icons.load failed: " + err);
     }
@@ -22,40 +24,33 @@ function addIcon(iconName, regionName){
 function packIcons(){
     try{
         var page = UI.packer.getPages().first();
-        var teams = Seq.with(Team.all);
 
         for(var entry of extraIcons.entries()){
             try{
                 var region = Core.atlas.find(entry.value);
 
                 if(!region.found()){
-                    Log.warn("Could not find icon region: \"" + entry.value + "\"");
+                    Log.warn("Icon region not found: " + entry.value);
                     continue;
                 }
 
-                page.setDirty(false);
+                Log.info(
+                    "Packing icon: " +
+                    entry.key +
+                    " -> " +
+                    entry.value +
+                    " (" +
+                    region.width +
+                    "x" +
+                    region.height +
+                    ")"
+                );
 
                 var pixmapRegion = Core.atlas.getPixmap(region);
 
-                var team = teams.find(function(t){
-                    return t.name == entry.key;
-                });
-
-                if(team != null){
-                    var px = pixmapRegion.pixmap;
-
-                    px.each(function(x, y){
-                        px.setRaw(
-                            x,
-                            y,
-                            Color.muli(
-                                px.getRaw(x, y),
-                                team.color.rgba()
-                            )
-                        );
-                    });
-
-                    pixmapRegion.pixmap = px.outline(Pal.gray, 3);
+                if(pixmapRegion == null || pixmapRegion.pixmap == null){
+                    Log.err("No pixmap for: " + entry.value);
+                    continue;
                 }
 
                 var rect = UI.packer.pack(
@@ -63,6 +58,19 @@ function packIcons(){
                     pixmapRegion,
                     region.splits,
                     region.pads
+                );
+
+                Log.info(
+                    "Packed " +
+                    entry.key +
+                    " at " +
+                    rect.x +
+                    "," +
+                    rect.y +
+                    " size " +
+                    rect.width +
+                    "x" +
+                    rect.height
                 );
 
                 region.texture = page.getTexture();
@@ -75,10 +83,16 @@ function packIcons(){
                 );
 
                 Core.atlas.getTextures().add(region.texture);
+
                 region.pixmapRegion = null;
 
             }catch(err){
-                Log.err("Icons.packIcons entry failed: " + err);
+                Log.err(
+                    "Failed packing icon '" +
+                    entry.key +
+                    "': " +
+                    err
+                );
             }
         }
 
@@ -101,14 +115,37 @@ function registerIcons(){
 
         for(var entry of extraIcons.entries()){
             try{
+                var region = Core.atlas.find(entry.value);
+
+                if(!region.found()){
+                    Log.err(
+                        "Cannot register missing icon: " +
+                        entry.value
+                    );
+                    continue;
+                }
+
                 Fonts.registerIcon(
                     entry.key,
                     entry.value,
                     ch++,
-                    Core.atlas.find(entry.value)
+                    region
                 );
+
+                Log.info(
+                    "Registered icon: " +
+                    entry.key +
+                    " using " +
+                    entry.value
+                );
+
             }catch(err){
-                Log.err("Icons.registerIcons entry failed: " + err);
+                Log.err(
+                    "Failed registering icon '" +
+                    entry.key +
+                    "': " +
+                    err
+                );
             }
         }
 
@@ -119,10 +156,9 @@ function registerIcons(){
 
 Events.on(AtlasPackEvent, function(e){
     try{
+        load();
+        packIcons();
 
-    load()
-    packIcons();
-        
     }catch(err){
         Log.err("AtlasPackEvent error: " + err);
     }
@@ -131,6 +167,7 @@ Events.on(AtlasPackEvent, function(e){
 Events.on(ClientLoadEvent, function(e){
     try{
         registerIcons();
+
     }catch(err){
         Log.err("ClientLoadEvent error: " + err);
     }
