@@ -1,42 +1,23 @@
 var extraIcons = {};
 
-function addIcon(name, regionName){
-    try{
-        extraIcons[name] = regionName;
-    }catch(err){
-        Log.err("Failed to add icon: " + err);
-    }
-}
-
 function packIcons(){
     try{
-        var names = Object.keys(extraIcons);
-
-        for(var i = 0; i < names.length; i++){
-            var name = names[i];
-            var regionName = extraIcons[name];
-            var region = Core.atlas.find(regionName);
-
-            if(region == null || !region.found()){
-                Log.warn("Could not find icon region: " + regionName);
-                continue;
-            }
-
-            // Your atlas-packing code goes here.
-            // This part must run during AtlasPackEvent.
-        }
+        // Atlas manipulation goes here.
+        Log.info("Packing custom icons...");
     }catch(err){
         Log.err("Failed to pack icons: " + err);
     }
 }
 
-function tryRegisterIcons(){
+function registerIcons(){
     try{
-        if(Fonts.def == null)
-            return false;
+        if(Fonts.def == null){
+            Log.warn("Fonts.def is null, cannot register icons.");
+            return;
+        }
 
-        var names = Object.keys(extraIcons);
         var ch = 0xE001;
+        var names = Object.keys(extraIcons);
 
         for(var i = 0; i < names.length; i++){
             try{
@@ -45,7 +26,7 @@ function tryRegisterIcons(){
                 var region = Core.atlas.find(regionName);
 
                 if(region == null || !region.found()){
-                    Log.warn("Icon region not found: " + regionName);
+                    Log.warn("Could not find icon region: " + regionName);
                     continue;
                 }
 
@@ -55,15 +36,14 @@ function tryRegisterIcons(){
                     ch++,
                     region
                 );
+
+                Log.info("Registered icon: " + name);
             }catch(err){
-                Log.err("Failed to register icon '" + name + "': " + err);
+                Log.err("Failed to register icon '" + names[i] + "': " + err);
             }
         }
-
-        return true;
     }catch(err){
-        Log.err("Icon registration error: " + err);
-        return false;
+        Log.err("Failed to register custom icons: " + err);
     }
 }
 // Loading
