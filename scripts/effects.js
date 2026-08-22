@@ -49,7 +49,7 @@ const lineChain = new Effect(30, e => {
     const x2 = target.x;
     const y2 = target.y;
 
-    let color = (target.team.color) ? target.team.color : Pal.accent
+    let color = Pal.accent
 
     const alpha = 1 - fin;
 
@@ -87,6 +87,19 @@ const squareFx = new Effect(120, e => {
     Draw.reset();
 });
 
+const healSphere = new Effect(30, 80, e => {
+
+    const sine = Interp.sine.apply(e.fout())
+    Draw.color(Pal.accent, e.fout())
+
+    Fill.circle(e.x, e.y, 5 * sine)
+    
+    Draw.color(Color.white, e.fout())
+    Fill.circle(e.x, e.y, 3.75 * sine)
+
+    Draw.reset();
+});
+
 exports.fissureAvailable = fissureAvailable;
 exports.fissureUnavailable = fissureUnavailable;
 exports.lineChain = lineChain;
@@ -96,6 +109,7 @@ Events.on(ClientLoadEvent, () => {
 try {
 
 Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = lineChain;
+Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = healSphere;
 Vars.content.unit("gr-restoration").abilities.get(1).healEffect = squareFx;
     
 } catch(e){
