@@ -28,14 +28,15 @@ name: "strafe-railgun"
 rotate: true
 rotateSpeed: 4
 
-shake: 5
+shake: 10
 layerOffset: -0.1
+recoilTime: 160
 
 bullet:{
 
 type: BasicBulletType
-speed: 4
-lifefime: 30
+speed: 6
+lifefime: 60
 
 damage: 150
 maxDamageFactor: 0.3
@@ -47,7 +48,7 @@ backColor: EAB678FF
 trailColor: FFD280FF
 
 trailWidth: 3.25
-trailLength: 8
+trailLength: 16
 pierce: true
 
 parts: [
