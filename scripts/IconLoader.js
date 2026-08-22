@@ -5,7 +5,7 @@ function load(){
     try{
         Log.info("Loading icons");
 
-        addIcon("gier", "gr-gier");
+        addIcon("gier", "gr-Gier");
 
         Log.info("Icons: Loaded");
     }catch(e){
