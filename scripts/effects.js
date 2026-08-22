@@ -100,10 +100,101 @@ const healSphere = new Effect(30, 80, e => {
     Draw.reset();
 });
 
+const rand = new Rand();
+
+const chainLightning = new Effect(20, 300, e => {
+    if(!(e.data instanceof Position)) return;
+
+    var p = e.data;
+    var tx = p.getX();
+    var ty = p.getY();
+
+    var dst = Mathf.dst(e.x, e.y, tx, ty);
+
+    Tmp.v1.set(p).sub(e.x, e.y).nor();
+
+    var normx = Tmp.v1.x;
+    var normy = Tmp.v1.y;
+
+    var range = 6;
+    var links = Mathf.ceil(dst / range);
+    var spacing = dst / links;
+
+    var points = [];
+
+    rand.setSeed(e.id);
+
+    // Generate the bolt's points once.
+    for(var i = 0; i <= links; i++){
+        if(i == 0){
+            points.push({
+                x: e.x,
+                y: e.y
+            });
+        }else if(i == links){
+            points.push({
+                x: tx,
+                y: ty
+            });
+        }else{
+            var len = i * spacing;
+
+            Tmp.v1.setToRandomDirection(rand).scl(range / 2);
+
+            points.push({
+                x: e.x + normx * len + Tmp.v1.x,
+                y: e.y + normy * len + Tmp.v1.y
+            });
+        }
+    }
+
+    for(var i = 0; i < links; i++){
+        var start = i / links;
+        var end = (i + 1) / links;
+
+        // Segment appears one by one.
+        var progress = Mathf.clamp(
+            (e.fin() - start) / (end - start)
+        );
+
+        if(progress <= 0) continue;
+
+        var p1 = points[i];
+        var p2 = points[i + 1];
+
+        // Draw only the revealed part.
+        var x = Mathf.lerp(p1.x, p2.x, progress);
+        var y = Mathf.lerp(p1.y, p2.y, progress);
+
+        // Fade each segment after it appears.
+        var fade = Mathf.clamp(
+            (e.fin() - end) / 0.25
+        );
+
+        Draw.color(Color.white, e.color, e.fin());
+        Draw.alpha(1 - fade);
+
+        Lines.stroke(2.5);
+        Lines.line(
+            p1.x,
+            p1.y,
+            x,
+            y
+        );
+    }
+
+    Draw.reset();
+})
+
+chainLightning.followParent = false
+chainLightning.rotWithParent = false
+
 exports.fissureAvailable = fissureAvailable;
 exports.fissureUnavailable = fissureUnavailable;
 exports.lineChain = lineChain;
 exports.squareFx = squareFx;
+exports.healSphere = healSphere;
+exports.chainLightning = chainLightning;
 
 Events.on(ClientLoadEvent, () => {
 try {
@@ -111,6 +202,8 @@ try {
 Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = lineChain;
 Vars.content.unit("gr-restoration").abilities.get(0).damageEffect = healSphere;
 Vars.content.unit("gr-restoration").abilities.get(1).healEffect = squareFx;
+Vars.content.unit("gr-electron").abilities.get(2).damageEffect = chainLightning;
+Vars.content.unit("gr-arraign").abilities.get(2).damageEffect = chainLightning;
     
 } catch(e){
 log(e)
