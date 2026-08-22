@@ -34,26 +34,7 @@ try {
         }
 
         page.setDirty(false);
-
         var pixmapRegion = Core.atlas.getPixmap(region);
-
-        var team = teams.find(function(t){
-            return t.name == entry.value;
-        });
-
-        if(team != null){
-            var px = pixmapRegion.pixmap;
-
-            px.each(function(x, y){
-                px.setRaw(
-                    x,
-                    y,
-                    Color.muli(px.getRaw(x, y), team.color.rgba())
-                );
-            });
-
-            pixmapRegion.pixmap = px.outline(Pal.gray, 3);
-        }
 
         var rect = UI.packer.pack(
             region.name,
@@ -74,6 +55,7 @@ try {
 
 		Log.info("Added " + entry.key + " to the pack")
         region.pixmapRegion = null;
+		
     });
 
     page.setDirty(true);
