@@ -46,11 +46,10 @@ function registerIcons(){
         Log.err("Failed to register custom icons: " + err);
     }
 }
-// Loading
-addIcon("copper-fort", "gr-copper-fort");
 
 Events.on(AtlasPackEvent, e => {
     try{
+        addIcon("copper-fort", "gr-copper-fort");
         packIcons();
     }catch(err){
         Log.err("AtlasPackEvent error: " + err);
@@ -60,9 +59,6 @@ Events.on(AtlasPackEvent, e => {
 Events.on(ClientLoadEvent, e => {
     try{
         registerIcons();
-
-        Team.blue.name = "sentinels";
-        Team.blue.emoji = Fonts.getUnicodeStr("sentinels");
     }catch(err){
         Log.err("ClientLoadEvent error: " + err);
     }
