@@ -1,0 +1,13 @@
+type: ShieldWall
+size: 2
+name: Barrier Wall
+
+requirements: [phase-fabric/30, silicon/16]
+databaseTag: "adv-phase-fabric"
+category: defense
+
+envEnabled: -1
+shieldHealth: 1200
+breakCooldown: 1200
+  
+regenSpeed: 1.5
