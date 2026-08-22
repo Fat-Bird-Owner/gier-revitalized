@@ -1,103 +1,43 @@
 var extraIcons = {};
 
-function addIcon(iconName, regionName){
+function addIcon(name, regionName){
     try{
-        extraIcons[iconName] = regionName;
+        extraIcons[name] = regionName;
+        log("Added " + name + " to queue");
+        
     }catch(err){
-        Log.err("Failed to add icon '" + iconName + "': " + err);
-    }
-}
-
-function packIcons(){
-    try{
-        var page = UI.packer.getPages().first();
-        var names = Object.keys(extraIcons);
-
-        for(var i = 0; i < names.length; i++){
-            try{
-                var regionName = extraIcons[names[i]];
-                var region = Core.atlas.find(regionName);
-
-                if(region == null || !region.found()){
-                    Log.warn("Missing icon: " + regionName);
-                    continue;
-                }
-
-                var pixmap = Core.atlas.getPixmap(region);
-
-                if(pixmap == null){
-                    Log.warn("No pixmap for: " + regionName);
-                    continue;
-                }
-
-                page.setDirty(false);
-
-                var rect = UI.packer.pack(
-                    region.name,
-                    pixmap,
-                    region.splits,
-                    region.pads
-                );
-
-                region.texture = page.getTexture();
-                log("Packed icons")
-                
-                region.set(
-                    Math.floor(rect.x),
-                    Math.floor(rect.y),
-                    Math.floor(rect.width),
-                    Math.floor(rect.height)
-                );
-
-                region.pixmapRegion = null;
-
-            }catch(err){
-                Log.err("Failed packing " + names[i] + ": " + err);
-            }
-        }
-
-        page.setDirty(true);
-
-        page.updateTexture(
-            TextureFilter.linear,
-            TextureFilter.linear,
-            false
-        );
-
-    }catch(err){
-        Log.err("packIcons failed: " + err);
+        Log.err("Failed to add icon '" + name + "': " + err);
     }
 }
 
 function registerIcons(){
     try{
-        var ch = 0xE001;
-        var names = Object.keys(extraIcons);
+        let ch = 0xE001;
 
-        for(var i = 0; i < names.length; i++){
+        for(const name in extraIcons){
             try{
-                var iconName = names[i];
-                var regionName = extraIcons[iconName];
-                var region = Core.atlas.find(regionName);
+                const regionName = extraIcons[name];
+                const region = Core.atlas.find(regionName);
 
-                if(!region.found()){
-                    Log.warn("Could not find icon region: \"" + regionName + "\"");
+                if(region == null || !region.found()){
+                    Log.warn("Could not find icon region: " + regionName);
                     continue;
                 }
 
                 Fonts.registerIcon(
-                    iconName,
+                    name,
                     regionName,
                     ch++,
                     region
                 );
 
+                Log.info("Registered icon: " + name);
             }catch(err){
-                Log.err("Failed to register icon '" + names[i] + "': " + err);
+                Log.err("Failed to register icon '" + name + "': " + err);
             }
         }
     }catch(err){
-        Log.err("Failed to register icons: " + err);
+        Log.err("Failed to register custom icons: " + err);
     }
 }
 
