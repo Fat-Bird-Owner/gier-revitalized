@@ -1,5 +1,13 @@
 var extraIcons = {};
 
+function addIcon(iconName, regionName){
+    try{
+        extraIcons[iconName] = regionName;
+    }catch(err){
+        Log.err("Failed to add icon '" + iconName + "': " + err);
+    }
+}
+
 function packIcons(){
     try{
         // Atlas manipulation goes here.
