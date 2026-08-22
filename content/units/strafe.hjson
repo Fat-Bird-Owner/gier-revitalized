@@ -13,101 +13,51 @@ health: 1500
 outlineRadius: 0
 
 engineOffset: 14
-hitSize: 28.5
+hitSize: 28
 
-flyingLayer: 78
-range: 45
+range: 120
 
 weapons:[
-{
-# ripped out from allure
-alwaysShooting: true
-alwaysContinuous: true
-alternate: false
-shootY: 0
-recoil: 0
-y: -6
-x: 12.25
-mirror: true
-
-shootSound: none
-bullet: {
-type: BulletType
-keepVelocity: false
-speed: 0
-collides: false
-hittable: false
-absorbable: false
-shootEffect: none
-smokeEffect: none
-hitEffect: none
-despawnEffect: none
-trailLength: 25
-trailWidth: 1.5
-trailColor: FFD280FF
-lightOpacity: 0
-}
-}
 {
 reload: 180
 mirror: false
 x: 0
 y: 0
 
+name: "strafe-railgun"
+rotate: true
+rotateSpeed: 4
+
+shake: 5
+layerOffset: -0.1
+
 bullet:{
 
-type: BombBulletType
-keepVelocity: true
-speed: 2
-
-collides: false
-width: 0
-height: 0
-
-splashDamage: 250
-splashDamageRadius: 20
-
-fragBullets: 8
-fragRandomSpread: 40
-  
-fragLifeMin: 0.25
-fragLifeMax: 1
-fragBullet: {
 type: BasicBulletType
-speed: 1.5
-lifetime: 90
-collides: false
-trailEffect: {
-type: WrapEffect
-color: 6f6f6f
-layer: 44
-effect: vaporSmall
-}
+speed: 4
+lifefime: 30
 
-width: 0
-height: 0
+damage: 150
+maxDamageFactor: 0.3
+splashDamage: 50
+splashDamageRadius: 40
 
-despawnEffect: {
-type: WrapEffect
-color: 6f6f6f
-layer: 44
-effect: vapor
-}
+frontColor: FFD280FF
+backColor: EAB678FF
+trailColor: FFD280FF
 
-trailChance: 0.75
-}
+trailWidth: 3.25
+trailLength: 8
+pierce: true
 
-lifetime: 60
 parts: [
 {
 type: FlarePart
-radius: 16
-radiusTo: 4
-progress: life
-strokeFrom: 3
-strokeTo: 0
-spinSpeed: 9
+sides: 2
 color1: FFD280FF
+color2: EAB678FF
+followRotation: true
+radius: 16
 }
 ]
 
