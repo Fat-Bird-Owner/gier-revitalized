@@ -1,4 +1,6 @@
-var extraIcons = {};
+var extraIcons = {
+    "copper-fort": "copper-fort"
+};
 
 function addIcon(name, regionName){
     try{
@@ -30,8 +32,11 @@ function packIcons(){
     }
 }
 
-function registerIcons(){
+function tryRegisterIcons(){
     try{
+        if(Fonts.def == null)
+            return false;
+
         var names = Object.keys(extraIcons);
         var ch = 0xE001;
 
@@ -42,7 +47,7 @@ function registerIcons(){
                 var region = Core.atlas.find(regionName);
 
                 if(region == null || !region.found()){
-                    Log.warn("Could not find icon region: " + regionName);
+                    Log.warn("Icon region not found: " + regionName);
                     continue;
                 }
 
@@ -53,23 +58,29 @@ function registerIcons(){
                     region
                 );
             }catch(err){
-                Log.err("Failed to register icon '" + names[i] + "': " + err);
+                Log.err("Failed to register icon '" + name + "': " + err);
             }
         }
+
+        return true;
     }catch(err){
-        Log.err("Failed to register icons: " + err);
+        Log.err("Icon registration error: " + err);
+        return false;
     }
 }
-
 // Loading
 addIcon("copper-fort", "gr-copper-fort");
 
-Events.on(AtlasPackEvent, () => {
-try {
-
-registerIcons()
-log("Packing - Successful");
-
-} catch(e){
-log("packing error:" + e);
-}});
+Events.on(ClientLoadEvent, e => {
+    try{
+        if(!tryRegisterIcons()){
+            Time.run(60, () => {
+                tryRegisterIcons();
+                log("packed icons")
+            });
+        }
+        
+    }catch(err){
+        Log.err("Delayed icon registration failed: " + err);
+    }
+});
