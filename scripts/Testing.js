@@ -57,7 +57,10 @@ function registerIcons(){
 
 Events.on(AtlasPackEvent, e => {
     try{
-        addIcon("copper-fort", "gr-copper-fort");
+        
+        addIcon("gr-copper-fort", "gr-copper-fort");
+        addIcon("gr-kela", "gr-techtree-kela");
+        
         packIcons();
     }catch(err){
         Log.err("AtlasPackEvent error: " + err);
