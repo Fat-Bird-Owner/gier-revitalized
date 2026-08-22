@@ -11,75 +11,53 @@ function addIcon(iconName, regionName){
 function packIcons(){
     try{
         var page = UI.packer.getPages().first();
-        var teams = Seq.with(Team.all);
-
         var names = Object.keys(extraIcons);
 
         for(var i = 0; i < names.length; i++){
             try{
-                var iconName = names[i];
-                var regionName = extraIcons[iconName];
-
+                var regionName = extraIcons[names[i]];
                 var region = Core.atlas.find(regionName);
 
-                if(!region.found()){
-                    Log.warn("Could not find icon region: \"" + regionName + "\"");
+                if(region == null || !region.found()){
+                    Log.warn("Missing icon: " + regionName);
+                    continue;
+                }
+
+                var pixmap = Core.atlas.getPixmap(region);
+
+                if(pixmap == null){
+                    Log.warn("No pixmap for: " + regionName);
                     continue;
                 }
 
                 page.setDirty(false);
 
-                var pixmapRegion = Core.atlas.getPixmap(region);
-
-                // Apply team color and outline
-                var team = teams.find(function(t){
-                    return t.name == iconName;
-                });
-
-                if(team != null){
-                    var px = pixmapRegion.pixmap;
-
-                    px.each(function(x, y){
-                        px.setRaw(
-                            x,
-                            y,
-                            Color.muli(
-                                px.getRaw(x, y),
-                                team.color.rgba()
-                            )
-                        );
-                    });
-
-                    pixmapRegion.pixmap = px.outline(Pal.gray, 3);
-                }
-
-                // Repack the modified pixmap
                 var rect = UI.packer.pack(
                     region.name,
-                    pixmapRegion,
+                    pixmap,
                     region.splits,
                     region.pads
                 );
 
-                // Update atlas region
                 region.texture = page.getTexture();
-
+                log("Packed icons")
+                
                 region.set(
-                    parseInt(rect.x),
-                    parseInt(rect.y),
-                    parseInt(rect.width),
-                    parseInt(rect.height)
+                    Math.floor(rect.x),
+                    Math.floor(rect.y),
+                    Math.floor(rect.width),
+                    Math.floor(rect.height)
                 );
 
-                Core.atlas.getTextures().add(region.texture);
                 region.pixmapRegion = null;
 
             }catch(err){
-                Log.err("Failed to pack icon '" + names[i] + "': " + err);
+                Log.err("Failed packing " + names[i] + ": " + err);
             }
         }
 
         page.setDirty(true);
+
         page.updateTexture(
             TextureFilter.linear,
             TextureFilter.linear,
@@ -87,7 +65,7 @@ function packIcons(){
         );
 
     }catch(err){
-        Log.err("Failed to pack custom icons: " + err);
+        Log.err("packIcons failed: " + err);
     }
 }
 
@@ -127,6 +105,8 @@ Events.on(AtlasPackEvent, function(e){
     try{
         
         addIcon("copper-fort", "gr-copper-fort");
+        addIcon("kela", "gr-techtree-kela");
+        addIcon("gier", "gr-gier");
         
         packIcons();
         
