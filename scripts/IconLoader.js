@@ -6,6 +6,7 @@ function load(){
         Log.info("Loading icons");
 
         addIcon("gier", "gr-gier-lead-ore1");
+        addIcon("kela", "gr-techtree-kela");
 
         Log.info("Icons: Loaded");
     }catch(e){
