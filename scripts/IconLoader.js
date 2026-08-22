@@ -13,7 +13,7 @@ Log.err(e)
 function addIcon(iconName, regionName){
 try {
   
-    extraIcons.put(iconName, regionName);
+extraIcons.put(iconName, regionName);
 
 } catch(e){
 Log.err(e)
@@ -71,6 +71,8 @@ try {
         );
 
         Core.atlas.getTextures().add(region.texture);
+
+		Log.info("Added " + entry.key + " to the pack")
         region.pixmapRegion = null;
     });
 
