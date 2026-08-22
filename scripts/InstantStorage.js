@@ -23,8 +23,9 @@ b.linkedCore = build.team.core();
 }
   
 } catch(e){
+Log.err(e)
 }});
   
 } catch(e) {
-log(e)
+Log.err(e)
 }});
