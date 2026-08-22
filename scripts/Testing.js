@@ -76,10 +76,10 @@ function packIcons(){
                 region.texture = page.getTexture();
 
                 region.set(
-                    (int)rect.x,
-                    (int)rect.y,
-                    (int)rect.width,
-                    (int)rect.height
+                Math.floor(rect.x),
+                Math.floor(rect.y),
+                Math.floor(rect.width),
+                Math.floor(rect.height)
                 );
 
                 Core.atlas.getTextures().add(region.texture);
