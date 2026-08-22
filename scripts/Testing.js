@@ -1,17 +1,39 @@
-let extraIcons = {};
+var extraIcons = {};
 
 function addIcon(name, regionName){
     try{
         extraIcons[name] = regionName;
     }catch(err){
-        Log.err("Failed to add icon: " + name);
+        Log.err("Failed to add icon: " + err);
+    }
+}
+
+function packIcons(){
+    try{
+        var names = Object.keys(extraIcons);
+
+        for(var i = 0; i < names.length; i++){
+            var name = names[i];
+            var regionName = extraIcons[name];
+            var region = Core.atlas.find(regionName);
+
+            if(region == null || !region.found()){
+                Log.warn("Could not find icon region: " + regionName);
+                continue;
+            }
+
+            // Your atlas-packing code goes here.
+            // This part must run during AtlasPackEvent.
+        }
+    }catch(err){
+        Log.err("Failed to pack icons: " + err);
     }
 }
 
 function registerIcons(){
     try{
-        var ch = 0xE001;
         var names = Object.keys(extraIcons);
+        var ch = 0xE001;
 
         for(var i = 0; i < names.length; i++){
             try{
@@ -30,20 +52,20 @@ function registerIcons(){
                     ch++,
                     region
                 );
-
             }catch(err){
-                Log.err("Failed to register icon: " + err);
+                Log.err("Failed to register icon '" + names[i] + "': " + err);
             }
         }
     }catch(err){
-        Log.err("Failed to register custom icons: " + err);
+        Log.err("Failed to register icons: " + err);
     }
 }
 
+// Loading
+addIcon("copper-fort", "gr-copper-fort");
+
 Events.on(AtlasPackEvent, () => {
 try {
-  
-addIcon("copper-fort", "gr-copper-fort");
 
 registerIcons()
 log("Packing - Successful");
