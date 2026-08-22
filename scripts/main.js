@@ -45,6 +45,7 @@ require("CircuitLogic");
 require("CombustionBarrel");
 require("WorldScript");
 require("InstantStorage");
+require("SporeoplasmaReactor");
 //require("GeothermalTurbine");
 require("PowerGrid");
 require("damageShiftWall");
