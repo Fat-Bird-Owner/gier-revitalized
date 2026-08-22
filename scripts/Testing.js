@@ -1,11 +1,97 @@
-var extraIcons = {};
+var extraIcons = new StringMap();
 
-function addIcon(name, regionName){
+function load(){
     try{
-        extraIcons[name] = regionName;
-        log("Added " + name + " to icon queue");
+        Log.info("Loading icons");
+        addIcon("copper-fort", "gr-copper-fort");
+        addIcon("kela", "gr-techtree-kela");
+        addIcon("gier", "gr-gier");
     }catch(err){
-        log("Failed to add icon '" + name + "': " + err);
+        Log.err("Icons.load failed: " + err);
+    }
+}
+
+function addIcon(iconName, regionName){
+    try{
+        extraIcons.put(iconName, regionName);
+    }catch(err){
+        Log.err("Icons.addIcon failed: " + err);
+    }
+}
+
+function packIcons(){
+    try{
+        var page = UI.packer.getPages().first();
+        var teams = Seq.with(Team.all);
+
+        for(var entry of extraIcons.entries()){
+            try{
+                var region = Core.atlas.find(entry.value);
+
+                if(!region.found()){
+                    Log.warn("Could not find icon region: \"" + entry.value + "\"");
+                    continue;
+                }
+
+                page.setDirty(false);
+
+                var pixmapRegion = Core.atlas.getPixmap(region);
+
+                var team = teams.find(function(t){
+                    return t.name == entry.key;
+                });
+
+                if(team != null){
+                    var px = pixmapRegion.pixmap;
+
+                    px.each(function(x, y){
+                        px.setRaw(
+                            x,
+                            y,
+                            Color.muli(
+                                px.getRaw(x, y),
+                                team.color.rgba()
+                            )
+                        );
+                    });
+
+                    pixmapRegion.pixmap = px.outline(Pal.gray, 3);
+                }
+
+                var rect = UI.packer.pack(
+                    region.name,
+                    pixmapRegion,
+                    region.splits,
+                    region.pads
+                );
+
+                region.texture = page.getTexture();
+
+                region.set(
+                    (int)rect.x,
+                    (int)rect.y,
+                    (int)rect.width,
+                    (int)rect.height
+                );
+
+                Core.atlas.getTextures().add(region.texture);
+                region.pixmapRegion = null;
+
+            }catch(err){
+                Log.err("Icons.packIcons entry failed: " + err);
+            }
+        }
+
+        page.setDirty(true);
+
+        page.updateTexture(
+            TextureFilter.linear,
+            TextureFilter.linear,
+            false
+        );
+
+    }catch(err){
+        Log.err("Icons.packIcons failed: " + err);
     }
 }
 
@@ -13,38 +99,29 @@ function registerIcons(){
     try{
         var ch = 0xE001;
 
-        for(var name in extraIcons){
+        for(var entry of extraIcons.entries()){
             try{
-                var regionName = extraIcons[name];
-                var region = Core.atlas.find(regionName);
-
-                if(region == null || !region.found()){
-                    log("Could not find icon region: " + regionName);
-                    continue;
-                }
-
                 Fonts.registerIcon(
-                    name,
-                    regionName,
+                    entry.key,
+                    entry.value,
                     ch++,
-                    region
+                    Core.atlas.find(entry.value)
                 );
-
-                log("Registered icon: " + name);
             }catch(err){
-                log("Failed to register icon '" + name + "': " + err);
+                Log.err("Icons.registerIcons entry failed: " + err);
             }
         }
+
     }catch(err){
-        log("Failed to register custom icons: " + err);
+        Log.err("Icons.registerIcons failed: " + err);
     }
 }
 
 Events.on(AtlasPackEvent, function(e){
     try{
-        addIcon("copper-fort", "gr-copper-fort");
-        addIcon("kela", "gr-techtree-kela");
-        addIcon("gier", "gr-gier");
+        
+    packIcons();
+        
     }catch(err){
         log("AtlasPackEvent error: " + err);
     }
