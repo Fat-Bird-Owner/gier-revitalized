@@ -29,7 +29,7 @@ parts: [
 type: RegionPart
 progress: warmup
 moveY: 3
-name: "gr-strafe-weapon
+name: "gr-strafe-weapon"
 }
 ]
 
@@ -44,7 +44,7 @@ bullet:{
 
 type: BasicBulletType
 speed: 12
-lifefime: 45
+lifetime: 45
 
 damage: 150
 maxDamageFactor: 0.3
