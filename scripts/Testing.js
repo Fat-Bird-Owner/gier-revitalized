@@ -119,7 +119,8 @@ function registerIcons(){
 
 Events.on(AtlasPackEvent, function(e){
     try{
-        
+
+    load()
     packIcons();
         
     }catch(err){
