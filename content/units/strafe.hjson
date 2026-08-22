@@ -28,7 +28,7 @@ parts: [
 {
 type: RegionPart
 progress: warmup
-moveY: 3
+moveY: 6
 name: "gr-strafe-railgun"
 }
 ]
@@ -61,6 +61,18 @@ despawnHit: true
 hitShake: 15
 
 parts: [
+{
+type: RegionPart
+name: "gr-rail-trail-fx"
+color: EAB678FF
+rotation: 125
+}
+{
+type: RegionPart
+name: "gr-rail-trail-fx"
+color: EAB678FF
+rotation: -125
+}
 {
 type: FlarePart
 sides: 2
