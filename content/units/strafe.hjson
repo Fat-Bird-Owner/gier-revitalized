@@ -29,7 +29,7 @@ parts: [
 type: RegionPart
 progress: warmup
 moveY: 3
-name: "gr-strafe-weapon"
+name: "gr-strafe-railgun"
 }
 ]
 
