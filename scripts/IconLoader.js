@@ -20,54 +20,55 @@ Log.err(e)
 }}
 
 function packIcons(){
-try {
-  
-    var page = UI.packer.getPages().first();
-    var teams = Seq.with(Team.all);
+    try {
+        var page = UI.packer.getPages().first();
+        var teams = Seq.with(Team.all);
 
-    extraIcons.each(function(entry){
-        var region = Core.atlas.find(entry.value);
+        extraIcons.each(function(entry){
+            var region = Core.atlas.find(entry.value);
 
-        if(!region.found()){
-            Log.warn("Could not find icon region: \"" + entry.key + "\"");
-            return;
-        }
+            if(!region.found()){
+                Log.warn("Could not find icon region: \"" + entry.value + "\"");
+                return;
+            }
 
-        page.setDirty(false);
-        var pixmapRegion = Core.atlas.getPixmap(region);
+            page.setDirty(false);
 
-        var rect = UI.packer.pack(
-            region.name,
-            pixmapRegion,
-            region.splits,
-            region.pads
+            var pixmapRegion = Core.atlas.getPixmap(region);
+
+            var rect = UI.packer.pack(
+                region.name,
+                pixmapRegion,
+                region.splits,
+                region.pads
+            );
+
+            region.texture = page.getTexture();
+            region.set(
+                Mathf.int(rect.x),
+                Mathf.int(rect.y),
+                Mathf.int(rect.width),
+                Mathf.int(rect.height)
+            );
+
+            Core.atlas.getTextures().add(region.texture);
+
+            Log.info("Added " + entry.key + " (" + entry.value + ") to the pack");
+
+            region.pixmapRegion = null;
+        });
+
+        page.setDirty(true);
+        page.updateTexture(
+            TextureFilter.linear,
+            TextureFilter.linear,
+            false
         );
 
-        region.texture = page.getTexture();
-        region.set(
-            Mathf.int(rect.x),
-            Mathf.int(rect.y),
-            Mathf.int(rect.width),
-            Mathf.int(rect.height)
-        );
-
-        Core.atlas.getTextures().add(region.texture);
-
-		Log.info("Added " + entry.key + " to the pack")
-        region.pixmapRegion = null;
-		
-    });
-
-    page.setDirty(true);
-    page.updateTexture(
-        TextureFilter.linear,
-        TextureFilter.linear,
-        false
-    );
-
-} catch (e) {
-Log.err(e)
-}}
+    } catch(e) {
+        Log.err(e);
+    }
+}
 
 function registerIcons(){
 try {
@@ -94,7 +95,7 @@ try {
     packIcons();
 
 } catch(e){
-log.err("AtlasPack - " + e)
+Log.err("AtlasPack - " + e)
 }});
 
 Events.on(ClientLoadEvent, () => {
