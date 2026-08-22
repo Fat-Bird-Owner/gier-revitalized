@@ -15,7 +15,7 @@ update: true
 itemCapacity: 50
 requirements:[lead/400, copper/350, titanium/250, thorium/150, phase-fabric/50]
 buildTime: 1500
-squareSprite: false
+squareSprite: true
 
 baseExplosiveness: 50
 
