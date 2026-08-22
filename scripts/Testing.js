@@ -123,7 +123,7 @@ Events.on(AtlasPackEvent, function(e){
     packIcons();
         
     }catch(err){
-        log("AtlasPackEvent error: " + err);
+        Log.err("AtlasPackEvent error: " + err);
     }
 });
 
@@ -131,6 +131,6 @@ Events.on(ClientLoadEvent, function(e){
     try{
         registerIcons();
     }catch(err){
-        log("ClientLoadEvent error: " + err);
+        Log.err("ClientLoadEvent error: " + err);
     }
 });
