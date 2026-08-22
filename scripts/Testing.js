@@ -1,6 +1,4 @@
-var extraIcons = {
-    "copper-fort": "copper-fort"
-};
+var extraIcons = {};
 
 function addIcon(name, regionName){
     try{
@@ -71,16 +69,21 @@ function tryRegisterIcons(){
 // Loading
 addIcon("copper-fort", "gr-copper-fort");
 
+Events.on(AtlasPackEvent, e => {
+    try{
+        packIcons();
+    }catch(err){
+        Log.err("AtlasPackEvent error: " + err);
+    }
+});
+
 Events.on(ClientLoadEvent, e => {
     try{
-        if(!tryRegisterIcons()){
-            Time.run(60, () => {
-                tryRegisterIcons();
-                log("packed icons")
-            });
-        }
-        
+        registerIcons();
+
+        Team.blue.name = "sentinels";
+        Team.blue.emoji = Fonts.getUnicodeStr("sentinels");
     }catch(err){
-        Log.err("Delayed icon registration failed: " + err);
+        Log.err("ClientLoadEvent error: " + err);
     }
 });
