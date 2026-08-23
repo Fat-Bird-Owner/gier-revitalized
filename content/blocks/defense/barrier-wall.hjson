@@ -11,3 +11,7 @@ shieldHealth: 1200
 breakCooldown: 1200
   
 regenSpeed: 1.5
+glowColor: ffffff00
+research: pillar
+
+researchCostMultiplier: 0.5
