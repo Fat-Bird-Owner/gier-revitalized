@@ -12,8 +12,7 @@ require("CorruptedFunction");
 require("gier-to-gier");
 require("Pasting");
 require("GameOver");
-require("AttributeVanilla");
-require("IconLoader");
+require("AttributeVanilla")
 require("effects"); // fancy effects
 //require("BreakBlock"); didnt have the needed event type
 //require("gierTroll");
