@@ -8,10 +8,11 @@ shownPlanets: [kela, gr-gier]
 
 requirements: [silicon/250, beryllium/250, metaglass/200, thorium/150]
 category: crafting
+research: industrial-trimmer
   
 craftTime: 180
 itemCapacity: 120
-liquidCapacity: 200
+liquidCapacity: 100
   
 consumes: {
 items: [thorium/30, sand/60]
