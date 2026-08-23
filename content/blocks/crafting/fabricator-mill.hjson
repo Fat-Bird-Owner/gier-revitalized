@@ -14,7 +14,7 @@ craftTime: 300
 itemCapacity: 120
 liquidCapacity: 100
 
-outputItems: phase-fabric/30
+outputItem: phase-fabric/30
 consumes: {
 items: [thorium/30, sand/60]
 liquids: [ozone/0.16667]
