@@ -53,8 +53,12 @@ splashDamage: 45
 splashDamageRadius: 30
 scaledSplashDamage: true
 
+pierce: true
+maxDamageFactor: 0.25
+
 lifetime: 100
 minShootVelocity: 1
+homingPower: 0.15
 
 hitShake: 6.5
 despawnHit: true
