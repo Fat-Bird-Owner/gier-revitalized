@@ -5,7 +5,7 @@ const textures = [
 "gr-mass-launcher-base"
 ]
 
-Events.on(AtlasPackEvent, () => {
+Events.on(ClientLoadEvent, () => {
 try {
 
 let code = 0xE000;
