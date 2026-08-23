@@ -2,6 +2,8 @@ type: flying
 flying: true
 name: Strafe
 
+circleTarget: true
+
 speed: 2
 drag: 0.05
 faceTarget: false
@@ -26,6 +28,7 @@ y: 0
 
 rotate: false
 rotateSpeed: 4
+shootCone: 180
 
 shoot: {
 type: ShootSpread
@@ -42,8 +45,8 @@ height: 14
 speed: 4.5
 drag: 0.045
 
-frontColor: 8ca9e8
-backColor: 8ca9e8
+frontColor: FFD37F
+backColor: FFD37F
 
 damage: 25
 splashDamage: 45
@@ -78,6 +81,8 @@ widthTo: 0
 
 radius: 24
 radiusTo: 0
+
+color1: FFD37F
 }
 ]
 
