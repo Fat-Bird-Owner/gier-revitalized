@@ -11,6 +11,7 @@ of more advanced technology
 [green]
 - Produces phase fabric[red]
 - Explosive
+- High explosiveness potential
 - Requires ozone
 - Requires power
 "
@@ -28,7 +29,7 @@ itemCapacity: 120
 liquidCapacity: 100
 
 baseExplosiveness: 60
-explosivenessScale: 140
+explosivenessScale: 70
 
 outputItem: phase-fabric/30
 consumes: {
