@@ -13,8 +13,8 @@ let code = 0xE000;
 for (let i = 0; i < textures.length; i++){
 let texture = Core.atlas.find(textures[i]);
 	
-if (!texture) {
-Log.err("Cant find[accent] " + textures[i] + " might not exist (Yet)");
+if (!texture.found()) {
+Log.err("Cant find[accent] " + textures[i] + "[] might not exist (Yet)");
 continue;
 }
 
