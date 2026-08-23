@@ -246,5 +246,6 @@ amount: 250
 max: 500
 reload: 1200
 range: 160
+activeSound: explode
 }
 ]
