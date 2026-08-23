@@ -19,71 +19,64 @@ range: 120
 
 weapons:[
 {
-reload: 180
+reload: 90
 mirror: false
 x: 0
 y: 0
 
-parts: [
-{
-type: RegionPart
-progress: warmup
-moveY: 6
-name: "gr-strafe-railgun"
-}
-]
-
-rotate: true
+rotate: false
 rotateSpeed: 4
 
-shake: 10
-layerOffset: -0.1
-recoilTime: 160
+shoot: {
+type: ShootSpread
+spread: 45 
+shotDelay: 45
+}
+
+shootSound: shootLancer
 
 bullet:{
+width: 10
+height: 14
+speed: 4.5
+drag: 0.045
 
-type: BasicBulletType
-speed: 12
-lifetime: 45
+frontColor: 8ca9e8
+backColor: 8ca9e8
 
-damage: 150
-maxDamageFactor: 0.3
+damage: 25
+splashDamage: 45
+splashDamageRadius: 30
+scaledSplashDamage: true
 
-frontColor: FFD280FF
-backColor: EAB678FF
-trailColor: FFD280FF
+lifetime: 100
 
-trailWidth: 3.25
-trailLength: 16
-pierce: true
-
+recoil: 2.5
+hitShake: 6.5
 despawnHit: true
-hitShake: 15
+despawnEffect: none
+hitSound: shootRipple
+hitEffect:{
+type: MultiEffect
+effects:[
+smokeCloud
+unitDrop
+instBomb
+shieldWave
+]
+}
 
-parts: [
-{
-type: RegionPart
-name: "gr-rail-trail-fx"
-color: EAB678FF
-rotation: -45
-outline: false
-x: 4
-}
-{
-type: RegionPart
-name: "gr-rail-trail-fx"
-color: EAB678FF
-rotation: 135
-outline: false
-x: -4
-}
+parts:[
 {
 type: FlarePart
-sides: 2
-color1: FFD280FF
-color2: EAB678FF
-followRotation: true
-radius: 16
+progress: life
+spinSpeed: 6.5
+
+width: 5
+widthTo: 0
+
+radius: 24
+radiusTo: 0
 }
 ]
 
