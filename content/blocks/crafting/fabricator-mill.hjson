@@ -10,10 +10,11 @@ requirements: [silicon/250, beryllium/250, metaglass/200, thorium/150]
 category: crafting
 research: industrial-trimmer
   
-craftTime: 180
+craftTime: 300
 itemCapacity: 120
 liquidCapacity: 100
-  
+
+outputItems: phase-fabric/30
 consumes: {
 items: [thorium/30, sand/60]
 liquids: [ozone/0.16667]
@@ -33,7 +34,7 @@ rotateSpeed2: -1.5
 type: DrawLiquidTile
 padding: 8
 drawLiquid: ozone
-alpha: 0.75
+alpha: 0.5
 }
 {
 type: DrawDefault
