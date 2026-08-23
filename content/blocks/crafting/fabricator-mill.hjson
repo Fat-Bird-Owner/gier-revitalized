@@ -28,6 +28,8 @@ itemCapacity: 120
 liquidCapacity: 100
 
 baseExplosiveness: 60
+explosivenessScale: 40
+
 outputItem: phase-fabric/30
 consumes: {
 power: 10
