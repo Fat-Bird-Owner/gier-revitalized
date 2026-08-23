@@ -47,6 +47,11 @@ drag: 0.045
 
 frontColor: FFD37F
 backColor: FFD37F
+lightning: 7
+
+lightningLength: 5
+lightningDamage: 15
+lightningColor: FFD37F
 
 damage: 25
 splashDamage: 45
@@ -67,7 +72,6 @@ hitSound: shootRipple
 hitEffect:{
 type: MultiEffect
 effects:[
-smokeCloud
 unitDrop
 instBomb
 shieldWave
