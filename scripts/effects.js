@@ -189,12 +189,39 @@ const chainLightning = new Effect(20, 300, e => {
 chainLightning.followParent = false
 chainLightning.rotWithParent = false
 
+let shieldLightning = new Effect(30, e => {
+
+const sides = 60
+const distance = 160
+
+const move =  Interp.sineOut.apply(e.fin()) * distance
+
+Draw.z(110)
+Draw.color(e.color, e.fout())
+
+for (let i = 0; i < sides; i++){
+
+let roAdd = ((360/sides) * i)
+let moveRand = move + (Mathf.random() * -4 + 2)
+let nx = e.x + Angles.trnsx(roAdd, moveRand)
+let ny = e.y + Angles.trnsy(roAdd, moveRand)
+
+Lines.stroke(2.5 * e.fout())
+
+let roAddView = roAdd + ((Mathf.random() * -64) + 32)
+Lines.lineAngle(nx, ny, roAddView + 90, 10)
+
+}
+
+})
+
 exports.fissureAvailable = fissureAvailable;
 exports.fissureUnavailable = fissureUnavailable;
 exports.lineChain = lineChain;
 exports.squareFx = squareFx;
 exports.healSphere = healSphere;
 exports.chainLightning = chainLightning;
+exports.shieldLightning = shieldLightning
 
 Events.on(ClientLoadEvent, () => {
 try {
@@ -204,6 +231,7 @@ Vars.content.unit("gr-restoration").abilities.get(0).hitEffect = healSphere;
 Vars.content.unit("gr-restoration").abilities.get(1).healEffect = squareFx;
 Vars.content.unit("gr-electron").abilities.get(2).damageEffect = chainLightning;
 Vars.content.unit("gr-arraign").abilities.get(2).damageEffect = chainLightning;
+Vars.content.unit("gr-obitus").abilities.get(0).activeEffect = shieldLightning
     
 } catch(e){
 log(e)
