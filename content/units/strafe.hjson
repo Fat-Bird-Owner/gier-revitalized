@@ -19,7 +19,7 @@ range: 120
 
 weapons:[
 {
-reload: 90
+reload: 120
 mirror: false
 x: 0
 y: 0
@@ -30,7 +30,8 @@ rotateSpeed: 4
 shoot: {
 type: ShootSpread
 spread: 45 
-shotDelay: 45
+shotDelay: 10
+shots: 3
 }
 
 shootSound: shootLancer
@@ -50,8 +51,8 @@ splashDamageRadius: 30
 scaledSplashDamage: true
 
 lifetime: 100
+minShootVelocity: 1
 
-recoil: 2.5
 hitShake: 6.5
 despawnHit: true
 despawnEffect: none
