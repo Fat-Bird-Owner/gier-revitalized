@@ -2,6 +2,19 @@ type: GenericCrafter
 size: 4
 name: Fabricator Mill
 
+description: "
+Fabricates in large quantities of 
+phase fabric using thorium and sand
+[grey]
+[I] - Phase Fabric: Allows the use
+of more advanced technology
+[green]
+- Produces phase fabric[red]
+- Explosive
+- Requires ozone
+- Requires power
+"
+
 databaseTag: "adv-phase-fabric"
 envEnabled: -1
 shownPlanets: [kela, gr-gier]
@@ -14,8 +27,10 @@ craftTime: 300
 itemCapacity: 120
 liquidCapacity: 100
 
+baseExplosiveness: 60
 outputItem: phase-fabric/30
 consumes: {
+power: 10
 items: [thorium/30, sand/60]
 liquids: [ozone/0.16667]
 }
