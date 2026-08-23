@@ -19,7 +19,7 @@ continue;
 }
 
 Fonts.registerIcon(textures[i], texture.name, code + i, texture)
-Log.info("Registered: " + texture.name + " as " + Fonts.getUniCode(textures[i]));
+Log.info("Registered: " + texture.name + " as " + Fonts.getUnicodeStr(textures[i]));
 	
 }
 	
