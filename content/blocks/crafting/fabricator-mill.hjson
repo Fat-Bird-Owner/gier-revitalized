@@ -35,6 +35,7 @@ items: [thorium/30, sand/60]
 liquids: [ozone/0.16667]
 }
 
+customShadow: true
 drawer: [
 {
 type: DrawRegion
@@ -53,5 +54,10 @@ alpha: 0.5
 }
 {
 type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: 
 }
 ]
