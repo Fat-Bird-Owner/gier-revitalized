@@ -185,3 +185,38 @@ log.info("ok")
 } catch(e){
 Vars.ui.showErrorMessage(e) 
 }});
+
+Events.on(TapEvent, e => {
+try {
+
+const {player, tile} = e;
+if (!player || !tile) return;
+if (tile.block() != Vars.content.block("gr-terminal")) return;
+if (tile.team() != player.team()) return;
+  
+let dialog = new BaseDialot("");
+dialog.addCloseButton();
+
+let width = Core.graphics.getWidth()
+let height = Core.graphics.getHeight()
+  
+dialog.cont.pane(p => {
+
+let scoreCheck = new Button()
+scoreCheck.add(Core.bundle.get("terminal.score"));
+
+scoreCheck.clicked(() => {
+
+p.clear();
+p.add(Core.bundle.get("terminal.ui.score") + getScore()).pad(height*0.05).row();
+p.add(Core.bundle.get("terminal.ui.rank") + getRank())
+
+});
+  
+p.add(scoreCheck).size(width * 0.2, height * 0.15).row();
+  
+});
+  
+} catch(e){
+Log.err("GameOver - " + e);
+}});
