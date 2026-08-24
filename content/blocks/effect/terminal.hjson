@@ -1,0 +1,25 @@
+type: Wall
+name: Terminal
+health: 50
+
+category: effect
+customShadow: true
+
+buildtime: 300
+requirements:[lead/100,copper/50,graphite/50]
+underBullet: true
+
+research: {
+parent: techtree-kela
+objectives:[
+{
+type: SectorComplete
+preset: fragmented-fix
+}]
+}
+
+envEnabled: -1
+shownPlanets: [gr-gier]
+hideDatabase: true
+
+# the function in javascript
