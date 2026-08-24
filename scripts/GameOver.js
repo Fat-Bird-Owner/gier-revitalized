@@ -216,6 +216,8 @@ p.add(Core.bundle.get("terminal.ui.rank") + getRank())
 p.add(scoreCheck).size(width * 0.2, height * 0.15).row();
   
 });
+
+dialog.show();
   
 } catch(e){
 Log.err("GameOver - " + e);
