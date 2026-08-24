@@ -1,0 +1,30 @@
+type: RepairTower
+size: 2
+name: Reconstructor
+
+description: "
+Rapidly repairs nearby units
+requires a large amount of overdrive fluid
+to operate.
+[green]
+- Rapidly repairs nearby units[red]
+- Explosive
+- High explosive potential
+- Requires power
+- Uses large amounts of overdrive fluid
+"
+
+databaseTag: "adv-phase-fabric"
+liquidCapacity: 50
+consumes: {
+power: 2.5
+liquids: [overdrive-fluid/0.16667]
+}
+
+circleColor: EA8878FF
+glowColor: EA8878FF
+healAmount: 4
+
+requirements: [lead/250, silicon/200, beryllium/150, phase-fabric/50]
+research: mend-pylon
+category: units
