@@ -3,7 +3,7 @@ name: Terminal
 health: 50
 
 category: effect
-customShadow: true
+customShadow: false
 
 buildtime: 300
 requirements:[lead/100,copper/50,graphite/50]
