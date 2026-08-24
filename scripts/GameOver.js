@@ -208,7 +208,7 @@ scoreCheck.add(Core.bundle.get("terminal.score"));
 scoreCheck.clicked(() => {
 
 p.clear();
-p.add(new Image( Core.atlas.find("gr-gier")).setScaling(Scaling.fit) ).size(((width+height)/2)*0.15).pad(height*0.15).row();
+p.add(new Image( Core.atlas.find("gr-gier")).setScaling(Scaling.fit) ).size(((width+height)/2)*0.15).pad(height*0.05).row();
 p.add(Core.bundle.get("terminal.ui.score") + getScore()).pad(height*0.05).row();
 p.add(Core.bundle.get("terminal.ui.rank") + getRank())
 
