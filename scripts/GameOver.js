@@ -194,7 +194,7 @@ if (!player || !tile) return;
 if (tile.block() != Vars.content.block("gr-terminal")) return;
 if (tile.team() != player.team()) return;
   
-let dialog = new BaseDialot("");
+let dialog = new BaseDialog("");
 dialog.addCloseButton();
 
 let width = Core.graphics.getWidth()
