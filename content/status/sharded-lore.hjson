@@ -5,7 +5,7 @@ research: {
 parent: lore-3
 objectives:[
 {
-type: SectorComeplete
+type: SectorComplete
 preset: gr-intercept
 }
 ]
