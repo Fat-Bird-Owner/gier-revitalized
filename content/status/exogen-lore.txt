@@ -1,0 +1,50 @@
+name: Exogen
+outline: false
+
+research: {
+parent: lore-3
+objectives:[
+{
+type: SectorComplete
+preset: gr-intercept
+}
+]
+}
+
+allDatabaseTabs: false
+databaseCategory: "lore-faction"
+details: "
+[lightgrey]
+I've treched far and wide
+discovering many wouldn't begin imagined
+
+Long ago is of the last time i gazed upon
+birth place
+
+Soon it began to get farther and farther
+tempuratures declining at a rate so rapid
+
+I felt that the world itself was plummeting
+But it wasn't long till i gazed upon a strange
+blue planet quite different from what i've known
+
+Once i had arrived it didn't take long for me to
+recover building back up my strength
+
+Thriving as i was the world didn't let me go
+Soon creatures i've never seen before started
+laying waste to my homes leaving nothing but
+wreckages in sight
+
+As my strength dwindled, the muscle within me
+reingnited 
+
+As i always did
+I fought to protect what was mine
+Soon the creatures left me to myself
+
+and i was finally alone again
+Till a fateful day i've noticed 
+something came to me, it wasn't one
+of mine
+"
