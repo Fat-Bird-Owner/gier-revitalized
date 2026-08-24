@@ -34,7 +34,7 @@ require("MechPad");
 require("AssemblyRig");
 require("AddBar");
 require("InfoBlock");
-require("PerformanceConsole");
+//require("PerformanceConsole");
 require("DestructibleGen");
 require("FragileHeater");
 require("Multicrafter");
