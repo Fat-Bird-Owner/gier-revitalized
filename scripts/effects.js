@@ -213,6 +213,25 @@ Lines.lineAngle(nx, ny, roAddView + 90, 10)
 
 }
 
+});
+
+const reverseSpark = new Effect(45, e => {
+rand.setSeed(e.id)
+
+Draw.color(e.color)
+let length = (3 * 8) * Interp.sineIn.apply(e.fout())
+
+Angles.randLenVectors(e.id, 6, length, (x, y) => {
+e.scaled(e.lifetime * rand.random(0.33, 1), p => {
+
+Lines.stroke(1.5 * p.fout())
+Lines.lineAngle(e.x + x, e.y + y, Mathf.angle(x, y), 5*p.fin())
+
+})
+})
+
+Draw.reset()
+
 })
 
 exports.fissureAvailable = fissureAvailable;
@@ -221,7 +240,8 @@ exports.lineChain = lineChain;
 exports.squareFx = squareFx;
 exports.healSphere = healSphere;
 exports.chainLightning = chainLightning;
-exports.shieldLightning = shieldLightning
+exports.shieldLightning = shieldLightning;
+exports.reverseSpark = reverseSpark;
 
 Events.on(ClientLoadEvent, () => {
 try {
@@ -232,6 +252,8 @@ Vars.content.unit("gr-restoration").abilities.get(1).healEffect = squareFx;
 Vars.content.unit("gr-electron").abilities.get(2).damageEffect = chainLightning;
 Vars.content.unit("gr-arraign").abilities.get(2).damageEffect = chainLightning;
 Vars.content.unit("gr-obitus").abilities.get(0).activeEffect = shieldLightning
+    
+Vars.content.block("gr-mend-pylon").effect = reverseSpark.wrap(Vars.content.block("gr-mend-pylon").baseColor)
     
 } catch(e){
 log(e)
