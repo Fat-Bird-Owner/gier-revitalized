@@ -34,6 +34,8 @@ updateLighting: false
 mesh: [
 {
 type: NoiseMesh
+planet: kela
+radius: 1
 }
 ]
 
