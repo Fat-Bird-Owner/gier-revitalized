@@ -33,9 +33,7 @@ updateLighting: false
 
 mesh: [
 {
-type: HexMesh
-planet: kela
-division: 4
+type: NoiseMesh
 }
 ]
 
