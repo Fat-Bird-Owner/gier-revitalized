@@ -1,3 +1,5 @@
 type: Floor
 name: Dense Facility Floor
 autotile: true
+
+buildVisibility: editorOnly
