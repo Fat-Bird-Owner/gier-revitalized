@@ -5,6 +5,13 @@ details: '''
 Lead, Copper and Graphite are basic items
 that could be mined directly from the ground
 using a drill or manually by the player's core unit
+
+Titanium, Beryllium and depleted thorium can be 
+mined using ton crushers
+
+Thorium could be proccessed from depleted thorium
+or converted to crystal thorium by sporeoplasmic
+cultivator explosion
 '''
 
 shownPlanets:[gier]
