@@ -1,0 +1,24 @@
+type: Wall
+name: Blockage
+size: 1
+
+hasPower: true
+consumesPower: true
+outputPower: true
+
+consumes: {
+power: 0
+}
+  
+health: 750
+armor: 15
+customShadow: true
+  
+insulated: true
+absorbLaser: true
+category: defense
+
+#requirements: [dense-alloy/12, silicon/6]
+buildVisibility: sandboxOnly
+
+autotile: true
