@@ -2,7 +2,7 @@ let g
 
 try {
 
-g = new Shaders.SurfaceShader("slag");
+g = new Shaders.SurfaceShader("quick-sand");
 
 } catch(e){}
 
