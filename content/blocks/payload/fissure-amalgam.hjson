@@ -20,6 +20,7 @@ payload purposes.
 research: freight-assembler
 category: units
 size: 2
+canOverdrive: false
 
 //result: gr-packed-graphite
 requirements:[lead/125, copper/50, silicon/25, depleted-thorium/25]
