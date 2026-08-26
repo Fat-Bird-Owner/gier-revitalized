@@ -73,8 +73,8 @@ building.recipe = Vars.content.block("gr-packed-graphite");
 building.recipe = Vars.content.block("gr-packed-beryllium");
 }
     
-Reflect.set(building, "timeScale", attribute))
-Reflect.set(building, "timeScaleDuration", Infinity))
+Reflect.set(building, "timeScale", attribute);
+Reflect.set(building, "timeScaleDuration", Infinity);
     
 if(attribute <= 0) building.enabled = false;
     
