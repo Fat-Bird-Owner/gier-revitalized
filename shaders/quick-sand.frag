@@ -77,3 +77,4 @@ void main(){
         min(sampled.a * 100.0, 1.0)
 
     );
+}
