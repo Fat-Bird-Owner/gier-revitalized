@@ -1,65 +1,75 @@
 try {
 
+function compile(txt){
+try {
+
+require(txt)
+Log.info("[accent]" + txt + "[] - Loaded in")
+  
+} catch(e){
+Log.err("[red]" + txt + "[] - Failed to compile")
+}}
+  
 // Team changes, showing gier and other stuff
 //require("EventRunnable"); Unreliable
-require("Transcripts");
-require("Startup");
-require("Deranged");
-require("WreckFX");
-require("Attributes");
-require("GierItems");
-require("CorruptedFunction");
-require("gier-to-gier");
-require("Pasting");
-require("GameOver");
-require("AttributeVanilla")
-require("effects"); // fancy effects
+compile("Transcripts");
+compile("Startup");
+compile("Deranged");
+compile("WreckFX");
+compile("Attributes");
+compile("GierItems");
+compile("CorruptedFunction");
+compile("gier-to-gier");
+compile("Pasting");
+compile("GameOver");
+compile("AttributeVanilla")
+compile("effects"); // fancy effects
 //require("BreakBlock"); didnt have the needed event type
 //require("gierTroll");
 
 //    ### Class Overrides ###
 // Subclass: Block
-require("PowerButton"); // Requires to atleast have powerProduction
-require("DamageBattery"); // Requires to atleast be able to have consumeBuffered
-require("BrittleDrill"); // Could actually be anything lol
-require("LaunchSilo"); // Required to shootConne on 180 and needs to be a turret that can shoot
-require("CompactCore"); // Adapted to CoreBlocl but could be used for anything. Spawner is a turret that kills itself
-require("Fabricator");
-require("DummyBlock");
-require("TheStem");
-require("CommandBlock"); // Command Block from minecraft or something
-require("MeltingPort");
-require("AttributeConstructor");
-require("MechPad");
-require("AssemblyRig");
-require("AddBar");
-require("InfoBlock");
+compile("PowerButton"); // Requires to atleast have powerProduction
+compile("DamageBattery"); // Requires to atleast be able to have consumeBuffered
+compile("BrittleDrill"); // Could actually be anything lol
+compile("LaunchSilo"); // Required to shootConne on 180 and needs to be a turret that can shoot
+compile("CompactCore"); // Adapted to CoreBlocl but could be used for anything. Spawner is a turret that kills itself
+compile("Fabricator");
+compile("DummyBlock");
+compile("TheStem");
+compile("CommandBlock"); // Command Block from minecraft or something
+compile("MeltingPort");
+compile("AttributeConstructor");
+compile("MechPad");
+compile("AssemblyRig");
+compile("AddBar");
+compile("InfoBlock");
 //require("PerformanceConsole");
-require("DestructibleGen");
-require("FragileHeater");
-require("Multicrafter");
-require("SealentChamber");
-require("StructureBlock");
-require("ImageBlock");
-require("CircuitLogic");
-require("CombustionBarrel");
-require("WorldScript");
-require("InstantStorage");
-require("SporeoplasmaReactor");
+compile("DestructibleGen");
+compile("FragileHeater");
+compile("Multicrafter");
+compile("SealentChamber");
+compile("StructureBlock");
+compile("ImageBlock");
+compile("CircuitLogic");
+compile("CombustionBarrel");
+compile("WorldScript");
+compile("InstantStorage");
+compile("SporeoplasmaReactor");
 //require("GeothermalTurbine");
-require("PowerGrid");
-require("damageShiftWall");
-require("ProjectorBlock");
-require("DisableSwitch"); // Switchblock extension
+compile("PowerGrid");
+compile("damageShiftWall");
+compile("ProjectorBlock");
+compile("DisableSwitch"); // Switchblock extension
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
 
 // Subclass: Units
-require("IFrameUnit");
-require("EnrageUnit");
-require("ZapUnit");
-require("ResilientUnit");
+compile("IFrameUnit");
+compile("EnrageUnit");
+compile("ZapUnit");
+compile("ResilientUnit");
 
 // Mods
 //require("Modifiers");
