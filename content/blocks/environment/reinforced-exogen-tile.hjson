@@ -1,0 +1,5 @@
+type: Floor
+drawEdgeIn: false
+drawEdgeOut: true
+name: Reinforced Exogen Tile
+autotile: true
