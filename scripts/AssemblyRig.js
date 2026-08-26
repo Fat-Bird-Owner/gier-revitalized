@@ -6,7 +6,7 @@ Events.on(ClientLoadEvent, () => {
 try{
 
 function assemblyRigBuild(string){
-const block = Vars.content.block(string);
+const block = Vars.content.block(string));
 Vars.ui.content.show(block);
 Vars.ui.content.hide();
 
