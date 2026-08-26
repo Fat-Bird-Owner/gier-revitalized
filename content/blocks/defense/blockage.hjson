@@ -5,6 +5,7 @@ size: 1
 hasPower: true
 consumesPower: true
 outputPower: true
+conductsPower: true
 
 consumes: {
 power: 0
