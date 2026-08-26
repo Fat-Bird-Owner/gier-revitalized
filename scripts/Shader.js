@@ -2,7 +2,7 @@ let g
 
 try {
 
-g = new Shaders.SurfaceShader("space");
+g = new Shaders.SurfaceShader("slag");
 
 } catch(e){}
 
