@@ -9,21 +9,61 @@ varying vec2 v_texCoords;
 
 void main(){
 
-    vec2 c = v_texCoords;
-    vec2 v = 1.0 / u_resolution;
-    vec2 coords = c * u_resolution + u_campos;
+    // World position
+    vec2 coords = v_texCoords * u_resolution + u_campos;
 
-    vec2 scroll = vec2(u_time / 1000.0, u_time / 1000.0);
-    vec2 noisePos = coords / 100.0 + scroll;
+    // Animated noise
+    float time = u_time / 1800.0;
 
-    float btime = u_time / 4000.0;
-    float nx = ((texture2D(u_noise, noisePos + btime) + texture2D(u_noise, noisePos + btime * vec2(-0.8, -1.1)))/2.0).r;
-    float ny = texture2D(u_noise, noisePos + 5.0).r;
+    vec2 noisePos = coords / 100.0;
 
-    vec2 distortion = (vec2(nx, ny) - 0.5) * v * 8.0;
+    float n1 = texture2D(
+        u_noise,
+        noisePos + vec2(time, time * 0.7)
+    ).r;
 
-    vec4 color = texture2D(u_texture, c + distortion);
-    color.rgb *= (nx*0.75) + 1;
+    float n2 = texture2D(
+        u_noise,
+        noisePos * 1.7 + vec2(-time * 0.6, time)
+    ).r;
+
+    float noise = (n1 + n2) * 0.5;
+
+    // Wavy distortion
+    float wave = sin(
+        coords.x / 12.0 +
+        coords.y / 20.0 +
+        time * 3.0
+    );
+
+    vec2 distortion = vec2(
+        wave * 0.5,
+        (noise - 0.5)
+    );
+
+    distortion *= 1.5 / u_resolution;
+
+    // Sample texture
+    vec4 color = texture2D(
+        u_texture,
+        v_texCoords + distortion
+    );
+
+    // Flowing highlights
+    float highlight = smoothstep(
+        0.68,
+        0.82,
+        noise + wave * 0.15
+    );
+
+    color.rgb += vec3(
+        highlight * 0.25,
+        highlight * 0.35,
+        highlight * 0.45
+    );
+
+    // Slight animated shading
+    color.rgb *= 0.85 + noise * 0.3;
 
     gl_FragColor = color;
 }
