@@ -11,7 +11,6 @@ void main(){
 
     vec2 coords = v_texCoords * u_resolution + u_campos;
 
-    // Move the noise over time
     vec2 scroll = vec2(
         u_time / 1000.0,
         u_time / 1500.0
@@ -20,29 +19,41 @@ void main(){
     vec2 noisePos = coords / 150.0 + scroll;
 
     float nx = texture2D(u_noise, noisePos).r;
-    float ny = texture2D(u_noise, noisePos + vec2(5.0, 5.0)).r;
+    float ny = texture2D(
+        u_noise,
+        noisePos + vec2(5.0, 5.0)
+    ).r;
 
-    // Make the distortion obvious for testing
-vec2 distortion = vec2(nx, ny) - 0.5;
+    vec2 distortion = vec2(nx, ny) - 0.5;
+    distortion *= 0.08;
 
-distortion *= 0.08;
+    // Original texture
+    vec4 original = texture2D(
+        u_texture,
+        v_texCoords
+    );
 
-// Fade distortion near tile edges
+    // Distorted texture
+    vec2 uv = v_texCoords + distortion;
 
-float edgeX = smoothstep(0.0, 0.15, v_texCoords.x)
+    vec4 distorted = texture2D(
+        u_texture,
+        uv
+    );
 
-            * smoothstep(0.0, 0.15, 1.0 - v_texCoords.x);
+    // Blend instead of completely replacing
+    vec4 color = mix(
+        original,
+        distorted,
+        0.5
+    );
 
-float edgeY = smoothstep(0.0, 0.15, v_texCoords.y)
+    // Your noise color
+    color.rgb += vec3(
+        nx * 0.2,
+        nx * 0.3,
+        nx * 0.3
+    );
 
-            * smoothstep(0.0, 0.15, 1.0 - v_texCoords.y);
-
-distortion *= edgeX * edgeY;
-
-vec2 uv = v_texCoords + distortion;
-
-	vec4 color = vec4(0.0 + (nx*0.2), 0.0 + (nx*0.3) ,0.1+(nx*0.3), 1.0);
-   
-    gl_FragColor = texture2D(u_texture, uv) + color;
+    gl_FragColor = color;
 }
-
