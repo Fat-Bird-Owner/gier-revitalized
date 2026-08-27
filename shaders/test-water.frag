@@ -5,11 +5,11 @@ varying vec2 v_texCoords;
 void main(){ 
     
 vec2 coords = v_texCoords * u_resolution + u_campos;
-vec2 scroll = vec2(u_time / 600.0, u_time / 600.0);
+vec2 scroll = vec2(u_time / 300.0, u_time / 300.0);
 
 float noise = texture2D(
     u_noise,
-    coords / 100.0 + scroll
+    coords / 250.0 + scroll
 ).r;
 
 float brightness = 0.7 + noise * 0.3;
