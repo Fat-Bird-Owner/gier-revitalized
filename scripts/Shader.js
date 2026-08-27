@@ -15,7 +15,8 @@ Events.on(ClientLoadEvent, () => {
 try {
 
 if (Core.settings.getBool("water-shader") == true){ 
-Blocks.sand.cacheLayer = newLay;
+Blocks.water.cacheLayer = newLay;
+Blocks.deepwater.cacheLayer = newLay;
 }
   
 } catch(e){
