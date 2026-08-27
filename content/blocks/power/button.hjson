@@ -18,7 +18,6 @@ consumes:{
 power: 0
 }
 
-warmupSpeed: 0
 powerProduction: 0.5
 envEnabled: -1
 databaseTag: "gier"
