@@ -2,7 +2,8 @@ type: ItemTurret
 size: 4
 name: Disarray
 range: 240
-dscriptionn: "
+
+dscription: "
 Fires a concentrated bullet that explodes
 
 [green]- Large-AOE damage
