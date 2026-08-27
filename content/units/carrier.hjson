@@ -13,7 +13,6 @@ itemCapacity: 250
 targetPriority: 2
 rotateSpeed: 4.5
 
-requiresUnlock: false
 research: drone-facility
 
 controller: CargoAI
@@ -29,6 +28,7 @@ description: "
   
 An unarmored item transport drone.
 "
+
 engines:[
 {
 x: 6.5
