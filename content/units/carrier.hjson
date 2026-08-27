@@ -10,7 +10,7 @@ faceTarget: false
 drawSoftShadow: false
 isEnemy: false
 itemCapacity: 250
-priority: 2
+targetPriority: 2
 rotateSpeed: 4.5
 
 requiresUnlock: false
