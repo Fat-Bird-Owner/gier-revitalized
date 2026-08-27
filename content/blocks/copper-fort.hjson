@@ -26,7 +26,6 @@ Generates a forcefield in a small area, Long cooldown time.
 research: gier
 researchCostMultiplier: 0.35
 requirements:[lead/10,copper/45,graphite/25]
-buildtime: 220
 
 envEnabled: -1
 databaseTag: "gier"
