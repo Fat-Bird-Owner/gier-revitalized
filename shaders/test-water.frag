@@ -14,7 +14,7 @@ void main(){
     vec2 coords = c * u_resolution + u_campos;
 
     vec2 scroll = vec2(u_time / 1000.0, u_time / 1500.0);
-    vec2 noisePos = coords / 150.0 + scroll;
+    vec2 noisePos = coords / 250.0 + scroll;
 
     float nx = texture2D(u_noise, noisePos).r;
     float ny = texture2D(u_noise, noisePos + 5.0).r;
