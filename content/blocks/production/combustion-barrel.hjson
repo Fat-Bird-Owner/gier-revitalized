@@ -64,7 +64,7 @@ despawnHit: true
 despawnEffect: shockwave
 splashDamageRadius: 40
 splashDamage: 150
-scaleSplashDamage: true
+scaledSplashDamage: true
 hitShake: 7.5
 }
 
@@ -105,21 +105,6 @@ radiusTo: 0
 rotation: 22.5
 
 progress: {
-type: charge
-ops:[
-{
-op: curve
-interp: sineIn
-}
-{
-op: compress
-start: 0.2
-end: 1
-}
-]
-}
-  
-growProgress: {
 type: charge
 ops:[
 {
