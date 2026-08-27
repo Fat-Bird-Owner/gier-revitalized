@@ -1,3 +1,5 @@
+let index = 0;
+
 function loadShader(string){
 
 let g 
@@ -13,8 +15,9 @@ return null;
 if (g != null){
   
 let newLay = new CacheLayer.ShaderLayer(g)
-CacheLayer.add(0, newLay)
-
+CacheLayer.add(index, newLay)
+index++;
+  
 Log.info("[accent]" + string + " shader[] loaded");
 return newLay;
   
