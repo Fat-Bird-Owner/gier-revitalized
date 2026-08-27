@@ -72,9 +72,6 @@ under: true
 ]
 }
 
-
-
-ejectEffect: casing4
 ammoTypes:{
 copper:{
 width: 7.5
