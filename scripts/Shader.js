@@ -1,12 +1,12 @@
 function loadShader(string){
 
 let g 
-
 try {
   
 g = new Shaders.SurfaceShader(string);
   
 } catch(e){
+Log.err(e);
 return null;
 }
 
