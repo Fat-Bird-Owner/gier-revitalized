@@ -18,7 +18,7 @@ A fast durable and very dangerous unit.
 
 targetFlags:[factory,battery,core]
 
-priority: 3.5
+targetPriority: 3.5
 flying: true
 outlineColor: 2f2f3f
 name: Ash
