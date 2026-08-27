@@ -16,7 +16,6 @@ try {
 
 if (Core.settings.getBool("water-shader") == true){ 
 Blocks.water.cacheLayer = newLay;
-Blocks.deepwater.cacheLayer = newLay;
 }
   
 } catch(e){
