@@ -14,7 +14,7 @@ CacheLayer.add(newLay)
 Events.on(ClientLoadEvent, () => {
 try {
 
-if (Core.settings.getBool("command-block-texture") == true){ 
+if (Core.settings.getBool("water-shader") == true){ 
 Blocks.water.cacheLayer = newLay;
 Blocks.deepwater.cacheLayer = newLay;
 }
