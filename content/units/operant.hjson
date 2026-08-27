@@ -51,8 +51,6 @@ shotDelay: 12
 }
 
 inaccuracy: 5
-targetGround: true
-
 rotateSpeed: 6
 
 parts: [
@@ -88,9 +86,7 @@ knockback: 0.75
 reload: 60
 
 inaccuracy: 15
-targetGround: true
 shake: 7.5
-
 rotateSpeed: 3
 
 parts: [
