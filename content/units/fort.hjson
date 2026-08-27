@@ -32,14 +32,14 @@ faceTarget: true
 drawSoftShadow: false
 isEnemy: false
 health: 1500
-priority: 10
+targetPriority: 10
 
 weapons:[
 {
 mirror: false
 x: 0
 y: 0
-shootWarmup: 0.00642857
+shootWarmupSpeed: 0.00642857
 minWarmup: 0.9
 reload: 180
 
@@ -102,7 +102,6 @@ type: BasicBulletType
 splashDamage: 85
 splashDamageRadius: 125
 buildingDamageMultiplier: 0.5
-unitDamageMultiplier: 1.5
 
 speed: 5
 lifetime: 25
@@ -121,7 +120,6 @@ hitSound: explosionNavanax
 hitEffect:{
 type: WaveEffect
 layer: 110
-parentizeEffect: true
 interp: sineOut
 
 strokeFrom: 4
