@@ -21,7 +21,7 @@ return null;
 }}
 
 let waterTest = loadShader("test-water");
-let heatedOil = loadShader("heated-oil");
+let heatedOil = loadShader("oil-tile");
 
 Events.on(ClientLoadEvent, () => {
 try {
