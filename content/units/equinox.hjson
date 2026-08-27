@@ -97,8 +97,6 @@ shotDelay: 12
 }
 
 inaccuracy: 7.5
-targetGround: false
-
 rotateSpeed: 6
 
 parts: [
