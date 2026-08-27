@@ -45,7 +45,6 @@ radius: 8
 color: f3e979
 y: -6.5
 layerOffset: -0.1
-onShoot: true
 }
 ]
 
