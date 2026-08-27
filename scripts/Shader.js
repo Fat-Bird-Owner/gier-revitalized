@@ -30,16 +30,6 @@ let heatedOil = loadShader("oil-tile");
 Events.on(ClientLoadEvent, () => {
 try {
 
-if (waterTest != null && Core.settings.getBool("water-shader") == true){ 
-Blocks.water.cacheLayer = waterTest;
-Blocks.deepwater.cacheLayer = waterTest;
-Blocks.sandWater.cacheLayer = waterTest;
-Blocks.taintedWater.cacheLayer = waterTest;
-Blocks.darksandWater.cacheLayer = waterTest;
-Blocks.deepTaintedWater.cacheLayer = waterTest;
-Blocks.darksandTaintedWater.cacheLayer = waterTest;
-}
-
 if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
   
 } catch(e){
