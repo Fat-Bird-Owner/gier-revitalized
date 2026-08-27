@@ -24,7 +24,6 @@ basePrefix: "reinforced-"
 recoil: 3.45
 recoilTime: 22.5
 reload: 12
-ejectEffect: casing3
 
 consumes: {
 liquid:{
