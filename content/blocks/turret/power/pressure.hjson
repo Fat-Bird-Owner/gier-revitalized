@@ -65,7 +65,7 @@ sizeTo: 0
 strokeFrom: 4
 strokeTo: 1 
 interp: sineOut
-color: ffaa5f
+colorFrom: ffffff
 colorTo: ffaa5f
 lifetime: 80
 }}
