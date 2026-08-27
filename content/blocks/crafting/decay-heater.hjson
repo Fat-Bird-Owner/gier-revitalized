@@ -25,7 +25,7 @@ research: anode-reactor
 researchCostMultiplier: 0.25 
 consumes: {
 liquids: [water/0.33334]
-itemRadioactivate: {
+itemRadioactive: {
 minRadioactivity: 0.3
 }
 }
