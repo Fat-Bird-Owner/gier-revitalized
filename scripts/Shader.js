@@ -14,6 +14,8 @@ if (g != null){
   
 let newLay = new CacheLayer.ShaderLayer(g)
 CacheLayer.add(0, newLay)
+
+Log.info("[accent]" + string + " shader[] loaded");
 return newLay;
   
 } else{
