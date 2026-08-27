@@ -2,7 +2,7 @@ let g
 
 try {
 
-g = new Shaders.SurfaceShader("quick-sand");
+g = new Shaders.SurfaceShader("test-water");
 
 } catch(e){}
 
@@ -12,7 +12,8 @@ let newLay = new CacheLayer.ShaderLayer(g)
 CacheLayer.add(newLay)
 
 Events.on(ClientLoadEvent, () => {
-Blocks.sand.cacheLayer = newLay;
+Blocks.water.cacheLayer = newLay;
+Blocks.deepWater.cacheLayer = newLay;
 });
 
 }
