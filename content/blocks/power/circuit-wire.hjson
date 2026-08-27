@@ -19,7 +19,7 @@ travelled to once before.
 solid: false
 health: 45
 armor: -2
-baswExplosiveness: 2.2
+baseExplosiveness: 1
 
 attributes:{
 # The speed of the circuit =1/circuitRate
