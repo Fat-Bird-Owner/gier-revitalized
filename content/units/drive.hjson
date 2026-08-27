@@ -48,7 +48,6 @@ type: HoverPart
 color: FFD280FF
 radius: 8
 layerOffset: -1
-
 }
 ]
 
@@ -59,7 +58,7 @@ weapons:[
 x: 0
 y: 0
 rotate: true
-cone: 15
+shootCone: 15
 reload: 5
 inaccuracy: 20
 
