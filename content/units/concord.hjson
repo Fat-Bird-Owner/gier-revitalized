@@ -30,7 +30,6 @@ y: 6
 rotate: false
 shootY: 0
 beamWidth: 0.7
-aimDst: 0
 shootCone: 15
 mirror: false
 
