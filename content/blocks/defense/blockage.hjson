@@ -5,7 +5,7 @@ size: 1
 hasPower: true
 consumesPower: true
 outputsPower: true
-conductsPower: true
+conductivePower: true
 
 consumes: {
 power: 0
@@ -16,7 +16,7 @@ armor: 15
 customShadow: false
   
 insulated: true
-absorbLaser: true
+absorbLasers: true
 category: defense
 
 #requirements: [dense-alloy/12, silicon/6]
