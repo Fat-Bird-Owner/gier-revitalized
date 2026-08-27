@@ -31,9 +31,7 @@ Color *= 0.89;
 } else if (height > 0.47) {
 Color *= 0.74;
 }
-
-Color.a = 1.0;
    
- gl_FragColor = Color;
+gl_FragColor = Color;
     
 }
