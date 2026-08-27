@@ -19,9 +19,9 @@ Blocks.water.cacheLayer = newLay;
 Blocks.deepwater.cacheLayer = newLay;
 Blocks.sandWater.cacheLayer = newLay;
 Blocks.taintedWater.cacheLayer = newLay;
-Blocks.darkSandWater.cacheLayer = newLay;
+Blocks.darksandWater.cacheLayer = newLay;
 Blocks.deepTainedWater.cacheLayer = newLay;
-Blocks.darkSandTaintedWater.cacheLayer = newLay;
+Blocks.darksandTaintedWater.cacheLayer = newLay;
 }
   
 } catch(e){
