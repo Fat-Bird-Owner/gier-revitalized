@@ -48,7 +48,6 @@ outlineRadius: 0
 category: turret
 cooldownTime: 140
 
-shootWarmup: 0.05
 minWarmup: 0.9
 
 drawer:{
