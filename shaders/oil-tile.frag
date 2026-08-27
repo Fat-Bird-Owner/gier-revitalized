@@ -32,12 +32,6 @@ Color *= 0.89;
 Color *= 0.74;
 }
 
-if(v_texCoords.x < 0.1 || v_texCoords.y > 0.9){
-   Color *= 0.74;
-} else if (v_texCoords.x > 0.9 || v_texCoords.y < 0.1){
-    Color *= 1.26;
-}
-
 Color.a = 1.0;
    
  gl_FragColor = Color;
