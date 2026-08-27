@@ -34,7 +34,7 @@ Blocks.deepwater.cacheLayer = waterTest;
 Blocks.sandWater.cacheLayer = waterTest;
 Blocks.taintedWater.cacheLayer = waterTest;
 Blocks.darksandWater.cacheLayer = waterTest;
-Blocks.deepTainedWater.cacheLayer = waterTest;
+Blocks.deepTaintedWater.cacheLayer = waterTest;
 Blocks.darksandTaintedWater.cacheLayer = waterTest;
 }
 
