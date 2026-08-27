@@ -1,28 +1,35 @@
+uniform sampler2D u_texture;
 uniform sampler2D u_noise;
-uniform vec2 u_resolution; uniform vec2 u_campos; uniform float u_time;
+
+uniform vec2 u_resolution;
+uniform vec2 u_campos;
+uniform float u_time;
+
 varying vec2 v_texCoords;
 
-void main(){ 
-    
-vec2 coords = v_texCoords * u_resolution + u_campos;
-vec2 scroll = vec2(u_time / 300.0, u_time / 300.0);
+void main(){
 
-float noise = texture2D(
-    u_noise,
-    coords / 250.0 + scroll
-).r;
+    vec2 coords = v_texCoords * u_resolution + u_campos;
 
-float brightness = 0.7 + noise * 0.3;
+    // Move the noise over time
+    vec2 scroll = vec2(
+        u_time / 1000.0,
+        u_time / 1500.0
+    );
 
-vec4 color = vec4(
-    0.42 * brightness,
-    0.42 * brightness,
-    0.6 * brightness,
-    1.0
-);
+    vec2 noisePos = coords / 4.0 + scroll;
 
-gl_FragColor = color;
-    
+    float nx = texture2D(u_noise, noisePos).r;
+    float ny = texture2D(u_noise, noisePos + vec2(5.0, 5.0)).r;
+
+    vec2 distortion = vec2(nx, ny) - 0.5;
+
+    // Make the distortion obvious for testing
+    distortion *= 0.08;
+
+    vec2 uv = v_texCoords + distortion;
+	vec4 color = vec4(0.0 + (nx*0.2), 0.0 + (nx*0.3) ,0.1+(nx*0.3), 0);
+   
+    gl_FragColor = texture2D(u_texture, uv) + color;
 }
-
 
