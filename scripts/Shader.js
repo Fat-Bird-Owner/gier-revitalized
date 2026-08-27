@@ -12,8 +12,15 @@ let newLay = new CacheLayer.ShaderLayer(g)
 CacheLayer.add(newLay)
 
 Events.on(ClientLoadEvent, () => {
+try {
+
+if (Core.settings.getBool("command-block-texture") == true){ 
 Blocks.water.cacheLayer = newLay;
 Blocks.deepwater.cacheLayer = newLay;
-});
+}
+  
+} catch(e){
+log(e)
+}});
 
 }
