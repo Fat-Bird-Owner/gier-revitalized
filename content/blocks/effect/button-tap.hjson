@@ -1,5 +1,4 @@
 type: ConsumeGenerator
-hidden: false
 buildVisibility: debugOnly
   
 generateEffect: {
