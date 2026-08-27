@@ -22,8 +22,6 @@ void main(){
     float nx = texture2D(u_noise, noisePos).r;
     float ny = texture2D(u_noise, noisePos + vec2(5.0, 5.0)).r;
 
-    vec2 distortion = vec2(nx, ny) - 0.5;
-
     // Make the distortion obvious for testing
 vec2 distortion = vec2(nx, ny) - 0.5;
 
