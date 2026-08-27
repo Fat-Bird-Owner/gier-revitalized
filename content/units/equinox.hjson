@@ -8,7 +8,6 @@ armor: 15
 
 singleTarget: false
 forceMultiTarget: true
-predictTarget: false
 
 rotateSpeed: 3
 
@@ -47,10 +46,9 @@ firstShotDelay: 120
 }
 
 inaccuracy: 15
-targetGround: true
 shake: 7.5
-
 rotateSpeed: 2
+predictTarget: false
 
 parts: [
 {
