@@ -15,7 +15,7 @@ return null;
 if (g != null){
   
 let newLay = new CacheLayer.ShaderLayer(g)
-CacheLayer.add(0, newLay)
+CacheLayer.addLast(newLay)
   
 Log.info("[accent]" + string + " shader[] loaded");
 return newLay;
