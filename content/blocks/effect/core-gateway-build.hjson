@@ -27,14 +27,12 @@ drawers:[
 type: DrawRegion
 name: "gr-core-gateway"
 layer: 60
-outline: false
 color: 8f8f8f
 }
 {
 type: DrawRegion
 name: "gr-core-gateway-calibrate"
 layer: 122
-outline: false
 color: D3DEE4ff
 }
 ]
@@ -67,10 +65,9 @@ rotation: 44
 sizeFrom: 6
 sizeTo: 8
 sides: 4
-strokFrom: 4
 strokeTo: 0
 colorFrom: D3DEE4FF
-cokorTo: D3DEE4FF
+colorTo: D3DEE4FF
 }
 {
 type: ParticleEffect
