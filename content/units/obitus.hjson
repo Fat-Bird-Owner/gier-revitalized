@@ -24,7 +24,6 @@ firstShotDelay: 120
 }
 
 inaccuracy: 15
-targetGround: true
 shake: 7.5
 
 rotateSpeed: 2
@@ -206,7 +205,7 @@ bullet: {
   trailInterval: 3
 
   bulletInterval: 1
-  shake: 5
+  hitShake: 5
     
   intervalBullet: {
     type: LightningBulletType
