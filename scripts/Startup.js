@@ -133,6 +133,8 @@ t.checkPref("unitWreckEnabled", false, b => {});
 t.checkPref("doomsday", false, b => {});
 
 t.checkPref("gr-wall-no-dark", false, b => {});
+
+t.checkPref("water-shader", false, b => {});
   
 t.row();
 t.button(Core.bundle.get("settings.researchReset"), () => {
