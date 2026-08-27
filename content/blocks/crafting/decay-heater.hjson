@@ -1,0 +1,53 @@
+type: HeatProducer
+size: 2
+name: Decay Heater
+
+heatOutput: 10
+description: "
+Uses radioactive decay to generate heat
+Water is required for function
+[green]
+- Produces heat
+- Doesn't require power[red]
+- Explosive
+- Consumes power
+- Consumes water
+"
+
+requirements: [graphite/200, silicon/100, metaglass/50, depleted-thorium/50, phase-fabric/25]
+category: crafting
+databaseTag: "adv-phase-fabric"
+
+liquidCapacity: 50
+baseExplosiveness: 25
+research: anode-reactor
+
+researchCostMultiplier: 0.25 
+consumes: {
+liquids: [water/0.33334]
+itemRadioactivate: {
+minRadioactivity: 0.3
+}
+}
+
+envEnabled: -1
+rotate: false
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+padding: 4
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: ffaa5f
+}
+]
