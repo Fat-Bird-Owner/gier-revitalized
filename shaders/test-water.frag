@@ -25,13 +25,23 @@ void main(){
     vec2 distortion = vec2(nx, ny) - 0.5;
 
     // Make the distortion obvious for testing
-    distortion *= 0.08;
+vec2 distortion = vec2(nx, ny) - 0.5;
 
-    vec2 uv = clamp(
-    v_texCoords + distortion,
-    0.0,
-    1.0
-	);
+distortion *= 0.08;
+
+// Fade distortion near tile edges
+
+float edgeX = smoothstep(0.0, 0.15, v_texCoords.x)
+
+            * smoothstep(0.0, 0.15, 1.0 - v_texCoords.x);
+
+float edgeY = smoothstep(0.0, 0.15, v_texCoords.y)
+
+            * smoothstep(0.0, 0.15, 1.0 - v_texCoords.y);
+
+distortion *= edgeX * edgeY;
+
+vec2 uv = v_texCoords + distortion;
 
 	vec4 color = vec4(0.0 + (nx*0.2), 0.0 + (nx*0.3) ,0.1+(nx*0.3), 0);
    
