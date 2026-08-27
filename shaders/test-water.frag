@@ -7,9 +7,22 @@ void main(){
 vec2 coords = v_texCoords * u_resolution + u_campos;
 vec2 scroll = vec2(u_time / 600.0, u_time / 600.0);
 
-float noise = texture2D(u_noise, coords / 100.0 + scroll).r;
-vec4 color = vec4(0.42*noise, 0.42*noise, 0.6*noise, 0.5-(noise/4.0));
+float noise = texture2D(
+    u_noise,
+    coords / 100.0 + scroll
+).r;
+
+float brightness = 0.7 + noise * 0.3;
+
+vec4 color = vec4(
+    0.42 * brightness,
+    0.42 * brightness,
+    0.6 * brightness,
+    1.0
+);
 
 gl_FragColor = color;
     
 }
+
+
