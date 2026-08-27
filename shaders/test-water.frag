@@ -27,7 +27,12 @@ void main(){
     // Make the distortion obvious for testing
     distortion *= 0.08;
 
-    vec2 uv = v_texCoords + distortion;
+    vec2 uv = clamp(
+    v_texCoords + distortion,
+    0.0,
+    1.0
+	);
+
 	vec4 color = vec4(0.0 + (nx*0.2), 0.0 + (nx*0.3) ,0.1+(nx*0.3), 0);
    
     gl_FragColor = texture2D(u_texture, uv) + color;
