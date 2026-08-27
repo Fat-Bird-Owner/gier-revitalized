@@ -12,7 +12,6 @@ solid: true
 customShadow: true
 category: effect
 
-capacity: 50
 itemCapacity: 50
 requirements:[lead/135,copper/65,graphite/50]
 squareSprite: false
