@@ -17,7 +17,7 @@ void main(){
         u_time / 1500.0
     );
 
-    vec2 noisePos = coords / 100.0 + scroll;
+    vec2 noisePos = coords / 150.0 + scroll;
 
     float nx = texture2D(u_noise, noisePos).r;
     float ny = texture2D(u_noise, noisePos + vec2(5.0, 5.0)).r;
