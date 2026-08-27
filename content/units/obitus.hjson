@@ -96,8 +96,6 @@ shotDelay: 12
 }
 
 inaccuracy: 5
-targetGround: true
-
 rotateSpeed: 6
 mirror: true
 
