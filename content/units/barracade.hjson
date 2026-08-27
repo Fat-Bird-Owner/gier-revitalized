@@ -32,10 +32,10 @@ faceTarget: true
 drawSoftShadow: false
 isEnemy: false
 health: 650
-priority: 5
+targetPriority: 5
 
 targetFlags: [turret, core]
-crashDamagemultiplier: 3
+crashDamageMultiplier: 3
 
 weapons:[
 {
