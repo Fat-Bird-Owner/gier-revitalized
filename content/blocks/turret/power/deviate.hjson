@@ -146,42 +146,9 @@ sides: 8
 followRotation: true
 color1: FFD37F
 color2: FFD37F
-radius: 0
+radius: 3
+radiusTo: 0
 spinSpeed: 5
-
-  moves:[
-  {
-  radiusTo: 20
-
-progress:{
-type: life
-ops:[
-{
-type: curve
-start: 0
-end: 0.25
-}
-]
-}
-
-  }
-  {
-  radiusTo: 0
-
-progress:{
-type: life
-ops:[
-{
-op: curve
-start: 0.75
-end: 1
-}
-]
-}
-
-  }
-  ]
-
 }
 ]
 
