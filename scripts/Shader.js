@@ -13,7 +13,7 @@ CacheLayer.add(newLay)
 
 Events.on(ClientLoadEvent, () => {
 Blocks.water.cacheLayer = newLay;
-Blocks.deepWater.cacheLayer = newLay;
+Blocks.deepwater.cacheLayer = newLay;
 });
 
 }
