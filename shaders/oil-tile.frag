@@ -10,7 +10,7 @@ varying vec2 v_texCoords;
 void main(){
 
 vec2 coords = v_texCoords * u_resolution + u_campos;    
-vec2 scroll = vec2(u_time / 1200.0, u_time / 1200.0);
+vec2 scroll = vec2(u_time / 5000.0, u_time / 5000.0);
 vec2 noisePos = coords / 120.0 + scroll;
  
 float bTime = u_time / 9000.0; 
