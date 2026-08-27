@@ -9,51 +9,21 @@ varying vec2 v_texCoords;
 
 void main(){
 
-    vec2 coords = v_texCoords * u_resolution + u_campos;
+    vec2 c = v_texCoords;
+    vec2 v = 1.0 / u_resolution;
+    vec2 coords = c * u_resolution + u_campos;
 
-    vec2 scroll = vec2(
-        u_time / 1000.0,
-        u_time / 1500.0
-    );
-
+    vec2 scroll = vec2(u_time / 1000.0, u_time / 1500.0);
     vec2 noisePos = coords / 150.0 + scroll;
 
     float nx = texture2D(u_noise, noisePos).r;
-    float ny = texture2D(
-        u_noise,
-        noisePos + vec2(5.0, 5.0)
-    ).r;
+    float ny = texture2D(u_noise, noisePos + 5.0).r;
 
-    vec2 distortion = vec2(nx, ny) - 0.5;
-    distortion *= 0.08;
+    vec2 distortion = (vec2(nx, ny) - 0.5) * v * 8.0;
 
-    // Original texture
-    vec4 original = texture2D(
-        u_texture,
-        v_texCoords
-    );
+    vec4 color = texture2D(u_texture, c + distortion);
 
-    // Distorted texture
-    vec2 uv = v_texCoords + distortion;
-
-    vec4 distorted = texture2D(
-        u_texture,
-        uv
-    );
-
-    // Blend instead of completely replacing
-    vec4 color = mix(
-        original,
-        distorted,
-        0.5
-    );
-
-    // Your noise color
-    color.rgb += vec3(
-        nx * 0.2,
-        nx * 0.3,
-        nx * 0.3
-    );
+    color.rgb += vec3(nx * 0.2, nx * 0.3, nx * 0.3);
 
     gl_FragColor = color;
 }
