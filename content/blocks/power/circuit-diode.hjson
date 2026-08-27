@@ -14,7 +14,7 @@ Empty input is treated as 0.5 or 50%
 solid: false
 health: 150
 armor: -2
-baswExplosiveness: 2.2
+baseExplosiveness: 2.2
 
 category: logic
 envEnabled: -1
