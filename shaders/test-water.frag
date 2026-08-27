@@ -41,7 +41,7 @@ distortion *= edgeX * edgeY;
 
 vec2 uv = v_texCoords + distortion;
 
-	vec4 color = vec4(0.0 + (nx*0.2), 0.0 + (nx*0.3) ,0.1+(nx*0.3), 0);
+	vec4 color = vec4(0.0 + (nx*0.2), 0.0 + (nx*0.3) ,0.1+(nx*0.3), 1);
    
     gl_FragColor = texture2D(u_texture, uv) + color;
 }
