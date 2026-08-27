@@ -9,7 +9,7 @@ g = new Shaders.SurfaceShader("test-water");
 if (g != null){
 
 let newLay = new CacheLayer.ShaderLayer(g)
-CacheLayer.add(1, newLay)
+CacheLayer.add(0, newLay)
 
 Events.on(ClientLoadEvent, () => {
 try {
