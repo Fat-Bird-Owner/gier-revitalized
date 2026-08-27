@@ -23,7 +23,6 @@ void main(){
 
     vec4 color = texture2D(u_texture, c + distortion);
 
-    color.rgb += vec3(nx * 0.2, nx * 0.2, nx * 0.2);
-
+    color.rgb *= nx + 1.0
     gl_FragColor = color;
 }
