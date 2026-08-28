@@ -1,0 +1,83 @@
+type: ForceProjector
+size: 4
+name: "Hyper Dome"
+description: "
+Boast an extremly durable forcefield and a larger
+range than the fusion dome
+
+Will cause a catastrophic explosion on destruction
+And consumes a large amount of power in the proccess
+[green]
+- Boast extreme forcefield durability
+- Large radius
+- Can be boosted
+- Boosting increases regen speed[red]
+- Catastrophe levels of explosiveness
+- Consumes large amounts of power
+- Requires water to operate
+- Boosting reduce radius by 25%
+"
+
+baseExplosiveness: 150
+destroyBullet:{
+type: ExplosionBulletType
+instantDisappear: true
+despawnHit: true
+splashDamage: 7500
+scaledSplashDamage: true
+splashDamageRadius: 300
+hitEffect: impactReactorExplosion
+hitShake: 45
+}
+
+radius: 240
+sides: 8
+itemCapacity: 0
+envEnabled: -1
+health: 5000
+customShadow: true
+squareSprite: false
+
+research: fusion-dome
+researchCostMultiplier: 0.15
+
+researchCostMultiplier: 0.35
+databaseTag: "adv-dense-alloy"
+shieldHealth: 15000
+cooldownNormal: 8.33333
+
+shieldRotation: 45
+cooldownBrokenBase: 4
+consumeCoolant: false
+  
+consumes:{
+power: 8
+
+item: {
+items: [phase-fabric/1]
+booster: true
+optional: true
+}
+  
+liquid: {
+liquid: water
+amount: 0.116667
+booster: false
+optional: false
+}
+  
+}
+
+phaseUseTime: 600
+phaseRadiusBoost: -60
+phaseShieldBoost: 3750
+  
+requirements: [
+lead/1500
+copper/1000
+graphite/1000
+silicon/450
+dense-alloy/250
+phase-fabric/200
+]
+category: defense
