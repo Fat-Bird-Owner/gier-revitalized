@@ -31,7 +31,6 @@ hitShake: 45
 
 radius: 240
 sides: 8
-itemCapacity: 0
 envEnabled: -1
 health: 5000
 customShadow: true
