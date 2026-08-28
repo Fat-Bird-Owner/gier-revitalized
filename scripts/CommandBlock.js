@@ -205,6 +205,11 @@ Events.on(EventType.TapEvent, e => {
                     } else if (i == 10){
                     try{
 
+                    if (!player.admin){
+                    Vars.ui.showInfoToast(Core.bundle.format("commandblock.showtoast.run-javascript-4"), 5);
+                    return;
+                    }
+
                     Sounds.uiButton.play();
                     Vars.ui.showTextInput("<" + Core.bundle.format("commandblock.commands.run-javascript") + ">", Core.bundle.format("commandblock.showtoast.run-javascript-1"), 100, lastCommand, false, text => {
                     try{      
