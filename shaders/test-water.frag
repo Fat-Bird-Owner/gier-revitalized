@@ -20,10 +20,10 @@ void main(){
     float nx = ((texture2D(u_noise, noisePos + btime) + texture2D(u_noise, noisePos + btime * vec2(-0.8, -1.1)))/2.0).r;
     float ny = texture2D(u_noise, noisePos + 5.0).r;
 
-    vec2 distortion = (vec2(nx, nx) - 0.5) * v * 8.0;
+    vec2 distortion = (vec2(nx, nx) - 0.5) * (1.0/v) * 8.0;
 
     vec4 color = texture2D(u_texture, c + distortion);
-    color.rgb *= (nx*0.75) + 1.0;
+    color.rgb *= (nx*2.0);
 
     gl_FragColor = color;
 }
