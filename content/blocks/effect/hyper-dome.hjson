@@ -43,7 +43,7 @@ researchCostMultiplier: 0.15
 researchCostMultiplier: 0.35
 databaseTag: "adv-dense-alloy"
 shieldHealth: 15000
-cooldownNormal: 8.33333
+cooldownNormal: 8.3334
 
 shieldRotation: 45
 cooldownBrokenBase: 4
@@ -71,6 +71,7 @@ optional: false
 phaseUseTime: 600
 phaseRadiusBoost: -60
 phaseShieldBoost: 3750
+cooldownLiquid: 8.3334
 
 itemCapacity: 5
 requirements: [
