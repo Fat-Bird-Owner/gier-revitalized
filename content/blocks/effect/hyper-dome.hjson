@@ -52,7 +52,7 @@ squareSprite: false
 
 consumes:{
 power: 8
-liquids: [water/0.1116667]
+liquids: [water/0.166667]
 items: {
 items: [phase-fabric/1]
 optional: true
