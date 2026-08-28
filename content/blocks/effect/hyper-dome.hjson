@@ -2,15 +2,17 @@ type: ForceProjector
 size: 4
 name: "Hyper Dome"
 description: "
-Boast an extremly durable forcefield and a larger
-range than the fusion dome
+Boast an extremly durable forcefield and a 
+larger range than the fusion dome
 
-Will cause a catastrophic explosion on destruction
-And consumes a large amount of power in the proccess
+Will cause a catastrophic explosion on 
+destruction And consumes a large amount of 
+power in the proccess
 [green]
 - Boast extreme forcefield durability
 - Large radius
-- Can be boosted[red]
+- Can be boosted
+- Boosting increase health by 33%[red]
 - Catastrophe levels of explosiveness
 - Consumes large amounts of power
 - Requires water to operate
@@ -65,7 +67,7 @@ booster: true
 
 phaseUseTime: 180
 phaseRadiusBoost: -60
-phaseShieldBoost: 3750
+phaseShieldBoost: 5000
 cooldownLiquid: 2
 
 category: defense
