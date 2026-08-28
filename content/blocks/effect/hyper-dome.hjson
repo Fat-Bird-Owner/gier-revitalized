@@ -63,7 +63,7 @@ liquids: [water/0.1116667]
   
 }
 
-phaseUseTime: 600
+phaseUseTime: 180
 phaseRadiusBoost: -60
 phaseShieldBoost: 3750
 cooldownLiquid: 8.3334
