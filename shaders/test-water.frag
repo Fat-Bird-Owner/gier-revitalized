@@ -13,8 +13,8 @@ void main(){
     vec2 v = 1.0 / u_resolution;
     vec2 coords = c * u_resolution + u_campos;
 
-    vec2 scroll = vec2(u_time / 1000.0, u_time / 1000.0);
-    vec2 noisePos = coords / 500.0 + scroll;
+    vec2 scroll = vec2(u_time / 2000.0, u_time / 2000.0);
+    vec2 noisePos = coords / 450.0 + scroll;
 
     float btime = u_time / 4000.0;
     float nx = ((texture2D(u_noise, noisePos + btime) + texture2D(u_noise, noisePos + (btime * 0.8) * vec2(-0.8, 1.1)))/2.0).r;
