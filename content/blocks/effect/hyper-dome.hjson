@@ -51,13 +51,9 @@ cooldownBrokenBase: 4
 squareSprite: false
 
 consumes:{
+
 power: 8
 liquids: [water/0.166667]
-items: {
-items: [phase-fabric/1]
-optional: true
-booster: true
-}
   
 }
 
