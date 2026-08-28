@@ -47,7 +47,7 @@ cooldownNormal: 8.3334
 
 shieldRotation: 45
 cooldownBrokenBase: 4
-consumeCoolant: false
+#consumeCoolant: false
 
 squareSprite: false
 consumes:{
