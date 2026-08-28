@@ -65,7 +65,7 @@ booster: true
 phaseUseTime: 180
 phaseRadiusBoost: -60
 phaseShieldBoost: 3750
-cooldownLiquid: 8.3334
+cooldownLiquid: 2
 
 itemCapacity: 5
 requirements: [
