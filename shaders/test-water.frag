@@ -14,7 +14,7 @@ void main(){
     vec2 coords = c * u_resolution + u_campos;
 
     vec2 scroll = vec2(u_time / 1000.0, u_time / 1000.0);
-    vec2 noisePos = coords / 150.0 + scroll;
+    vec2 noisePos = coords / 200.0 + scroll;
 
     float btime = u_time / 4000.0;
     float nx = ((texture2D(u_noise, noisePos + btime) + texture2D(u_noise, noisePos + btime * vec2(-0.8, -1.1)))/2.0).r;
@@ -23,7 +23,7 @@ void main(){
     vec2 distortion = (vec2(nx, nx) - 0.5) * (1.0/ u_resolution) * 8.0;
 
     vec4 color = texture2D(u_texture, c + distortion);
-    color.rgb *= (nx*1.25) + 0.75;
+    color.rgb *= (nx*1.10) + 0.90;
 
     gl_FragColor = color;
 }
