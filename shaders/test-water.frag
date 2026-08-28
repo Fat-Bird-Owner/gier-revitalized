@@ -27,7 +27,7 @@ void main(){
     float strength = mix(1.0, 0.0, fade);
 
     vec4 color = texture2D(u_texture, c + distortion);
-    color.rgb *= clamp((nx*1.10*strength) + 0.90, 1, 2);
+    color.rgb *= clamp((nx*1.10*strength) + 0.90 + (0.1 * (1.0 - strength)), 1, 2);
 
     gl_FragColor = color;
 }
