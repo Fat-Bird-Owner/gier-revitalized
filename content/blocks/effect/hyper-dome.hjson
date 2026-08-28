@@ -49,7 +49,8 @@ cooldownNormal: 8.33333
 shieldRotation: 45
 cooldownBrokenBase: 4
 consumeCoolant: false
-  
+
+squareSprite: false
 consumes:{
 power: 8
 
@@ -71,7 +72,8 @@ optional: false
 phaseUseTime: 600
 phaseRadiusBoost: -60
 phaseShieldBoost: 3750
-  
+
+itemCapacity: 5
 requirements: [
 lead/1500
 copper/1000
