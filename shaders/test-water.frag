@@ -23,7 +23,7 @@ void main(){
     vec2 distortion = (vec2(nx, nx) - 0.5) * (1.0/ u_resolution) * 8.0;
 
     vec4 color = texture2D(u_texture, c + distortion);
-    color.rgb *= (nx*1.10) + 0.90;
+    color.rgb *= clamp((nx*1.10) + 0.90, 1, 2);
 
     gl_FragColor = color;
 }
