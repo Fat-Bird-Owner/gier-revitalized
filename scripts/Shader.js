@@ -26,7 +26,7 @@ return null;
 
 let waterTest = loadShader("test-water", 0);
 let heatedOil = loadShader("oil-tile", 0);
-let exogenTile = loadShader("exogen-tile", 8);
+//let exogenTile = loadShader("exogen-tile", 8);
 
 Events.on(ClientLoadEvent, () => {
 try {
@@ -42,7 +42,7 @@ Blocks.darksandTaintedWater.cacheLayer = waterTest;
 }
   
 if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
-if (exogenTile != null) Vars.content.block("gr-reinforced-exogen-tile").cacheLayer = exogenTile;
+//if (exogenTile != null) Vars.content.block("gr-reinforced-exogen-tile").cacheLayer = exogenTile;
   
 } catch(e){
 log(e)
