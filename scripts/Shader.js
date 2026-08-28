@@ -1,6 +1,6 @@
 let index = 0;
 
-function loadShader(string){
+function loadShader(string, index){
 
 let g 
 try {
@@ -15,7 +15,7 @@ return null;
 if (g != null){
   
 let newLay = new CacheLayer.ShaderLayer(g)
-CacheLayer.add(0, newLay)
+CacheLayer.add(index, newLay)
   
 Log.info("[accent]" + string + " shader[] loaded");
 return newLay;
@@ -24,9 +24,9 @@ return newLay;
 return null;
 }}
 
-let waterTest = loadShader("test-water");
-let heatedOil = loadShader("oil-tile");
-let exogenTile = loadShader("exogen-tile");
+let waterTest = loadShader("test-water", 0);
+let heatedOil = loadShader("oil-tile", 0);
+let exogenTile = loadShader("exogen-tile", 7);
 
 Events.on(ClientLoadEvent, () => {
 try {
