@@ -10,8 +10,7 @@ And consumes a large amount of power in the proccess
 [green]
 - Boast extreme forcefield durability
 - Large radius
-- Can be boosted
-- Boosting increases regen speed[red]
+- Can be boosted[red]
 - Catastrophe levels of explosiveness
 - Consumes large amounts of power
 - Requires water to operate
@@ -55,9 +54,9 @@ consumes:{
 power: 8
 
 items: {
-items: [phase-fabric/1]
+items: phase-fabric
+amount: 1
 booster: true
-optional: true
 }
   
 liquid: {
