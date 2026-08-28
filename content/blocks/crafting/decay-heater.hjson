@@ -8,6 +8,7 @@ Uses radioactive decay to generate heat
 Water is required for function
 [green]
 - Produces heat
+- Heat outputs on all sides
 - Doesn't require power[red]
 - Explosive
 - Consumes power
@@ -48,6 +49,7 @@ type: DrawDefault
 {
 type: DrawGlowRegion
 suffix: "-glow"
-color: ffaa5f
+color: BF92F9FF
+alpha: 0.5
 }
 ]
