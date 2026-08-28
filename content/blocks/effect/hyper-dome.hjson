@@ -20,6 +20,7 @@ And consumes a large amount of power in the proccess
 # liquids: [water/0.1116667]
 # - Requires water to operate
 
+coolantConsumption: 0.16667
 baseExplosiveness: 150
 destroyBullet:{
 type: ExplosionBulletType
@@ -62,7 +63,7 @@ booster: true
 }
 
 phaseUseTime: 180
-phaseRadiusBoost: -60
+#phaseRadiusBoost: -60
 phaseShieldBoost: 3750
 cooldownLiquid: 8.3334
 
