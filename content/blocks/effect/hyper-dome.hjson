@@ -53,7 +53,7 @@ consumeCoolant: false
 consumes:{
 power: 8
 
-item: {
+items: {
 items: [phase-fabric/1]
 booster: true
 optional: true
