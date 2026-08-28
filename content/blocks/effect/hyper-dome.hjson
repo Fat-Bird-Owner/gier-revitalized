@@ -13,12 +13,12 @@ And consumes a large amount of power in the proccess
 - Can be boosted[red]
 - Catastrophe levels of explosiveness
 - Consumes large amounts of power
-
+- Requires water to operate
 - Boosting reduce radius by 25%
 "
 
 # liquids: [water/0.1116667]
-# - Requires water to operate
+# 
 
 coolantConsumption: 0.16667
 baseExplosiveness: 150
