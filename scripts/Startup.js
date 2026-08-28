@@ -77,7 +77,8 @@ Vars.ui.showText("Startup.js Crash", e);
 Events.on(ClientLoadEvent, e => { 
 try{
 
-
+Vars.content.block("gr-hyper-dome").itemConsumer = Vars.content.block("gr-hyper-dome").consumeItem(Items.phaseFabric).boost();
+  
 Vars.ui.settings.addCategory("[accent]Gier: Revitalized[]", Icon.menu, t => {
 
 t.checkPref("startup", false, b => {});
