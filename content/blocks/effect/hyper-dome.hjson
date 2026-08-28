@@ -54,7 +54,7 @@ consumes:{
 power: 8
 
 items: {
-items: phase-fabric
+item: phase-fabric
 amount: 1
 booster: true
 }
