@@ -48,9 +48,8 @@ shieldHealth: 15000
 cooldownNormal: 8.33334
 shieldRotation: 45
 cooldownBrokenBase: 4
-consumeCoolant: true
-
 squareSprite: false
+
 consumes:{
 power: 8
 liquids: [water/0.1116667]
@@ -67,6 +66,7 @@ phaseRadiusBoost: -60
 phaseShieldBoost: 3750
 cooldownLiquid: 2
 
+category: defense
 itemCapacity: 5
 requirements: [
 lead/1500
@@ -74,6 +74,6 @@ copper/1000
 graphite/1000
 silicon/450
 dense-alloy/250
-phase-fabric/200.
+phase-fabric/200
 ]
-category: defense
+
