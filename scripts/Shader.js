@@ -26,7 +26,7 @@ return null;
 
 let waterTest = loadShader("test-water", 0);
 let heatedOil = loadShader("oil-tile", 0);
-let exogenTile = loadShader("exogen-tile", 7);
+let exogenTile = loadShader("exogen-tile", 8);
 
 Events.on(ClientLoadEvent, () => {
 try {
