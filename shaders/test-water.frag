@@ -17,10 +17,10 @@ void main(){
     vec2 noisePos = coords / 1000.0 + scroll;
 
     float btime = u_time / 4000.0;
-    float nx = ((texture2D(u_noise, noisePos + btime) + texture2D(u_noise, noisePos + btime * vec2(-0.8, -1.1)))/2.0).r;
+    float nx = ((texture2D(u_noise, noisePos + btime) + texture2D(u_noise, noisePos + (btime * 0.8) * vec2(-0.8, -1.1)))/2.0).r;
     float ny = texture2D(u_noise, noisePos + 5.0).r;
 
-    vec2 distortion = (vec2(nx, nx) - 0.5) * (1.0/ u_resolution) * 8.0;
+    vec2 distortion = (vec2(nx, ny) - 0.5) * (1.0/ u_resolution) * 8.0;
     distortion *= 2.0;
 
     vec4 color = texture2D(u_texture, c + distortion);
