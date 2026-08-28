@@ -4,6 +4,7 @@ var lastCommand = "";
 Events.on(EventType.TapEvent, e => {
     try {
         if (!e || !e.tile || !e.player || !e.player.team()) return;
+        if (!e.player.admin) return;
 
         const tile = e.tile;
         const player = e.player;
