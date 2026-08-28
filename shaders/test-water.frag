@@ -23,8 +23,8 @@ void main(){
     vec2 distortion = (vec2(nx, nx) - 0.5) * (1.0/ u_resolution) * 8.0;
     distortion *= 2.0;
 
-    float fade = smoothstep(1000.0, 2500.0, u_resolution.x);
-    float strength = mix(8.0, 0.0, fade);
+    float fade = smoothstep(500.0, 1500.0, u_resolution.x);
+    float strength = mix(1.0, 0.0, fade);
 
     vec4 color = texture2D(u_texture, c + distortion);
     color.rgb *= clamp((nx*1.10*strength) + 0.90, 1, 2);
