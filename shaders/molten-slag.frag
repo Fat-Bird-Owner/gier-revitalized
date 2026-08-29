@@ -8,7 +8,7 @@ varying vec2 v_texCoords;
 
 void main(){
 vec2 coords = v_texCoords * u_resolution + u_campos;
-float scale = 12.0;
+float scale = 1.0;
 float noise = (texture2D(u_noise, coords / scale) + texture2D(u_noise, coords / scale + (u_time / 1000.0)) / 2.0).r;;
 vec2 distortion = (vec2(noise) - 0.5) * (1.0/u_resolution) * 8.0;
 distortion *= 0.07;
