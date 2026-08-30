@@ -1,0 +1,21 @@
+color: 8A73C6FF
+name: Cualbult
+
+description: "
+A durable alloy poccessing the 
+ability to absorb large amounts
+of heat
+
+As well as being able to disperse
+heat efficently
+
+Made from tightly bonding copper,
+oxide and surge alloy together 
+"
+
+flammability: 0
+explosiveness: 0.8
+charge: 0.25
+
+hardness: 4
+cost: 3
