@@ -1,0 +1,26 @@
+type: HeatConductor
+name: Heat Conduit
+size: 1
+
+requirements: [silicon/20, depleted-thorium/20, cualbult/20]
+category: crafting
+description: "
+Conducts and transports heat
+[green]
+- Conducts heat[salmon]
+- Explosive
+"
+
+baseExplosiveness: 6
+drawer: [
+{
+type: DrawDefault
+}
+{
+type: DrawHeatOutput
+}
+{
+type: DrawHeatInput
+suffix: "-glow"
+}
+]
