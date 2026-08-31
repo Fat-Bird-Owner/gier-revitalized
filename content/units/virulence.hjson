@@ -54,7 +54,7 @@ shotDelay: 10
 }
 
 bullet: {
-spawnUnit: strike-missile
+spawnUnit: heavy-striker-missile
 }
 
 }
