@@ -17,6 +17,7 @@ hitSize: 37.5
 
 payloadCapacity: 2304
 targetAir: false
+outlineRadius: 0
 
 engineSize: 6
 engineOffset: 25.25
