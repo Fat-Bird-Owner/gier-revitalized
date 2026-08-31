@@ -12,6 +12,7 @@ Dumps away any inputted liquid
 
 itemCapacity: 0
 acceptsItems: false
+hasItems: false
 consumes: {
 power: 1
 }
