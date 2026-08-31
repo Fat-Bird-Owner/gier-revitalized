@@ -1,6 +1,5 @@
 type: flying
 name: Virulence
-aiController: FlyingFollowAI
   
 envDisabled: 0
 lowAltitude: false
