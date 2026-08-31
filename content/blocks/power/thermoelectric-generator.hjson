@@ -31,7 +31,7 @@ explosionShake: 0
 customShadow: true
 
 powerProduction: 4.16667
-maxHeat: 20
+maxHeat: 15
 effectChance: 0
 explodeEffect: none
 explodeSound: none
