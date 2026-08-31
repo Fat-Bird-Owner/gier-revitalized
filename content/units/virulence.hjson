@@ -47,8 +47,14 @@ rotate: true
 rotateSpeed: 4
 shootCone: 15
 
+reload: 60
+shoot: {
+shots: 3
+shotDelay: 10
+}
+
 bullet: {
-spawnUnit: crawler
+spawnUnit: strike-missile
 }
 
 }
