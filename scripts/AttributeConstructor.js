@@ -79,7 +79,7 @@ Reflect.set(building, "timeScaleDuration", Infinity);
 if(attribute <= 0) building.enabled = false;
     
 } catch(err){
-    Vars.ui.showText("bruv", err);
+    //Vars.ui.showText("bruv", err);
 }
 });
 
