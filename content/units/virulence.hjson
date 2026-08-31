@@ -36,3 +36,20 @@ abilities: [
     particles: 0
   }
 ]
+
+weapons: [
+{
+x: 13.5
+y: -6
+rotationLimit: 30
+
+rotate: true
+rotateSpeed: 4
+shootCone: 15
+
+bullet: {
+spawnUnit: crawler
+}
+
+}
+]
