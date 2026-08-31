@@ -18,8 +18,8 @@ payloadCapacity: 2304
 targetAir: false
 outlineRadius: 0
 
-engineSize: 4.5
-engineOffset: 16.5
+engineSize: 4
+engineOffset: 18.75
 drawSoftShadow: false
 
 loopSound: loopHover
