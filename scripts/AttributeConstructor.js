@@ -104,7 +104,7 @@ block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), fa
 block.stats.replace(Stat.output, StatValues.content(list));
     
 } catch(e){
-Vars.ui.showText("bruv",e);
+Vars.ui.showText("AttributeConstructor - Tile",e);
 }});
 
 Events.on(ContentInitEvent, () =>{
@@ -112,7 +112,7 @@ try{
 const block = Vars.content.block("gr-fissure-amalgam");
 block.addBar("ef", e => new Bar(() => "Efficiency: " + 
 Math.floor(e.timeScale() * 100) + "%",() => Pal.lightOrange,() => e.timeScale() > 0 ? e.timeScale() : 0     ) );
-    
+     
 } catch(e){
-Vars.ui.showText("bruv",e);
+Vars.ui.showText("AttributeConstructo - Init",e);
 }});
