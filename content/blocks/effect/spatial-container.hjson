@@ -23,8 +23,8 @@ description: "
 Inputted items are directly transported
 to the core
 
-Unloads from the core but can't support
-it's own core
+Cant unload from the core nor can it 
+support it's own core
 [green]
 - Core transport/unload[red]
 - Explosive
