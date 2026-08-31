@@ -21,6 +21,7 @@ outlineRadius: 0
 
 engineSize: 6
 engineOffset: 25.25
+drawSoftShadow: false
 
 loopSound: loopHover
 abilities: [
