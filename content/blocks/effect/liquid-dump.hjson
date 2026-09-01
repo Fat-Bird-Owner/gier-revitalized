@@ -10,8 +10,6 @@ Dumps away any inputted liquid
 - Limited to liquids
 "
 
-itemCapacity: 0
-acceptsItems: false
 hasItems: false
 consumes: {
 power: 1
