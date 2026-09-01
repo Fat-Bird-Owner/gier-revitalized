@@ -49,6 +49,8 @@ shootCone: 15
 
 reload: 60
 shoot: {
+type: ShootSpread
+spread: 5
 shots: 3
 shotDelay: 10
 }
