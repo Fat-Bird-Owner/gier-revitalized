@@ -33,7 +33,6 @@ minRadioactivity: 0.3
 itemDurationMultipliers: {
 thorium: 1.5
 phase-fabric: 4
-decaying-matter: 1.2
 }
 
 }
