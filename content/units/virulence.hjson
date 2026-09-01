@@ -23,20 +23,6 @@ engineOffset: 18.75
 drawSoftShadow: false
 
 loopSound: loopHover
-abilities: [
-  {
-    type: SuppressionFieldAbility
-    reload: 600
-    range: 300
-
-    orbRadius: 0
-    particleSize: 3
-
-    y: 0
-    particles: 0
-  }
-]
-
 weapons: [
 {
 x: 13.5
