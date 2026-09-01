@@ -30,7 +30,7 @@ weapons: [
       splashDamageRadius: 40
       despawnEffect: none
       suppressionRange: 60
-      hitEffect: blastExplosion
+      hitEffect: explosionCrawler
       despawnHit: true
     }
   } 
