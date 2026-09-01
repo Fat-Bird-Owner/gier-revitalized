@@ -1,7 +1,7 @@
 type: missile
 template: MissileUnitType
 name: Virulence Missile
-speed: 3
+speed: 4.5
 physics: false
 lifetime: 53.33334
 rotateSpeed: 1.5
