@@ -1,0 +1,37 @@
+type: missile
+template: MissileUnitType
+name: Virulence Missile
+speed: 3
+physics: false
+lifetime: 53.33334
+rotateSpeed: 1.5
+homingDelay: 20.5
+trailLength: 8
+trailScl: 1
+useUnitCap: false
+drawCell: false
+
+targetable: true
+
+outlines: false
+maxRange: 4
+hidden: true
+  
+weapons: [
+  {
+    reload: 1
+    shootOnDeath: true
+    mirror: false
+    shootCone: 360
+    shake: 1.5
+    bullet: {
+      type: ExplosionBulletType
+      splashDamage: 60
+      splashDamageRadius: 40
+      despawnEffect: none
+      suppressionRange: 60
+      hitEffect: blastExplosion
+      despawnHit: true
+    }
+  } 
+]
