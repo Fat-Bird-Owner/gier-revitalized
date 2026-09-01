@@ -2,6 +2,7 @@ type: HeatProducer
 size: 2
 name: Decay Heater
 
+outputItem: decaying-matter/1
 heatOutput: 10
 description: "
 Uses radioactive decay to generate heat
@@ -28,6 +29,13 @@ consumes: {
 liquids: [water/0.33334]
 itemRadioactive: {
 minRadioactivity: 0.3
+
+itemDurationMultipliers: {
+thorium: 1.5
+phase-fabric: 4
+decaying-matter: 3
+}
+
 }
 }
 
