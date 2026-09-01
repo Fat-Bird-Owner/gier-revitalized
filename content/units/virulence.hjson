@@ -32,6 +32,7 @@ rotationLimit: 30
 rotate: true
 rotateSpeed: 4
 shootCone: 15
+shootSound: mechStep
 
 reload: 60
 shoot: {
