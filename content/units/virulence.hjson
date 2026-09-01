@@ -54,7 +54,7 @@ shotDelay: 10
 }
 
 bullet: {
-spawnUnit: heavy-striker-missile
+spawnUnit: virulence-missile
 }
 
 }
