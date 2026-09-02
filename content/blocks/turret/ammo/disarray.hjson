@@ -19,10 +19,9 @@ category: turret
 shownPlanets:[kela, gier]
 
 databaseTag: "adv-plastanium"
-requirements: [lead/475, copper/350, silicon/175, oxide/65]
+requirements: [lead/400, copper/350, silicon/200, plastanium/100]
 
 consumes:{
-power: 2
 liquids: [liquid-steam/0.16667]
 }
 
