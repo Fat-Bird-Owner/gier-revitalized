@@ -40,10 +40,10 @@ Blocks.taintedWater.cacheLayer = waterTest;
 Blocks.darksandWater.cacheLayer = waterTest;
 Blocks.deepTaintedWater.cacheLayer = waterTest;
 Blocks.darksandTaintedWater.cacheLayer = waterTest;
+if (moltenSlag != null) Blocks.slag.cacheLayer = moltenSlag;
 }
   
 if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
-if (moltenSlag != null) Blocks.slag.cacheLayer = moltenSlag;
 //if (exogenTile != null) Vars.content.block("gr-reinforced-exogen-tile").cacheLayer = exogenTile;
   
 } catch(e){
