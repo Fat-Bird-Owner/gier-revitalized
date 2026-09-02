@@ -19,7 +19,7 @@ void main(){
             texture2D(u_noise, noisePos + time) +
             texture2D(
                 u_noise,
-                noisePos + time * vec2(-0.8, -0.9)
+                noisePos + time * vec2(-0.8, 0.9)
             )
         ).r * 0.5;
 
