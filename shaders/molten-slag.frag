@@ -11,7 +11,7 @@ void main(){
 
     vec2 coords = v_texCoords * u_resolution + u_campos;
 
-    float time = u_time / 2400.0;
+    float time = u_time / 24000.0;
     vec2 noisePos = coords / 500.0;
 
     float noise =
