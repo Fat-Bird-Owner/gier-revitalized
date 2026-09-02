@@ -159,7 +159,6 @@ collidesAir: true
 collides: true
 splashDamage: 100
 splashDamageRadius: 48
-splashDamageRadius: 80
 
 status: incendiary-depletion
 statusDuration: 240
@@ -212,23 +211,32 @@ collidesAir: true
 collides: true
 splashDamage: 100
 splashDamageRadius: 48
-splashDamageRadius: 80
 
 status: rolling
 statusDuration: 90
-armorMultiplier: 0.75
 
 frontColor: 5E988DFF
 backColor: 4A6949FF
 trailColor: 5E988DFF
 
-reloadMultiplier: 0.65
+reloadMultiplier: 0.5
 rangeChange: 40
+
+fragBullets: 1
+fragBullet: {
+type: BasicBulletType
+instantDisappear: true
+despawnHit: true
+splashDamageRadius: 48
+splashDamage: 1
+status: unmoving
+statusDuration: 60
+}
 
 hitColor: 5E988DFF
 hitEffect: {
 type: WrapEffect
-color: B58DA5FF
+color: 5E988DFF
 effect: scatheExplosionSmall
 }
 
