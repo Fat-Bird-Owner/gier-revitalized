@@ -65,7 +65,7 @@ let failSave = false;
 Events.run(Trigger.draw, () => {
     try {
         Draw.drawRange(71, 1, () => {
-            Vars.renderer.effectBuffer.begin(Color.red);
+            Vars.renderer.effectBuffer.begin(Color.clear);
         }, () => {
             Vars.renderer.effectBuffer.end();
             Vars.renderer.effectBuffer.blit(moltenSlag);
