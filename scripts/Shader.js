@@ -62,19 +62,15 @@ log(e)
 }});
 
 let failSave = false;
-Events.run(Trigger.draw, ()=> {
-try {
-  
-if (failSave || !moltenSlag) return;
-
-Draw.drawRange(71, 1, () => Vars.renderer.effectBuffer.begin(Color.clear), () => {
-Vars.renderer.effectBuffer.end();
-Vars.renderer.effectBuffer.blit(moltenSlag);
+Events.run(Trigger.draw, () => {
+    try {
+        Draw.drawRange(71, 1, () => {
+            Vars.renderer.effectBuffer.begin(Color.red);
+        }, () => {
+            Vars.renderer.effectBuffer.end();
+            Vars.renderer.effectBuffer.blit(moltenSlag);
+        });
+    } catch(e) {
+        Log.err("layer shader - " + e);
+    }
 });
-  
-} catch(e){
-  
-Log.err("layer shader - " + e);
-failSave = true;
-  
-}});
