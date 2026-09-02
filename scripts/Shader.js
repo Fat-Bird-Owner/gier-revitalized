@@ -1,5 +1,16 @@
 let index = 0;
 
+function loadSurfaceShader(string){
+try {
+  
+let s = new Shaders.SurfaceShader(string);
+return s;
+  
+} catch(e){
+Log.err(e);
+return null;
+}}
+
 function loadShader(string, index){
 
 let g 
@@ -26,7 +37,7 @@ return null;
 
 let waterTest = loadShader("test-water", 0);
 let heatedOil = loadShader("oil-tile", 0);
-let moltenSlag = loadShader("molten-slag", 0);
+let moltenSlag = loadSurfaceShader("molten-slag");
 //let exogenTile = loadShader("exogen-tile", 8);
 
 Events.on(ClientLoadEvent, () => {
@@ -40,7 +51,7 @@ Blocks.taintedWater.cacheLayer = waterTest;
 Blocks.darksandWater.cacheLayer = waterTest;
 Blocks.deepTaintedWater.cacheLayer = waterTest;
 Blocks.darksandTaintedWater.cacheLayer = waterTest;
-if (moltenSlag != null) Blocks.slag.cacheLayer = moltenSlag;
+//if (moltenSlag != null) Blocks.slag.cacheLayer = moltenSlag;
 }
   
 if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
@@ -48,4 +59,22 @@ if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
   
 } catch(e){
 log(e)
+}});
+
+let failSave = false;
+Events.run(Trigger.preDraw, ()=> {
+try {
+  
+if (failSave || !moltenSlag) return;
+
+Draw.drawRange(71, 1, () => Vars.renderer.effectBuffer.begin(Color.clear), () => {
+Vars.renderer.effectBuffer.end();
+Vars.renderer.effectBuffer.blit(moltenSlag);
+});
+  
+} catch(e){
+  
+Log.err(e);
+failSave = true;
+  
 }});
