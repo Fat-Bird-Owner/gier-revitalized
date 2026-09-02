@@ -62,7 +62,7 @@ log(e)
 }});
 
 let failSave = false;
-Events.run(Trigger.preDraw, ()=> {
+Events.run(Trigger.draw, ()=> {
 try {
   
 if (failSave || !moltenSlag) return;
@@ -74,7 +74,7 @@ Vars.renderer.effectBuffer.blit(moltenSlag);
   
 } catch(e){
   
-Log.err(e);
+Log.err("layer shader - " + e);
 failSave = true;
   
 }});
