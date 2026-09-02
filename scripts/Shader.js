@@ -61,6 +61,7 @@ if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
 log(e)
 }});
 
+/*
 let failSave = false;
 Events.run(Trigger.draw, () => {
     try {
@@ -75,3 +76,4 @@ Draw.drawRange(
         Log.err("layer shader - " + e);
     }
 });
+*/
