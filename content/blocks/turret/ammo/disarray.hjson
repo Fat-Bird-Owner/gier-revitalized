@@ -73,7 +73,7 @@ trailLength: 14
 collidesAir: true
 collides: true
 splashDamage: 200
-splashDamageRadius: 16
+splashDamageRadius: 48
 
 status: corroded
 statusDuration: 140
@@ -116,7 +116,7 @@ trailLength: 14
 collidesAir: true
 collides: true
 splashDamage: 200
-splashDamageRadius: 75
+splashDamageRadius: 48
 
 status: melting
 statusDuration: 360
@@ -159,7 +159,7 @@ trailLength: 14
 collidesAir: true
 collides: true
 splashDamage: 100
-splashDamageRadius: 100
+splashDamageRadius: 48
 splashDamageRadius: 80
 
 status: incendiary-depletion
@@ -183,4 +183,58 @@ effect: scatheExplosionSmall
 despawnEffect: bigShockwave
 hitSound: explosionArtilleryShockBig
 }
+
+decaying-matter:{
+type: BasicBulletType
+speed: 7
+lifetime: 40
+
+trailRotation: true
+trailInterval: 5
+trailEffect: {
+type: ParticleEffect
+particles: 1
+cone: 0
+region: "gr-shock-wave"
+sizeFrom: 4
+sizeTo: 16
+length: 0
+colorFrom: 5E988DFF
+colorTo: 5E988D00
+lifetime: 25
+}
+
+width: 7.5
+height: 11
+trailWidth: 2
+trailLength: 14
+
+collidesAir: true
+collides: true
+splashDamage: 100
+splashDamageRadius: 48
+splashDamageRadius: 80
+
+status: rolling
+statusDuration: 90
+armorMultiplier: 0.75
+
+frontColor: 5E988DFF
+backColor: 4A6949FF
+trailColor: 5E988DFF
+
+reloadMultiplier: 0.65
+rangeChange: 40
+
+hitColor: 5E988DFF
+hitEffect: {
+type: WrapEffect
+color: B58DA5FF
+effect: scatheExplosionSmall
+}
+
+despawnEffect: bigShockwave
+hitSound: explosionArtilleryShockBig
+}
+
 }
