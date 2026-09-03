@@ -25,7 +25,8 @@ drawers:[
 {
 type: DrawGlowRegion
 suffix: "-glow"
-color: 6f6f6f
+color: BF92F9FF
+alpha: 0.6
 }
 {
 type: DrawDefault
