@@ -15,7 +15,9 @@ databaseTag: "adv-cualbult"
 powerProduction: 7.5
 category: power
 
-alwaysUnlocked: true
+alwaysUnlocked: false
+health: 2000
+baseExplosiveness: 150
 
 drawer:{
 type: DrawMulti
