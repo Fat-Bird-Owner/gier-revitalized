@@ -1,0 +1,32 @@
+type: SolarGenerator
+name: Photon Cell
+size: 4
+customShadow: true
+description: "
+Produces an even larger quantity of power
+from solar radations
+"
+
+requirements:[lead/250, silicon/200, thorium/150, cualbult/100]
+research: radiance-panel
+researchCostMultiplier: 0.75
+envEnabled: -1
+databaseTag: "adv-cualbult"
+powerProduction: 7.5
+category: power
+
+alwaysUnlocked: true
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: 6f6f6f
+}
+{
+type: DrawDefault
+}
+]
+}
