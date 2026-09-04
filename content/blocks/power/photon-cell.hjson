@@ -5,6 +5,9 @@ customShadow: true
 description: "
 Produces an even larger quantity of power
 from solar radations
+[green]
+- Produces alot of power[red]
+- Explosive
 "
 
 requirements:[lead/250, silicon/200, thorium/150, cualbult/100]
@@ -26,7 +29,7 @@ drawers:[
 type: DrawGlowRegion
 suffix: "-glow"
 color: BF92F9FF
-alpha: 0.6
+alpha: 0.4
 }
 {
 type: DrawDefault
