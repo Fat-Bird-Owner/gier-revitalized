@@ -14,6 +14,8 @@ drawBody: false
 drawCell: false
 drawMinimap: false
 
+createWreck: false
+
 createScorch: false
 deathSound: none
 deathExplosionEffect: none
