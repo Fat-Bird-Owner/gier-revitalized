@@ -18,8 +18,8 @@ void main(){
     vec2 coords = T * u_resolution + u_campos;
 
     vec2 scroll = vec2(
-        u_time / 600.0,
-        u_time / 600.0
+        u_time / 1200.0,
+        u_time / 1200.0
     );
 
     vec4 noiseTex = texture2D(
@@ -77,7 +77,7 @@ void main(){
             color.b *= 0.75 + height / 1.5;
             color.r *= 0.6 + height / 1.5;
 
-            color.a = (height - ALPHA)*2.0;
+            color.a = (height - ALPHA)*4.0;
         }
 
         gl_FragColor = color;
