@@ -64,7 +64,9 @@ log(e)
 let effectBuffer = Vars.renderer.effectBuffer;
 Events.run(Trigger.draw, () => {
 try {
-      
+
+if (!radiantShimmer) return;
+  
 Draw.drawRange(123.5, 0.2, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.end();
    effectBuffer.blit(radiantShimmer);
