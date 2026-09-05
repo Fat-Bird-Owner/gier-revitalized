@@ -1,4 +1,7 @@
+#define HIGHP
+
 #define step 2.0
+#define ALPHA 0.65
 
 uniform float u_time;
 uniform sampler2D u_noise;
@@ -11,8 +14,13 @@ varying vec2 v_texCoords;
 
 void main(){
 
-    vec2 coords = v_texCoords * u_resolution + u_campos;
-    vec2 scroll = vec2(u_time / 600.0, u_time / 600.0);
+    vec2 T = v_texCoords;
+    vec2 coords = T * u_resolution + u_campos;
+
+    vec2 scroll = vec2(
+        u_time / 600.0,
+        u_time / 600.0
+    );
 
     vec4 noiseTex = texture2D(
         u_noise,
@@ -26,44 +34,52 @@ void main(){
 
     float height = ((noiseTex + noiseTex2) / 2.0).r;
 
-    vec2 distortion =
-        (vec2(height) - 0.5) *
-        (1.0 / u_resolution) *
-        8.0;
-
-    distortion *= 0.05;
-
-    vec2 T = v_texCoords + distortion;
+    T += (
+        vec2(height) - 0.5
+    ) * (1.0 / u_resolution) * 8.0 * 0.05;
 
     vec4 color = texture2D(u_texture, T);
 
-    if(color.a > 0.0){
+    vec2 pixel = 1.0 / u_resolution;
 
-        color.g *= 0.5 + height / 1.5;
-        color.b *= 0.75 + height / 1.5;
-        color.r *= 0.6 + height / 1.5;
-
-        vec2 pixel = 1.0 / u_resolution;
-
-        vec4 center = texture2D(u_texture, T);
-
-        vec4 maxed = max(
+    vec4 maxed = max(
+        max(
             max(
-                max(
-                    texture2D(u_texture, T + vec2(0.0, step) * pixel),
-                    texture2D(u_texture, T + vec2(0.0, -step) * pixel)
+                texture2D(
+                    u_texture,
+                    T + vec2(0.0, step) * pixel
                 ),
-                texture2D(u_texture, T + vec2(step, 0.0) * pixel)
+                texture2D(
+                    u_texture,
+                    T + vec2(0.0, -step) * pixel
+                )
             ),
-            texture2D(u_texture, T + vec2(-step, 0.0) * pixel)
-        );
+            texture2D(
+                u_texture,
+                T + vec2(step, 0.0) * pixel
+            )
+        ),
+        texture2D(
+            u_texture,
+            T + vec2(-step, 0.0) * pixel
+        )
+    );
 
-        color.a *= 0.5;
+    if(texture2D(u_texture, T).a < 0.9 && maxed.a > 0.9){
 
-        if(center.a < 0.9 && maxed.a > 0.9){
-            color.a = 1.0;
+        gl_FragColor = vec4(maxed.rgb, maxed.a * 100.0);
+
+    }else{
+
+        if(color.a > 0.0){
+
+            color.g *= 0.5 + height / 1.5;
+            color.b *= 0.75 + height / 1.5;
+            color.r *= 0.6 + height / 1.5;
+
+            color.a = ALPHA;
         }
-    }
 
-    gl_FragColor = color;
+        gl_FragColor = color;
+    }
 }
