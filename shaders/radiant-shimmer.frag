@@ -13,8 +13,8 @@ void main(){
 
     vec2 coords = v_texCoords * u_resolution + u_campos;
     vec2 scroll = vec2(u_time / 600.0, u_time / 600.0);
-    vec4 noiseTex = texture2D(u_noise, coords + scroll);
-    vec4 noiseTex2 = texture2D(u_noise, coords + scroll * vec2(-0.6, -0.6));
+    vec4 noiseTex = texture2D(u_noise, coords / 150.0 + scroll);
+    vec4 noiseTex2 = texture2D(u_noise, coords / 150.0 + scroll * vec2(-0.6, -0.6));
     float height = ((noiseTex + noiseTex2) / 2.0).r;
 
 
