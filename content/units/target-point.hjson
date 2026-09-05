@@ -2,6 +2,10 @@ type: missile
 physics: false
 health: 250
 
+speed: 0
+hittable: false
+physics: false
+
 lifetime: 120
 drawSoftShadow: false
 
@@ -11,18 +15,5 @@ drawCell: false
 drawMinimap: false
 
 createScorch: false
-
-parts:[
-{
-type: ShapePart
-circle: true
-hollow: true
-strokeTo: 0
-stroke: 8
-color: ff795eff
-colorTo: ff795e00
-progress: life
-radius: 0
-radiusTo: 80
-}
-]
+deathSound: none
+deathExplosionEffect: none
