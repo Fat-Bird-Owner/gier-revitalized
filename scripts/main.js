@@ -71,7 +71,8 @@ compile("IFrameUnit");
 compile("EnrageUnit");
 compile("ZapUnit");
 compile("ResilientUnit");
-
+compile("StealthTemplate");
+  
 // Mods
 //require("Modifiers");
 
