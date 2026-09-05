@@ -77,7 +77,7 @@ void main(){
             color.b *= 0.75 + height / 1.5;
             color.r *= 0.6 + height / 1.5;
 
-            color.a = height - ALPHA;
+            color.a = (height - ALPHA)*2.0;
         }
 
         gl_FragColor = color;
