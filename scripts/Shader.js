@@ -71,7 +71,9 @@ Draw.drawRange(123.5, 0.2, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.end();
    effectBuffer.blit(radiantShimmer);
 });
-      
+
+Draw.reset();
+  
 } catch(e) {
   Log.err("layer shader - " + e);
 }});
