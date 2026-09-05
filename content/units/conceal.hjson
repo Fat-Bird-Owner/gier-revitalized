@@ -22,6 +22,10 @@ weapons: [
   reload: 60
   bullet: {
   spawnUnit: target-point
+  shootEffect: none
+  hitEffect: none
+  despawnEffect: none
+  smokeEffect: none
   }
     
   }
