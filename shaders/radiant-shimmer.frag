@@ -36,7 +36,7 @@ void main(){
 
     T += (
         vec2(height) - 0.5
-    ) * (1.0 / u_resolution) * 8.0 * 0.05;
+    ) * (1.0 / u_resolution) * 8.0 * 0.25;
 
     vec4 color = texture2D(u_texture, T);
 
