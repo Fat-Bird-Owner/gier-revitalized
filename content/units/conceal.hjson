@@ -2,8 +2,8 @@ type: mech
 name: Conceal
   
 speed: 1
-hitSize: 8
-health: 150
+hitSize: 16
+health: 500
 
 mechSideSway: 0.1
 range: 40
