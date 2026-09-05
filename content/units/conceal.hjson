@@ -19,6 +19,7 @@ weapons: [
   controllable: false
   aiControllable: false
 
+  reload: 60
   bullet: {
   spawnUnit: target-point
   }
