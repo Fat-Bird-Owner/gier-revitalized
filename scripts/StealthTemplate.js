@@ -16,8 +16,8 @@ drawSoftShadow: false,
 drawMinimap: false,
 targetable: false,
 drawShields: false,
-stepSound: Sound.none,
-tankMoveSound: Sound.none,
+stepSound: Sounds.none,
+tankMoveSound: Sounds.none,
 lightRadius: 1.0
 });
 
