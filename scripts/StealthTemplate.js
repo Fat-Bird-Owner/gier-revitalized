@@ -1,4 +1,6 @@
-const units = [];
+const units = [
+"gr-conceal"
+];
 
 Events.on(ContentInitEvent, () => {
 try {
