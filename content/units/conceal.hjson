@@ -1,0 +1,66 @@
+type: mech
+name: Conceal
+  
+speed: 1
+hitSize: 8
+health: 150
+
+mechSideSway: 0.1
+range: 40
+
+stepSound: walkerStepTiny
+stepSoundVolume: 0.2
+outlineRadius: 0
+  
+weapons: [
+  {
+  alwaysShooting: true
+  minShootVelocity: 0.1
+  controllable: false
+  aiControllable: false
+
+  bullet: {
+  spawnUnit: target-point
+  }
+    
+  }
+  {
+    shootOnDeath: true
+    targetUnderBlocks: false
+
+    reload: 24
+    shootCone: 180
+
+    ejectEffect: none
+    shootSound: explosionCrawler
+    shootSoundVolume: 0.4
+
+    x: 0
+    shootY: 0
+    mirror: false
+
+    bullet: {
+      type: BulletType
+
+      collidesTiles: false
+      collides: false
+
+      rangeOverride: 25
+      hitEffect: pulverize
+
+      speed: 0
+      splashDamageRadius: 60
+      instantDisappear: true
+
+      hitShake: 15
+        
+      splashDamage: 250
+      buildingDamageMultiplier: 0.75
+
+      killShooter: true
+      hittable: false
+      collidesAir: true
+    }
+  
+  }
+]
