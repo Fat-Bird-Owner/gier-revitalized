@@ -37,7 +37,7 @@ return null;
 
 let waterTest = loadShader("test-water", 0);
 let heatedOil = loadShader("oil-tile", 0);
-//let moltenSlag = loadSurfaceShader("beam");
+let radiantShimmer = loadSurfaceShader("radiant-shimmer");
 //let exogenTile = loadShader("exogen-tile", 8);
 
 Events.on(ClientLoadEvent, () => {
@@ -61,19 +61,17 @@ if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
 log(e)
 }});
 
-/*
-let failSave = false;
+let effectBuffer = Vars.renderer.effectBuffer;
 Events.run(Trigger.draw, () => {
-    try {
+try {
       
-Draw.drawRange(
-    71,
-    () => Draw.shader(moltenSlag, true),
-    () => Draw.shader()
-);
-      
-    } catch(e) {
-        Log.err("layer shader - " + e);
-    }
+Draw.drawRange(123.5, 0.2, () => effectBuffer.begin(Color.clear), () => {
+   effectBuffer.end();
+   effectBuffer.blit(radiantShimmer);
 });
-*/
+      
+} catch(e) {
+  Log.err("layer shader - " + e);
+}});
+
+
