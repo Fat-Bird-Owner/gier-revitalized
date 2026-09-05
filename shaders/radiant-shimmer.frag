@@ -1,7 +1,7 @@
 #define HIGHP
 
 #define step 2.0
-#define ALPHA 0.65
+#define ALPHA 0.5
 
 uniform float u_time;
 uniform sampler2D u_noise;
