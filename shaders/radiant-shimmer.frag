@@ -58,7 +58,7 @@ void main(){
             texture2D(u_texture, T + vec2(-step, 0.0) * pixel)
         );
 
-        color.a *= 0.5 + height / 2.0;
+        color.a *= 0.5;
 
         if(center.a < 0.9 && maxed.a > 0.9){
             color.a = 1.0;
