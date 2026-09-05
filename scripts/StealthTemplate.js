@@ -2,7 +2,7 @@ const units = [
 "gr-conceal"
 ];
 
-Events.on(ContentInitEvent, () => {
+Events.on(ClientLoadEvent, () => {
 try {
 
 for (let i = 0; i < units.length; i++){
