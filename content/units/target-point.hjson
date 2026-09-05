@@ -8,12 +8,14 @@ physics: false
 
 lifetime: 120
 drawSoftShadow: false
+lightRadius: 0
 
 hoverable: false
 drawBody: false
 drawCell: false
 drawMinimap: false
 
+useUnitCap: false
 createWreck: false
 
 createScorch: false
