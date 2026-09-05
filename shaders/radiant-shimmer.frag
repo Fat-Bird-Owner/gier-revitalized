@@ -67,7 +67,7 @@ void main(){
 
     if(texture2D(u_texture, T).a < 0.9 && maxed.a > 0.9){
 
-        gl_FragColor = vec4(maxed.rgb, maxed.a * 100.0);
+        gl_FragColor = vec4(maxed.rgb, ALPHA + height / 2.0);
 
     }else{
 
@@ -77,7 +77,7 @@ void main(){
             color.b *= 0.75 + height / 1.5;
             color.r *= 0.6 + height / 1.5;
 
-            color.a = ALPHA;
+            color.a = ALPHA - height / 2.0;
         }
 
         gl_FragColor = color;
