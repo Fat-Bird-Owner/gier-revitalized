@@ -73,7 +73,7 @@ Draw.drawRange(123.5, 0.2, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.blit(radiantShimmer);
 });
 
-Draw.drawRange(30.001, 0, () => effectBuffer.begin(Color.clear), () => {
+Draw.drawRange(30.0012, 0, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.end();
    effectBuffer.blit(foundryHeat);
 });
