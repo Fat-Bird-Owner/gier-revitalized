@@ -6,7 +6,7 @@ speed: 0
 hittable: false
 physics: false
 
-lifetime: 120
+lifetime: 30
 drawSoftShadow: false
 lightRadius: 0
 
