@@ -1,0 +1,5 @@
+type: Floor
+name: "Bar Wall[grey] (Facility)"
+variants: 0
+drawEdgeIn: true
+drawEdgeOut: false
