@@ -57,7 +57,7 @@ weapons: [
 {
 type: RegionPart
 name: "gr-conceal-edge-top"
-moveY: 0.5
+moveY: 1.5
 
 outline: false
 
@@ -81,8 +81,8 @@ interp: circleIn
 # Left
 {
 type: RegionPart
-suffix: "gr-conceal-edge-left"
-moveX: -0.5
+name: "gr-conceal-edge-left"
+moveX: -1.5
 
 outline: false
 
@@ -106,8 +106,8 @@ interp: circleIn
 # Right
 {
 type: RegionPart
-suffix: "gr-conceal-edge-right"
-moveX: 0.5
+name: "gr-conceal-edge-right"
+moveX: 1.5
 
 outline: false
 
@@ -131,8 +131,8 @@ interp: circleIn
 # Bottom
 {
 type: RegionPart
-suffix: "gr-conceal-edge-bottom"
-moveY: -0.5
+name: "gr-conceal-edge-bottom"
+moveY: -1.5
 
 outline: false
 
