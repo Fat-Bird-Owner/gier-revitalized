@@ -32,6 +32,9 @@ reverse: true
 type: DrawCrucibleFlame
 }
 {
+type: DrawDefault
+}
+{
 type: DrawHeatInput
 }
 ]
