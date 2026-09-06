@@ -26,3 +26,28 @@ legMoveSpace: 1
 hovering: true
 shadowElevation: 0.2
 groundLayer: 109
+
+weapons: [
+  {
+  alwaysShooting: true
+  minShootVelocity: 0.5
+  controllable: false
+  aiControllable: false
+
+  shootSound: none
+  shootY: -8
+
+  xRand: 4
+  yRand: 4
+
+  reload: 120
+  bullet: {
+  spawnUnit: target-point
+  shootEffect: none
+  hitEffect: none
+  despawnEffect: none
+  smokeEffect: none
+  }
+    
+  }
+]
