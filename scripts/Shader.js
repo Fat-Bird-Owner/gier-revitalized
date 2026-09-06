@@ -72,19 +72,23 @@ Draw.drawRange(123.5, 0.2, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.blit(radiantShimmer);
 });
   
-if (Core.settings.getBool("shaders") != true) return;
+if (Core.settings.getBool("shaders") == true) {
 
 Draw.drawRange(30.0012, 0.001, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.end();
    effectBuffer.blit(foundryHeat);
 });
 
-if (Core.settings.getBool("quality-wrecks") != true) return;
+}
+
+if (Core.settings.getBool("quality-wrecks") == true) {
 
 Draw.drawRange(22.002, 0.01, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.end();
    effectBuffer.blit(qualityWrecks);
 });
+
+}
   
 Draw.reset();
   
