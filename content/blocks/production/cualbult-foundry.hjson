@@ -64,7 +64,7 @@ type: DrawGlowRegion
 suffix: "-heat-inside"
 color: f58349ff
 alpha: 0.4
-layer: 30.0
+layer: 30.0012 #foundry shader
 }
 {
 type: DrawParticles
