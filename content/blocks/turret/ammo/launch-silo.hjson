@@ -27,7 +27,7 @@ drawer:{
 type: DrawRegion
 }
 
-shootEffect: blastSmome
+shootEffect: blastSmoke
 category: turret
 requirements:[
 lead/225
