@@ -20,10 +20,17 @@ power: 30
 
 outputItem: cualbult/10
 craftTime: 1200
+squareSprite: false
 drawer: [
 {
 type: DrawRegion
 suffix: "-bottom"
+}
+{
+type: DrawGlowRegion
+suffix: "-heat-inside"
+color: f58349ff
+alpha: 0.6
 }
 {
 type: DrawParticles
