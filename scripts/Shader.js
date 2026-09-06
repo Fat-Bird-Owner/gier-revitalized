@@ -66,7 +66,7 @@ let effectBuffer = Vars.renderer.effectBuffer;
 Events.run(Trigger.draw, () => {
 try {
 
-if (!radiantShimmer) return;
+if (Core.settings.getBool("shaders") != true) return;
   
 Draw.drawRange(123.5, 0.2, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.end();
