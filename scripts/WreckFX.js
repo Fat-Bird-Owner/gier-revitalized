@@ -13,7 +13,7 @@ Object.assign(particle, {
 particles: 1,
 cone: 0,
 cap: false,
-layer: 22,
+layer: 22.002,
 length: 0,
 lifetime: 600,
 colorTo: Color.valueOf("00000000"),
@@ -92,7 +92,7 @@ Object.assign(particle, {
 particles: 1,
 cone: 5,
 cap: false,
-layer: 23,
+layer: 20.002,
 length: 0.1,
 lifetime: 600,
 colorTo: Color.valueOf("00000000"),
@@ -113,10 +113,6 @@ particle.sizeFrom = particle.sizeTo = ((region.width + region.height) / 2.5) / 8
 particle.lifetime = Mathf.random(300,3000);
 particle.baseLength = Mathf.random(-8, 8);
 particle.offset = Mathf.random(-25, 25) + (unit.rotation) + -90;
-
-if (unit.flying) {
-particle.layer += 3.5;
-}
 
 const regionT = type.cellRegion;
 if (type.drawCell == true && type.drawCell && regionT != Core.atlas.find("error")){
