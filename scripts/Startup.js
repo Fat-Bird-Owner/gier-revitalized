@@ -137,7 +137,9 @@ t.checkPref("gr-wall-no-dark", false, b => {});
 
 t.checkPref("water-shader", false, b => {});
 
-t.checkPref("shaders", false, b => {});
+t.checkPref("shaders", true, b => {});
+
+t.checkPref("quality-weecks", false, b => {});
   
 t.row();
 t.button(Core.bundle.get("settings.researchReset"), () => {
