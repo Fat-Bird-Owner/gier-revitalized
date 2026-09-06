@@ -32,7 +32,7 @@ health: 3500
 reload: 200
 baseExplosiveness: 105
 destroyBullet:{
-fragBullet: 12
+fragBullets: 12
 despawnHit: true
 instantDisappear: true
 fragBullet:{
