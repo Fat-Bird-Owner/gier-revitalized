@@ -77,6 +77,8 @@ Draw.drawRange(30.0012, 0.001, () => effectBuffer.begin(Color.clear), () => {
    effectBuffer.end();
    effectBuffer.blit(foundryHeat);
 });
+
+if (Core.settings.getBool("quality-wrecks") != true) return;
   
 Draw.reset();
   
