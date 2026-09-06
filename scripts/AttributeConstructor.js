@@ -73,13 +73,16 @@ building.recipe = Vars.content.block("gr-packed-graphite");
 building.recipe = Vars.content.block("gr-packed-beryllium");
 }
     
-Reflect.set(building, "timeScale", attribute);
-Reflect.set(building, "timeScaleDuration", Infinity);
-    
+if(attribute >= 1){
+    building.applyBoost(attribute, Infinity);
+}else{
+    building.applySlowdown(attribute, Infinity);
+}
+
 if(attribute <= 0) building.enabled = false;
     
 } catch(err){
-    //Vars.ui.showText("bruv", err);
+    Vars.ui.showText("bruv", err);
 }
 });
 
@@ -104,7 +107,7 @@ block.stats.replace(Stat.tiles, StatValues.blocks(Attribute.get("beryllium"), fa
 block.stats.replace(Stat.output, StatValues.content(list));
     
 } catch(e){
-Vars.ui.showText("AttributeConstructor - Tile",e);
+Vars.ui.showText("bruv",e);
 }});
 
 Events.on(ContentInitEvent, () =>{
@@ -112,7 +115,7 @@ try{
 const block = Vars.content.block("gr-fissure-amalgam");
 block.addBar("ef", e => new Bar(() => "Efficiency: " + 
 Math.floor(e.timeScale() * 100) + "%",() => Pal.lightOrange,() => e.timeScale() > 0 ? e.timeScale() : 0     ) );
-     
+    
 } catch(e){
-Vars.ui.showText("AttributeConstructo - Init",e);
+Vars.ui.showText("bruv",e);
 }});
