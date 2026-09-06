@@ -206,6 +206,7 @@ interp: circleIn
       splashDamageRadius: 60
       instantDisappear: true
 
+      absorbable: false
       hitShake: 15
       damage: 500
 
