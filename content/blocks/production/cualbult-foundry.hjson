@@ -9,8 +9,13 @@ maxEfficiency: 2.0
 
 requirements: [lead/3000, copper/2500, silicon/1500, beryllium/1000, surge-alloy/500, oxide/500, thorium/500]
 category: crafting
-research: phase-mill
-  
+research: fabricator-mill
+
+consumes: {
+items: [surge-alloy/20, copper/60, oxide/20]
+power: 30
+}
+
 outputItem: cualbult/10
 craftTime: 1200
 drawer: [
