@@ -13,7 +13,8 @@ const blocks = [
 "gr-scrap-compressor",
 "gr-thermal-forge",
 "gr-fabricator-mill",
-"gr-thermoelectric-generator"
+"gr-thermoelectric-generator",
+"gr-cualbult-foundry"
 ]
 
 Events.on(ClientLoadEvent, () => {
