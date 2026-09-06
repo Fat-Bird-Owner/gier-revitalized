@@ -10,9 +10,10 @@ armor: 5
 stepShake: 0
 
 stepSound: walkerStepSmall
+outlineRadius: 0
 
-legCount: 4
-legLength: 14
+legCount: 3
+legLength: 20
 lockLegBase: true
 legContinuousMove: true
 legExtension: -3
