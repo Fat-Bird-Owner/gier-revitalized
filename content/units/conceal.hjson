@@ -28,7 +28,7 @@ weapons: [
   xRand: 4
   yRand: 4
 
-  reload: 60
+  reload: 120
   bullet: {
   spawnUnit: target-point
   shootEffect: none
