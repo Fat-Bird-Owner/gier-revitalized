@@ -22,6 +22,9 @@ weapons: [
   shootSound: none
   shootY: -8
 
+  xRand: 4
+  yRand: 4
+
   reload: 60
   bullet: {
   spawnUnit: target-point
