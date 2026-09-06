@@ -207,7 +207,8 @@ interp: circleIn
       instantDisappear: true
 
       hitShake: 15
-        
+      damage: 500
+
       splashDamage: 650
       buildingDamageMultiplier: 1.25
 
