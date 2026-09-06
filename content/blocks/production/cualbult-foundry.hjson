@@ -7,6 +7,8 @@ heatRequirement: 30
 overheatScale: 2.0
 maxEfficiency: 2.0
 
+itemCapacity: 120
+
 requirements: [lead/3000, copper/2500, silicon/1500, beryllium/1000, surge-alloy/500, oxide/500, thorium/500]
 category: crafting
 research: fabricator-mill
