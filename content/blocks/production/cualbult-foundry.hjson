@@ -31,6 +31,7 @@ type: DrawGlowRegion
 suffix: "-heat-inside"
 color: f58349ff
 alpha: 0.6
+layer: 30.0
 }
 {
 type: DrawParticles
