@@ -170,8 +170,35 @@ interp: circleIn
       collidesTiles: false
       collides: false
 
-      rangeOverride: 25
-      hitEffect: pulverize
+      fragBullets: 6
+      fragMinLife: 0.6
+      fragBullet: {
+      type: BasicBulletType
+      collides: "false"
+      despawnEffect: none
+      trailEffect: {
+      type: WrapEffect
+      color: b8b8b8ff
+      effect: heatReactorSmoke
+      }
+      trailColor: b8b8b8ff
+      trailChance: 0.5
+      width: 0
+      height: 0
+      speed: 3
+      lifetime: 60
+      drag: 0.05
+      absorbable: "false"
+      hittable: "false"
+      }
+
+      rangeOverride: 40
+      hitEffect: {
+      sizeFrom: 4
+      sizeTo: 60
+      strokeFrom: 3
+      strokeTo: 0
+      }
 
       speed: 0
       splashDamageRadius: 60
