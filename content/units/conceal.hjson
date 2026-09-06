@@ -56,7 +56,7 @@ weapons: [
 # Top
 {
 type: RegionPart
-suffix: "-edge-top"
+name: "gr-conceal-edge-top"
 moveY: 0.5
 
 outline: false
@@ -81,7 +81,7 @@ interp: circleIn
 # Left
 {
 type: RegionPart
-suffix: "-edge-left"
+suffix: "gr-conceal-edge-left"
 moveX: -0.5
 
 outline: false
@@ -106,7 +106,7 @@ interp: circleIn
 # Right
 {
 type: RegionPart
-suffix: "-edge-right"
+suffix: "gr-conceal-edge-right"
 moveX: 0.5
 
 outline: false
@@ -131,7 +131,7 @@ interp: circleIn
 # Bottom
 {
 type: RegionPart
-suffix: "-edge-bottom"
+suffix: "gr-conceal-edge-bottom"
 moveY: -0.5
 
 outline: false
