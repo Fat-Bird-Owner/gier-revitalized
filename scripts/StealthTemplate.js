@@ -28,7 +28,8 @@ stepSound: Sounds.none,
 tankMoveSound: Sounds.none,
 lightRadius: 1.0,
 lightOpacity: 0.0,
-mechStepParticles: false
+mechStepParticles: false,
+shadowRegion: Core.atlas.find("window-empty")
 });
 
 }
