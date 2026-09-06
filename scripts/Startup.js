@@ -139,7 +139,7 @@ t.checkPref("water-shader", false, b => {});
 
 t.checkPref("shaders", true, b => {});
 
-t.checkPref("quality-weecks", false, b => {});
+t.checkPref("quality-wrecks", false, b => {});
   
 t.row();
 t.button(Core.bundle.get("settings.researchReset"), () => {
