@@ -6,5 +6,4 @@ hidden: true
 name: "Test Crawler"
 
 segmentUnits: 5
-segmentUnit: nova
 segmentSpacing: 6
