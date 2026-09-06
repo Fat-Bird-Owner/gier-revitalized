@@ -1,4 +1,4 @@
-type: segment
+type: crawler
 flying: true
 speed: 1
 hidden: true
