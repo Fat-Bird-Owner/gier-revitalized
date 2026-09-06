@@ -11,7 +11,7 @@ range: 40
 stepSound: walkerStepTiny
 stepSoundVolume: 0.2
 outlineRadius: 0
-  
+
 weapons: [
   {
   alwaysShooting: true
@@ -47,6 +47,114 @@ weapons: [
     shootY: 0
     mirror: false
 
+    shoot: {
+    firstShotDelay: 180
+    }
+
+    y: 0
+    parts: [
+# Top
+{
+type: RegionPart
+suffix: "-edge-top"
+moveY: 0.5
+
+outline: false
+
+progress: {
+type: charge
+ops: [
+{
+op: compress
+start: 0
+end: 0.2
+}
+{
+op: curve
+interp: circlein
+}
+]
+
+}
+
+}
+# Left
+{
+type: RegionPart
+suffix: "-edge-left"
+moveX: -0.5
+
+outline: false
+
+progress: {
+type: charge
+ops: [
+{
+op: compress
+start: 0.2
+end: 0.4
+}
+{
+op: curve
+interp: circlein
+}
+]
+
+}
+
+}
+# Right
+{
+type: RegionPart
+suffix: "-edge-right"
+moveX: 0.5
+
+outline: false
+
+progress: {
+type: charge
+ops: [
+{
+op: compress
+start: 0.4
+end: 0.6
+}
+{
+op: curve
+interp: circlein
+}
+]
+
+}
+
+}
+# Bottom
+{
+type: RegionPart
+suffix: "-edge-bottom"
+moveY: -0.5
+
+outline: false
+
+progress: {
+type: charge
+ops: [
+{
+op: compress
+start: 0.6
+end: 0.8
+}
+{
+op: curve
+interp: circlein
+}
+]
+
+}
+
+}
+]
+
     bullet: {
       type: BulletType
 
@@ -62,8 +170,8 @@ weapons: [
 
       hitShake: 15
         
-      splashDamage: 250
-      buildingDamageMultiplier: 0.75
+      splashDamage: 650
+      buildingDamageMultiplier: 1.25
 
       killShooter: true
       hittable: false
