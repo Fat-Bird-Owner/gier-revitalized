@@ -194,6 +194,8 @@ interp: circleIn
 
       rangeOverride: 40
       hitEffect: {
+      type: WaveEffect
+      lifetime: 10
       sizeFrom: 4
       sizeTo: 60
       strokeFrom: 3
