@@ -30,7 +30,7 @@ instantDisappear: true
 despawnHit: true
 splashDamage: 7500
 scaledSplashDamage: true
-splashDamageRadius: 300
+splashDamageRadius: 400
 hitEffect: impactReactorExplosion
 hitShake: 45
 }
