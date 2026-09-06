@@ -18,7 +18,7 @@ shootStatusDuration: 200
 weapons: [
   {
   alwaysShooting: true
-  minShootVelocity: 0.1
+  minShootVelocity: 0.5
   controllable: false
   aiControllable: false
 
