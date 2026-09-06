@@ -1,5 +1,6 @@
 const units = [
-"gr-conceal"
+"gr-conceal",
+"gr-covert"
 ];
 
 Events.on(ClientLoadEvent, () => {
@@ -9,6 +10,13 @@ for (let i = 0; i < units.length; i++){
 
 const unit = Vars.content.unit(units[i]);
 
+if (units[i] == "gr-covert"){
+Object.assign(unit, {
+legBaseRegion: UnitTypes.cleroi.legBaseRegion,
+legRegion: UnitTypes.cleroi.legRegion
+});
+}
+  
 Object.assign(unit, {
 flyingLayer: 123.5,
 groundLayer: 123.5,
