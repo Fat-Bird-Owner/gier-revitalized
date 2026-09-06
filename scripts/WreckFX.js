@@ -92,7 +92,7 @@ Object.assign(particle, {
 particles: 1,
 cone: 5,
 cap: false,
-layer: 20.002,
+layer: 22.002,
 length: 0.1,
 lifetime: 600,
 colorTo: Color.valueOf("00000000"),
