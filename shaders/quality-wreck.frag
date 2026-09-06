@@ -9,6 +9,7 @@ varying vec2 v_texCoords;
 void main(){
 
     vec2 coords = v_texCoords * u_resolution + u_campos;
+    coords = floor(coords);
 
     float noise = texture2D(
         u_noise,
