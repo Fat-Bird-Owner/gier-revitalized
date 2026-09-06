@@ -22,6 +22,23 @@ heatRequirement: 30
 overheatScale: 2.0
 maxEfficiency: 2.0
 
+destroyBullet:{
+type: ExplosionBulletType
+splashDamage: 5000
+splashDamageRadius: 60
+
+despawnHit: true
+hitSound: blockExplodeElectric 
+hitShake: 15
+hitEffect: {
+type: MultiEffect
+effects:[
+launch
+launchPod
+]
+}
+}
+
 baseExplosiveness: 500
 itemCapacity: 120
 
