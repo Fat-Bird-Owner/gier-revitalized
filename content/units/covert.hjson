@@ -25,7 +25,6 @@ legForwardScl: 0.7
 
 legMoveSpace: 1
 hovering: true
-shadowElevation: 0.2
 groundLayer: 109
 
 weapons: [
