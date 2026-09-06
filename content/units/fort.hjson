@@ -39,7 +39,6 @@ weapons:[
 mirror: false
 x: 0
 y: 0
-shootWarmupSpeed: 0.00642857
 minWarmup: 0.9
 reload: 180
 
