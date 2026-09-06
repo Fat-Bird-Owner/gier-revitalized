@@ -20,7 +20,7 @@ weapons: [
   aiControllable: false
 
   shootSound: none
-  shootY: -6
+  shootY: -8
 
   reload: 60
   bullet: {
@@ -60,6 +60,8 @@ name: "gr-conceal-edge-top"
 moveY: 1.5
 
 outline: false
+shootStatus: unmoving
+shootStatusDuration: 200
 
 progress: {
 type: charge
