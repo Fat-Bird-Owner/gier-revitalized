@@ -12,7 +12,7 @@ stepShake: 0
 stepSound: walkerStepSmall
 outlineRadius: 0
 
-legCount: 3
+legCount: 6
 legLength: 20
 lockLegBase: true
 legContinuousMove: true
