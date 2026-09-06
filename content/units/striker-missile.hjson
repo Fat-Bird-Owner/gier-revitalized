@@ -2,7 +2,6 @@ type: missile
 template: MissileUnitType
 name: Striker Missile
 speed: 5
-missileAccelTime: 45
 physics: false
 lifetime: 150
 rotateSpeed: 2.5
