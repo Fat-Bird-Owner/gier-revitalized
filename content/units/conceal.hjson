@@ -53,6 +53,9 @@ weapons: [
     shootY: 0
     mirror: false
 
+    shootStatus: unmoving
+    shootStatusDuration: 200
+
     shoot: {
     firstShotDelay: 180
     }
