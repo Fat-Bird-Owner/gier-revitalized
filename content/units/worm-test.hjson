@@ -1,4 +1,4 @@
-type: crawler
+type: crawl
 flying: true
 speed: 1
 hidden: true
