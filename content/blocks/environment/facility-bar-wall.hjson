@@ -1,4 +1,4 @@
-type: Floor
+type: StaticWall
 name: "Bar Wall[grey] (Facility)"
 variants: 0
 drawEdgeIn: true
