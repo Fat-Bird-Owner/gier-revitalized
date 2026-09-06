@@ -1,0 +1,32 @@
+type: HeatCrafter
+name: Cualbult Foundry
+size: 6
+
+customShadow: true
+heatRequirement: 30
+overheatScale: 2.0
+maxEfficiency: 2.0
+
+requirements: [lead/3000, copper/2500, silicon/1500, beryllium/1000, surge-alloy/500, oxide/500, thorium/500]
+category: crafting
+research: phase-mill
+  
+outputItem: cualbult/10
+craftTime: 1200
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawParticles
+color: f58349ff
+reverse: true
+}
+{
+type: DrawCrucibleFlame
+}
+{
+type: DrawHeatInput
+}
+]
