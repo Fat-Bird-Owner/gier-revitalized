@@ -39,6 +39,7 @@ let waterTest = loadShader("test-water", 0);
 let heatedOil = loadShader("oil-tile", 0);
 let radiantShimmer = loadSurfaceShader("radiant-shimmer");
 let foundryHeat = loadSurfaceShader("foundry-heat");
+let qualityWrecks = loadSurfaceShader("quality-wreck");
 //let exogenTile = loadShader("exogen-tile", 8);
 
 Events.on(ClientLoadEvent, () => {
@@ -79,6 +80,11 @@ Draw.drawRange(30.0012, 0.001, () => effectBuffer.begin(Color.clear), () => {
 });
 
 if (Core.settings.getBool("quality-wrecks") != true) return;
+
+Draw.drawRange(22.002, 0.01, () => effectBuffer.begin(Color.clear), () => {
+   effectBuffer.end();
+   effectBuffer.blit(qualityWrecks);
+});
   
 Draw.reset();
   
