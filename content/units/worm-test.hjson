@@ -1,6 +1,5 @@
-type: crawl
+type: segment
 flying: true
-#aiController: EffectDroneAI
 speed: 1
 hidden: true
 name: "Test Crawler"
