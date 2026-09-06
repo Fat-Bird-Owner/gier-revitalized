@@ -1,0 +1,28 @@
+type: legs
+name: Covert
+  
+speed: 0.75
+drag: 0.15
+hitSize: 14
+rotateSpeed: 3
+health: 1250
+armor: 5
+stepShake: 0
+
+stepSound: walkerStepSmall
+
+legCount: 4
+legLength: 14
+lockLegBase: true
+legContinuousMove: true
+legExtension: -3
+legBaseOffset: 5
+legMaxLength: 1.1
+legMinLength: 0.2
+legLengthScl: 0.95
+legForwardScl: 0.7
+
+legMoveSpace: 1
+hovering: true
+shadowElevation: 0.2
+groundLayer: 109
