@@ -1,6 +1,7 @@
 type: flying
 name: Onus
-description: "Targets the units around it and strikes them with lightning, Heals units at a very rapid pace making them effectively invincible
+description: "Targets the units around it and strikes them with lightning,
+Heals units at a very rapid pace making them effectively invincible
   
 [sky]Priority: 999
 "
@@ -32,8 +33,8 @@ aiControllable: false
 outlineRadius: 0
 drawSoftShadow: false
 health: 5000
-  
-immunities:[overclock]
+
+healColor: bccae0ff
 abilities:[
 {
 type: MoveEffectAbility
@@ -56,6 +57,10 @@ sectorRad: 0.0225
 hitBuildings: false
 healPercent: 20
 sameTypeHealMult: 0
+}
+{
+type: RegenAbility
+percentAmount: 0.0833333
 }
 ]
 
