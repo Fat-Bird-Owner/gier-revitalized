@@ -5,7 +5,7 @@ const unit = e.unit;
 if (unit == null) return;
 
 const type = unit.type
-if (type != Vars.content.unit("gr-electron") && type != Vars.content.unit("gr-arraign") ) return;
+if (type != Vars.content.unit("gr-electron") && type != Vars.content.unit("gr-arraign") && type != Vars.content.unit("gr-onus") ) return;
 
 Sounds.shootArc.at(unit.x,unit.y);
 Lightning.create(
