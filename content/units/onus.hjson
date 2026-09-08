@@ -71,7 +71,82 @@ type: time
 ops: [
 {
 	op: loop
-	time: 90
+	time: 180
+}
+{
+	op: curve
+	interp: slope
+}
+{
+	op: curve
+	interp: sine
+}
+]
+}
+
+}
+
+# Shell 1
+{
+suffix: "-shell-1"
+moveX: 2
+
+progress: {
+type: time
+ops: [
+{
+	op: loop
+	time: 180
+}
+{
+	op: curve
+	interp: slope
+}
+{
+	op: curve
+	interp: sine
+}
+]
+}
+
+}
+
+# Shell 2
+{
+suffix: "-shell-2"
+moveX: -2
+
+progress: {
+type: time
+ops: [
+{
+	op: loop
+	time: 180
+}
+{
+	op: curve
+	interp: slope
+}
+{
+	op: curve
+	interp: sine
+}
+]
+}
+
+}
+
+# Shell 3
+{
+suffix: "-shell-3"
+moveY: -2
+
+progress: {
+type: time
+ops: [
+{
+	op: loop
+	time: 180
 }
 {
 	op: curve
