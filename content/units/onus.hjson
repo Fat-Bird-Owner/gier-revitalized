@@ -17,6 +17,7 @@ engineSize: 0
 hitSize: 40
 rotateSpeed: 2
 
+drawCell: false
 targetPriority: 999
 weapons:[
 {
@@ -55,5 +56,33 @@ sectorRad: 0.0225
 hitBuildings: false
 healPercent: 20
 sameTypeHealMult: 0
+}
+]
+
+parts: [
+
+# Shell 0
+{
+suffix: "-shell-0"
+moveY: 2
+
+progress: {
+type: time
+ops: [
+{
+	op: loop
+	time: 90
+}
+{
+	op: curve
+	interp: slope
+}
+{
+	op: curve
+	interp: sine
+}
+]
+}
+
 }
 ]
