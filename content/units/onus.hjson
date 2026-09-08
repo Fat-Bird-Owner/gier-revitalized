@@ -10,7 +10,7 @@ Heals units at a very rapid pace making them effectively invincible
 
 flying: true
 speed: 2
-range: 75
+range: 200
 accel: 0.05
   
 drag: 0.03
