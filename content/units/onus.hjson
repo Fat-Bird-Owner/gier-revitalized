@@ -9,10 +9,10 @@ description: "Targets the units around it and strikes them with lightning, Heals
 
 flying: true
 speed: 2
-range: 400
-accel: 0.035
+range: 75
+accel: 0.05
   
-drag: 0.02
+drag: 0.03
 engineSize: 0
 hitSize: 40
 rotateSpeed: 2
@@ -41,12 +41,12 @@ color: bccae0ff
 }
 {
 type: EnergyFieldAbility
-range: 400
+range: 100
 reload: 20
 
 damage: 100
 statusDuration: 60
-maxTargets: 6
+maxTargets: 2
 
 sectors: 25
 effectRadius: 4
