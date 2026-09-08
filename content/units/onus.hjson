@@ -18,7 +18,8 @@ engineSize: 0
 hitSize: 40
 rotateSpeed: 2
 
-drawCell: false
+drawCell: true
+drawSoftShadow: false
 targetPriority: 999
 weapons:[
 {
