@@ -261,7 +261,7 @@ Vars.content.unit("gr-restoration").abilities.get(0).hitEffect = healSphere;
 Vars.content.unit("gr-restoration").abilities.get(1).healEffect = squareFx;
 Vars.content.unit("gr-electron").abilities.get(2).damageEffect = chainLightning;
 Vars.content.unit("gr-arraign").abilities.get(2).damageEffect = chainLightning;
-Vars.content.unit("gr-onus").abilities.get(2).damageEffect = chainLightning;
+Vars.content.unit("gr-onus").abilities.get(1).damageEffect = chainLightning;
 Vars.content.unit("gr-obitus").abilities.get(0).activeEffect = shieldLightning;
     
 Vars.content.block("gr-mend-pylon").effect = reverseSpark.wrap(Vars.content.block("gr-mend-pylon").baseColor)
