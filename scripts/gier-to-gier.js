@@ -53,7 +53,8 @@ actualRealGier.techTree.each(node => {
 
 })
 
-actualRealGier.techTree.planet = gierWannabe
+actualRealGier.alwaysUnlocked = false;
+actualRealGier.techTree.planet = gierWannabe;
   
 } catch(e){
 Vars.ui.showText("gier-gier", e);
