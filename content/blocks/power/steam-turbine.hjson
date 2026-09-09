@@ -24,9 +24,10 @@ research:[steam-turbine]
 
 unstableSpeed: 0
 explosionMinWarmup: 0.65
+rebuildable: true
 
 explosionPuddles: 0
-explosionDamage: 430
+explosionDamage: 500
 explosionRadius: 6
 explodeEffect: {
 type: MultiEffect
@@ -74,8 +75,8 @@ strokeTo: 0
 explosionShake: 6
 customShadow: true
 
-powerProduction: 7.91667
-maxHeat: 12
+powerProduction: 12.5
+maxHeat: 16
 effectChance: 1
 effect:{
 type: RadialEffect
@@ -100,7 +101,7 @@ region: "gr-gas"
 }
 
 consumes:{
-liquids:[water/0.04167]
+liquids:[water/0.0833334]
 }
 
 drawer:{
