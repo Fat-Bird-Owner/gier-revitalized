@@ -1,4 +1,7 @@
-
+function placePrefix(bundleName, prefix){
+let bundle = Core.bundle.get(bundleName);
+Core.bundle.properties.put(bundleName, prefix);
+}
 
 Events.on(ContentInitEvent, e => { 
 try{ 
@@ -24,57 +27,32 @@ Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
 */
   
-const kela = Vars.content.getByName(ContentType.planet, "gr-kela");
+const kela = Vars.content.planer("gr-kela");
 kela.techTree = Planets.gier.techTree;
 kela.techTree.addPlanet(kela);
 kela.defaultEnv = Planets.tantros.defaultEnv;
 kela.generator = new TantrosPlanetGenerator();
 kela.meshLoader = () => new HexMesh(kela, 6);
-//kela.parent = Vars.content.planet("gr-sol");
 Core.app.post(() => kela.reloadMesh());
 
-  
+kela.ruleSetter = Planets.gier.ruleSetter;
 Planets.gier.ruleSetter = r => {
 r.waveTeam = Team.blue;
 }
 
-kela.ruleSetter = Planets.gier.ruleSetter;
-
-const plast = Core.bundle.get("database-tag.adv-plastanium");
-Core.bundle.properties.put("database-tag.adv-plastanium", Items.plastanium.emoji() + " " + plast);
-  
-const oxide = Core.bundle.get("database-tag.adv-oxide");
-Core.bundle.properties.put("database-tag.adv-oxide", Items.oxide.emoji() + " " + oxide);
-
-const surge = Core.bundle.get("database-tag.adv-surge-alloy");
-Core.bundle.properties.put("database-tag.adv-surge-alloy", Items.surgeAlloy.emoji() + " " + surge);
-  
-const crystal = Core.bundle.get("database-tag.crystal-bug");
-Core.bundle.properties.put("database-tag.crystal-bug", Blocks.crystalCluster.emoji() + " " + crystal);
-
-const circuitLogic = Core.bundle.get("database-tag.circuit-logic");
-Core.bundle.properties.put("database-tag.circuit-logic", String.fromCharCode(Iconc.link) + " " + circuitLogic);
-
-const gierTag = Core.bundle.get("database-tag.gier");
-Core.bundle.properties.put("database-tag.gier", String.fromCharCode(Iconc.commandRally) + " " + gierTag);
-
-const scrapTag = Core.bundle.get("database-tag.adv-scrap");
-Core.bundle.properties.put("database-tag.adv-scrap", Items.scrap.emoji() + " " + scrapTag);
-
-const depletedThoriumTag = Core.bundle.get("database-tag.adv-depleted-thorium");
-Core.bundle.properties.put("database-tag.adv-depleted-thorium", String.fromCharCode(64001) + " " + depletedThoriumTag);
-
-const thoriumTag = Core.bundle.get("database-tag.adv-thorium");
-Core.bundle.properties.put("database-tag.adv-thorium", Items.thorium.emoji() + " " + thoriumTag);
-
-const phaseTag = Core.bundle.get("database-tag.adv-phase-fabric");
-Core.bundle.properties.put("database-tag.adv-phase-fabric", Items.phaseFabric.emoji() + " " + phaseTag);
-
-const denseAlloyTag = Core.bundle.get("database-tag.adv-dense-alloy");
-Core.bundle.properties.put("database-tag.adv-dense-alloy", String.fromCharCode(64002) + " " + denseAlloyTag);
-
-const cualbultTag = Core.bundle.get("database-tag.adv-cualbult");
-Core.bundle.properties.put("database-tag.adv-cualbult", String.fromCharCode(64003) + " " + cualbultTag);
+// Cleaned up
+placePrefix("database-tag.adv-plastanium", Items.plastanium.emoji());
+placePrefix("database-tag.adv-oxide", Items.oxide.emoji());
+placePrefix("database-tag.adv-surge-alloy", Items.surgeAlloy.emoji());
+placePrefix("database-tag.crystal-bug", Blocks.crystalCluster.emoji());
+placePrefix("database-tag.circuit-logic", String.fromCharCode(Iconc.link));
+placePrefix("database-tag.gier", String.fromCharCode(Iconc.commandRally));
+placePrefix("database-tag.adv-scrap", Items.scrap.emoji());
+placePrefix("database-tag.adv-depleted-thorium", String.fromCharCode(64001));
+placePrefix("database-tag.adv-thorium", Items.thorium.emoji());
+placePrefix("database-tag.adv-phase-fabric", Items.phaseFabric.emoji());
+placePrefix("database-tag.adv-dense-alloy", String.fromCharCode(64002));
+placePrefix("database-tag.adv-cualbult", String.fromCharCode(64003));
   
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
