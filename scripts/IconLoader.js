@@ -2,9 +2,10 @@
 Events.on(ClientLoadEvent, () => {
 
     // code ripped straight from psammos
-    loadIcon(64001, "gr-depleted-thorium") // \uFA01
-    loadIcon(64002, "gr-dense-alloy") // \uFA02
-    loadIcon(64003, "gr-cualbult") // \uFA03
+    loadIcon(64001, "gr-depleted-thorium"); // \uFA01
+    loadIcon(64002, "gr-dense-alloy"); // \uFA02
+    loadIcon(64003, "gr-cualbult"); // \uFA03
+    loadIcon(64004, "gr-payload-category"); //\uFA04
     
     function loadIcon(id, regionName) {
         let fonts = Seq.with(Fonts.def, Fonts.outline);
