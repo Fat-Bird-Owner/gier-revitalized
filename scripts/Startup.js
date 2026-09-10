@@ -1,6 +1,6 @@
 function placePrefix(bundleName, prefix){
 let bundle = Core.bundle.get(bundleName);
-Core.bundle.properties.put(bundleName, prefix);
+Core.bundle.properties.put(prefix + bundleName);
 }
 
 Events.on(ContentInitEvent, e => { 
