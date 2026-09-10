@@ -53,6 +53,7 @@ placePrefix("database-tag.adv-thorium", Items.thorium.emoji());
 placePrefix("database-tag.adv-phase-fabric", Items.phaseFabric.emoji());
 placePrefix("database-tag.adv-dense-alloy", String.fromCharCode(64002));
 placePrefix("database-tag.adv-cualbult", String.fromCharCode(64003));
+placePrefix("database-tag.adv-freight-blocks", String.fromCharCode(64004));
   
 } catch(e){
 Vars.ui.showText("Startup.js Crash", e);
