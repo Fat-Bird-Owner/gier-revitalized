@@ -15,6 +15,7 @@ requirements: [lead/175, copper/100, graphite/75]
 category: crafting
 squareSprite: false
 
+fullOverride: "gr-industrial-trimmer-ui"
 research: sunder-furnace
 researcCostMultiplier: 0.15
 baseExplosiveness: 60
