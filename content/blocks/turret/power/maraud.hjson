@@ -1,0 +1,72 @@
+type: PowerTurret
+size: 3
+outlineRadius: 0
+range: 150
+
+name: Maruad
+health: 1500
+envEnabled: -1
+
+description: "Delivers a large-AOE emp, Enemies hitted by it receives the exposed debuff
+[green]
+- Counters stealth units[red]
+- Explosive
+- Causes there allied units to shoot at them (and miss horribly)
+"
+
+shootSound: shootSmite
+shootWarmupSpeed: 0.05
+minWarmup: 0.9
+
+baseExplosiveness: 100
+consumes:{
+power: 2.5
+}
+
+databaseTag: "adv-cualbult"
+research: photon-panel
+rotateSpeed: 0
+recoil: 0
+outlineRadius: 0
+
+researchCostMultiplier: 0.5
+
+shootY: 0
+hasShadow: false
+customShadow: true
+category: turret
+reload: 95
+shake: 0.65
+
+shoot:{
+shots: 2
+shotDelay: 0
+}
+
+shootEffect: none
+requirements:[
+lead/500
+copper/500
+silicon/250
+cualbult/150
+]
+
+buildTime: 450
+rotate: false
+shootCone: 180
+inaccuracy: 0
+
+shootType:{
+type: BulletType
+instantDisappear: true
+despawnHit: true
+splashDamage: 25
+splashDamageRadius: 150
+status: exposed
+statusDuration: 300
+}
+
+elevation: 0
+drawer: {
+type: DrawRegion
+}
