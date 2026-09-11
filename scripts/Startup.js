@@ -27,7 +27,7 @@ Vars.maxSchematicSize = 3064;
 MapResizeDialog.maxSize = 2500;
 */
   
-const kela = Vars.content.planer("gr-kela");
+const kela = Vars.content.planet("gr-kela");
 kela.techTree = Planets.gier.techTree;
 kela.techTree.addPlanet(kela);
 kela.defaultEnv = Planets.tantros.defaultEnv;
