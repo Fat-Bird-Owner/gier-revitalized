@@ -88,7 +88,7 @@ if(attribute <= 0) building.enabled = false;
 });
 
 // Sets stats for the block
-Events.on(ClientLoadEvent, () =>{
+Events.on(BlockInfoEvent, () =>{
 try{    
 const block = Vars.content.block("gr-fissure-amalgam");
 Vars.ui.content.show(block);
