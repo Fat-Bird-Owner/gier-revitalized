@@ -78,6 +78,13 @@ statusDuration: 300
 }
 
 elevation: 0
-drawer: {
+drawer: [
+{
 type: DrawRegion
 }
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: 77D577FF
+}
+]
