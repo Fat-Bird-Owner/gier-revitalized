@@ -43,7 +43,18 @@ shots: 2
 shotDelay: 0
 }
 
-shootEffect: none
+shootEffect: {
+type: WaveEffect
+sizeFrom: 16
+sizeTo: 150
+strokeFrom: 3
+colorFrom: 63eb63
+colorTo: 63eb6300
+interp: sineOut
+Layer: 122
+lifetime: 90
+}
+
 requirements:[
 lead/500
 copper/500
