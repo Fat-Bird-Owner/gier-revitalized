@@ -88,6 +88,7 @@ if(attribute <= 0) building.enabled = false;
 });
 
 // Sets stats for the block
+/*
 Events.on(BlockInfoEvent, () =>{
 try{    
 const block = Vars.content.block("gr-fissure-amalgam");
@@ -110,6 +111,7 @@ block.stats.replace(Stat.output, StatValues.content(list));
 } catch(e){
 Vars.ui.showText("bruv",e);
 }});
+*/
 
 Events.on(ContentInitEvent, () =>{
 try{  
