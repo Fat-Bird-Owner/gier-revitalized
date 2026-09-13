@@ -1,0 +1,39 @@
+type: UnitCargoLoader
+size: 3
+name: Drone Silo
+health: 1500
+armor: 15
+  
+description: "
+Constructs an armored drone capable of carrying far larger quantities of resources
+[green]
+- Drones can carry lots of resources[red]
+- Explosive
+- Requires power to construct
+- Takes slightly longer to build
+"
+
+customShadow: true
+itemCapacity: 500
+envEnabled: -1
+  
+unitType: atlas
+polyRadius: 8
+requirements:[
+copper/200
+lead/200
+silicon/150
+dense-alloy/100
+beryllium/100
+]
+
+consumes: {
+power: 3
+}
+
+research: drone-facility
+researchCostMultiplier: 0.25
+databaseTag: "adv-dense-alloy"
+#shownPlanets:[gier]
+
+unitBuildTime: 600
