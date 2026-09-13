@@ -14,6 +14,7 @@ to operate.
 - Uses large amounts of overdrive fluid
 "
 
+customShadow: true
 databaseTag: "adv-phase-fabric"
 liquidCapacity: 50
 consumes: {
@@ -23,7 +24,8 @@ liquids: [overdrive-fluid/0.16667]
 
 circleColor: EA8878FF
 glowColor: EA8878FF
-healAmount: 4
+glowMag: 0
+healAmount: 2
 
 requirements: [lead/250, silicon/200, beryllium/150, phase-fabric/50]
 research: mend-pylon
