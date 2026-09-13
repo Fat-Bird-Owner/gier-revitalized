@@ -1,5 +1,5 @@
 type: tether
-speed: 4
+speed: 5
 name: Atlas
 
 flying: true
@@ -10,7 +10,7 @@ drag: 0.02
 faceTarget: false
 drawSoftShadow: false
 isEnemy: false
-itemCapacity: 250
+itemCapacity: 500
 targetable: false
 rotateSpeed: 4.5
 
