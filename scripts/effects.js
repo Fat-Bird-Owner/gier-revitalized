@@ -244,14 +244,15 @@ const targetPointEffect = new Effect(1, e => {
 });
 
 let radiance = new Effect(40, e => {
-
+if (e.data == null) return;
+    
 let fin = Interp.sineOut.apply(e.fin())
-let offsetX = Mathf.randomSeed(e.id, 2) * (Mathf.randomSeed(e.id+102, 2) - 1)
-let offsetY = Mathf.randomSeed(e.id, 2) * Mathf.round((Mathf.randomSeed(e.id+12, 2) - 1))
+let offsetX = Mathf.randomSeed(e.id, 2.2) * (Mathf.randomSeed(e.id+102, 2) - 1)
+let offsetY = Mathf.randomSeed(e.id, 2.2) * Mathf.round((Mathf.randomSeed(e.id+12, 2) - 1))
 
 let color = new Color();
 
-Draw.z(e.data.type.flyingLayer - 0.1)
+Draw.z(e.data.type.flying ? (e.data.type.groundLayer - 0.1) ? (e.data.type.flyingLayer - 0.1));
 Draw.mixcol( 
 Color.HSVtoRGB(Mathf.randomSeed(e.id+192, 360), 360, 360, color),
 1
