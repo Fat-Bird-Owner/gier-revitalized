@@ -63,7 +63,7 @@ if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
 log(e)
 }});
 
-Events.o(ClientLoadEvent,() => {
+Events.on(ClientLoadEvent,() => {
 
 let effectBuffer = Vars.renderer.effectBuffer;
 Events.run(Trigger.draw, () => {
