@@ -8,3 +8,5 @@ name: Torrid
 description: "An excuse to not make stronger units"
 parentizeEffect: true
 
+outline: false
+effectChance: 1
