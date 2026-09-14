@@ -26,9 +26,8 @@ actualRealGier.techTree.each(node => {
     let content = node.content;
 
     if(content == null) return;
-
     let remove = null;
-
+    
     content.shownPlanets.each(p => {
         if(p.name == "gier"){
 
@@ -46,8 +45,9 @@ actualRealGier.techTree.each(node => {
         content.databaseTabs.add(Vars.content.planet("gr-gier"));
 
         if (content instanceof Block) {
-        content.envEnabled = -1
-        content.buildVisibility = BuildVisibility.shown
+        content.envEnabled = -1;
+        content.buildVisibility = BuildVisibility.shown;
+        content.squareSprite = false;
         }
     }
 
