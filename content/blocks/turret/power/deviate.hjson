@@ -101,6 +101,8 @@ rotateSpeed: 3.5
 
 shootType:{
 type: RailBulletType
+ammoMultiplier: 1
+
 pierceEffect: instHit
 lineEffect: railHit
 pointEffect: railTrail
@@ -112,7 +114,6 @@ fragVelocityMin: 1
 fragVelocityMax: 1
 
 damage: 150
-
 knockback: 15
 impact: true
   
