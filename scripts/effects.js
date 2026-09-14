@@ -244,6 +244,7 @@ const targetPointEffect = new Effect(1, e => {
 });
 
 let radiance = new Effect(40, e => {
+if (e.data == null) return;
     
 let fin = Interp.sineOut.apply(e.fin())
 let offsetX = Mathf.randomSeed(e.id, 2.2) * (Mathf.randomSeed(e.id+102, 2) - 1)
