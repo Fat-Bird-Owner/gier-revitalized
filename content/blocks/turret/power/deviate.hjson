@@ -9,12 +9,14 @@ databaseTag: "adv-surge-alloy"
 shootY: 0
 envEnabled: -1
 shownPlanets: [kela, gier]
-description: "Shoots focused beams of power.
+description: "Fires a focused laser beam which frags into homing projectiles
 
 [green]- Anti-IFrame
-- High damage output
+- Crowd-control
+- Fragments can hit the same unit multiple times
 [salmon]- Requires power to operate
 - Water is required to operate
+- Explosive
 "
 
 
