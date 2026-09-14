@@ -6,6 +6,7 @@ Events.on(ClientLoadEvent, () => {
     loadIcon(64002, "gr-dense-alloy"); // \uFA02
     loadIcon(64003, "gr-cualbult"); // \uFA03
     loadIcon(64004, "gr-payload-category"); //\uFA04
+    loadIcon(64005, "gr-torrid"); //\uFA05
     
     function loadIcon(id, regionName) {
         let fonts = Seq.with(Fonts.def, Fonts.outline);
