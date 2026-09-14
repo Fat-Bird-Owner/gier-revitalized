@@ -251,7 +251,7 @@ let offsetY = Mathf.randomSeed(e.id, 2.2) * Mathf.round((Mathf.randomSeed(e.id+1
 
 let color = new Color();
 
-Draw.z(e.data.type.flying ? (e.data.type.groundLayer - 0.1) ? (e.data.type.flyingLayer - 0.1));
+Draw.z(e.data.type.flying ? (e.data.type.groundLayer - 0.1) : (e.data.type.flyingLayer - 0.1));
 Draw.mixcol( 
 Color.HSVtoRGB(Mathf.randomSeed(e.id+192, 360), 360, 360, color),
 1
