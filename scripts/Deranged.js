@@ -1,3 +1,4 @@
+/*
 Events.on(SectorLaunchEvent, () => {
 try{
 
@@ -13,4 +14,16 @@ Vars.state.wave = 5;
   
 }} catch(e){
 Vars.ui.showText("bruv",e);
+}});
+*/
+
+Events.on(UnitSpawnEvent, e => {
+try {
+if (Core.settings.getBool("deranged") != true) return;
+  
+let status = Vars.content.statusEffect("gr-torrid");
+e.unit.apply()
+  
+} catch(e){
+Log.err("deranged.js" + e);
 }});
