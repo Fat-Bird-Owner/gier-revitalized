@@ -10,3 +10,4 @@ parentizeEffect: true
 
 outline: false
 effectChance: 0.75
+color: EA7186FF
