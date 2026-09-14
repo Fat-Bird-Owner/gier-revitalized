@@ -63,6 +63,8 @@ if (heatedOil != null) Vars.content.block("gr-oil-tile").cacheLayer = heatedOil;
 log(e)
 }});
 
+Events.o(ClientLoadEvent,() => {
+
 let effectBuffer = Vars.renderer.effectBuffer;
 Events.run(Trigger.draw, () => {
 try {
@@ -95,5 +97,7 @@ Draw.reset();
 } catch(e) {
   Log.err("layer shader - " + e);
 }});
+
+});
 
 
