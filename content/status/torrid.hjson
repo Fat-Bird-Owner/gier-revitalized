@@ -4,7 +4,7 @@ damageMultiplier: 1.25
 dragMultiplier: 1.25
 speedMultiplier: 1.25
 
-name: Torrid
+name: Unwavering
 description: "An excuse to not make stronger units"
 parentizeEffect: true
 
