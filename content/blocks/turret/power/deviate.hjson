@@ -117,7 +117,7 @@ damage: 150
 knockback: 15
 impact: true
   
-fragBullets: 6
+fragBullets: 3
 fragRandomSpread: 0
 fragSpread: 15
 fragBullet:{
@@ -134,11 +134,21 @@ trailColor: FFD37F
 hitSize: 20
 damage: 2
 
-lightning: 3
-lightningDamage: 4.5
-lightningColor: FFD37F
-
 despawnHit: true
+collides: false
+
+bulletInterval: 1
+intervalBullet: {
+type: EmptyBulletType
+instantDisappear: true
+despawnHit: true
+hitEffect: none
+despawnEffect: none
+hitSize: 16
+damage: 4
+pierce: true
+status: iframe-kill
+}
 
 parts:[
 {
