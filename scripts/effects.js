@@ -246,8 +246,8 @@ const targetPointEffect = new Effect(1, e => {
 let radiance = new Effect(40, e => {
 
 let fin = Interp.sineOut.apply(e.fin())
-let offsetX = Mathf.randomSeed(e.id, 2.5) * (Mathf.randomSeed(e.id+102, 2) - 1)
-let offsetY = Mathf.randomSeed(e.id, 2.5) * Mathf.round((Mathf.randomSeed(e.id+12, 2) - 1))
+let offsetX = Mathf.randomSeed(e.id, 2) * (Mathf.randomSeed(e.id+102, 2) - 1)
+let offsetY = Mathf.randomSeed(e.id, 2) * Mathf.round((Mathf.randomSeed(e.id+12, 2) - 1))
 
 let color = new Color();
 
