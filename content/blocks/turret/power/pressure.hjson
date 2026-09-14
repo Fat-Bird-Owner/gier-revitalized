@@ -54,7 +54,8 @@ scaledSplashDamage: true
 collidesTeam: true
 healPercent: 1.5
 healColor: ffaa5f
-  
+
+ammoMultiplier: 1
 status: corrupted
 statusDuration: 90
 
