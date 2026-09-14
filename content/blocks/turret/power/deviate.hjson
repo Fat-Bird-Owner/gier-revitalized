@@ -141,7 +141,7 @@ collides: false
 
 bulletInterval: 1
 intervalBullet: {
-type: EmptyBulletType
+type: BasicBulletType
 instantDisappear: true
 despawnHit: true
 hitEffect: none
@@ -167,7 +167,7 @@ spinSpeed: 5
 
 trailWidth: 2
 trailLength: 10
-homingPower: 0.075
+homingPower: 0.1
 homingRange: 800
 }
   
