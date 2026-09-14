@@ -123,10 +123,10 @@ fragBullets: 3
 fragRandomSpread: 0
 fragSpread: 15
 fragBullet:{
-accel: 0.05
+accel: -0.05
 velocityScaleRandMin: 1
 velocityScaleRandMax: 1
-speed: 5
+speed: 20
 lifetime: 300
 pierce: true
 
@@ -146,8 +146,8 @@ instantDisappear: true
 despawnHit: true
 hitEffect: none
 despawnEffect: none
-hitSize: 16
-damage: 4
+splashDamageRadius: 16
+splashDamage: 6
 pierce: true
 status: iframe-kill
 }
