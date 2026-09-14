@@ -243,6 +243,33 @@ const targetPointEffect = new Effect(1, e => {
     }    
 });
 
+let radiance = new Effect(40, e => {
+
+let fin = Interp.sineOut.apply(e.fin())
+let offsetX = Mathf.randomSeed(e.id, 2.5) * (Mathf.randomSeed(e.id+102, 2) - 1)
+let offsetY = Mathf.randomSeed(e.id, 2.5) * Mathf.round((Mathf.randomSeed(e.id+12, 2) - 1))
+
+let color = new Color();
+
+Draw.z(e.data.type.flyingLayer - 0.1)
+Draw.mixcol( 
+Color.HSVtoRGB(Mathf.randomSeed(e.id+192, 360), 360, 360, color),
+1
+)
+
+Draw.color(Color.white, e.fout())
+
+Draw.rect(
+ e.data.type.region,
+ e.data.x + (offsetX * fin),
+ e.data.y + (offsetY * fin),
+ e.data.rotation-90
+);
+
+Draw.color()
+
+})
+
 exports.fissureAvailable = fissureAvailable;
 exports.fissureUnavailable = fissureUnavailable;
 exports.lineChain = lineChain;
@@ -252,7 +279,8 @@ exports.chainLightning = chainLightning;
 exports.shieldLightning = shieldLightning;
 exports.reverseSpark = reverseSpark;
 exports.targetPointEffect = targetPointEffect;
-
+exports.radiance = radiance;
+    
 Events.on(ClientLoadEvent, () => {
 try {
 
@@ -265,6 +293,7 @@ Vars.content.unit("gr-onus").abilities.get(1).damageEffect = chainLightning;
 Vars.content.unit("gr-obitus").abilities.get(0).activeEffect = shieldLightning;
     
 Vars.content.block("gr-mend-pylon").effect = reverseSpark.wrap(Vars.content.block("gr-mend-pylon").baseColor)
+Vars.content.statusEffect("gr-torrid").effect = radiance;
     
 } catch(e){
 log(e)
