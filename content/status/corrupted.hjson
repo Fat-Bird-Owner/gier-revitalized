@@ -1,10 +1,9 @@
 name: Corrupted
+reloadMultiplier: 0.9
 outline: false
 
 description: "
-A chance for the unit to
-switch teams upon taking damage
+A chance for the unit to be hijacked based on the damage it took
 
-Chance increases as health gets
-lower
+Chance increases as health gets lower, Guardians cannot get hijacked
 "
