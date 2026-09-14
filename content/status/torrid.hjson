@@ -9,4 +9,4 @@ description: "An excuse to not make stronger units"
 parentizeEffect: true
 
 outline: false
-effectChance: 0.5
+effectChance: 0.75
