@@ -75,6 +75,7 @@ splashDamage: 25
 splashDamageRadius: 150
 status: exposed
 statusDuration: 300
+ammoMultiplier: 1
 }
 
 elevation: 0
