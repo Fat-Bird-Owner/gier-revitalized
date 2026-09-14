@@ -1,0 +1,10 @@
+permenant: true
+healthMultiplier: 1.25
+damageMultiplier: 1.25
+dragMultiplier: 1.25
+speedMultiplier: 1.25
+
+name: Torrid
+description: "An excuse to not make stronger units"
+parentizeEffect: true
+
