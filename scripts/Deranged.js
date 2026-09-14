@@ -22,7 +22,7 @@ try {
 if (Core.settings.getBool("deranged") != true) return;
   
 let status = Vars.content.statusEffect("gr-torrid");
-e.unit.apply()
+e.unit.apply(status);
   
 } catch(e){
 Log.err("deranged.js" + e);
