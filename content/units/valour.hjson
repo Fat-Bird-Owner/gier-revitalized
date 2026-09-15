@@ -11,7 +11,7 @@ forceMultiTarget: true
 engineOffset: 5.75
 engineSize: 2.5
 
-outlineRadius: 3
+outlineColor: 2f2f3f
 flying: true
 range: 200
 hitSize: 20
@@ -19,22 +19,25 @@ hitSize: 20
 weapons: [
 {
 name: "valour-weapon"
-x: 0.875
-y: -2.625
+x: 1.65
+y: -5.25
 rotate: true
+reload: 30
 
 parts: [
 {
 type: RegionPart
 suffix: "-wing"
 mirror: false
-moveRot: -5
+moveRot: -25
+progress: recoil
 }
 {
 type: RegionPart
 suffix: "-wing"
 mirror: false
-moveRot: 5
+moveRot: 25
+progress: recoil
 xScl: -1
 }
 ]
