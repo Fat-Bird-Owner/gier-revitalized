@@ -21,6 +21,35 @@ hitSize: 20
 weapons: [
 {
 name: "valour-weapon"
+x: 0
+y: 4.75
+mirror: false
+rotate: true
+reload: 30
+
+parts: [
+{
+type: RegionPart
+suffix: "-wing"
+mirror: false
+moveRot: -25
+moveX: -1
+progress: recoil
+}
+{
+type: RegionPart
+suffix: "-wing"
+mirror: false
+moveRot: 25
+moveX: 1
+progress: recoil
+xScl: -1
+}
+]
+  
+}
+{
+name: "valour-weapon"
 x: 8.25
 y: -5.25
 rotate: true
