@@ -25,7 +25,27 @@ x: 0
 y: 4.75
 mirror: false
 rotate: true
-reload: 30
+reload: 60
+
+shoot: {
+shots: 3
+shotDelay: 5
+}
+
+bullet: {
+type: BasicBulletType
+speed: 8
+damage: 70
+width: 11
+height: 20
+lifetime: 27
+shrinkX: 0.4
+shrinkY: 0
+shootEffect: shootBig
+hitEffect: blastExplosion
+trailParam: 0.5
+despawnSound: shockBullet
+}
 
 parts: [
 {
@@ -54,6 +74,26 @@ x: 8.25
 y: -5.25
 rotate: true
 reload: 30
+
+shoot: {
+shots: 3
+shotDelay: 5
+}
+
+bullet: {
+type: BasicBulletType
+speed: 8
+damage: 70
+width: 11
+height: 20
+lifetime: 27
+shrinkX: 0.4
+shrinkY: 0
+shootEffect: shootBig
+hitEffect: blastExplosion
+trailParam: 0.5
+despawnSound: shockBullet
+}
 
 parts: [
 {
