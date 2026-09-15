@@ -18,6 +18,7 @@ hitSize: 20
 
 weapons: [
 {
+name: "valour-weapon"
 x: 0.875
 y: -2.625
 rotate: true
