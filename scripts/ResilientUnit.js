@@ -1,5 +1,6 @@
 const resilientUnit = [
-"gr-fort"
+"gr-fort",
+"gr-valour"
 ];
 
 Events.on(UnitDamageEvent, event => {
