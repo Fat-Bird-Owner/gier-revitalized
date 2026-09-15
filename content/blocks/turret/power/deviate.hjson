@@ -152,7 +152,8 @@ despawnHit: true
 hitEffect: none
 despawnEffect: none
 splashDamageRadius: 16
-splashDamage: 6
+splashDamage: 12
+armorMultiplier: 0.25
 pierce: true
 status: iframe-kill
 }
