@@ -9,7 +9,7 @@ drag: 0.05
 armor: 15
 faceTarget: false
 forceMultiTarget: true
-engineOffset: 11.5
+engineOffset: 14
 engineSize: 2.5
 
 outlineColor: 2f2f3f
@@ -32,6 +32,7 @@ type: RegionPart
 suffix: "-wing"
 mirror: false
 moveRot: -25
+moveX: -1
 progress: recoil
 }
 {
@@ -39,6 +40,7 @@ type: RegionPart
 suffix: "-wing"
 mirror: false
 moveRot: 25
+moveX: 1
 progress: recoil
 xScl: -1
 }
