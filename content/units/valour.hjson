@@ -8,7 +8,7 @@ drag: 0.05
 
 armor: 15
 forceMultiTarget: true
-engineOffset: 5.75
+engineOffset: 11.5
 engineSize: 2.5
 
 outlineColor: 2f2f3f
