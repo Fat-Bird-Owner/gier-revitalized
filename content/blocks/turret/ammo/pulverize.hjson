@@ -25,15 +25,10 @@ recoil: 3.45
 recoilTime: 22.5
 reload: 12
 
-consumes: {
-liquid:{
-# water coolant
-liquid: water
-amount: 0.16667
-optional: true
-booster: true
-
-}
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 0.33334
 }
 
 shoot: {
