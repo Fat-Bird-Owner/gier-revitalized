@@ -7,11 +7,13 @@ accel: 0.1
 drag: 0.05
 
 armor: 15
+faceTarget: false
 forceMultiTarget: true
 engineOffset: 11.5
 engineSize: 2.5
 
 outlineColor: 2f2f3f
+lowAltitude: true
 flying: true
 range: 200
 hitSize: 20
