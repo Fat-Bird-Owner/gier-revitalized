@@ -9,5 +9,5 @@ description: "An excuse to not make stronger units"
 parentizeEffect: true
 
 outline: false
-effectChance: 0.75
+effectChance: 0.33
 color: EA7186FF
