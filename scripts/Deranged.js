@@ -24,7 +24,7 @@ if (Core.settings.getBool("deranged") != true) return;
 let status = Vars.content.statusEffect("gr-torrid");
 e.unit.apply(status);
 e.unit.applyDynamicStatus();
-e.unit.statusMaxHealth(unit.maxHealth + unit.shield);
+e.unit.statusMaxHealth(e.unit.maxHealth + e.unit.shield);
 e.unit.shield = 0;
   
 } catch(e){
