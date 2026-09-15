@@ -1,0 +1,42 @@
+type: flying
+name: Valour
+
+health: 1500
+speed: 2
+accel: 0.1
+drag: 0.05
+
+armor: 15
+forceMultiTarget: true
+engineOffset: 5.75
+engineSize: 2.5
+
+outlineRadius: 3
+flying: true
+range: 200
+hitSize: 20
+
+weapons: [
+{
+x: 0.875
+y: -2.625
+rotate: true
+
+parts: [
+{
+type: RegionPart
+suffix: "-wing"
+mirror: false
+moveRot: -5
+}
+{
+type: RegionPart
+suffix: "-wing"
+mirror: false
+moveRot: 5
+xScl: -1
+}
+]
+  
+}
+]
