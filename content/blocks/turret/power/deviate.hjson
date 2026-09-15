@@ -3,7 +3,7 @@ size: 4
 name: Deviate
 
 research: trident
-
+coolantMultiplier: 1
 
 databaseTag: "adv-surge-alloy"
 shootY: 0
