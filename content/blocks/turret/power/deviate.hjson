@@ -51,6 +51,11 @@ category: turret
 cooldownTime: 140
 
 minWarmup: 0.9
+coolant:{
+type: ConsumeCoolant
+allowGas: false
+amount: 1
+}
 
 drawer:{
 type: DrawTurret
