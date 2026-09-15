@@ -25,8 +25,9 @@ x: 0
 y: 4.75
 mirror: false
 rotate: true
-reload: 60
+reload: 45
 
+shootSound: blockExplode2
 shoot: {
 shots: 3
 shotDelay: 5
@@ -45,6 +46,7 @@ shootEffect: shootBig
 hitEffect: blastExplosion
 trailParam: 0.5
 despawnSound: shockBullet
+hitSound: shootCleroi
 }
 
 parts: [
@@ -75,6 +77,7 @@ y: -5.25
 rotate: true
 reload: 30
 
+shootSound: blockExplode2
 shoot: {
 shots: 3
 shotDelay: 5
@@ -93,6 +96,7 @@ shootEffect: shootBig
 hitEffect: blastExplosion
 trailParam: 0.5
 despawnSound: shockBullet
+hitSound: shootCleroi
 }
 
 parts: [
