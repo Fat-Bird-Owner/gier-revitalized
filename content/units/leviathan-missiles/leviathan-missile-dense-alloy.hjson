@@ -7,7 +7,6 @@ hitSize: 10
 outlineRadius: 0
 engineColor: FFD37F
 trailColor: FFD37F
-engineLayer: FFD37F
 engineSize: 3.1
 engineOffset: 10
 rotateSpeed: 0.25
