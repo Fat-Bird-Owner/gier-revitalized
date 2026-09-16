@@ -40,8 +40,8 @@ particles: 22
 lifetime: 60
 length: 160
 cone: 33
-colorFrom: F9A3C7FF
-colorTo: FCD1E3FF
+colorFrom: FFD280FF
+colorTo: FFD28000
 strokeFrom: 2
 strokeTo: 3
 }
@@ -56,22 +56,23 @@ shootType: {
   damage: 1000
   armorMultiplier: 0
   pierce: true
-  pierceCap: 10
-  pierceDamageFactor: -0.33
+  pierceCap: 15
   knockback: 15
   impact: true
 
-  trailLength: 20
+  trailLength: 10
   trailWidth: 2.5
-  hitSize: 20
+  trailColor: FFD280FF
+  hitSize: 15
   parts: [
   {
   type: FlarePart
   y: 0
-  radius: 40
+  radius: 39
   sides: 2
   rotation: 90
   color1: FFD280FF
+  followRotation: true
   }
   ]
 }
@@ -100,11 +101,12 @@ parts: [
   type: FlarePart
   y: 24
   radius: 0
-  radiusTo: 40
+  radiusTo: 30
   progress: charge
   sides: 2
   rotation: 90
   color1: FFD280FF
+  followRotation: true
   }
 ]
   
