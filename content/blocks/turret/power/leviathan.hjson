@@ -68,9 +68,9 @@ shootType: {
   {
   type: FlarePart
   y: 0
-  radius: 39
+  radius: 18
   sides: 2
-  rotation: 90
+  rotation: 0
   color1: FFD280FF
   followRotation: true
   }
@@ -101,10 +101,10 @@ parts: [
   type: FlarePart
   y: 24
   radius: 0
-  radiusTo: 30
+  radiusTo: 18
   progress: charge
   sides: 2
-  rotation: 90
+  rotation: 0
   color1: FFD280FF
   followRotation: true
   }
