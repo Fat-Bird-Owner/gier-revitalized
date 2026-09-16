@@ -4,7 +4,7 @@ speed: 4.6
 maxRange: 6
 lifetime: 330
 hitSize: 10
-outlineColor: 2f2f3f
+outlineRadius: 0
 engineColor: FFD37F
 trailColor: FFD37F
 engineLayer: FFD37F
