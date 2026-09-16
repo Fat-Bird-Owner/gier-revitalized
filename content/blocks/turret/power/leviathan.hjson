@@ -212,14 +212,16 @@ parts: [
   suffix: "-arm-r"
   moveRot: -30
   progress: warmup
-  under: true
   }
   {
   type: RegionPart
   suffix: "-arm-l"
   moveRot: 30
   progress: warmup
-  under: true
+  }
+  {
+  type: RegionPart
+  suffix: "-plate"
   }
 ]
   
