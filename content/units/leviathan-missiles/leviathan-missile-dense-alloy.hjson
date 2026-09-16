@@ -75,6 +75,7 @@ weapons: [
         color: FFD37F
         }
 
+        collidesAir: true
         despawnEffect: scatheSlash
         knockback: 0.8
         lifetime: 23
