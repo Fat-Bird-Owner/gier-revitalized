@@ -15,18 +15,19 @@ author: "Fat Bird's Owner - Dev
 
 description: "
 Makes gier a playable planet.
-
 [accent[]]IOS Compatible
 
 [grey[]]More info in the repository's ReadMe.
 
-If the main version isnt available or is
-bugged then please use download from the 
-latest releases instead.
+Download from the latest commits
+otherwise refer to the newest release if
+the current commit is bugged
 [[]]
 
+Report bugs on the repo or discord server
+
 [accent[]]Starring is greatly appreciated[[]]
-[grey[]](Our current goal is 35 stars)[[]]
+[grey[]](Our current goal is 40 stars)[[]]
 "
 
 iosCompatible: true
