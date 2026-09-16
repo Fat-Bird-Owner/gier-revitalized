@@ -102,10 +102,7 @@ abilities: [
     effect: missileTrailSmoke
     rotation: 180
     y: -9
-    color: {
-      color: 7f7f7f
-      value: 0.6
-    }
+    color: 7f7f7f
     interval: 7
   }
 ]
