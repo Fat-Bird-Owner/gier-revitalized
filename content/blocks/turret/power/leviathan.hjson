@@ -50,6 +50,10 @@ dense-alloy: {
 spawnUnit: leviathan-missile-dense-alloy
 ammoMultiplier: 1
 }
+cualbult: {
+spawnUnit: leviathan-missile-cualbult
+ammoMultiplier: 1
+}
 }
 
 shootY: 6
@@ -80,6 +84,16 @@ ammoParts: {
     {
       type: RegionPart
       name: "gr-leviathan-missile-dense-alloy"
+      outline: false
+      layerOffset: -0.1
+      progress: charge
+      moveY: 6
+    }
+  ]
+  cualbult: [
+    {
+      type: RegionPart
+      name: "gr-leviathan-missile-cualbult"
       outline: false
       layerOffset: -0.1
       progress: charge
