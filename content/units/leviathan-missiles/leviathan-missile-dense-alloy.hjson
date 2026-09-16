@@ -83,6 +83,7 @@ weapons: [
         collidesTiles: false
         splashDamageRadius: 40
         splashDamage: 250
+        status: iframe-kill
 
         backColor: FFD37F
         trailColor: FFD37F
