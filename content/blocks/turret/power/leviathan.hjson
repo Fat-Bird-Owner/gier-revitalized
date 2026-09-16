@@ -212,18 +212,14 @@ parts: [
   suffix: "-arm-r"
   moveRot: -30
   progress: warmup
+  under: true
   }
   {
   type: RegionPart
-  suffix: "-arm-1"
-  moveRot: -30
+  suffix: "-arm-l"
+  moveRot: 30
   progress: warmup
-  }
-  {
-  type: RegionPart
-  name: "gr-leviathan"
-  progress: warmup
-  outline: false
+  under: true
   }
 ]
   
