@@ -2,7 +2,7 @@ type: missile
 template: MissileUnitType
 name: "Leviathan Missile"
 speed: 5
-maxRange: 6
+maxRange: 12
 lifetime: 330
 hitSize: 10
 outlineRadius: 0
@@ -36,10 +36,12 @@ weapons: [
 
     bullet: {
       type: ExplosionBulletType
-      damage: 1000
+      damage: 2500
       splashDamageRadius: 65
       splashDamagePierce: true
       scaledSplashDamage: true
+      status: melting
+      statusDuration: 600
 
       hitColor: FFD37F
       shootEffect: [
@@ -54,7 +56,7 @@ weapons: [
           }
         ]
 
-      collidesAir: false
+      collidesAir: true
       buildingDamageMultiplier: 0.1
       ammoMultiplier: 1
       fragLifeMin: 0.1
@@ -80,7 +82,7 @@ weapons: [
         height: 18
         collidesTiles: false
         splashDamageRadius: 40
-        splashDamage: 100
+        splashDamage: 250
 
         backColor: FFD37F
         trailColor: FFD37F
