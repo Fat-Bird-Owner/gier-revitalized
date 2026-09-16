@@ -1,0 +1,112 @@
+type: Missile
+name: "Leviathan Missile"
+speed: 4.6
+maxRange: 6
+lifetime: 330
+hitSize: 10
+outlineColor: 2f2f3f
+engineColor: FFD37F
+trailColor: FFD37F
+engineLayer: FFD37F
+engineSize: 3.1
+engineOffset: 10
+rotateSpeed: 0.25
+trailLength: 18
+missileAccelTime: 50
+lowAltitude: true
+loopSound: loopMissileTrail
+loopSoundVolume: 0.6
+deathSound: explosionMissile
+targetAir: false
+targetUnderBlocks: false
+
+fogRadius: 6
+health: 250
+armor: 5
+hidden: true
+  
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+    deathExplosionEffect: massiveExplosion
+    shootOnDeath: true
+    shake: 10
+
+    bullet: {
+      type: ExplosionBulletType
+      damage: 1000
+      splashDamageRadius: 65
+
+      hitColor: redLight
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          massiveExplosion
+          scatheExplosion
+          scatheLight
+          {
+            type: WaveEffect
+            lifetime: 10
+            strokeFrom: 4
+            sizeTo: 130
+          }
+        ]
+      }
+
+      collidesAir: false
+      buildingDamageMultiplier: 0.1
+      ammoMultiplier: 1
+      fragLifeMin: 0.1
+      fragBullets: 7
+
+      fragBullet: {
+        type: ArtilleryBulletType
+        speed: 3.4
+        damage: 32
+
+        buildingDamageMultiplier: 0.1
+        drag: 0.02
+        hitEffect: massiveExplosion
+        despawnEffect: scatheSlash
+        knockback: 0.8
+        lifetime: 23
+        width: 18
+        height: 18
+        collidesTiles: false
+        splashDamageRadius: 40
+        splashDamage: 100
+
+        backColor: FFD37F
+        trailColor: FFD37F
+        hitColor: FFD37F
+        frontColor: FFFFFF
+
+        smokeEffect: shootBigSmoke2
+        despawnShake: 7
+        lightRadius: 30
+        lightColor: FFD37F
+        lightOpacity: 0.5
+
+        trailLength: 20
+        trailWidth: 3.5
+        trailEffect: none
+      }
+    }
+  }
+]
+
+abilities: [
+  {
+    type: MoveEffectAbility
+    effect: missileTrailSmoke
+    rotation: 180
+    y: -9
+    color: {
+      color: 7f7f7f
+      value: 0.6
+    }
+    interval: 7
+  }
+]
