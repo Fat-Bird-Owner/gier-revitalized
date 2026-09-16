@@ -1,0 +1,230 @@
+type: PowerTurret
+size: 4
+name: "Leviathan"
+
+description: "
+Test turrer
+"
+
+databaseTag: "adv-dense-alloy"
+rotateSpeed: 5
+predictTarget: false
+
+outlineColor: 2f2f3f
+reload: 320
+range: 400 
+cooldownTime: 160
+
+requirements: [lead/1500, titanium/1500, beryllium/1000, silicon/750, thorium/500]
+category: turret
+shownPlanets: [kela, gier]
+
+buildVisibility: sandboxOnly
+//research: disarray
+researchCostMultiplier: 0.25
+consumes: {
+power: 2.5
+}
+
+shootSound: shootFuse
+shoot: {
+firstShotDelay: 120
+}
+
+shootEffect: {
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+interp: sineOut
+particles: 22
+lifetime: 60
+length: 160
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+strokeFrom: 2
+strokeTo: 3
+}
+
+shootType: {
+type: BasicBulletType
+instantDisappear: true
+hitEffect: none
+
+despawnEffect: none
+damage: 0
+showStats: true
+
+chargeEffect: [
+{
+type: WaveEffect
+sizeFrom: 20
+sizeTo: 0
+strokeFrom: 3
+strokeTo: 0
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+interp: sineOut
+}
+{
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+particles: 22
+interp: sineOut
+lifetime: 40
+length: -80
+baseLength: 80
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+sizeFrom: 3
+sizeTo: 0
+}
+]
+
+hitShake: 15
+despawnHit: true
+spawnBullets: [
+{
+type: LaserBulletType
+length: 420
+colors: [F9A3C7FF, FCD1E3FF, FFFFFFFF]
+damage: 350
+lifetime: 120
+armorMultiplier: 2
+showStats: true
+
+hitEffect: {
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+interp: sineOut
+lifetime: 40
+length: 80
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+strokeFrom: 2
+strokeTo: 3
+}
+  
+}
+{
+type: BasicBulletType
+speed: 8
+lifetime: 52.5
+damage: 600
+armorMultiplier: 0
+hitSound: blockExplodeElectricBig
+
+hittable: false
+reflectable: false
+absorbable: false
+showStats: true
+
+trailRotation: true
+trailEffect: [
+{
+type: ParticleEffect
+sizeFrom: 10
+sizeTo: 15
+strokeFrom: 5
+strokeTo: 0
+baseRotation: 135
+lifetime: 20
+colorFrom: F9A3C7FF
+colorTo: FCD1E300
+cone: 0
+particles: 1
+length: 0.1
+line: false
+region: "gr-rail-trail-fx"
+randLength: false
+baseLength: 10
+}
+{
+type: ParticleEffect
+sizeFrom: 10
+sizeTo: 15
+strokeFrom: 5
+strokeTo: 0
+baseRotation: -135
+lifetime: 20
+colorFrom: F9A3C7FF
+colorTo: FCD1E300
+cone: 0
+particles: 1
+region: "gr-rail-trail-fx"
+length: 0.1
+line: false
+randLength: false
+baseLength: 10
+}
+]
+
+hitShake: 25
+trailInterval: 5
+cooldownTime: 160
+
+hitSize: 20
+width: 0
+height: 0
+
+despawnHit: true
+splashDamage: 150
+splashDamageRadius: 80
+
+scaledSplashDamage: true
+hitEffect: [{
+type: WaveEffect
+sizeFrom: 0
+sizeTo: 80
+interp: sineOut
+lifetime: 40
+}
+{
+type: ParticleEffect
+lenFrom: 4
+lenTo: 8
+interp: sineOut
+lifetime: 60
+length: 120
+cone: 33
+colorFrom: F9A3C7FF
+colorTo: FCD1E3FF
+strokeFrom: 2
+strokeTo: 3
+}
+]
+  
+}
+]
+  
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: "reinforced-"
+parts: [
+  {
+  type: RegionPart
+  suffix: "-arm-r"
+  moveRot: -30
+  progress: warmup
+  }
+  {
+  type: RegionPart
+  suffix: "-arm-1"
+  moveRot: -30
+  progress: warmup
+  }
+  {
+  type: RegionPart
+  name: "gr-leviathan"
+  progress: warmup
+  outline: false
+  }
+]
+  
+}
