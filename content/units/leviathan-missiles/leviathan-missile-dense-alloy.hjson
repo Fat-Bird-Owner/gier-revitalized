@@ -1,4 +1,5 @@
 type: missile
+template: MissileUnitType
 name: "Leviathan Missile"
 speed: 5
 maxRange: 6
