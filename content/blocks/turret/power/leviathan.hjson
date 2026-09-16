@@ -1,4 +1,4 @@
-type: PowerTurret
+type: AmmoTurret
 size: 4
 name: "Leviathan"
 
@@ -22,9 +22,6 @@ shownPlanets: [kela, gier]
 buildVisibility: sandboxOnly
 //research: disarray
 researchCostMultiplier: 0.25
-consumes: {
-power: 2.5
-}
 
 shootSound: shootFuse
 shoot: {
@@ -46,37 +43,16 @@ strokeFrom: 2
 strokeTo: 3
 }
 
-shootType: {
-  type: BasicBulletType
-  speed: 12
-  lifetime: 30
-  width: 0
-  height: 0
-
-  damage: 1000
-  armorMultiplier: 0
-  pierce: true
-  pierceCap: 15
-  knockback: 15
-  impact: true
-
-  trailLength: 10
-  trailWidth: 2.5
-  trailColor: FFD280FF
-  hitSize: 15
-  parts: [
-  {
-  type: FlarePart
-  y: 0
-  radius: 18
-  sides: 2
-  rotation: 0
-  color1: FFD280FF
-  followRotation: true
-  }
-  ]
+maxAmmo: 20
+ammoPerShot: 10
+ammoTypes: {
+dense-alloy: {
+spawnUnit: leviathan-missile-dense-alloy
+ammoMultiplier: 1
+}
 }
 
+shootY: 6
 drawer: {
 type: DrawTurret
 basePrefix: "reinforced-"
@@ -97,17 +73,19 @@ parts: [
   type: RegionPart
   suffix: "-plate"
   }
-  {
-  type: FlarePart
-  y: 24
-  radius: 0
-  radiusTo: 18
-  progress: charge
-  sides: 2
-  rotation: 0
-  color1: FFD280FF
-  followRotation: true
-  }
 ]
-  
+
+ammoParts: {
+  copper: [
+    {
+      type: RegionPart
+      name: "gr-leviathan-missile-dense-alloy"
+      outline: false
+      layerOffset: -0.1
+      progress: charge
+      moveY: 6
+    }
+  ]
+}
+
 }
