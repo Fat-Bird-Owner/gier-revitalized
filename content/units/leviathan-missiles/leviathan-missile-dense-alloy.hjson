@@ -1,6 +1,6 @@
 type: missile
 name: "Leviathan Missile"
-speed: 4.6
+speed: 5
 maxRange: 6
 lifetime: 330
 hitSize: 10
