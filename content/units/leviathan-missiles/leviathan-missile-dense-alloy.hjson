@@ -1,4 +1,4 @@
-type: Missile
+type: missile
 name: "Leviathan Missile"
 speed: 4.6
 maxRange: 6
