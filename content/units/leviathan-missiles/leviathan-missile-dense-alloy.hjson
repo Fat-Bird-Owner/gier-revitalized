@@ -16,7 +16,7 @@ lowAltitude: true
 loopSound: loopMissileTrail
 loopSoundVolume: 0.6
 deathSound: explosionMissile
-targetAir: false
+targetAir: true
 targetUnderBlocks: false
 
 fogRadius: 6
@@ -37,11 +37,11 @@ weapons: [
       type: ExplosionBulletType
       damage: 1000
       splashDamageRadius: 65
+      splashDamagePierce: true
+      scaledSplashDamage: true
 
-      hitColor: redLight
-      shootEffect: {
-        type: MultiEffect
-        effects: [
+      hitColor: FFD37F
+      shootEffect: [
           massiveExplosion
           scatheExplosion
           scatheLight
@@ -52,7 +52,6 @@ weapons: [
             sizeTo: 130
           }
         ]
-      }
 
       collidesAir: false
       buildingDamageMultiplier: 0.1
@@ -67,7 +66,12 @@ weapons: [
 
         buildingDamageMultiplier: 0.1
         drag: 0.02
-        hitEffect: massiveExplosion
+        hitEffect: {
+        type: WrapEffect
+        effect: massiveExplosion
+        color: FFD37F
+        }
+
         despawnEffect: scatheSlash
         knockback: 0.8
         lifetime: 23
