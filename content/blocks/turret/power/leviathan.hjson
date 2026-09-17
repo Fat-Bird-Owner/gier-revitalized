@@ -58,6 +58,10 @@ surge-alloy: {
 spawnUnit: leviathan-missile-surge-alloy
 ammoMultiplier: 1
 }
+decaying-matter: {
+spawnUnit: leviathan-missile-decaying-matter
+ammoMultiplier: 1
+}
 }
 
 shootY: 6
@@ -108,6 +112,16 @@ ammoParts: {
     {
       type: RegionPart
       name: "gr-leviathan-missile-surge-alloy"
+      outline: false
+      layerOffset: -0.1
+      progress: charge
+      moveY: 6
+    }
+  ]
+  decaying-matter: [
+    {
+      type: RegionPart
+      name: "gr-leviathan-missile-decaying-matter"
       outline: false
       layerOffset: -0.1
       progress: charge
