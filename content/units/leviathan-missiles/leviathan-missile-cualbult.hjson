@@ -40,7 +40,6 @@ weapons: [
       splashDamageRadius: 80
       splashDamagePierce: true
       scaledSplashDamage: true
-      armorMultiplier: 0
 
       hitColor: 8c7fa9
       shootEffect: [
