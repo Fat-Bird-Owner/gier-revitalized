@@ -41,7 +41,7 @@ weapons: [
       splashDamagePierce: true
       scaledSplashDamage: true
       status: incendiary-depletion
-      statusDuration: 600
+      statusDuration: 300
 
       hitColor: 8BBEB0FF
       shootEffect: [
