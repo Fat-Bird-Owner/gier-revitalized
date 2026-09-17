@@ -1,0 +1,117 @@
+type: missile
+template: MissileUnitType
+name: "Leviathan Missile"
+speed: 5
+maxRange: 12
+lifetime: 330
+hitSize: 10
+outlineRadius: 0
+engineColor: 8BBEB0FF
+trailColor: 8BBEB0FF
+engineSize: 3.1
+engineOffset: 10
+rotateSpeed: 0.25
+trailLength: 18
+missileAccelTime: 50
+lowAltitude: true
+loopSound: loopMissileTrail
+loopSoundVolume: 0.6
+deathSound: explosionMissile
+targetAir: true
+targetUnderBlocks: false
+
+fogRadius: 6
+health: 250
+armor: 5
+hidden: true
+  
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+    deathExplosionEffect: massiveExplosion
+    shootOnDeath: true
+    shake: 10
+
+    bullet: {
+      type: ExplosionBulletType
+      damage: 2000
+      splashDamageRadius: 80
+      splashDamagePierce: true
+      scaledSplashDamage: true
+      status: incendiary-depletion
+      statusDuration: 600
+
+      hitColor: 8BBEB0FF
+      shootEffect: [
+          massiveExplosion
+          scatheExplosion
+          scatheLight
+          {
+            type: WaveEffect
+            lifetime: 10
+            strokeFrom: 4
+            sizeTo: 130
+          }
+        ]
+
+      collidesAir: true
+      buildingDamageMultiplier: 0.1
+      ammoMultiplier: 1
+      fragLifeMin: 0.1
+      fragBullets: 70
+
+      fragBullet: {
+        type: ArtilleryBulletType
+        speed: 34
+        damage: 50
+
+        buildingDamageMultiplier: 0.1
+        drag: 0.02
+        hitEffect: {
+        type: WrapEffect
+        effect: massiveExplosion
+        color: FFD37F
+        }
+
+        collidesAir: true
+        despawnEffect: scatheSlash
+        knockback: 0.8
+        lifetime: 23
+        width: 18
+        height: 18
+        collidesTiles: false
+        splashDamageRadius: 40
+        splashDamage: 250
+        status: incendiary-depletion
+
+        backColor: 8BBEB0FF
+        trailColor: 8BBEB0FF
+        hitColor: 8BBEB0FF
+        frontColor: FFFFFF
+
+        smokeEffect: shootBigSmoke2
+        despawnShake: 7
+        lightRadius: 30
+        lightColor: FFD37F
+        lightOpacity: 0.5
+
+        trailLength: 20
+        trailWidth: 3.5
+        trailEffect: none
+      }
+    }
+  }
+]
+
+abilities: [
+  {
+    type: MoveEffectAbility
+    effect: missileTrailSmoke
+    rotation: 180
+    y: -9
+    color: 5E988D
+    interval: 7
+  }
+]
