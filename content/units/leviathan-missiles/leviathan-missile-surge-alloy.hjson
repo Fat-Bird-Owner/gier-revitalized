@@ -21,7 +21,7 @@ targetAir: true
 targetUnderBlocks: false
 
 fogRadius: 6
-health: 250
+health: 100
 armor: 5
 hidden: true
   
@@ -37,8 +37,8 @@ weapons: [
     bullet: {
       type: ExplosionBulletType
       damage: 0
-      splashDamage: 1500
-      splashDamageRadius: 80
+      splashDamage: 1000
+      splashDamageRadius: 50
       splashDamagePierce: true
       scaledSplashDamage: true
       armorMultiplier: 0.5
