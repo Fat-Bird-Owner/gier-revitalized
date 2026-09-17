@@ -36,7 +36,7 @@ weapons: [
 
     bullet: {
       type: ExplosionBulletType
-      damage: 4000
+      damage: 1750
       splashDamageRadius: 80
       splashDamagePierce: true
       scaledSplashDamage: true
