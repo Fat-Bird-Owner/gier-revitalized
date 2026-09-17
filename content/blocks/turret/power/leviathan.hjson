@@ -54,6 +54,10 @@ cualbult: {
 spawnUnit: leviathan-missile-cualbult
 ammoMultiplier: 1
 }
+surge-alloy: {
+spawnUnit: leviathan-missile-surge-alloy
+ammoMultiplier: 1
+}
 }
 
 shootY: 6
@@ -94,6 +98,16 @@ ammoParts: {
     {
       type: RegionPart
       name: "gr-leviathan-missile-cualbult"
+      outline: false
+      layerOffset: -0.1
+      progress: charge
+      moveY: 6
+    }
+  ]
+  surge-alloy: [
+    {
+      type: RegionPart
+      name: "gr-leviathan-missile-surge-alloy"
       outline: false
       layerOffset: -0.1
       progress: charge
