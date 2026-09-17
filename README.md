@@ -14,7 +14,7 @@
 
 **Features:**</div>
 - Endless gier sectors
-- Randomly Generated gier sectors (Might crash)
+- Randomly Generated gier sectors (Currently bugged)
 - large amounts of modded blocks
 - IOS support
 - And split campaign on a different planet called kela
