@@ -36,7 +36,7 @@ weapons: [
 
     bullet: {
       type: ExplosionBulletType
-      damage: 2000
+      damage: 500
       splashDamageRadius: 80
       splashDamagePierce: true
       scaledSplashDamage: true
@@ -64,7 +64,7 @@ weapons: [
 
       fragBullet: {
         type: ArtilleryBulletType
-        speed: 34
+        speed: 17
         damage: 50
 
         buildingDamageMultiplier: 0.1
@@ -83,7 +83,7 @@ weapons: [
         height: 18
         collidesTiles: false
         splashDamageRadius: 40
-        splashDamage: 250
+        splashDamage: 50
         status: incendiary-depletion
 
         backColor: 8BBEB0FF
