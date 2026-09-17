@@ -1,0 +1,82 @@
+type: missile
+template: MissileUnitType
+name: "Leviathan Missile"
+speed: 7.5
+maxRange: 12
+lifetime: 220
+hitSize: 10
+outlineRadius: 0
+engineColor: f3e979
+trailColor: f3e979
+engineSize: 3.1
+engineOffset: 10
+rotateSpeed: 0.3
+trailLength: 18
+missileAccelTime: 50
+lowAltitude: true
+loopSound: loopMissileTrail
+loopSoundVolume: 0.6
+deathSound: explosionMissile
+targetAir: true
+targetUnderBlocks: false
+
+fogRadius: 6
+health: 250
+armor: 5
+hidden: true
+  
+weapons: [
+  {
+    shootCone: 360
+    mirror: false
+    reload: 1
+    deathExplosionEffect: massiveExplosion
+    shootOnDeath: true
+    shake: 10
+
+    bullet: {
+      type: ExplosionBulletType
+      damage: 4000
+      splashDamageRadius: 80
+      splashDamagePierce: true
+      scaledSplashDamage: true
+      armorMultiplier: 0
+
+      hitColor: f3e979
+      shootEffect: [
+          massiveExplosion
+          scatheExplosion
+          scatheLight
+          {
+            type: WaveEffect
+            lifetime: 10
+            strokeFrom: 4
+            sizeTo: 130
+          }
+        ]
+
+      collidesAir: true
+      buildingDamageMultiplier: 0.1
+      ammoMultiplier: 1
+
+      fragBullets: 8
+      fragRandomSpread: 0
+      fragSpread: 45
+      fragBullet: {
+      spawnUnit: scathe-missile-surge-split
+      }
+
+    }
+  }
+]
+
+abilities: [
+  {
+    type: MoveEffectAbility
+    effect: missileTrailSmoke
+    rotation: 180
+    y: -9
+    color: 7f7f7f
+    interval: 7
+  }
+]
