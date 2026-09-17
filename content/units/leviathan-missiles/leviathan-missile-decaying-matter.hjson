@@ -79,7 +79,7 @@ weapons: [
         despawnEffect: scatheSlash
         knockback: 0.8
         lifetime: 23
-        width: 18
+        width: 18  
         height: 18
         collidesTiles: false
         splashDamageRadius: 40
@@ -90,6 +90,9 @@ weapons: [
         trailColor: 8BBEB0FF
         hitColor: 8BBEB0FF
         frontColor: FFFFFF
+
+        pierce: true
+        pierceCap: 15
 
         smokeEffect: shootBigSmoke2
         despawnShake: 7
