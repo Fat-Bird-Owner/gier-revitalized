@@ -38,7 +38,7 @@ weapons: [
       type: ExplosionBulletType
       damage: 0
       splashDamage: 3000
-      splashDamageRadius: 80
+      splashDamageRadius: 20
       scaledSplashDamage: true
 
       hitColor: 8c7fa9
