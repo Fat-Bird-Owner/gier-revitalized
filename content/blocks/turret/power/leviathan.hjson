@@ -10,7 +10,7 @@ Shoots long-ranged ballistic missiles capable of shreding apart crowds
 databaseTag: "adv-dense-alloy"
 rotateSpeed: 5
 predictTarget: false
-unitsort: grouped
+unitSort: grouped
 
 outlineColor: 2f2f3f
 reload: 420
