@@ -18,6 +18,7 @@ engineSize: 0
 hitSize: 40
 rotateSpeed: 2
 
+aiController: FlyingFollowAI
 drawCell: true
 drawSoftShadow: false
 targetPriority: 999
