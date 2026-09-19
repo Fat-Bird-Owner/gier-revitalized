@@ -65,12 +65,6 @@ mirror: false
 x: 0
 y: 0
 
-shootEffect:{
-type: WrapEffect
-color: a393fe66
-effect: shootSmokeSmite
-}
-
 shoot:{
 firstShotDelay: 90
 }
@@ -100,9 +94,7 @@ colors:[a393feff,a393fe66,a393fe22]
 recoil: 4.5
 damage: 160
 maxDamageFraction: 0.33
-pierceBuildings: false
 pierceCap: 4
-
 }
 
 }
