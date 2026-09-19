@@ -8,7 +8,6 @@ speed: 1.25
 databaseTag: "crystal-bug"
 
 drawCell: false
-legColor: 00000000
 shadowElevation: 0.16
 controller: HugAI
 
@@ -49,7 +48,7 @@ speed: 3.5
 lifetime: 60
 inaccuracy: 15
 
-weaveScl: 1
+weaveScale: 1
 weaveMag: 2
 
 trailEffect: sapped
