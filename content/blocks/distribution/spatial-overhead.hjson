@@ -1,0 +1,26 @@
+type: ItemBridge
+name: "Spatial Overhead"
+description: "
+Transports item above normal buildings at an even longer range
+
+[green]- Bridge range: 10
+[red]- Even more explosive
+- Requires power
+"
+
+baseExplosiveness: 30
+hasPower: true
+health: 100
+armor: 7.5
+  
+customShadow: true
+databaseTag: "adv-phase-fabric"
+research: overhead-belt
+range: 10
+transportTime: 0.5
+envEnabled: -1
+
+requirements:[lead/100,copper/50,surge-alloy/25,phase-fabric/10]
+consumes: {
+power: 0.5
+}
