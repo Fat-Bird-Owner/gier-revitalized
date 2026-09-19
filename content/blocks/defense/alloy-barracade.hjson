@@ -9,9 +9,6 @@ other buildings, Quite soft.
 category: defense
 requirements: [copper/30, lead/25]
 envEnabled: -1
-
-research: insulated-wall
-researchCostMultiplier: 1.15
 health: 750
 customShadow: false
 
