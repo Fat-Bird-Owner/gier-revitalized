@@ -109,7 +109,6 @@ progress: life
 ]
 
 shootEffect: none
-sparkEffect: none
 smokeEffect: none
 collides: false
 absorbable: false
