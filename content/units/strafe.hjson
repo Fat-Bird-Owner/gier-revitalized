@@ -38,6 +38,7 @@ shots: 3
 }
 
 shootSound: shootLancer
+minShootVelocity: 1
 
 bullet:{
 width: 10
@@ -59,10 +60,8 @@ splashDamageRadius: 30
 scaledSplashDamage: true
 
 pierce: true
-maxDamageFactor: 0.25
 
 lifetime: 100
-minShootVelocity: 1
 homingPower: 0.075
 
 hitShake: 6.5
@@ -83,9 +82,6 @@ parts:[
 type: FlarePart
 progress: life
 spinSpeed: 6.5
-
-width: 5
-widthTo: 0
 
 radius: 24
 radiusTo: 0
