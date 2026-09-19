@@ -12,9 +12,6 @@ stepSound: walkerStepTiny
 stepSoundVolume: 0.2
 outlineRadius: 0
 
-shootStatus: unmoving
-shootStatusDuration: 200
-
 weapons: [
   {
   alwaysShooting: true
@@ -40,7 +37,6 @@ weapons: [
   }
   {
     shootOnDeath: true
-    targetUnderBlocks: false
 
     reload: 24
     shootCone: 180
@@ -171,7 +167,6 @@ interp: circleIn
       collides: false
 
       fragBullets: 6
-      fragMinLife: 0.6
       fragBullet: {
       type: BasicBulletType
       collides: "false"
