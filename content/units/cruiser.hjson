@@ -126,7 +126,6 @@ lightningColor: FFD37F
 despawnHit: true
 
 }
-]
 
 trailWidth: 2
 trailLength: 10
