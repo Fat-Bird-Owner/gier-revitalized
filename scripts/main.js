@@ -23,7 +23,8 @@ compile("CorruptedFunction");
 compile("gier-to-gier");
 compile("Pasting");
 compile("GameOver");
-compile("AttributeVanilla")
+compile("AttributeVanilla");
+compile("ResearchDialog");
 compile("Shader");
 //compile("IconLoader");
 compile("effects"); // fancy effects
