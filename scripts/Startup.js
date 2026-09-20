@@ -128,6 +128,8 @@ t.checkPref("water-shader", false, b => {});
 t.checkPref("shaders", true, b => {});
 
 t.checkPref("quality-wrecks", false, b => {});
+
+t.checkPref("research-custom", true, b => {});
   
 t.row();
 t.button(Core.bundle.get("settings.researchReset"), () => {
