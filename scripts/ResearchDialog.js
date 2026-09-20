@@ -180,6 +180,7 @@ p.add(table).pad(5).size(0, 150).growX().row()
 }
 
 Vars.ui.research.update(() => {
+if (!Core.settings.getBool("research-custom")) return;
 if (!Vars.ui.research.isShown()) return;
 if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree) return;
 
