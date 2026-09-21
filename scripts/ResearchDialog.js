@@ -52,10 +52,15 @@ let prev = new Button();
 prev.add("@back");
 p.add(prev).size(150, 50);
 prev.clicked(() => {
+try { 
+   
 dialog.hide();
 Vars.ui.research.rebuildTree(previous ? previous.techTree : Planets.serpulo.techTree);
-Vars.ui.show();
-});
+Vars.ui.research.show();
+
+} catch(e){
+log(e);  
+}});
    
 let display = new ItemsDisplay()
 display.rebuild(getResearchItems())
@@ -196,9 +201,7 @@ p.add(table).pad(5).size(0, 150).growX().row()
 
 }
 
-Vars.ui.research.update(() => {
-try {
-   
+Vars.ui.research.update(() => {   
 if (!Core.settings.getBool("research-custom")) return;
 if (!Vars.ui.research.isShown()) return;
 if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree) return;
@@ -208,10 +211,7 @@ previous = getPlanet();
 rebuild();
 dialog.show()
 Time.runTask(1, () => Vars.ui.research.hide())
-
-} catch(e){
-log(e);  
-}})
+})
 
 } catch(e){
 log(e)
