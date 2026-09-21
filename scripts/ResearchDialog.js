@@ -50,7 +50,7 @@ p.clear()
 
 let prev = new Button();
 prev.add("@back");
-p.add(button).size(150, 50);
+p.add(prev).size(150, 50);
 prev.clicked(() => {
 dialog.hide();
 Vars.ui.research.rebuildTree(previous ? previous.techTree : Planets.serpulo.techTree);
