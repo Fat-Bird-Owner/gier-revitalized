@@ -56,6 +56,13 @@ planet.techTree.each(n => {
 let table = new Table();
 let image = new Image(n.content.uiIcon);
 image.setScaling(Scaling.fit)
+image.clicked(() => {
+  Vars.ui.content.show(n.content);
+});
+let label = new Label(n.content.localizedName);
+label.clicked(() => {
+  Vars.ui.content.show(n.content);
+});
 
 let typeImg = n.content instanceof Block ? Icon.effect : n.content instanceof UnitType ? Icon.units : Icon.sitemap
 
@@ -70,7 +77,7 @@ if (bool) {
 
 table.add(new Image(typeImg)).pad(150)
 table.add(image).pad(20)
-table.add(n.content.localizedName).pad(20);
+table.add(label).pad(20);
 table.add(research).size(50).padRight(350)
 
 if (!n.content.unlocked()) {
