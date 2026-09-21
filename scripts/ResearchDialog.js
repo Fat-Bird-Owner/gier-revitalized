@@ -2,6 +2,7 @@ Events.on(ClientLoadEvent, () => {
 try { 
 
 let dialog = new BaseDialog("Files");
+let previous = null;
 dialog.addCloseButton()
 
 function getPlanet(){
@@ -47,6 +48,15 @@ dialog.cont.pane(p => {
 
 p.clear()
 
+let prev = new Button();
+prev.add("@back");
+p.add(button).size(150, 50);
+prev.clicked(() => {
+dialog.hide();
+Vars.ui.research.rebuildTree(previous ? previous.techTree : Planets.serpulo.techTree);
+Vars.ui.show();
+});
+   
 let display = new ItemsDisplay()
 display.rebuild(getResearchItems())
 p.add(display).row()
@@ -191,6 +201,8 @@ if (!Core.settings.getBool("research-custom")) return;
 if (!Vars.ui.research.isShown()) return;
 if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree) return;
 
+previous = getPlanet();
+   
 rebuild();
 dialog.show()
 Time.runTask(1, () => Vars.ui.research.hide())
