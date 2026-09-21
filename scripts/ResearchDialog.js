@@ -27,6 +27,7 @@ return objectiveComplete;
 }
 
 function getPlanet(){
+if (Vars.ui.research.isShown() && Vars.ui.planet.state.planet == Vars.content.planet("gr-kela")) return Vars.content.planet("gr-kela");
 if (Vars.ui.research.isShown()) return Vars.ui.research.lastNode.planet
 return Vars.ui.planet.isShown() ? Vars.ui.planet.state.planet : Vars.state.rules.planet
 }
@@ -230,9 +231,9 @@ p.add(table).pad(5).size(0, 150).growX().row()
 Vars.ui.research.update(() => {   
 if (!Core.settings.getBool("research-custom")) return;
 if (!Vars.ui.research.isShown()) return;
-if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree) return;
+if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree || Vars.ui.research.lastNode != Vars.content.planet("gr-kela").techTree) return;
 
-if (getPlanet().name != "gr-gier") previous = getPlanet();
+previous = getPlanet();
    
 rebuild();
 dialog.show()
