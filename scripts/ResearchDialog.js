@@ -50,7 +50,7 @@ p.clear()
 
 let prev = new Button();
 prev.add("@back");
-p.add(prev).size(150, 50);
+p.add(prev).size(150, 50).row();
 prev.clicked(() => {
 try { 
    
