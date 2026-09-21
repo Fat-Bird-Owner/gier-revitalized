@@ -24,7 +24,7 @@ for (let i = 0; i < node.requirements.length; i++){
    if (node.finishedRequirements[i].amount < node.requirements[i].amount) return false;
 }
 
-if (!node.content.unlocked() && (node.finishedRequirements.size() > 0)) playSound(Sounds.uiUnlock);
+if (!node.content.unlocked() && (node.finishedRequirements.size > 0)) playSound(Sounds.uiUnlock);
 node.content.quietUnlock();
    
 }
