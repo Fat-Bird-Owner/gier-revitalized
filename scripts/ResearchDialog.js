@@ -110,7 +110,7 @@ table.background(Tex.whiteui)
 table.setColor(Pal.darkerGray)
 
 let bool = (!n.parent || n.parent.content.unlocked())
-if (bool || !valid(n)) {
+if (bool && valid(n)) {
 
 table.add(new Image(typeImg)).pad(150)
 table.add(image).pad(20)
