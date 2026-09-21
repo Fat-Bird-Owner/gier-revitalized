@@ -12,7 +12,20 @@ sound.setBus(bus);
 sound.play();
 sound.setBus(prevBus);
 }
+
+function valid(n){
+
+let objectiveComplete = true;
+n.objectives.each(obje => {
+try {
+if (!obje.complete()) objectiveComplete = false;
+} catch(e) {}
+});
+
+return objectiveComplete;
    
+}
+
 function getPlanet(){
 if (Vars.ui.research.isShown()) return Vars.ui.research.lastNode.planet
 return Vars.ui.planet.isShown() ? Vars.ui.planet.state.planet : Vars.state.rules.planet
@@ -97,7 +110,7 @@ table.background(Tex.whiteui)
 table.setColor(Pal.darkerGray)
 
 let bool = (!n.parent || n.parent.content.unlocked())
-if (bool) {
+if (bool || !valid(n)) {
 
 table.add(new Image(typeImg)).pad(150)
 table.add(image).pad(20)
@@ -114,8 +127,8 @@ try {
 
 playSound(Sounds.uiButton);
 canUnlock(n)
-
-if (!n.content.unlocked()){
+   
+if (!n.content.unlocked() || !valid(n)){
 
 let research = new BaseDialog("@item")
 research.addCloseButton()
@@ -181,10 +194,11 @@ planet.sectors.each(sector => {
 } catch(e){
 log(e)
 }})
-
+   
 table.background(Tex.whiteui)
-table.setColor(Pal.darkerGray)
+table.setColor((!valid(n) && bool) ? Pal.remove : Pal.darkerGray)
 p.add(table).pad(5).grow().row();
+   
 }
 
 }).grow();
