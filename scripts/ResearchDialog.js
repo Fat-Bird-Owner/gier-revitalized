@@ -215,8 +215,8 @@ log(e)
 
 } else {
 
-table.setColor((!valid(n) && bool) ? Pal.removeBack : Pal.darkestestGray) 
-table.add(new Image(Icon.tree))
+table.setColor((!valid(n) && bool) ? Pal.removeBack : Pal.darkestestGray);
+table.add(new Image(Icon.tree)).setColor((!valid(n) && bool) ? Color.black : Color.white);
 
 }
 
