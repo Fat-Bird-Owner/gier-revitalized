@@ -1,10 +1,18 @@
 Events.on(ClientLoadEvent, () => {
 try { 
 
+let bus = new AudioBus();
 let dialog = new BaseDialog("Files");
 let previous = null;
 dialog.addCloseButton()
 
+function playSound(sound){
+let prevBus = sound.bus;
+sound.setBus(bus);
+sound.play();
+sound.setBus(prevBus);
+}
+   
 function getPlanet(){
 if (Vars.ui.research.isShown()) return Vars.ui.research.lastNode.planet
 return Vars.ui.planet.isShown() ? Vars.ui.planet.state.planet : Vars.state.rules.planet
@@ -16,8 +24,9 @@ for (let i = 0; i < node.requirements.length; i++){
    if (node.finishedRequirements[i].amount < node.requirements[i].amount) return false;
 }
 
-node.content.unlock()
-
+node.content.unlock();
+playSound(Sounds.uiUnlock);
+   
 }
 
 function rebuild(){
@@ -138,6 +147,8 @@ if (amount > n.finishedRequirements[i].amount) table.add(add)
 add.clicked(() => {
 try {
 
+playSound(Sounds.uiChat);
+   
 planet.sectors.each(sector => {
 
    let am = sector.items().get(itemR)
