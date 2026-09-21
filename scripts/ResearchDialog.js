@@ -197,6 +197,8 @@ p.add(table).pad(5).size(0, 150).growX().row()
 }
 
 Vars.ui.research.update(() => {
+try {
+   
 if (!Core.settings.getBool("research-custom")) return;
 if (!Vars.ui.research.isShown()) return;
 if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree) return;
@@ -207,7 +209,9 @@ rebuild();
 dialog.show()
 Time.runTask(1, () => Vars.ui.research.hide())
 
-})
+} catch(e){
+log(e);  
+}})
 
 } catch(e){
 log(e)
