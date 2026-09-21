@@ -112,6 +112,7 @@ table.setColor(Pal.darkestGray)
 research.clicked(() => {
 try {
 
+playSound(Sounds.uiButton);
 canUnlock(n)
 
 if (!n.content.unlocked()){
