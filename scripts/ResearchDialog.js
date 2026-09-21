@@ -25,7 +25,7 @@ for (let i = 0; i < node.requirements.length; i++){
 }
 
 node.content.quietUnlock();
-if (node.finishedRequirements.size() > 0) playSound(Sounds.uiUnlock);
+if (node.finishedRequirements.size > 0) playSound(Sounds.uiUnlock);
    
 }
 
