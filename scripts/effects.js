@@ -1,3 +1,20 @@
+// Quick functions
+
+function fadeRoof(region, layer, distance){
+return new Effect(600.0, e => {
+
+let cam = Core.camera;
+let dst = Mathf.dst(cam.position.x, cam.position.y, e.x, e.y);
+let fade = dst/distance;
+
+Draw.color(Color.white, fade);
+Draw.rect(Core.atlas.find(region), e.x, e.y);
+    
+});
+}
+
+// Effects
+
 const fissureAvailable = new Effect(210, 100, e => {
 
     const alpha = 1 - e.fin();
