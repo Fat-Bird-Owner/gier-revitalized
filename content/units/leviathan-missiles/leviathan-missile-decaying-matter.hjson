@@ -10,7 +10,7 @@ engineColor: 8BBEB0FF
 trailColor: 8BBEB0FF
 engineSize: 3.1
 engineOffset: 10
-rotateSpeed: 0.25
+rotateSpeed: 0
 trailLength: 18
 missileAccelTime: 50
 lowAltitude: true
