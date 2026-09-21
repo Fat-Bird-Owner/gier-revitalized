@@ -196,7 +196,7 @@ log(e)
 }})
    
 table.background(Tex.whiteui)
-table.setColor((!valid(n) && bool) ? Pal.remove : Pal.darkerGray)
+table.setColor(Pal.darkerGray)
 p.add(table).pad(5).grow().row();
    
 }
@@ -215,7 +215,7 @@ log(e)
 
 } else {
 
-table.setColor(Pal.darkestestGray) 
+table.setColor((!valid(n) && bool) ? Pal.removeBack : Pal.darkestestGray) 
 table.add(new Image(Icon.tree))
 
 }
