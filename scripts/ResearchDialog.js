@@ -206,7 +206,7 @@ if (!Core.settings.getBool("research-custom")) return;
 if (!Vars.ui.research.isShown()) return;
 if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree) return;
 
-previous = getPlanet();
+if (getPlanet().name != "gr-gier") previous = getPlanet();
    
 rebuild();
 dialog.show()
