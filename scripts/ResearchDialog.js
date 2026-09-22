@@ -229,7 +229,7 @@ log(e)
 
 } else {
 
-let button = new Button();
+let button = new Button(Styles.nonet);
 button.image((!valid(n) && bool) ? Icon.none : Icon.tree).color((!valid(n) && bool) ? Color.black : Color.white);
 
 table.setColor((!valid(n) && bool) ? Pal.removeBack : Pal.darkestestGray);
@@ -237,18 +237,14 @@ table.add(button);
 
 if (!valid(n) && bool){
 
-    let cTab = new Table();
-    cTab.add("[red]" + objectiveString(n));
-
-    let collapser = new Collapser(cTab, true);
-    table.row();
-    table.add(collapser).size(0, 300).growX();
-
-    cTab.background(Tex.whiteui)
-    cTab.setColor(Pal.darkestestGray)
+    let info = new BaseDialog("@objectives");
+    info.addCloseButton();
+    info.add("[red]" + objectiveString(n))
+   
     button.clicked(() => {
-        collapser.toggle(true);
+        info.show();
     });
+   
 }
    
 }
