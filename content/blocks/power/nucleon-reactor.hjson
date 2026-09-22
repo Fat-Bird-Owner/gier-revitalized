@@ -1,0 +1,64 @@
+type: ImpactReactor
+description: "
+Produces vast amounts of power using oil and cryofluid
+Power is required to start the proccess
+"
+
+name: Nucleon Reactor
+size: 5
+health: 5000
+itemCapacity: 0
+armor: 5
+baseExplosiveness: 1050
+priority: 50
+
+databaseTag: "gr-phase-fabric"
+envEnabled: -1
+customShadow: true
+itemDuration: 180
+requirements: [
+lead/2500
+copper/2500
+silicon/1000
+metaglass/500
+phase-fabric/250
+cualbult/250
+dense-alloy/250
+]
+
+powerProduction: 458.333
+explosionRadius: 40
+explosionDamage: 5000
+explosionFireballs: 300
+category: power
+
+explosionBreaksProps:	true	
+explosionScorchSize: 5
+explosionIgnitionChance: 0.65
+
+research: watt-reactor
+researchCostMultiplier: 1
+
+explodeEffect: reactorExplosion
+explodeSound: explosionCore
+consumes:{
+power: 41.6667
+liquids:[cryofluid/0.166667, cryofluid/1.66667]
+}
+
+drawer:[
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawPlasma
+}
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+color: ffaa5f
+}
+]
