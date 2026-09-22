@@ -229,8 +229,11 @@ log(e)
 
 } else {
 
+let button = new Button();
+button.image((!valid(n) && bool) ? Icon.none : Icon.tree).color((!valid(n) && bool) ? Color.black : Color.white);
+
 table.setColor((!valid(n) && bool) ? Pal.removeBack : Pal.darkestestGray);
-table.image((!valid(n) && bool) ? Icon.none : Icon.tree).color((!valid(n) && bool) ? Color.black : Color.white);
+table.add(button);
 
 if (!valid(n) && bool){
 
@@ -241,7 +244,9 @@ if (!valid(n) && bool){
     table.row();
     table.add(collapser).grow();
 
-    table.clicked(() => {
+    ctab.background(Tex.whiteui)
+    ctab.setColor(Pal.darkestestGray)
+    button.clicked(() => {
         collapser.toggle(true);
     });
 }
