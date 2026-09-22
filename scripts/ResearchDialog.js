@@ -239,7 +239,7 @@ if (!valid(n) && bool){
 
     let info = new BaseDialog("@objectives");
     info.addCloseButton();
-    info.add("[red]" + objectiveString(n))
+    info.cont.add("[red]" + objectiveString(n))
    
     button.clicked(() => {
         info.show();
