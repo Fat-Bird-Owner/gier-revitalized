@@ -16,7 +16,8 @@ function objectiveString(n){
 let string = "";
 n.objectives.each(obje => {
 try {
-string = string + "\n - " + obje.toString();
+let col = obje.complete() ? "[green]" : "[red]"
+string = string + col + "\n - " + obje.toString();
 } catch(e) {}
 });
 
@@ -239,7 +240,7 @@ if (!valid(n) && bool){
 
     let info = new BaseDialog("@objectives");
     info.addCloseButton();
-    info.cont.add("[red]" + objectiveString(n))
+    info.cont.add(objectiveString(n));
    
     button.clicked(() => {
         info.show();
