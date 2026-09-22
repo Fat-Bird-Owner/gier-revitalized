@@ -234,17 +234,16 @@ table.image((!valid(n) && bool) ? Icon.none : Icon.tree).color((!valid(n) && boo
 
 if (!valid(n) && bool){
 
-let cTab = new Table();
-cTab.add("[red]" + objectiveString(n));
+    let cTab = new Table();
+    cTab.add("[red]" + objectiveString(n));
 
-let collapser = new Collapser(cTab, true);
-table.row();
-table.add(collapser).grow();
+    let collapser = new Collapser(cTab, true);
+    table.row();
+    table.add(collapser).grow();
 
-table.clicked(() => {
-collapser.toggle(true);
-}
-   
+    table.clicked(() => {
+        collapser.toggle(true);
+    });
 }
    
 }
