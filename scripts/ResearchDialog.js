@@ -1,3 +1,29 @@
+function valid(n){
+
+let objectiveComplete = true;
+n.objectives.each(obje => {
+try {
+if (!obje.complete()) objectiveComplete = false;
+} catch(e) {}
+});
+
+return objectiveComplete;
+   
+}
+
+function objectiveString(n){
+
+let string = "";
+n.objectives.each(obje => {
+try {
+string = string + "\n - " + obje.toString();
+} catch(e) {}
+});
+
+return string;
+   
+}
+
 Events.on(ClientLoadEvent, () => {
 try { 
 
@@ -11,19 +37,6 @@ let prevBus = sound.bus;
 sound.setBus(bus);
 sound.play();
 sound.setBus(prevBus);
-}
-
-function valid(n){
-
-let objectiveComplete = true;
-n.objectives.each(obje => {
-try {
-if (!obje.complete()) objectiveComplete = false;
-} catch(e) {}
-});
-
-return objectiveComplete;
-   
 }
 
 function getPlanet(){
@@ -219,6 +232,21 @@ log(e)
 table.setColor((!valid(n) && bool) ? Pal.removeBack : Pal.darkestestGray);
 table.image((!valid(n) && bool) ? Icon.none : Icon.tree).color((!valid(n) && bool) ? Color.black : Color.white);
 
+if (!valid(n) && bool){
+
+let cTab = new Table();
+cTab.add("[red]" + objectiveString(n));
+
+let collapser = new Collapser(cTab, true);
+table.row();
+table.add(collapser).grow();
+
+table.clicked(() => {
+collapser.toggle(true);
+}
+   
+}
+   
 }
 
 p.add(table).pad(5).size(0, 150).growX().row()
