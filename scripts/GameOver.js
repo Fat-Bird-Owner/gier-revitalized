@@ -132,17 +132,17 @@ return t
 
 let kills = addTab(enemyKill + gameStats.enemyUnitsDestroyed)
 
-dialogB.cont.add(kills).size(Core.graphics.getWidth()/3, Core.graphics.getHeight()/9.3)
+dialogB.cont.add(kills).size(Core.graphics.getWidth()/4, Core.graphics.getHeight()/10.5)
 dialogB.cont.row()
 
 let built = addTab(builtCount + gameStats.buildingsBuilt)
 
-dialogB.cont.add(built).size(Core.graphics.getWidth()/3, Core.graphics.getHeight()/9.3)
+dialogB.cont.add(built).size(Core.graphics.getWidth()/4, Core.graphics.getHeight()/10.5)
 dialogB.cont.row()
 
 let wavel = addTab(wavesLasted + gameStats.wavesLasted)
 
-dialogB.cont.add(wavel).size(Core.graphics.getWidth()/3, Core.graphics.getHeight()/9.3)
+dialogB.cont.add(wavel).size(Core.graphics.getWidth()/4, Core.graphics.getHeight()/10.5)
 dialogB.cont.row()
 
 if (Vars.state.sector) Vars.state.sector.save = null;
