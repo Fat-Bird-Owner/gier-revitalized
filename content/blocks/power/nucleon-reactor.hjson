@@ -1,7 +1,6 @@
 type: ImpactReactor
 description: "
-Produces vast amounts of power using oil and cryofluid
-Power is required to start the proccess
+Produces vast amounts of power using oil and cryofluid, Power is required to start the proccess
 "
 
 name: Nucleon Reactor
@@ -41,9 +40,10 @@ researchCostMultiplier: 1
 
 explodeEffect: reactorExplosion
 explodeSound: explosionCore
+liquidCapacity: 500
 consumes:{
 power: 41.6667
-liquids:[cryofluid/0.166667, cryofluid/1.66667]
+liquids:[cryofluid/0.166667, oil/1.66667]
 }
 
 drawer:[
@@ -60,5 +60,6 @@ type: DrawDefault
 {
 type: DrawGlowRegion
 color: ffaa5f
+alpha: 0.25
 }
 ]
