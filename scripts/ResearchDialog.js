@@ -244,8 +244,8 @@ if (!valid(n) && bool){
     table.row();
     table.add(collapser).grow();
 
-    ctab.background(Tex.whiteui)
-    ctab.setColor(Pal.darkestestGray)
+    cTab.background(Tex.whiteui)
+    cTab.setColor(Pal.darkestestGray)
     button.clicked(() => {
         collapser.toggle(true);
     });
