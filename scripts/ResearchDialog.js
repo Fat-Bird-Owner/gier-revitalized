@@ -249,7 +249,7 @@ if (!valid(n) && bool){
    
 }
 
-p.add(table).pad(5).growX().row()
+p.add(table).pad(5).size(0, 150).growX().row()
 })
 
 }).grow();
