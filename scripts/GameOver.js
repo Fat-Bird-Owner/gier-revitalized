@@ -49,23 +49,24 @@ if (Vars.state.planet == Vars.content.planet("gr-gier")) {
 
 let times = 1
 
-let enemyKill = "[accent]Enemy units destroyed: "
-let builtCount = "[accent]Buildings built: "
-let wavesLasted = "[accent]Waves lasted: "
+let enemyKill = Core.bundle.get("GameOver.enemyKill");
+let builtCount = Core.bundle.get("GameOver.builtCount");
+let wavesLasted = Core.bundle.get("GameOver.wavesLasted");
 let gameStats =  Vars.state.stats
 
-let dialogB = new BaseDialog("Summary")
+let dialogB = new BaseDialog("@GameOver.summary")
 dialogB.addCloseButton();
 
-dialogB.cont.add("[red]Sector Compromised").row()
+dialogB.cont.add("@GameOver.sectorCompromised").row()
 
 let img = new Image(Core.atlas.find("gr-gier"))
 let outerStack = new Stack()
 
 outerStack.add(img)
 
-dialogB.cont.add(outerStack).size(Core.graphics.getWidth()/7.5).pad(35)
-.row()
+dialogB.cont.add(outerStack).size(Core.graphics.getWidth()/7.5).pad(35).row();
+dialogB.cont.add("[grey]“ " + Core.bundle.get(getRank() + "-" + Mathf.round(Mathf.random(2)+1)) + " “").row();
+ 
 
 let text;
 
@@ -78,7 +79,7 @@ try {
 if (!text) text = "[grey]null";
   
 dialogB.cont.add(new Label(text)).row()
-dialogB.cont.add(new Label("[accent]score:[] " + getScore())).row()
+dialogB.cont.add(new Label(Core.bundle.get("GameOver.score") + getScore())).row()
   
 function addTab(str){
 
@@ -156,7 +157,7 @@ try {
 
 let image = new Image(Core.atlas.find("gr-" + getRank()))
 
-outerStack.add(image)
+outerStack.add(image);
 
 image.addAction(Actions.moveBy(
 0,
