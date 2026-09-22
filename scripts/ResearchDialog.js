@@ -253,7 +253,7 @@ if (!valid(n) && bool){
    
 }
 
-p.add(table).pad(5).minHeight(150).growX().row()
+p.add(table).pad(5).growX().row()
 })
 
 }).grow();
