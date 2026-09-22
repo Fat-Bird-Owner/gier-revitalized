@@ -242,7 +242,7 @@ if (!valid(n) && bool){
 
     let collapser = new Collapser(cTab, true);
     table.row();
-    table.add(collapser).grow();
+    table.add(collapser).size(0, 300).growX();
 
     cTab.background(Tex.whiteui)
     cTab.setColor(Pal.darkestestGray)
