@@ -1,11 +1,47 @@
+function valid(n){
+
+let objectiveComplete = true;
+n.objectives.each(obje => {
+try {
+if (!obje.complete()) objectiveComplete = false;
+} catch(e) {}
+});
+
+return objectiveComplete;
+   
+}
+
+function objectiveString(n){
+
+let string = "";
+n.objectives.each(obje => {
+try {
+let col = obje.complete() ? "[green]" : "[red]"
+string = string + col + "\n - " + obje.toString();
+} catch(e) {}
+});
+
+return string;
+   
+}
+
 Events.on(ClientLoadEvent, () => {
 try { 
 
+let bus = new AudioBus();
 let dialog = new BaseDialog("Files");
 let previous = null;
 dialog.addCloseButton()
 
+function playSound(sound){
+let prevBus = sound.bus;
+sound.setBus(bus);
+sound.play();
+sound.setBus(prevBus);
+}
+
 function getPlanet(){
+if (Vars.ui.research.isShown() && Vars.ui.planet.state.planet == Vars.content.planet("gr-kela")) return Vars.content.planet("gr-kela");
 if (Vars.ui.research.isShown()) return Vars.ui.research.lastNode.planet
 return Vars.ui.planet.isShown() ? Vars.ui.planet.state.planet : Vars.state.rules.planet
 }
@@ -16,8 +52,9 @@ for (let i = 0; i < node.requirements.length; i++){
    if (node.finishedRequirements[i].amount < node.requirements[i].amount) return false;
 }
 
-node.content.unlock()
-
+if (!node.content.unlocked()) playSound(Sounds.uiUnlock);
+node.content.quietUnlock();
+   
 }
 
 function rebuild(){
@@ -88,7 +125,7 @@ table.background(Tex.whiteui)
 table.setColor(Pal.darkerGray)
 
 let bool = (!n.parent || n.parent.content.unlocked())
-if (bool) {
+if (bool && valid(n)) {
 
 table.add(new Image(typeImg)).pad(150)
 table.add(image).pad(20)
@@ -103,9 +140,10 @@ table.setColor(Pal.darkestGray)
 research.clicked(() => {
 try {
 
+playSound(Sounds.uiButton);
 canUnlock(n)
-
-if (!n.content.unlocked()){
+   
+if (!n.content.unlocked() || !valid(n)){
 
 let research = new BaseDialog("@item")
 research.addCloseButton()
@@ -138,6 +176,8 @@ if (amount > n.finishedRequirements[i].amount) table.add(add)
 add.clicked(() => {
 try {
 
+playSound(Sounds.uiChat);
+   
 planet.sectors.each(sector => {
 
    let am = sector.items().get(itemR)
@@ -169,10 +209,11 @@ planet.sectors.each(sector => {
 } catch(e){
 log(e)
 }})
-
+   
 table.background(Tex.whiteui)
 table.setColor(Pal.darkerGray)
 p.add(table).pad(5).grow().row();
+   
 }
 
 }).grow();
@@ -189,9 +230,24 @@ log(e)
 
 } else {
 
-table.setColor(Pal.darkestestGray) 
-table.add(new Image(Icon.tree))
+let button = new Button(Styles.nonet);
+button.image((!valid(n) && bool) ? Icon.none : Icon.tree).color((!valid(n) && bool) ? Color.black : Color.white);
 
+table.setColor((!valid(n) && bool) ? Pal.removeBack : Pal.darkestestGray);
+table.add(button);
+
+if (!valid(n) && bool){
+
+    let info = new BaseDialog("@objectives");
+    info.addCloseButton();
+    info.cont.add(objectiveString(n));
+   
+    button.clicked(() => {
+        info.show();
+    });
+   
+}
+   
 }
 
 p.add(table).pad(5).size(0, 150).growX().row()
@@ -204,9 +260,9 @@ p.add(table).pad(5).size(0, 150).growX().row()
 Vars.ui.research.update(() => {   
 if (!Core.settings.getBool("research-custom")) return;
 if (!Vars.ui.research.isShown()) return;
-if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree) return;
+if (Vars.ui.research.lastNode != Vars.content.planet("gr-gier").techTree && Vars.ui.research.lastNode != Vars.content.planet("gr-kela").techTree) return;
 
-if (getPlanet().name != "gr-gier") previous = getPlanet();
+previous = getPlanet();
    
 rebuild();
 dialog.show()

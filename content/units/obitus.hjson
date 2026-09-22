@@ -87,7 +87,7 @@ length: 100
   
 }
 {
-reload: 60
+reload: 8.9
 
 shoot: {
 shots: 3
@@ -95,7 +95,7 @@ shotDelay: 12
 }
 
 inaccuracy: 5
-rotateSpeed: 6
+rotateSpeed: 18
 mirror: true
 
 parts: [
@@ -115,9 +115,11 @@ rotate: true
 layerOffset: 0.01
 bullet: {
   type: BasicBulletType
-
-  speed: 10
-  damage: 35
+  
+  speed: 12.5
+  damage: 5
+  impact: true
+  knockback: 5
 
   width: 11
   height: 20
@@ -169,6 +171,7 @@ shootY: 12
 top: false
 shootSound: blockExplodeExplosive
 predictTarget: false
+shootCone: 40
 
 bullet: {
   type: BasicBulletType
