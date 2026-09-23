@@ -16,7 +16,4 @@ outline: false
 
 research:{
 parent: entry-mineral-1
-objectives:[
-entry-trait-iframe
-]
 }
