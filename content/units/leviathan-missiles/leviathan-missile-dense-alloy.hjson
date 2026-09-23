@@ -265,14 +265,3 @@ sizeInterp: linear
 }
 
 ]
-
-abilities: [
-  {
-    type: MoveEffectAbility
-    effect: missileTrailSmoke
-    rotation: 180
-    y: -9
-    color: 7f7f7f
-    interval: 7
-  }
-]
