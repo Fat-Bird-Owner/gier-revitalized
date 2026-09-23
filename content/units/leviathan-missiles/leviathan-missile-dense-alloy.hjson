@@ -104,6 +104,166 @@ weapons: [
       }
     }
   }
+
+# Credits to bttodi for the effect
+
+{
+type: Weapon
+reload: 1
+mirror: false
+x: 0
+shootY: 0
+shootCone: 180
+shootSound: none
+predictTarget: false
+alwaysShooting: true
+recoil: 0
+bullet: {
+type: BulletType
+keepVelocity: false
+collides: false
+despawnEffect: none
+hitEffect: none
+shootEffect: none
+smokeEffect: none
+speed: 0
+lifetime: 30
+absorbable: false
+reflectable: false
+hittable: false
+parts: [{
+type: RegionPart
+outline: false
+name: circle-shadow
+layer: 91
+blending: additive
+xScl: 0.25
+yScl: 0.5
+y: -12
+color: FEB3803F
+colorTo: FEB38000
+progress: life
+moves: [{
+gx: -0.125
+gy: -0.25
+progress: life
+}]
+}{
+type: RegionPart
+outline: false
+name: circle-shadow
+layer: 91
+blending: additive
+xScl: 0.25
+yScl: 0.5
+color: FFD37F00
+colorTo: FFD37F7F
+y: -8
+progress: {
+type: life
+op: compress
+start: 0
+end: 0.1
+}
+moves: [{
+gx: -0.25
+gy: -0.5
+progress: {
+type: life
+op: compress
+start: 0
+end: 0.25
+}
+}]
+}]
+}
+parts: [{
+type: EffectSpawnerPart
+effectInterval: 1
+useProgress: false
+y: -8
+effect: {
+type: MultiEffect
+effects: [{
+type: ParticleEffect
+lifetime: 120
+particles: 1
+length: 24
+colorFrom: FED080BF
+colorTo: 5F5F5FBF
+sizeFrom: 6
+sizeTo: 0
+layer: 89
+interp: pow5Out
+sizeInterp: pow5In
+}{
+type: ParticleEffect
+lifetime: 120
+particles: 1
+length: 24
+colorFrom: FED080BF
+colorTo: 5F5F5FBF
+sizeFrom: 4
+sizeTo: 0
+layer: 89
+interp: pow5Out
+sizeInterp: pow5In
+}]
+}
+}{
+type: EffectSpawnerPart
+effectInterval: 2
+useProgress: false
+width: 8
+y: -12
+effect: {
+type: MultiEffect
+effects: [{
+type: ParticleEffect
+lifetime: 20
+particles: 1
+length: -24
+cone: 60
+colorFrom: FED080BF
+colorTo: FED080BF
+sizeFrom: 2
+sizeTo: 0
+layer: 89.2
+interp: pow2Out
+sizeInterp: linear
+}{
+type: ParticleEffect
+lifetime: 30
+particles: 1
+length: -24
+cone: 0
+colorFrom: FED080BF
+colorTo: FED080BF
+sizeFrom: 2
+sizeTo: 0
+layer: 89.2
+interp: pow2Out
+sizeInterp: linear
+}{
+type: ParticleEffect
+lifetime: 15
+particles: 1
+length: -24
+cone: 0
+widthFrom: 4
+widthTo: 4
+colorFrom: FED080BF
+colorTo: FED080BF
+sizeFrom: 2
+sizeTo: 0
+layer: 89.2
+interp: pow2Out
+sizeInterp: linear
+}]
+}
+}]
+}
+
 ]
 
 abilities: [
