@@ -28,6 +28,7 @@ compile("ResearchDialog");
 compile("Shader");
 //compile("IconLoader");
 compile("effects"); // fancy effects
+compile("ProceduralGen");
 //require("BreakBlock"); didnt have the needed event type
 //require("gierTroll");
 
