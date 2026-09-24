@@ -98,6 +98,10 @@ wg.setSeed(seed+11)
 wg.setScale(55)
 wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.75, false, true,)
 
+wg.setSeed(seed+18)
+wg.setScale(56)
+wg.noiseOverlay(Vars.content.block("gr-gier-graphite-ore"), Blocks.air, w, h, 0.75, false, true,)
+  
 wg.setSeed(seed+22)
 wg.setScale(64)
 wg.noiseOverlay(Blocks.oreBeryllium, Blocks.air, w, h, 0.765, false, true)
