@@ -1,22 +1,22 @@
-function worldGenerator (seed, fallOff, scale, octawaves, min){
+function worldGenerator(seed, fallOff, scale, octawaves, min){
 let seed = seed;
 let fallOff = fallOff;
 let scale = scale;
 let octawaves = octawaves;
 let min = min;
 
-//
+// Sets seeds
 this.setSeed = function(value){
 seed = value;
 }
 
-//
+// Set scale
 this.setScale = function(value){
 scale = value;
 }
 
 
-//
+// Noise stuff
 this.simplexNoise = function(x, y){
 let depth = Simplex.noise2d(
 seed,
@@ -30,21 +30,21 @@ y
 return depth;
 };
 
-//
+// Preset for walls
 this.noiseTerrian = function(onBlock, offBlock, x, y, minf){
 let depth = this.simplexNoise(x, y)
 if (depth >= minf) Vars.world.tile(x, y).setBlock(onBlock);
 else Vars.world.tile(x, y).setBlock(offBlock);
 }
 
-//
+// Preset for floors
 this.noiseFloor = function(onFloor, offFloor, x, y, minf){
 let depth = this.simplexNoise(x, y)
 if (depth >= minf) Vars.world.tile(x, y).setFloor(onFloor);
 else Vars.world.tile(x, y).setFloor(offFloor);
 }
 
-//
+// Presets for mainly ores. median doesn't do anything yet
 this.noiseOverlay = function(onFloor, offFloor, x, y, minf, clear, median){
 let depth = this.simplexNoise(x, y)
 
@@ -52,8 +52,7 @@ if (depth >= minf && Vars.world.tile(x, y).floor() != Blocks.empty) Vars.world.t
 else if (clear) Vars.world.tile(x, y).setOverlay(offFloor);
 }
 
-//
-
+// Overrides floor and walls with another
 this.noiseBiome = function(floor, wall, x, y, minf){
 let depth = this.simplexNoise(x, y)
 
@@ -64,7 +63,9 @@ Vars.world.tile(x, y).setBlock(wall);
 
 }
 
-if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor()) {
+Events.on(PlayEvent, () => {
+try {
+if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor() && Vars.state.sector == Vars.content.planet("gr-gier").sectors.get(0)) {
 let date = new Date();
 let seed = (date.getDate()) + ((date.getMonth() + 1)*100) + ((date.getYear())*10000)
 let wg = new worldGenerator(seed, 0.5, 150, 8, 5);
@@ -134,6 +135,6 @@ Vars.world.tile(width-1, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(0, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(width-1, height-1).setOverlay(Blocks.spawn)
 
-log("done")
-
-}
+}} catch(e){
+log(e)
+}});
