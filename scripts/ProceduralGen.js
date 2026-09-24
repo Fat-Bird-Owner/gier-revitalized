@@ -135,6 +135,11 @@ Vars.world.tile(width-1, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(0, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(width-1, height-1).setOverlay(Blocks.spawn)
 
+let it = Vars.world.tile(x, y).build.items
+it.set(Items.lead, 500);
+it.set(Items.copper, 500);
+it.set(Items.graphite, 500);
+  
 }} catch(e){
 log(e)
 }});
