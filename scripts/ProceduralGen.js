@@ -9,6 +9,7 @@ let rand = new Rand();
 // Sets seeds
 this.setSeed = function(value){
 seed = value;
+rand.setSeed(value);
 }
 
 // Set scale
@@ -70,12 +71,14 @@ if (rand.chance(chance)) Vars.world.tile(x, y).setBlock(block);
 }
   
 // Overrides floor and walls with another
-this.noiseBiome = function(floor, wall, x, y, minf){
+this.noiseBiome = function(floor, wall, treeBlock, x, y, minf){
 let depth = this.simplexNoise(x, y)
-
+  
 if (depth >= minf && Vars.world.tile(x, y).floor() != Blocks.empty){Vars.world.tile(x, y).setFloor(floor);
 if (Vars.world.tile(x, y).block() instanceof StaticWall) {
 Vars.world.tile(x, y).setBlock(wall);
+} else if (Vars.world.tile(x, y).block() == Blocks.air && tree != null && rand.chance(0.02)) {
+Vars.world.tile(x, y).setBlock(treeBlock);
 }}}
 
 }
@@ -133,15 +136,15 @@ wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h,
 
 wg.setSeed(seed+12)
 wg.setScale(66)
-wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, w, h, 0.6, true)
+wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.6, true)
 
 wg.setSeed(seed+22)
 wg.setScale(64)
-wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, w, h, 0.6, true)
+wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.6, true)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, w, h, 0.73, true)
+wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.73, true)
 
 wg.setScale(150)
 wg.setSeed(seed)
