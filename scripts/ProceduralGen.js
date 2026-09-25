@@ -28,6 +28,7 @@ x,
 y
 )
 
+/*
 let depthMul = Simplex.noise2d(
 seed,
 octawaves-1,
@@ -36,8 +37,9 @@ fallOff,
 x,
 y
 )*2
+*/
   
-return depth * depthMul;
+return depth;
 };
 
 // Preset for walls
