@@ -7,6 +7,9 @@ details: "[lightgrey]Gier is an asteroid sector, Expect a completely random map 
 Version: 0.1.1
 "
 
+overrideLaunchDefaults: true
+allowLaunchSchematics: false
+allowLaunchLoadout: false
 research: {
 parent: gier
 objectives:[
