@@ -1,5 +1,5 @@
 function dailySeed(){
-return date.getDate()) + ((date.getMonth() + 1)*100) + ((date.getYear())*10000;
+return date.getDate() + ((date.getMonth() + 1)*100) + ((date.getYear())*10000);
 }
 
 function worldGenerator(seed, fallOff, scale, octawaves, min){
@@ -118,7 +118,7 @@ wg.noiseOverlay(Blocks.oreCopper, Blocks.air, w, h, 0.75, true, true)
 
 wg.setSeed(seed+11)
 wg.setScale(55)
-wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.75, false, true,)
+wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.75, false, true)
 
 wg.setSeed(seed+18)
 wg.setScale(56)
@@ -138,15 +138,15 @@ wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h,
 
 wg.setSeed(seed+12)
 wg.setScale(66)
-wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.6, true)
+wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.6)
 
 wg.setSeed(seed+22)
 wg.setScale(64)
-wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.6, true)
+wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.6)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.73, true)
+wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.73)
 
 wg.setScale(150)
 wg.setSeed(seed)
