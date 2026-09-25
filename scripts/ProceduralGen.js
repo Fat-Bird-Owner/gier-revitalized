@@ -14,6 +14,7 @@ let lastX = null;
 let lastY = null;
 let lastSeed = null;
 let lastDepth = null;
+let lastScale = null;
   
 // Sets seeds
 this.setSeed = function(value){
@@ -30,7 +31,7 @@ scale = value;
 // Noise stuff
 this.simplexNoise = function(x, y){
 
-if (lastX == x && lastY == y && lastSeed == seed) return lastDepth;
+if (lastX == x && lastY == y && lastSeed == seed && lastScale == scale) return lastDepth;
 let depth = Simplex.noise2d(
 seed,
 octawaves,
@@ -44,6 +45,7 @@ lastX = x;
 lastY = y;
 lastSeed = seed;
 lastDepth = depth;
+lastScale = scale;
   
 /*
 let depthMul = Simplex.noise2d(
