@@ -1,3 +1,4 @@
+let date = new Date();
 function dailySeed(){
 return date.getDate() + ((date.getMonth() + 1)*100) + ((date.getYear())*10000);
 }
@@ -102,7 +103,6 @@ Vars.world.tile(x, y).setBlock(wall);
 Events.on(PlayEvent, () => {
 try {
 if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor() && Vars.state.sector == Vars.content.planet("gr-gier").sectors.get(0)) {
-let date = new Date();
 let seed = dailySeed();
 let wg = new worldGenerator(seed, 0.5, 150, 8, 5);
 let width = Vars.world.width();
