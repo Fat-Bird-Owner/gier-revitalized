@@ -35,7 +35,7 @@ fallOff,
 1/(scale/2.25),
 x,
 y
-)
+)*2
   
 return depth * depthMul;
 };
