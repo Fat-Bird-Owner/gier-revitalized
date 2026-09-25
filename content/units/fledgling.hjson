@@ -54,6 +54,7 @@ lifetime: 25
 damage: 50
 
 trailInterval: 0.2
+trailRotation: true
 trailEffect: {
 type: ParticleEffect
 region: circle-shadow
