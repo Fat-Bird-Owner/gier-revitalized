@@ -77,8 +77,6 @@ let depth = this.simplexNoise(x, y)
 if (depth >= minf && Vars.world.tile(x, y).floor() != Blocks.empty){Vars.world.tile(x, y).setFloor(floor);
 if (Vars.world.tile(x, y).block() instanceof StaticWall) {
 Vars.world.tile(x, y).setBlock(wall);
-} else if (Vars.world.tile(x, y).block() == Blocks.air && treeBlock != null && rand.chance(0.02)) {
-Vars.world.tile(x, y).setBlock(treeBlock);
 }}}
 
 }
