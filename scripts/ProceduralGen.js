@@ -169,7 +169,8 @@ wg.setSeed(seed)
 }
 
 Vars.world.tile(x, y).setBlock(Vars.content.block("gr-core-satellite"), Team.sharded)
-
+Vars.renderer.updateAllDarkness();
+  
 Vars.world.tile(0, height-1).setOverlay(Blocks.spawn)
 Vars.world.tile(width-1, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(0, 0).setOverlay(Blocks.spawn)
