@@ -187,7 +187,7 @@ log(e)
 
 Events.on(ClientLoadEvent, () => {
 try {
-Vars.content.sector("gr-gier-main").description = "Seed:[grey] " + dailySeed();
+Vars.content.sector("gr-gier-main").description = "[accent]The map is procedurally generate and switches everyday\n\n[] Seed:[grey] " + dailySeed();
 } catch(e){
 log(e + "-procedural gen - clientload")  
 }});
