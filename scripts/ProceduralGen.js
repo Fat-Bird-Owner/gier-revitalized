@@ -4,7 +4,8 @@ let fallOff = fallOff;
 let scale = scale;
 let octawaves = octawaves;
 let min = min;
-
+let rand = new Rand();
+  
 // Sets seeds
 this.setSeed = function(value){
 seed = value;
@@ -52,6 +53,11 @@ if (depth >= minf && Vars.world.tile(x, y).floor() != Blocks.empty) Vars.world.t
 else if (clear) Vars.world.tile(x, y).setOverlay(offFloor);
 }
 
+// Preset for chance based placing
+this.noisePlace = function(block, x, y, chance){
+if (rand.chance(chance)) Vars.world.tile(x, y).setBlock(block);
+}
+  
 // Overrides floor and walls with another
 this.noiseBiome = function(floor, wall, x, y, minf){
 let depth = this.simplexNoise(x, y)
