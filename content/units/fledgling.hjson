@@ -46,12 +46,30 @@ shotDelay: 15
 
 bullet: {
 type: BasicBulletType
-trailLength: 4
+trailLength: 1
 trailWidth: 1 
 
 speed: 5
 lifetime: 25
 damage: 50
+
+trailEffect: {
+type: ParticleEffect
+region: circle-shadow
+colorFrom: ffd27d8c
+colorTo: ff874500
+lightColor: ff8846ff
+heightTo: 1
+heightFrom: 0.25
+sizeFrom: 6
+particles: 1
+length: 16
+randLength: "false"
+cone: 0
+interp: sineOut
+sizeTo: 2.5
+lifetime: 20
+}
 
 shieldDamageMultiplier: 0.75
 }
