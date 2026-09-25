@@ -1,3 +1,7 @@
+function dailySeed(){
+return date.getDate()) + ((date.getMonth() + 1)*100) + ((date.getYear())*10000;
+}
+
 function worldGenerator(seed, fallOff, scale, octawaves, min){
 let seed = seed;
 let fallOff = fallOff;
@@ -85,7 +89,7 @@ Events.on(PlayEvent, () => {
 try {
 if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor() && Vars.state.sector == Vars.content.planet("gr-gier").sectors.get(0)) {
 let date = new Date();
-let seed = (date.getDate()) + ((date.getMonth() + 1)*100) + ((date.getYear())*10000)
+let seed = dailySeed();
 let wg = new worldGenerator(seed, 0.5, 150, 8, 5);
 let width = Vars.world.width();
 let height = Vars.world.height();
@@ -142,7 +146,7 @@ wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBou
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseBiome(Blocks.dacite, Blocks.cliff, Blocks.daciteBoulder, w, h, 0.73, true)
+wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.73, true)
 
 wg.setScale(150)
 wg.setSeed(seed)
@@ -164,4 +168,11 @@ it.set(Items.graphite, 750);
   
 }} catch(e){
 log(e)
+}});
+
+Events.on(ClientLoadEvent, () => {
+try {
+Vars.content.sector("gr-gier-main").description = "[grey]seed: " + dailySeed();
+} catch(e){
+log(e + "-procedural gen - clientload")  
 }});
