@@ -142,7 +142,7 @@ wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBou
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.73, true)
+wg.noiseBiome(Blocks.dacite, Blocks.cliff, Blocks.daciteBoulder, w, h, 0.73, true)
 
 wg.setScale(150)
 wg.setSeed(seed)
@@ -158,9 +158,9 @@ Vars.world.tile(0, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(width-1, height-1).setOverlay(Blocks.spawn)
 
 let it = Vars.world.tile(x, y).build.items
-it.set(Items.lead, 500);
-it.set(Items.copper, 500);
-it.set(Items.graphite, 500);
+it.set(Items.lead, 750);
+it.set(Items.copper, 750);
+it.set(Items.graphite, 750);
   
 }} catch(e){
 log(e)
