@@ -32,7 +32,7 @@ and has partial chinese support
 "
 
 iosCompatible: true
-version: "v4 - Gier"
+version: "v5 - Gier"
 subtitle: "[#f4ba6e[]]v5 [grey[]]-[lightgrey[]] Gier"
 minGameVersion: "159"
 dependencies: []
