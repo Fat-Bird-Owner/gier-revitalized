@@ -11,7 +11,7 @@ armor: 5
 baseExplosiveness: 1050
 priority: 50
 
-databaseTag: "gr-phase-fabric"
+databaseTag: "adv-phase-fabric"
 envEnabled: -1
 customShadow: true
 itemDuration: 180
