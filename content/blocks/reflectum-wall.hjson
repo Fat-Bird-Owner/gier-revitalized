@@ -1,10 +1,24 @@
 type: Wall
-name: Reflectum Wall
+name: Deflector Wall
 category: defense
-size: 2
-  
-requirements:[silicon/25,surge-alloy/15,carbide/20]
 
+size: 2
+requirements:[phase-fabric/25, silicon/25]
 flashHit: true
-flashColor: C67A96FF
-chanceDeflect: 100000
+
+flashColor: F8C4ACFF
+chanceDeflect: 7500
+baseExplosiveness: 10
+
+databaseTag: "adv-phase-fabric"
+
+research: insulated-wall
+researchCostMultiplier: 0.75
+description: "
+Hardened form of phase fabric shaped into a defensive barracade. Will almost always deflect the bullets that hit it
+[green]
+- Deflects bullets
+- Durable[red]
+- Unarmored
+- Slightly explosive
+"
