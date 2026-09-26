@@ -71,8 +71,8 @@ seed,
 octawaves-1,
 fallOff+0.05,
 1/(scale/2.5),
-x+15,
-y+15
+x,
+y
 )
 
 let proccessedDepth = depth - counterDepth;
