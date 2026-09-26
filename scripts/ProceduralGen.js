@@ -3,12 +3,12 @@ function dailySeed(){
 return date.getDate() + ((date.getMonth() + 1)*100) + ((date.getYear())*10000);
 }
 
-function worldGenerator(seed, fallOff, scale, octawaves, min){
-let seed = seed;
-let fallOff = fallOff;
-let scale = scale;
-let octawaves = octawaves;
-let min = min;
+function worldGenerator(seedI, fallOffI, scaleI, octawavesI, minI){
+let seed = seedI;
+let fallOff = fallOffI;
+let scale = scaleI;
+let octawaves = octawavesI;
+let min = mini;
 let rand = new Rand();
 
 let lastX = null;
@@ -138,8 +138,8 @@ for (let h = 0; h < height; h++){
 
 if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
   
-wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0)
-wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0.22)
+wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.22)
+wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0)
 
 if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0.59){
 if (Vars.world.tile(w, h).floor() == Blocks.empty) continue;
