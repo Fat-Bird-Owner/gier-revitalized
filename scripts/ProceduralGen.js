@@ -117,10 +117,10 @@ let y = null;
 
 let wScale = wg.simplexNoise(0, 0)*1.5;
 let hScale = wg.simplexNoise(width-1, height-1)*1.5;
-Vars.world.resize(Mathf.floor(height*hScale), Mathf.floor(width*wScale));
+Vars.world.resize(Mathf.floor(width*wScale), Mathf.floor(height*hScale));
 
-height = Mathf.floor(width*wScale);
-width = Mathf.floor(height*hScale);
+width = Mathf.floor(width*wScale);
+height = Mathf.floor(height*hScale);
    
 for (let w = 0; w < width; w++){
 for (let h = 0; h < height; h++){
