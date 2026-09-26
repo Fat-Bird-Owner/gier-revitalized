@@ -115,8 +115,8 @@ let val = 1;
 let x = null;
 let y = null;
 
-let wScale = wg.simplexNoise(0, 0)*1.5;
-let hScale = wg.simplexNoise(width-1, height-1)*1.5;
+let wScale = wg.simplexNoise(0, 0)*2;
+let hScale = wg.simplexNoise(width-1, height-1)*2;
 Vars.world.resize(Mathf.floor(width*wScale), Mathf.floor(height*hScale));
 
 width = Mathf.floor(width*wScale);
