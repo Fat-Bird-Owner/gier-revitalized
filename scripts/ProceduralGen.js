@@ -103,6 +103,9 @@ Vars.world.tile(x, y).setBlock(wall);
 Events.on(PlayEvent, () => {
 try {
 if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor() && Vars.state.sector == Vars.content.planet("gr-gier").sectors.get(0)) {
+
+Vars.world.beginMapLoad(); 
+
 let seed = dailySeed();
 let wg = new worldGenerator(seed, 0.5, 150, 8, 5);
 let width = Vars.world.width();
@@ -177,6 +180,7 @@ wg.setSeed(seed)
 }
 }
 
+Vars.world.endMapLoad(); 
 Vars.world.tile(x, y).setBlock(Vars.content.block("gr-core-satellite"), Team.sharded)
   
 Vars.world.tile(0, height-1).setOverlay(Blocks.spawn)
