@@ -1,6 +1,7 @@
 type: Wall
 name: Deflector Wall
 category: defense
+health: 3500
 
 size: 2
 requirements:[phase-fabric/25, silicon/25]
