@@ -136,6 +136,8 @@ x = w;
 y = h;
 }
 
+if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
+  
 wg.setSeed(seed+1)
 wg.setScale(65)
 wg.noiseOverlay(Blocks.oreCopper, Blocks.air, w, h, 0.75, true, true)
