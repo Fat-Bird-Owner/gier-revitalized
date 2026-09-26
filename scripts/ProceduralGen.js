@@ -190,9 +190,9 @@ Vars.world.tile(0, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(width-1, height-1).setOverlay(Blocks.spawn)
 
 let it = Vars.world.tile(x, y).build.items
-it.set(Items.lead, 750);
-it.set(Items.copper, 750);
-it.set(Items.graphite, 750);
+it.set(Items.lead, 150.);
+it.set(Items.copper, 1500);
+it.set(Items.graphite, 1000);
 
 Vars.renderer.updateAllDarkness();
   
