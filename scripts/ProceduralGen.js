@@ -125,6 +125,8 @@ height = Mathf.floor(height*hScale);
    
 for (let w = 0; w < width; w++){
 for (let h = 0; h < height; h++){
+
+if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
 wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.64)
 wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0.55)
 
@@ -135,8 +137,6 @@ val = wg.simplexNoise(w, h);
 x = w;
 y = h;
 }
-
-if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
   
 wg.setSeed(seed+1)
 wg.setScale(65)
