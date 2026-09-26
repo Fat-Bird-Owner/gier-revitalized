@@ -9,7 +9,7 @@ flashHit: true
 
 flashColor: F8C4ACFF
 chanceDeflect: 7500
-baseExplosiveness: 10
+baseExplosiveness: 6
 
 databaseTag: "adv-phase-fabric"
 
