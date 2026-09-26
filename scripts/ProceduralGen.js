@@ -118,7 +118,8 @@ if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor(
 Vars.world.beginMapLoad(); 
 
 let seed = dailySeed();
-let wg = new worldGenerator(seed, 0.5, 150, 8, 5);
+let wg = new worldGenerator(seed, 0.5, 150, 4
+                            , 5);
 let width = Vars.world.width();
 let height = Vars.world.height();
 
