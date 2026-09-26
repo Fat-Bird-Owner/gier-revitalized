@@ -75,7 +75,7 @@ x,
 y
 )
 
-let proccessedDepth = depth - counterDepth;
+let proccessedDepth = Math.min(depth, counterDepth);
   
 lastX = x;
 lastY = y;
@@ -142,8 +142,7 @@ if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor(
 Vars.world.beginMapLoad(); 
 
 let seed = dailySeed();
-let wg = new worldGenerator(seed, 0.5, 150, 4
-                            , 5);
+let wg = new worldGenerator(seed, 0.5, 150, 4, 5);
 let width = Vars.world.width();
 let height = Vars.world.height();
 
@@ -228,7 +227,7 @@ Vars.world.tile(0, 0).setOverlay(Blocks.spawn)
 Vars.world.tile(width-1, height-1).setOverlay(Blocks.spawn)
 
 let it = Vars.world.tile(x, y).build.items
-it.set(Items.lead, 150.);
+it.set(Items.lead, 1500);
 it.set(Items.copper, 1500);
 it.set(Items.graphite, 1000);
 
