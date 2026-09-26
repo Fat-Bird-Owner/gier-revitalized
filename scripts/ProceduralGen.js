@@ -75,7 +75,7 @@ x,
 y
 )
 
-let proccessedDepth = Math.min(depth, counterDepth);
+let proccessedDepth = depth - counterDepth;
   
 lastX = x;
 lastY = y;
