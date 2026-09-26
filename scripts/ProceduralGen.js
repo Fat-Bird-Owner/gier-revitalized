@@ -151,7 +151,7 @@ let val = 1;
 let x = null;
 let y = null;
 
-Vars.world.tile(Mathf.floor(weight/2), Mathf.floor(height/2)).setBlock(Blocks.air);
+Vars.world.tile(Mathf.floor(width/2), Mathf.floor(height/2)).setBlock(Blocks.air);
   
 let wScale = wg.regularNoise(0, 0)*2;
 let hScale = wg.regularNoise(width-1, height-1)*2;
