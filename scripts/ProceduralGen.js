@@ -118,8 +118,7 @@ Vars.world.size(Mathf.floor(width*wScale), Mathf.floor(height*hScale));
 
 width = Mathf.floor(width*wScale);
 height = Mathf.floor(height*hScale);
-  
-let 
+   
 for (let w = 0; w < width; w++){
 for (let h = 0; h < height; h++){
 wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.64)
