@@ -104,7 +104,7 @@ Events.on(PlayEvent, () => {
 try {
 if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor() && Vars.state.sector == Vars.content.planet("gr-gier").sectors.get(0)) {
 
-// Vars.world.beginMapLoad(); 
+Vars.world.beginMapLoad(); 
 
 let seed = dailySeed();
 let wg = new worldGenerator(seed, 0.5, 150, 8, 5);
