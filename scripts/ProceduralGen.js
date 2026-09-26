@@ -51,7 +51,7 @@ x+15,
 y+15
 )
 
-let proccessedDepth = depth * counterDepth;
+let proccessedDepth = depth - counterDepth;
   
 lastX = x;
 lastY = y;
