@@ -8,7 +8,7 @@ let seed = seedI;
 let fallOff = fallOffI;
 let scale = scaleI;
 let octawaves = octawavesI;
-let min = mini;
+let min = minI;
 let rand = new Rand();
 
 let lastX = null;
