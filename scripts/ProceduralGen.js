@@ -28,6 +28,30 @@ this.setScale = function(value){
 scale = value;
 }
 
+// Noise stuff
+this.regularNoise = function(x, y){
+
+let depth = Simplex.noise2d(
+seed,
+octawaves,
+fallOff,
+1/scale,
+x,
+y
+)
+/*
+let depthMul = Simplex.noise2d(
+seed,
+octawaves-1,
+fallOff,
+1/(scale/2.25),
+x,
+y
+)*2
+*/
+  
+return depth;
+};
 
 // Noise stuff
 this.simplexNoise = function(x, y){
@@ -127,8 +151,8 @@ let val = 1;
 let x = null;
 let y = null;
 
-let wScale = wg.simplexNoise(0, 0)*2;
-let hScale = wg.simplexNoise(width-1, height-1)*2;
+let wScale = wg.regularNoise(0, 0)*2;
+let hScale = wg.regularNoise(width-1, height-1)*2;
 Vars.world.resize(Mathf.floor(width*wScale), Mathf.floor(height*hScale));
 
 width = Mathf.floor(width*wScale);
