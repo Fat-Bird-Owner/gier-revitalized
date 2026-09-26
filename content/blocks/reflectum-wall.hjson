@@ -16,7 +16,7 @@ databaseTag: "adv-phase-fabric"
 research: insulated-wall
 researchCostMultiplier: 0.75
 description: "
-Hardened form of phase fabric shaped into a defensive barracade. Will almost always deflect the bullets that hit it
+Hardened form of phase fabric shaped into a defensive barracade. Will almost always deflect the bullets that hits it
 [green]
 - Deflects bullets
 - Durable[red]
