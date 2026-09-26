@@ -151,13 +151,15 @@ let val = 1;
 let x = null;
 let y = null;
 
+Vars.world.tile(Mathf.floor(weight/2), Mathf.floor(height/2)).setBlock(Blocks.air);
+  
 let wScale = wg.regularNoise(0, 0)*2;
 let hScale = wg.regularNoise(width-1, height-1)*2;
 Vars.world.resize(Mathf.floor(width*wScale), Mathf.floor(height*hScale));
 
 width = Mathf.floor(width*wScale);
 height = Mathf.floor(height*hScale);
-   
+  
 for (let w = 0; w < width; w++){
 for (let h = 0; h < height; h++){
 
@@ -166,7 +168,7 @@ if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
 wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.22)
 wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0)
 
-if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0.59){
+if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0 && wg.simplexNoise(w, h) < 0.22){
 if (Vars.world.tile(w, h).floor() == Blocks.empty) continue;
 if (w <= width/3 || w >= width*0.66|| h <= width/3 || h >= width*0.66) continue;
 val = wg.simplexNoise(w, h);
