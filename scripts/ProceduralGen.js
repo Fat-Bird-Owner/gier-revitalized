@@ -70,7 +70,7 @@ let counterDepth = Simplex.noise2d(
 seed,
 octawaves-1,
 fallOff+0.05,
-1/(scale/2.5),
+1/(scale/2),
 x,
 y
 )
