@@ -33,7 +33,7 @@ and has partial chinese support
 
 iosCompatible: true
 version: "v4 - Gier"
-subtitle: "[sky[]]v4 [grey[]]-[lightgrey[]] Gier"
+subtitle: "[#f4ba6e[]]v5 [grey[]]-[lightgrey[]] Gier"
 minGameVersion: "159"
 dependencies: []
 hidden: false
