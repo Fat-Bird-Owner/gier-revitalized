@@ -13,7 +13,8 @@ const items = [
 "phase-fabric",
 "sand",
 "gr-depleted-thorium",
-"gr-dense-alloy"
+"gr-dense-alloy",
+"gr-cualbult"
 ];
 
 Events.on(ContentInitEvent, () => {
