@@ -193,7 +193,7 @@ wg.setScale(64)
 wg.noiseOverlay(Blocks.oreBeryllium, Blocks.air, w, h, 0.5, false, true)
 
 wg.setSeed(seed+12)
-wg.setScale(66)
+wg.setScale(64)
 wg.noiseOverlay(Blocks.oreTitanium, Blocks.air, w, h, 0.5, false, true)
 
 wg.setSeed(seed+17)
