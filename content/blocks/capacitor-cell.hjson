@@ -11,6 +11,14 @@ powerBuffered: 5000
 requirements: [silicon/150, surge-alloy/50, dense-alloy/25]
 shownPlanets: [kela, gr-gier]
 
+research: power-cell
+description: "
+Has a large power capacity, Doesn't emit lightning
+[green]
+- Large power capacity[red]
+- Doesn't emit lightning on damage
+"
+
 databaseTag: "adv-dense-alloy"
 drawer: [
 {
@@ -19,6 +27,6 @@ type: DrawDefault
 {
 type: DrawGlowRegion
 suffix: "-glow"
-alpha: 0.75
+alpha: 0.65
 }
 ]
