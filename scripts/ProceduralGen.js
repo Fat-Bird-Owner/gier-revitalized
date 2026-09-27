@@ -75,7 +75,7 @@ x,
 y
 )
 
-let proccessedDepth = Math.max(depth, counterDepth) * -1;
+let proccessedDepth = (depth - counterDepth) * -1;
   
 lastX = x;
 lastY = y;
