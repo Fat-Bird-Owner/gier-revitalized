@@ -62,12 +62,12 @@ seed,
 octawaves,
 fallOff,
 1/scale,
-x+18,
+x,
 y
 )
 
 let counterDepth = Simplex.noise2d(
-seed+1,
+seed,
 octawaves-1,
 fallOff+0.05,
 1/(scale/2.5),
@@ -75,7 +75,7 @@ x,
 y
 )
 
-let proccessedDepth = Math.max(depth, counterDepth) * -1;
+let proccessedDepth = depth - counterDepth;
   
 lastX = x;
 lastY = y;
@@ -164,10 +164,10 @@ for (let h = 0; h < height; h++){
 
 if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
   
-wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.13)
-wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0.02)
+wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.22)
+wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0)
 
-if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0.11 && wg.simplexNoise(w, h) < 0.22){
+if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0.1 && wg.simplexNoise(w, h) < 0.22){
 if (Vars.world.tile(w, h).floor() == Blocks.empty) continue;
 if (w <= width/3 || w >= width*0.66|| h <= width/3 || h >= width*0.66) continue;
 val = wg.simplexNoise(w, h);
@@ -177,40 +177,40 @@ y = h;
   
 wg.setSeed(seed+1)
 wg.setScale(65)
-wg.noiseOverlay(Blocks.oreCopper, Blocks.air, w, h, 0.15, true, true)
+wg.noiseOverlay(Blocks.oreCopper, Blocks.air, w, h, 0.46, true, true)
 
 
 wg.setSeed(seed+11)
 wg.setScale(60)
-wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.15, false, true)
+wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.46, false, true)
 
 wg.setSeed(seed+18)
 wg.setScale(56)
-wg.noiseOverlay(Vars.content.block("gr-gier-graphite-ore"), Blocks.air, w, h, 0.15, false, true,)
+wg.noiseOverlay(Vars.content.block("gr-gier-graphite-ore"), Blocks.air, w, h, 0.46, false, true,)
   
 wg.setSeed(seed+22)
 wg.setScale(64)
-wg.noiseOverlay(Blocks.oreBeryllium, Blocks.air, w, h, 0.165, false, true)
+wg.noiseOverlay(Blocks.oreBeryllium, Blocks.air, w, h, 0.5, false, true)
 
 wg.setSeed(seed+12)
 wg.setScale(66)
-wg.noiseOverlay(Blocks.oreTitanium, Blocks.air, w, h, 0.165, false, true)
+wg.noiseOverlay(Blocks.oreTitanium, Blocks.air, w, h, 0.5, false, true)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h, 0.2, false, true)
+wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h, 0.54, false, true)
 
 wg.setSeed(seed+12)
 wg.setScale(66)
-wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.05)
+wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.2)
 
 wg.setSeed(seed+22)
 wg.setScale(64)
-wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.05)
+wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.2)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.07)
+wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.23)
 
 wg.setScale(150)
 wg.setSeed(seed)
@@ -231,9 +231,8 @@ it.set(Items.lead, 1500);
 it.set(Items.copper, 1500);
 it.set(Items.graphite, 1000);
 
-Vars.state.rules.waves = true;
 Vars.renderer.updateAllDarkness();
-
+  
 }} catch(e){
 log(e)
 }});
