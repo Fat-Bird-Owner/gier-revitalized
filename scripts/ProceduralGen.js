@@ -231,8 +231,9 @@ it.set(Items.lead, 1500);
 it.set(Items.copper, 1500);
 it.set(Items.graphite, 1000);
 
+Vars.state.rules.waves = true;
 Vars.renderer.updateAllDarkness();
-  
+
 }} catch(e){
 log(e)
 }});
