@@ -62,12 +62,12 @@ seed,
 octawaves,
 fallOff,
 1/scale,
-x,
+x+18,
 y
 )
 
 let counterDepth = Simplex.noise2d(
-seed,
+seed+1,
 octawaves-1,
 fallOff+0.05,
 1/(scale/2.5),
