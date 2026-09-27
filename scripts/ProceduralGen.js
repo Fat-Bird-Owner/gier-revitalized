@@ -75,7 +75,7 @@ x,
 y
 )
 
-let proccessedDepth = (depth - counterDepth) * -1;
+let proccessedDepth = depth - counterDepth;
   
 lastX = x;
 lastY = y;
@@ -181,7 +181,7 @@ wg.noiseOverlay(Blocks.oreCopper, Blocks.air, w, h, 0.46, true, true)
 
 
 wg.setSeed(seed+11)
-wg.setScale(55)
+wg.setScale(60)
 wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.46, false, true)
 
 wg.setSeed(seed+18)
