@@ -135,7 +135,7 @@ Vars.world.tile(x, y).setBlock(wall);
 
 }
 
-Events.on(PlayEvent, () => {u
+Events.on(PlayEvent, () => {
 try {
 if (Vars.state.planet == Vars.content.planet("gr-gier") && !Vars.state.isEditor() && Vars.state.sector == Vars.content.planet("gr-gier").sectors.get(0)) {
 
