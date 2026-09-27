@@ -167,7 +167,7 @@ if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
 wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.13)
 wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0.02)
 
-if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0.1 && wg.simplexNoise(w, h) < 0.22){
+if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0.11 && wg.simplexNoise(w, h) < 0.22){
 if (Vars.world.tile(w, h).floor() == Blocks.empty) continue;
 if (w <= width/3 || w >= width*0.66|| h <= width/3 || h >= width*0.66) continue;
 val = wg.simplexNoise(w, h);
