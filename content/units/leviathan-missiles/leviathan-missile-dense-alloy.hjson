@@ -130,7 +130,7 @@ weapons: [
 		{
 		type: ParticleEffect
 		region: "circle-shadow"
-		colorFrom: FFD37F
+		colorFrom: FFD37F55
 		colorTo: FFD37F00
 		sizeFrom: 60
 		sizeTo: 20
