@@ -45,17 +45,68 @@ weapons: [
       statusDuration: 600
 
       hitColor: FFD37F
-      shootEffect: [
-          massiveExplosion
-          scatheExplosion
-          scatheLight
-          {
-            type: WaveEffect
-            lifetime: 10
-            strokeFrom: 4
-            sizeTo: 130
-          }
-        ]
+      shootEffect: {
+		  type: MultiEffect
+		  effects: [{
+			type: ParticleEffect
+			lifetime: 210
+			region: circle-shadow
+			particles: 8
+			baseLength: 48
+			length: 0
+			colorFrom: 5F5F5F
+			colorTo: 5F5F5F00
+			sizeFrom: 24
+			sizeTo: 48
+			layer: 90.5
+			interp: pow2In
+			sizeInterp: pow2Out
+			lightScl: 0
+		}{
+			type: ParticleEffect
+			lifetime: 150
+			region: circle-shadow
+			particles: 8
+			baseLength: 48
+			length: 0
+			colorFrom: 5F5F5F
+			colorTo: 5F5F5F00
+			sizeFrom: 16
+			sizeTo: 32
+			layer: 90.5
+			interp: pow2In
+			sizeInterp: pow2Out
+			lightScl: 0
+		}{
+			type: ParticleEffect
+			lifetime: 150
+			particles: 16
+			baseLength: 32
+			length: 32
+			colorFrom: FEB3807F
+			colorTo: 5F5F5F7F
+			sizeFrom: 12
+			sizeTo: 0
+			layer: 91
+			interp: pow5Out
+			sizeInterp: pow2In
+			lightScl: 0
+		}{
+			type: ParticleEffect
+			lifetime: 120
+			particles: 16
+			baseLength: 32
+			length: 32
+			colorFrom: FEB3807F
+			colorTo: 5F5F5F7F
+			sizeFrom: 8
+			sizeTo: 0
+			layer: 91
+			interp: pow5Out
+			sizeInterp: pow2In
+			lightScl: 0
+		}]
+	}
 
       collidesAir: true
       buildingDamageMultiplier: 0.1
