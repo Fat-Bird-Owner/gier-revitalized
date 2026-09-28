@@ -121,11 +121,21 @@ weapons: [
 
         buildingDamageMultiplier: 0.1
         drag: 0.02
-        hitEffect: {
+        hitEffect: [
+		{
         type: WrapEffect
         effect: massiveExplosion
         color: FFD37F
         }
+		{
+		type: ParticleEffect
+		region: "circle-shadow"
+		colorFrom: FFD37F
+		colorTo: FFD37F00
+		sizeFrom: 60
+		sizeTo: 20
+		}
+		]
 
         collidesAir: true
         despawnEffect: scatheSlash
