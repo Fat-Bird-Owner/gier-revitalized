@@ -75,7 +75,7 @@ x,
 y
 )
 
-let proccessedDepth = Math.min(depth, counterDepth);
+let proccessedDepth = depth - counterDepth;
   
 lastX = x;
 lastY = y;
@@ -164,8 +164,8 @@ for (let h = 0; h < height; h++){
 
 if (!Vars.world.tile(w, h)) Vars.world.tiles.set(w, h, new Tile(w, h));
   
-wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.14)
-wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0.0)
+wg.noiseTerrian(Blocks.duneWall, Blocks.air, w, h, 0.22)
+wg.noiseFloor(Blocks.stone, Blocks.empty, w, h, 0.04)
 
 if (wg.simplexNoise(w, h) <= val && wg.simplexNoise(w, h) >= 0.14 && wg.simplexNoise(w, h) < 0.22){
 if (Vars.world.tile(w, h).floor() == Blocks.empty) continue;
@@ -177,40 +177,40 @@ y = h;
   
 wg.setSeed(seed+1)
 wg.setScale(65)
-wg.noiseOverlay(Blocks.oreCopper, Blocks.air, w, h, 0.22, true, true)
+wg.noiseOverlay(Blocks.oreCopper, Blocks.air, w, h, 0.46, true, true)
 
 
 wg.setSeed(seed+11)
 wg.setScale(60)
-wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.22, false, true)
+wg.noiseOverlay(Blocks.oreLead, Blocks.air, w, h, 0.46, false, true)
 
 wg.setSeed(seed+18)
 wg.setScale(56)
-wg.noiseOverlay(Vars.content.block("gr-gier-graphite-ore"), Blocks.air, w, h, 0.24, false, true,)
+wg.noiseOverlay(Vars.content.block("gr-gier-graphite-ore"), Blocks.air, w, h, 0.46, false, true,)
   
 wg.setSeed(seed+22)
 wg.setScale(64)
-wg.noiseOverlay(Blocks.oreBeryllium, Blocks.air, w, h, 0.24, false, true)
+wg.noiseOverlay(Blocks.oreBeryllium, Blocks.air, w, h, 0.5, false, true)
 
 wg.setSeed(seed+12)
 wg.setScale(64)
-wg.noiseOverlay(Blocks.oreTitanium, Blocks.air, w, h, 0.24, false, true)
+wg.noiseOverlay(Blocks.oreTitanium, Blocks.air, w, h, 0.5, false, true)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h, 0.26, false, true)
+wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h, 0.54, false, true)
 
 wg.setSeed(seed+12)
 wg.setScale(66)
-wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.1)
+wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.2)
 
 wg.setSeed(seed+22)
 wg.setScale(64)
-wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.1)
+wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.2)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.115)
+wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.23)
 
 wg.setScale(150)
 wg.setSeed(seed)
