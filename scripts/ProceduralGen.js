@@ -75,7 +75,7 @@ x,
 y
 )
 
-let proccessedDepth = Mathf.min(depth, counterDepth);
+let proccessedDepth = Math.min(depth, counterDepth);
   
 lastX = x;
 lastY = y;
