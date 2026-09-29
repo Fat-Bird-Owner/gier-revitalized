@@ -118,6 +118,9 @@ label.clicked(() => {
 
 let typeImg = n.content instanceof Block ? Icon.effect : n.content instanceof UnitType ? Icon.units : Icon.sitemap
 
+function rebuildTable(){
+   
+table.clear();   
 let research = new Button()
 research.add( new Image(Icon.tree) )
 
@@ -199,7 +202,7 @@ planet.sectors.each(sector => {
        )
    
      canUnlock(n)
-     rebuild();
+     rebuildTable();
      if (n.finishedRequirements[index].amount >= amount) add.remove()
      if (reduction >= 0) return;
    }
@@ -248,8 +251,9 @@ if (!valid(n) && bool){
    
 }
    
-}
+}}
 
+rebuildTable()
 p.add(table).pad(5).size(0, 150).growX().row()
 })
 
