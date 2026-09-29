@@ -198,19 +198,19 @@ wg.noiseOverlay(Blocks.oreTitanium, Blocks.air, w, h, 0.24, false, true)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h, 0.3, false, true)
+wg.noiseOverlay(Vars.content.block("gr-depleted-thorium-ore"), Blocks.air, w, h, 0.26, false, true)
 
 wg.setSeed(seed+12)
 wg.setScale(66)
-wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.2)
+wg.noiseBiome(Blocks.carbonStone, Blocks.carbonWall, Blocks.carbonBoulder, w, h, 0.1)
 
 wg.setSeed(seed+22)
 wg.setScale(64)
-wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.2)
+wg.noiseBiome(Blocks.beryllicStone, Blocks.beryllicStoneWall, Blocks.beryllicBoulder, w, h, 0.1)
 
 wg.setSeed(seed+17)
 wg.setScale(68)
-wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.23)
+wg.noiseBiome(Blocks.dacite, Blocks.daciteWall, Blocks.daciteBoulder, w, h, 0.115)
 
 wg.setScale(150)
 wg.setSeed(seed)
