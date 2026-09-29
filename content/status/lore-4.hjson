@@ -1,0 +1,59 @@
+databaseCategory: "lore"
+name: "Datachip: [grey]Exhaustion[]"
+details: '''
+[sky]Year: 176[] - [accent]The arms race[]
+[grey](Eradication - Act: 2)
+
+The events of exhaustion led rise to
+many problematic factions
+
+Born in the ruins
+These factions were shaped into
+ruthless ravengers
+
+Not shying away from committing planet harming
+atrocities as long it's necessary for there survival
+  
+This era saw a large increase
+in ariel combat effectiveness and far more destructive
+substances
+
+This generation saw the creations of 
+including the unit [accent]Volents[] and a new resource
+called [accent]Combustive Biofuel[]
+
+These designs would later be improved 
+into the [accent]Zenith[] and [accent]Blast compound[] 
+respectively
+
+Most factions were taken out early in this arms race
+all that remain of these factions were:
+- Terra
+- Mala
+- Exogen
+- Curiles
+- Malis
+- Crux
+
+Later the arms race ended in the creation of the spores
+Covering serpulo’s atmosphere and leading the planet into 
+an age of eternal winter
+
+Further dwindling the numbers in the remaining factions
+Mainly factions whose main source of power was solar energy
+'''
+
+show: true
+shownPlanets:[gier]
+fullOverride: "gr-lore-1"
+
+outline: false
+research:{
+parent: gr-lore-4
+objectives:[
+{
+type: SectorComplete
+preset: hedge
+}
+]
+}
