@@ -25,14 +25,19 @@ short while after be placed.
 Will mine ores and put them into a
 nearby storage within the outer ring.
 
+Formula for item amount: 
+30 / hardness
+
 [green]- Mines ore depots
+- Mines out 30 items at base
 [red]- Explosive
 - Explosive damages allied structure
+- Cant mine ores with hardness over 2
 "
 
 drawMinRange: true
 attributes:{
-blastPower: 15
+blastPower: 25
 blastTier: 2
 }
 
