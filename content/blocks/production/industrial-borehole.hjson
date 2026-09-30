@@ -13,7 +13,7 @@ then the shaft
 - Extracts a higher volume of water
 - No longer needs graphite
 - Could go over 100% efficiency[red]
-- require more power
+- requires more power
 "
 
 name: Industrial Borehole
@@ -33,12 +33,12 @@ baseEfficiency: 0
 minEfficiency: 0.25
 
 requirements:[
-lead/1250
+lead/1000
 copper/750
-metaglass/1500
-beryllium/750
-silicon/250
-depleted-thorium/150
+metaglass/1000
+beryllium/500
+silicon/500
+depleted-thorium/250
 ]
 
 craftTime: 60
