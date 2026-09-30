@@ -19,6 +19,16 @@ blockedItems: [sand]
 consumes: {
 power: 2.5
 liquids: [water/0.033334]
+
+liquids: {
+liquids:[
+steam/0.166667
+]
+
+optional: true
+booster: true
+}
+
 }
 
 drillMultipliers: {
