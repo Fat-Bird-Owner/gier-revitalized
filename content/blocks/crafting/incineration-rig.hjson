@@ -37,6 +37,13 @@ consumes: {
 power: 1.5
 itemFlammable: {
 minFlammability: 0
+
+itemDurationMultipliers: {
+tinted-slag-capsule: 6
+tinted-oil-capsule: 3.5
+oil-capsule: 4
+}
+
 }
 }
 
