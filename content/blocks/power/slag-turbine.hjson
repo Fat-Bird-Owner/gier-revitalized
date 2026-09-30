@@ -24,6 +24,7 @@ drawLiquid: slag
 type: DrawBlurSpin
 blurThresh: 1
 suffix: "-rotator"
+rotateSpeed: 5
 }
 {
 type: DrawDefault
