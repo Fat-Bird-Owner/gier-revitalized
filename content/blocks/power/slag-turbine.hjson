@@ -4,7 +4,7 @@ name: Slag Turbine
 
 powerProduction: 1.5
 consumes: {
-liquid: [slag/0.016667]
+liquids: [slag/0.016667]
 }
 
 requirements: [titanium/100, copper/75, lead/75, silicon/50]
