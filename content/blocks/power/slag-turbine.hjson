@@ -4,7 +4,7 @@ name: Slag Turbine
 
 powerProduction: 1.5
 consumes: {
-liquids: [slag/0.016667]
+liquids: [slag/0.166667]
 }
 
 requirements: [titanium/100, copper/75, lead/75, silicon/50]
@@ -22,7 +22,7 @@ drawLiquid: slag
 }
 {
 type: DrawBlurSpin
-blurThres: 1
+blurThresh: 1
 suffix: "-rotator"
 }
 {
