@@ -1,15 +1,17 @@
 type: Battery
-health: 1050
-name: Surge Pile
+health: 750
+armor: 5
+
+name: Surge Capacitor
 description: "
 Extremely destructive pile of surge alloy.
 Stores large amounts of power.
 
-[accent]
-- When attacked: Released lightning arcs[green]
-
+[green]
+- When attacked: Released lightning arcs
 - 1x1[salmon]
 - Explodes into damaging lightning arcs
+- Lightning consumes power
 "
 
 fullOverride: "gr-surge-pile"
@@ -29,10 +31,11 @@ type: DrawRegion
 type: DrawGlowRegion
 suffix: "-glow"
 color: ff795e
+alpha: 0.65
 }
 ]
 
-requirements: [surge-alloy/18]
+requirements: [surge-alloy/24]
 category: power
 databaseTag: "adv-surge-alloy"
 shownPlanets: [gier, kela]
@@ -41,7 +44,7 @@ research: power-cell
 researchCostMultiplier: 0.25
 
 consumes: {
-powerBuffered: 1000
+powerBuffered: 1500
 }
   
 destroyBullet: {
