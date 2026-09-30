@@ -3,12 +3,12 @@ type: ItemTurret
 
 name: Launch Silo
 description: "Launches flaks of bullets in all direction, Could also shoot manually by being clicked.
-
-[green]- Omni Directional
+[green]
+- Omni Directional
 - Anti IFrame
 - Could be manually operated
-- Bullets at mid-range are homing
-[salmon]- Range is smaller than bullet travel distance
+- Bullets at mid-range are homing[salmon]
+- Range is smaller than bullet travel distance
 - Consumes alot of ammo
 - Explosive
 - Consumes Power
@@ -117,7 +117,7 @@ hitSound: shootDuo
 hitEffect: hitBulletBig
 
 damage: 7.5
-armorMultiplier: -2
+armorMultiplier: -0.1
 status: iframe-kill
 knockback: 3
 impact: true
