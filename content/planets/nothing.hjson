@@ -1,4 +1,4 @@
-localizedName: The nothing
+localizedName: The Nothing
 mesh: {
     type: SunMesh
     divisions: 3
@@ -49,19 +49,6 @@ cloudMesh: [
    type: HexSkyMesh
    planet: nothing
    speed: 2.3
-   radius: 0.04
-   divisions: 5
-   color: ff795e
-   octaves: 3
-   persistence: 0.3
-   scl: 1
-   thresh: 0.32
-    seed: 12
-  }
-  {
-   type: HexSkyMesh
-   planet: nothing
-   speed: 2.3
    radius: 0.08
    divisions: 5
    color: ffaa5f
@@ -88,14 +75,15 @@ cloudMesh: [
 
 accessible: false
 visible: true
-hasAtmosphere: false
+hasAtmosphere: true
 bloom: false
 orbitSpacing: 8
 solarSystem: nothing
+atmosphereColor: ffaa5f
 radius: 3
 parent: sun
 orbitRadius: 12000
 drawOrbit: false
 tidalLock: true
-iconColor: ffe06f
+iconColor: ffaa5f
 icon: ffaa5f
