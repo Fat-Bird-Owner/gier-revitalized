@@ -3,13 +3,15 @@ const stats = require("Stats");
 const blocks = [
 "gr-sealent-chamber",
 "gr-sealent-chamber-oil",
-"gr-sealent-chamber-slag"
+"gr-sealent-chamber-slag",
+"gr-sealent-chamber-cryofluid"
 ];
 
 const items = [
 "gr-water-capsule",
 "gr-tinted-oil-capsule",
-"gr-tinted-slag-capsule"
+"gr-tinted-slag-capsule",
+"titanium"
 ];
 
 Events.on(ClientLoadEvent, () => {
@@ -34,8 +36,7 @@ Vars.ui.showText("Oh no", e);
 function build(item){
 try {
 const button = new Button();
-button.image(item.uiIcon).size(Core.graphics.getWidth() * 0.065);
-button.row();
+button.image(item.uiIcon).pad(10).size(Core.graphics.getWidth() * 0.065);
 button.add(item.localizedName);
 
 return button;
@@ -64,10 +65,12 @@ dialog.addCloseButton();
 
   
 for (let i = 0; i < items.length; i++){
+  
 const button = build(Vars.content.item(items[i]));
-dialog.cont.add(button).size(Core.graphics.getWidth() * 0.1);
+dialog.cont.add(button).size(Core.graphics.getWidth() * 0.2, Core.graphics.getHeight() * 0.1);
+dialog.cont.row();
+  
 let num = i;
-
 button.clicked(() => {
 try {
 const health = building.health;
