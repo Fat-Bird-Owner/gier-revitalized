@@ -23,6 +23,16 @@ plastanium/75
 description: "
 Seals liquids into capsules in packs. Capsules
 could then be transported and released.
+
+Oil capsule: 100 oil/sec[grey]
+(10 second crafTime)[]
+
+Slag capsule: 100 slag/sec[grey]
+(10 second crafTime)[]
+
+Cryofluid: 20 water/sec[grey]
+(1.2 second crafTime)[]
+
 [green]
 - Could contain more volatile liquids
 [red]- Explosive
