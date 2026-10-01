@@ -25,6 +25,23 @@ for (let i = 0; i < items.length; i++){
 seq.add(Vars.content.item(items[i]));
 }
 
+let remove = null;
+block.shownPlanets.each(p => {
+if(p.name == "gier"){
+remove = p;
+}
+
+if(remove != null){
+
+  block.shownPlanets.remove(remove);
+  block.databaseTabs.remove(remove);
+        
+  block.shownPlanets.add(Vars.content.planet("gr-gier"));
+  block.databaseTabs.add(Vars.content.planet("gr-gier"));
+      
+}
+})
+  
 block.stats.add(stats.Recipe, StatValues.content(seq));
 block.stats.remove(Stat.input);
 block.stats.remove(Stat.output);
