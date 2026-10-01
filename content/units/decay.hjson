@@ -26,21 +26,21 @@ engineSize: 0
 engines:[
 {
 x: 0
-y: -6.25
+y: -7.5
 rotation: -90
-radius: 2.5
+radius: 3
 }
 {
 x: -6
 y: -4.25
 rotation: 45
-radius: 1.5
+radius: 2
 }
 {
 x: 6
 y: -4.25
 rotation: 135
-radius: 1.5
+radius: 2
 }
 ]
   
@@ -67,12 +67,12 @@ type: ContinuousFlameBulletType
 width: 2
 length: 55
 pierceCap: 2
-damage: 40
-recoil: -0.1
+damage: 22
+recoil: -0.25
 flareWidth: 1.5
 lifesteal: 1
-flareColor: BF92F9
-colors: [BF92F9, BF92F9, BF92F9, BF92F9, FFFFFF]
+flareColor: 5e988d
+colors: [5e988d, 5e988d, 5e988d, 5e988d, FFFFFF]
 }
   
 }
