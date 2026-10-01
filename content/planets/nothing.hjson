@@ -1,0 +1,101 @@
+localizedName: The nothing
+mesh: {
+    type: SunMesh
+    divisions: 3
+    octaves: 4
+    persistence: 0.6
+    scl: 1
+    pow: 1
+    mag: 0.5
+    colorScale: 1
+
+    colors: [
+        000000
+        000000
+        000000
+        000000
+        000000
+    ]
+}
+
+cloudMesh: [
+  {
+   type: HexSkyMesh
+   planet: nothing
+   speed: 2.3
+   radius: 0.01
+   divisions: 5
+   color: ff795e
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.3
+    seed: 9
+  }
+  {
+   type: HexSkyMesh
+   planet: nothing
+   speed: 2.3
+   radius: 0.02
+   divisions: 5
+   color: ff795e
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.32
+    seed: 2
+  }
+  {
+   type: HexSkyMesh
+   planet: nothing
+   speed: 2.3
+   radius: 0.04
+   divisions: 5
+   color: ff795e
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.32
+    seed: 12
+  }
+  {
+   type: HexSkyMesh
+   planet: nothing
+   speed: 2.3
+   radius: 0.08
+   divisions: 5
+   color: ffaa5f
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.32
+    seed: 4
+  }
+  {
+   type: HexSkyMesh
+   planet: nothing
+   speed: 2.3
+   radius: 0.16
+   divisions: 5
+   color: ffaa5f
+   octaves: 3
+   persistence: 0.3
+   scl: 1
+   thresh: 0.32
+    seed: 3
+  }
+]
+
+accessible: false
+visible: true
+hasAtmosphere: false
+bloom: false
+orbitSpacing: 8
+solarSystem: nothing
+radius: 3
+parent: sun
+orbitRadius: 12000
+drawOrbit: false
+tidalLock: true
+iconColor: ffe06f
+icon: ffaa5f
