@@ -1,7 +1,7 @@
 type: flying
 flying: true
-health: 550
-armor: -5
+health: 600
+armor: 0
 range: 10
 name: Decay
 drawSoftShadow: false
@@ -19,8 +19,8 @@ hitSize: 9.5
 lowAltitude: true
 controller: HugAI
 
-healColor: 7f7f7f
-outlineColor: 2f2f3f
+healColor: BF92F9FF
+outlineRadius: 0
 
 engineSize: 0
 engines:[
@@ -59,16 +59,20 @@ alwaysContinuous: true
 mirror: false
 y:2
 x: 0
-  
+shootStatus: rolling
+shootStatusDuration: 120
+
 bullet:{
 type: ContinuousFlameBulletType
 width: 2
-length: 40
-pierceCap: 1
-damage: 8.5
-recoil: 0.025
+length: 55
+pierceCap: 2
+damage: 40
+recoil: -0.1
 flareWidth: 1.5
-lifesteal: 0.65
+lifesteal: 1
+flareColor: BF92F9
+colors: [BF92F9, BF92F9, BF92F9, BF92F9, FFFFFF]
 }
   
 }
