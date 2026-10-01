@@ -13,12 +13,12 @@ description: "A more durable core foundation
 itemCapacity: 25000
 envEnabled: -1
 health: 25000
-unitType: gr-atlas
 isFirstTier: false
 incinerateNonBuildable: false
 customShadow: true
 squareSprite: false
 
+buildVisibility: sandboxOnly
 //research: gier
 //researchCostMultiplier: 0.15
 databaseTag: "gier"
