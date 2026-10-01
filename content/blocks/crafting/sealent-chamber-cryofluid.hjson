@@ -1,0 +1,78 @@
+type: GenericCrafter
+size: 3
+name: Sealent Chamber
+squareSprite: false
+itemCapacity: 60
+baseExplosiveness: 50
+hideDatabase: true
+
+databaseTag: "gier"
+category: crafting
+requirements:[
+lead/375
+copper/200
+graphite/175
+metaglass/125
+silicon/125
+titanium/75
+plastanium/75
+]
+
+envEnabled: -1
+shownPlanets:[gier, kela]
+
+consumes:{
+power: 0.5
+items:[titanium/10]
+liquids: [water/0.33334]
+}
+
+outputLiquid: cryofluid/0.33334
+craftTime: 600
+
+buildVisibility: hidden
+placeablePlayer: false
+shownPlanets:[gier, kela]
+hasShadow: false
+
+drawer:{
+type: DrawMulti
+drawers:[
+{
+type: DrawRegion
+name: "gr-sealent-chamber-shadow"
+color: ffffff
+drawPlan: false
+layer: 10
+}
+{
+type: DrawRegion
+name: "gr-sealent-chamber-bottom"
+}
+{
+type: DrawLiquidTile
+drawLiquid: cryofluid
+padding: 3.4
+}
+{
+type: DrawRegion
+name: "gr-sealent-chamber"
+}
+{
+type: DrawRegion
+name: "gr-sealent-chamber-rotator"
+spinSprite: true
+rotateSpeed: 7.5
+}
+{
+type: DrawRegion
+name: "gr-sealent-chamber-bottom"
+color: ffffff55
+}
+{
+type: DrawRegion
+name: "gr-sealent-chamber-config"
+color: ffa166ff
+}
+]
+}
