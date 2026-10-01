@@ -56,13 +56,13 @@ padding: 3.4
 }
 {
 type: DrawRegion
-name: "gr-sealent-chamber"
-}
-{
-type: DrawRegion
 name: "gr-sealent-chamber-rotator"
 spinSprite: true
 rotateSpeed: 7.5
+}
+{
+type: DrawRegion
+name: "gr-sealent-chamber"
 }
 {
 type: DrawRegion
