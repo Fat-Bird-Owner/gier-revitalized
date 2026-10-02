@@ -18,3 +18,5 @@ armor: 5
 health: 875
 chainEffect: true
 databaseTag: "adv-dense-alloy"
+
+buildTime: 120
