@@ -37,7 +37,7 @@ Events.on(GeneratorPressureExplodeEvent, event => {
             build.x,
             build.y,
             120,
-            100
+            150
         );
       
     }catch(err){
