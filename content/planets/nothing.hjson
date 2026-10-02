@@ -2,11 +2,12 @@ localizedName: The Nothing
 mesh: {
     type: SunMesh
     divisions: 7
-    octaves: 4
-    persistence: 0.6
+    octaves: 6
+    persistence: 1.4
     colorScale: 1
 
     colors: [
+        000000
         000000
         272727
         ffaa5f
