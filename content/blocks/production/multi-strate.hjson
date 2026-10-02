@@ -1,7 +1,7 @@
 type: AttributeCrafter
 size: 3
-name: Sand Strate
-description: "Scrapes sand particles from the ground, if there is any."
+name: Multi Strate
+#description: "Scrapes sand particles from the ground, if there is any."
 
 #customShadow: true
 research: sand-strate
