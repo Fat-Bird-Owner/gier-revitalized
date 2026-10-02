@@ -1,7 +1,7 @@
 localizedName: The Nothing
 mesh: {
     type: SunMesh
-    divisions: 3
+    divisions: 7
     octaves: 4
     persistence: 0.6
     scl: 1
