@@ -1,5 +1,5 @@
 type: AttributeCrafter
-size: 2
+size: 3
 name: Sand Strate
 description: "Scrapes sand particles from the ground, if there is any."
 
