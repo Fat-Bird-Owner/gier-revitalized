@@ -36,7 +36,7 @@ Events.on(GeneratorPressureExplodeEvent, event => {
             Vars.content.block(Vars.content.block("gr-sporeoplasma")),
             build.x,
             build.y,
-            80,
+            120,
             100
         );
       
