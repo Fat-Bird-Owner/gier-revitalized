@@ -4,10 +4,7 @@ mesh: {
     divisions: 7
     octaves: 4
     persistence: 0.6
-    scl: 1
-    pow: 1
-    mag: 0.5
-    colorScale: 5
+    colorScale: 1
 
     colors: [
         000000
