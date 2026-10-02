@@ -64,11 +64,15 @@ y: -6
 rotateSpeed: 3.5
 }
 {
+type: DrawParticles
+color: f7cba4
+}
+{
 type: DrawDefault
 }
 {
 type: DrawRegion
-name: “gr-multi-strate-top”
+suffix: -top
 }
 ]
 }
