@@ -50,4 +50,7 @@ padding: 4
 {
 type: DrawDefault
 }
+{
+type: DrawHeatRegion
+}
 ]
