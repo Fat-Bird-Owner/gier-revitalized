@@ -22,12 +22,12 @@ splashDamageRadius: 80
 scaledSplashDamage: true
 }
 
-requirements:[lead/1250,copper/850,graphite/650]
+requirements:[lead/1250,copper/750,graphite/650]
 buildtime: 1500
 research:{
 parent: hydro-drill
-objectives:[core-facility]
 }
+
 envEnabled: -1
 databaseTag: "gier"
 researchCostMultiplier: 0.05
