@@ -12,66 +12,11 @@ mesh: {
     colors: [
         000000
         000000
-        000000
-        000000
-        000000
+        272727
+        ffaa5f
+        ff795e
     ]
 }
-
-cloudMesh: [
-  {
-   type: HexSkyMesh
-   planet: nothing
-   speed: 2.3
-   radius: 0.11
-   divisions: 5
-   color: ff795e
-   octaves: 3
-   persistence: 0.3
-   scl: 1
-   thresh: 0.3
-    seed: 9
-  }
-  {
-   type: HexSkyMesh
-   planet: nothing
-   speed: 2.3
-   radius: 0.22
-   divisions: 5
-   color: ff795e
-   octaves: 3
-   persistence: 0.3
-   scl: 1
-   thresh: 0.32
-    seed: 2
-  }
-  {
-   type: HexSkyMesh
-   planet: nothing
-   speed: 2.3
-   radius: 0.38
-   divisions: 5
-   color: ffaa5f
-   octaves: 3
-   persistence: 0.3
-   scl: 1
-   thresh: 0.32
-    seed: 4
-  }
-  {
-   type: HexSkyMesh
-   planet: nothing
-   speed: 2.3
-   radius: 0.52
-   divisions: 5
-   color: ffaa5f
-   octaves: 3
-   persistence: 0.3
-   scl: 1
-   thresh: 0.32
-    seed: 3
-  }
-]
 
 accessible: false
 visible: true
