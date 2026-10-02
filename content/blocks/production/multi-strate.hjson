@@ -3,7 +3,7 @@ size: 3
 name: Multi Strate
 #description: "Scrapes sand particles from the ground, if there is any."
 
-#customShadow: true
+# customShadow: true
 research: sand-strate
 attribute: sand
 databaseTag: "gier"
@@ -34,7 +34,7 @@ drawers:[
 {
 type: DrawBlurSpin
 suffix: "-rotator"
-blurThresh: 0
+blurThresh: 1
 x: 6
 y: 6
 rotateSpeed: 3.5
@@ -42,7 +42,7 @@ rotateSpeed: 3.5
 {
 type: DrawBlurSpin
 suffix: "-rotator"
-blurThresh: 0
+blurThresh: 1
 x: 6
 y: -6
 rotateSpeed: 3.5
@@ -50,7 +50,7 @@ rotateSpeed: 3.5
 {
 type: DrawBlurSpin
 suffix: "-rotator"
-blurThresh: 0
+blurThresh: 1
 x: -6
 y: 6
 rotateSpeed: 3.5
@@ -58,7 +58,7 @@ rotateSpeed: 3.5
 {
 type: DrawBlurSpin
 suffix: "-rotator"
-blurThresh: 0
+blurThresh: 1
 x: -6
 y: -6
 rotateSpeed: 3.5
