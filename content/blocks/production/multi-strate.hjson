@@ -68,7 +68,7 @@ type: DrawDefault
 }
 {
 type: DrawRegion
-suffix: “-top”
+suffix: “gr-multi-strate-top”
 }
 ]
 }
