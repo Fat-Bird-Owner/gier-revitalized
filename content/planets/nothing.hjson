@@ -7,7 +7,7 @@ mesh: {
     scl: 1
     pow: 1
     mag: 0.5
-    colorScale: 0.2
+    colorScale: 5
 
     colors: [
         000000
