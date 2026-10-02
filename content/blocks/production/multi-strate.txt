@@ -3,23 +3,30 @@ size: 2
 name: Sand Strate
 description: "Scrapes sand particles from the ground, if there is any."
 
-customShadow: true
-#research: hydro-drill
-researchCostMultiplier: 0.25
+#customShadow: true
+research: sand-strate
 attribute: sand
 databaseTag: "gier"
 envEnabled: -1
 
 category: crafting
-outputItem: sand/10
+outputItem: sand/2
+craftTime: 15
 itemCapacity: 50
 baseEfficiency: 0
 customShadow: true
+boostScale: 0.44445
 
 buildVisibility: shown
 displayEfficiency: false
-requirements:[copper/35,lead/25]
+requirements:[lead/200, copper/200, silicon/100, depleted-thorium/100, dense-alloy/75]
+buildTime: 240
 minEfficiency: 0.1
+
+consumes: {
+power: 0.5
+liquids: [ozone/0.083334]
+}
 
 drawer:{
 type: DrawMulti
@@ -58,6 +65,10 @@ rotateSpeed: 3.5
 }
 {
 type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: “-top”
 }
 ]
 }
