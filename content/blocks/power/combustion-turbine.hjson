@@ -29,7 +29,7 @@ buildVisibility: shown
 envEnabled: -1
 
 shownPlanets: [kela]
-powerProduction: 8.33334
+powerProduction: 12.5
 customShadow: true
 
 itemDuration: 60
