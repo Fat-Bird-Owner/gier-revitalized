@@ -68,7 +68,6 @@ Events.on(WorldLoadEvent, () => {
 try {
 
 let c = Vars.state.rules.tags.get(tag);
-log(c)
 if (!c) return;
 
 let parseConfig = JSON.parse(c)
