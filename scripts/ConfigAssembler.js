@@ -79,15 +79,15 @@ for (let i = 0; i < length; i++){
 const key = array[i]
 const buildArray = parseConfig[key];
 
-if (!buildArray || !buildArray["x"]) {
-removeBuild[key]
+if (!buildArray || buildArray["x"] == null) {
+removeBuild(key)
 continue;
 }
 
 const build = Vars.world.build(buildArray["x"]/8, buildArray["y"]/8);
 
 if (!build || build.block != Vars.content.block("gr-imprinter-assembler")) {
-removeBuild[key]
+removeBuild(key)
 continue;
 }
   
