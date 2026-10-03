@@ -49,6 +49,7 @@ compile("MechPad");
 compile("AssemblyRig");
 compile("AddBar");
 compile("InfoBlock");
+compile("ConfigAssembler");
 //require("PerformanceConsole");
 compile("DestructibleGen");
 compile("FragileHeater");
