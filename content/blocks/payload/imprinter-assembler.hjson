@@ -20,9 +20,13 @@ type: AssemblerUnitPlan
 unit: fledgling
 
 time: 1500
+itemReq: [
+copper/50
+lead/50
+silicon/50
+]
+
 requirements: [
-gr-modular-frame/1
-gr-basic-ammunition-crate/1
 gr-packed-graphite/3
 ]
 
