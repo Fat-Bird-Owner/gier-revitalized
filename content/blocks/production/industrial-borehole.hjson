@@ -25,7 +25,7 @@ outputLiquid: water/2.5
 liquidCapacity: 2500
 customShadow: true
 
-databaseTag: "gier"
+databaseTag: "adv-thorium"
 
 ambientSound: dihydrogen-shaft
 ambientSoundVolume: 0.2
@@ -35,10 +35,10 @@ minEfficiency: 0.25
 requirements:[
 lead/1000
 copper/750
-metaglass/1000
+metaglass/1500
 beryllium/500
 silicon/500
-depleted-thorium/250
+thorium/250
 ]
 
 craftTime: 60
@@ -85,7 +85,7 @@ rotationOffset: 45
 
 effect: {
 type: ParticleEffect
-sizeFrom: 3
+sizeFrom: 2
 particles: 1
 baseLength: 12.5
 sizeTo: 5
