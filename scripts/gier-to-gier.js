@@ -47,7 +47,11 @@ actualRealGier.techTree.each(node => {
         if (content instanceof Block) {
         content.envEnabled = -1;
         content.buildVisibility = BuildVisibility.shown;
+
+        if (!(content instanceof Duct || content instanceof StackConveyor)){
         content.squareSprite = false;
+        }
+            
         }
     }
 
