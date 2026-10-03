@@ -1,12 +1,11 @@
-
-let tag = "configs-assembler"
+const tag = "configs-assembler"
 
 // Saves config to current map via tags
 Events.on(TapEvent, e => {
 try {
 
 let {player, tile} = e;
-if (!tile.build || !player || !player.team || tile.team != player.team()) return;
+if (!tile.build || !player || !player.team || tile.team() != player.team()) return;
 if (tile.block() != Vars.content.block("gr-imprinter-assembler")) return;
   
 let build = tile.build
