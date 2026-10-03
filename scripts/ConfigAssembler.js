@@ -68,7 +68,6 @@ Events.on(WorldLoadEvent, () => {
 try {
 
 let c = Vars.state.rules.tags.get(tag);
-  
 log(c)
 if (!c) return;
 
@@ -77,6 +76,10 @@ let array = Object.keys(parseConfig);
 let length = array.length;
 
 for (let i = 0; i < length; i++){
+
+if (c != Vars.state.rules.tags.get(tag)){
+c = Vars.state.rules.tags.get(tag);
+}
 
 const key = array[i]
 const buildArray = parseConfig[key];
