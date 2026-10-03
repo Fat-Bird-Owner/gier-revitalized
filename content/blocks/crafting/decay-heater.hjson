@@ -26,13 +26,13 @@ research: anode-converter
 
 researchCostMultiplier: 0.25 
 consumes: {
-liquids: [water/0.33334]
 itemRadioactive: {
 minRadioactivity: 0.3
 
 itemDurationMultipliers: {
 thorium: 1.5
 phase-fabric: 4
+decaying-matter: 0.75
 }
 
 }
