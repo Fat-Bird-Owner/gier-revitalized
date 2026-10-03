@@ -43,7 +43,7 @@ thorium/250
 
 craftTime: 60
 consumes:{
-power: 1.5
+power: 3
 }
 
 envEnabled: -1
