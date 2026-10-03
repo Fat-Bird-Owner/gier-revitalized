@@ -55,11 +55,18 @@ baseDialog.show();
 log("ConfigAssembler - TapEvent" + e)
 }});
 
+function removeBuild(id){
+let t = Vars.state.rules.tags.put(tag);
+t[id] = null;
+}
+
 // Loads config
 Events.on(WorldLoadEvent, () => {
 try {
 
 let c = Vars.state.rules.tags.get(tag);
+  
+log(c)
 if (!c) return;
 
 let parseConfig = JSON.parse(c)
@@ -71,11 +78,19 @@ for (let i = 0; i < length; i++){
 const key = array[i]
 const buildArray = parseConfig[key];
 
-if (!buildArray) continue;
+if (!buildArray || !buildArray["x"]) {
+removeBuild[key]
+continue;
+}
+
 const build = Vars.world.build(buildArray["x"]/8, buildArray["y"]/8);
 
 if (build.block != Vars.content.block("gr-imprinter-assembler")) continue;
-if (!build) continue;
+if (!build) {
+removeBuild[key]
+continue;
+}
+  
 build.currentTier = buildArray["config"];
 build.lastTier = buildArray["config"];
   
