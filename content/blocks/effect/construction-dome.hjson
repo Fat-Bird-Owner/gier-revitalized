@@ -21,7 +21,7 @@ shootY: 0
 shootEffect: none
 reload: 60
 
-requirements:[lead/350, copper/450, silicon/275, thorium/125, surge-alloy/75]
+requirements:[lead/350, copper/450, silicon/300, depleted-thorium/150, surge-alloy/100]
 category: effect
 databaseTag: "adv-surge-alloy"
 
