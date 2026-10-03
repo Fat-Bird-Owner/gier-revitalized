@@ -9,7 +9,7 @@ if (!tile.build || !player || !player.team || tile.team() != player.team()) retu
 if (tile.block() != Vars.content.block("gr-imprinter-assembler")) return;
   
 let build = tile.build
-let c = Vars.state.rules.tags.get(tag);
+let c = JSON.parse(Vars.state.rules.tags.get(tag));
 
 let baseDialog = new BaseDialog("");
 baseDialog.addCloseButton();
