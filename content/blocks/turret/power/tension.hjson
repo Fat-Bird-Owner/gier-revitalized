@@ -38,22 +38,13 @@ category: turret
 reload: 95
 shake: 0.65
 
-shoot:{
-shots: 2
-shotDelay: 0
-}
-
-shootEffect:{
-type: RadialEffect
-effect: shootSmokeMissile
-rotationOffset: 45
-}
-
+shootEffect: none
 requirements:[
 lead/400
 copper/350
 graphite/250
 ]
+
 buildTime: 300
 
 rotate: false
@@ -73,13 +64,48 @@ fragSpread: 90
 fragRandomSpread: 0
 fragVelocityMin: 1
 fragVelocityMax: 1
+
+hitEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      lifetime: 32
+      colorFrom: ff8545c2
+      colorTo: 7c3f3f00
+      region: circle-shadow
+      particles: 132
+      heightTo: 0.5
+      cone: 360
+      sizeFrom: 3
+      sizeTo: 7
+      cap: "false"
+      layer: 109
+      length: 44
+    }
+    {
+      type: ParticleEffect
+      colorFrom: ff8545c2
+      colorTo: e23000ff
+      lifetime: 66
+      cone: 360
+      sizeFrom: 2.4
+      sizeTo: 0
+      cap: "false"
+      layer: 64
+      length: 64
+      particles: 35
+      interp: sineOut
+    }
+  ]
+}
+
 fragBullet:{
 type: MissileBulletType
 speed: 1
 trailEffect: none
 trailChance: 0.25
 trailWidth: 2
-trailLength: 24
 width: 10
 height: 17
 lifetime: 120
@@ -89,17 +115,73 @@ homingRange: 300
 impact: true
 knockback: 15
 
-damage: 25
+trailLength: 12
+trailChance: 0
+trailInterval: 0.2
+trailRotation: true
+
+trailEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      colorFrom: ff8545c2
+      colorTo: 7c3f3f33
+      region: circle-shadow
+      particles: 2
+      heightTo: 0.5
+      lifetime: 22
+      cone: 45
+      sizeFrom: 3
+      sizeTo: 7
+      cap: "false"
+      layer: 109
+    }
+    {
+      type: ParticleEffect
+      colorFrom: ff8545c2
+      colorTo: e23100ff
+      particles: 2
+      heightTo: 0.5
+      lifetime: 33
+      cone: 22.5
+      sizeFrom: 1.7
+      sizeTo: 0
+      cap: "false"
+      layer: 64
+      length: 44
+    }
+  ]
+}
+
+damage: 65
 splashDamage: 20
 splashDamageRadius: 40
 scaledSplashDamage: true
 frontColor: 7d4c27
 accel: 0.045
-hitEffect: {
-type: WrapEffect
-effect: titanExplosionFrag
-color: 7d4c27
-}
+
+hitEffect: [
+  {
+    type: ParticleEffect
+    lifetime: 44
+    colorFrom: ff854588
+    colorTo: ff854500
+    region: circle-shadow
+    particles: 1
+    sizeFrom: 13
+    sizeTo: 65
+    cap: "false"
+    length: 0
+    interp: sineOut
+  }
+  {
+    type: WrapEffect
+    effect: titanExplosionFrag
+    color: ff8545ff
+  }
+]
+
 hitSound: unitExplode3
 despawnHit: true
 hitShake: 6.5
