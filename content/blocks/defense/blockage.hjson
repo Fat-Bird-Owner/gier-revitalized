@@ -8,7 +8,7 @@ Auto tiling wall that stores a small amount of per and is quite armored
 
 consumesPower: true
 outputsPower: true
-connectedPower: false
+connectedPower: true
 conductivePower: true
 
 consumes: {
@@ -22,7 +22,6 @@ armor: 15
 customShadow: false
   
 insulated: true
-absorbLasers: true
 category: defense
 
 requirements: [dense-alloy/12, silicon/6]
