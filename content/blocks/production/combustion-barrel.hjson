@@ -37,7 +37,7 @@ Formula for item amount:
 
 drawMinRange: true
 attributes:{
-blastPower: 25
+blastPower: 30
 blastTier: 2
 }
 
