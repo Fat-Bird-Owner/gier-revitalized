@@ -56,7 +56,7 @@ log("ConfigAssembler - TapEvent" + e)
 }});
 
 function removeBuild(id){
-let t = Vars.state.rules.tags.put(tag);
+let t = Vars.state.rules.tags.get(tag);
 t[id] = null;
 }
 
