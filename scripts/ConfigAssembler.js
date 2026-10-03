@@ -85,8 +85,7 @@ continue;
 
 const build = Vars.world.build(buildArray["x"]/8, buildArray["y"]/8);
 
-if (build.block != Vars.content.block("gr-imprinter-assembler")) continue;
-if (!build) {
+if (!build || build.block != Vars.content.block("gr-imprinter-assembler")) {
 removeBuild[key]
 continue;
 }
