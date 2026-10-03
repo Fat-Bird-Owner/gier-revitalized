@@ -21,7 +21,7 @@ health: 750
 armor: 15
 customShadow: false
   
-insulated: true
+absorbsLaser: true
 category: defense
 
 requirements: [dense-alloy/12, silicon/6]
