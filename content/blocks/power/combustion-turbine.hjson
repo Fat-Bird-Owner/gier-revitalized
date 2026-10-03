@@ -13,6 +13,7 @@ to generate a large quantity of power
 - Powah[red]
 - Explodes
 - Requires flammable items
+- Requires ozone to run
 "
 
 baseExplosiveness: 75
@@ -28,13 +29,13 @@ buildVisibility: shown
 envEnabled: -1
 
 shownPlanets: [kela]
-powerProduction: 6
+powerProduction: 8.33334
 customShadow: true
 
 itemDuration: 60
 consumes: {
 
-liquids: [water/0.16667]
+liquids: [water/0.16667, ozone/0.03334]
 itemFlammable: {
 minFlammability: 0.25
 }
