@@ -56,9 +56,11 @@ log("ConfigAssembler - TapEvent" + e)
 }});
 
 function removeBuild(id){
-let t = JSON.stringify(Vars.state.rules.tags.get(tag));
-delete t[id]
-Vars.state.rules.tags.get(tag, JSON.parse(t));
+    let c = Vars.state.rules.tags.get(tag);
+    if(!c) return;
+    c = JSON.parse(c);
+    delete c[id];
+    Vars.state.rules.tags.put(tag, JSON.stringify(c));
 }
 
 // Loads config
