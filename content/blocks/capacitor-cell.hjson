@@ -19,6 +19,7 @@ Has a large power capacity, Doesn't emit lightning
 - Doesn't emit lightning on damage
 "
 
+baseExplosiveness: 40
 databaseTag: "adv-dense-alloy"
 drawer: [
 {
