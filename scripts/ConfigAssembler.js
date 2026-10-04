@@ -14,6 +14,8 @@ let c = JSON.parse(Vars.state.rules.tags.get(tag));
 let baseDialog = new BaseDialog("");
 baseDialog.addCloseButton();
 
+build.block.configureSound.at(build.x, build.y)
+  
 let t = 0;
 build.block.plans.each(p => {
 
@@ -39,6 +41,7 @@ config: i
 }
 
 Vars.state.rules.tags.put(tag, JSON.stringify(c))
+build.block.configureSound.at(build.x, build.y)
 baseDialog.hide();
 
 } catch(e){
