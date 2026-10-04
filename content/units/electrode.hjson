@@ -1,0 +1,53 @@
+type: flying
+name: Electrode
+# ZapUnit
+
+flying: true
+speed: 2.5
+range: 120
+accel: 0.1
+drag: 0.05
+engineSize: 0
+hitSize: 15
+rotateSpeed: 1.5
+
+weapons:[
+{
+noAttack: true
+display: false
+shootCone: 0
+controllable: false
+aiControllable: false
+}
+]
+
+outlineRadius: 0
+drawSoftShadow: false
+
+health: 500
+immunities:[fast]
+
+abilities:[
+{
+type: StatusFieldAbility
+effect: fast
+activeEffect: none
+reload: 5
+duration: 10
+range: 120
+}
+{
+type: EnergyFieldAbility
+range: 120
+reload: 30
+
+damage: 10
+statusDuration: 60
+maxTargets: 6
+
+sectors: 25
+effectRadius: 0
+color: bccae0ff
+sectorRad: 0.0225
+}
+]
