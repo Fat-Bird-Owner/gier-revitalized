@@ -11,6 +11,7 @@ engineSize: 0
 hitSize: 15
 rotateSpeed: 1.5
 
+commands: [move, repair, assist, enterPayload]
 weapons:[
 {
 noAttack: true
@@ -23,7 +24,6 @@ aiControllable: false
 
 outlineRadius: 0
 drawSoftShadow: false
-
 health: 500
 immunities:[fast]
 
@@ -44,6 +44,7 @@ reload: 15
 damage: 10
 statusDuration: 60
 maxTargets: 3
+sameTypeHealMult: 0.5
 
 sectors: 25
 effectRadius: 0
