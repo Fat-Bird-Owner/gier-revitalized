@@ -22,6 +22,11 @@ abilities: [
 type: RegenAbility
 percentAmount: 0.0833333
 }
+{
+type: UnitSpawnAbility
+unit: hive-spawner
+spawnTime: 2970
+}
 ]
 
 parts: [
