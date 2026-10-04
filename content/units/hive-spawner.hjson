@@ -2,17 +2,18 @@ type: missile
 deathExplodeSound: none
 lifetime: 1
 
+fullOverrid: gr-air
 weapons: [
 {
 reload: 1
 alwaysShooting: true
 x: 0
 y: 0
+shootCone: 180
 mirror: false
 
 shoot: {
 type: ShootSpread
-firstShotDelay: 2920
 spread: 8
 shots: 45
 shotDelay: 0
@@ -67,13 +68,13 @@ alwaysShooting: true
 x: 0
 y: 0
 mirror: false
+shootCone: 180
 
 shoot: {
 type: ShootSpread
 spread: 120
 shots: 3
 shotDelay: 0
-firstShotDelay: 2940
 }
 
 bullet: {
