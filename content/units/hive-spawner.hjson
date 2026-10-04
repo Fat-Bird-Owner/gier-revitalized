@@ -1,0 +1,122 @@
+type: Missile
+deathExplodSound: none
+lifetime: 1
+
+weapons: [
+{
+reload: 1
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+shoot: {
+type: ShootSpread
+firstShotDelay: 2920
+spread: 8
+shots: 45
+shotDelay: 0
+}
+
+bullet: {
+type: BasicBulletType
+collidesAir: true
+collidesGround: true
+fragRandomSpread: 0
+width: 0
+height: 0
+
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+collides: false
+ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
+fragRandomSpread: 0
+
+fragBullet: {
+instantDisappear: true
+collides: false
+spawnUnit: tumor
+angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+collideTerrain: true
+collides: true
+collidesTiles: true
+speed: 1.3334
+lifetime: 80
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+{
+reload: 1
+alwaysShooting: true
+x: 0
+y: 0
+mirror: false
+
+shoot: {
+type: ShootSpread
+spread: 120
+shots: 3
+shotDelay: 0
+firstShotDelay: 2940
+}
+
+bullet: {
+type: BasicBulletType
+collidesAir: true
+collidesGround: true
+fragRandomSpread: 0
+
+width: 0
+height: 0
+
+fragBullets: 1
+fragBullet: {
+instantDisappear: true
+collides: false
+ignoreSpawnAngle: true
+fragBullets: 1
+absorbable: false
+reflectable: false
+hittable: false
+fragRandomSpread: 0
+
+fragBullet: {
+instantDisappear: true
+collides: false
+spawnUnit: tumor-slinger
+angleOffset: 90
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+
+collideTerrain: true
+collides: true
+collidesTiles: true
+speed: 1.3334
+lifetime: 70
+absorbable: false
+reflectable: false
+hittable: false
+}
+
+}
+]
