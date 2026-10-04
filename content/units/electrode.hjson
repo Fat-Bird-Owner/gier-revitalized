@@ -39,11 +39,11 @@ range: 120
 {
 type: EnergyFieldAbility
 range: 120
-reload: 30
+reload: 15
 
 damage: 10
 statusDuration: 60
-maxTargets: 6
+maxTargets: 3
 
 sectors: 25
 effectRadius: 0
