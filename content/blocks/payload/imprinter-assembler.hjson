@@ -34,7 +34,6 @@ gr-packed-graphite/3
 {
 type: AssemblerUnitPlan
 unit: dove 
-# placeholder unit
 
 time: 1800
 requirements: [
@@ -47,13 +46,26 @@ gr-modular-frame/1
 {
 type: AssemblerUnitPlan
 unit: construct
-# placeholder unit
 
 time: 2100
 requirements: [
 gr-spare-cell/1
 gr-modular-frame/1
 gr-packed-beryllium/2
+]
+
+}
+{
+type: AssemblerUnitPlan
+unit: electrode
+
+time: 2500
+
+itemReq: [water-capsule/5]
+
+requirements: [
+gr-power-cell/1
+gr-modular-frame/1
 ]
 
 }
