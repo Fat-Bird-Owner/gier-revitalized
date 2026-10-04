@@ -19,64 +19,15 @@ groundLayer: 45
 
 abilities: [
 {
-type: LiquidExplodeAbility
-liquid: gr-tuntra
-}
-{
 type: RegenAbility
 percentAmount: 0.0833333
-}
-{
-type: EnergyFieldAbility
-hitUnits: false
-hitEffect: none	
-damageEffect: none	
-status: none
-shootSound: none
-sectors: 20
-color: 7457ce
-damage: 10
-healEffect: none
-layer: 33
-range: 160
-rotateSpeed: 0
-sectorRad: 8
-blinkSize: 8
-blinkScl: 0
-effectRadius: 0
-}
-{
-type: EnergyFieldAbility
-hitUnits: false
-hitEffect: none	
-damageEffect: none	
-status: none
-shootSound: none
-sectors: 20
-color: 3f3f3ff
-damage: 0
-healEffect: none
-layer: 32.9
-y: -1
-range: 160
-rotateSpeed: 0
-sectorRad: 8
-blinkSize: 8
-blinkScl: 0
-effectRadius: 0
 }
 ]
 
 parts: [
 {
-name: "gr-hive-tendril"
-xScl: 0.75
-yScl: 0.75
-layer: 22
-}
-{
 type: RegionPart
-name: "gr-sporeoplasma-hive"
+name: "gr-router-hive"
 growX: 0.25
 growY: 0.25
 growProgress: {
@@ -103,14 +54,6 @@ interp: slope
 
 }
   
-}
-{
-type: HoverPart
-sides: 100
-radius: 40
-phase: 300
-layer: 12
-color: 7457ce
 }
 ]
 
@@ -188,121 +131,4 @@ spawnUnit: crystalline-hive-medium
 
 }
 */
-{
-reload: 2920
-alwaysShooting: true
-x: 0
-y: 0
-mirror: false
-
-shoot: {
-type: ShootSpread
-firstShotDelay: 2920
-spread: 8
-shots: 45
-shotDelay: 0
-}
-
-bullet: {
-type: BasicBulletType
-collidesAir: true
-collidesGround: true
-fragRandomSpread: 0
-width: 0
-height: 0
-
-fragBullets: 1
-fragBullet: {
-instantDisappear: true
-collides: false
-ignoreSpawnAngle: true
-fragBullets: 1
-absorbable: false
-reflectable: false
-hittable: false
-fragRandomSpread: 0
-
-fragBullet: {
-instantDisappear: true
-collides: false
-spawnUnit: tumor
-angleOffset: 90
-absorbable: false
-reflectable: false
-hittable: false
-}
-
-}
-
-collideTerrain: true
-collides: true
-collidesTiles: true
-speed: 1.3334
-lifetime: 80
-absorbable: false
-reflectable: false
-hittable: false
-}
-
-}
-
-{
-reload: 2940
-alwaysShooting: true
-x: 0
-y: 0
-mirror: false
-
-shoot: {
-type: ShootSpread
-spread: 120
-shots: 3
-shotDelay: 0
-firstShotDelay: 2940
-}
-
-bullet: {
-type: BasicBulletType
-collidesAir: true
-collidesGround: true
-fragRandomSpread: 0
-
-width: 0
-height: 0
-
-fragBullets: 1
-fragBullet: {
-instantDisappear: true
-collides: false
-ignoreSpawnAngle: true
-fragBullets: 1
-absorbable: false
-reflectable: false
-hittable: false
-fragRandomSpread: 0
-
-fragBullet: {
-instantDisappear: true
-collides: false
-spawnUnit: tumor-slinger
-angleOffset: 90
-absorbable: false
-reflectable: false
-hittable: false
-}
-
-}
-
-collideTerrain: true
-collides: true
-collidesTiles: true
-speed: 1.3334
-lifetime: 70
-absorbable: false
-reflectable: false
-hittable: false
-}
-
-}
-
 ]
