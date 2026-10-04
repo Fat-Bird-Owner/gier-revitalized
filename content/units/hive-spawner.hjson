@@ -1,5 +1,5 @@
-type: Missile
-deathExplodSound: none
+type: missile
+deathExplodeSound: none
 lifetime: 1
 
 weapons: [
