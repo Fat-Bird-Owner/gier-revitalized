@@ -1,8 +1,10 @@
 type: missile
 deathExplodeSound: none
+deathExplodeEffec: none
 lifetime: 1
 
-fullOverrid: gr-air
+drawBody: false
+drawCell: fals
 weapons: [
 {
 reload: 1
