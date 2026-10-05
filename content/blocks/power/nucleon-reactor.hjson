@@ -25,7 +25,7 @@ cualbult/250
 dense-alloy/250
 ]
 
-powerProduction: 458.333
+powerProduction: 208.33334
 explosionRadius: 40
 explosionDamage: 5000
 explosionFireballs: 300
@@ -42,7 +42,7 @@ explodeEffect: reactorExplosion
 explodeSound: explosionCore
 liquidCapacity: 500
 consumes:{
-power: 41.6667
+power: 41.66667
 liquids:[cryofluid/0.166667, oil/1.66667]
 }
 
