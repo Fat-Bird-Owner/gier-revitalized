@@ -1,4 +1,4 @@
-type: VariableReactor
+mtype: VariableReactor
 name: Thermoelectric Generator
 size: 2
 
@@ -30,7 +30,7 @@ rebuildable: true
 explosionShake: 0
 customShadow: true
 
-powerProduction: 4.16667
+powerProduction: 6.66667
 maxHeat: 10
 effectChance: 0
 explodeEffect: none
