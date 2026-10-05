@@ -1,4 +1,4 @@
-mtype: VariableReactor
+type: VariableReactor
 name: Thermoelectric Generator
 size: 2
 
