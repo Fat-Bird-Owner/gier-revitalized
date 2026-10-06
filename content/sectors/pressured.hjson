@@ -1,0 +1,19 @@
+planet: kela
+sector: 34
+outline: false
+
+# temporary name and description
+localizedName: Pressured
+description: "
+A large convoy of IFrame units are approaching
+"
+
+research: {
+parent: upward
+objectives:[
+{
+type: SectorComplete
+content: upward
+}
+]
+}
