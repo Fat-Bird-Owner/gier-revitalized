@@ -2,6 +2,7 @@ const items = [
 "copper",
 "lead",
 "graphite",
+"scrap",
 "silicon",
 "metaglass",
 "titanium",
