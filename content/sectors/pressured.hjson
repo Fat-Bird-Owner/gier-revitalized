@@ -13,7 +13,7 @@ parent: upward
 objectives:[
 {
 type: SectorComplete
-content: upward
+preset: upward
 }
 ]
 }
