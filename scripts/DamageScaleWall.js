@@ -10,8 +10,8 @@ if (!build || !source || !target) return;
 if (build.block != target) return;
 
 let scale = Mathf.clamp(( source.damage - build.block.armor )/baseThreshold, 0.05, 1.25);
-if (scale >= 1) build.applyBoost(scale);
-else build.applySlowdown(scale);
+if (scale >= 1) build.applyBoost(scale, source.damage*10);
+else build.applySlowdown(scale, source.damage*10);
 
 } catch(e) {
 Vars.ui.showInfoToast(e,5);
