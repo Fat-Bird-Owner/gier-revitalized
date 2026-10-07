@@ -20,7 +20,7 @@ lightning arc on damage
 "
 
 lightningChance: 0.2
-health: 3500
+health: 5000
 armor: 5
 
 destroyBullet: {
