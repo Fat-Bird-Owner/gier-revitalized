@@ -28,11 +28,11 @@ category: defense
 research: reinforced-structure
 customShadow: true
 
-shownPlanets: [kela, gier]
-health: 4200
+shownPlanets: [kela, gr-gier]
+health: 3500
+healPercent: 0.4
 
-requirements: [lead/25, copper/15, metaglass/15, plastanium/10]
-
+requirements: [lead/50, plastanium/25]
 drawer: [
 {
 type: DrawDefault
