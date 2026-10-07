@@ -39,34 +39,35 @@ compile("DamageBattery"); // Requires to atleast be able to have consumeBuffered
 compile("BrittleDrill"); // Could actually be anything lol
 compile("LaunchSilo"); // Required to shootConne on 180 and needs to be a turret that can shoot
 compile("CompactCore"); // Adapted to CoreBlocl but could be used for anything. Spawner is a turret that kills itself
-compile("Fabricator");
-compile("DummyBlock");
-compile("TheStem");
+compile("Fabricator"); // Anything with a payload config
+compile("DummyBlock"); // literally any building
+compile("TheStem"); // literally any building
 compile("CommandBlock"); // Command Block from minecraft or something
-compile("MeltingPort");
-compile("AttributeConstructor");
-compile("MechPad");
-compile("AssemblyRig");
-compile("AddBar");
-compile("InfoBlock");
-compile("ConfigAssembler");
+compile("MeltingPort"); // literally any building. Hardcoded
+compile("AttributeConstructor"); // constructor extension
+compile("MechPad"); // unitCargoLoader. Stats are ruined because of v156...
+compile("AssemblyRig"); // test
+compile("AddBar"); // literally any building
+compile("InfoBlock"); // message block extension 
+compile("ConfigAssembler"); // assemblers
 //require("PerformanceConsole");
-compile("DestructibleGen");
-compile("FragileHeater");
-compile("Multicrafter");
-compile("SealentChamber");
-compile("StructureBlock");
-compile("ImageBlock");
-compile("CircuitLogic");
-compile("CombustionBarrel");
-compile("WorldScript");
-compile("InstantStorage");
-compile("SporeoplasmaReactor");
+compile("DestructibleGen"); // literally any active building
+compile("FragileHeater"); // literally any active building
+compile("Multicrafter"); // literally any building
+compile("SealentChamber"); // Hardcoded
+compile("StructureBlock"); // literally any building
+compile("ImageBlock"); // message block extension
+compile("CircuitLogic"); // hardcoded
+compile("CombustionBarrel"); // literally any active building
+compile("WorldScript"); // will be deprecated soon
+compile("InstantStorage"); // storageBlock
+compile("SporeoplasmaReactor"); // literally any active building
 //require("GeothermalTurbine");
-compile("PowerGrid");
-compile("damageShiftWall");
+compile("PowerGrid"); // literally any active building
+compile("damageShiftWall"); // literally any active building
 compile("ProjectorBlock");
 compile("DisableSwitch"); // Switchblock extension
+compile("DamageScaleWall"); // regenProjector
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
