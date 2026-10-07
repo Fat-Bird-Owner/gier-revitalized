@@ -1,4 +1,4 @@
-let baseThreshold = 25;
+let baseThreshold = 50;
 
 Events.on(BuildDamageEvent, event => {
 try{
