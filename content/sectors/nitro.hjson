@@ -1,0 +1,14 @@
+planet: kela
+sector: 36
+outline: false
+difficulty: 6.5
+
+research: {
+parent: pressured
+objectives:[
+{
+type: SectorComplete
+preset: pressured
+}
+]
+}
