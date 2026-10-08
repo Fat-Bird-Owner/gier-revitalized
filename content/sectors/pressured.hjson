@@ -1,7 +1,7 @@
 planet: kela
 sector: 34
 outline: false
-difficulty: 5
+difficulty: 9
 
 research: {
 parent: upward
