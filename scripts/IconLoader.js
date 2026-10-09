@@ -43,7 +43,6 @@ Events.on(ClientLoadEvent, () => {
         });
 
         Core.bundle.properties.put("icons." + regionName, String.fromCharCode(id));
-        Team.get(4).emoji = "\uFA06"
     };
 
 })
