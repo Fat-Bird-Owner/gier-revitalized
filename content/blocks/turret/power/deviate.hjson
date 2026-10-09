@@ -141,21 +141,29 @@ trailColor: FFD37F
 hitSize: 20
 damage: 2
 
+circleShooterRadius: 300
+circleShooter: true
+circleShooterRotateSpeed: 0.1
+homingRange: 400
+
 despawnHit: true
 collides: false
 
 bulletInterval: 1
 intervalBullet: {
 type: BasicBulletType
-instantDisappear: true
 despawnHit: true
 hitEffect: none
 despawnEffect: none
-splashDamageRadius: 16
-splashDamage: 12
 armorMultiplier: 0.25
 pierce: true
 status: iframe-kill
+knockback: 7
+impact: true
+damage: 5
+hitSize: 16
+instantDisappear: "false"
+lifetime: 3
 }
 
 parts:[
