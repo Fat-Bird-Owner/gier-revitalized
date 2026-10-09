@@ -7,6 +7,7 @@ Events.on(ClientLoadEvent, () => {
     loadIcon(64003, "gr-cualbult"); // \uFA03
     loadIcon(64004, "gr-payload-category"); //\uFA04
     loadIcon(64005, "gr-torrid"); //\uFA05
+    loadIcon(64006, "gr-team-exogen"); //\uFA06
     
     function loadIcon(id, regionName) {
         let fonts = Seq.with(Fonts.def, Fonts.outline);
@@ -42,6 +43,7 @@ Events.on(ClientLoadEvent, () => {
         });
 
         Core.bundle.properties.put("icons." + regionName, String.fromCharCode(id));
+        Team.get(4).emoji = "\uFA06"
     };
 
 })
