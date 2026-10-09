@@ -5,8 +5,7 @@ name: Pillar
 
 rebuildable: true
 category: defense
-
-health: 1500
+health: 2500
 
 group: walls
 databaseTag: "adv-depleted-thorium"
@@ -23,7 +22,7 @@ from flying over it
 "
 
 baseExplosiveness: 12
-shieldColor: B58DA5FF
+shieldColor: C17F97FF
 buildVisibility: shown
 
 priority: 1
