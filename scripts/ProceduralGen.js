@@ -66,6 +66,7 @@ x,
 y
 )
 
+/*
 let counterDepth = Simplex.noise2d(
 seed,
 octawaves-1,
@@ -74,8 +75,10 @@ fallOff+0.05,
 x,
 y
 )
-
-let proccessedDepth = depth - counterDepth;
+*/
+  
+let proccessedDepth = depth;
+// - counterDepth
   
 lastX = x;
 lastY = y;
