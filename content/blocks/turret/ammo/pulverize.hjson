@@ -52,9 +52,12 @@ knockback: 1.25
 lifetime: 22
 speed: 8
 damage: 30
-
 fragRandomSpread: 45
-fragBullets: 5
+
+fragBullets: 3
+pierce: true
+pierceCap: 3
+
 fragBullet: {
 type: BasicBulletType
 frontColor: ffffff
@@ -62,10 +65,10 @@ backColor: ffffff
 trailColor: ebeef5
 
 sprite: "gr-square"
-spin: 3.5
-speed: 6
-drag: 0.06666
-lifetime: 45
+spin: 3.5          
+speed: 18
+drag: 0.044
+lifetime: 90
 
 sticky: true
 lightning: 4
@@ -97,7 +100,10 @@ splashDamageRadius: 23
 status: iframe-kill
 
 fragRandomSpread: 45
-fragBullets: 5
+fragBullets: 3
+pierce: true
+pierceCap: 4
+
 fragBullet: {
 type: BasicBulletType
 frontColor: d8d97f
@@ -105,9 +111,12 @@ backColor: d8d97f
 trailColor: fffac6
 
 sprite: "gr-triangle"
-speed: 6
-drag: 0.06666
-lifetime: 45
+speed: 18
+drag: 0.044
+lifetime: 90
+despawnEffect: none
+
+hitEffect: plasticExplosionFlak
 spin: 3.5
 
 sticky: true
@@ -129,6 +138,9 @@ width: 12.5
 height: 17.5
 trailLength: 6.25
 knockback: 1.25
+
+pierceCap: 2
+pierce: "true"
 
 lifetime: 33
 speed: 8
@@ -152,6 +164,8 @@ backColor: B58DA5FF
 trailColor: B58DA5FF
 
 width: 12.5
+knockback: 1
+impact: true
 
 height: 17.5
 trailLength: 6.25
