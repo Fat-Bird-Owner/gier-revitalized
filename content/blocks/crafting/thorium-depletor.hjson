@@ -1,0 +1,49 @@
+type: GenericCrafter
+size: 3
+name: Thorium Depletor
+
+description: "
+Depletes thorium back into it's depleted thorium
+[green]
+- Converts thorium into depleted thorium[red]
+- Requires power
+- Requires hydrogen
+- High explosiveness
+"
+
+baseExplosiveness: 150
+research: transmutation-centrifuge
+researchCostMultiplier: 0.5
+
+itemCapacity: 20
+buildTime: 1200
+requirements: [lead/750, silicon/500, titanium/500, beryllium/250, thorium/250]
+category: crafting
+databaseTag: "adv-thorium"
+  
+outputItem: depleted-thorium/10
+craftTime: 300
+consumes: {
+power: 5
+items: [thorium/10]
+liquids: [hydrogen/0.166667]
+}
+
+ambientSound: loopBio
+customShadow: true
+drawer: [
+{
+type: DrawRegion
+suffix: "-bottom"
+}
+{
+type: DrawCrucibleFlame
+}
+{
+type: DrawPlasma
+plasmas: 2
+}
+{
+type: DrawDefault
+}
+]
