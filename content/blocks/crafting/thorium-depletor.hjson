@@ -35,10 +35,11 @@ hasShadow: false
 drawer: [
 {
 type: DrawRegion
-x: -6
-y: -6
+x: -4
+y: -4
 color: 00000044
-layer: 22
+layer: 22.5
+drawPlan: false
 }
 {
 type: DrawRegion
@@ -46,10 +47,6 @@ suffix: "-bottom"
 }
 {
 type: DrawCrucibleFlame
-}
-{
-type: DrawPlasma
-plasmas: 2
 }
 {
 type: DrawDefault
