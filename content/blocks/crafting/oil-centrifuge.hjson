@@ -37,10 +37,9 @@ liquids: [water/0.016667]
 }
 
 outputItem: graphite/3
-customShadow: true
+hasShadow: false
 craftTime: 90
 
-hasShadow: false
 drawer:{
 type: DrawMulti
 drawers:[
@@ -66,13 +65,12 @@ particleLife: 105
 type: DrawRegion
 rotateSpeed: 3
 suffix: "-rotator"
-spinSprite: true
 }
 {
 type: DrawLiquidTile
 drawLiquid: water
-alpha: 0.25
-padding: 3
+alpha: 0.5
+padding: 2
 }
 {
 type: DrawDefault
