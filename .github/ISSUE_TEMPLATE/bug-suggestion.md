@@ -1,7 +1,7 @@
 ---
 name: Bug/suggestion
 about: Describe the bug or suggestion
-title: ''
+title: 'Bug/Suggestion'
 labels: ''
 assignees: Fat-Bird-Owner
 
