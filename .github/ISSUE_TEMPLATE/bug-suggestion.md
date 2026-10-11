@@ -8,4 +8,5 @@ assignees: Fat-Bird-Owner
 ---
 
 State your bug/idea.
+
 Requirements for bug report: have a clear image and crash log
