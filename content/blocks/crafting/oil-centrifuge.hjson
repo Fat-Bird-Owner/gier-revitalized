@@ -1,6 +1,6 @@
 type: AttributeCrafter
 size: 2
-name: Oil Centrifuge
+name: Centrifuge
 description: "
 Absorbs ground oil.
 Oil is hardened in to coal and crushed.
@@ -45,21 +45,39 @@ type: DrawMulti
 drawers:[
 {
 type: DrawRegion
+x: -2
+y: -2
+color: 00000044
+}
+{
+type: DrawRegion
 suffix: "-bottom"
 }
 {
 type: DrawParticles
 color: 596ab866
-particles: 9
+particles: 4
 particleSize: 1.5
 particleLife: 105
+}
+{
+type: DrawBlurSpin
+suffix: 3
+blurThresh: 1
+suffix: "-rotator"
+}
+{
+type: DrawLiquidTile
+drawLiquid: water
+alpha: 0.25
 }
 {
 type: DrawDefault
 }
 {
-type: DrawGlowRegion
-color: ffaa5f
+type: DrawRegion
+suffix: "-bottom"
+color: 00000055
 }
 ]
 }
