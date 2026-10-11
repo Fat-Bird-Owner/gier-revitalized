@@ -3,8 +3,7 @@ size: 2
 name: Centrifuge
 description: "
 Absorbs ground oil.
-Oil is hardened in to coal and crushed.
-the water is then used during the cooling proccess.
+Oil is hardened in to coal and crushed. the water is then used during for cooling proccess.
 
 [green]- Converts oil into graphite
 - Water is required
