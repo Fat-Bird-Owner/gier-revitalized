@@ -3,14 +3,15 @@ size: 1
 buildVisibility: sandboxOnly
 name: Copper Solidifier
 
-craftTime: 300
+craftTime: 60
 craftEffect: pulverize
-outputItem: copper/5
+outputItem: copper/1
 
+itemCapacity: 30
 category: crafting
 requirements: [silicon/15, titanium/20]
 consumes: {
-liquids: [liquid-copper/0.25]
+liquids: [liquid-copper/1]
 }
 
 drawer: [
