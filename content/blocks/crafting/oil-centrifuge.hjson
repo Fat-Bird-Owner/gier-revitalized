@@ -79,12 +79,12 @@ alpha: 0.25
 padding: 2
 }
 {
-type: DrawDefault
-}
-{
 type: DrawRegion
 suffix: "-bottom"
 color: 00000055
+}
+{
+type: DrawDefault
 }
 ]
 }
