@@ -3,14 +3,15 @@ size: 1
 buildVisibility: sandboxOnly
 name: Lead Hardener
 
-craftTime: 300
+craftTime: 60
 craftEffect: pulverize
-outputItem: lead/5
+outputItem: lead/1
 
+itemCapacity: 30
 category: crafting
 requirements: [silicon/15, titanium/20]
 consumes: {
-liquids: [liquid-lead/0.25]
+liquids: [liquid-lead/1]
 }
 
 drawer: [
