@@ -1,6 +1,6 @@
 type: AttributeCrafter
 size: 2
-name: Centrifuge
+name: Graphite Centrifuge
 description: "
 Absorbs ground oil.
 Oil is hardened in to coal and crushed. the water is then used during for cooling proccess.
