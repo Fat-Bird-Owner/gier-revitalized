@@ -4,10 +4,10 @@ name: Centrifuge
 description: "
 Absorbs ground oil.
 Oil is hardened in to coal and crushed. the water is then used during for cooling proccess.
-
-[green]- Converts oil into graphite
+[green]
+- Converts oil into graphite[red]
 - Water is required
-[red]- Explosive
+- Explosive
 "
 
 maxBoost: 1.25
@@ -48,6 +48,7 @@ x: -2
 y: -2
 color: 00000044	
 drawPlan: false
+layer: 22
 }
 {
 type: DrawRegion
