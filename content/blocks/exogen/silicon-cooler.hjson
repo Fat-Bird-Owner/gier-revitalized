@@ -7,6 +7,7 @@ craftTime: 60
 craftEffect: pulverize
 outputItem: silicon/1
 
+itemCapacity: 30
 category: crafting
 requirements: [silicon/15, titanium/20]
 consumes: {
