@@ -1,9 +1,9 @@
 type: Conduit
 name: Pipeline
 
-requirements:[lead/2,metaglass/1]
+requirements:[lead/1, copper/1]
 envEnabled: -1
-liquidCapacity: 2.5
+liquidCapacity: 15
 
 customShadow: true
 leaks: false
