@@ -1,0 +1,25 @@
+type: flying
+name: Radial
+isEnemy: false
+
+outlineRadius: 0
+targetPriority: -1.5
+
+targetBuildingsMobile: false
+flying: true
+mineSpeed: 7
+mineTier: 1
+  
+buildSpeed: 0.75
+drag: 0.05
+speed: 3.3
+rotateSpeed: 17
+  
+accel: 0.1
+fogRadius: 0
+itemCapacity: 50
+health: 200
+  
+engineOffset: 6
+hitSize: 9
+lowAltitude: true
