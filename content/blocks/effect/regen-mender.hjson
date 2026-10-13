@@ -1,0 +1,13 @@
+type: MendProjector
+size: 1
+name: Regen Mender
+
+reload: 180
+healPercent: 5
+range: 80
+
+baseColor: F0B68FFF
+phaseColor: F0B68FFF
+buildVisibility: sandboxOnly
+
+requirements: [copper/50, silicon/50]
