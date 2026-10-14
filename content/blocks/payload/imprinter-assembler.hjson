@@ -18,6 +18,7 @@ research: freight-conveyor
 researchCostMultiplier: 0.25
 databaseTag: "adv-depleted-thorium"
 
+liquidCapacity: 50
 consumes: {
 power: 1.5
 
@@ -25,9 +26,9 @@ liquids: {
 optional: true
 booster: true
 liquids: [
-overdrive-fluid/0.16667
-liquid-steam/0.16667
-cryofluid/0.16667
+overdrive-fluid/0
+liquid-steam/0
+cryofluid/0
 ]
 }
 
