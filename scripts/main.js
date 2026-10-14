@@ -68,6 +68,7 @@ compile("damageShiftWall"); // literally any active building
 compile("ProjectorBlock");
 compile("DisableSwitch"); // Switchblock extension
 compile("DamageScaleWall"); // regenProjector
+compile("StatusConstructor");
 //require("MixDistributor");
 //require("ReflectWall");
 //require("DroneBay")
