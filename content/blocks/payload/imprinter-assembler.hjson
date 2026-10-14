@@ -8,7 +8,7 @@ Fabricates units using the required resources, Liquids could be inputted to add 
 Liquid use per-unit: [lightgrey]25 units[]
 
 [sky]Cyrofluid[] - [accent]Overdrive[]
-[white]Steam[] - [accent]Overclock[]
+[sky]Steam[] - [accent]Overclock[]
 [#ea8878ff]Overdrive Fluid[] - [accent]Overdrive Bound[]
 "
 
@@ -26,7 +26,7 @@ databaseTag: "adv-depleted-thorium"
 
 liquidCapacity: 50
 consumes: {
-power: 1.5
+power: 2.5
 
 liquids: {
 optional: true
