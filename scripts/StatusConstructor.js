@@ -13,7 +13,7 @@ const liquids = spawner.liquids;
 
 if (liquids.get(Liquids.cryofluid) >= 25){
 unit.apply(StatusEffects.overdrive,Infinity);
-spawner.liquids.remove(Liquids.cryofluid,25);
+liquids.remove(Liquids.cryofluid,25);
 }
 
 let steam = Vars.content.liquid("gr-liquid-steam")
@@ -22,8 +22,8 @@ unit.apply(StatusEffects.overclock,Infinity);
 liquids.remove(steam,25);
 }
 
-let overdriveFluid = Vars.content.liquid("gr-overdrive-fluid")
-if (liquids.get(steam) >= 25){
+let overdriveFluid = Vars.content.liquid("gr-overdrive-fluid");
+if (liquids.get(overdriveFluid) >= 25){
 unit.apply(Vars.content.statusEffect("gr-overclock-bound"),Infinity);
 liquids.remove(overdriveFluid,25);
 }
