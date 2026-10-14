@@ -22,17 +22,29 @@ alwaysUnlocked: false
 health: 2000
 baseExplosiveness: 150
 
-drawer:{
-type: DrawMulti
-drawers:[
+drawer: [
 {
-type: DrawGlowRegion
-suffix: "-glow"
-color: BF92F9FF
-alpha: 0.4
+type: DrawRegion
+suffix: "-shadow"
+x: -2.5
+y: -2.5
+color: ffffff44
+layer: 23
+drawPlan: false
 }
 {
 type: DrawDefault
 }
-]
+{
+type: DrawGlowRegion
+suffix: "-glow"
+color: ffffff
+alpha: 0.35
 }
+{
+type: DrawRegion
+suffix: "-glint"
+drawPlan: false
+}
+]
+
