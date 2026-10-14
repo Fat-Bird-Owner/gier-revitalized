@@ -10,30 +10,24 @@ const target =  Vars.content.block,"gr-imprinter-assembler");
 
 if (type == target && spawner.liquids != null){
 const liquids = spawner.liquids;
+
+if (liquids.get(Liquids.cryofluid) >= 25){
+unit.apply(StatusEffects.overdrive,Infinity);
+spawner.liquids.remove(Liquids.cryofluid,25);
+}
+
+let steam = Vars.content.liquid("gr-liquid-steam")
+if (liquids.get(steam) >= 25){
+unit.apply(StatusEffects.overclock,Infinity);
+liquids.remove(steam,25);
+}
+
+let overdriveFluid = Vars.content.liquid("gr-overdrive-fluid")
+if (liquids.get(steam) >= 25){
+unit.apply(Vars.content.statusEffect("gr-overclock-bound"),Infinity);
+liquids.remove(overdriveFluid,25);
+}
   
-if (liquids.get(Liquids.cyanogen) >= 10){
-unit.apply(StatusEffects.overdrive,9999);
-spawner.liquids.remove(Liquids.cyanogen,10);
-cyanogenFx.at(spawner.x,spawner.y);    
-}
-
-if (spawner.liquids.get(Liquids.water) >= 10){
-unit.apply(StatusEffects.fast,9999);
-spawner.liquids.remove(Liquids.water,10);
-waterFx.at(spawner.x,spawner.y);
-}
-
-if (spawner.liquids.get(Liquids.cryofluid) >= 10){
-unit.apply(StatusEffects.overclock,9999);
-spawner.liquids.remove(Liquids.cryofluid,10);
-cryoFx.at(spawner.x,spawner.y);
-}
-
-if (spawner.liquids.get(Liquids.gallium) >= 10){
-unit.apply(StatusEffects.shielded,9999);
-spawner.liquids.remove(Liquids.gallium,10);
-galliumFx.at(spawner.x,spawner.y);
-}
 }
     
 } catch(e){
