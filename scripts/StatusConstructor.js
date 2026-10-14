@@ -6,7 +6,7 @@ const spawner = e.spawner;
 if (spawner == null) return;
 
 const type = spawner.block;
-const target =  Vars.content.block,"gr-imprinter-assembler");
+const target =  Vars.content.block("gr-imprinter-assembler");
 
 if (type == target && spawner.liquids != null){
 const liquids = spawner.liquids;
