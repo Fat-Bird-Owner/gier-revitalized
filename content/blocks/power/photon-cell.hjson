@@ -26,10 +26,9 @@ baseExplosiveness: 150
 drawer: [
 {
 type: DrawRegion
-suffix: "-shadow"
-x: -2.5
-y: -2.5
-color: ffffff44
+x: -3.75
+y: -3.75
+color: 00000044
 layer: 23
 drawPlan: false
 }
