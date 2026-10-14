@@ -27,7 +27,7 @@ booster: true
 liquids: [
 overdrive-fluid/0.16667
 liquid-steam/0.16667
-cyrofluid/0.16667
+cryofluid/0.16667
 ]
 }
 
