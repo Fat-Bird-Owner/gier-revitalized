@@ -4,6 +4,12 @@ name: Imprinter
 
 description: "
 Fabricates units using the required resources, Liquids could be inputted to add status effects
+
+Liquid use per-unit: [lightgrey]25 units[]
+
+[sky]Cyrofluid[] - [accent]Overdrive[]
+[white]Steam[] - [accent]Overclock[]
+[#ea8878ff]Overdrive Fluid[] - [accent]Overdrive Bound[]
 "
 
 requirements:[lead/300, copper/275, graphite/150, silicon/125, depleted-thorium/50]
