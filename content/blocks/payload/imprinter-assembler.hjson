@@ -20,9 +20,18 @@ databaseTag: "adv-depleted-thorium"
 
 consumes: {
 power: 1.5
-liquidFlammable: {
-minFlammability: -1
-}}
+
+liquid: {
+optional: true
+booster: true
+liquids: [
+overdrive-fluid/0.16667
+steam/0.16667
+cyrofluid/0.16667
+]
+}
+
+}
 
 plans: [
 {
