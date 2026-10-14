@@ -21,7 +21,7 @@ databaseTag: "adv-depleted-thorium"
 consumes: {
 power: 1.5
 
-liquid: {
+liquids: {
 optional: true
 booster: true
 liquids: [
