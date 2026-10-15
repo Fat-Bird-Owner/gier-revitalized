@@ -32,9 +32,13 @@ parts:[
 {
 type: RegionPart
 suffix: -barrel
-moveY: -2.5
+moveY: -1.5
 progress: recoil
 mirror: false
+}
+{
+type: RegionPart
+name: "gr-disarray-plate"
 }
 ]
 }
