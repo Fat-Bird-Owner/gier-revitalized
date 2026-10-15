@@ -16,7 +16,7 @@ researchCostMultiplier: 0.25
 databaseTag: "adv-thorium"
 
 envEnabled: -1
-shownPlanets: [gier, kela]
+shownPlanets: [gr-gier, kela]
 outlineRadius: 0
 
 requirements: [titanium/150, silicon/125, copper/50, thorium/35]
@@ -24,6 +24,15 @@ category: distribution
 bullet: {
 type: MassDriverBolt
 damage: 150
+
+homingRange: 180
+homingPower: 0.075
+fragBullets: 3
+fragBullet: {
+speed: 6
+lifetime: 5
+damage: 25
+}
 
 trailRotation: true
 trailInterval: 1
