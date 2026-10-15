@@ -25,6 +25,7 @@ bullet: {
 type: MassDriverBolt
 damage: 150
 
+/*
 knockback: 25
 impact: true
 
@@ -37,6 +38,7 @@ speed: 6
 lifetime: 5
 damage: 25
 }
+*/
 
 trailRotation: true
 trailInterval: 1
