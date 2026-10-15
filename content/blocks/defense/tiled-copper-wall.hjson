@@ -1,0 +1,11 @@
+type: Wall
+name: Tiled Copper Wall
+size: 1
+
+health: 400
+armor: 0
+category: defense
+
+buildVisibility: sandboxOnly
+requirements: [dense-alloy/3, copper/6]
+autotile: true
