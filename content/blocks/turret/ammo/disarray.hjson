@@ -1,8 +1,9 @@
 type: ItemTurret
 size: 4
 name: Disarray
-range: 240
+range: 480
 
+unitSort: grouped
 description: "
 Fires a concentrated bullet that explodes
 
@@ -51,7 +52,7 @@ ammoTypes:{
 oxide:{
 type: BasicBulletType
 speed: 6
-lifetime: 40
+lifetime: 80
 
 trailRotation: true
 trailInterval: 5
@@ -73,9 +74,12 @@ height: 11
 trailWidth: 2
 trailLength: 14
 
+pierce: true
+pierceCap: 3
+
 collidesAir: true
 collides: true
-splashDamage: 200
+splashDamage: 100
 splashDamageRadius: 48
 
 status: corroded
@@ -94,7 +98,10 @@ hitSound: explosionArtilleryShockBig
 tinted-slag-capsule:{
 type: BasicBulletType
 speed: 6
-lifetime: 40
+lifetime: 80
+
+pierce: true
+pierceCap: 3
 
 trailRotation: true
 trailInterval: 5
@@ -118,7 +125,7 @@ trailLength: 14
 
 collidesAir: true
 collides: true
-splashDamage: 200
+splashDamage: 100
 splashDamageRadius: 48
 
 status: melting
@@ -137,7 +144,10 @@ hitSound: explosionArtilleryShockBig
 depleted-thorium:{
 type: BasicBulletType
 speed: 7
-lifetime: 40
+lifetime: 80
+
+pierce: true
+pierceCap: 3
 
 trailRotation: true
 trailInterval: 5
@@ -161,7 +171,7 @@ trailLength: 14
 
 collidesAir: true
 collides: true
-splashDamage: 100
+splashDamage: 50
 splashDamageRadius: 48
 
 status: incendiary-depletion
@@ -189,7 +199,10 @@ hitSound: explosionArtilleryShockBig
 decaying-matter:{
 type: BasicBulletType
 speed: 7
-lifetime: 40
+lifetime: 80
+
+pierce: true
+pierceCap: 3
 
 trailRotation: true
 trailInterval: 5
@@ -213,8 +226,8 @@ trailLength: 14
 
 collidesAir: true
 collides: true
-splashDamage: 100
-splashDamageRadius: 48
+splashDamage: 50
+splashDamageRadius: 25
 
 status: rolling
 statusDuration: 90
