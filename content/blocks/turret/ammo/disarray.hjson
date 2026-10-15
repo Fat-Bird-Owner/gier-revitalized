@@ -33,7 +33,7 @@ parts:[
 {
 type: RegionPart
 suffix: -barrel
-moveY: -1.5
+moveY: -3
 progress: recoil
 mirror: false
 }
