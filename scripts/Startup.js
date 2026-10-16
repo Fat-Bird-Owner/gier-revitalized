@@ -64,7 +64,7 @@ placePrefix("database-tag.freight-block", String.fromCharCode(64004));
 Vars.ui.showText("Startup.js Crash", e);
 }});
 
-Events.on(ContentInitEvent, () => {
+Events.on(ClientLoadEvent, () => {
 try {
 if (Core.settings.getBool("legacy-textures") == true){        
   
@@ -74,6 +74,8 @@ replaceTex("gr-photon-cell-glint", "-old");
 
 replaceTex("gr-disarray-plate", "-old");
 replaceTex("gr-disarray-barrel", "-old");
+replaceTex("gr-disarray-plate-outline", "-old");
+replaceTex("gr-disarray-barrel-outline", "-old");
 replaceTex("gr-disarray-preview", "-old");
   
 }} catch(e) {
