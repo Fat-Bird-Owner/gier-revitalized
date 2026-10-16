@@ -3,6 +3,11 @@ let bundle = Core.bundle.get(bundleName);
 Core.bundle.properties.put(bundleName, prefix + " " + Core.bundle.get(bundleName));
 }
 
+function replaceTex(from, suffix){
+let fromTexture = Core.atlas.find(from);
+fromTexture.set(Core.atlas.find(from + to));
+}
+
 Events.on(ContentInitEvent, e => { 
 try{ 
 Team.get(5).setPalette(Color.valueOf("A4CBE0"));
@@ -59,7 +64,21 @@ placePrefix("database-tag.freight-block", String.fromCharCode(64004));
 Vars.ui.showText("Startup.js Crash", e);
 }});
 
+Events.on(ContentInitEvent, () => {
+try {
+if (Core.settings.getBool("legacy-textures") != true){        
+  
+replaceTex("gr-photon-cell", "-old");
+replaceTex("gr-photon-cell-glow", "-old");
+replaceTex("gr-photon-cell-glint", "-old");
 
+replaceTex("gr-disarray-plate", "-old");
+replaceTex("gr-disarray-barrel", "-old");
+replaceTex("gr-disarray-preview", "-old");
+  
+} } catch(e) {
+Vars.ui.showText("Not work",e,Align.center);
+}});
 
 /// Startup dialog
 Events.on(ClientLoadEvent, e => { 
@@ -130,6 +149,8 @@ t.checkPref("shaders", true, b => {});
 t.checkPref("quality-wrecks", false, b => {});
 
 t.checkPref("research-custom", true, b => {});
+
+t.checkPref("legacy-textures", false, b => {});
   
 t.row();
 t.button(Core.bundle.get("settings.researchReset"), () => {
