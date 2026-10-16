@@ -66,7 +66,7 @@ Vars.ui.showText("Startup.js Crash", e);
 
 Events.on(ContentInitEvent, () => {
 try {
-if (Core.settings.getBool("legacy-textures") != true){        
+if (Core.settings.getBool("legacy-textures") == true){        
   
 replaceTex("gr-photon-cell", "-old");
 replaceTex("gr-photon-cell-glow", "-old");
@@ -76,7 +76,7 @@ replaceTex("gr-disarray-plate", "-old");
 replaceTex("gr-disarray-barrel", "-old");
 replaceTex("gr-disarray-preview", "-old");
   
-} } catch(e) {
+}} catch(e) {
 Vars.ui.showText("Not work",e,Align.center);
 }});
 
