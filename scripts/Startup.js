@@ -77,6 +77,9 @@ replaceTex("gr-disarray-barrel", "-old");
 replaceTex("gr-disarray-plate-outline", "-old");
 replaceTex("gr-disarray-barrel-outline", "-old");
 replaceTex("gr-disarray-preview", "-old");
+
+replaceTex("gr-surge-pile", "-old");
+replaceTex("gr-surge-pile-glow", "-old");
   
 }} catch(e) {
 Vars.ui.showText("Not work",e,Align.center);
