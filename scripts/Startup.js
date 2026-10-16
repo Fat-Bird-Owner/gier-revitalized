@@ -5,7 +5,7 @@ Core.bundle.properties.put(bundleName, prefix + " " + Core.bundle.get(bundleName
 
 function replaceTex(from, suffix){
 let fromTexture = Core.atlas.find(from);
-fromTexture.set(Core.atlas.find(from + to));
+fromTexture.set(Core.atlas.find(from + suffix));
 }
 
 Events.on(ContentInitEvent, e => { 
